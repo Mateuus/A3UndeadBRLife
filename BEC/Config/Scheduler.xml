@@ -1,0 +1,757 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<!-- 
+This file is only provided as an example file and is not practical to use in real life.
+Make sure you take a copy of this file rename it and keep the orginale intact for orginale refrance.
+And Start using your new file Now!!
+
+Web Doc : http://www.ibattle.org/install-and-configure/setting-up-the-scheduler/
+
+BE Commands supported by the scheduler system are:
+
+say -1 some text
+loadbans
+loadscripts
+loadevents
+writebans
+maxping 250
+#shutdown
+#restart
+#reassign
+#lock
+#unlock
+#mission filename (without the .pbo extension)
+
+
+*****************************************************************************************************
+Description:
+*****************************************************************************************************
+
+Schedules are createad by adding a job with id.
+The first schedule should always start with id="0"
+
+<Scheduler>
+	<job id="0">
+		<time></time>
+		<delay></delay>
+		<day></day>
+		<loop></loop>
+		<cmd></cmd>
+		<cmdtype></cmdtype>
+	</job>
+	<job id="1">
+		<time></time>
+		<delay></delay>
+		<day></day>
+		<loop></loop>
+		<cmd></cmd>
+		<cmdtype></cmdtype>
+	</job>
+</Scheduler>	
+
+The job tag has 6 sub tags.
+starting with:
+
+
+<time>......</time> 
+This tag may have one of tow input format.
+
+Format 1:
+Contains 3 segments where each segment is a size of 2 in range of 00 - 99
+Hour Min  Sec
+[nn] [nn] [nn]
+nnnnnn
+Max value is 999999
+
+<time>000090</time>
+This will make the schedule execute 90 secounds after bec has started up.
+Note that:
+
+<time>000130</time>
+Will also make the schedule execute 90 secounds after bec has started up.
+as 90 sec is the same as 1 min and 30 sec
+
+ 
+Format 2:
+Contains 2 segments where each segment is a size of 2 in range of 00 - (23&59) and each segment is seperated by ':'
+
+Hour   Min    Sec
+[nn] : [nn] : [nn]
+
+<time>23:05:30</time>
+This will make the schedule execute precice at 23:05:30
+
+To execute a schedule at midnight use:
+<time>00:00:00</time>
+
+To execute a schedule at noon use:
+<time>12:00:00</time>
+
+
+<delay>....../delay>
+This tag uses the same format as the <time> tag format 1, it also only work when the <time> tag format is 1!
+<delay>nnnnnn</delay>
+
+
+<day>.../day>
+
+The day of the week the schedule should run on.
+Days are seperated by ',' 
+<day>n</day> or <day>n,n+</day>
+
+Monday starts with 1!
+
+All days
+<day>1,2,3,4,5,6,7</day>
+
+Monday and Friday only.
+<day>1,5</day>
+
+
+Set if the command is to loop or not..
+<loop>1</loop> 
+
+Set the command that is to be executed.
+<cmd>loadscripts</cmd>
+
+Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
+<cmdtype>0</cmdtype>
+
+-->
+
+
+<Scheduler>
+
+	<!-- Schedular to be shown all days in the week. -->
+	
+	<!-- Mostrar Mensagem a cada 15 minutos -->
+	<job id="0">
+		<time>000900</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>1</loop> 
+		<cmd>say -1 Hosting Undead Brasil Servidores | www.undeadbrasil.com/servers</cmd>	
+		<cmdtype>0</cmdtype>
+	</job>
+	
+	<!-- Mostrar Mensagem a cada 18 minutos -->
+	<job id="1">
+		<time>001080</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>1</loop> 
+		<cmd>say -1 Para reportar bugs, erros, etc... Use nosso forum | www.undeadbrasil.com/forum</cmd>	
+		<cmdtype>0</cmdtype>
+	</job>
+	
+	<!-- Mostrar Mensagem a cada 21 minutos -->
+	<job id="2">
+		<time>001260</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>1</loop> 
+		<cmd>say -1 Entre em nosso Team Speak 3: ts3.undeadbrasil.com</cmd>	
+		<cmdtype>0</cmdtype>
+	</job>
+	
+	<!-- Mostrar Mensagem a cada 24 minutos -->
+	<job id="3">
+		<time>001440</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>1</loop> 
+		<cmd>say -1 Leia as regras do servidor em nosso forum www.undeadbrasil.com/forum</cmd>	
+		<cmdtype>0</cmdtype>
+	</job>
+	
+	<!-- Mostrar Mensagem a cada 27 minutos -->
+	<job id="4">
+		<time>001620</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>1</loop> 
+		<cmd>say -1 Proibido RDM e VDM.</cmd>	
+		<cmdtype>0</cmdtype>
+	</job>
+		
+	<!-- Mostrar Mensagem a cada 30 minutos -->
+	<job id="5">
+		<time>001800</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>1</loop> 
+		<cmd>say -1 Atenção restart automático a cada 3 horas, 06:00hrs, 09:00hrs, 12:00hrs, 15:00hrs, 18:00hrs, 21:00hrs, 00:00hrs, 03:00hrs</cmd>	
+		<cmdtype>0</cmdtype>
+	</job>
+		
+	<!-- Mostrar Mensagem a cada 33 minutos -->
+	<job id="6">
+		<time>001980</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>1</loop> 
+		<cmd>say -1 Visite nossa pagina no Facebook, www.fb.com/equipeundeadbrasil</cmd>	
+		<cmdtype>0</cmdtype>
+	</job>
+		
+	<!-- Mostrar Mensagem a cada 36 minutos -->
+	<job id="7">
+		<time>002160</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>1</loop> 
+		<cmd>say -1 Siga o Roleplay e tenha uma otima jogatina.</cmd>	
+		<cmdtype>0</cmdtype>
+	</job>
+		
+	<!-- Mostrar Mensagem a cada 39 minutos -->
+	<job id="8">
+		<time>002340</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>1</loop> 
+		<cmd>say -1 Doação ajuda a mante nosso servidor online!</cmd>	
+		<cmdtype>0</cmdtype>
+	</job>
+		
+	<!-- Mostrar Mensagem a cada 42 minutos -->
+	<job id="9">
+		<time>002520</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>1</loop> 
+		<cmd>say -1 Visite nossa pagina no Facebook, www.fb.com/equipeundeadbrasil</cmd>	
+		<cmdtype>0</cmdtype>
+	</job>
+	
+	
+	
+	<!-- *** RESTARTS *** -->
+	<!-- restart 06:00 -->
+	<job id="10">
+		<time>05:45:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 15 minutos...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="11">
+		<time>05:50:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 10 minutos...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="12">
+		<time>05:55:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 5 minutos...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="13">
+		<time>05:57:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 3 minutos, Por favor aterrissa seus helicóptero para evitar problemas...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="14">
+		<time>05:57:02</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>#lock</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="15">
+		<time>05:59:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 1 minutos, Por favor abra o Menu(TAB), e salve seu personagem...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="16">
+		<time>06:00:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>#shutdown</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="17">
+		<time>06:00:20</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>#unlock</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	
+	<!-- restart 08:00 -->
+	<job id="18">
+		<time>07:45:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 15 minutos...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="19">
+		<time>07:50:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 10 minutos...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="20">
+		<time>07:55:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 5 minutos...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="21">
+		<time>07:57:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 3 minutos, Por favor aterrissa seus helicóptero para evitar problemas...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="22">
+		<time>07:57:02</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>#lock</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="23">
+		<time>07:59:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 1 minutos, Por favor abra o Menu(TAB), e salve seu personagem...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="24">
+		<time>09:00:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>#shutdown</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="25">
+		<time>09:00:20</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>#unlock</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	
+	<!-- restart 12:00 -->
+	<job id="26">
+		<time>11:45:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 15 minutos...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="27">
+		<time>11:50:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 10 minutos...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="28">
+		<time>11:55:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 5 minutos...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="29">
+		<time>11:57:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 3 minutos, Por favor aterrissa seus helicóptero para evitar problemas...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="30">
+		<time>11:57:02</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>#lock</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="31">
+		<time>11:59:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 1 minutos, Por favor abra o Menu(TAB), e salve seu personagem...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="32">
+		<time>12:00:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>#shutdown</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="33">
+		<time>12:00:20</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>#unlock</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	
+	<!-- restart 15:00 -->
+	<job id="34">
+		<time>14:45:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 15 minutos...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="35">
+		<time>14:50:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 10 minutos...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="36">
+		<time>14:55:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 5 minutos...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="37">
+		<time>14:57:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 3 minutos, Por favor aterrissa seus helicóptero para evitar problemas...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="38">
+		<time>14:57:02</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>#lock</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="39">
+		<time>14:59:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 1 minutos, Por favor abra o Menu(TAB), e salve seu personagem...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="40">
+		<time>15:00:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>#shutdown</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="41">
+		<time>15:00:20</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>#unlock</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	
+	<!-- restart 18:00 -->
+	<job id="42">
+		<time>17:45:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 15 minutos...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="43">
+		<time>17:50:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 10 minutos...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="44">
+		<time>17:55:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 5 minutos...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="45">
+		<time>17:57:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 3 minutos, Por favor aterrissa seus helicóptero para evitar problemas...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="46">
+		<time>17:57:02</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>#lock</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="47">
+		<time>17:59:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 1 minutos, Por favor abra o Menu(TAB), e salve seu personagem...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="48">
+		<time>18:00:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>#shutdown</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="49">
+		<time>18:00:20</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>#unlock</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	
+	<!-- restart 21:00 -->
+	<job id="50">
+		<time>20:45:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 15 minutos...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="51">
+		<time>20:50:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 10 minutos...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="52">
+		<time>20:55:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 5 minutos...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="53">
+		<time>20:57:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 3 minutos, Por favor aterrissa seus helicóptero para evitar problemas...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="54">
+		<time>20:57:02</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>#lock</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="55">
+		<time>20:59:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 1 minutos, Por favor abra o Menu(TAB), e salve seu personagem...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="56">
+		<time>21:00:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>#shutdown</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="57">
+		<time>21:00:20</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>#unlock</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	
+	<!-- restart 00:00 -->
+	<job id="58">
+		<time>23:45:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 15 minutos...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="59">
+		<time>23:50:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 10 minutos...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="60">
+		<time>23:55:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 5 minutos...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="61">
+		<time>23:57:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 3 minutos, Por favor aterrissa seus helicóptero para evitar problemas...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="62">
+		<time>23:57:02</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>#lock</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="63">
+		<time>23:59:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 1 minutos, Por favor abra o Menu(TAB), e salve seu personagem...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="64">
+		<time>00:00:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>#shutdown</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="65">
+		<time>00:00:20</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>#lock</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	
+	<!-- restart 03:00 -->
+	<job id="66">
+		<time>02:45:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 15 minutos...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="67">
+		<time>02:50:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 10 minutos...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="68">
+		<time>02:55:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 5 minutos...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="69">
+		<time>02:57:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 3 minutos, Por favor aterrissa seus helicóptero para evitar problemas...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="70">
+		<time>02:57:02</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>#lock</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="71">
+		<time>02:59:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 1 minutos, Por favor abra o Menu(TAB), e salve seu personagem...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="72">
+		<time>03:00:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>#shutdown</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="73">
+		<time>03:00:20</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>#unlock</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+</Scheduler>
