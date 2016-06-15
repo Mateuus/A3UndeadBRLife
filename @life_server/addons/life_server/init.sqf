@@ -160,6 +160,21 @@ if(EQUAL(EXTDB_SETTING(getNumber,"HC_Enabled"),0)) then {
 	PVAR_ALL("life_server_isReady");
 };
 
+all_ah_items = [];
+publicVariable "all_ah_items";
+[] spawn TON_fnc_vAH_init;
+[] spawn
+{
+	while {true} do
+	{
+	sleep (20 * 60);
+	if (count all_ah_items > 0) then
+		{
+			[] spawn TON_fnc_vAH_update;
+		};
+	};
+};
+
 if(EQUAL(EXTDB_SETTING(getNumber,"HC_Enabled"),0)) then {
 	/* Initialize hunting zone(s) */
 	["hunting_zone",30] spawn TON_fnc_huntingZone;

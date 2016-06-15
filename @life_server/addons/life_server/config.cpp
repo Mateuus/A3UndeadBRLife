@@ -62,6 +62,7 @@ class CfgFunctions {
 		};
 	};
 
+	
 	class TON_System {
 		tag = "TON";
 		class Systems {
@@ -85,6 +86,12 @@ class CfgFunctions {
 			class keyManagement {};
 			class vehicleUpdate {};
 			class recupkeyforHC {};
+		};
+		
+		class vAH {
+			file = "\life_server\Functions\vAH";
+			class vAH_init {};
+			class vAH_update {};
 		};
 
 		class Housing {
