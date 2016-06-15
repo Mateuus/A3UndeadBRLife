@@ -269,6 +269,152 @@ class Clothing {
         };
     };
 
+	class RoupasBronze {
+        title = "Loja de Roupas Bronze";
+        license = "";
+        side = "civ";
+        uniforms[] = {
+            { "NONE", "Remove Uniform", 0, { "", "", -1 } },
+
+            //Donator
+            { "U_I_Protagonist_VR", "Donator VR 1", 4500, { "life_donorlevel", "SCALAR", 1 } }
+
+        };
+        headgear[] = {
+            { "NONE", "Remove Hat", 0, { "", "", -1 } },
+            { "H_HelmetB_camo", "", 4500, { "life_donorlevel", "SCALAR", 1 } }
+
+        };
+        goggles[] = {
+            { "NONE", "Remove Glasses", 0, { "", "", -1 } }
+        };
+        vests[] = {
+            { "NONE", "Remove Vest", 0, { "", "", -1 } },
+            { "V_PlateCarrierL_CTRG", "Donator 1 Vest", 12500, { "life_donorlevel", "SCALAR", 1 } }
+        };
+        backpacks[] = {
+            { "NONE", "Remove Backpack", 0, { "life_donorlevel", "SCALAR", 1 } },
+            { "B_Bergen_mcamo", "Donator Backpack", 7500, { "life_donorlevel", "SCALAR", 1 } }
+        };
+    };
+
+	class RoupasSilver {
+        title = "Loja de Roupas Silver";
+        license = "";
+        side = "civ";
+        uniforms[] = {
+            { "NONE", "Remove Uniform", 0, { "", "", -1 } },
+
+            //Donator
+			{ "U_B_Protagonist_VR", "Donator VR 2", 4500, { "life_donorlevel", "SCALAR", 2 } }
+
+        };
+        headgear[] = {
+            { "NONE", "Remove Hat", 0, { "", "", -1 } },
+            { "H_HelmetB_camo", "", 4500, { "life_donorlevel", "SCALAR", 1 } }
+
+        };
+        goggles[] = {
+            { "NONE", "Remove Glasses", 0, { "", "", -1 } }
+        };
+        vests[] = {
+            { "NONE", "Remove Vest", 0, { "", "", -1 } },
+            { "V_PlateCarrierL_CTRG", "Donator 1 Vest", 12500, { "life_donorlevel", "SCALAR", 1 } }
+        };
+        backpacks[] = {
+            { "NONE", "Remove Backpack", 0, { "life_donorlevel", "SCALAR", 1 } },
+            { "B_Bergen_mcamo", "Donator Backpack", 7500, { "life_donorlevel", "SCALAR", 1 } }
+        };
+    };
+
+	class RoupasGold {
+        title = "Loja de Roupas Gold";
+        license = "";
+        side = "civ";
+        uniforms[] = {
+            { "NONE", "Remove Uniform", 0, { "", "", -1 } },
+
+            //Donator
+			{ "U_O_Protagonist_VR", "Donator VR 3", 4500, { "life_donorlevel", "SCALAR", 3 } }
+
+        };
+        headgear[] = {
+            { "NONE", "Remove Hat", 0, { "", "", -1 } },
+            { "H_HelmetB_camo", "", 4500, { "life_donorlevel", "SCALAR", 1 } }
+
+        };
+        goggles[] = {
+            { "NONE", "Remove Glasses", 0, { "", "", -1 } }
+        };
+        vests[] = {
+            { "NONE", "Remove Vest", 0, { "", "", -1 } },
+            { "V_PlateCarrierL_CTRG", "Donator 1 Vest", 12500, { "life_donorlevel", "SCALAR", 1 } }
+        };
+        backpacks[] = {
+            { "NONE", "Remove Backpack", 0, { "life_donorlevel", "SCALAR", 1 } },
+            { "B_Bergen_mcamo", "Donator Backpack", 7500, { "life_donorlevel", "SCALAR", 1 } }
+        };
+    };
+
+	class RoupasPlatinum {
+        title = "Loja de Roupas Platinum";
+        license = "";
+        side = "civ";
+        uniforms[] = {
+            { "NONE", "Remove Uniform", 0, { "", "", -1 } },
+
+            //Donator
+			  { "U_I_Soldier_VR", "Donator Entity 1", 7500, { "life_donorlevel", "SCALAR", 4 } }
+
+        };
+        headgear[] = {
+            { "NONE", "Remove Hat", 0, { "", "", -1 } },
+            { "H_HelmetB_camo", "", 4500, { "life_donorlevel", "SCALAR", 1 } }
+
+        };
+        goggles[] = {
+            { "NONE", "Remove Glasses", 0, { "", "", -1 } }
+        };
+        vests[] = {
+            { "NONE", "Remove Vest", 0, { "", "", -1 } },
+            { "V_PlateCarrierL_CTRG", "Donator 1 Vest", 12500, { "life_donorlevel", "SCALAR", 1 } }
+        };
+        backpacks[] = {
+            { "NONE", "Remove Backpack", 0, { "life_donorlevel", "SCALAR", 1 } },
+            { "B_Bergen_mcamo", "Donator Backpack", 7500, { "life_donorlevel", "SCALAR", 1 } }
+        };
+    };
+
+	class RoupasDiamante {
+        title = "Loja de Roupas Diamante";
+        license = "";
+        side = "civ";
+        uniforms[] = {
+            { "NONE", "Remove Uniform", 0, { "", "", -1 } },
+
+            //Donator
+			{ "U_B_CombatUniform_mcam", "Donator Orange", 7500, { "life_donorlevel", "SCALAR", 5 } },
+            { "U_B_CombatUniform_mcam_vest", "Donator Arctic", 7500, { "life_donorlevel", "SCALAR", 5 } }
+
+        };
+        headgear[] = {
+            { "NONE", "Remove Hat", 0, { "", "", -1 } },
+            { "H_HelmetB_camo", "", 4500, { "life_donorlevel", "SCALAR", 1 } }
+
+        };
+        goggles[] = {
+            { "NONE", "Remove Glasses", 0, { "", "", -1 } }
+        };
+        vests[] = {
+            { "NONE", "Remove Vest", 0, { "", "", -1 } },
+            { "V_PlateCarrierL_CTRG", "Donator 1 Vest", 12500, { "life_donorlevel", "SCALAR", 1 } }
+        };
+        backpacks[] = {
+            { "NONE", "Remove Backpack", 0, { "life_donorlevel", "SCALAR", 1 } },
+            { "B_Bergen_mcamo", "Donator Backpack", 7500, { "life_donorlevel", "SCALAR", 1 } }
+        };
+    };
+
     class supporter {
         title = "STR_Shops_C_Supporter";
         license = "";
