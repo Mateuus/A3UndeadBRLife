@@ -20,7 +20,7 @@ _illegalValue = 0;
 	_var = SEL(_x,0);
 	_val = SEL(_x,1);
 	_isIllegalItem = M_CONFIG(getNumber,"VirtualItems",_var,"illegal");
-	if(_isIllegalItem == 1 ) then {
+	if(_isIllegalItem isEqualTo 1 ) then {
 		_illegalPrice = M_CONFIG(getNumber,"VirtualItems",_var,"sellPrice");
 		if(!isNull (missionConfigFile >> "VirtualItems" >> _var >> "processedItem")) then {
 			_illegalItemProcessed = M_CONFIG(getText,"VirtualItems",_var,"processedItem");
@@ -29,11 +29,12 @@ _illegalValue = 0;
 
 		_illegalValue = _illegalValue + (round(_val * _illegalPrice / 2));
 	};
-} foreach (SEL(_containerInfo,0));
+} forEach (SEL(_containerInfo,0));
 _value = _illegalValue;
 if(_value > 0) then {
 	[0,"STR_NOTF_ContainerContraband",true,[[_value] call life_fnc_numberText]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
-	ADD(BANK,_value);
+	ADD(TTPBANK,_value);
+	[1] call SOCK_fnc_updatePartial;
 	_container SVAR ["Trunk",[[],0],true];
 	[_container] remoteExecCall ["TON_fnc_updateHouseTrunk",2];
 } else {

@@ -13,11 +13,14 @@ _uid = steamid;
 
 if(isNull _house) exitWith {};
 if(!(_house isKindOf "House_F")) exitWith {};
-if(isNil {_house getVariable "house_owner"}) exitWith {hint "There is no owner for this house."};
+if(isNil {_house getVariable "house_owner"}) exitWith {hint localize "STR_House_noOwner";};
+if (playerSide != civilian) exitWith {hint "Only civilian.";}; // Only civilians can sell house.
 closeDialog 0;
 
 _houseCfg = [(typeOf _house)] call life_fnc_houseConfig;
 if(EQUAL(count _houseCfg,0)) exitWith {};
+if ((time - life_action_delay) < 2) exitWith {hint localize "STR_NOTF_ActionDelay";}; // No glitch.
+life_action_delay = time;
 
 _action = [
 	format[localize "STR_House_SellHouseMSG",
@@ -27,46 +30,54 @@ _action = [
 
 if(_action) then {
 	_house SVAR ["house_sold",true,true];
-	
+
 	if(life_HC_isActive) then {
 		[_house] remoteExecCall ["HC_fnc_sellHouse",HC_Life];
 	} else {
 		[_house] remoteExecCall ["TON_fnc_sellHouse",RSERV];
 	};
-	
+
 	_house SVAR ["locked",false,true];
-	_house SVAR ["containers",nil,true];
 	deleteMarkerLocal format["house_%1",_house GVAR "uid"];
 	_house SVAR ["uid",nil,true];
 
-	BANK = BANK + (round((_houseCfg select 0)/2));
+	TTPBANK = TTPBANK + (round((_houseCfg select 0)/2));
+	[1] call SOCK_fnc_updatePartial;
 	_index = life_vehicles find _house;
 
+	if(EQUAL(LIFE_SETTINGS(getNumber,"player_advancedLog"),1)) then {
+		if(EQUAL(LIFE_SETTINGS(getNumber,"battlEye_friendlyLogging"),1)) then {
+			advanced_log = format ["sold a house for %1. Bank Balance: %2",(round((_houseCfg select 0)/2)),[TTPBANK] call life_fnc_numberText];
+		} else {
+			advanced_log = format ["%1 - %2 sold a house for %3. Bank Balance: %4",profileName,(getPlayerUID player),(round((_houseCfg select 0)/2)),[TTPBANK] call life_fnc_numberText];
+			};
+		publicVariableServer "advanced_log";
+	};
+
 	if(_index != -1) then {
-		life_vehicles set[_index,-1];
-		life_vehicles = life_vehicles - [-1];
+		life_vehicles deleteAt _index;
 	};
 
 	_index = [str(getPosATL _house),life_houses] call TON_fnc_index;
 	if(_index != -1) then {
-		life_houses set[_index,-1];
-		life_houses = life_houses - [-1];
+		life_houses deleteAt _index;
 	};
 	_numOfDoors = FETCH_CONFIG2(getNumber,CONFIG_VEHICLES,(typeOf _house), "numberOfDoors");
 	for "_i" from 1 to _numOfDoors do {
 		_house SVAR [format["bis_disabled_Door_%1",_i],0,true];
 	};
-	_containers = [getPosATL _house, ["Box_IND_Grenades_F","B_supplyCrate_F"], 9] call life_fnc_nearestObjects;
+	_containers = _house GVAR ["containers",[]];
 	if (count _containers > 0) then {
 		{
 			_x SVAR ["Trunk",nil,true];
-			
+
 			if(life_HC_isActive) then {
 				[_x] remoteExecCall ["HC_fnc_sellHouseContainer",HC_Life];
 			} else {
 				[_x] remoteExecCall ["TON_fnc_sellHouseContainer",RSERV];
 			};
-			
+
 		} forEach _containers;
 	};
+	_house SVAR ["containers",nil,true];
 };

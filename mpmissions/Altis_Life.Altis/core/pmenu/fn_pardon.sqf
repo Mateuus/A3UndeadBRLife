@@ -8,15 +8,15 @@
 */
 private["_display","_list","_uid"];
 disableSerialization;
-if(playerside != west) exitWith {};
+if(playerSide != west) exitWith {};
 
 _display = findDisplay 2400;
 _list = _display displayCtrl 2402;
 _data = lbData[2401,(lbCurSel 2401)];
 _data = call compile format["%1", _data];
 if(isNil "_data") exitWith {};
-if(typeName _data != "ARRAY") exitWith {};
-if(count _data == 0) exitWith {};
+if(!(_data isEqualType [])) exitWith {};
+if(_data isEqualTo []) exitWith {};
 
 _uid = _data select 0;
 

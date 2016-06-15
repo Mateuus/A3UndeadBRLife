@@ -4,12 +4,13 @@
     Author: Bryan "Tonic" Boardwine
     Full Gear/Y-Menu Save by Vampire
     Edited: Itsyuka
-    
+
     Description:
     Saves the players gear for syncing to the database for persistence..
 */
-private["_return","_uItems","_bItems","_vItems","_pItems","_hItems","_yItems","_uMags","_vMags","_bMags","_pMag","_hMag","_uni","_ves","_bag","_handled"];
+private["_return","_uItems","_bItems","_vItems","_pItems","_hItems","_yItems","_uMags","_vMags","_bMags","_pMag","_hMag","_uni","_ves","_bag","_handled","_savedVirtualItems"];
 _return = [];
+_savedVirtualItems = LIFE_SETTINGS(getArray,"saved_virtualItems");
 
 _return pushBack uniform player;
 _return pushBack vest player;
@@ -17,7 +18,7 @@ _return pushBack backpack player;
 _return pushBack goggles player;
 _return pushBack headgear player;
 _return pushBack assignedITems player;
-if(playerSide == west || playerSide == civilian && {EQUAL(LIFE_SETTINGS(getNumber,"save_civ_weapons"),1)}) then {
+if(playerSide isEqualTo west || playerSide isEqualTo civilian && {EQUAL(LIFE_SETTINGS(getNumber,"save_civilian_weapons"),1)}) then {
     _return pushBack RIFLE;
     _return pushBack PISTOL;
 } else {
@@ -70,23 +71,23 @@ if(!(EQUAL(vest player,""))) then {
 
 if(count (primaryWeaponMagazine player) > 0 && alive player) then {
     _pMag = SEL((primaryWeaponMagazine player),0);
-	
+
     if(!(EQUAL(_pMag,""))) then {
         _uni = player canAddItemToUniform _pMag;
         _ves = player canAddItemToVest _pMag;
         _bag = player canAddItemToBackpack _pMag;
         _handled = false;
-		
+
         if(_ves) then {
 			ADD(_vMags,[_pMag]);
             _handled = true;
         };
-		
+
         if(_uni && !_handled) then {
 			ADD(_uMags,[_pMag]);
             _handled = true;
         };
-		
+
         if(_bag && !_handled) then {
 			ADD(_bMags,[_pMag]);
             _handled = true;
@@ -96,23 +97,23 @@ if(count (primaryWeaponMagazine player) > 0 && alive player) then {
 
 if(count (handgunMagazine player) > 0 && alive player) then {
     _hMag = ((handgunMagazine player) select 0);
-	
+
     if(!(EQUAL(_hMag,""))) then {
         _uni = player canAddItemToUniform _hMag;
         _ves = player canAddItemToVest _hMag;
         _bag = player canAddItemToBackpack _hMag;
         _handled = false;
-		
+
         if(_ves) then {
 			ADD(_vMags,[_hMag]);
             _handled = true;
         };
-		
+
         if(_uni && !_handled) then {
 			ADD(_uMags,[_hMag]);
             _handled = true;
         };
-		
+
         if(_bag && !_handled) then {
             ADD(_uMags,[_hMag]);
             _handled = true;
@@ -137,10 +138,7 @@ if(count (PISTOL_ITEMS) > 0) then {
     if (_val > 0) then {
 		_yItems pushBack [_x,_val];
     };
-} forEach [
-	"pickaxe","fuelEmpty","fuelFull", "spikeStrip", "lockpick", "defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","apple","peach","tbacon","donuts",
-	"rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat"
-];
+} forEach _savedVirtualItems;
 
 _return pushBack _uItems;
 _return pushBack _uMags;

@@ -21,7 +21,7 @@ disableSerialization;
 _curTarget = param [0,ObjNull,[ObjNull]];
 if(isNull _curTarget) exitWith {}; //Bad target
 _houseCfg = [(typeOf _curTarget)] call life_fnc_houseConfig;
-if(EQUAL(count _houseCfg,0) && playerSide == civilian) exitWith {};
+if(EQUAL(count _houseCfg,0) && playerSide isEqualTo civilian) exitWith {};
 
 if(!dialog) then {
 	createDialog "pInteraction_Menu";
@@ -35,11 +35,11 @@ _Btn5 = CONTROL(37400,Btn5);
 _Btn6 = CONTROL(37400,Btn6);
 _Btn7 = CONTROL(37400,Btn7);
 _Btn8 = CONTROL(37400,Btn8);
-{_x ctrlShow false;} foreach [_Btn1,_Btn2,_Btn3,_Btn4,_Btn5,_Btn6,_Btn7,_Btn8];
+{_x ctrlShow false;} forEach [_Btn1,_Btn2,_Btn3,_Btn4,_Btn5,_Btn6,_Btn7,_Btn8];
 
 life_pInact_curTarget = _curTarget;
-if(_curTarget isKindOf "House_F" && playerSide == west) exitWith {
-	if((nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"]) == _curTarget OR (nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"]) == _curTarget) then {
+if(_curTarget isKindOf "House_F" && playerSide isEqualTo west) exitWith {
+	if((nearestObject [[6620.5,15660.9,0],"Land_Dome_Small_F"]) == _curTarget OR (nearestObject [[6626.5,15654.9,0],"Land_Cargo_House_V1_F"]) == _curTarget) then {
 
 		_Btn1 ctrlSetText localize "STR_pInAct_Repair";
 		_Btn1 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_repairDoor; closeDialog 0;";
@@ -77,7 +77,6 @@ if(_curTarget isKindOf "House_F" && playerSide == west) exitWith {
 };
 
 if(!(_curTarget in life_vehicles) OR isNil {_curTarget GVAR "house_owner"}) then {
-	if(_curTarget in life_vehicles) then {SUB(life_vehicles,[_curTarget]);};
 	_Btn1 ctrlSetText localize "STR_pInAct_BuyHouse";
 	_Btn1 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_buyHouse;";
 	_Btn1 ctrlShow true;

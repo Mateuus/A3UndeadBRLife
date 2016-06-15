@@ -4,18 +4,18 @@
 	Author: Bryan "Tonic" Boardwine
 	Modified: Devilfloh
 	Description:
-	Starts automated mining of resource from the tempest device.
+	Starts automated mining of resource from the tempest device. Not integrated with percents.
 */
-private["_vehicle","_resourceZones","_zone","_weight","_resource","_vInv","_itemIndex","_items","_sum","_itemWeight","_amount"];
+private["_vehicle","_resourceZones","_zone","_weight","_resource","_vInv","_itemIndex","_items","_sum","_itemWeight","_amount","_isMineral"];
 _vehicle = param [0,ObjNull,[ObjNull]];
-
+_isMineral = true;
 if(isNull _vehicle) exitWith {};
 
 if(!isNil {_vehicle GVAR "mining"}) exitWith {
 	hint localize "STR_NOTF_DeviceIsMining";
 };
 
-if(fuel _vehicle == 0) exitWith {
+if(fuel _vehicle isEqualTo 0) exitWith {
 	titleText[localize "STR_NOTF_OutOfFuel","PLAIN"];
 };
 
@@ -27,13 +27,13 @@ if((_weight select 1) >= (_weight select 0)) exitWith {
 	hint localize "STR_NOTF_DeviceFull";
 	life_action_inUse = false;
 };
+
 //check if we are in the resource zone for any of the resources
 _zone = "";
 _zoneSize = (getNumber(missionConfigFile >> "CfgGather" >> "zoneSize"));
 
 _resourceCfg = missionConfigFile >> "CfgGather" >> "Resources";
-for[{_i = 0},{_i < count(_resourceCfg)},{_i = _i + 1}] do {
-
+for "_i" from 0 to count(_resourceCfg)-1 do {
 	_curConfig = (_resourceCfg select _i);
 	_resource = configName(_curConfig);
 	_resourceZones = getArray(_curConfig >> "zones");
@@ -43,13 +43,36 @@ for[{_i = 0},{_i < count(_resourceCfg)},{_i = _i + 1}] do {
 		if((player distance (getMarkerPos _x)) < _zoneSize) exitWith {
 			_zone = _x;
 		};
-
 	} forEach _resourceZones;
 
-	if(_zone != "") exitWith {};
+	if(_zone != "") exitWith {_isMineral = false;};
 };
 
-if(_zone == "") exitWith {
+_resourceCfg = missionConfigFile >> "CfgGather" >> "Minerals";
+for "_i" from 0 to count(_resourceCfg)-1 do {
+	private ["_curConfig","_resourceZones","_resources","_mined"];
+
+	if (!_isMineral) exitWith {};
+	_curConfig = (_resourceCfg select _i);
+	_resources = getArray(_curConfig >> "mined");
+	_resourceZones = getArray(_curConfig >> "zones");
+
+	if (!(_resources select 0 isEqualType [])) then {
+		_mined = _resources select 0;
+	} else {
+		_mined = _resources select 0 select 0;
+	};
+
+	{
+		if((player distance (getMarkerPos _x)) < _zoneSize) exitWith {
+			_zone = _x;
+		};
+	} forEach _resourceZones;
+
+	if(_zone != "") exitWith {_resource = _mined};
+};
+
+if(_zone isEqualTo "") exitWith {
 	hint localize "STR_NOTF_notNearResource";
 	life_action_inUse = false;
 };
@@ -59,15 +82,14 @@ _vehicle remoteExec ["life_fnc_soundDevice",RCLIENT]; //Broadcast the 'mining' s
 
 life_action_inUse = false; //Unlock it since it's going to do it's own thing...
 
-while {true} do {
-
+for "_i" from 0 to 1 step 0 do {
 	if(!alive _vehicle || isNull _vehicle) exitWith {};
 
 	if((isEngineOn _vehicle) || ((speed _vehicle) > 5)) exitWith {
 		titleText[localize "STR_NOTF_MiningStopped","PLAIN"];
 	};
 
-	if(fuel _vehicle == 0) exitWith {
+	if(fuel _vehicle isEqualTo 0) exitWith {
 		titleText[localize "STR_NOTF_OutOfFuel","PLAIN"];
 	};
 
@@ -114,11 +136,11 @@ while {true} do {
 		_vehicle SVAR["mining",nil,true];
 	};
 
-	if(_itemIndex == -1) then {
-		_inv pushback [_resource,_random];
+	if(_itemIndex isEqualTo -1) then {
+		_inv pushBack [_resource,_sum];
 	} else {
 		_val = _inv select _itemIndex select 1;
-		_inv set[_itemIndex,[_resource,_val + _random]];
+		_inv set[_itemIndex,[_resource,_val + _sum]];
 	};
 
 	if(fuel _vehicle < 0.1) exitWith {
@@ -137,9 +159,9 @@ while {true} do {
 		titleText[localize "STR_NOTF_OutOfFuel","PLAIN"];
 		_vehicle SVAR["mining",nil,true];
 	};
-	
+
 	_itemName = M_CONFIG(getText,"VirtualItems",_resource,"displayName");
-	titleText[format[localize "STR_NOTF_DeviceMined",_random,(localize _itemName)],"PLAIN"];
+	titleText[format[localize "STR_NOTF_DeviceMined",_sum,(localize _itemName)],"PLAIN"];
 	_itemWeight = ([_resource] call life_fnc_itemWeight) * _sum;
 	_vehicle SVAR["Trunk",[_inv,_space + _itemWeight],true];
 	_weight = [_vehicle] call life_fnc_vehicleWeight;
@@ -149,7 +171,7 @@ while {true} do {
 		_vehicle SVAR["mining",nil,true];
 		titleText[localize "STR_NOTF_DeviceFull","PLAIN"];
 	};
-	
+
 	sleep 2;
 };
 

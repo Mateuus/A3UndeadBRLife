@@ -6,7 +6,7 @@
 	Description:
 	Adds the tags above other players heads when close and have visible range.
 */
-if (!life_settings_tagson) exitwith {};
+if (!life_settings_tagson) exitWith {};
 private["_ui","_units","_masks"];
 #define iconID 78000
 #define scale 0.8
@@ -14,6 +14,7 @@ private["_ui","_units","_masks"];
 if(visibleMap OR {!alive player} OR {dialog}) exitWith {
 	500 cutText["","PLAIN"];
 };
+
 
 _ui = GVAR_UINS ["Life_HUD_nameTags",displayNull];
 if(isNull _ui) then {
@@ -40,18 +41,17 @@ _masks = LIFE_SETTINGS(getArray,"clothing_masks");
 		if(!((headgear _x) in _masks OR (goggles _x) in _masks OR (uniform _x) in _masks)) then {
 			if(count _sPos > 1 && {_distance < 15}) then {
 				_text = switch (true) do {
-					case (_x in (units grpPlayer) && playerSide == civilian): {format["<t color='#00FF00'>%1</t>",(_x GVAR ["realname",name _x])];};
-					case (side _x == west && {!isNil {_x GVAR "rank"}}): {format["<img image='%1' size='1'></img> %2",switch ((_x GVAR "rank")) do {
-						case 2: {"\a3\ui_f\data\gui\cfg\Ranks\corporal_gs.paa"};
-						case 3: {"\a3\ui_f\data\gui\cfg\Ranks\sergeant_gs.paa"};
-						case 4: {"\a3\ui_f\data\gui\cfg\Ranks\lieutenant_gs.paa"};
-						case 5: {"\a3\ui_f\data\gui\cfg\Ranks\captain_gs.paa"};
-						case 6: {"\a3\ui_f\data\gui\cfg\Ranks\major_gs.paa"};
-						case 7: {"\a3\ui_f\data\gui\cfg\Ranks\colonel_gs.paa"};
-						case 8: {"\a3\ui_f\data\gui\cfg\Ranks\general_gs.paa"};
-						default {"\a3\ui_f\data\gui\cfg\Ranks\private_gs.paa"};
+					case (_x in (units grpPlayer) && playerSide isEqualTo civilian): {format["<t color='#00FF00'>%1</t>",(_x GVAR ["realname",name _x])];};
+					case (side _x isEqualTo west && {!isNil {_x GVAR "rank"}}): {format["<img image='%1' size='1'></img> %2",switch ((_x GVAR "rank")) do {
+						case 2: {"icons\ranks\02Patr.paa"};
+						case 3: {"icons\ranks\03Sgt.paa"};
+						case 4: {"icons\ranks\04lt.paa"};
+						case 5: {"icons\ranks\05Cpt.paa"};
+						case 6: {"icons\ranks\06DptCom.paa"};
+						case 7: {"icons\ranks\07Com.paa"};
+						default {"icons\ranks\01Cadet.paa"};
 						},_x GVAR ["realname",name _x]]};
-					case (side _x == independent): {format["<t color='#FF0000'><img image='a3\ui_f\data\map\MapControl\hospital_ca.paa' size='1.5'></img></t> %1",_x GVAR ["realname",name _x]]};
+					case (side _x isEqualTo independent): {format["<t color='#FF0000'><img image='a3\ui_f\data\map\MapControl\hospital_ca.paa' size='1.5'></img></t> %1",_x GVAR ["realname",name _x]]};
 					default {
 						if(!isNil {(group _x) GVAR "gang_name"}) then {
 							format["%1<br/><t size='0.8' color='#B6B6B6'>%2</t>",_x GVAR ["realname",name _x],(group _x) GVAR ["gang_name",""]];
@@ -76,4 +76,4 @@ _masks = LIFE_SETTINGS(getArray,"clothing_masks");
 	} else {
 		_idc ctrlShow false;
 	};
-} foreach _units;
+} forEach _units;

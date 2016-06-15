@@ -6,40 +6,63 @@
     Description:
     Sets skins for players by their side and uniform.
 */
+private["_skinName"];
+
 switch(playerSide) do {
 	case civilian: {
 		if(EQUAL(LIFE_SETTINGS(getNumber,"civ_skins"),1)) then {
-			if(uniform player == "U_C_Poloshirt_blue") then {
-				player setObjectTextureGlobal [0, "textures\civilian_uniform_1.jpg"];
-			};
-			if(uniform player == "U_C_Poloshirt_burgundy") then {
-				player setObjectTextureGlobal [0, "textures\civilian_uniform_2.jpg"];
-			};
-			if(uniform player == "U_C_Poloshirt_stripped") then {
-				player setObjectTextureGlobal [0, "textures\civilian_uniform_3.jpg"];
-			};
-			if(uniform player == "U_C_Poloshirt_tricolour") then {
-				player setObjectTextureGlobal [0, "textures\civilian_uniform_4.jpg"];
-			};
-			if(uniform player == "U_C_Poloshirt_salmon") then {
-				player setObjectTextureGlobal [0, "textures\civilian_uniform_5.jpg"];
-			};
-			if(uniform player == "U_C_Poloshirt_redwhite") then {
-				player setObjectTextureGlobal [0, "textures\civilian_uniform_6.jpg"];
-			};
-			if(uniform player == "U_C_Commoner1_1") then {
-				player setObjectTextureGlobal [0, "textures\civilian_uniform_7.jpg"];
+			if(uniform player isEqualTo "U_C_Poloshirt_blue") then {
+				player setObjectTextureGlobal [0, "textures\Civ\Clothing\gay.jpg"];
 			};
 		};
+		if (uniform player isEqualTo "U_B_CombatUniform_mcam" && (FETCH_CONST(life_donorlevel) >= 1)) then {
+			player setObjectTextureGlobal [0, "textures\Civ\Supporter\vipOrange.jpg"];
+		};
+		if (uniform player isEqualTo "U_B_CombatUniform_mcam_vest" && (FETCH_CONST(life_donorlevel) >= 1)) then {
+			player setObjectTextureGlobal [0, "textures\Civ\Supporter\VIParctic.jpg"];
+		};
+		if (uniform player isEqualTo "U_I_CombatUniform" && (FETCH_CONST(life_donorlevel) >= 2)) then {
+			player setObjectTextureGlobal [0, "textures\Civ\Supporter\bh.jpg"];
+		};
+		if (backpack player isEqualTo "B_Bergen_mcamo" && (FETCH_CONST(life_donorlevel) >= 2)) then {
+			backpackContainer player setObjectTextureGlobal [0, "textures\Civ\Supporter\VIPgayruck.jpg"];
+		};
+		/*
+		if(uniform player isEqualTo "U_B_CombatUniform_mcam") then {
+			player setObjectTextureGlobal [0, "textures\Supporter\vipOrange.jpg"];
+		};
+		if(uniform player isEqualTo "U_B_CombatUniform_mcam_vest") then {
+			player setObjectTextureGlobal [0, "textures\Civ\Supporter\VIParctic.jpg"];
+		};
+		if(uniform player isEqualTo "U_I_CombatUniform") then {
+			player setObjectTextureGlobal [0, "textures\Civ\Supporter\bh.jpg"];
+		};
+		if ((backpack player) isEqualTo "B_Bergen_mcamo") then {
+			backpackContainer player setObjectTextureGlobal [0, "textures\Civ\Supporter\VIPgayruck.jpg"];
+		};
+		*/
 	};
+
 	case west: {
-		if(uniform player == "U_Rangemaster") then {
-			player setObjectTextureGlobal [0, "textures\cop_uniform.jpg"];
-		};
+	if(uniform player isEqualTo "U_Rangemaster") then {
+		player setObjectTextureGlobal [0, "textures\Cop\Clothing\cop_uniform.jpg"];
 	};
+	if(uniform player isEqualTo "U_B_SpecopsUniform_sgg") then {
+		player setObjectTextureGlobal [0, "textures\Cop\Clothing\policeBasic.paa"];
+	};
+	if ((uniform player) isEqualTo "U_B_CombatUniform_mcam_worn") then {
+	player setObjectTextureGlobal [0, "textures\Cop\Clothing\SRT.paa"];
+	};
+	if(playerSide isEqualTo west) then {(unitBackpack player) setObjectTextureGlobal [0,""];};
+};
+
 	case independent: {
-		if(uniform player == "U_Rangemaster") then {
-			player setObjectTextureGlobal [0, "textures\medic_uniform.jpg"];
+		if(uniform player isEqualTo "U_Rangemaster") then {
+			player setObjectTextureGlobal [0, "textures\Med\Clothing\medic_uniform.jpg"];
 		};
+		if ((uniform player) isEqualTo "U_C_Scientist") then {
+		player setObjectTextureGlobal [0, "textures\Med\Clothing\medic3_uniform.paa"];
+		};
+		if(playerSide isEqualTo independent) then {(unitBackpack player) setObjectTextureGlobal [0,""];};
 	};
 };

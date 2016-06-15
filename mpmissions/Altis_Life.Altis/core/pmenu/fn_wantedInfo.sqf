@@ -1,7 +1,7 @@
 /*
 	File: fn_wantedInfo.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Pulls back information about the wanted criminal.
 */
@@ -13,9 +13,9 @@ _display = findDisplay 2400;
 _list = _display displayCtrl 2402;
 _mylist = [];
 _data = call compile format["%1", _data];
-if(isNil "_data") exitWith {hint "Failed to fetch crimes";};
-if(typeName _data != "ARRAY") exitWith {hint "Failed to fetch crimes";};
-if(count _data == 0) exitWith {hint "Failed to fetch crimes";};
+if(isNil "_data") exitWith {hint localize "STR_Cop_wantedList_FailedToFetch";};
+if(!(_data isEqualType [])) exitWith {hint localize "STR_Cop_wantedList_FailedToFetch";};
+if(_data isEqualTo []) exitWith {hint localize "STR_Cop_wantedList_FailedToFetch";};
 lbClear _list;
 
 _crimes = _data select 0;
@@ -28,6 +28,6 @@ _bounty = _data select 1;
 		_mylist pushBack _crime;
 		_list lbAdd format[localize "STR_Wanted_Count",{_x == _crime} count _crimes,localize _crime];
 	};
-} foreach _crimes;
+} forEach _crimes;
 
-ctrlSetText[2403,format[localize "STR_Wanted_Bounty",[_bounty] call life_fnc_numberText]]; 
+ctrlSetText[2403,format[localize "STR_Wanted_Bounty",[_bounty] call life_fnc_numberText]];

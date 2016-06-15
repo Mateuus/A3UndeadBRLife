@@ -12,7 +12,7 @@ _group = _hideout GVAR ["gangOwner",grpNull];
 
 if(isNil {grpPlayer GVAR "gang_name"}) exitWith {titleText[localize "STR_GNOTF_CreateGang","PLAIN"];};
 if(_group == grpPlayer) exitWith {titleText[localize "STR_GNOTF_Controlled","PLAIN"]};
-if((_hideout GVAR ["inCapture",FALSE])) exitWith {hint localize "STR_GNOTF_Captured";};
+if((_hideout GVAR ["inCapture",FALSE])) exitWith {hint localize "STR_GNOTF_onePersonAtATime";};
 if(!isNull _group) then {
 	_gangName = _group GVAR ["gang_name",""];
 	_action = [
@@ -41,7 +41,7 @@ _titleText ctrlSetText format["%2 (1%1)...","%",_title];
 _progressBar progressSetPosition 0.01;
 _cP = 0.01;
 
-while {true} do {
+for "_i" from 0 to 1 step 0 do {
 	if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then {
 		[player,"AinvPknlMstpSnonWnonDnon_medic_1",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
 		player switchMove "AinvPknlMstpSnonWnonDnon_medic_1";
@@ -72,7 +72,7 @@ if((player getVariable["restrained",false])) exitWith {life_action_inUse = false
 if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_GNOTF_CaptureCancel","PLAIN"]; life_action_inUse = false;_hideout SVAR ["inCapture",false,true];};
 life_action_inUse = false;
 
-titleText["Hideout has been captured.","PLAIN"];
+titleText[localize "STR_GNOTF_Captured","PLAIN"];
 _flagTexture = [
 		"\A3\Data_F\Flags\Flag_red_CO.paa",
 		"\A3\Data_F\Flags\Flag_green_CO.paa",

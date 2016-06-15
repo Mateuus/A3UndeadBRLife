@@ -31,7 +31,7 @@ if(_exit) exitWith {};
 
 if(!(EQUAL(_levelValue,-1))) then {
 	_level = GVAR_MNS _levelName;
-	if(typeName _level == typeName {}) then {_level = FETCH_CONST(_level);};
+	if(_level isEqualType {}) then {_level = FETCH_CONST(_level);};
 
 	_flag = switch(_levelType) do {
 		case "SCALAR": {_level >= _levelValue};
@@ -43,6 +43,10 @@ if(!(EQUAL(_levelValue,-1))) then {
 		_exit = true;
 		if(EQUAL(_levelMsg,"")) then {
 			_levelMsg = (localize "STR_Shop_Veh_NotAllowed");
+		} else {
+			if(isLocalized _levelMsg) then {
+				_levelMsg = (localize _levelMsg);
+			};
 		};
 	};
 };

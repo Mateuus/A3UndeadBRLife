@@ -2,7 +2,7 @@
 /*
 	File: fn_dpFinish.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Finishes the DP Mission and calculates the money earned based
 	on distance between A->B
@@ -18,3 +18,4 @@ _price = round(1.7 * _dis);
 life_cur_task setTaskState "Succeeded";
 player removeSimpleTask life_cur_task;
 ADD(CASH,_price);
+[0] call SOCK_fnc_updatePartial;

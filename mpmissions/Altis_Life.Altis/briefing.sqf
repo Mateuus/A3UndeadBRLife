@@ -1,5 +1,5 @@
-waitUntil {!isNull player && player == player};
-if(player diarySubjectExists "rules")exitwith{};
+waitUntil {!isNull player && player isEqualTo player};
+if(player diarySubjectExists "controls") exitWith {};
 
 player createDiarySubject ["credits","Credits"];
 player createDiarySubject ["changelog","Change Log"];
@@ -36,19 +36,31 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Altis Life Change Log",
 				"
-					The official change log can be found in ArmaLife github.<br/><br/>
+					The official changelog can be found in ArmaLife github. https://git.io/vVkhe<br/><br/>
+
+					v4.4 release 3!<br/>
+					By: danielstuart14<br/>
+					Date: 31. May 2016<br/><br/>
+
+					v4.4 release 1!<br/>
+					by: danielstuart14<br/>
+					date: 12. February 2016<br/><br/>
 
 					v4.3 release 4!<br/>
 					by: danielstuart14<br/>
-					31. January 2016<br/><br/>
+					date: 31. January 2016<br/><br/>
 
-					v4.3.2 release!<br/>
+					v4.3 release 3!<br/>
 					by: danielstuart14<br/>
-					22. January 2016<br/><br/>
+					date: Not released<br/><br/>
 
-					v4.3.1 release!<br/>
+					v4.3 release 2!<br/>
 					by: danielstuart14<br/>
-					19. January 2016<br/><br/>
+					date: 22. January 2016<br/><br/>
+
+					v4.3 release 1!<br/>
+					by: danielstuart14<br/>
+					date: 19. January 2016<br/><br/>
 				"
 		]
 	];
@@ -57,7 +69,7 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Server Change Log",
 				"
-					This section is meant for people doing their own edits to the mission, DO NOT REMOVE THE ABOVE.<br/><br/>
+					Adding new features to the server constantly is one of our main goals.<br/><br/>
 				"
 		]
 	];

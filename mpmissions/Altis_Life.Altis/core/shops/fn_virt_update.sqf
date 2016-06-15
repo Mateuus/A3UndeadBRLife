@@ -2,7 +2,7 @@
 /*
 	File: fn_virt_update.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Update and fill the virtual shop menu.
 */
@@ -17,7 +17,7 @@ _gear_list = CONTROL(2400,2402);
 lbClear _item_list;
 lbClear _gear_list;
 
-if(!isClass(missionConfigFile >> "VirtualShops" >> life_shop_type)) exitWith {closeDialog 0; hint "Config does not exist?";}; //Make sure the entry exists..
+if(!isClass(missionConfigFile >> "VirtualShops" >> life_shop_type)) exitWith {closeDialog 0; hint localize "STR_NOTF_ConfigDoesNotExist";}; //Make sure the entry exists..
 ctrlSetText[2403,localize (M_CONFIG(getText,"VirtualShops",life_shop_type,"name"))];
 _shopItems = M_CONFIG(getArray,"VirtualShops",life_shop_type,"items");
 
@@ -33,12 +33,12 @@ _shopItems = M_CONFIG(getArray,"VirtualShops",life_shop_type,"items");
 			_item_list lbSetPicture [(lbSize _item_list)-1,_icon];
 		};
 	};
-} foreach _shopItems;
+} forEach _shopItems;
 
 {
 	_name = M_CONFIG(getText,"VirtualItems",_x,"displayName");
 	_val = ITEM_VALUE(_x);
-	
+
 	if(_val > 0) then {
 		_gear_list lbAdd format["%2 [x%1]",_val,(localize _name)];
 		_gear_list lbSetData [(lbSize _gear_list)-1,_x];
@@ -47,4 +47,6 @@ _shopItems = M_CONFIG(getArray,"VirtualShops",life_shop_type,"items");
 			_gear_list lbSetPicture [(lbSize _gear_list)-1,_icon];
 		};
 	};
-} foreach _shopItems;
+} forEach _shopItems;
+
+[] call life_fnc_hudUpdate;

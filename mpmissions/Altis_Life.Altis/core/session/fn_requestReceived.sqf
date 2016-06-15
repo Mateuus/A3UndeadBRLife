@@ -18,7 +18,7 @@ if(life_session_tries > 3) exitWith {cutText[localize "STR_Session_Error","BLACK
 
 //Error handling and junk..
 if(isNil "_this") exitWith {[] call SOCK_fnc_insertPlayerInfo;};
-if(EQUAL(typeName _this,"STRING")) exitWith {[] call SOCK_fnc_insertPlayerInfo;};
+if(_this isEqualType "") exitWith {[] call SOCK_fnc_insertPlayerInfo;};
 if(EQUAL(count _this,0)) exitWith {[] call SOCK_fnc_insertPlayerInfo;};
 if(EQUAL(SEL(_this,0),"Error")) exitWith {[] call SOCK_fnc_insertPlayerInfo;};
 if(!(EQUAL(steamid,SEL(_this,0)))) exitWith {[] call SOCK_fnc_dataQuery;};
@@ -33,7 +33,7 @@ if(!isServer && (!isNil "life_adminlevel" OR !isNil "life_coplevel" OR !isNil "l
 
 //Parse basic player information.
 CASH = parseNumber (SEL(_this,2));
-BANK = parseNumber (SEL(_this,3));
+TTPBANK = parseNumber (SEL(_this,3));
 CONST(life_adminlevel,parseNumber (SEL(_this,4)));
 if(EQUAL(LIFE_SETTINGS(getNumber,"donor_level"),1)) then {
 	CONST(life_donorlevel,parseNumber (SEL(_this,5)));
@@ -43,7 +43,7 @@ if(EQUAL(LIFE_SETTINGS(getNumber,"donor_level"),1)) then {
 
 //Loop through licenses
 if(count (SEL(_this,6)) > 0) then {
-	{SVAR_MNS [SEL(_x,0),SEL(_x,1)];} foreach (SEL(_this,6));
+	{SVAR_MNS [SEL(_x,0),SEL(_x,1)];} forEach (SEL(_this,6));
 };
 
 life_gear = SEL(_this,8);
@@ -74,7 +74,7 @@ switch(playerSide) do {
 		};
 
 		//Position
-		if(EQUAL(LIFE_SETTINGS(getNumber,"save_civ_position"),1)) then {
+		if(EQUAL(LIFE_SETTINGS(getNumber,"save_civilian_position"),1)) then {
 			life_is_alive = SEL(_this,10);
 			life_civ_position = SEL(_this,11);
 			if(life_is_alive) then {
@@ -84,9 +84,9 @@ switch(playerSide) do {
 		};
 
 		{
-			_house = nearestBuilding (call compile format["%1", SEL(_x,0)]);
+			_house = nearestObject [(call compile format["%1", SEL(_x,0)]), "House"];
 			life_vehicles pushBack _house;
-		} foreach life_houses;
+		} forEach life_houses;
 
 		life_gangData = SEL(_this,14);
 		if(!(EQUAL(count life_gangData,0))) then {
@@ -107,7 +107,7 @@ switch(playerSide) do {
 };
 
 if(count (SEL(_this,15)) > 0) then {
-	{life_vehicles pushBack _x;} foreach (SEL(_this,15));
+	{life_vehicles pushBack _x;} forEach (SEL(_this,15));
 };
 
 life_session_completed = true;

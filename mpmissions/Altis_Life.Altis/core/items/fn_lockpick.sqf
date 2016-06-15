@@ -7,7 +7,7 @@
 	Main functionality for lock-picking.
 */
 private["_curTarget","_distance","_isVehicle","_title","_progressBar","_cP","_titleText","_dice","_badDistance"];
-_curTarget = cursorTarget;
+_curTarget = cursorObject;
 life_interrupted = false;
 
 if(life_action_inUse) exitWith {};
@@ -21,6 +21,12 @@ if(_isVehicle && _curTarget in life_vehicles) exitWith {hint localize "STR_ISTR_
 //More error checks
 if(!_isVehicle && !isPlayer _curTarget) exitWith {};
 if(!_isVehicle && !(_curTarget GVAR ["restrained",false])) exitWith {};
+if(_curTarget getVariable "NPC") exitWith {hint localize "STR_NPC_Protected"};
+
+if (safezone) exitWith {
+	hint "You cannot lockpick within a safezone!";
+};
+
 
 _title = format[localize "STR_ISTR_Lock_Process",if(!_isVehicle) then {"Handcuffs"} else {getText(configFile >> "CfgVehicles" >> (typeOf _curTarget) >> "displayName")}];
 life_action_inUse = true; //Lock out other actions
@@ -31,16 +37,17 @@ disableSerialization;
 _ui = GVAR_UINS "life_progress";
 _progressBar = _ui displayCtrl 38201;
 _titleText = _ui displayCtrl 38202;
+_veh = cursorTarget;
 _titleText ctrlSetText format["%2 (1%1)...","%",_title];
 _progressBar progressSetPosition 0.01;
 _cP = 0.01;
 
-while {true} do
-{
+for "_i" from 0 to 1 step 0 do {
 	if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then {
 		[player,"AinvPknlMstpSnonWnonDnon_medic_1",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
 		player switchMove "AinvPknlMstpSnonWnonDnon_medic_1";
 		player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
+		[_veh,"carAlarm"] remoteExec ["life_fnc_say3D",RANY];
 	};
 
 	sleep 0.26;

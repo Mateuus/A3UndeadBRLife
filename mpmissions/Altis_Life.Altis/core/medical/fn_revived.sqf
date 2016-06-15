@@ -22,10 +22,10 @@ life_deathCamera cameraEffect ["TERMINATE","BACK"];
 camDestroy life_deathCamera;
 
 //Take fee for services.
-if(BANK > _reviveCost) then {
-	SUB(BANK,_reviveCost);
+if(TTPBANK > _reviveCost) then {
+	SUB(TTPBANK,_reviveCost);
 } else {
-	BANK = 0;
+	TTPBANK = 0;
 };
 
 //Bring me back to life.
@@ -42,5 +42,8 @@ player SVAR ["Revive",nil,TRUE];
 player SVAR ["name",nil,TRUE];
 player SVAR ["Reviving",nil,TRUE];
 [] call life_fnc_playerSkins;
+[] spawn life_fnc_statusBar;
 [] call life_fnc_hudUpdate; //Request update of hud.
 [] call SOCK_fnc_updateRequest;
+
+life_nlrtimer_stop = true;

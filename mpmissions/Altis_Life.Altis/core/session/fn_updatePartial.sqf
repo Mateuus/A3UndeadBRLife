@@ -20,14 +20,14 @@ switch(_mode) do {
 	};
 
 	case 1: {
-		_packet set[2,BANK];
+		_packet set[2,TTPBANK];
 	};
 
 	case 2: {
 		{
 			_varName = LICENSE_VARNAME(configName _x,_flag);
 			_array pushBack [_varName,LICENSE_VALUE(configName _x,_flag)];
-		} foreach (format["getText(_x >> 'side') isEqualTo '%1'",_flag] configClasses (missionConfigFile >> "Licenses"));
+		} forEach (format["getText(_x >> 'side') isEqualTo '%1'",_flag] configClasses (missionConfigFile >> "Licenses"));
 
 		_packet set[2,_array];
 	};
@@ -39,7 +39,7 @@ switch(_mode) do {
 
 	case 4: {
 		_packet set[2,life_is_alive];
-		_packet set[4,getPosWorld player];
+		_packet set[4,getPosATL player];
 	};
 
 	case 5: {
@@ -48,7 +48,7 @@ switch(_mode) do {
 
 	case 6: {
 		_packet set[2,CASH];
-		_packet set[4,BANK];
+		_packet set[4,TTPBANK];
 	};
 
 	case 7: {

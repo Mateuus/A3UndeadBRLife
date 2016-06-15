@@ -40,15 +40,18 @@ _escSync = {
 };
 
 _canUseControls = {
-	if(playerSide == west) exitWith {true};
+	if(playerSide isEqualTo west) exitWith {true};
 	if((player GVAR ["restrained",FALSE]) OR (player GVAR ["Escorting",FALSE]) OR (player GVAR ["transporting",FALSE]) OR (life_is_arrested) OR (life_istazed) OR (life_isknocked)) then {false} else {true};
 };
 
-while {true} do
-{
+for "_i" from 0 to 1 step 0 do {
 	waitUntil{!isNull (findDisplay 49)};
 	_abortButton = CONTROL(49,104);
 	_abortButton buttonSetAction "[] call SOCK_fnc_updateRequest; [player] remoteExec [""TON_fnc_cleanupRequest"",2];";
+	_abortButton ctrlSetEventHandler [
+			"ButtonClick",
+			"[] spawn life_fnc_abortAction; (findDisplay 49) closeDisplay 2; true"
+	];
 	_respawnButton = CONTROL(49,1010);
 	_fieldManual = CONTROL(49,122);
 

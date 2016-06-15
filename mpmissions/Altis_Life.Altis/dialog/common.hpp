@@ -177,7 +177,7 @@ class Life_RscText {
 	tooltipColorShade[] = {0,0,0,0.65};
 };
 
-class Life_RscLine : Life_RscText {
+class Life_RscLine: Life_RscText {
 	idc = -1;
 	style = 176;
 	x = 0.17;
@@ -204,7 +204,7 @@ class Life_RscTree {
 	borderSize = 0;
 };
 
-class Life_RscTitle : Life_RscText {
+class Life_RscTitle: Life_RscText {
 	style = 0;
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	colorText[] = {0.95, 0.95, 0.95, 1};
@@ -227,7 +227,7 @@ class life_RscPicture {
 	tooltipColorShade[] = {0,0,0,0.65};
 };
 
-class Life_RscTextMulti : Life_RscText
+class Life_RscTextMulti: Life_RscText
 {
 	linespacing = 1;
 	style = 0 + 16 + 0x200;
@@ -648,7 +648,7 @@ class Life_RscFrame {
 	text = "";
 };
 
-class Life_RscBackground : Life_RscText {
+class Life_RscBackground: Life_RscText {
 	type = 0;
 	IDC = -1;
 	style = 512;
@@ -1109,6 +1109,14 @@ class Life_RscMapControl
 		coefMax = 1;
 		color[] = {1,1,1,1};
 	};
+	class LineMarker
+	{
+			lineDistanceMin = 3e-005;
+			lineLengthMin = 5;
+			lineWidthThick = 0.014;
+			lineWidthThin = 0.008;
+			textureComboBoxColor = "#(argb,8,8,3)color(1,1,1,1)";
+	};
 };
 
 class Life_RscCombo {
@@ -1152,4 +1160,74 @@ class Life_RscToolbox {
 	colorSelectedBg[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
 	font = "PuristaMedium";
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
+};
+
+class Life_RscButtonInvisible : Life_RscButtonMenu {
+        animTextureNormal = "#(argb,8,8,3)color(1,1,1,0)";
+        animTextureDisabled = "#(argb,8,8,3)color(1,1,1,0)";
+        animTextureOver = "#(argb,8,8,3)color(1,1,1,0)";
+        animTextureFocused = "#(argb,8,8,3)color(1,1,1,0)";
+        animTexturePressed = "#(argb,8,8,3)color(1,1,1,0)";
+        animTextureDefault = "#(argb,8,8,3)color(1,1,1,0)";
+        colorBackground[] = {0, 0, 0, 0};
+        colorBackground2[] = {1, 1, 1, 0};
+        color[] = {1, 1, 1, 0};
+        color2[] = {1, 1, 1, 0};
+        colorText[] = {1, 1, 1, 0};
+        colorDisabled[] = {1, 1, 1, 0};
+};
+
+class Life_RscListBox2
+{
+        style = 16;
+        idc = -1;
+        type = 5;
+        w = 0.275;
+        h = 0.04;
+        font = "PuristaMedium";
+        colorSelect[] = {1, 1, 1, 1};
+        colorText[] = {0, 0, 0, 1};
+        colorBackground[] = {0.28,0.28,0.28,0.28};
+        colorSelect2[] = {1, 1, 1, 1};
+        colorSelectBackground[] = {0.95, 0.95, 0.95, 0.5};
+        colorSelectBackground2[] = {1, 1, 1, 0.5};
+        colorScrollbar[] = {0.2, 0.2, 0.2, 1};
+        colorPicture[] = {1,1,1,1};
+        colorPictureSelected[] = {1,1,1,1};
+        colorPictureDisabled[] = {1,1,1,1};
+        arrowFull = "\A3\ui_f\data\gui\cfg\scrollbar\arrowFull_ca.paa";
+        arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa";
+        wholeHeight = 0.45;
+        rowHeight = 0.04;
+        color[] = {0.7, 0.7, 0.7, 1};
+        colorActive[] = {0,0,0,1};
+        colorDisabled[] = {0,0,0,0.3};
+        sizeEx = 0.023;
+        soundSelect[] = {"",0.1,1};
+        soundExpand[] = {"",0.1,1};
+        soundCollapse[] = {"",0.1,1};
+        maxHistoryDelay = 1;
+        autoScrollSpeed = -1;
+        autoScrollDelay = 5;
+        autoScrollRewind = 0;
+        tooltipColorText[] = {1,1,1,1};
+        tooltipColorBox[] = {1,1,1,1};
+        tooltipColorShade[] = {0,0,0,0.65};
+        class ListScrollBar: Life_RscScrollBar
+        {
+                color[] = {1,1,1,1};
+                autoScrollEnabled = 1;
+        };
+};
+
+class Life_PictureButtonMenu : Life_RscButtonMenu
+{
+	colorBackground[] = {1,1,1,0.08};
+	colorBackgroundFocused[] = {1,1,1,0.12};
+	colorBackground2[] = {0.75,0.75,0.75,0.2};
+	color[] = {1,1,1,1};
+	colorFocused[] = {0,0,0,1};
+	color2[] = {0,0,0,1};
+	colorText[] = {1,1,1,1};
+	colorDisabled[] = {0,0,0,0.4};
 };

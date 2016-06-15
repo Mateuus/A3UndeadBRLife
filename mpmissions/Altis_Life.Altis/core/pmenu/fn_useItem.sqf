@@ -15,6 +15,7 @@ switch (true) do {
 	case (_item in ["waterBottle","coffee","redgull"]): {
 		if(([false,_item,1] call life_fnc_handleInv)) then {
 			life_thirst = 100;
+			[player,"drink"] remoteExec ["life_fnc_say3D",RANY];
 			if(EQUAL(LIFE_SETTINGS(getNumber,"enable_fatigue"),1)) then {player setFatigue 0;};
 			if(EQUAL(_item,"redgull") && {EQUAL(LIFE_SETTINGS(getNumber,"enable_fatigue"),1)}) then {
 				[] spawn {
@@ -29,26 +30,30 @@ switch (true) do {
 	};
 
 	case (EQUAL(_item,"boltcutter")): {
-		[cursorTarget] spawn life_fnc_boltcutter;
+		[cursorObject] spawn life_fnc_boltcutter;
 		closeDialog 0;
 	};
 
 	case (EQUAL(_item,"blastingcharge")): {
 		player reveal fed_bank;
 		(group player) reveal fed_bank;
-		[cursorTarget] spawn life_fnc_blastingCharge;
+		[cursorObject] spawn life_fnc_blastingCharge;
 	};
 
 	case (EQUAL(_item,"defusekit")): {
-		[cursorTarget] spawn life_fnc_defuseKit;
+		[cursorObject] spawn life_fnc_defuseKit;
+	};
+
+	case (_item isEqualTo "gpstracker"): {
+		[cursorTarget] spawn life_fnc_gpsTracker;closeDialog 0;
 	};
 
 	case (EQUAL(_item,"storagesmall")): {
-		[] call life_fnc_storageBoxSmall;
+		[false] call life_fnc_storageBox;
 	};
 
 	case (EQUAL(_item,"storagebig")): {
-		[] call life_fnc_storageBoxBig;
+		[true] call life_fnc_storageBox;
 	};
 
 	case (EQUAL(_item,"spikeStrip")): {
@@ -67,13 +72,108 @@ switch (true) do {
 		[] spawn life_fnc_lockpick;
 	};
 
+	case (_item isEqualTo "marijuana"):
+	{
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_weed;
+		};
+  };
+
+	case (EQUAL(_item,"nitro")): {
+		[] spawn life_fnc_nitro;
+	};
+
+	case (EQUAL(_item,"blindfold")): {
+		if(playerSide in [independent]) exitWith {hint "You cannot use this item!"};
+		if(vehicle player != player) exitWith {hint "You cannot use this item whilst in a vehicle!"};
+		_unit = cursorTarget;
+		if(isNull _unit) exitWith {};
+		if((player distance _unit > 3)) exitWith {hint "You are too far away!";};
+		if(!(_unit getVariable "civrestrained")) exitWith {hint "The person must be tied up!";};
+		if((_unit getVariable "masked")) exitWith {hint "This person is already blindfolded!";};
+		if(player isEqualTo _unit) exitWith {};
+		if(!isPlayer _unit) exitWith {};
+		if(([false,_item,1]call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_maskAction;
+		};
+	};
+
+	case (EQUAL(_item,"beer")): {
+		if(playerSide in [west,independent]) exitWith {hint localize "STR_MISC_WestIndNoNo";};
+		if((player getVariable ["inDrink",FALSE])) exitWith {hint localize "STR_MISC_AlreadyDrinking";};
+		if(([false,_item,1]call life_fnc_handleInv)) then
+		{
+			if(isNil "life_drink") then {life_drink = 0;};
+			life_drink = life_drink + 0.02;
+			if (life_drink < 0.06) exitWith {};
+			[] spawn life_fnc_drinkbeer;
+			[player,"drink"] remoteExec ["life_fnc_say3D",RANY];
+		};
+	};
+
+	case (EQUAL(_item,"whiskey")): {
+		if(playerSide in [west,independent]) exitWith {hint localize "STR_MISC_WestIndNoNo";};
+		if((player getVariable ["inDrink",FALSE])) exitWith {hint localize "STR_MISC_AlreadyDrinking";};
+		if(([false,_item,1]call life_fnc_handleInv)) then
+		{
+			if(isNil "life_drink") then {life_drink = 0;};
+			life_drink = life_drink + 0.06;
+			if (life_drink < 0.07) exitWith {};
+			[] spawn life_fnc_drinkwhiskey;
+			[player,"drink"] remoteExec ["life_fnc_say3D",RANY];
+		};
+	};
+
+	case (EQUAL(_item,"moonshine")): {
+		if(playerSide in [west,independent]) exitWith {hint localize "STR_MISC_WestIndNoNo";};
+		if((player getVariable ["inDrink",FALSE])) exitWith {hint localize "STR_MISC_AlreadyDrinking";};
+		if(([false,_item,1]call life_fnc_handleInv)) then
+		{
+			if(isNil "life_drink") then {life_drink = 0;};
+			life_drink = life_drink + 0.08;
+			if (life_drink < 0.09) exitWith {};
+			[] spawn life_fnc_drinkmoonshine;
+			[player,"drink"] remoteExec ["life_fnc_say3D",RANY];
+		};
+	};
+
+	case (EQUAL(_item,"cocaine_processed")):
+	{
+		if(playerSide in [west,independent]) exitWith {hint "You can't take drugs on duty!";};
+		if((player getVariable ["Druged",FALSE])) exitWith {hint "You are already high!";};
+		if(([false,_item,1] call life_fnc_handleInv)) then
+			{
+				if(isNil "life_drug") then {life_drug = 0;};
+				life_drug = life_drug + 0.08;
+				if (life_drug < 0.00) exitWith {};
+				[] spawn life_fnc_Cocaine;
+			};
+	};
+
+	case (EQUAL(_item,"heroin_processed")):
+	{
+		if(playerSide in [west,independent]) exitWith {hint "You can't take drugs on duty!";};
+		if((player getVariable ["Druged",FALSE])) exitWith {hint "You are already high!";};
+		if(([false,_item,1] call life_fnc_handleInv)) then
+			{
+				if(isNil "life_drug") then {life_drug = 0;};
+				life_drug = life_drug + 0.08;
+				if (life_drug < 0.00) exitWith {};
+				[] spawn life_fnc_Heroin;
+			};
+	};
+
+
 	case (_item in ["apple","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","donuts","tbacon","peach"]): {
 		if(!(EQUAL(M_CONFIG(getNumber,"VirtualItems",_item,"edible"),-1))) then {
 			if([false,_item,1] call life_fnc_handleInv) then {
 				_val = M_CONFIG(getNumber,"VirtualItems",_item,"edible");
 				_sum = life_hunger + _val;
 				switch (true) do {
-					case (_val < 0 && _sum < 1): {life_hunger = 5;}; //This adds the ability to set the entry edible to a negative value and decrease the hunger without death
+					case (_val < 0 && _sum < 1): {life_hunger = 5;};
+					[player,"eat"] remoteExec ["life_fnc_say3D",RANY];
 					case (_sum > 100): {life_hunger = 100;};
 					default {life_hunger = _sum;};
 				};
@@ -87,4 +187,5 @@ switch (true) do {
 };
 
 [] call life_fnc_p_updateMenu;
+[] call life_fnc_inventory;
 [] call life_fnc_hudUpdate;

@@ -39,6 +39,7 @@ if(!(EQUAL(count (actionKeys "User10"),0)) && {(inputAction "User10" > 0)}) exit
 			_handle = [] spawn life_fnc_actionKeyHandler;
 			waitUntil {scriptDone _handle};
 			life_action_inUse = false;
+			[] call life_fnc_playerSkins;
 		};
 	};
 	true;
@@ -48,7 +49,7 @@ if (life_container_active) then {
 	switch (_code) do {
 		//space key
 		case 57: {
-			[life_container_activeObj] spawn life_fnc_placedefinestorage;
+			[] spawn life_fnc_placestorage;
 		};
 	};
 	true;
@@ -60,8 +61,7 @@ switch (_code) do {
 		if(isNil "jumpActionTime") then {jumpActionTime = 0;};
 		if(_shift && {!(EQUAL(animationState player,"AovrPercMrunSrasWrflDf"))} && {isTouchingGround player} && {EQUAL(stance player,"STAND")} && {speed player > 2} && {!life_is_arrested} && {SEL((velocity player),2) < 2.5} && {time - jumpActionTime > 1.5}) then {
 			jumpActionTime = time; //Update the time.
-			[player,true] spawn life_fnc_jumpFnc; //Local execution
-			[player,false] remoteExec ["life_fnc_jumpFnc",RANY]; //Global execution
+			[player] remoteExec ["life_fnc_jumpFnc",RANY]; //Global execution
 			_handled = true;
 		};
 	};
@@ -78,6 +78,27 @@ switch (_code) do {
 		};
 	};
 
+	case 210:{	if(_shift) then {
+		switch (player getVariable["Earplugs",0]) do {
+				case 0: {hintSilent "Ear Plugs 90%"; 1 fadeSound 0.1; player setVariable ["Earplugs", 10];
+				};
+				case 10: {hintSilent "Ear Plugs 60%"; 1 fadeSound 0.4; player setVariable ["Earplugs", 40];
+			 	};
+				case 40: {hintSilent "Ear Plugs 30%"; 1 fadeSound 0.7; player setVariable ["Earplugs", 70];
+			 	};
+				case 70: {hintSilent "Ear Plugs Removed"; 1 fadeSound 1; player setVariable ["Earplugs", 0];
+			 	};
+			};
+		};
+	};
+
+
+	case 24:
+	{
+		if (!_shift && !_alt && !_ctrlKey && (playerSide isEqualTo west) && (vehicle player != player)) then {
+		[] call life_fnc_copOpener;
+		};
+	};
 	//Map Key
 	case _mapKey: {
 		switch (playerSide) do {
@@ -93,6 +114,7 @@ switch (_code) do {
 			life_curWep_h = currentWeapon player;
 			player action ["SwitchWeapon", player, player, 100];
 			player switchCamera cameraView;
+			[] call life_fnc_playerSkins;
 		};
 
 		if(!_shift && _ctrlKey && !isNil "life_curWep_h" && {!(EQUAL(life_curWep_h,""))}) then {
@@ -110,22 +132,40 @@ switch (_code) do {
 				_handle = [] spawn life_fnc_actionKeyHandler;
 				waitUntil {scriptDone _handle};
 				life_action_inUse = false;
+				[] call life_fnc_playerSkins;
 			};
 		};
 	};
 
+	case 15:
+	{
+		cutText [format["Oh shit waddup!"], "PLAIN DOWN"];
+		player playActionNow "gestureHi";
+	};
+
 	//Restraining (Shift + R)
-	case 19: {
-		if(_shift) then {_handled = true;};
-		if(_shift && playerSide == west && {!isNull cursorTarget} && {cursorTarget isKindOf "Man"} && {(isPlayer cursorTarget)} && {(side cursorTarget in [civilian,independent])} && {alive cursorTarget} && {cursorTarget distance player < 3.5} && {!(cursorTarget GVAR "Escorting")} && {!(cursorTarget GVAR "restrained")} && {speed cursorTarget < 1}) then {
-			[] call life_fnc_restrainAction;
+case 19: {
+	if(_shift) then {_handled = true;};
+	if(_shift && playerSide isEqualTo west && {!isNull cursorObject} && {cursorObject isKindOf "Man"} && {(isPlayer cursorObject)} && {(side cursorObject in [west,civilian,independent])} && {alive cursorObject} && {cursorObject distance player < 4} && {!(cursorObject GVAR "Escorting")} && {!(cursorObject GVAR "restrained")} && {speed cursorObject < 1}) then
+	{
+		[] call life_fnc_restrainAction;
+	};
+	if(_shift && playerSide isEqualTo civilian && {!isNull cursorObject} && {cursorObject isKindOf "Man"} && {(isPlayer cursorObject)} && {(side cursorObject in [west,civilian,independent])} && {alive cursorObject} && {cursorObject distance player < 3.5} && {!(cursorObject GVAR "Escorting")} && {!(cursorObject GVAR "restrained")} && {speed cursorObject < 1}) then
+	{
+		if((animationState cursorTarget) isEqualTo "Incapacitated" && (currentWeapon player isEqualTo primaryWeapon player OR currentWeapon player isEqualTo handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable["restrained",false]) && !life_istazed && !(player getVariable["surrender",false])) then
+			{
+		[] call life_fnc_civRestrainAction;
 		};
 	};
+};
 
 	//Knock out, this is experimental and yeah... (Shift + G)
 	case 34: {
 		if(_shift) then {_handled = true;};
-		if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && isPlayer cursorTarget && alive cursorTarget && cursorTarget distance player < 4 && speed cursorTarget < 1) then {
+		if (safezone) exitWith {
+			hint "You cannot knock out within a safezone!";
+		};
+		if(_shift && playerSide isEqualTo civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && isPlayer cursorTarget && alive cursorTarget && cursorTarget distance player < 4 && speed cursorTarget < 1) then {
 			if((animationState cursorTarget) != "Incapacitated" && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player GVAR ["restrained",false]) && !life_istazed && !life_isknocked) then {
 				[cursorTarget] spawn life_fnc_knockoutAction;
 			};
@@ -141,13 +181,17 @@ switch (_code) do {
 				};
 			} else {
 				private "_list";
-				_containers = [getPosATL player, ["Box_IND_Grenades_F","B_supplyCrate_F"], 2.5] call life_fnc_nearestObjects;
-				if (count _containers > 0) then {
-					_container = _containers select 0;
-					[_container] spawn life_fnc_openInventory;
+				_list = ((ASLtoATL (getPosASL player)) nearEntities [["Box_IND_Grenades_F","B_supplyCrate_F"], 2.5]) select 0;
+				if (!(isNil "_list")) then {
+					_house = nearestObject [(ASLtoATL (getPosASL _list)), "House"];
+					if (_house getVariable ["locked", false]) then {
+						hint localize "STR_House_ContainerDeny";
+					} else {
+						[_list] spawn life_fnc_openInventory;
+					};
 				} else {
 					_list = ["landVehicle","Air","Ship"];
-					if(KINDOF_ARRAY(cursorTarget,_list) && {player distance cursorTarget < 7} && {vehicle player == player} && {alive cursorTarget} && {!life_action_inUse}) then {
+					if(KINDOF_ARRAY(cursorTarget,_list) && {player distance cursorTarget < 7} && {isNull objectParent player} && {alive cursorTarget} && {!life_action_inUse}) then {
 						if(cursorTarget in life_vehicles) then {
 							[cursorTarget] spawn life_fnc_openInventory;
 						};
@@ -163,7 +207,7 @@ switch (_code) do {
 		if(_shift && playerSide in [west,independent]) then {
 			if(vehicle player != player && (typeOf vehicle player) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F","C_Hatchback_01_sport_F","B_Heli_Light_01_F","B_Heli_Transport_01_F"]) then {
 				if(!isNil {vehicle player GVAR "lights"}) then {
-					if(playerSide == west) then {
+					if(playerSide isEqualTo west) then {
 						[vehicle player] call life_fnc_sirenLights;
 					} else {
 						[vehicle player] call life_fnc_medicSirenLights;
@@ -176,13 +220,17 @@ switch (_code) do {
 		if(!_alt && !_ctrlKey) then { [] call life_fnc_radar; };
 	};
 
+	case 49:
+	{
+		if(_shift) then {_handled = true;};
+	    if (_shift) then { [] spawn life_fnc_activateNitro;};
+	};
+
 	//Y Player Menu
 	case 21: {
 		if(!_alt && !_ctrlKey && !dialog && !(player GVAR ["restrained",false]) && {!life_action_inUse}) then {
 			if(!_shift) then {
 				[] call life_fnc_p_openMenu;
-			} else {
-				[] call life_fnc_altisPhone;
 			};
 		};
 	};
@@ -204,7 +252,7 @@ switch (_code) do {
 			} else {
 				titleText [localize "STR_MISC_SirensON","PLAIN"];
 				_veh SVAR ["siren",true,true];
-				if(playerSide == west) then {
+				if(playerSide isEqualTo west) then {
 					[_veh] remoteExec ["life_fnc_copSiren",RCLIENT];
 				} else {
 					[_veh] remoteExec ["life_fnc_medicSiren",RCLIENT];
@@ -229,13 +277,13 @@ switch (_code) do {
 	//U Key
 	case 22: {
 		if(!_alt && !_ctrlKey) then {
-			if(vehicle player == player) then {
+			if(isNull objectParent player) then {
 				_veh = cursorTarget;
 			} else {
 				_veh = vehicle player;
 			};
 
-			if(_veh isKindOf "House_F" && {playerSide == civilian}) then {
+			if(_veh isKindOf "House_F" && {playerSide isEqualTo civilian}) then {
 				if(_veh in life_vehicles && player distance _veh < 8) then {
 					_door = [_veh] call life_fnc_nearestDoor;
 					if(EQUAL(_door,0)) exitWith {hint localize "STR_House_Door_NotNear"};
@@ -304,6 +352,7 @@ switch (_code) do {
 							_veh animateDoor ['DoorR_Back_Open ',1];
 						};
 						systemChat localize "STR_MISC_VehUnlock";
+						[_veh,"UnlockCarSound"] remoteExec ["life_fnc_say3D",RANY];
 					} else {
 						if(local _veh) then {
 							_veh lock 2;
@@ -353,11 +402,23 @@ switch (_code) do {
 							_veh animateDoor ['DoorR_Back_Open ',0];
 						};
 						systemChat localize "STR_MISC_VehLock";
+						[_veh,"LockCarSound"] remoteExec ["life_fnc_say3D",RANY];
 					};
 				};
 			};
 		};
 	};
+};
+
+if (life_barrier_active) then {
+    switch (_code) do
+    {
+        case 57: //space key
+        {
+            [] spawn life_fnc_placeablesPlaceComplete;
+        };
+    };
+    true;
 };
 
 _handled;

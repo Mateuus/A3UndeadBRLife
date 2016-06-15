@@ -24,6 +24,7 @@ life_action_inUse = true; //Lockout the controls.
 _target SVAR ["Reviving",player,TRUE];
 //Setup our progress bar
 disableSerialization;
+[player,"defib"] remoteExec ["life_fnc_say3D",RANY];
 5 cutRsc ["life_progress","PLAIN"];
 _ui = GVAR_UINS ["life_progress",displayNull];
 _progressBar = _ui displayCtrl 38201;
@@ -33,7 +34,7 @@ _progressBar progressSetPosition 0.01;
 _cP = 0.01;
 
 //Lets reuse the same thing!
-while {true} do {
+for "_i" from 0 to 1 step 0 do {
 	if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then {
 		[player,"AinvPknlMstpSnonWnonDnon_medic_1"] remoteExecCall ["life_fnc_animSync",RCLIENT];
 		player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
@@ -66,7 +67,8 @@ if((player GVAR ["restrained",false])) exitWith {life_action_inUse = false;};
 if(!isNil "_badDistance") exitWith {titleText[localize "STR_Medic_TooFar","PLAIN"]; life_action_inUse = false;};
 if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};
 
-ADD(BANK,_reviveCost);
+ADD(TTPBANK,_reviveCost);
+[1] call SOCK_fnc_updatePartial;
 
 life_action_inUse = false;
 _target SVAR ["Revive",TRUE,TRUE];

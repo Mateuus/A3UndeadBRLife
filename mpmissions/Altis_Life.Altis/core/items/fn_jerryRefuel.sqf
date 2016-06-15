@@ -7,7 +7,7 @@
 	Refuels the vehicle if the player has a fuel can.
 */
 private["_vehicle","_displayName","_upp","_ui","_progress","_pgText","_cP","_previousState"];
-_vehicle = cursorTarget;
+_vehicle = cursorObject;
 life_interrupted = false;
 
 if(isNull _vehicle) exitWith {hint localize "STR_ISTR_Jerry_NotLooking"};
@@ -31,7 +31,7 @@ _pgText ctrlSetText format["%2 (1%1)...","%",_upp];
 _progress progressSetPosition 0.01;
 _cP = 0.01;
 
-while{true} do {
+for "_i" from 0 to 1 step 0 do {
 	if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then {
 		[player,"AinvPknlMstpSnonWnonDnon_medic_1",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
 		player switchMove "AinvPknlMstpSnonWnonDnon_medic_1";

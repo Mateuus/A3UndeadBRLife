@@ -9,7 +9,7 @@
 private["_house","_action","_container","_containerType","_containers"];
 _container = param [0,ObjNull,[ObjNull]];
 _containerType = typeOf _container;
-_house = nearestBuilding (getPosATL player);
+_house = nearestObject [player, "House"];
 if(!(_house in life_vehicles)) exitWith {hint localize "STR_ISTR_Box_NotinHouse"};
 if(isNull _container) exitWith {};
 _containers = _house GVAR ["containers",[]];
@@ -39,10 +39,9 @@ if(_action) then {
 
 	{
 		if (_x == _container) then {
-			_containers set [_forEachIndex,666];
+			_containers deleteAt _forEachIndex;
 		};
 	} forEach _containers;
-	_containers = _containers - [666];
 	_house SVAR ["containers",_containers,true];
 
 	[true,_box,1] call life_fnc_handleInv;

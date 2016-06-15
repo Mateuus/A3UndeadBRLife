@@ -13,18 +13,19 @@ life_corpse = _corpse;
 
 //Comment this code out if you want them to keep the weapon on the ground.
 _containers = nearestObjects[getPosATL _corpse,["WeaponHolderSimulated"],5]; //Fetch list of containers (Simulated = weapons)
-{deleteVehicle _x;} foreach _containers; //Delete the containers.
+{deleteVehicle _x;} forEach _containers; //Delete the containers.
 
 //Set some vars on our new body.
 _unit SVAR ["restrained",false,true];
 _unit SVAR ["Escorting",false,true];
-_unit SVAR ["transporting",false,true]; //Again why the fuck am I setting this? Can anyone tell me?
+_unit SVAR ["transporting",false,true];
+_unit SVAR ["masked",false,true];
 _unit SVAR ["playerSurrender",false,true];
 _unit SVAR ["steam64id",steamid,true]; //Reset the UID.
 _unit SVAR ["realname",profileName,true]; //Reset the players name.
 
 _unit addRating 1e12; //Set our rating to a high value, this is for a ARMA engine thing.
-player playMoveNow "amovppnemstpsraswrfldnon";
+player playMoveNow "AmovPpneMstpSrasWrflDnon";
 
 [] call life_fnc_setupActions;
 [_unit,life_settings_enableSidechannel,playerSide] remoteExecCall ["TON_fnc_managesc",RSERV];

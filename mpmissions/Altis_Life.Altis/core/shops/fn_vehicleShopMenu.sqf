@@ -19,7 +19,7 @@ private["_shop","_sideCheck","_spawnPoints","_shopFlag","_shopTitle","_disableBu
 disableSerialization;
 //Long boring series of checks
 if(dialog) exitWith {};
-if(_shop == "") exitWith {};
+if(_shop isEqualTo "") exitWith {};
 if(_sideCheck != sideUnknown && {playerSide != _sideCheck}) exitWith {hint localize "STR_Shop_Veh_NotAllowed"};
 if(!createDialog "Life_Vehicle_Shop_v2") exitWith {};
 
@@ -51,7 +51,7 @@ ctrlShow [2304,false];
 
 	if(!(EQUAL(_levelValue,-1))) then {
 		_level = GVAR_MNS _levelName;
-		if(typeName _level == typeName {}) then {_level = FETCH_CONST(_level);};
+		if(_level isEqualType {}) then {_level = FETCH_CONST(_level);};
 
 		_showall = switch(_levelType) do {
 			case "SCALAR": {_level >= _levelValue};
@@ -68,7 +68,7 @@ ctrlShow [2304,false];
 		_control lbSetData [(lbSize _control)-1,_className];
 		_control lbSetValue [(lbSize _control)-1,_ForEachIndex];
 	};
-} foreach _vehicleList;
+} forEach _vehicleList;
 
 [] call life_fnc_vehicleShopInit3DPreview;
 ((findDisplay 2300) displayCtrl 2302) lbSetCurSel 0;

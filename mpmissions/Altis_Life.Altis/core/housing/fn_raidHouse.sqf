@@ -2,7 +2,7 @@
 /*
 	File: fn_raidHouse.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Raids the players house?
 */
@@ -32,8 +32,7 @@ _progressBar progressSetPosition 0.01;
 _cP = 0.01;
 _cpRate = 0.0075;
 
-while {true} do
-{
+for "_i" from 0 to 1 step 0 do {
 	sleep 0.26;
 	if(isNull _ui) then {
 		5 cutRsc ["life_progress","PLAIN"];
@@ -58,29 +57,29 @@ _value = 0;
 {
 	_var = SEL(_x,0);
 	_val = SEL(_x,1);
-	
+
 	if(EQUAL(ITEM_ILLEGAL(_var),1)) then {
 		if(!(EQUAL(ITEM_SELLPRICE(_var),-1))) then {
-			_houseInvData set[_forEachIndex,-1];
-			SUB(_houseInvData,[-1]);
+			_houseInvData deleteAt _forEachIndex;
 			SUB(_houseInvVal,(([_var] call life_fnc_itemWeight) * _val));
 			ADD(_value,(_val * ITEM_SELLPRICE(_var)));
 		};
 	};
-} foreach (SEL(_houseInv,0));
+} forEach (SEL(_houseInv,0));
 
 if(_value > 0) then {
 	[0,"STR_House_Raid_Successful",true,[[_value] call life_fnc_numberText]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
-	ADD(BANK,round(_value / 2));
-	
+	ADD(TTPBANK,round(_value / 2));
+	[1] call SOCK_fnc_updatePartial;
+
 	_house SVAR ["Trunk",[_houseInvData,_houseInvVal],true];
-	
+
 	if(life_HC_isActive) then {
 		[_house] remoteExecCall ["HC_fnc_updateHouseTrunk",HC_Life];
 	} else {
 		[_house] remoteExecCall ["TON_fnc_updateHouseTrunk",RSERV];
 	};
-	
+
 } else {
 	hint localize "STR_House_Raid_NoIllegal";
 };

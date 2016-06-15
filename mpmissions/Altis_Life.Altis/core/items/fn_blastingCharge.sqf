@@ -13,15 +13,15 @@ if(isNull _vault) exitWith {}; //Bad object
 if(typeOf _vault != "Land_CargoBox_V1_F") exitWith {hint localize "STR_ISTR_Blast_VaultOnly"};
 if(_vault GVAR ["chargeplaced",false]) exitWith {hint localize "STR_ISTR_Blast_AlreadyPlaced"};
 if(_vault GVAR ["safe_open",false]) exitWith {hint localize "STR_ISTR_Blast_AlreadyOpen"};
-if({side _x == west} count playableUnits < (LIFE_SETTINGS(getNumber,"cops_online_min"))) exitWith {
- 	hint format [localize "STR_Civ_NotEnoughCops",(LIFE_SETTINGS(getNumber,"cops_online_min"))]
+if(west countSide playableUnits < (LIFE_SETTINGS(getNumber,"minimum_cops"))) exitWith {
+ 	hint format [localize "STR_Civ_NotEnoughCops",(LIFE_SETTINGS(getNumber,"minimum_cops"))]
 };
-if(life_fed_break < 2) exitWith {hint localize "STR_ISTR_Blast_Exploit"};
-life_fed_break = 0;
+if((nearestObject [[6626.5,15654.9,0],"Land_Cargo_House_V1_F"]) GVAR ["locked",true]) exitWith {hint localize "STR_ISTR_Blast_Exploit"};
 if(!([false,"blastingcharge",1] call life_fnc_handleInv)) exitWith {}; //Error?
 
 _vault SVAR ["chargeplaced",true,true];
 [0,"STR_ISTR_Blast_Placed"] remoteExecCall ["life_fnc_broadcast",west];
+[] call SOCK_fnc_updateRequest;
 hint localize "STR_ISTR_Blast_KeepOff";
 _handle = [] spawn life_fnc_demoChargeTimer;
 [] remoteExec ["life_fnc_demoChargeTimer",west];

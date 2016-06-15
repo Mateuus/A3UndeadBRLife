@@ -2,7 +2,7 @@
 /*
 	File: fn_copBreakDoor.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Allows cops to 'kick' in the door?
 */
@@ -17,7 +17,7 @@ if(!([_uid] call life_fnc_isUIDActive)) exitWith {hint localize "STR_House_Raid_
 
 _door = [_house] call life_fnc_nearestDoor;
 if(EQUAL(_door,0)) exitWith {hint localize "STR_Cop_NotaDoor"};
-if((_house GVAR [format["bis_disabled_Door_%1",_door],0]) == 0) exitWith {hint localize "STR_House_Raid_DoorUnlocked"};
+if((_house GVAR [format["bis_disabled_Door_%1",_door],0]) isEqualTo 0) exitWith {hint localize "STR_House_Raid_DoorUnlocked"};
 
 life_action_inUse = true;
 
@@ -35,7 +35,7 @@ _cpRate = 0.0092;
 
 [2,"STR_House_Raid_NOTF",true,[(_house GVAR "house_owner") select 1]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
 
-while {true} do {
+for "_i" from 0 to 1 step 0 do {
 	if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then {
 		[player,"AinvPknlMstpSnonWnonDnon_medic_1",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
 		player switchMove "AinvPknlMstpSnonWnonDnon_medic_1";

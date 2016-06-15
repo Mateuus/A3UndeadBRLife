@@ -2,7 +2,7 @@
 /*
 	File: fn_gangUpgrade.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Determinds the upgrade price and blah
 */
@@ -19,23 +19,24 @@ _action = [
 ] call BIS_fnc_guiMessage;
 
 if(_action) then {
-	if(BANK < _upgradePrice) exitWith {
+	if(TTPBANK < _upgradePrice) exitWith {
 		hint parseText format[
 			(localize "STR_GNOTF_NotEoughMoney_2")+ "<br/><br/>" +(localize "STR_GNOTF_Current")+ " <t color='#8cff9b'>$%1</t><br/>" +(localize "STR_GNOTF_Lacking")+ " <t color='#FF0000'>$%2</t>",
-			[BANK] call life_fnc_numberText,
-			[_upgradePrice - BANK] call life_fnc_numberText
+			[TTPBANK] call life_fnc_numberText,
+			[_upgradePrice - TTPBANK] call life_fnc_numberText
 		];
 	};
-	SUB(BANK,_upgradePrice);
+	SUB(TTPBANK,_upgradePrice);
+	[1] call SOCK_fnc_updatePartial;
 	grpPlayer SVAR ["gang_maxMembers",_slotUpgrade,true];
 	hint parseText format[localize "STR_GNOTF_UpgradeSuccess",_maxMembers,_slotUpgrade,[_upgradePrice] call life_fnc_numberText];
-	
+
 	if(life_HC_isActive) then {
 		[2,grpPlayer] remoteExec ["HC_fnc_updateGang",HC_Life];
 	} else {
 		[2,grpPlayer] remoteExec ["TON_fnc_updateGang",RSERV];
 	};
-	
+
 } else {
 	hint localize "STR_GNOTF_UpgradeCancel";
 };

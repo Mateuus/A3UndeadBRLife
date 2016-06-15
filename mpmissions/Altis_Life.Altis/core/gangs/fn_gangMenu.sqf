@@ -2,7 +2,7 @@
 /*
 	File: fn_gangMenu.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	31 hours of no sleep screw your description.
 */
@@ -41,7 +41,7 @@ lbClear _members;
 		_members lbAdd format["%1",(_x GVAR ["realname",name _x])];
 		_members lbSetData [(lbSize _members)-1,str(_x)];
 	};
-} foreach (units grpPlayer);
+} forEach (units grpPlayer);
 
 _grpMembers = units grpPlayer;
 _allUnits = playableUnits;
@@ -49,14 +49,13 @@ _allUnits = playableUnits;
 //Clear out the list..
 {
 	if(_x in _grpMembers OR side _x != civilian && isNil {(group _x) getVariable "gang_id"}) then {
-		_allUnits set[_forEachIndex,-1];
+		_allUnits deleteAt _forEachIndex;
 	};
-} foreach _allUnits;
-SUB(_allUnits,[-1]);
+} forEach _allUnits;
 
 _ctrl = CONTROL(2620,2632);
 lbClear _ctrl; //Purge the list
 {
 	_ctrl lbAdd format["%1",_x GVAR ["realname",name _x]];
 	_ctrl lbSetData [(lbSize _ctrl)-1,str(_x)];
-} foreach _allUnits;
+} forEach _allUnits;

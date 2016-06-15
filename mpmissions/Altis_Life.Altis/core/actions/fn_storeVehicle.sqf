@@ -21,13 +21,13 @@ if(vehicle player != player) then {
 					_vehicle = _x;
 				};
 			};
-		} foreach _nearVehicles;
+		} forEach _nearVehicles;
 	};
 };
 
 if(isNil "_vehicle") exitWith {hint localize "STR_Garage_NoNPC"};
 if(isNull _vehicle) exitWith {};
-
+if(!alive _vehicle) exitWith {hint localize "STR_Garage_SQLError_Destroyed"};
 
 _storetext = localize "STR_Garage_Store_Success";
 

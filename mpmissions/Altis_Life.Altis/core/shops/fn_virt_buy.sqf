@@ -7,7 +7,7 @@
 	Buy a virtual item from the store.
 */
 private["_type","_price","_amount","_diff","_name","_hideout"];
-if((lbCurSel 2401) == -1) exitWith {hint localize "STR_Shop_Virt_Nothing"};
+if((lbCurSel 2401) isEqualTo -1) exitWith {hint localize "STR_Shop_Virt_Nothing"};
 _type = lbData[2401,(lbCurSel 2401)];
 _price = lbValue[2401,(lbCurSel 2401)];
 _amount = ctrlText 2404;
@@ -40,13 +40,13 @@ if(([true,_type,_amount] call life_fnc_handleInv)) then
 			_funds = grpPlayer getVariable "gang_bank";
 			_funds = _funds - (_price * _amount);
 			grpPlayer setVariable["gang_bank",_funds,true];
-			
+
 			if(life_HC_isActive) then {
 				[1,grpPlayer] remoteExecCall ["HC_fnc_updateGang",HC_Life];
 			} else {
 				[1,grpPlayer] remoteExecCall ["TON_fnc_updateGang",RSERV];
 			};
-			
+
 		} else {
 			if((_price * _amount) > CASH) exitWith {[false,_type,_amount] call life_fnc_handleInv; hint localize "STR_NOTF_NotEnoughMoney";};
 			hint format[localize "STR_Shop_Virt_BoughtItem",_amount,(localize _name),[(_price * _amount)] call life_fnc_numberText];
@@ -58,6 +58,7 @@ if(([true,_type,_amount] call life_fnc_handleInv)) then
 		SUB(CASH,(_price * _amount));
 	};
 	[] call life_fnc_virt_update;
+	[] call life_fnc_playerSkins;
 };
 
 [0] call SOCK_fnc_updatePartial;

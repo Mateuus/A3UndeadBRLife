@@ -12,7 +12,7 @@ _control = (_this select 0) select 0;
 _selection = (_this select 0) select 1;
 _price = (findDisplay 3100) displayCtrl 3102;
 _total = (findDisplay 3100) displayCtrl 3106;
-if(_selection == -1) exitWith {hint localize "STR_Shop_NoSelection";};
+if(_selection isEqualTo -1) exitWith {hint localize "STR_Shop_NoSelection";};
 if(isNull _control) exitWith {hint localize "STR_Shop_NoDisplay"};
 if(life_cMenu_lock) exitWith {};
 life_cMenu_lock = true;
@@ -42,7 +42,7 @@ _totalPrice = 0;
 	if(_x != -1) then {
 		_totalPrice = _totalPrice + _x;
 	};
-} foreach life_clothing_purchase;
+} forEach life_clothing_purchase;
 
 _total ctrlSetStructuredText parseText format [(localize "STR_Shop_Total")+ " <t color='#8cff9b'>$%1</t>",[_totalPrice] call life_fnc_numberText];
 

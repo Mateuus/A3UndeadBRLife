@@ -2,13 +2,13 @@
 /*
 	File: fn_weaponShopBuySell.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Master handling of the weapon shop for buying / selling an item.
 */
 disableSerialization;
 private["_price","_item","_itemInfo","_bad"];
-if((lbCurSel 38403) == -1) exitWith {hint localize "STR_Shop_Weapon_NoSelect"};
+if((lbCurSel 38403) isEqualTo -1) exitWith {hint localize "STR_Shop_Weapon_NoSelect"};
 _price = lbValue[38403,(lbCurSel 38403)]; if(isNil "_price") then {_price = 0;};
 _item = lbData[38403,(lbCurSel 38403)];
 _itemInfo = [_item] call life_fnc_fetchCfgDetails;
@@ -23,7 +23,7 @@ if((_itemInfo select 6) != "CfgVehicles") then {
 
 if(_bad != "") exitWith {hint _bad};
 
-if((uiNamespace getVariable["Weapon_Shop_Filter",0]) == 1) then {
+if((uiNamespace getVariable["Weapon_Shop_Filter",0]) isEqualTo 1) then {
 	ADD(CASH,_price);
 	[_item,false] call life_fnc_handleItem;
 	hint parseText format[localize "STR_Shop_Weapon_Sold",_itemInfo select 1,[_price] call life_fnc_numberText];
@@ -47,14 +47,14 @@ if((uiNamespace getVariable["Weapon_Shop_Filter",0]) == 1) then {
 			_funds = _funds - _price;
 			grpPlayer setVariable["gang_bank",_funds,true];
 			[_item,true] spawn life_fnc_handleItem;
-			
+
 			if(life_HC_isActive) then {
 				[1,grpPlayer] remoteExecCall ["HC_fnc_updateGang",HC_Life];
 			} else {
 				[1,grpPlayer] remoteExecCall ["TON_fnc_updateGang",RSERV];
 			};
 
-			
+
 		} else {
 			if(_price > CASH) exitWith {hint localize "STR_NOTF_NotEnoughMoney"};
 			hint parseText format[localize "STR_Shop_Weapon_BoughtItem",_itemInfo select 1,[_price] call life_fnc_numberText];
@@ -68,4 +68,5 @@ if((uiNamespace getVariable["Weapon_Shop_Filter",0]) == 1) then {
 		[_item,true] spawn life_fnc_handleItem;
 	};
 };
+[0] call SOCK_fnc_updatePartial;
 [] call life_fnc_saveGear;

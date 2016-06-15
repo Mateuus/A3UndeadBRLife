@@ -1,15 +1,26 @@
 #include "..\script_macros.hpp"
 /*
 	File: init.sqf
-	Author: 
-	
+	Author:
+
 	Description:
 	Master client initialization file
 */
+
+private["_server_isReady","_extDB_notLoaded"];
+
+if (life_HC_isActive) then {
+    _server_isReady = life_HC_server_isReady;
+    _extDB_notLoaded = life_HC_server_extDB_notLoaded;
+} else {
+    _server_isReady = life_server_isReady;
+    _extDB_notLoaded = life_server_extDB_notLoaded;
+};
+
 life_firstSpawn = true;
 life_session_completed = false;
 private["_handle","_timeStamp"];
-0 cutText["Setting up client, please wait...","BLACK FADED"];
+0 cutText["Setting up client, exit game if taking too long, DO NOT RESPAWN...","BLACK FADED"];
 0 cutFadeOut 9999999;
 _timeStamp = diag_tickTime;
 diag_log "------------------------------------------------------------------------------------------------------";
@@ -26,15 +37,12 @@ diag_log "::Life Client:: Initialization Variables";
 //Set bank amount for new players
 switch (playerSide) do {
 	case west: {
-		BANK = LIFE_SETTINGS(getNumber,"bank_cop");
 		life_paycheck = LIFE_SETTINGS(getNumber,"paycheck_cop");
 	};
 	case civilian: {
-		BANK = LIFE_SETTINGS(getNumber,"bank_civ");
 		life_paycheck = LIFE_SETTINGS(getNumber,"paycheck_civ");
 	};
 	case independent: {
-		BANK = LIFE_SETTINGS(getNumber,"bank_med");
 		life_paycheck = LIFE_SETTINGS(getNumber,"paycheck_med");
 	};
 };
@@ -42,6 +50,7 @@ switch (playerSide) do {
 diag_log "::Life Client:: Variables initialized";
 diag_log "::Life Client:: Setting up Eventhandlers";
 [] call life_fnc_setupEVH;
+[] call life_fnc_cellPhoneCheck;
 
 diag_log "::Life Client:: Eventhandlers completed";
 diag_log "::Life Client:: Setting up user actions";
@@ -59,7 +68,7 @@ diag_log "::Life Client:: Waiting for the server to be ready..";
 waitUntil{!isNil "life_server_isReady"};
 waitUntil{(life_server_isReady OR !isNil "life_server_extDB_notLoaded")};
 
-if(!isNil "life_server_extDB_notLoaded" && {life_server_extDB_notLoaded != ""}) exitWith {
+if(!isNil "life_server_extDB_notLoaded" && {life_server_extDB_notLoaded isEqualType []}) exitWith {
 	diag_log life_server_extDB_notLoaded;
 	999999 cutText [life_server_extDB_notLoaded,"BLACK FADED"];
 	999999 cutFadeOut 99999999;
@@ -90,9 +99,12 @@ switch (playerSide) do {
 	};
 };
 
+[] spawn life_fnc_statusBar;
+
 player SVAR ["restrained",false,true];
 player SVAR ["Escorting",false,true];
 player SVAR ["transporting",false,true];
+player SVAR ["masked",false,true];
 player SVAR ["playerSurrender",false,true];
 
 diag_log "Past Settings Init";
@@ -132,7 +144,7 @@ publicVariableServer "life_fnc_RequestClientId"; //Variable OwnerID for Headless
 [] spawn life_fnc_survival;
 
 [] spawn {
-	while {true} do {
+	for "_i" from 0 to 1 step 0 do {
 		waitUntil{(!isNull (findDisplay 49)) && (!isNull (findDisplay 602))}; // Check if Inventory and ESC dialogs are open
 		(findDisplay 49) closeDisplay 2; // Close ESC dialog
 		(findDisplay 602) closeDisplay 2; // Close Inventory dialog
@@ -142,12 +154,40 @@ publicVariableServer "life_fnc_RequestClientId"; //Variable OwnerID for Headless
 CONSTVAR(life_paycheck); //Make the paycheck static.
 if(EQUAL(LIFE_SETTINGS(getNumber,"enable_fatigue"),0)) then {player enableFatigue false;};
 
-if(EQUAL(LIFE_SETTINGS(getNumber,"Pump_service"),1)) then{
+if(EQUAL(LIFE_SETTINGS(getNumber,"pump_service"),1)) then{
 	[] execVM "core\fn_setupStationService.sqf";
 };
-
+/*
+while {true} do
+{
+  _veh = vehicle player;
+  if (player action ["getOut", _veh]) then
+  {
+    life_seatbelt = false;
+  };
+};
+*/
 if(life_HC_isActive) then {
 	[getPlayerUID player,player getVariable["realname",name player]] remoteExec ["HC_fnc_wantedProfUpdate",HC_Life];
 } else {
 	[getPlayerUID player,player getVariable["realname",name player]] remoteExec ["life_fnc_wantedProfUpdate",RSERV];
 };
+
+[] spawn life_fnc_autoSave;
+
+//WHEN PLAYER LOGS IN AND HAS HAD SALES WHILE OFF HE GETS MESSAGED THE TOTAL AND THEN DELETES THE ITEMS FROM THE DB
+waitUntil {vAH_loaded};
+private["_total","_uid","_toDel"];
+_total = 0;
+_toDel = [];
+_uid = getPlayerUID player;
+{if ((SEL(_x,5) isEqualTo _uid) && (SEL(_x,7) isEqualTo 2)) then {_total = _total + (SEL(_x,4));_toDel pushBack (SEL(_x,0))};}forEach all_ah_items;
+if (_total > 0) then
+{
+	{
+		[1,_x] remoteExec ["TON_fnc_vAH_update",RSERV];
+	}forEach _toDel;
+	[0,format[localize "STR_AH_LogInRec",[_total]call life_fnc_numberText]] remoteExecCall ["life_fnc_broadcast",player];
+	ADD(TTPBANK,_total);
+};
+[1] call SOCK_fnc_updatePartial;

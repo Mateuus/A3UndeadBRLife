@@ -13,21 +13,19 @@ if((player GVAR "restrained")) exitWith {hint localize "STR_NOTF_isrestrained";}
 if((player GVAR "playerSurrender")) exitWith {hint localize "STR_NOTF_surrender";};
 
 life_action_inUse = true;
-
 _zone = "";
 _requiredItem = "";
 _zoneSize = (getNumber(missionConfigFile >> "CfgGather" >> "zoneSize"));
 _exit = false;
 
 _resourceCfg = missionConfigFile >> "CfgGather" >> "Resources";
-for[{_i = 0},{_i < count(_resourceCfg)},{_i = _i + 1}] do {
+for "_i" from 0 to count(_resourceCfg)-1 do {
 
 	_curConfig = (_resourceCfg select _i);
 	_resource = configName _curConfig;
 	_maxGather = getNumber(_curConfig >> "amount");
 	_resourceZones = getArray(_curConfig >> "zones");
 	_requiredItem = getText(_curConfig >> "item");
-
 	{
 		if((player distance (getMarkerPos _x)) < _zoneSize) exitWith {_zone = _x;};
 	} forEach _resourceZones;
@@ -35,7 +33,7 @@ for[{_i = 0},{_i < count(_resourceCfg)},{_i = _i + 1}] do {
 	if(_zone != "") exitWith {};
 };
 
-if(_zone == "") exitWith {life_action_inUse = false;};
+if(_zone isEqualTo "") exitWith {life_action_inUse = false;};
 
 if (_requiredItem != "") then
 {
@@ -45,7 +43,7 @@ if (_requiredItem != "") then
 	{
 		switch (_requiredItem) do
 		{
-			case "pickaxe": {titleText[(localize "STR_NOTF_Pickaxe"),"PLAIN"];};
+         //Messages here
 		};
 		life_action_inUse = false;
 		_exit = true;
@@ -56,7 +54,7 @@ if(_exit) exitWith {life_action_inUse = false;};
 
 _amount = round(random(_maxGather)) + 1;
 _diff = [_resource,_amount,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
-if(_diff == 0) exitWith {
+if(_diff isEqualTo 0) exitWith {
 	hint localize "STR_NOTF_InvFull";
 	life_action_inUse = false;
 };
@@ -82,3 +80,5 @@ if(([true,_resource,_diff] call life_fnc_handleInv)) then
 
 sleep 1;
 life_action_inUse = false;
+
+[] call life_fnc_hudUpdate;

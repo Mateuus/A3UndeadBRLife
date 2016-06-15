@@ -18,14 +18,17 @@ if(EQUAL(_who,"")) exitWith {};
 
 titleText[format[localize "STR_Civ_KnockedOut",_who],"PLAIN"];
 player playMoveNow "Incapacitated";
+disableUserInput true;
 
 _obj = "Land_ClutterCutter_small_F" createVehicle ASLTOATL(visiblePositionASL player);
 _obj setPosATL ASLTOATL(visiblePositionASL player);
 
 life_isknocked = true;
+[] call SOCK_fnc_updateRequest;
 player attachTo [_obj,[0,0,0]];
 sleep 15;
-player playMoveNow "amovppnemstpsraswrfldnon";
+player playMoveNow "AmovPpneMstpSrasWrflDnon";
+disableUserInput false;
 detach player;
 deleteVehicle _obj;
 life_isknocked = false;

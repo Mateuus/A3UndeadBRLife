@@ -45,7 +45,7 @@ for "_i" from 1 to 125 do {
 			};
 		};
 	};
-} foreach (allVariables uiNamespace);
+} forEach (allVariables uiNamespace);
 
 /* Some people may be like WTF ALL DEM Checks... It was either this or lazy eval which could have a performance impact on the client. */
 _checkFunction = {
@@ -66,7 +66,7 @@ _checkFunction = {
 				};
 			};
 		};
-	} foreach allVariables missionNamespace;
+	} forEach allVariables missionNamespace;
 };
 
 _uiCheckFunction = {
@@ -89,11 +89,10 @@ _uiCheckFunction = {
 				};
 			};
 		};
-	} foreach allVariables uiNamespace;
+	} forEach allVariables uiNamespace;
 };
 
-while {true} do {
-	systemChat "Calling check";
+for "_i" from 0 to 1 step 0 do {
 	objNull call _checkFunction;
 	uiSleep 10;
 	objNull call _uiCheckFunction;

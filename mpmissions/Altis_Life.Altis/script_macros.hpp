@@ -4,8 +4,8 @@
 #define SUB(var1,var2) var1 = var1 - var2
 #define ADD(var1,var2) var1 = var1 + var2
 #define SEL(ARRAY,INDEX) (ARRAY select INDEX)
-#define CASH life_cash
-#define BANK life_atmbank
+#define CASH TTP_cash
+#define TTPBANK life_atmbank
 #define GANG_FUNDS grpPlayer getVariable ["gang_bank",0];
 
 //RemoteExec Macros
@@ -23,8 +23,8 @@
 #define GVAR_PNAS profileNamespace getVariable
 
 //Scripting Macros
-#define CONST(var1,var2) var1 = compileFinal (if(typeName var2 == "STRING") then {var2} else {str(var2)})
-#define CONSTVAR(var) var = compileFinal (if(typeName var == "STRING") then {var} else {str(var)})
+#define CONST(var1,var2) var1 = compileFinal (if(var2 isEqualType "") then {var2} else {str(var2)})
+#define CONSTVAR(var) var = compileFinal (if(var isEqualType "") then {var} else {str(var)})
 #define FETCH_CONST(var) (call var)
 #define PVAR_ALL(var) publicVariable var
 #define PVAR_SERV(var) publicVariableServer var
@@ -57,7 +57,7 @@
 
 //Condition Macros
 #define EQUAL(condition1,condition2) condition1 isEqualTo condition2
-#define KINDOF_ARRAY(a,b) [##a,##b] call {_veh = _this select 0;_types = _this select 1;_res = false; {if (_veh isKindOf _x) exitwith { _res = true };} forEach _types;_res}
+#define KINDOF_ARRAY(a,b) [##a,##b] call {_veh = _this select 0;_types = _this select 1;_res = false; {if (_veh isKindOf _x) exitWith { _res = true };} forEach _types;_res}
 
 //Config Macros
 #define FETCH_CONFIG(TYPE,CFG,SECTION,CLASS,ENTRY) TYPE(configFile >> CFG >> SECTION >> CLASS >> ENTRY)

@@ -7,12 +7,16 @@
 	Master action key handler, handles requests for picking up various items and
 	interacting with other players (Cops = Cop Menu for unrestrain,escort,stop escort, arrest (if near cop hq), etc).
 */
-private["_curTarget","_isWater","_CrateModelNames","_crate"];
-_curTarget = cursorTarget;
+private["_curObject","_isWater","_CrateModelNames","_crate","_fish","_animal","_whatIsIt","_handle","_curTarget"];
 _curObject = cursorObject;
+_curTarget = cursorTarget;
 if(life_action_inUse) exitWith {}; //Action is in use, exit to prevent spamming.
 if(life_interrupted) exitWith {life_interrupted = false;};
 _isWater = surfaceIsWater (visiblePositionASL player);
+
+if((player getVariable["isEscorting",false])) exitWith {
+	[] call life_fnc_copInteractionMenu;
+};
 
 if(EQUAL(LIFE_SETTINGS(getNumber,"global_ATM"),1)) then{
 	//Check if the player is near an ATM.
@@ -21,33 +25,30 @@ if(EQUAL(LIFE_SETTINGS(getNumber,"global_ATM"),1)) then{
 	};
 };
 
-if(isNull _curTarget) exitWith {
+if(isNull _curObject) exitWith {
 	if(_isWater) then {
-		_fishconfig = LIFE_SETTINGS(getArray,"animaltypes_fish");
-		_fishTypes = [position player, _fishconfig, 3] call life_fnc_nearestObjects;
-		if(count _fishTypes > 0) then {
-			_fish = _fishTypes select 0;
-			if ((typeOf _fish) == "Turtle_F" && !alive _fish) then {
+		_fish = (nearestObjects[player,(LIFE_SETTINGS(getArray,"animaltypes_fish")),3]) select 0;
+		if(!isNil "_fish") then {
+			if (!alive _fish) then {
 				[_fish] call life_fnc_catchFish;
-			} else {
-				if (!((typeOf _fish) == "Turtle_F")) then {
-					[_fish] call life_fnc_catchFish;
-				};
 			};
 		};
 	} else {
-		_animalconfig = LIFE_SETTINGS(getArray,"animaltypes_hunting");
-		_animals = [position player, _animalconfig, 3.5] call life_fnc_nearestObjects;
-		if (count _animals > 0) then {
-			_animal = _animals select 0;
+		_animal = (nearestObjects[player,(LIFE_SETTINGS(getArray,"animaltypes_hunting")),3]) select 0;
+		if (!isNil "_animal") then {
 			if (!alive _animal) then {
 				[_animal] call life_fnc_gutAnimal;
 			};
 		} else {
-			if(playerSide == civilian && !life_action_gathering) then {
-				if(life_action_gathering) exitWith {}; //Action is in use, exit to prevent spamming.
+			private "_handle";
+			if(playerSide isEqualTo civilian && !life_action_gathering) then {
+	      _whatIsIt = [] call life_fnc_whereAmI;
+				if(life_action_gathering) exitWith {};				 //Action is in use, exit to prevent spamming.
+				switch (_whatIsIt) do {
+					case "mine" : { _handle = [] spawn life_fnc_mine };
+					default { _handle = [] spawn life_fnc_gather };
+				};
 				life_action_gathering = true;
-				_handle = [] spawn life_fnc_gather;
 				waitUntil {scriptDone _handle};
 				life_action_gathering = false;
 			};
@@ -55,14 +56,14 @@ if(isNull _curTarget) exitWith {
 	};
 };
 
-if((_curTarget isKindOf "B_supplyCrate_F" OR _curTarget isKindOf "Box_IND_Grenades_F") && {player distance _curTarget < 3} ) exitWith {
-	if(alive _curTarget) then {
-		[_curTarget] call life_fnc_containerMenu;
+if((_curObject isKindOf "B_supplyCrate_F" OR _curObject isKindOf "Box_IND_Grenades_F") && {player distance _curObject < 3} ) exitWith {
+	if(alive _curObject) then {
+		[_curObject] call life_fnc_containerMenu;
 	};
 };
 
-if(_curTarget isKindOf "House_F" && {player distance _curTarget < 12} OR ((nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"]) == _curTarget OR (nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"]) == _curTarget)) exitWith {
-	[_curTarget] call life_fnc_houseMenu;
+if(_curObject isKindOf "House_F" && {player distance _curObject < 12} OR ((nearestObject [[6620.5,15660.9,0],"Land_Dome_Small_F"]) == _curObject OR (nearestObject [[6626.5,15654.9,0],"Land_Cargo_House_V1_F"]) == _curObject)) exitWith {
+	[_curObject] call life_fnc_houseMenu;
 };
 
 if(dialog) exitWith {}; //Don't bother when a dialog is open.
@@ -76,34 +77,40 @@ life_action_inUse = true;
 };
 
 //Check if it's a dead body.
-if(_curTarget isKindOf "Man" && {!alive _curTarget} && !(_curTarget GVAR["Revive",false]) && {playerSide in [west,independent]}) exitWith {
+if (_curObject isKindOf "Man" && !(_curObject isKindOf "Animal") && {!alive _curObject} && !(_curObject getVariable["Revive",false]) && {playerSide in [west,independent]}) exitWith {
 	//Hotfix code by ins0
-	if(((playerSide == west && {(EQUAL(LIFE_SETTINGS(getNumber,"revive_cops"),1))}) || playerSide == independent) && {"Medikit" in (items player)}) then {
-		[_curTarget] call life_fnc_revivePlayer;
+	if(((playerSide isEqualTo west && {(EQUAL(LIFE_SETTINGS(getNumber,"revive_cops"),1))}) || playerSide isEqualTo independent)) then {
+		if(life_inv_defibrillator > 0) then {
+			[_curObject] call life_fnc_revivePlayer;
+		};
 	};
+};
+
+if((_curTarget GVAR ["civrestrained",false]) && {!(player GVAR ["restrained",false])} && !dialog && playerSide isEqualTo civilian) exitWith
+{
+		[_curTarget] call life_fnc_civInteractionMenu;
 };
 
 
 //If target is a player then check if we can use the cop menu.
-if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
-	if((_curTarget GVAR ["restrained",false]) && !dialog && playerSide == west) then {
-		[_curTarget] call life_fnc_copInteractionMenu;
+if(isPlayer _curObject && _curObject isKindOf "Man") then {
+	if((_curObject GVAR ["restrained",false]) && !dialog && playerSide isEqualTo west) then {
+		[_curObject] call life_fnc_copInteractionMenu;
 	};
 } else {
 	//OK, it wasn't a player so what is it?
 	private["_isVehicle","_miscItems","_money","_list"];
 
 	_list = ["landVehicle","Ship","Air"];
-	_isVehicle = if(KINDOF_ARRAY(_curTarget,_list)) then {true} else {false};
+	_isVehicle = if(KINDOF_ARRAY(_curObject,_list)) then {true} else {false};
 	_miscItems = ["Land_BottlePlastic_V1_F","Land_TacticalBacon_F","Land_Can_V3_F","Land_CanisterFuel_F","Land_Suitcase_F"];
-	_animalTypes = ["Salema_F","Ornate_random_F","Mackerel_F","Tuna_F","Mullet_F","CatShark_F","Turtle_F"];
 	_money = "Land_Money_F";
 
 	//It's a vehicle! open the vehicle interaction key!
 	if(_isVehicle) then {
 		if(!dialog) then {
-			if(player distance _curTarget < SEL(SEL(boundingBox _curTarget,1),0)+2) then {
-				[_curTarget] call life_fnc_vInteractionMenu;
+			if(player distance _curObject < SEL(SEL(boundingBox _curObject,1),0)+2 && (!(player GVAR ["restrained",false])) && (!(player GVAR ["playerSurrender",false])) && !life_isknocked && !life_istazed) then {
+				[_curObject] call life_fnc_vInteractionMenu;
 			};
 		};
 	} else {

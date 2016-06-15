@@ -9,7 +9,7 @@
 private["_itemList","_index","_config","_priceTag","_itemArray"];
 _index = (lbCurSel 38402);
 _shop = uiNamespace getVariable ["Weapon_Shop",""];
-if(_index == -1 OR _shop == "") exitWith {systemChat "Bad Data Filter"; closeDialog 0;}; //Bad data passing.
+if(_index isEqualTo -1 OR _shop isEqualTo "") exitWith {systemChat "Bad Data Filter"; closeDialog 0;}; //Bad data passing.
 
 uiNamespace setVariable["Weapon_Shop_Filter",_index];
 //Setup List Control & Purge it.
@@ -19,11 +19,13 @@ _priceTag ctrlSetStructuredText parseText "";
 _itemList = ((findDisplay 38400) displayCtrl 38403);
 lbClear _itemList;
 
-if((GVAR_UINS ["Weapon_Magazine",0]) == 1 OR (GVAR_UINS ["Weapon_Accessories",0]) == 1) then {
-	if((GVAR_UINS ["Weapon_Magazine",0]) == 1) then {
+if((GVAR_UINS ["Weapon_Magazine",0]) isEqualTo 1 OR (GVAR_UINS ["Weapon_Accessories",0]) isEqualTo 1) then {
+	if((GVAR_UINS ["Weapon_Magazine",0]) isEqualTo 1) then {
 		_config = M_CONFIG(getArray,"WeaponShops",_shop,"mags");
 		{
-			if(SEL(_x,0) in (uiNamespace getVariable ["Magazine_Array",[]])) then {
+			_var = SEL(_x,0);
+			_count = {_x == _var} count (uiNamespace getVariable ["Magazine_Array",[]]);
+			if(_count > 0) then {
 				_itemInfo = [SEL(_x,0)] call life_fnc_fetchCfgDetails;
 				_itemList lbAdd format["%1",if(!(EQUAL(SEL(_x,1),""))) then {SEL(_x,1)} else {_itemInfo select 1}];
 				_itemList lbSetData[(lbSize _itemList)-1,_itemInfo select 0];
@@ -37,7 +39,9 @@ if((GVAR_UINS ["Weapon_Magazine",0]) == 1 OR (GVAR_UINS ["Weapon_Accessories",0]
 	} else {
 		_config = M_CONFIG(getArray,"WeaponShops",_shop,"accs");
 		{
-			if(SEL(_x,0) in (uiNamespace getVariable ["Accessories_Array",[]])) then {
+			_var = SEL(_x,0);
+			_count = {_x == _var} count (uiNamespace getVariable ["Accessories_Array",[]]);
+			if(_count > 0) then {
 				_itemInfo = [SEL(_x,0)] call life_fnc_fetchCfgDetails;
 				_itemList lbAdd format["%1",if(!(EQUAL(SEL(_x,1),""))) then {SEL(_x,1)} else {_itemInfo select 1}];
 				_itemList lbSetData[(lbSize _itemList)-1,_itemInfo select 0];

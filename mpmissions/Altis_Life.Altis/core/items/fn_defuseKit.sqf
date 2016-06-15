@@ -2,7 +2,7 @@
 /*
 	File: fn_defuseKit.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Defuses blasting charges for the cops?
 */
@@ -10,7 +10,7 @@ private["_vault","_ui","_title","_progressBar","_cP","_titleText"];
 _vault = param [0,ObjNull,[ObjNull]];
 
 if(isNull _vault) exitWith {};
-if(typeOf _vault != "Land_CargoBox_V1_F") exitWith {};
+if(typeOf _vault != "Land_CargoBox_V1_F") exitWith {hint localize "STR_ISTR_defuseKit_NotNear"};
 if(!(_vault GVAR ["chargeplaced",false])) exitWith {hint localize "STR_ISTR_Defuse_Nothing"};
 
 life_action_inUse = true;
@@ -26,8 +26,7 @@ _titleText ctrlSetText format["%2 (1%1)...","%",_title];
 _progressBar progressSetPosition 0.01;
 _cP = 0.01;
 
-while {true} do
-{
+for "_i" from 0 to 1 step 0 do {
 	if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then {
 		[player,"AinvPknlMstpSnonWnonDnon_medic_1",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
 		player switchMove "AinvPknlMstpSnonWnonDnon_medic_1";
@@ -55,4 +54,4 @@ if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR
 
 life_action_inUse = false;
 _vault setVariable["chargeplaced",false,true];
-[0,"STR_ISTR_Defuse_Success"] remoteExecCall ["life_fnc_broadcast",west];
+[0,localize "STR_ISTR_Defuse_Success"] remoteExecCall ["life_fnc_broadcast",west]; 

@@ -2,7 +2,7 @@
 /*
 	File: fn_ticketPaid.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Verifies that the ticket was paid.
 */
@@ -14,4 +14,5 @@ params [
 if(isNull _unit OR {_unit != life_ticket_unit}) exitWith {}; //NO
 if(isNull _cop OR {_cop != player}) exitWith {}; //Double NO
 
-ADD(BANK,_value);
+ADD(TTPBANK,_value);
+[1] call SOCK_fnc_updatePartial;
