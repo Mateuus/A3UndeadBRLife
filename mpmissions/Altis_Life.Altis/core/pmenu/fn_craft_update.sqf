@@ -12,7 +12,7 @@ _dialog = findDisplay 666; //find the craft dialog/window
 _inv = _dialog displayCtrl 669; //find the listbox of items can be created
 _mats = _dialog displayCtrl 672;
 _struct = "";
-if(!((player distance (getMarkerPos "CraftingArea1") < 50) OR  (player distance (getMarkerPos "CraftingArea2") < 50) OR  (player distance (getMarkerPos "CraftingArea3") < 50))) exitWith  {hint "How can I do this without the right tools? Go to a crafting zone";};
+if(!((player distance (getMarkerPos "CraftingArea1") < 50) OR  (player distance (getMarkerPos "CraftingArea2") < 50) OR  (player distance (getMarkerPos "CraftingArea3") < 50))) exitWith  {hint "Como posso fazer isso sem as ferramentas certas ? Va para uma zona de craft";};
 if((lbCurSel 669) == -1) exitWith {hint localize "STR_ISTR_SelectItemFirst";};
 _item = lbData[669,(lbCurSel 669)];
 _itemFilter = lbData[673,(lbCurSel 673)];
@@ -38,7 +38,7 @@ _config = [_itemFilter] call life_fnc_craftCfg;
 
 if(_struct == "") then
 {
-	_struct = "No material needed";
+	_struct = "Sem materiais necessarios";
 };
 
 _mats ctrlSetStructuredText parseText format["
