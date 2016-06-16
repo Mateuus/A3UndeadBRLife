@@ -40,3 +40,4 @@
 #include "wanted_civ.hpp"
 #include "ticketmedic.hpp"
 #include "slot_machine.hpp"
+#include "vehicle_upgrade.hpp"
