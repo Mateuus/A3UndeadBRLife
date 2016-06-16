@@ -93,6 +93,7 @@ class Life_Client_Core {
 		class maskAction {};
 		class unmask {};
 		class robShops {};
+		class ZipTieAction {};
 	};
 
 	class vAH
@@ -163,6 +164,7 @@ class Life_Client_Core {
 		class civInteractionMenu {};
 		class civRestrain {};
 		class hasorgan {};
+		class zipTie {};
 	};
 
 	class Config {

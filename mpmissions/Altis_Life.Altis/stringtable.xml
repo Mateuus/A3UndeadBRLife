@@ -3516,6 +3516,10 @@
 			<Portuguese>%1 foi imobilizado por %2</Portuguese>
 			<Polish>%1 został skuty przez %2</Polish>
 		</Key>
+		<Key ID="STR_NOTF_Ziptied">
+		<Original>%1 was Ziptied by %2</Original>
+		<Portuguese>%1 foi imobilizado por %2</Portuguese>
+		</Key>
 		<Key ID="STR_NOTF_Searching">
 			<Original>Searching...</Original>
 			<Czech>Hledám ...</Czech>
@@ -3581,6 +3585,10 @@
 			<Italian>%2 ha tolto le manette a %1</Italian>
 			<Portuguese>%1 foi liberado por %2</Portuguese>
 			<Polish>%1 został rozkuty przez %2</Polish>
+		</Key>
+		<Key ID="STR_NOTF_Unzip">
+			<Original>%1 was unziptied by %2</Original>
+			<Portuguese>%1 foi liberado por %2</Portuguese>
 		</Key>
 		<Key ID="STR_NOTF_Robbed">
 			<Original>%1 has robbed %2 for $%3</Original>
@@ -5935,6 +5943,7 @@
 		</Key>
 		<Key ID="STR_Item_zipties">
 			<Original>Ziptie</Original>
+			<Portuguese>Algema</Portuguese>
 		</Key>
 		<Key ID="STR_Item_kidney">
 			<Original>Kidney</Original>
