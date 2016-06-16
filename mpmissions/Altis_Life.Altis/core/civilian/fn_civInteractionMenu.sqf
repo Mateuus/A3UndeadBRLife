@@ -68,9 +68,14 @@ if((_curTarget GVAR ["restrained",false])) then
     _Btn2 ctrlEnable false;
 };
 
+/*
 //Button 3 - Set put in car button
 _Btn3 ctrlSetText localize "STR_pInAct_PutInCar";
 _Btn3 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar; closeDialog 0;";
+*/
+//Button 7 - Rouba
+_Btn3 ctrlSetText localize "STR_pAct_RobPerson";
+_Btn3 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_robAction; closeDialog 0;";
 
 //Button 4 - Set Lockpick Button
 _Btn4 ctrlSetText localize "STR_pInAct_Lockpick";
@@ -103,6 +108,10 @@ if(life_inv_knife > 0) then
 } else {
     _Btn6 ctrlEnable false;
 };
-//Button 7 - undefined
-_Btn7 ctrlShow false;
+
+/*
+//Button 7 - Rouba
+_Btn7 ctrlSetText localize "STR_pAct_RobPerson";
+_Btn7 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_robAction; closeDialog 0;";
+*/
 
