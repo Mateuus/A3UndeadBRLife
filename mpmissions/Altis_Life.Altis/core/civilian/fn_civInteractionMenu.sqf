@@ -40,27 +40,28 @@ _Btn7 = _display displayCtrl Btn7;
 _Btn8 = _display displayCtrl Btn8;
 life_pInact_curTarget = _curTarget;
 
-//Button 1 - Set unrestrain button
+//Set Unrestrain Button
 _Btn1 ctrlSetText localize "STR_pInAct_Unrestrain";
-_Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_civunrestrain2; closeDialog 0;";
+_Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain; closeDialog 0;";
 
-if((life_inv_pliers > 0) && (_curTarget GVAR ["civrestrained",false])) then
+if((life_inv_pliers > 0) && (_curTarget GVAR ["restrained",false])) then
 {
     _Btn1 ctrlEnable true;
 } else {
     _Btn1 ctrlEnable false;
 };
 
-//Button 2 - Set Escort Button
-if((_curTarget GVAR ["Escorting",false])) then {
-    _Btn2 ctrlSetText localize "STR_pInAct_StopEscort";
-    _Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_stopEscorting; closeDialog 0;";
+//Set Escort Button
+if((_curTarget getVariable["Escorting",false])) then {
+	_Btn2 ctrlSetText localize "STR_pInAct_StopEscort";
+	_Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_stopEscorting; [life_pInact_curTarget] call life_fnc_civInteractionMenu;";
 } else {
-    _Btn2 ctrlSetText localize "STR_pInAct_Escort";
-    _Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_escortAction; closeDialog 0;";
+	_Btn2 ctrlSetText localize "STR_pInAct_Escort";
+	_Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_escortAction; closeDialog 0;";
 };
 
-if((_curTarget GVAR ["civrestrained",false])) then
+
+if((_curTarget GVAR ["restrained",false])) then
 {
     _Btn2 ctrlEnable true;
 } else {
@@ -83,7 +84,7 @@ if((_curTarget GVAR ["restrained",false]) && (life_inv_lockpick > 0)) then
 };
 
 //Button 5 - undefined
-_Btn5 ctrlSetText "Torture";
+_Btn5 ctrlSetText "Tortura";
 _Btn5 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_torture; closeDialog 0;";
 
 if (life_inv_pliers > 0) then
@@ -93,7 +94,7 @@ if (life_inv_pliers > 0) then
     _Btn5 ctrlEnable false;
 };
 //Button 6 - undefined
-_Btn6 ctrlSetText "Take Organs";
+_Btn6 ctrlSetText "Retirar Órgãos";
 _Btn6 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_takeOrgans; closeDialog 0;";
 
 if(life_inv_knife > 0) then
@@ -105,4 +106,3 @@ if(life_inv_knife > 0) then
 //Button 7 - undefined
 _Btn7 ctrlShow false;
 
-_Btn8 ctrlShow false;

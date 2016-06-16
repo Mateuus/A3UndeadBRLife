@@ -1,4 +1,3 @@
-#include "..\..\script_macros.hpp"
 /*
 	File: fn_zipTie.sqf
 	Auhtor: Bad^^Eye
@@ -18,17 +17,19 @@ if(player getVariable ["restrained",false] || player getVariable ["zipTie",false
 if(player distance _unit > 4) exitWith { hint "You are too far away from them!";};
 
 //Monitor excessive restrainment
-[] spawn {
-	private "_time";
-	while {true} do {
+[] spawn
+{
+	private["_time"];
+	while {true} do
+	{
 		_time = time;
 		waitUntil {(time - _time) > (5 * 60)};
-
-		if(!(player GVAR ["zipTie",FALSE])) exitWith {};
-		if(!([west,getPos player,30] call life_fnc_nearUnits) && (player GVAR ["zipTie",FALSE]) && vehicle player == player) exitWith {
-			player SVAR ["zipTie",FALSE,TRUE];
-			player SVAR ["Escorting",FALSE,TRUE];
-			player SVAR ["transporting",false,true];
+		
+		if(!(player getVariable["zipTie",FALSE])) exitWith {};
+		if(!([west,getPos player,30] call life_fnc_nearUnits) && (player getVariable["restrained",FALSE]) && vehicle player == player) exitWith {
+			player setVariable["zipTie",FALSE,TRUE];
+			player setVariable["Escorting",FALSE,TRUE];
+			player setVariable["transporting",false,true];
 			detach player;
 			titleText[localize "STR_Cop_ExcessiveRestrain","PLAIN"];
 		};
@@ -36,5 +37,6 @@ if(player distance _unit > 4) exitWith { hint "You are too far away from them!";
 };
 
 life_inv_zipties = life_inv_zipties - 1;
+
+[[_unit, "zip_tie",10],"life_fnc_playSound",true,false] spawn life_fnc_MP;
 [[player], "life_fnc_ZipTieAction",_unit,false] spawn life_fnc_MP;
-player say3D "zip";

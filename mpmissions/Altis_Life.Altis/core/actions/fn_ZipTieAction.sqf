@@ -1,8 +1,9 @@
-#include "..\..\script_macros.hpp"
 /*
-	File: fn_ZipTieAction.sqf
+	File: fn_restrainAction.sqf
 	Author: Bryan "Tonic" Boardwine
-	Description: Retrains the target.
+
+	Description:
+	Retrains the target.
 */
 private["_unit", "_ziptied"];
 _unit = cursorTarget;
@@ -27,8 +28,8 @@ if (side player == civilian) then
 if( (!_ziptied) && (side player == civilian) ) exitWith { hint "You have no zipties."; };
 if(!isPlayer _unit) exitWith {};
 //Broadcast!
-player say3D "zip";
+player say3D "ziptie";
 
 _unit setVariable["restrained",true,true];
-[player] remoteExec ["life_fnc_restrain",_unit];
-[0,"STR_NOTF_Ziptied",true,[_unit GVAR["realname", name _unit], profileName]] remoteExecCall ["life_fnc_broadcast",civilian];
+[[player], "life_fnc_restrain", _unit, false] spawn life_fnc_MP;
+[[0,format["%1 was Ziptied by %2",_unit getVariable["realname", name _unit], profileName]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
