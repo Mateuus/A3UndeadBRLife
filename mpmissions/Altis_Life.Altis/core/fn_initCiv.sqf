@@ -43,7 +43,7 @@ if(life_is_alive && !life_is_arrested) then {
 	};
 };
 
-player setVariable["viprank",(FETCH_CONST(life_coplevel)),true];
+player setVariable["viprank",(FETCH_CONST(life_donorlevel)),true];
 
 
 life_is_alive = true;
