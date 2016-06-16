@@ -4,7 +4,7 @@
 	Author: Bryan "Tonic" Boardwine
 
 	Description:
-	Initializes the civilian.
+	Initializes the civilian..
 */
 
 private["_spawnPos","_end"];
