@@ -27559,7 +27559,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; this addAction[""Bronze Weapon Shop"",life_fnc_weaponShopMenu,""bronze"",0,false,false,"""",' license_civ_gun && playerSide == civilian'];this addAction[""Silver Weapon Shop"",life_fnc_weaponShopMenu,""silver"",0,false,false,"""",' license_civ_gun && playerSide == civilian'];this addAction[""Gold Weapon Shop"",life_fnc_weaponShopMenu,""gold"",0,false,false,"""",' license_civ_gun && playerSide == civilian'];this addAction[""Platinum Weapon Shop"",life_fnc_weaponShopMenu,""platinum"",0,false,false,"""",' license_civ_gun && playerSide == civilian'];this addAction[""Diamante Weapon Shop"",life_fnc_weaponShopMenu,""diamante"",0,false,false,"""",' license_civ_gun && playerSide == civilian'];";
+						init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; this addAction[""Bronze Weapon Shop"",life_fnc_weaponShopMenu,""bronze"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];this addAction[""Silver Weapon Shop"",life_fnc_weaponShopMenu,""silver"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];this addAction[""Gold Weapon Shop"",life_fnc_weaponShopMenu,""gold"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];this addAction[""Platinum Weapon Shop"",life_fnc_weaponShopMenu,""platinum"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];this addAction[""Diamante Weapon Shop"",life_fnc_weaponShopMenu,""diamante"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];";
 						name="vip_1";
 					};
 					id=10504;
