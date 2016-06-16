@@ -151,9 +151,14 @@ switch (_code) do {
 		[] call life_fnc_restrainAction;
 	};
 	//Robbing
+	
 	if(_shift && playerSide == civilian && {!isNull cursorTarget} && {cursorTarget isKindOf "Man"} && {(isPlayer cursorTarget)} && {(side cursorTarget in [civilian,west])} && {alive cursorTarget} && {cursorTarget distance player < 3.5} && {!(cursorTarget GVAR "Escorting")} && {!(cursorTarget GVAR "restrained")} && {speed cursorTarget < 1}) then {
+	
+	if((animationState cursorTarget) isEqualTo "Incapacitated" && (currentWeapon player isEqualTo primaryWeapon player OR currentWeapon player isEqualTo handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable["restrained",false]) && !life_istazed && !(player getVariable["surrender",false])) then
+ 		{
 			[] call life_fnc_ZipTieAction;
 		};
+	  };
 	};
 
 	//Knock out, this is experimental and yeah... (Shift + G)
