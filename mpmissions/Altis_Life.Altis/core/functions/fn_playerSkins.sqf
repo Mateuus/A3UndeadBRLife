@@ -44,15 +44,50 @@ switch(playerSide) do {
 	};
 
 	case west: {
-	if(uniform player isEqualTo "U_Rangemaster") then {
-		player setObjectTextureGlobal [0, "textures\Cop\Clothing\cop_uniform.jpg"];
-	};
-	if(uniform player isEqualTo "U_B_SpecopsUniform_sgg") then {
-		player setObjectTextureGlobal [0, "textures\Cop\Clothing\policeBasic.paa"];
-	};
-	if ((uniform player) isEqualTo "U_B_CombatUniform_mcam_worn") then {
-	player setObjectTextureGlobal [0, "textures\Cop\Clothing\SRT.paa"];
-	};
+	
+	if ((uniform player == "U_Rangemaster") && (FETCH_CONST(life_coplevel) == 0)) then
+		{
+			player setObjectTextureGlobal [0, "textures\Cop\Clothing\cop_uniform.jpg"];
+		};
+
+		if ((uniform player == "U_Rangemaster") && (FETCH_CONST(life_coplevel) == 1)) then
+		{
+			player setObjectTextureGlobal [0, "textures\Cop\Clothing\recruta.jpg"];
+		};
+		if ((uniform player == "U_Rangemaster") && (FETCH_CONST(life_coplevel) == 2)) then
+		{
+			player setObjectTextureGlobal [0, "textures\Cop\Clothing\soldado.jpg"];
+		};
+		if ((uniform player == "U_Rangemaster") && (FETCH_CONST(life_coplevel) == 3)) then
+		{
+			player setObjectTextureGlobal [0, "textures\Cop\Clothing\cabo.jpg"];
+		};
+		if ((uniform player == "U_Rangemaster") && (FETCH_CONST(life_coplevel) == 4)) then
+		{
+			player setObjectTextureGlobal [0, "textures\Cop\Clothing\sargento.jpg"];
+		};
+		if ((uniform player == "U_B_SpecopsUniform_sgg") && (FETCH_CONST(life_coplevel) == 5)) then
+		{
+			player setObjectTextureGlobal [0, "textures\Cop\Clothing\tenente.paa"];
+		};
+		if ((uniform player == "U_B_SpecopsUniform_sgg") && (FETCH_CONST(life_coplevel) == 6)) then
+		{
+			player setObjectTextureGlobal [0, "textures\Cop\Clothing\capitao.paa"];
+		};
+		if ((uniform player == "U_B_SpecopsUniform_sgg") && (FETCH_CONST(life_coplevel) == 7)) then
+		{
+			player setObjectTextureGlobal [0, "textures\Cop\Clothing\major.paa"];
+		};
+		if ((uniform player == "U_B_SpecopsUniform_sgg") && (FETCH_CONST(life_coplevel) == 8)) then
+		{
+			player setObjectTextureGlobal [0, "textures\Cop\Clothing\tencoronel.paa"];
+		};
+		if ((uniform player == "U_B_SpecopsUniform_sgg") && (FETCH_CONST(life_coplevel) == 9)) then
+		{
+			player setObjectTextureGlobal [0, "textures\Cop\Clothing\coronel.paa"];
+		};
+	
+	
 	if(playerSide isEqualTo west) then {(unitBackpack player) setObjectTextureGlobal [0,""];};
 };
 

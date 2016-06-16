@@ -118,29 +118,16 @@ class Clothing {
         uniforms[] = {
             { "NONE", "Remove Uniform", 0, { "", "", -1 } },
             { "U_Rangemaster", "Cadet Uniform", 25, { "", "", -1 } },
-            { "U_B_SpecopsUniform_sgg", "Basic Uniform", 25, { "life_coplevel", "SCALAR", 2 } },
-            { "U_B_Wetsuit", "Wetsuit", 25, { "life_coplevel", "SCALAR", 2 } },
-            { "U_B_CombatUniform_mcam_worn", "SWAT Uniform", 550, { "life_coplevel", "SCALAR", 3 } },
-
-            { "U_IG_leader", "Undercover Leader", 150, { "life_coplevel", "SCALAR", 3 } },
-            { "U_O_PilotCoveralls", "Undercover Pilot", 150, { "life_coplevel", "SCALAR", 3 } },
-            { "U_O_SpecopsUniform_ocamo", "Undercover Specops", 170, { "life_coplevel", "SCALAR", 3} },
-            { "U_O_GhillieSuit", "Undercover Ghillie", 300, { "life_coplevel", "SCALAR", 3 } },
-      			{ "U_I_GhillieSuit", "Undercover Ghillie 2", 300, { "life_coplevel", "SCALAR", 3 } }
+            { "U_B_SpecopsUniform_sgg", "Uniforme de Official", 25, { "life_coplevel", "SCALAR", 5 } },
+            { "U_B_Wetsuit", "Wetsuit", 25, { "life_coplevel", "SCALAR", 5 } },
+            { "U_B_CombatUniform_mcam_worn", "SWAT Uniform", 550, { "life_coplevel", "SCALAR", 5 } }
         };
         headgear[] = {
             { "NONE", "Remove Hat", 0, { "", "", -1 } },
-            { "H_Cap_police", "", 25, { "", "", -1 } },
-            { "H_Beret_blk_POLICE", "", 50, { "life_coplevel", "SCALAR", 3 } },
-
-            { "H_Bandanna_camo", "Undercover Bandana", 650, { "life_coplevel", "SCALAR", 3 } },
-            { "H_ShemagOpen_khk", "Undercover Shemagh", 800, { "life_coplevel", "SCALAR", 3 } },
-            { "H_ShemagOpen_tan", "Undercover Shemagh", 850, { "life_coplevel", "SCALAR", 3 } },
-			      { "H_Shemag_olive_hs", "Undercover Shemagh", 850, { "life_coplevel", "SCALAR", 3 } },
-
-            { "H_HelmetB_black", "SWAT Helmet", 150, { "life_coplevel", "SCALAR", 3 } },
-            { "H_CrewHelmetHeli_B", "SWAT Mask", 150, { "life_coplevel", "SCALAR", 3 } },
-			      { "H_Beret_Colonel", "", 200, { "life_coplevel", "SCALAR", 5 } }
+            { "H_Beret_blk_POLICE", "Boina Padrao", 50, { "life_coplevel", "SCALAR", -1 } },
+			{ "H_Beret_02", "Boina de Oficial", 150, { "life_coplevel", "SCALAR", 5 } },
+            { "H_Beret_Colonel", "Boina de Ten.Coronel", 150, { "life_coplevel", "SCALAR", 5 } },
+			{ "H_Beret_Colonel", "Boina de Coronel", 200, { "life_coplevel", "SCALAR", 5 } }
         };
         goggles[] = {
             { "NONE", "Remove Glasses", 0, { "", "", -1 } },
