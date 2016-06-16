@@ -494,7 +494,7 @@ class LifeCfgVehicles {
                 "textures\Civ\Vehicles\OffSHREK.jpg"
             } },
             { "Police", "cop", {
-                "textures\Cop\Vehicles\CopOFF.paa"
+                "textures\Cop\Vehicles\policeoffroad.jpg"
             } },
             { "Medical", "med", {
                 "textures\Med\Vehicles\offroadMED.paa"
@@ -547,8 +547,26 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Sanic", "civ", {
                 "textures\Civ\Vehicles\HatchSANIC.jpg"
             } },
+			{ "Martini", "civ", {
+                "textures\Civ\Vehicles\mcreafordwrc.paa"
+            } },
+			{ "MonsterV2", "civ", {
+                "textures\Civ\Vehicles\civ_monsterwrcv2_hbsport.paa"
+            } },
+			{ "MonsterV3", "civ", {
+                "textures\Civ\Vehicles\civ_monsterwrc_hb.paa"
+            } },
+			{ "Domino's", "civ", {
+                "textures\Civ\Vehicles\civ_dominospizza_hb.paa"
+            } },
+			{ "RedBull", "civ", {
+                "textures\Civ\Vehicles\vwwrc.paa"
+            } },
+			{ "AbudHabic", "civ", {
+                "textures\Civ\Vehicles\abudhabiwrc.paa"
+            } },
             { "Police", "cop", {
-                "textures\Cop\Vehicles\copHATCH.paa"
+                "textures\Cop\Vehicles\policehatch.jpg"
             } }
         };
     };
@@ -687,13 +705,13 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "textures\Civ\Vehicles\suvSTICKER.paa"
             } },
             { "Police", "cop", {
-                "textures\Cop\Vehicles\CopSUV.paa"
+                "textures\Cop\Vehicles\suvpolice.jpg"
             } },
             { "Medical", "med", {
                 "textures\Med\Vehicles\suvMED.paa"
             } },
-            { "Police2", "cop", {
-                "textures\Cop\Vehicles\CopSuv2.paa"
+            { "JurassicPark", "civ", {
+                "textures\Civ\Vehicles\civ_jurassicpark_suv.paa"
             } },
             { "White", "civ", {
                 "textures\Civ\Vehicles\suv_white.jpg"
@@ -738,8 +756,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 100000;
         textures[] = {
             { "Police", "cop", {
-                "textures\Cop\Vehicles\CopHUNTERFront.paa",
-                "textures\Cop\Vehicles\CopHUNTERback.paa"
+                "textures\Cop\Vehicles\Hunter1.jpg",
+                "textures\Cop\Vehicles\Hunter2.jpg"
             } }
         };
     };
@@ -775,7 +793,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 250000;
         textures[] = {
             { "Police", "cop", {
-                "textures\Cop\Vehicles\CopHeli.paa"
+                "textures\Cop\Vehicles\policeheli.jpg"
             } },
             { "Sheriff", "civ", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa"
