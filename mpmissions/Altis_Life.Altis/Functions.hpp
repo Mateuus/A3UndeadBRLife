@@ -499,8 +499,5 @@ class Life_Client_Core {
 		class vehStoreItem {};
 		class vehTakeItem {};
 		class vInteractionMenu {};
-		class upgradeMenu {};
-		class upgradeMenuChange {};
-		class upgradeVehicle {};
 	};
 };
