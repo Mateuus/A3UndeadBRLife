@@ -753,20 +753,20 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 100000;
         textures[] = {
            { "Hunter VIP", "civ", {
-	                "textures\vip\donator_hunter_front.paa",
-					"textures\vip\donator_hunter_hinten.paa"
+	                "textures\Vip\Vehicles\donator_hunter_front.paa",
+					"textures\Vip\Vehicles\donator_hunter_hinten.paa"
 			} },
 			{ "Hunter Assassino de COP VIP", "civ", {
-	                "textures\vip\mrap_01_adds_co.jpg",
-					"textures\vip\mrap_01_base_co.jpg"
+	                "textures\Vip\Vehicles\mrap_01_adds_co.jpg",
+					"textures\Vip\Vehicles\mrap_01_base_co.jpg"
 			} },
 			{ "Hunter Unicórnio VIP", "civ", {
-	                "textures\vip\unicorn_hunter_teil1.paa",
-					"textures\vip\unicorn_hunter_teil2.paa"
+	                "textures\Vip\Vehicles\unicorn_hunter_teil1.paa",
+					"textures\Vip\Vehicles\unicorn_hunter_teil2.paa"
 			} },
 			{ "Hunter Caveira VIP", "civ", {
-	                "textures\vip\graywolfhunter_1.jpg",
-					"textures\vip\graywolfhunter_2.jpg"
+	                "textures\Vip\Vehicles\graywolfhunter_1.jpg",
+					"textures\Vip\Vehicles\graywolfhunter_2.jpg"
 			} },
 			{ "Police", "cop", {
                 "textures\Cop\Vehicles\Hunter1.jpg",
