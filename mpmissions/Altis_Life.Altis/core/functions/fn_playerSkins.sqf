@@ -63,19 +63,19 @@ switch(playerSide) do {
 
 		if ((uniform player == "U_C_Commoner1_3") && (FETCH_CONST(life_donorlevel) == 1)) then
 		{
-			player setObjectTextureGlobal [0, "textures\Vip\Clothing\bronze.paa"];
+			player setObjectTextureGlobal [0, "textures\Vip\Clothing\bronze.jpg"];
 		};
 		if ((uniform player == "U_C_Commoner1_3") && (FETCH_CONST(life_donorlevel) == 2)) then
 		{
-			player setObjectTextureGlobal [0, "textures\Vip\Clothing\silver.paa"];
+			player setObjectTextureGlobal [0, "textures\Vip\Clothing\silver.jpg"];
 		};
 		if ((uniform player == "U_C_Commoner1_3") && (FETCH_CONST(life_donorlevel) == 3)) then
 		{
-			player setObjectTextureGlobal [0, "textures\Vip\Clothing\gold.paa"];
+			player setObjectTextureGlobal [0, "textures\Vip\Clothing\gold.jpg"];
 		};
 		if ((uniform player == "U_C_Commoner1_3") && (FETCH_CONST(life_donorlevel) == 4)) then
 		{
-			player setObjectTextureGlobal [0, "textures\Vip\Clothing\platunum.paa"];
+			player setObjectTextureGlobal [0, "textures\Vip\Clothing\platunum.jpg"];
 		};
 		if ((uniform player == "U_C_Commoner1_3") && (FETCH_CONST(life_donorlevel) == 5)) then
 		{
