@@ -53,7 +53,7 @@ class CfgSpawnPoints {
         };
 
         class RebelS {
-            displayName = "Northern Rebel Base";
+            displayName = "Base Rebelde Norte";
             spawnMarker = "Rebelop";
             icon = "icons\civspawn.paa";
             licenses[] = { { "rebel", true } };
@@ -61,7 +61,7 @@ class CfgSpawnPoints {
         };
 
         class RebelN {
-            displayName = "Southern Rebel Base";
+            displayName = "Base Rebelde Sul";
             spawnMarker = "Rebelop_1";
             icon = "icons\civspawn.paa";
             licenses[] = { { "rebel", true } };
@@ -69,7 +69,7 @@ class CfgSpawnPoints {
         };
 
         class RebelE {
-            displayName = "Eastern Rebel Base";
+            displayName = "Base Rebelde Leste";
             spawnMarker = "Rebelop_2";
             icon = "icons\civspawn.paa";
             licenses[] = { { "rebel", true } };
@@ -111,7 +111,7 @@ class CfgSpawnPoints {
         };
 
         class HW {
-            displayName = "HW Patrol";
+            displayName = "Sofia HQ";
             spawnMarker = "cop_spawn_9";
             icon = "icons\policespawn.paa";
             licenses[] = { { "", true } };
@@ -119,7 +119,7 @@ class CfgSpawnPoints {
         };
 
         class Syrta {
-            displayName = "Syrta Patrol HQ";
+            displayName = "Syrta HQ";
             spawnMarker = "cop_spawn_6";
             icon = "icons\policespawn.paa";
             licenses[] = { { "", true } };
@@ -127,7 +127,7 @@ class CfgSpawnPoints {
         };
 
         class Training {
-            displayName = "Training HQ";
+            displayName = "Treino HQ";
             spawnMarker = "cop_spawn_7";
             icon = "icons\policespawn.paa";
             licenses[] = { { "", true } };

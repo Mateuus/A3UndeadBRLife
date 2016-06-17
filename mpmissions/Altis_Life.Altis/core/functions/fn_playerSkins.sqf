@@ -14,6 +14,33 @@ switch(playerSide) do {
 			if(uniform player isEqualTo "U_C_Poloshirt_blue") then {
 				player setObjectTextureGlobal [0, "textures\Civ\Clothing\gay.jpg"];
 			};
+			if(uniform player isEqualTo "U_C_Poloshirt_stripped") then {
+				player setObjectTextureGlobal [0, "textures\Civ\Clothing\batrman.jpg"];
+			};
+			if(uniform player isEqualTo "U_C_Poloshirt_redwhite") then {
+				player setObjectTextureGlobal [0, "textures\Civ\Clothing\cat.jpg"];
+			};
+			if(uniform player isEqualTo "U_OrestesBody") then {
+				player setObjectTextureGlobal [0, "textures\Civ\Clothing\hand.jpg"];
+			};
+			if(uniform player isEqualTo "U_C_Commoner1_1") then {
+				player setObjectTextureGlobal [0, "textures\Civ\Clothing\joker.jpg"];
+			};
+			if(uniform player isEqualTo "U_C_Commoner1_2") then {
+				player setObjectTextureGlobal [0, "textures\Civ\Clothing\lacoste.jpg"];
+			};
+			if(uniform player isEqualTo "U_C_Commoner1_3") then {
+				player setObjectTextureGlobal [0, "textures\Civ\Clothing\roupaundead.jpg"];
+			};
+			if(uniform player isEqualTo "U_C_Poloshirt_salmon") then {
+				player setObjectTextureGlobal [0, "textures\Civ\Clothing\wolf.jpg"];
+			};
+			if(uniform player isEqualTo "U_C_Poloshirt_burgundy") then {
+				player setObjectTextureGlobal [0, "textures\Civ\Clothing\superman.jpg"];
+			};
+			if(uniform player isEqualTo "U_C_Commoner_shorts") then {
+				player setObjectTextureGlobal [0, "textures\Civ\Clothing\pika.jpg"];
+			};
 		};
 		if (uniform player isEqualTo "U_B_CombatUniform_mcam" && (FETCH_CONST(life_donorlevel) >= 1)) then {
 			player setObjectTextureGlobal [0, "textures\Civ\Supporter\vipOrange.jpg"];
