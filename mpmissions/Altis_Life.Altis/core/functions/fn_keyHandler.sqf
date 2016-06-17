@@ -255,33 +255,6 @@ case 19: {
 					[_veh] remoteExec ["life_fnc_medicSiren",RCLIENT];
 				};
 			};
-		if (_shift) then
-		{
-		if(playerSide in [west,independent] && vehicle player != player && !life_siren2_active && ((driver vehicle player) == player)) then
-		{
-			[] spawn
-			{
-				life_siren2_active = true;
-				sleep 4.7;
-				life_siren2_active = false;
-			};
-			_veh = vehicle player;
-			if(isNil {_veh GVAR "siren2"}) then {_veh setVariable["siren2",false,true];};
-			if((_veh GVAR "siren2")) then
-			{
-				titleText ["Sirene secundária desligada","PLAIN"];
-				_veh setVariable["siren2",false,true];
-			}
-				else
-			{
-				titleText ["Sirene secundária ligada","PLAIN"];
-				_veh setVariable["siren2",true,true];
-				if(playerSide == west) then {
-					[[_veh],"life_fnc_copSiren2",nil,true] spawn life_fnc_MP;
-				} else {
-					[[_veh],"life_fnc_medicSiren",nil,true] spawn life_fnc_MP;
-				};
-			};
 		};
 	};
 
