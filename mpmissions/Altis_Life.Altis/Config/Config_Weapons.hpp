@@ -51,38 +51,14 @@ class WeaponShops {
         level[] = { "life_donorlevel", "SCALAR", 1, "Você precisa ser um nível doador Bronze para acessar a loja, acesse nosso forum ou teamspeak para obter informações." };
 		items[] = {
             { "FirstAidKit", "", 250, 65 },
-            { "srifle_DMR_04_F", "", 135000, -1 },
-            { "srifle_DMR_05_tan_f", "", 200000 },
-            { "5Rnd_127x108_Mag", "", 2025 },
-            { "150Rnd_93x64_Mag", "", 3025 },
-            { "130Rnd_338_Mag", "", 4025 },
-            { "10Rnd_338_Mag", "", 445 },
-            { "10Rnd_93x64_DMR_05_Mag", "", 405 },
             { "RPG32_HE_F", "", 225000 }
         };
         mags[] = {
             { "5Rnd_127x108_Mag", "", 2025 },
-            { "150Rnd_93x64_Mag", "", 3025 },
-            { "130Rnd_338_Mag", "", 4025 },
-            { "10Rnd_338_Mag", "", 445 },
-            { "10Rnd_93x64_DMR_05_Mag", "", 405 },
-            { "10Rnd_127x54_Mag", "", 405 },
             { "RPG32_HE_F", "", 125000 }
         };
         accs[] = {
             { "optic_ACO_grn", "", 3500 },
-            { "optic_Holosight", "", 3600 },
-            { "optic_Hamr", "", 10500 },
-            { "optic_Holosight_smg", "", 2500 },
-            { "optic_MRCO", "", 14500 },
-            { "optic_Arco", "", 10500 },
-            { "optic_KHS_blk", "", 22500 },
-            { "optic_AMS", "", 23500 },
-            { "optic_DMS", "", 17500 },
-            { "optic_SOS", "", 22500 },
-            { "optic_NVS", "", 28500 },
-            { "optic_LRPS", "", 33500 },
-            { "acc_pointer_IR", "", 1500 },
             { "acc_flashlight", "", 1000 }
         };
     };

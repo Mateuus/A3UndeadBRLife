@@ -55,7 +55,7 @@ switch (FETCH_CONST(life_donorlevel)) do {
 	
 	default:
 	{
-		player addUniform (selectRandom _clothings);
+		player addUniform (selectRandom _clothings); //Escolher uma Roupa Random
 	}
 	
 };
