@@ -20,6 +20,15 @@
 */
 class CfgSpawnPoints {
     class Civilian {
+		
+		class AreaVIP {
+            displayName = "Área VIP";
+            spawnMarker = "civ_spawn_vip";
+            icon = "icons\civspawn.paa";
+            licenses[] = { { "", true } };
+            level[] = { "life_donorlevel", "SCALAR", 1 };
+        };
+		
         class Kavala {
             displayName = "Kavala";
             spawnMarker = "civ_spawn_1";
