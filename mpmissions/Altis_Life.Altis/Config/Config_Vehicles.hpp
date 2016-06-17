@@ -27,13 +27,22 @@ class CarShops {
 	class civ_vip_car_bronze {
         side = "civ";
         vehicles[] = {
-			{ "O_MRAP_02_F", { "life_donorlevel", "SCALAR", 1 } }
+			{ "B_Quadbike_01_F", { "", "", -1 } },
+			{ "C_Hatchback_01_sport_F", { "life_donorlevel", "SCALAR", 1 } },
+			{ "C_SUV_01_F", { "life_donorlevel", "SCALAR", 1 } },
+			{ "C_Offroad_01_F", { "life_donorlevel", "SCALAR", 1 } },
+			{ "C_Van_01_box_F", { "life_donorlevel", "SCALAR", 1 } },
+			{ "I_Truck_02_transport_F", { "life_donorlevel", "SCALAR", 1 } },
+			{ "I_Truck_02_covered_F", { "life_donorlevel", "SCALAR", 1 } },
+			{ "B_Truck_01_transport_F", { "life_donorlevel", "SCALAR", 1 } },
+			{ "I_Truck_02_covered_F", { "life_donorlevel", "SCALAR", 1 } }
         };
     };
 
 	class civ_vip_car_silver {
         side = "civ";
         vehicles[] = {
+			{ "O_Truck_03_transport_F", { "life_donorlevel", "SCALAR", 2 } },
 			{ "O_MRAP_02_F", { "life_donorlevel", "SCALAR", 2 } }
         };
     };
@@ -41,7 +50,8 @@ class CarShops {
 	class civ_vip_car_gold {
         side = "civ";
         vehicles[] = {
-			{ "O_MRAP_02_F", { "life_donorlevel", "SCALAR", 3 } }
+			{ "B_Truck_01_box_F", { "life_donorlevel", "SCALAR", 3 } },
+			{ "O_Truck_03_device_F", { "life_donorlevel", "SCALAR", 3 } }
         };
     };
 
