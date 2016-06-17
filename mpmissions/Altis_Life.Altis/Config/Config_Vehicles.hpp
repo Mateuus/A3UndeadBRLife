@@ -27,95 +27,95 @@ class CarShops {
 	class civ_vip_car_bronze {
         side = "civ_vip";
         vehicles[] = {
-			{ "O_MRAP_02_F", { "life_donator", "SCALAR", 1 } },
-            { "B_MRAP_01_F", { "life_donator", "SCALAR", 1 } }
+			{ "O_MRAP_02_F", { "life_donorlevel", "SCALAR", 1 } },
+            { "B_MRAP_01_F", { "life_donorlevel", "SCALAR", 1 } }
         };
     };
 
 	class civ_vip_car_silver {
         side = "civ_vip";
         vehicles[] = {
-			{ "O_MRAP_02_F", { "life_donator", "SCALAR", 2 } },
-            { "B_MRAP_01_F", { "life_donator", "SCALAR", 2 } }
+			{ "O_MRAP_02_F", { "life_donorlevel", "SCALAR", 2 } },
+            { "B_MRAP_01_F", { "life_donorlevel", "SCALAR", 2 } }
         };
     };
 
 	class civ_vip_car_gold {
         side = "civ_vip";
         vehicles[] = {
-			{ "O_MRAP_02_F", { "life_donator", "SCALAR", 2 } },
-            { "B_MRAP_01_F", { "life_donator", "SCALAR", 2 } }
+			{ "O_MRAP_02_F", { "life_donorlevel", "SCALAR", 2 } },
+            { "B_MRAP_01_F", { "life_donorlevel", "SCALAR", 2 } }
         };
     };
 
 	class civ_vip_car_platinum {
         side = "civ_vip";
         vehicles[] = {
-			{ "O_MRAP_02_F", { "life_donator", "SCALAR", 2 } },
-            { "B_MRAP_01_F", { "life_donator", "SCALAR", 2 } }
+			{ "O_MRAP_02_F", { "life_donorlevel", "SCALAR", 2 } },
+            { "B_MRAP_01_F", { "life_donorlevel", "SCALAR", 2 } }
         };
     };
 
 	class civ_vip_car_diamante {
         side = "civ_vip";
         vehicles[] = {
-			{ "O_MRAP_02_F", { "life_donator", "SCALAR", 2 } },
-            { "B_MRAP_01_F", { "life_donator", "SCALAR", 2 } }
+			{ "O_MRAP_02_F", { "life_donorlevel", "SCALAR", 2 } },
+            { "B_MRAP_01_F", { "life_donorlevel", "SCALAR", 2 } }
         };
     };
 
 	class civ_vip_air_bronze {
         side = "civ_vip";
         vehicles[] = {
-            { "C_Heli_Light_01_civil_F", { "life_donator", "SCALAR", 1 } },
-            { "B_Heli_Light_01_F", { "life_donator", "SCALAR", 1 } },
-            { "O_Heli_Light_02_unarmed_F", { "life_donator", "SCALAR", 1 } },
-            { "O_Heli_Transport_04_Box_F", { "life_donator", "SCALAR", 1 } },
-            { "I_Heli_Transport_02_F", { "life_donator", "SCALAR", 1 } }
+            { "C_Heli_Light_01_civil_F", { "life_donorlevel", "SCALAR", 1 } },
+            { "B_Heli_Light_01_F", { "life_donorlevel", "SCALAR", 1 } },
+            { "O_Heli_Light_02_unarmed_F", { "life_donorlevel", "SCALAR", 1 } },
+            { "O_Heli_Transport_04_Box_F", { "life_donorlevel", "SCALAR", 1 } },
+            { "I_Heli_Transport_02_F", { "life_donorlevel", "SCALAR", 1 } }
         };
     };
 
 	class civ_vip_air_silver {
         side = "civ_vip";
         vehicles[] = {
-            { "C_Heli_Light_01_civil_F", { "life_donator", "SCALAR", 2 } },
-            { "B_Heli_Light_01_F", { "life_donator", "SCALAR", 2 } },
-            { "O_Heli_Light_02_unarmed_F", { "life_donator", "SCALAR", 2 } },
-            { "O_Heli_Transport_04_Box_F", { "life_donator", "SCALAR", 2 } },
-            { "I_Heli_Transport_02_F", { "life_donator", "SCALAR", 2 } }
+            { "C_Heli_Light_01_civil_F", { "life_donorlevel", "SCALAR", 2 } },
+            { "B_Heli_Light_01_F", { "life_donorlevel", "SCALAR", 2 } },
+            { "O_Heli_Light_02_unarmed_F", { "life_donorlevel", "SCALAR", 2 } },
+            { "O_Heli_Transport_04_Box_F", { "life_donorlevel", "SCALAR", 2 } },
+            { "I_Heli_Transport_02_F", { "life_donorlevel", "SCALAR", 2 } }
         };
     };
 
 	class civ_vip_air_gold {
         side = "civ_vip";
         vehicles[] = {
-            { "C_Heli_Light_01_civil_F", { "life_donator", "SCALAR", 3 } },
-            { "B_Heli_Light_01_F", { "life_donator", "SCALAR", 3 } },
-            { "O_Heli_Light_02_unarmed_F", { "life_donator", "SCALAR", 3 } },
-            { "O_Heli_Transport_04_Box_F", { "life_donator", "SCALAR", 3 } },
-            { "I_Heli_Transport_02_F", { "life_donator", "SCALAR", 3 } }
+            { "C_Heli_Light_01_civil_F", { "life_donorlevel", "SCALAR", 3 } },
+            { "B_Heli_Light_01_F", { "life_donorlevel", "SCALAR", 3 } },
+            { "O_Heli_Light_02_unarmed_F", { "life_donorlevel", "SCALAR", 3 } },
+            { "O_Heli_Transport_04_Box_F", { "life_donorlevel", "SCALAR", 3 } },
+            { "I_Heli_Transport_02_F", { "life_donorlevel", "SCALAR", 3 } }
         };
     };
 
 	class civ_vip_air_platinum {
         side = "civ_vip";
         vehicles[] = {
-            { "C_Heli_Light_01_civil_F", { "life_donator", "SCALAR", 4 } },
-            { "B_Heli_Light_01_F", { "life_donator", "SCALAR", 4 } },
-            { "O_Heli_Light_02_unarmed_F", { "life_donator", "SCALAR", 4 } },
-            { "O_Heli_Transport_04_Box_F", { "life_donator", "SCALAR", 4 } },
-            { "I_Heli_Transport_02_F", { "life_donator", "SCALAR", 4 } }
+            { "C_Heli_Light_01_civil_F", { "life_donorlevel", "SCALAR", 4 } },
+            { "B_Heli_Light_01_F", { "life_donorlevel", "SCALAR", 4 } },
+            { "O_Heli_Light_02_unarmed_F", { "life_donorlevel", "SCALAR", 4 } },
+            { "O_Heli_Transport_04_Box_F", { "life_donorlevel", "SCALAR", 4 } },
+            { "I_Heli_Transport_02_F", { "life_donorlevel", "SCALAR", 4 } }
         };
     };
 
 	class civ_vip_air_diamante {
         side = "civ_vip";
         vehicles[] = {
-            { "C_Heli_Light_01_civil_F", { "life_donator", "SCALAR", 5 } },
-            { "B_Heli_Light_01_F", { "life_donator", "SCALAR", 5 } },
-            { "O_Heli_Light_02_unarmed_F", { "life_donator", "SCALAR", 5 } },
-            { "O_Heli_Transport_04_Box_F", { "life_donator", "SCALAR", 5 } },
-            { "I_Heli_Transport_02_F", { "life_donator", "SCALAR", 5 } }
+            { "C_Heli_Light_01_civil_F", { "life_donorlevel", "SCALAR", 5 } },
+            { "B_Heli_Light_01_F", { "life_donorlevel", "SCALAR", 5 } },
+            { "O_Heli_Light_02_unarmed_F", { "life_donorlevel", "SCALAR", 5 } },
+            { "O_Heli_Transport_04_Box_F", { "life_donorlevel", "SCALAR", 5 } },
+            { "I_Heli_Transport_02_F", { "life_donorlevel", "SCALAR", 5 } }
         };
     };
 

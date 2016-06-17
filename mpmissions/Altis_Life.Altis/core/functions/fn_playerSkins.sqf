@@ -75,7 +75,7 @@ switch(playerSide) do {
 		};
 		if ((uniform player == "U_C_Commoner1_3") && (FETCH_CONST(life_donorlevel) == 4)) then
 		{
-			player setObjectTextureGlobal [0, "textures\Vip\Clothing\platunum.jpg"];
+			player setObjectTextureGlobal [0, "textures\Vip\Clothing\platinum.jpg"];
 		};
 		if ((uniform player == "U_C_Commoner1_3") && (FETCH_CONST(life_donorlevel) == 5)) then
 		{
