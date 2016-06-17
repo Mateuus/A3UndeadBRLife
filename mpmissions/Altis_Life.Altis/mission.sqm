@@ -257,7 +257,7 @@ class AddonsMetaData
 randomSeed=2639488;
 class ScenarioData
 {
-	author="Repentz for The Trailerpark";
+	author="Tonic e Undead Brasil DEV Team";
 	overViewPicture="textures\armalife.jpg";
 	overViewPictureLocked="textures\armalife.jpg";
 	loadScreen="textures\armalife.jpg";
@@ -35121,7 +35121,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this allowDamage false; this enableSimulation false; this addAction [""Trailerpark Market"", {[] spawn life_fnc_vAH_load;},"""",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == civilian ']; ";
+						init="this allowDamage false; this enableSimulation false; this addAction [""UndeadBrasil Market"", {[] spawn life_fnc_vAH_load;},"""",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == civilian ']; ";
 					};
 					id=1677;
 					type="C_man_1";
@@ -35196,7 +35196,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this allowDamage false; this enableSimulation false; this addAction [""Trailerpark Market"", {[] spawn life_fnc_vAH_load;},"""",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == civilian ']; ";
+						init="this allowDamage false; this enableSimulation false; this addAction [""UndeadBrasil Market"", {[] spawn life_fnc_vAH_load;},"""",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == civilian ']; ";
 					};
 					id=1679;
 					type="C_man_1";
@@ -35271,7 +35271,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this allowDamage false; this enableSimulation false; this addAction [""Trailerpark Market"", {[] spawn life_fnc_vAH_load;},"""",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == civilian ']; ";
+						init="this allowDamage false; this enableSimulation false; this addAction [""UndeadBrasil Market"", {[] spawn life_fnc_vAH_load;},"""",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == civilian ']; ";
 					};
 					id=1682;
 					type="C_man_1";
@@ -35346,7 +35346,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this allowDamage false; this enableSimulation false; this addAction [""Trailerpark Market"", {[] spawn life_fnc_vAH_load;},"""",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == civilian ']; ";
+						init="this allowDamage false; this enableSimulation false; this addAction [""UndeadBrasil Market"", {[] spawn life_fnc_vAH_load;},"""",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == civilian ']; ";
 					};
 					id=1675;
 					type="C_man_1";
@@ -68556,7 +68556,7 @@ class Mission
 			dataType="Marker";
 			position[]={986.27631,-129.77072,29718.238};
 			name="marker_262";
-			text="Welcome to the Trailerpark";
+			text="Bem-vindo ao Undead Brasil Altis Life RPG";
 			type="mil_box";
 			id=8912;
 			atlOffset=56.19928;
@@ -68566,7 +68566,7 @@ class Mission
 			dataType="Marker";
 			position[]={987.5285,-185.97,29213.307};
 			name="marker_263";
-			text="Website: www.thetrailerpark.us";
+			text="Nosso site : undeadbrasil.com";
 			type="mil_box";
 			id=8913;
 		};
@@ -68575,7 +68575,7 @@ class Mission
 			dataType="Marker";
 			position[]={985.7453,-185.97,28714.729};
 			name="marker_264";
-			text="Teamspeak: tpt.ts.nfoservers.com:7100";
+			text="Teamspeak 3 : ts3.undeadbrasil.com";
 			type="mil_box";
 			id=8914;
 		};

@@ -40,7 +40,7 @@ class Life_cell_phone {
 		{
 			colorBackground[] = {0, 0, 0, 0};
 			idc = 3001;
-			text = "The Trailerpark Mobile";
+			text = "Undead Brasil Mobile";
 			x = 0.1;
 			y = 0.16;
 			w = 0.6;
