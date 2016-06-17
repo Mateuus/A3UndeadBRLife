@@ -20,5 +20,42 @@ player assignItem "ItemCompass";
 player addItem "ItemWatch";
 player assignItem "ItemWatch";
 
+if (playerSide isEqualTo civilian) then {
+
+switch (FETCH_CONST(life_donorlevel)) do {
+
+	case 1:
+	{
+		player ForceAddUniform "U_I_CombatUniform";
+		player setObjectTextureGlobal [0, "textures\Vip\Clothing\bronze.paa"]; 
+	};
+	
+	case 2:
+	{
+		player ForceAddUniform "U_I_CombatUniform";
+		player setObjectTextureGlobal [0, "textures\Vip\Clothing\silver.paa"]; 
+	};
+	
+	case 3:
+	{
+		player ForceAddUniform "U_I_CombatUniform";
+		player setObjectTextureGlobal [0, "textures\Vip\Clothing\gold.paa"]; 
+	};
+	
+	case 4:
+	{
+		player ForceAddUniform "U_I_CombatUniform";
+		player setObjectTextureGlobal [0, "textures\Vip\Clothing\platunum.paa"]; 
+	};
+	
+	case 5:
+	{
+		player ForceAddUniform "U_I_CombatUniform";
+		player setObjectTextureGlobal [0, "textures\Vip\Clothing\diamante.jpg"]; 
+	};
+	
+};
+};
+
 [] call life_fnc_playerSkins;
 [] call life_fnc_saveGear;
