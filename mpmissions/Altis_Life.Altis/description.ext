@@ -1,10 +1,10 @@
+#include "infiSTAR_AdminMenu.hpp"
 disableChannels[]={{0,true,true},{1,true,true},{2,true,true}};    // Disabled text and voice for global, side, and command channels. disableChannels[] = {{channelID<number>, disableChat<bool>, disableVoice<bool>}};
 
 #include "Config_Spyglass.hpp"
 #include "CfgRemoteExec.hpp"
 #include "dialog\MasterHandler.hpp"
 #include "Config_Master.hpp"
-#include "infiSTAR_AdminMenu.hpp"
 #include "Custom\CHVD\dialog.hpp"
 
 class CfgServer {
