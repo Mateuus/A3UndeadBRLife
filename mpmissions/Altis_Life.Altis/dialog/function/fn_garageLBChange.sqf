@@ -7,7 +7,7 @@
 	Can't be bothered to answer it.. Already deleted it by accident..
 */
 disableSerialization;
-private["_control","_index","_className","_classNameLife","_dataArr","_vehicleColor","_vehicleInfo","_trunkSpace","_sellPrice","_retrievePrice","_sellMultiplier","_price","_storageFee","_purchasePrice"];
+private["_control","_index","_className","_classNameLife","_dataArr","_vehicleColor","_vehicleInfo","_trunkSpace","_sellPrice","_retrievePrice","_sellMultiplier","_price","_storageFee","_purchasePrice","_trunklevel","_insurance","_hooks","_gps","_security","_hookstring","_securitystring","_gpsstring"];
 _control = SEL(_this,0);
 _index = SEL(_this,1);
 
@@ -16,6 +16,42 @@ _dataArr = CONTROL_DATAI(_control,_index);
 _dataArr = call compile format["%1",_dataArr];
 _className = SEL(_dataArr,0);
 _classNameLife = _className;
+
+// Start of Upgrades
+_gps = parseNumber format["%1",SEL(_dataArr,2)];
+_security = parseNumber format["%1",SEL(_dataArr,3)];
+_trunklevel = SEL(_dataArr,4);
+_insurance = SEL(_dataArr,5);
+_hooks = parseNumber format["%1",SEL(_dataArr,6)];
+
+_trunklevel = format["Trunk Level: %1",_trunklevel];
+_insurance = format["Insurance Level: %1",_insurance];
+
+/*
+_gps = [_gps, 1] call DB_fnc_bool;
+_security = [_security, 1] call DB_fnc_bool;
+_hooks = [_hooks, 1] call DB_fnc_bool;
+*/
+
+if (_gps == 1) then {
+	_gpsstring = "GPS: Enabled";
+} else {
+	_gpsstring = "GPS: Disabled";
+};
+
+if (_security == 1) then {
+	_securitystring = "Security: Enabled";
+} else {
+	_securitystring = "Security: Disabled";
+};
+
+if (_hooks == 1) then {
+	_hookstring = "Sling Hooks: Enabled";
+} else {
+	_hookstring = "Sling Hooks: Disabled";
+};
+
+// End of Upgrades
 
 if(!isClass (missionConfigFile >> CONFIG_LIFE_VEHICLES >> _classNameLife)) then {
 	_classNameLife = "Default"; //Use Default class if it doesn't exist
@@ -72,7 +108,12 @@ SEL(_vehicleInfo,11),
 SEL(_vehicleInfo,10),
 if(_trunkSpace isEqualTo -1) then {"None"} else {_trunkSpace},
 SEL(_vehicleInfo,12),
-_vehicleColor
+_vehicleColor, //8
+_insurance, //9
+_trunklevel, //10
+_gpsstring, //11
+_securitystring, //12
+_hookstring //13
 ];
 
 ctrlShow [2803,true];

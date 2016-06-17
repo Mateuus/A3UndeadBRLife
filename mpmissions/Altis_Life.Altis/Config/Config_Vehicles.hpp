@@ -263,6 +263,7 @@ class LifeCfgVehicles {
         vItemSpace = -1;
         licenses[] = { {""}, {""}, {""}, {""} };
         price = -1;
+		insurance = 2500;
         textures[] = {};
     };
 
@@ -291,6 +292,7 @@ class LifeCfgVehicles {
         vItemSpace = 45;
         licenses[] = { {"boat"}, {""}, {""}, {""} };
         price = 5000;
+		insurance = 2500;
         textures[] = { };
     };
 
@@ -309,6 +311,7 @@ class LifeCfgVehicles {
         vItemSpace = 300;
         licenses[] = { {""}, {"aviation"}, {""}, {""} };
         price = 350000;
+		insurance = 16000;
         textures[] = {
             { "Police", "cop", {
               "textures\Cop\Vehicles\CopGhostBody.jpg",
@@ -361,6 +364,7 @@ class LifeCfgVehicles {
         vItemSpace = 485;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
         price = 200000;
+		insurance = 2500;
         textures[] = { };
     };
 
@@ -368,6 +372,7 @@ class LifeCfgVehicles {
         vItemSpace = 550;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
         price = 1250000;
+		insurance = 25000;
         textures[] = { };
     };
 
@@ -375,6 +380,7 @@ class LifeCfgVehicles {
         vItemSpace = 5000;
         licenses[] = { {""}, {""}, {""}, {""} };
         price = -1;
+		insurance = 2500;
         textures[] = {};
     };
 
@@ -382,6 +388,7 @@ class LifeCfgVehicles {
         vItemSpace = 550;
         licenses[] = { {""}, {""}, {""}, {""} };
         price = -1;
+		insurance = 2500;
         textures[] = {};
     };
 
@@ -389,6 +396,7 @@ class LifeCfgVehicles {
         vItemSpace = 1100;
         licenses[] = { {""}, {""}, {""}, {""} };
         price = -1;
+		insurance = 2500;
         textures[] = {};
     };
 
@@ -396,6 +404,7 @@ class LifeCfgVehicles {
         vItemSpace = 165;
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 20000;
+		insurance = 2500;
         textures[] = { };
     };
 
@@ -403,6 +412,7 @@ class LifeCfgVehicles {
         vItemSpace = 105;
         licenses[] = { {"rebel"}, {""}, {""}, {""} };
         price = 400000;
+		insurance = 2500;
         textures[] = {
             { "Black", "cop", {
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
@@ -416,6 +426,7 @@ class LifeCfgVehicles {
         vItemSpace = 115;
         licenses[] = { {"rebel"}, {""}, {""}, {""} };
         price = 2500000;
+		insurance = 2500;
         textures[] = { };
     };
 
@@ -423,6 +434,7 @@ class LifeCfgVehicles {
         vItemSpace = 85;
         licenses[] = { {"boat"}, {""}, {""}, {""} };
         price = 25000;
+		insurance = 2500;
         textures[] = { };
     };
 
@@ -430,6 +442,7 @@ class LifeCfgVehicles {
         vItemSpace = 85;
         licenses[] = { {""}, {"cg"}, {""}, {""} };
         price = 20000;
+		insurance = 2500;
         textures[] = { };
     };
 
@@ -437,6 +450,7 @@ class LifeCfgVehicles {
         vItemSpace = 750;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
         price = 350000;
+		insurance = 2500;
         textures[] = { };
     };
 
@@ -444,6 +458,7 @@ class LifeCfgVehicles {
         vItemSpace = 525;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
         price = 275000;
+		insurance = 2500;
         textures[] = { };
     };
 
@@ -451,6 +466,7 @@ class LifeCfgVehicles {
         vItemSpace = 110;
         licenses[] = { {"driver"}, {""}, {""}, {""} };
         price = 750000;
+		insurance = 2500;
         textures[] = { };
     };
 
@@ -459,6 +475,7 @@ class LifeCfgVehicles {
         assurPrice[] = { 1000, 1000, 1000, 1000 };
         licenses[] = { {"driver"}, {""}, {""}, {""} };
         price = 20000;
+		insurance = 2500;
         textures[] = {
             { "Red", "civ", {
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa",
@@ -506,6 +523,7 @@ class LifeCfgVehicles {
         vItemSpace = 20;
         licenses[] = { {"driver"}, {""}, {""}, {""} };
         price = 15000;
+		insurance = 2500;
         textures[] = {};
     };
 /*
@@ -525,6 +543,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         vItemSpace = 45;
         licenses[] = { {"driver"}, {""}, {""}, {""} };
         price = 100000;
+		insurance = 2500;
         textures[] = {
             { "Red", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport01_co.paa"
@@ -575,6 +594,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         vItemSpace = 25;
         licenses[] = { {"driver"}, {""}, {""}, {""} };
         price = 4500;
+		insurance = 2500;
         textures[] = {
             { "Brown", "cop", {
                 "\A3\Soft_F\Quadbike_01\Data\Quadbike_01_co.paa"
@@ -613,6 +633,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         vItemSpace = 250;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
         price = 125000;
+		insurance = 2500;
         textures[] = {
             { "Orange", "civ", {
                 "\A3\Soft_F_Beta\Truck_02\data\truck_02_kab_co.paa",
@@ -628,6 +649,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         vItemSpace = 200;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
         price = 100000;
+		insurance = 2500;
         textures[] = {
             { "Orange", "civ", {
                 "\A3\Soft_F_Beta\Truck_02\data\truck_02_kab_co.paa",
@@ -643,6 +665,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         vItemSpace = 300;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
         price = 250000;
+		insurance = 2500;
         textures[] = {};
     };
 
@@ -650,6 +673,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         vItemSpace = 100;
         licenses[] = { {"driver"}, {""}, {""}, {""} };
         price = 13500;
+		insurance = 2500;
         textures[] = {
             { "Beige", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base01_co.paa"
@@ -682,6 +706,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         vItemSpace = 100;
         licenses[] = { {"driver"}, {""}, {""}, {""} };
         price = 45000;
+		insurance = 2500;
         textures[] = {
             { "Dark Red", "civ", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_co.paa"
@@ -726,6 +751,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         vItemSpace = 200;
         licenses[] = { {"driver"}, {""}, {""}, {""} };
         price = 45000;
+		insurance = 2500;
         textures[] = {
             { "White", "civ", {
                 "\a3\soft_f_gamma\Van_01\Data\van_01_ext_co.paa"
@@ -740,6 +766,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         vItemSpace = 250;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
         price = 60000;
+		insurance = 2500;
         textures[] = {
             { "White", "civ", {
                 "\a3\soft_f_gamma\Van_01\Data\van_01_ext_co.paa"
@@ -754,6 +781,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         vItemSpace = 65;
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 100000;
+		insurance = 2500;
         textures[] = {
             { "Police", "cop", {
                 "textures\Cop\Vehicles\Hunter1.jpg",
@@ -766,6 +794,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         vItemSpace = 90;
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 275000;
+		insurance = 2500;
         textures[] = {
             { "Rebel Digital", "reb", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa"
@@ -777,6 +806,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
        vItemSpace = 930;
        licenses[] = { {""}, {""}, {""}, {""} };
        price = 1575000;
+	   insurance = 2500;
        textures[] = {};
    };
 
@@ -784,6 +814,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
       vItemSpace = 780;
       licenses[] = { {""}, {""}, {""}, {""} };
       price = 1205000;
+	  insurance = 2500;
       textures[] = {};
   };
 
@@ -791,6 +822,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         vItemSpace = 90;
         licenses[] = { {""}, {"aviation"}, {"mAir"}, {""} };
         price = 250000;
+		insurance = 2500;
         textures[] = {
             { "Police", "cop", {
                 "textures\Cop\Vehicles\policeheli.jpg"
@@ -843,12 +875,14 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class C_Heli_Light_01_civil_F : B_Heli_Light_01_F {
         vItemSpace = 75;
         price = 250000;
+		insurance = 2500;
     };
 
     class O_Heli_Light_02_unarmed_F {
         vItemSpace = 310;
         licenses[] = { {"" }, {"aviation"}, {"mAir"}, {""} };
         price = 750000;
+		insurance = 2500;
         textures[] = {
             { "Black", "cop", {
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_co.paa"
@@ -872,6 +906,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         vItemSpace = 110;
         licenses[] = { {"boat"}, {"cg"}, {""}, {""} };
         price = 150000;
+		insurance = 2500;
         textures[] = {};
     };
 
@@ -880,6 +915,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         vFuelSpace = 9999999;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
         price = 175000;
+		insurance = 2500;
         textures[] = {
             { "White", "civ", {
                 "\A3\soft_f_gamma\Van_01\data\van_01_ext_co.paa",
@@ -897,6 +933,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         vFuelSpace = 9999999;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
         price = 250000;
+		insurance = 2500;
         textures[] = {
             { "White", "civ", {
                 "\A3\Soft_F_Beta\Truck_02\data\truck_02_kab_co.paa",
@@ -910,6 +947,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         vFuelSpace = 9999999;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
         price = 300000;
+		insurance = 2500;
         textures[] = {};
     };
 };

@@ -6,7 +6,7 @@
 	Description:
 	Main functionality for lock-picking.
 */
-private["_curTarget","_distance","_isVehicle","_title","_progressBar","_cP","_titleText","_dice","_badDistance"];
+private["_curTarget","_distance","_isVehicle","_title","_progressBar","_cP","_titleText","_dice","_badDistance","_security"];
 _curTarget = cursorObject;
 life_interrupted = false;
 
@@ -40,7 +40,30 @@ _titleText = _ui displayCtrl 38202;
 _veh = cursorTarget;
 _titleText ctrlSetText format["%2 (1%1)...","%",_title];
 _progressBar progressSetPosition 0.01;
-_cP = 0.01;
+_security = _curTarget getVariable ["security", false];
+if (_security) then {
+	_cp = 0.005;
+	[_curTarget] spawn {
+		sleep 60;
+		_vehicle = _this select 0;
+		_vehData = _vehicle getVariable["vehicle_info_owners",[]];
+		_vehOwner = -1;
+		if(count _vehData  > 0) then
+		{
+			_vehOwner = (_vehData select 0) select 0;
+		};
+		_uid = _vehOwner;
+		_owner =
+		{
+			if (getPlayerUID _x == _uid) exitWith {_x;};
+		} forEach allUnits;
+		_vehname = getText(configFile >> "CfgVehicles" >> typeof _vehicle >> "displayName");
+		_msg = format["The security system on your %1 was activated",_vehname];
+		[[_owner,_msg,player,6],"TON_fnc_handleMessages",false] spawn life_fnc_MP;
+	};
+} else {
+	_cP = 0.01;
+};
 
 for "_i" from 0 to 1 step 0 do {
 	if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then {
