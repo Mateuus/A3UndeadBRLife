@@ -48,16 +48,16 @@ class CarShops {
 	class civ_vip_car_platinum {
         side = "civ";
         vehicles[] = {
-			{ "O_MRAP_02_F", { "life_donorlevel", "SCALAR", 4 } },
-            { "B_MRAP_01_F", { "life_donorlevel", "SCALAR", 4 } }
+			{ "O_MRAP_02_F", { "life_donorlevel", "SCALAR", 4 } }, //Ifrit
+            { "B_MRAP_01_F", { "life_donorlevel", "SCALAR", 4 } } //Hunter
         };
     };
 
 	class civ_vip_car_diamante {
         side = "civ";
         vehicles[] = {
-			{ "O_MRAP_02_F", { "life_donorlevel", "SCALAR", 5 } },
-            { "B_MRAP_01_F", { "life_donorlevel", "SCALAR", 5 } }
+			{ "O_MRAP_02_F", { "life_donorlevel", "SCALAR", 5 } },//Ifrit
+            { "B_MRAP_01_F", { "life_donorlevel", "SCALAR", 5 } }//Hunter
         };
     };
 
@@ -447,8 +447,22 @@ class LifeCfgVehicles {
     class O_MRAP_02_F {
         vItemSpace = 110;
         licenses[] = { {"driver"}, {""}, {""}, {""} };
-        price = 750000;
-        textures[] = { };
+        price = 550000;
+        textures[] = { 
+		{ "Ifrit Chamas VIP", "civ", {
+	                "textures\Vip\Vehicles\ifrit\flame_ifrit_1.jpg",
+					"textures\Vip\Vehicles\ifrit\flame_ifrit_2.jpg"
+        } },
+		{ "Ifrit Batman VIP", "civ", {
+	                "textures\Vip\Vehicles\ifrit\ifrit_batman_front.jpg",
+					"textures\Vip\Vehicles\ifrit\ifrit_batman_hinten.jpg"
+        } },
+		{ "Ifrit Wolf Bite VIP", "civ", {
+	                "textures\Vip\Vehicles\ifrit\mrap_02_ext_01_co.jpg",
+					"textures\Vip\Vehicles\ifrit\mrap_02_ext_02_co.jpg"
+        } }
+				
+		};
     };
 
     class C_Offroad_01_F {
@@ -753,20 +767,21 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 100000;
         textures[] = {
            { "Hunter VIP", "civ", {
-	                "textures\Vip\Vehicles\donator_hunter_front.paa",
-					"textures\Vip\Vehicles\donator_hunter_hinten.paa"
+	                "textures\Vip\Vehicles\hunter\donator_hunter_front.paa",
+					"textures\Vip\Vehicles\hunter\donator_hunter_hinten.paa"
 			} },
 			{ "Hunter Assassino de COP VIP", "civ", {
-	                "textures\Vip\Vehicles\mrap_01_adds_co.jpg",
-					"textures\Vip\Vehicles\mrap_01_base_co.jpg"
+					"textures\Vip\Vehicles\hunter\mrap_01_base_co.jpg",
+	                "textures\Vip\Vehicles\hunter\mrap_01_adds_co.jpg",
+
 			} },
 			{ "Hunter Unicórnio VIP", "civ", {
-	                "textures\Vip\Vehicles\unicorn_hunter_teil1.paa",
-					"textures\Vip\Vehicles\unicorn_hunter_teil2.paa"
+	                "textures\Vip\Vehicles\hunter\unicorn_hunter_teil1.paa",
+					"textures\Vip\Vehicles\hunter\unicorn_hunter_teil2.paa"
 			} },
 			{ "Hunter Caveira VIP", "civ", {
-	                "textures\Vip\Vehicles\graywolfhunter_1.jpg",
-					"textures\Vip\Vehicles\graywolfhunter_2.jpg"
+	                "textures\Vip\Vehicles\hunter\graywolfhunter_1.jpg",
+					"textures\Vip\Vehicles\hunter\graywolfhunter_2.jpg"
 			} },
 			{ "Police", "cop", {
                 "textures\Cop\Vehicles\Hunter1.jpg",
