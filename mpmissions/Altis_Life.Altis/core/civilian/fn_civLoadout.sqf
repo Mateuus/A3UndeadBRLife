@@ -10,7 +10,6 @@ _handle = [] spawn life_fnc_stripDownPlayer;
 waitUntil {scriptDone _handle};
 
 _clothings = ["U_C_Poloshirt_stripped","U_C_Poloshirt_redwhite","U_OrestesBody","U_C_WorkerCoveralls","U_C_Poor_2","U_C_Commoner1_3","U_C_Commoner1_2","U_C_Commoner1_1","U_C_Commoner1_3","U_C_Poloshirt_salmon","U_C_Poloshirt_burgundy","U_C_Commoner_shorts"];
-player addUniform (selectRandom _clothings);
 
 /* ITEMS */
 player addItem "ItemMap";
@@ -20,7 +19,7 @@ player assignItem "ItemCompass";
 player addItem "ItemWatch";
 player assignItem "ItemWatch";
 
-if (playerSide isEqualTo civilian) then {
+if (playerSide == civilian) then {
 
 switch (FETCH_CONST(life_donorlevel)) do {
 
@@ -53,6 +52,11 @@ switch (FETCH_CONST(life_donorlevel)) do {
 		player ForceAddUniform "U_I_CombatUniform";
 		player setObjectTextureGlobal [0, "textures\Vip\Clothing\diamante.jpg"]; 
 	};
+	
+	default:
+	{
+		player addUniform (selectRandom _clothings);
+	}
 	
 };
 };
