@@ -25,42 +25,39 @@ class CarShops {
     };
 
 	class civ_vip_car_bronze {
-        side = "civ_vip";
+        side = "civ";
         vehicles[] = {
-			{ "O_MRAP_02_F", { "life_donorlevel", "SCALAR", 1 } },
-            { "B_MRAP_01_F", { "life_donorlevel", "SCALAR", 1 } }
+			{ "O_MRAP_02_F", { "life_donorlevel", "SCALAR", 1 } }
         };
     };
 
 	class civ_vip_car_silver {
-        side = "civ_vip";
+        side = "civ";
         vehicles[] = {
-			{ "O_MRAP_02_F", { "life_donorlevel", "SCALAR", 2 } },
-            { "B_MRAP_01_F", { "life_donorlevel", "SCALAR", 2 } }
+			{ "O_MRAP_02_F", { "life_donorlevel", "SCALAR", 2 } }
         };
     };
 
 	class civ_vip_car_gold {
-        side = "civ_vip";
+        side = "civ";
         vehicles[] = {
-			{ "O_MRAP_02_F", { "life_donorlevel", "SCALAR", 2 } },
-            { "B_MRAP_01_F", { "life_donorlevel", "SCALAR", 2 } }
+			{ "O_MRAP_02_F", { "life_donorlevel", "SCALAR", 3 } }
         };
     };
 
 	class civ_vip_car_platinum {
-        side = "civ_vip";
+        side = "civ";
         vehicles[] = {
-			{ "O_MRAP_02_F", { "life_donorlevel", "SCALAR", 2 } },
-            { "B_MRAP_01_F", { "life_donorlevel", "SCALAR", 2 } }
+			{ "O_MRAP_02_F", { "life_donorlevel", "SCALAR", 4 } },
+            { "B_MRAP_01_F", { "life_donorlevel", "SCALAR", 4 } }
         };
     };
 
 	class civ_vip_car_diamante {
-        side = "civ_vip";
+        side = "civ";
         vehicles[] = {
-			{ "O_MRAP_02_F", { "life_donorlevel", "SCALAR", 2 } },
-            { "B_MRAP_01_F", { "life_donorlevel", "SCALAR", 2 } }
+			{ "O_MRAP_02_F", { "life_donorlevel", "SCALAR", 5 } },
+            { "B_MRAP_01_F", { "life_donorlevel", "SCALAR", 5 } }
         };
     };
 
@@ -755,7 +752,23 @@ will modify the virtual space and the price of the vehicle, but other informatio
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 100000;
         textures[] = {
-            { "Police", "cop", {
+           { "Hunter VIP", "civ", {
+	                "textures\vip\donator_hunter_front.paa",
+					"textures\vip\donator_hunter_hinten.paa"
+			} },
+			{ "Hunter Assassino de COP VIP", "civ", {
+	                "textures\vip\mrap_01_adds_co.jpg",
+					"textures\vip\mrap_01_base_co.jpg"
+			} },
+			{ "Hunter Unicórnio VIP", "civ", {
+	                "textures\vip\unicorn_hunter_teil1.paa",
+					"textures\vip\unicorn_hunter_teil2.paa"
+			} },
+			{ "Hunter Caveira VIP", "civ", {
+	                "textures\vip\graywolfhunter_1.jpg",
+					"textures\vip\graywolfhunter_2.jpg"
+			} },
+			{ "Police", "cop", {
                 "textures\Cop\Vehicles\Hunter1.jpg",
                 "textures\Cop\Vehicles\Hunter2.jpg"
             } }
