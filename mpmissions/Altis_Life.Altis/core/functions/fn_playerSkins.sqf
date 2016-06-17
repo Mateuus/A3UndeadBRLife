@@ -54,6 +54,38 @@ switch(playerSide) do {
 		if (backpack player isEqualTo "B_Bergen_mcamo" && (FETCH_CONST(life_donorlevel) >= 2)) then {
 			backpackContainer player setObjectTextureGlobal [0, "textures\Civ\Supporter\VIPgayruck.jpg"];
 		};
+		
+		////////////////////////VIP INICIO/////////////////////////////////////////////////
+		if ((uniform player == "U_C_Commoner1_3") && (FETCH_CONST(life_donorlevel) == 0)) then
+		{
+			player setObjectTextureGlobal [0, "textures\Civ\Clothing\roupaundead.jpg"];
+		};
+
+		if ((uniform player == "U_C_Commoner1_3") && (FETCH_CONST(life_donorlevel) == 1)) then
+		{
+			player setObjectTextureGlobal [0, "textures\Vip\Clothing\bronze.paa"];
+		};
+		if ((uniform player == "U_C_Commoner1_3") && (FETCH_CONST(life_donorlevel) == 2)) then
+		{
+			player setObjectTextureGlobal [0, "textures\Vip\Clothing\silver.paa"];
+		};
+		if ((uniform player == "U_C_Commoner1_3") && (FETCH_CONST(life_donorlevel) == 3)) then
+		{
+			player setObjectTextureGlobal [0, "textures\Vip\Clothing\gold.paa"];
+		};
+		if ((uniform player == "U_C_Commoner1_3") && (FETCH_CONST(life_donorlevel) == 4)) then
+		{
+			player setObjectTextureGlobal [0, "textures\Vip\Clothing\platunum.paa"];
+		};
+		if ((uniform player == "U_C_Commoner1_3") && (FETCH_CONST(life_donorlevel) == 5)) then
+		{
+			player setObjectTextureGlobal [0, "textures\Vip\Clothing\diamante.jpg"];
+		};
+		/////////////////////////VIP END///////////////////////////////////////////////////
+		
+		
+		
+		
 		/*
 		if(uniform player isEqualTo "U_B_CombatUniform_mcam") then {
 			player setObjectTextureGlobal [0, "textures\Supporter\vipOrange.jpg"];
