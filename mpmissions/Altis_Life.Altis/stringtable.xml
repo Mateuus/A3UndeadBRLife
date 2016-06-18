@@ -585,46 +585,46 @@
 	</Package>
 	<Package name="CHVD">
 		<Key ID="STR_chvd_title">
-			<Original>View Distance Settings</Original>
+			<Original>Configuracoes de renderizaçao</Original>
 		</Key>
 		<Key ID="STR_chvd_title2">
-			<Original>View Distance</Original>
+			<Original>Distancia de visao</Original>
 		</Key>
 		<Key ID="STR_chvd_foot">
-			<Original>On Foot</Original>
+			<Original>A pé</Original>
 		</Key>
 		<Key ID="STR_chvd_car">
-			<Original>In Car</Original>
+			<Original>No carro</Original>
 		</Key>
 		<Key ID="STR_chvd_air">
-			<Original>In Heli</Original>
+			<Original>No heli</Original>
 		</Key>
 		<Key ID="STR_chvd_view">
-			<Original>VIEW:</Original>
+			<Original>Geral:</Original>
 		</Key>
 		<Key ID="STR_chvd_object">
-			<Original>OBJECT:</Original>
+			<Original>Objeto:</Original>
 		</Key>
 		<Key ID="STR_chvd_terrain">
-			<Original>TERRAIN:</Original>
+			<Original>Terreno:</Original>
 		</Key>
 		<Key ID="STR_chvd_sync">
-			<Original>Sync Objects With View</Original>
+			<Original>Sicronizar com objetos</Original>
 		</Key>
 		<Key ID="STR_chvd_close">
-			<Original>Close</Original>
+			<Original>Fechar</Original>
 		</Key>
 		<Key ID="STR_chvd_low">
-			<Original>Low</Original>
+			<Original>Baixo</Original>
 		</Key>
 		<Key ID="STR_chvd_standard">
-			<Original>Standard</Original>
+			<Original>Padrao</Original>
 		</Key>
 		<Key ID="STR_chvd_high">
-			<Original>High</Original>
+			<Original>Alto</Original>
 		</Key>
 		<Key ID="STR_chvd_veryHigh">
-			<Original>Very High</Original>
+			<Original>Muito Alto</Original>
 		</Key>
 	</package>
 	<Package name="NHS">
@@ -7595,19 +7595,19 @@
 			<Polish>Mielenie cementu</Polish>
 		</Key>
 		<Key ID="STR_Process_cloth">
-			<Original>Weaving Cloth</Original>
+			<Original>Processador de pano</Original>
 		</Key>
 		<Key ID="STR_Process_rubber">
-			<Original>Creating Rubber</Original>
+			<Original>Processador de borracha</Original>
 		</Key>
 		<Key ID="STR_Process_gunpowder">
-			<Original>Creating Gunpowder</Original>
+			<Original>Processador de enxofre</Original>
 		</Key>
 		<Key ID="STR_Process_C4">
-			<Original>Creating C4 Block</Original>
+			<Original>Construtor de C4</Original>
 		</Key>
 		<Key ID="STR_Process_steelplate">
-			<Original>Welding Steel Plates</Original>
+			<Original>Processador de aço</Original>
 		</Key>
 		<Key ID="STR_Process_Stay">
 			<Original>You need to stay within 10m to process.</Original>
