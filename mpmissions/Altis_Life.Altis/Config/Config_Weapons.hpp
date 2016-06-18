@@ -645,7 +645,7 @@ class WeaponShops {
 			{ "arifle_Mk20_F", "Mk20 5.56 mm", 13000, 750 },
 			{ "arifle_Mk20C_F", "Mk20C 5.56 mm", 13000, 750 },
             { "SMG_02_F", "Sting 9 mm", 11000, 750 },
-			{ "PDW2000 9 mm", "Submachine 9x21 mm", 10000, 750 },
+			{ "PDW2000 9 mm", "Submachine 9x21 mm", 10005, 750 },
             { "hgun_P07_snds_F", "Pistola Tazer", 2500, 60 },
             { "hgun_P07_F", "P07 9mm", 4750, 150 },
             { "FirstAidKit", "Bolsa de Sangue", 50, 5 },
