@@ -22,8 +22,52 @@ _initalPrice = M_CONFIG(getNumber,CONFIG_LIFE_VEHICLES,_classNameLife,"price");
 
 switch(playerSide) do {
 	case civilian: {
-		_buyMultiplier = LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_CIVILIAN");
-		_rentMultiplier = LIFE_SETTINGS(getNumber,"vehicle_rental_multiplier_CIVILIAN");
+	
+	/* BRONZE */
+	if ((FETCH_CONST(life_donorlevel) == 1)) then 
+	{
+				_buyMultiplier = LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_DONATOR_BRONZE");
+				_rentMultiplier = LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_DONATOR_BRONZE");
+		}else{
+				_buyMultiplier = LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_CIVILIAN");
+				_rentMultiplier = LIFE_SETTINGS(getNumber,"vehicle_rental_multiplier_CIVILIAN");
+	};
+	/* SILVER */
+	if ((FETCH_CONST(life_donorlevel) == 2)) then 
+	{
+				_buyMultiplier = LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_DONATOR_SILVER");
+				_rentMultiplier = LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_DONATOR_SILVER");
+		}else{
+				_buyMultiplier = LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_CIVILIAN");
+				_rentMultiplier = LIFE_SETTINGS(getNumber,"vehicle_rental_multiplier_CIVILIAN");
+	};
+	/* GOLD */
+	if ((FETCH_CONST(life_donorlevel) == 3)) then 
+	{
+				_buyMultiplier = LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_DONATOR_GOLD");
+				_rentMultiplier = LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_DONATOR_GOLD");
+		}else{
+				_buyMultiplier = LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_CIVILIAN");
+				_rentMultiplier = LIFE_SETTINGS(getNumber,"vehicle_rental_multiplier_CIVILIAN");
+	};
+	/* PLATINUM */
+	if ((FETCH_CONST(life_donorlevel) == 4)) then 
+	{
+				_buyMultiplier = LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_DONATOR_PLATINUM");
+				_rentMultiplier = LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_DONATOR_PLATINUM");
+		}else{
+				_buyMultiplier = LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_CIVILIAN");
+				_rentMultiplier = LIFE_SETTINGS(getNumber,"vehicle_rental_multiplier_CIVILIAN");
+	};
+	/* DIAMANTE */
+	if ((FETCH_CONST(life_donorlevel) == 5)) then 
+	{
+				_buyMultiplier = LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_DONATOR_DIAMANTE");
+				_rentMultiplier = LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_DONATOR_DIAMANTE");
+		}else{
+				_buyMultiplier = LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_CIVILIAN");
+				_rentMultiplier = LIFE_SETTINGS(getNumber,"vehicle_rental_multiplier_CIVILIAN");
+	};
 	};
 	case west: {
 		_buyMultiplier = LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_COP");

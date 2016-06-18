@@ -25,8 +25,53 @@ if(!isClass (missionConfigFile >> CONFIG_LIFE_VEHICLES >> _vehicleLife)) then {
 _price = M_CONFIG(getNumber,CONFIG_LIFE_VEHICLES,_vehicleLife,"price");
 switch(playerSide) do {
 	case civilian: {
-		_multiplier = LIFE_SETTINGS(getNumber,"vehicle_sell_multiplier_CIVILIAN");
-		_purchasePrice = _price * LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_CIVILIAN");
+	/* BRONZE */
+	if ((FETCH_CONST(life_donorlevel) == 1)) then 
+	{
+				_multiplier = LIFE_SETTINGS(getNumber,"vehicle_sell_multiplier_DONATOR_BRONZE");
+				_purchasePrice = _price * LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_DONATOR_BRONZE");
+		}else{
+				_multiplier = LIFE_SETTINGS(getNumber,"vehicle_sell_multiplier_CIVILIAN");
+				_purchasePrice = _price * LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_CIVILIAN");
+	};
+	/* SILVER */
+	if ((FETCH_CONST(life_donorlevel) == 2)) then 
+	{
+				_multiplier = LIFE_SETTINGS(getNumber,"vehicle_sell_multiplier_DONATOR_SILVER");
+				_purchasePrice = _price * LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_DONATOR_SILVER");
+		}else{
+				_multiplier = LIFE_SETTINGS(getNumber,"vehicle_sell_multiplier_CIVILIAN");
+				_purchasePrice = _price * LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_CIVILIAN");
+	};
+	/* GOLD */
+	if ((FETCH_CONST(life_donorlevel) == 3)) then 
+	{
+				_multiplier = LIFE_SETTINGS(getNumber,"vehicle_sell_multiplier_DONATOR_GOLD");
+				_purchasePrice = _price * LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_DONATOR_GOLD");
+		}else{
+				_multiplier = LIFE_SETTINGS(getNumber,"vehicle_sell_multiplier_CIVILIAN");
+				_purchasePrice = _price * LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_CIVILIAN");
+	};
+	/* PLATINUM */
+	if ((FETCH_CONST(life_donorlevel) == 4)) then 
+	{
+				_multiplier = LIFE_SETTINGS(getNumber,"vehicle_sell_multiplier_DONATOR_PLATINUM");
+				_purchasePrice = _price * LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_DONATOR_PLATINUM");
+		}else{
+				_multiplier = LIFE_SETTINGS(getNumber,"vehicle_sell_multiplier_CIVILIAN");
+				_purchasePrice = _price * LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_CIVILIAN");
+	};
+	/* DIAMANTE */
+	if ((FETCH_CONST(life_donorlevel) == 5)) then 
+	{
+				_multiplier = LIFE_SETTINGS(getNumber,"vehicle_sell_multiplier_DONATOR_DIAMANTE");
+				_purchasePrice = _price * LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_DONATOR_DIAMANTE");
+		}else{
+				_multiplier = LIFE_SETTINGS(getNumber,"vehicle_sell_multiplier_CIVILIAN");
+				_purchasePrice = _price * LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_CIVILIAN");
+	};
+	
+
 	};
 	case west: {
 		_multiplier = LIFE_SETTINGS(getNumber,"vehicle_sell_multiplier_COP");
