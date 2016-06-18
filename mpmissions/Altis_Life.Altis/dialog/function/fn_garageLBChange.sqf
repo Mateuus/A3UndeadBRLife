@@ -65,7 +65,7 @@ switch(playerSide) do {
 	if ((FETCH_CONST(life_donorlevel) == 4)) then 
 	{
 				_purchasePrice = _price * LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_DONATOR_PLATINUM");
-				_sellMultiplier = LIFE_SETTINGS(getNumber,"vehicle_sell_multiplier_DONATOR_DIAMANTE");
+				_sellMultiplier = LIFE_SETTINGS(getNumber,"vehicle_sell_multiplier_DONATOR_PLATINUM");
 		}else{
 				_purchasePrice = _price * LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_CIVILIAN");
 				_sellMultiplier = LIFE_SETTINGS(getNumber,"vehicle_sell_multiplier_CIVILIAN");
@@ -74,7 +74,7 @@ switch(playerSide) do {
 	if ((FETCH_CONST(life_donorlevel) == 5)) then 
 	{
 				_purchasePrice = _price * LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_DONATOR_DIAMANTE");
-				_sellMultiplier = LIFE_SETTINGS(getNumber,"vehicle_sell_multiplier_CIVILIAN");
+				_sellMultiplier = LIFE_SETTINGS(getNumber,"vehicle_sell_multiplier_DONATOR_DIAMANTE");
 		}else{
 				_purchasePrice = _price * LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_CIVILIAN");
 				_sellMultiplier = LIFE_SETTINGS(getNumber,"vehicle_sell_multiplier_CIVILIAN");
