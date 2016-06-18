@@ -1,4 +1,6 @@
-timeout /t 5
+timeout /t 15 
+
 cd "C:\Program Files (x86)\Steam\steamapps\common\Arma 3 Server\BEC"
+
 start "" /min "Bec.exe"  --dsc -f Config.cfg
  exit
