@@ -77370,7 +77370,7 @@ class Mission
 			dataType="Marker";
 			position[]={3748.0356,11.372314,13456.834};
 			name="marker_269";
-			text="Posto  de Gasolina";
+			text="Posto de Gasolina";
 			type="mil_dot";
 			colorName="ColorKhaki";
 			id=10475;
