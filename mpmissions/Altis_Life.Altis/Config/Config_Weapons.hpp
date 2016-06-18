@@ -42,25 +42,6 @@ class WeaponShops {
         };
     };
 
-	class utilitarios {    
-        name = "Utilitarios Shop";
-		side = "civ";
-        license = "gun";
-        level[] = { "life_donorlevel", "SCALAR", 1, "Você precisa ser um nível doador Bronze para acessar a loja, acesse nosso forum ou teamspeak para obter informações." };
-		items[] = {
-            { "FirstAidKit", "Bolsa de Sangue", 250, 50 },
-			{ "NVGoggles", "NV Goggles (Brown)", 1500, 750 },
-            { "ItemGPS", "GPS", 200, 60 },
-            { "ItemMap", "Mapa", 750, 150 },
-			{ "ItemCompass", "Bússola", 250, 25 },
-            { "ItemWatch", "Relogio", 250, -1 },
-            { "Binocular", "Binoculos", 8200, 90 },
-            { "Rangefinder", "Rangefinder", 20200, 90 }			
-        };
-        mags[] ={};
-        accs[] = {};
-        };
-    };
 	
 	class bronze {    
         name = "Bronze Armas Shop";
@@ -591,25 +572,6 @@ class WeaponShops {
     };
 
     //Cop Shops
-	class cop_mercado {
-        name = "Altis Mercado Shop";
-        side = "cop";
-        license = "";
-        level[] = { "", "", -1, "" };
-        items[] = {
-            { "FirstAidKit", "Bolsa de Sangue", 250, 50 },
-			{ "NVGoggles", "NV Goggles (Brown)", 1500, 750 },
-            { "ItemGPS", "GPS", 200, 60 },
-            { "ItemMap", "Mapa", 750, 150 },
-			{ "ItemCompass", "Bússola", 250, 25 },
-            { "ItemWatch", "Relogio", 250, -1 },
-            { "Binocular", "Binoculos", 200, 90 }
-        };
-        mags[] = {};
-        accs[] = {};
-	  };
-   };
-   
     class cop_recruta {
         name = "Altis Recruta Shop";
         side = "cop";
@@ -726,7 +688,6 @@ class WeaponShops {
             { "optic_NVS", "", 2850 },
             { "optic_LRPS", "", 3350 },
             { "muzzle_snds_B", "", 275 },
-            { "bipod_01_F_blk", "", 1250 },
             { "bipod_02_F_blk", "", 1200 },
             { "bipod_03_F_blk", "", 1250 },
             { "1Rnd_SmokeGreen_Grenade_shell", "Tear Gas", 150 },
