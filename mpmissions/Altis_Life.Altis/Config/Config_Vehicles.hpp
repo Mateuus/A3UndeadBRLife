@@ -325,7 +325,7 @@ class LifeCfgVehicles {
     };
 
     class B_MRAP_01_hmg_F {
-        vItemSpace = 100;
+        vItemSpace = 25;
         licenses[] = { {""}, {"swat"}, {""}, {""} };
         price = 550000;
         textures[] = {
@@ -365,9 +365,9 @@ class LifeCfgVehicles {
     };
 
     class O_Truck_03_transport_F {
-        vItemSpace = 485;
+        vItemSpace = 450;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 200000;
+        price = 390000;
         textures[] = { };
     };
 
@@ -443,14 +443,14 @@ class LifeCfgVehicles {
     class B_Truck_01_box_F {
         vItemSpace = 750;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 350000;
+        price = 850000;
         textures[] = { };
     };
 
     class B_Truck_01_transport_F {
-        vItemSpace = 525;
+        vItemSpace = 620;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 275000;
+        price = 610000;
         textures[] = { };
     };
 
@@ -476,10 +476,10 @@ class LifeCfgVehicles {
     };
 
     class C_Offroad_01_F {
-        vItemSpace = 165;
+        vItemSpace = 150;
         assurPrice[] = { 1000, 1000, 1000, 1000 };
         licenses[] = { {"driver"}, {""}, {""}, {""} };
-        price = 20000;
+        price = 15000;
         textures[] = {
             { "Red", "civ", {
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa",
@@ -543,9 +543,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class C_Kart_01_Vrana_F : C_Kart_01_Blu_F{};
 
     class C_Hatchback_01_sport_F {
-        vItemSpace = 45;
+        vItemSpace = 54;
         licenses[] = { {"driver"}, {""}, {""}, {""} };
-        price = 100000;
+        price = 90000;
         textures[] = {
             { "Red", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport01_co.paa"
@@ -631,9 +631,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class I_Truck_02_covered_F {
-        vItemSpace = 250;
+        vItemSpace = 330;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 125000;
+        price = 260000;
         textures[] = {
             { "Orange", "civ", {
                 "\A3\Soft_F_Beta\Truck_02\data\truck_02_kab_co.paa",
@@ -646,9 +646,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class I_Truck_02_transport_F {
-        vItemSpace = 200;
+        vItemSpace = 280;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 100000;
+        price = 228000;
         textures[] = {
             { "Orange", "civ", {
                 "\A3\Soft_F_Beta\Truck_02\data\truck_02_kab_co.paa",
@@ -661,9 +661,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class O_Truck_03_covered_F {
-        vItemSpace = 300;
+        vItemSpace = 530;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 250000;
+        price = 535000;
         textures[] = {};
     };
 
@@ -702,7 +702,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class C_SUV_01_F {
         vItemSpace = 100;
         licenses[] = { {"driver"}, {""}, {""}, {""} };
-        price = 45000;
+        price = 43500;
         textures[] = {
             { "Dark Red", "civ", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_co.paa"
@@ -746,7 +746,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class C_Van_01_transport_F {
         vItemSpace = 200;
         licenses[] = { {"driver"}, {""}, {""}, {""} };
-        price = 45000;
+        price = 95000;
         textures[] = {
             { "White", "civ", {
                 "\a3\soft_f_gamma\Van_01\Data\van_01_ext_co.paa"
@@ -758,9 +758,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class C_Van_01_box_F {
-        vItemSpace = 250;
+        vItemSpace = 260;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 60000;
+        price = 130000;
         textures[] = {
             { "White", "civ", {
                 "\a3\soft_f_gamma\Van_01\Data\van_01_ext_co.paa"

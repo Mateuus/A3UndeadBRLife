@@ -629,16 +629,16 @@
 	</package>
 	<Package name="NHS">
     <Key ID="STR_NHS_Died">
-      <Original>%1 has died from there injuries.</Original>
+      <Original>%1 nao sofreu aos ferimentos e faleceu.</Original>
     </Key>
     <Key ID="STR_NHS_Killed">
-      <Original>%1 has been heavily wounded by %2!</Original>
+      <Original>%1 foi brutalmente assassinado por %2!</Original>
     </Key>
     <Key ID="STR_NHS_Suicide">
-      <Original>%1 has been heavily wounded!</Original>
+      <Original>%1 brutamente assassinado!</Original>
     </Key>
     <Key ID="STR_NHS_PlayerRevived">
-      <Original>%1 has been revived!</Original>
+      <Original>%1 foi revivido!</Original>
     </Key>
   </Package>
 	<Package name="Admin_Menu">
@@ -3261,25 +3261,25 @@
 			<Polish>%1 twój %2 jest usuwany przez Policję</Polish>
 		</Key>
 			<Key ID="STR_pAct_DriverSeat">
-			<Original>Drivers Seat</Original>
+			<Original>Motorista</Original>
 			<English>Drivers Seat</English>
 			<German>Auf den Fahrersitz</German>
 			<French>Place conducteur</French>
 		</Key>
 		<Key ID="STR_pAct_PassengerSeat">
-			<Original>Passenger Seat</Original>
+			<Original>Passageiro</Original>
 			<English>Passenger Seat</English>
 			<German>Auf den Passagiersitz</German>
 			<French>Place passager</French>
 		</Key>
 		<Key ID="STR_pAct_GunnerSeat">
-			<Original>Gunner Seat</Original>
+			<Original>Atirador</Original>
 			<English>Gunner Seat</English>
 			<German>gunner seat</German>
 			<French>Place tireur</French>
 		</Key>
 		<Key ID="STR_pAct_GoOut">
-			<Original>Go out of vehicle</Original>
+			<Original>Sair</Original>
 			<English>Go out of vehicle</English>
 			<German>Aus dem Fahrzeug austeigen</German>
 			<French>Sortir du véhicule</French>
@@ -6702,79 +6702,79 @@
 			<Polish>Kolczatka drogowa</Polish>
 		</Key>
 		<Key ID="STR_Item_gunpowder">
-			<Original>Gun Powder</Original>
+			<Original>Polvora</Original>
 		</Key>
 		<Key ID="STR_Item_whiskey">
 			<Original>Whiskey</Original>
 		</Key>
 		<Key ID="STR_Item_beer">
-			<Original>Beer</Original>
+			<Original>Cerveja</Original>
 		</Key>
 		<Key ID="STR_Item_moonshine">
-			<Original>Moonshine</Original>
+			<Original>Vinho</Original>
 		</Key>
 		<Key ID="STR_Item_C4">
-			<Original>C4 Block</Original>
+			<Original>C4</Original>
 		</Key>
 		<Key ID="STR_Item_goldcoin">
-			<Original>Old Coin</Original>
+			<Original>Moeda antiga</Original>
 		</Key>
 		<Key ID="STR_Item_nitroamine">
-			<Original>Nitroamine</Original>
+			<Original>Krokodilo</Original>
 		</Key>
 		<Key ID="STR_Item_Wood">
-			<Original>Wood Logs</Original>
+			<Original>Toras de Madeira</Original>
 		</Key>
 		<Key ID="STR_Item_Plank">
-			<Original>Planks of Wood</Original>
+			<Original>Tabuas de madeira</Original>
 		</Key>
 		<Key ID="STR_Item_steel">
-			<Original>Steel</Original>
+			<Original>Aço</Original>
 		</Key>
 		<Key ID="STR_Item_steelplate">
-			<Original>Steel Plate</Original>
+			<Original>Chapa de aço</Original>
 		</Key>
 		<Key ID="STR_Item_wool">
-			<Original>Wool</Original>
+			<Original>Lã</Original>
 		</Key>
 		<Key ID="STR_Item_cloth">
-			<Original>Cloth</Original>
+			<Original>Pano</Original>
 		</Key>
 		<Key ID="STR_Item_rubberU">
-			<Original>Unprocessed Rubber</Original>
+			<Original>Borracha nao processada</Original>
 		</Key>
 		<Key ID="STR_Item_rubber">
-			<Original>Rubber</Original>
+			<Original>Borracha</Original>
 		</Key>
 		<Key ID="STR_Item_sulfur">
-			<Original>Sulfur</Original>
+			<Original>Enxofre</Original>
 		</Key>
 		<Key ID="STR_Item_Barrel">
-		 <Original>Gun Barrel</Original>
+		 <Original>Cano da arma</Original>
 		</Key>
 		<Key ID="STR_Item_Butt">
-				<Original>Gun Butt</Original>
+				<Original>Grip da arma</Original>
 			</Key>
 		<Key ID="STR_Item_Sight">
-				<Original>Gun Sight</Original>
+				<Original>Mira da arma</Original>
 			</Key>
 		<Key ID="STR_Item_Trigger">
-				<Original>Gun Trigger</Original>
+				<Original>Gatilho da arma</Original>
 			</Key>
 			<Key ID="STR_Item_Nitro">
 					<Original>Nitro</Original>
 				</Key>
 		<Key ID="STR_Item_Engine">
-				<Original>Engine</Original>
+				<Original>Motor</Original>
 			</Key>
 		<Key ID="STR_Item_Plans">
-				<Original>Building Plans</Original>
+				<Original>Planos de construção</Original>
 			</Key>
 		<Key ID="STR_Item_rivet">
-				<Original>Rivets</Original>
+				<Original>rebites</Original>
 			</Key>
 		<Key ID="STR_Item_latch">
-				<Original>Latch</Original>
+				<Original>Trinco</Original>
 			</Key>
 	</Package>
 	<Package name="Life_License">
