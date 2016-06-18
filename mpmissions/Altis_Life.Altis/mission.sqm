@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={10926.962,327.37027,14428.026};
-		dir[]={0.63785124,-0.22364366,-0.73704696};
-		up[]={0.14639105,0.97465575,-0.16915652};
-		aside[]={-0.75620431,-2.2957101e-007,-0.65442854};
+		pos[]={3250.8752,10.768208,11239.136};
+		dir[]={0.72818702,-0.10329203,0.67765772};
+		up[]={0.075657122,0.99464536,0.070406653};
+		aside[]={0.68130356,-8.266652e-007,-0.73210686};
 	};
 };
 binarizationWanted=0;
@@ -267,6 +267,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -281,24 +299,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -357,7 +357,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2174;
+		items=2171;
 		class Item0
 		{
 			dataType="Marker";
@@ -21827,8 +21827,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3186.9795,2.297879,12923.998};
-						angles[]={0,3.0506973,0};
+						position[]={3186.979,2.2976065,12923.998};
+						angles[]={0,3.0506959,0};
 					};
 					side="Civilian";
 					flags=4;
@@ -21839,7 +21839,7 @@ class Mission
 					};
 					id=993;
 					type="B_RangeMaster_F";
-					atlOffset=0.0022780895;
+					atlOffset=0.0020000935;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -21880,7 +21880,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 				class Item48
@@ -21975,7 +21994,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false;  this addAction[localize""STR_MAR_Cop_Item_Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[localize""STR_MAR_Cop_Clothing_Shop"",life_fnc_clothingMenu,""cop""]; this addAction[localize""STR_MAR_SWAT_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_mercado""]; this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_basic""]; this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_soldado""];  this addAction[localize""STR_MAR_Patrol_Officer_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_cabo""];  this addAction[localize""STR_MAR_Sergeant_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_sargento""]; this addAction[localize""STR_MAR_lieutenant_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_tenente""]; this addAction[localize""STR_MAR_captain_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_capitao""]; this addAction[localize""STR_MAR_SWAT_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_major""]; this addAction[localize""STR_MAR_SWAT_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_ten_coronel""]; this addAction[localize""STR_MAR_SWAT_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_coronel""]; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cAir"",0,false,false,"""",' !license_cop_cAir && playerSide == west '];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west ']; this setObjectTextureGlobal [0,""textures\Cop\Clothing\cop_uniform.jpg""];";
+						init="this enableSimulation false;  this addAction[localize""STR_MAR_Cop_Item_Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[localize""STR_MAR_Cop_Clothing_Shop"",life_fnc_clothingMenu,""cop""]; this addAction[localize""STR_MAR_recruta_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_recruta""];   this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_soldado""];  this addAction[localize""STR_MAR_Patrol_Officer_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_cabo""];  this addAction[localize""STR_MAR_Sergeant_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_sargento""]; this addAction[localize""STR_MAR_lieutenant_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_tenente""]; this addAction[localize""STR_MAR_captain_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_capitao""]; this addAction[localize""STR_MAR_SWAT_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_major""]; this addAction[localize""STR_MAR_tencoronel_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_tenente_coronel""]; this addAction[localize""STR_MAR_coronel_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_coronel""];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cAir"",0,false,false,"""",' !license_cop_cAir && playerSide == west '];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west ']; this setObjectTextureGlobal [0,""textures\Cop\Clothing\cop_uniform.jpg""];";
 						name="h1_3";
 					};
 					id=995;
@@ -22239,7 +22258,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false;  this addAction[localize""STR_MAR_Cop_Item_Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[localize""STR_MAR_Cop_Clothing_Shop"",life_fnc_clothingMenu,""cop""]; this addAction[localize""STR_MAR_SWAT_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_mercado""]; this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_basic""]; this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_soldado""];  this addAction[localize""STR_MAR_Patrol_Officer_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_cabo""];  this addAction[localize""STR_MAR_Sergeant_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_sargento""]; this addAction[localize""STR_MAR_lieutenant_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_tenente""]; this addAction[localize""STR_MAR_captain_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_capitao""]; this addAction[localize""STR_MAR_SWAT_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_major""]; this addAction[localize""STR_MAR_SWAT_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_ten_coronel""]; this addAction[localize""STR_MAR_SWAT_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_coronel""]; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cAir"",0,false,false,"""",' !license_cop_cAir && playerSide == west '];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west ']; this setObjectTextureGlobal [0,""textures\Cop\Clothing\cop_uniform.jpg""];";
+						init="this enableSimulation false;  this allowDamage false;  this addAction[localize""STR_MAR_Helicopter_Shop"", life_fnc_vehicleShopMenu,[""cop_air"",west,""cop_air_1"",""cop"",""APD - Kavala District""]];  this addAction[localize""STR_Garage_Title"",  {   if(life_HC_isActive) then { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];};   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_air_2""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setObjectTextureGlobal [0,""textures\Cop\Clothing\cop_uniform.jpg""];";
 					};
 					id=999;
 					type="B_RangeMaster_F";
@@ -23352,7 +23371,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false;  this addAction[localize""STR_MAR_Cop_Item_Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[localize""STR_MAR_Cop_Clothing_Shop"",life_fnc_clothingMenu,""cop""]; this addAction[localize""STR_MAR_SWAT_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_mercado""]; this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_basic""]; this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_soldado""];  this addAction[localize""STR_MAR_Patrol_Officer_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_cabo""];  this addAction[localize""STR_MAR_Sergeant_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_sargento""]; this addAction[localize""STR_MAR_lieutenant_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_tenente""]; this addAction[localize""STR_MAR_captain_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_capitao""]; this addAction[localize""STR_MAR_SWAT_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_major""]; this addAction[localize""STR_MAR_SWAT_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_ten_coronel""]; this addAction[localize""STR_MAR_SWAT_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_coronel""]; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cAir"",0,false,false,"""",' !license_cop_cAir && playerSide == west '];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west ']; this setObjectTextureGlobal [0,""textures\Cop\Clothing\cop_uniform.jpg""];";
+						init="this enableSimulation false;  this addAction[localize""STR_MAR_Cop_Item_Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[localize""STR_MAR_Cop_Clothing_Shop"",life_fnc_clothingMenu,""cop""]; this addAction[localize""STR_MAR_recruta_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_recruta""];   this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_soldado""];  this addAction[localize""STR_MAR_Patrol_Officer_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_cabo""];  this addAction[localize""STR_MAR_Sergeant_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_sargento""]; this addAction[localize""STR_MAR_lieutenant_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_tenente""]; this addAction[localize""STR_MAR_captain_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_capitao""]; this addAction[localize""STR_MAR_SWAT_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_major""]; this addAction[localize""STR_MAR_tencoronel_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_tenente_coronel""]; this addAction[localize""STR_MAR_coronel_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_coronel""];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cAir"",0,false,false,"""",' !license_cop_cAir && playerSide == west '];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west ']; this setObjectTextureGlobal [0,""textures\Cop\Clothing\cop_uniform.jpg""];";
 						name="h1_3_1";
 					};
 					id=1017;
@@ -23432,7 +23451,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false;  this addAction[localize""STR_MAR_Cop_Item_Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[localize""STR_MAR_Cop_Clothing_Shop"",life_fnc_clothingMenu,""cop""]; this addAction[localize""STR_MAR_SWAT_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_mercado""]; this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_basic""]; this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_soldado""];  this addAction[localize""STR_MAR_Patrol_Officer_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_cabo""];  this addAction[localize""STR_MAR_Sergeant_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_sargento""]; this addAction[localize""STR_MAR_lieutenant_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_tenente""]; this addAction[localize""STR_MAR_captain_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_capitao""]; this addAction[localize""STR_MAR_SWAT_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_major""]; this addAction[localize""STR_MAR_SWAT_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_ten_coronel""]; this addAction[localize""STR_MAR_SWAT_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_coronel""]; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cAir"",0,false,false,"""",' !license_cop_cAir && playerSide == west '];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west ']; this setObjectTextureGlobal [0,""textures\Cop\Clothing\cop_uniform.jpg""];";
+						init="this enableSimulation false;  this addAction[localize""STR_MAR_Cop_Item_Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[localize""STR_MAR_Cop_Clothing_Shop"",life_fnc_clothingMenu,""cop""]; this addAction[localize""STR_MAR_recruta_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_recruta""];   this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_soldado""];  this addAction[localize""STR_MAR_Patrol_Officer_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_cabo""];  this addAction[localize""STR_MAR_Sergeant_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_sargento""]; this addAction[localize""STR_MAR_lieutenant_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_tenente""]; this addAction[localize""STR_MAR_captain_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_capitao""]; this addAction[localize""STR_MAR_SWAT_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_major""]; this addAction[localize""STR_MAR_tencoronel_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_tenente_coronel""]; this addAction[localize""STR_MAR_coronel_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_coronel""];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cAir"",0,false,false,"""",' !license_cop_cAir && playerSide == west '];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west ']; this setObjectTextureGlobal [0,""textures\Cop\Clothing\cop_uniform.jpg""];";
 						name="h1_3_2";
 					};
 					id=1018;
@@ -24112,8 +24131,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14259.365,19.365284,16302.676};
-						angles[]={0.0026520467,2.792649,6.2818484};
+						position[]={14259.365,19.36528,16302.676};
+						angles[]={0.0026529003,2.792649,6.2818413};
 					};
 					side="Civilian";
 					flags=4;
@@ -24124,7 +24143,6 @@ class Mission
 					};
 					id=1029;
 					type="C_man_1";
-					atlOffset=3.8146973e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -24165,7 +24183,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 				class Item84
@@ -24181,7 +24218,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false;  this addAction[localize""STR_MAR_Cop_Item_Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[localize""STR_MAR_Cop_Clothing_Shop"",life_fnc_clothingMenu,""cop""]; this addAction[localize""STR_MAR_SWAT_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_mercado""]; this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_basic""]; this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_soldado""];  this addAction[localize""STR_MAR_Patrol_Officer_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_cabo""];  this addAction[localize""STR_MAR_Sergeant_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_sargento""]; this addAction[localize""STR_MAR_lieutenant_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_tenente""]; this addAction[localize""STR_MAR_captain_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_capitao""]; this addAction[localize""STR_MAR_SWAT_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_major""]; this addAction[localize""STR_MAR_SWAT_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_ten_coronel""]; this addAction[localize""STR_MAR_SWAT_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_coronel""]; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cAir"",0,false,false,"""",' !license_cop_cAir && playerSide == west '];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west ']; this setObjectTextureGlobal [0,""textures\Cop\Clothing\cop_uniform.jpg""];";
+						init="this enableSimulation false;  this addAction[localize""STR_MAR_Cop_Item_Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[localize""STR_MAR_Cop_Clothing_Shop"",life_fnc_clothingMenu,""cop""]; this addAction[localize""STR_MAR_recruta_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_recruta""];   this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_soldado""];  this addAction[localize""STR_MAR_Patrol_Officer_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_cabo""];  this addAction[localize""STR_MAR_Sergeant_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_sargento""]; this addAction[localize""STR_MAR_lieutenant_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_tenente""]; this addAction[localize""STR_MAR_captain_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_capitao""]; this addAction[localize""STR_MAR_SWAT_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_major""]; this addAction[localize""STR_MAR_tencoronel_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_tenente_coronel""]; this addAction[localize""STR_MAR_coronel_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_coronel""];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cAir"",0,false,false,"""",' !license_cop_cAir && playerSide == west '];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west ']; this setObjectTextureGlobal [0,""textures\Cop\Clothing\cop_uniform.jpg""];";
 						name="h1_3_3";
 					};
 					id=1030;
@@ -36629,7 +36666,7 @@ class Mission
 			text="Processador de pano";
 			type="mil_dot";
 			colorName="ColorGUER";
-			angle=270.10596;
+			angle=270.10593;
 			id=1727;
 		};
 		class Item737
@@ -40906,7 +40943,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false;  this addAction[localize""STR_MAR_Cop_Item_Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[localize""STR_MAR_Cop_Clothing_Shop"",life_fnc_clothingMenu,""cop""]; this addAction[localize""STR_MAR_SWAT_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_mercado""]; this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_basic""]; this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_soldado""];  this addAction[localize""STR_MAR_Patrol_Officer_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_cabo""];  this addAction[localize""STR_MAR_Sergeant_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_sargento""]; this addAction[localize""STR_MAR_lieutenant_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_tenente""]; this addAction[localize""STR_MAR_captain_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_capitao""]; this addAction[localize""STR_MAR_SWAT_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_major""]; this addAction[localize""STR_MAR_SWAT_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_ten_coronel""]; this addAction[localize""STR_MAR_SWAT_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_coronel""]; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cAir"",0,false,false,"""",' !license_cop_cAir && playerSide == west '];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west ']; this setObjectTextureGlobal [0,""textures\Cop\Clothing\cop_uniform.jpg""];";
+						init="this enableSimulation false;  this addAction[localize""STR_MAR_Cop_Item_Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[localize""STR_MAR_Cop_Clothing_Shop"",life_fnc_clothingMenu,""cop""]; this addAction[localize""STR_MAR_recruta_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_recruta""];   this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_soldado""];  this addAction[localize""STR_MAR_Patrol_Officer_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_cabo""];  this addAction[localize""STR_MAR_Sergeant_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_sargento""]; this addAction[localize""STR_MAR_lieutenant_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_tenente""]; this addAction[localize""STR_MAR_captain_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_capitao""]; this addAction[localize""STR_MAR_SWAT_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_major""]; this addAction[localize""STR_MAR_tencoronel_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_tenente_coronel""]; this addAction[localize""STR_MAR_coronel_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_coronel""];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cAir"",0,false,false,"""",' !license_cop_cAir && playerSide == west '];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west ']; this setObjectTextureGlobal [0,""textures\Cop\Clothing\cop_uniform.jpg""];";
 						name="h1_4";
 					};
 					id=2830;
@@ -46961,7 +46998,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false;  this addAction[localize""STR_MAR_Cop_Item_Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[localize""STR_MAR_Cop_Clothing_Shop"",life_fnc_clothingMenu,""cop""]; this addAction[localize""STR_MAR_SWAT_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_mercado""]; this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_basic""]; this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_soldado""];  this addAction[localize""STR_MAR_Patrol_Officer_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_cabo""];  this addAction[localize""STR_MAR_Sergeant_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_sargento""]; this addAction[localize""STR_MAR_lieutenant_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_tenente""]; this addAction[localize""STR_MAR_captain_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_capitao""]; this addAction[localize""STR_MAR_SWAT_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_major""]; this addAction[localize""STR_MAR_SWAT_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_ten_coronel""]; this addAction[localize""STR_MAR_SWAT_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_coronel""]; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cAir"",0,false,false,"""",' !license_cop_cAir && playerSide == west '];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west ']; this setObjectTextureGlobal [0,""textures\Cop\Clothing\cop_uniform.jpg""];";
+						init="this enableSimulation false;  this addAction[localize""STR_MAR_Cop_Item_Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[localize""STR_MAR_Cop_Clothing_Shop"",life_fnc_clothingMenu,""cop""]; this addAction[localize""STR_MAR_recruta_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_recruta""];   this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_soldado""];  this addAction[localize""STR_MAR_Patrol_Officer_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_cabo""];  this addAction[localize""STR_MAR_Sergeant_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_sargento""]; this addAction[localize""STR_MAR_lieutenant_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_tenente""]; this addAction[localize""STR_MAR_captain_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_capitao""]; this addAction[localize""STR_MAR_SWAT_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_major""]; this addAction[localize""STR_MAR_tencoronel_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_tenente_coronel""]; this addAction[localize""STR_MAR_coronel_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_coronel""];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cAir"",0,false,false,"""",' !license_cop_cAir && playerSide == west '];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west ']; this setObjectTextureGlobal [0,""textures\Cop\Clothing\cop_uniform.jpg""];";
 						name="h1_5";
 					};
 					id=3182;
@@ -53204,7 +53241,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false;  this addAction[localize""STR_MAR_Cop_Item_Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[localize""STR_MAR_Cop_Clothing_Shop"",life_fnc_clothingMenu,""cop""];  this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_soldado""];  this addAction[localize""STR_MAR_Patrol_Officer_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_cabo""];  this addAction[localize""STR_MAR_Sergeant_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_sargento""]; this addAction[localize""STR_MAR_lieutenant_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_sargento""]; this addAction[localize""STR_MAR_captain_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_tenente""]; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cAir"",0,false,false,"""",' !license_cop_cAir && playerSide == west '];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west ']; this setObjectTextureGlobal [0,""textures\Cop\Clothing\cop_uniform.jpg""];";
+						init="this enableSimulation false;  this addAction[localize""STR_MAR_Cop_Item_Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[localize""STR_MAR_Cop_Clothing_Shop"",life_fnc_clothingMenu,""cop""]; this addAction[localize""STR_MAR_recruta_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_recruta""];   this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_soldado""];  this addAction[localize""STR_MAR_Patrol_Officer_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_cabo""];  this addAction[localize""STR_MAR_Sergeant_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_sargento""]; this addAction[localize""STR_MAR_lieutenant_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_tenente""]; this addAction[localize""STR_MAR_captain_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_capitao""]; this addAction[localize""STR_MAR_SWAT_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_major""]; this addAction[localize""STR_MAR_tencoronel_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_tenente_coronel""]; this addAction[localize""STR_MAR_coronel_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_coronel""];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cAir"",0,false,false,"""",' !license_cop_cAir && playerSide == west '];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west ']; this setObjectTextureGlobal [0,""textures\Cop\Clothing\cop_uniform.jpg""];";
 						name="h1_3_4";
 					};
 					id=8513;
@@ -53250,7 +53287,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 			};
@@ -77561,285 +77617,6 @@ class Mission
 		};
 		class Item2143
 		{
-			dataType="Group";
-			side="Civilian";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={9178.7969,14.367872,21673.238};
-						angles[]={0.0026529003,2.4317496,6.2818413};
-					};
-					side="Civilian";
-					flags=6;
-					class Attributes
-					{
-						skill=0.60000002;
-						init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[localize ""STR_MAR_Donator1_Weapon_Shop"",life_fnc_weaponShopMenu,""donator1"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[localize ""STR_MAR_Donator2_Weapon_Shop"",life_fnc_weaponShopMenu,""donator2"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[localize ""STR_MAR_Donator3_Weapon_Shop"",life_fnc_weaponShopMenu,""donator3"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];   this addAction[localize""STR_MAR_Clothing_Supporter"",life_fnc_clothingMenu,""supporter""];";
-						name="reb_2";
-					};
-					id=10493;
-					type="C_Soldier_VR_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="allowDamage";
-							expression="_this allowdamage _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.98000002;
-								};
-							};
-						};
-						nAttributes=3;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=10491;
-		};
-		class Item2144
-		{
-			dataType="Group";
-			side="Civilian";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={12301.965,123.98914,8890.1289};
-						angles[]={6.2791882,5.1875725,6.2818413};
-					};
-					side="Civilian";
-					flags=6;
-					class Attributes
-					{
-						skill=0.60000002;
-						init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[localize ""STR_MAR_Donator1_Weapon_Shop"",life_fnc_weaponShopMenu,""donator"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[localize ""STR_MAR_Donator2_Weapon_Shop"",life_fnc_weaponShopMenu,""donator2"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[localize ""STR_MAR_Donator3_Weapon_Shop"",life_fnc_weaponShopMenu,""donator3"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];   this addAction[localize""STR_MAR_Clothing_Supporter"",life_fnc_clothingMenu,""supporter""];";
-						name="reb_3";
-					};
-					id=10495;
-					type="C_Soldier_VR_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="allowDamage";
-							expression="_this allowdamage _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.98000002;
-								};
-							};
-						};
-						nAttributes=3;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=10494;
-		};
-		class Item2145
-		{
-			dataType="Group";
-			side="Civilian";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={20085.648,100.95884,6737.541};
-						angles[]={0,3.3747337,6.2791882};
-					};
-					side="Civilian";
-					flags=6;
-					class Attributes
-					{
-						skill=0.60000002;
-						init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[localize ""STR_MAR_Donator1_Weapon_Shop"",life_fnc_weaponShopMenu,""donator1"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[localize ""STR_MAR_Donator2_Weapon_Shop"",life_fnc_weaponShopMenu,""donator2"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[localize ""STR_MAR_Donator3_Weapon_Shop"",life_fnc_weaponShopMenu,""donator3"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];   this addAction[localize""STR_MAR_Clothing_Supporter"",life_fnc_clothingMenu,""supporter""];";
-						name="reb_4";
-					};
-					id=10497;
-					type="C_Soldier_VR_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="allowDamage";
-							expression="_this allowdamage _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.98000002;
-								};
-							};
-						};
-						nAttributes=3;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=10496;
-		};
-		class Item2146
-		{
 			dataType="Object";
 			class PositionInfo
 			{
@@ -77880,7 +77657,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2147
+		class Item2144
 		{
 			dataType="Object";
 			class PositionInfo
@@ -77922,7 +77699,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2148
+		class Item2145
 		{
 			dataType="Object";
 			class PositionInfo
@@ -77964,7 +77741,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2149
+		class Item2146
 		{
 			dataType="Object";
 			class PositionInfo
@@ -78006,7 +77783,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2150
+		class Item2147
 		{
 			dataType="Object";
 			class PositionInfo
@@ -78048,7 +77825,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2151
+		class Item2148
 		{
 			dataType="Marker";
 			position[]={11584.636,23.599121,11995.593};
@@ -78058,7 +77835,7 @@ class Mission
 			id=10533;
 			atlOffset=-0.0043907166;
 		};
-		class Item2152
+		class Item2149
 		{
 			dataType="Marker";
 			position[]={11587.948,23.587936,12000.04};
@@ -78067,7 +77844,7 @@ class Mission
 			angle=124.73597;
 			id=10534;
 		};
-		class Item2153
+		class Item2150
 		{
 			dataType="Marker";
 			position[]={11591.35,23.538097,12004.953};
@@ -78077,7 +77854,7 @@ class Mission
 			id=10535;
 			atlOffset=-1.9073486e-006;
 		};
-		class Item2154
+		class Item2151
 		{
 			dataType="Marker";
 			position[]={11594.565,23.466122,12009.73};
@@ -78087,7 +77864,7 @@ class Mission
 			id=10536;
 			atlOffset=1.9073486e-006;
 		};
-		class Item2155
+		class Item2152
 		{
 			dataType="Marker";
 			position[]={11596.313,23.55835,11997.705};
@@ -78102,7 +77879,7 @@ class Mission
 			id=10537;
 			atlOffset=-0.0055732727;
 		};
-		class Item2156
+		class Item2153
 		{
 			dataType="Marker";
 			position[]={11603.004,154.23885,12006.125};
@@ -78113,7 +77890,7 @@ class Mission
 			id=10538;
 			atlOffset=130.78889;
 		};
-		class Item2157
+		class Item2154
 		{
 			dataType="Object";
 			class PositionInfo
@@ -78155,7 +77932,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2158
+		class Item2155
 		{
 			dataType="Marker";
 			position[]={11591.723,23.682129,11947.16};
@@ -78165,7 +77942,7 @@ class Mission
 			id=10543;
 			atlOffset=-0.0087776184;
 		};
-		class Item2159
+		class Item2156
 		{
 			dataType="Marker";
 			position[]={11598.066,23.65332,11953.197};
@@ -78175,17 +77952,17 @@ class Mission
 			id=10544;
 			atlOffset=-0.002199173;
 		};
-		class Item2160
+		class Item2157
 		{
 			dataType="Marker";
 			position[]={11577.774,23.624268,11983.903};
 			name="civ_spawn_vip";
 			type="Empty";
-			angle=45.015919;
+			angle=45.015915;
 			id=10545;
 			atlOffset=-0.00016021729;
 		};
-		class Item2161
+		class Item2158
 		{
 			dataType="Object";
 			class PositionInfo
@@ -78204,7 +77981,7 @@ class Mission
 			type="C_Boat_Civil_04_F";
 			atlOffset=-2.3841858e-007;
 		};
-		class Item2162
+		class Item2159
 		{
 			dataType="Object";
 			class PositionInfo
@@ -78221,7 +77998,7 @@ class Mission
 			type="MapBoard_altis_F";
 			atlOffset=0.012058258;
 		};
-		class Item2163
+		class Item2160
 		{
 			dataType="Object";
 			class PositionInfo
@@ -78238,7 +78015,7 @@ class Mission
 			type="Land_CargoBox_V1_F";
 			atlOffset=0.11041451;
 		};
-		class Item2164
+		class Item2161
 		{
 			dataType="Object";
 			class PositionInfo
@@ -78255,7 +78032,7 @@ class Mission
 			type="Land_HBarrierWall6_F";
 			atlOffset=-5.3405762e-005;
 		};
-		class Item2165
+		class Item2162
 		{
 			dataType="Object";
 			class PositionInfo
@@ -78272,7 +78049,7 @@ class Mission
 			type="Land_Mil_WallBig_4m_F";
 			atlOffset=9.5367432e-007;
 		};
-		class Item2166
+		class Item2163
 		{
 			dataType="Object";
 			class PositionInfo
@@ -78289,7 +78066,7 @@ class Mission
 			type="Land_Mil_WallBig_4m_F";
 			atlOffset=1.7166138e-005;
 		};
-		class Item2167
+		class Item2164
 		{
 			dataType="Object";
 			class PositionInfo
@@ -78306,7 +78083,7 @@ class Mission
 			type="Land_Mil_WallBig_4m_F";
 			atlOffset=-2.2888184e-005;
 		};
-		class Item2168
+		class Item2165
 		{
 			dataType="Object";
 			class PositionInfo
@@ -78322,7 +78099,7 @@ class Mission
 			id=10557;
 			type="Land_BarGate_F";
 		};
-		class Item2169
+		class Item2166
 		{
 			dataType="Object";
 			class PositionInfo
@@ -78339,7 +78116,7 @@ class Mission
 			type="Land_HBarrier_1_F";
 			atlOffset=1.0490417e-005;
 		};
-		class Item2170
+		class Item2167
 		{
 			dataType="Object";
 			class PositionInfo
@@ -78356,7 +78133,7 @@ class Mission
 			type="Land_HBarrier_1_F";
 			atlOffset=-3.9100647e-005;
 		};
-		class Item2171
+		class Item2168
 		{
 			dataType="Object";
 			class PositionInfo
@@ -78373,7 +78150,7 @@ class Mission
 			type="Land_HBarrier_5_F";
 			atlOffset=5.0544739e-005;
 		};
-		class Item2172
+		class Item2169
 		{
 			dataType="Object";
 			class PositionInfo
@@ -78390,7 +78167,7 @@ class Mission
 			type="Land_HBarrier_5_F";
 			atlOffset=-5.8174133e-005;
 		};
-		class Item2173
+		class Item2170
 		{
 			dataType="Object";
 			class PositionInfo
