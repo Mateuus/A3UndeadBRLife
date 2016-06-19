@@ -180,7 +180,7 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>1</loop> 
-		<cmd>say -1 Atenção restart automático a cada 3 horas, 06:00hrs, 09:00hrs, 12:00hrs, 15:00hrs, 18:00hrs, 21:00hrs, 00:00hrs, 03:00hrs</cmd>	
+		<cmd>say -1 Atenção restart automático a cada 4 horas, 08:00hrs, 12:00hrs, 16:00hrs, 20:00hrs, 00:00hrs, 04:00hrs</cmd>	
 		<cmdtype>0</cmdtype>
 	</job>
 		
@@ -210,7 +210,7 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>1</loop> 
-		<cmd>say -1 Doação ajuda a mante nosso servidor online!</cmd>	
+		<cmd>say -1 As doações ajudam a manter nosso servidor online!</cmd>	
 		<cmdtype>0</cmdtype>
 	</job>
 		
@@ -227,74 +227,8 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 	
 	
 	<!-- *** RESTARTS *** -->
-	<!-- restart 06:00 -->
-	<job id="10">
-		<time>05:45:00</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 15 minutos...</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	<job id="11">
-		<time>05:50:00</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 10 minutos...</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	<job id="12">
-		<time>05:55:00</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 5 minutos...</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	<job id="13">
-		<time>05:57:00</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 3 minutos, Por favor aterrissa seus helicóptero para evitar problemas...</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	<job id="14">
-		<time>05:57:02</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>#lock</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	<job id="15">
-		<time>05:59:00</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 1 minutos, Por favor abra o Menu(TAB), e salve seu personagem...</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	<job id="16">
-		<time>06:00:00</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>#shutdown</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	<job id="17">
-		<time>06:00:20</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>#unlock</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	
 	<!-- restart 08:00 -->
-	<job id="18">
+	<job id="10">
 		<time>07:45:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
@@ -302,31 +236,31 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<cmd>say -1 Servidor irá reniciar em 15 minutos...</cmd>
 		<cmdtype>0</cmdtype>			
 	</job>
-	<job id="19">
+	<job id="11">
 		<time>07:50:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 10 minutos...</cmd>
+		<cmd>say -1 Servidor irá reniciar em 10 minutos... Não realize nenhuma transação pois poderá perder.</cmd>
 		<cmdtype>0</cmdtype>			
 	</job>
-	<job id="20">
+	<job id="12">
 		<time>07:55:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 5 minutos...</cmd>
+		<cmd>say -1 Servidor irá reniciar em 5 minutos... Não realize nenhuma transação pois poderá perder.</cmd>
 		<cmdtype>0</cmdtype>			
 	</job>
-	<job id="21">
+	<job id="13">
 		<time>07:57:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 3 minutos, Por favor aterrissa seus helicóptero para evitar problemas...</cmd>
+		<cmd>say -1 Servidor irá reniciar em 3 minutos, Por favor aterrissa seus helicóptero para evitar problemas, Não realize nenhuma transação pois poderá perder.</cmd>
 		<cmdtype>0</cmdtype>			
 	</job>
-	<job id="22">
+	<job id="14">
 		<time>07:57:02</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
@@ -334,24 +268,24 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<cmd>#lock</cmd>
 		<cmdtype>0</cmdtype>			
 	</job>
-	<job id="23">
+	<job id="15">
 		<time>07:59:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 1 minutos, Por favor abra o Menu(TAB), e salve seu personagem...</cmd>
+		<cmd>say -1 Servidor irá reniciar em 1 minutos, Por favor abra o Celular(Y), e sincronize o seu personagem...</cmd>
 		<cmdtype>0</cmdtype>			
 	</job>
-	<job id="24">
-		<time>09:00:00</time>
+	<job id="16">
+		<time>08:00:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
 		<cmd>#shutdown</cmd>
 		<cmdtype>0</cmdtype>			
 	</job>
-	<job id="25">
-		<time>09:00:20</time>
+	<job id="17">
+		<time>08:00:20</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
@@ -360,7 +294,7 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 	</job>
 	
 	<!-- restart 12:00 -->
-	<job id="26">
+	<job id="18">
 		<time>11:45:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
@@ -368,31 +302,31 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<cmd>say -1 Servidor irá reniciar em 15 minutos...</cmd>
 		<cmdtype>0</cmdtype>			
 	</job>
-	<job id="27">
+	<job id="19">
 		<time>11:50:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 10 minutos...</cmd>
+		<cmd>say -1 Servidor irá reniciar em 10 minutos... Não realize nenhuma transação pois poderá perder.</cmd>
 		<cmdtype>0</cmdtype>			
 	</job>
-	<job id="28">
+	<job id="20">
 		<time>11:55:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 5 minutos...</cmd>
+		<cmd>say -1 Servidor irá reniciar em 5 minutos... Não realize nenhuma transação pois poderá perder.</cmd>
 		<cmdtype>0</cmdtype>			
 	</job>
-	<job id="29">
+	<job id="21">
 		<time>11:57:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 3 minutos, Por favor aterrissa seus helicóptero para evitar problemas...</cmd>
+		<cmd>say -1 Servidor irá reniciar em 3 minutos, Por favor aterrissa seus helicóptero para evitar problemas, Não realize nenhuma transação pois poderá perder.</cmd>
 		<cmdtype>0</cmdtype>			
 	</job>
-	<job id="30">
+	<job id="22">
 		<time>11:57:02</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
@@ -400,15 +334,15 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<cmd>#lock</cmd>
 		<cmdtype>0</cmdtype>			
 	</job>
-	<job id="31">
+	<job id="23">
 		<time>11:59:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 1 minutos, Por favor abra o Menu(TAB), e salve seu personagem...</cmd>
+		<cmd>say -1 Servidor irá reniciar em 1 minutos, Por favor abra o Celular(Y), e sincronize o seu personagem...</cmd>
 		<cmdtype>0</cmdtype>			
 	</job>
-	<job id="32">
+	<job id="24">
 		<time>12:00:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
@@ -416,7 +350,7 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<cmd>#shutdown</cmd>
 		<cmdtype>0</cmdtype>			
 	</job>
-	<job id="33">
+	<job id="25">
 		<time>12:00:20</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
@@ -425,9 +359,75 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<cmdtype>0</cmdtype>			
 	</job>
 	
-	<!-- restart 15:00 -->
+	<!-- restart 16:00 -->
+	<job id="26">
+		<time>15:45:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 15 minutos...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="27">
+		<time>15:50:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 10 minutos... Não realize nenhuma transação pois poderá perder.</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="28">
+		<time>15:55:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 5 minutos... Não realize nenhuma transação pois poderá perder.</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="29">
+		<time>15:57:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 3 minutos, Por favor aterrissa seus helicóptero para evitar problemas, Não realize nenhuma transação pois poderá perder.</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="30">
+		<time>15:57:02</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>#lock</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="31">
+		<time>15:59:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Servidor irá reniciar em 1 minutos, Por favor abra o Celular(Y), e sincronize o seu personagem...</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="32">
+		<time>16:00:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>#shutdown</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<job id="33">
+		<time>16:00:20</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>#unlock</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	
+	<!-- restart 20:00 -->
 	<job id="34">
-		<time>14:45:00</time>
+		<time>19:45:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
@@ -435,31 +435,31 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<cmdtype>0</cmdtype>			
 	</job>
 	<job id="35">
-		<time>14:50:00</time>
+		<time>19:50:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 10 minutos...</cmd>
+		<cmd>say -1 Servidor irá reniciar em 10 minutos... Não realize nenhuma transação pois poderá perder.</cmd>
 		<cmdtype>0</cmdtype>			
 	</job>
 	<job id="36">
-		<time>14:55:00</time>
+		<time>19:55:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 5 minutos...</cmd>
+		<cmd>say -1 Servidor irá reniciar em 5 minutos... Não realize nenhuma transação pois poderá perder.</cmd>
 		<cmdtype>0</cmdtype>			
 	</job>
 	<job id="37">
-		<time>14:57:00</time>
+		<time>19:57:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 3 minutos, Por favor aterrissa seus helicóptero para evitar problemas...</cmd>
+		<cmd>say -1 Servidor irá reniciar em 3 minutos, Por favor aterrissa seus helicóptero para evitar problemas, Não realize nenhuma transação pois poderá perder.</cmd>
 		<cmdtype>0</cmdtype>			
 	</job>
 	<job id="38">
-		<time>14:57:02</time>
+		<time>19:57:02</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
@@ -467,15 +467,15 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<cmdtype>0</cmdtype>			
 	</job>
 	<job id="39">
-		<time>14:59:00</time>
+		<time>19:59:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 1 minutos, Por favor abra o Menu(TAB), e salve seu personagem...</cmd>
+		<cmd>say -1 Servidor irá reniciar em 1 minutos, Por favor abra o Celular(Y), e sincronize o seu personagem...</cmd>
 		<cmdtype>0</cmdtype>			
 	</job>
 	<job id="40">
-		<time>15:00:00</time>
+		<time>20:00:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
@@ -483,139 +483,7 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<cmdtype>0</cmdtype>			
 	</job>
 	<job id="41">
-		<time>15:00:20</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>#unlock</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	
-	<!-- restart 18:00 -->
-	<job id="42">
-		<time>17:45:00</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 15 minutos...</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	<job id="43">
-		<time>17:50:00</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 10 minutos...</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	<job id="44">
-		<time>17:55:00</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 5 minutos...</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	<job id="45">
-		<time>17:57:00</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 3 minutos, Por favor aterrissa seus helicóptero para evitar problemas...</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	<job id="46">
-		<time>17:57:02</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>#lock</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	<job id="47">
-		<time>17:59:00</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 1 minutos, Por favor abra o Menu(TAB), e salve seu personagem...</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	<job id="48">
-		<time>18:00:00</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>#shutdown</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	<job id="49">
-		<time>18:00:20</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>#unlock</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	
-	<!-- restart 21:00 -->
-	<job id="50">
-		<time>20:45:00</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 15 minutos...</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	<job id="51">
-		<time>20:50:00</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 10 minutos...</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	<job id="52">
-		<time>20:55:00</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 5 minutos...</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	<job id="53">
-		<time>20:57:00</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 3 minutos, Por favor aterrissa seus helicóptero para evitar problemas...</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	<job id="54">
-		<time>20:57:02</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>#lock</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	<job id="55">
-		<time>20:59:00</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 1 minutos, Por favor abra o Menu(TAB), e salve seu personagem...</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	<job id="56">
-		<time>21:00:00</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>#shutdown</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	<job id="57">
-		<time>21:00:20</time>
+		<time>20:00:20</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
@@ -624,7 +492,7 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 	</job>
 	
 	<!-- restart 00:00 -->
-	<job id="58">
+	<job id="42">
 		<time>23:45:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
@@ -632,31 +500,31 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<cmd>say -1 Servidor irá reniciar em 15 minutos...</cmd>
 		<cmdtype>0</cmdtype>			
 	</job>
-	<job id="59">
+	<job id="43">
 		<time>23:50:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 10 minutos...</cmd>
+		<cmd>say -1 Servidor irá reniciar em 10 minutos... Não realize nenhuma transação pois poderá perder.</cmd>
 		<cmdtype>0</cmdtype>			
 	</job>
-	<job id="60">
+	<job id="44">
 		<time>23:55:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 5 minutos...</cmd>
+		<cmd>say -1 Servidor irá reniciar em 5 minutos... Não realize nenhuma transação pois poderá perder.</cmd>
 		<cmdtype>0</cmdtype>			
 	</job>
-	<job id="61">
+	<job id="45">
 		<time>23:57:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 3 minutos, Por favor aterrissa seus helicóptero para evitar problemas...</cmd>
+		<cmd>say -1 Servidor irá reniciar em 3 minutos, Por favor aterrissa seus helicóptero para evitar problemas, Não realize nenhuma transação pois poderá perder.</cmd>
 		<cmdtype>0</cmdtype>			
 	</job>
-	<job id="62">
+	<job id="46">
 		<time>23:57:02</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
@@ -664,15 +532,15 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<cmd>#lock</cmd>
 		<cmdtype>0</cmdtype>			
 	</job>
-	<job id="63">
+	<job id="47">
 		<time>23:59:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 1 minutos, Por favor abra o Menu(TAB), e salve seu personagem...</cmd>
+		<cmd>say -1 Servidor irá reniciar em 1 minutos, Por favor abra o Celular(Y), e sincronize o seu personagem...</cmd>
 		<cmdtype>0</cmdtype>			
 	</job>
-	<job id="64">
+	<job id="48">
 		<time>00:00:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
@@ -680,74 +548,74 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<cmd>#shutdown</cmd>
 		<cmdtype>0</cmdtype>			
 	</job>
-	<job id="65">
+	<job id="49">
 		<time>00:00:20</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
-		<cmd>#lock</cmd>
+		<cmd>#unlock</cmd>
 		<cmdtype>0</cmdtype>			
 	</job>
 	
-	<!-- restart 03:00 -->
-	<job id="66">
-		<time>02:45:00</time>
+	<!-- restart 04:00 -->
+	<job id="50">
+		<time>03:45:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
 		<cmd>say -1 Servidor irá reniciar em 15 minutos...</cmd>
 		<cmdtype>0</cmdtype>			
 	</job>
-	<job id="67">
-		<time>02:50:00</time>
+	<job id="51">
+		<time>03:50:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 10 minutos...</cmd>
+		<cmd>say -1 Servidor irá reniciar em 10 minutos... Não realize nenhuma transação pois poderá perder.</cmd>
 		<cmdtype>0</cmdtype>			
 	</job>
-	<job id="68">
-		<time>02:55:00</time>
+	<job id="52">
+		<time>03:55:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 5 minutos...</cmd>
+		<cmd>say -1 Servidor irá reniciar em 5 minutos... Não realize nenhuma transação pois poderá perder.</cmd>
 		<cmdtype>0</cmdtype>			
 	</job>
-	<job id="69">
-		<time>02:57:00</time>
+	<job id="53">
+		<time>03:57:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 3 minutos, Por favor aterrissa seus helicóptero para evitar problemas...</cmd>
+		<cmd>say -1 Servidor irá reniciar em 3 minutos, Por favor aterrissa seus helicóptero para evitar problemas, Não realize nenhuma transação pois poderá perder.</cmd>
 		<cmdtype>0</cmdtype>			
 	</job>
-	<job id="70">
-		<time>02:57:02</time>
+	<job id="54">
+		<time>03:57:02</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
 		<cmd>#lock</cmd>
 		<cmdtype>0</cmdtype>			
 	</job>
-	<job id="71">
-		<time>02:59:00</time>
+	<job id="55">
+		<time>03:59:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 1 minutos, Por favor abra o Menu(TAB), e salve seu personagem...</cmd>
+		<cmd>say -1 Servidor irá reniciar em 1 minutos, Por favor abra o Celular(Y), e sincronize o seu personagem...</cmd>
 		<cmdtype>0</cmdtype>			
 	</job>
-	<job id="72">
-		<time>03:00:00</time>
+	<job id="56">
+		<time>04:00:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
 		<cmd>#shutdown</cmd>
 		<cmdtype>0</cmdtype>			
 	</job>
-	<job id="73">
-		<time>03:00:20</time>
+	<job id="57">
+		<time>04:00:20</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
