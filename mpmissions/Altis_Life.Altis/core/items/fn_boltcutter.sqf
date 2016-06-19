@@ -51,8 +51,10 @@ _cP = 0.01;
 [] call SOCK_fnc_updateRequest;
 
 switch (typeOf _building) do {
-	case "Land_Dome_Small_F": {_cpRate = 0.003;};
-	case "Land_Cargo_House_V1_F": {_cpRate = 0.0015;};
+	//case "Land_Dome_Small_F": {_cpRate = 0.003;};
+	//case "Land_Cargo_House_V1_F": {_cpRate = 0.0015;};
+	case "Land_Dome_Small_F": {_cpRate = 0.08;};
+	case "Land_Cargo_House_V1_F": {_cpRate = 0.15;};
 	default {_cpRate = 0.08;}
 };
 
