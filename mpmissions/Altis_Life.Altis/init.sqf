@@ -1,5 +1,6 @@
 StartProgress = false;
 
+[] execVM "scripts\nosidechat.sqf"; //Nosidechat Script
 [] execVM "briefing.sqf"; //Load Briefing
 [] execVM "KRON_Strings.sqf";
 [] execVM "Custom\asddfg5\s45vbn76.sqf";

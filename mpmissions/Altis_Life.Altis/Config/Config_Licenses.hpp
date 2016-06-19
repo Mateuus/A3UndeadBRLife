@@ -141,7 +141,7 @@ class Licenses {
     class cocaine {
         variable = "cocaine";
         displayName = "STR_License_Cocaine";
-        price = 35000;
+        price = 90000;
         illegal = true;
         side = "civ";
     };
@@ -149,7 +149,7 @@ class Licenses {
     class heroin {
         variable = "heroin";
         displayName = "STR_License_Heroin";
-        price = 30000;
+        price = 60000;
         illegal = true;
         side = "civ";
     };
@@ -157,7 +157,7 @@ class Licenses {
     class marijuana {
         variable = "marijuana";
         displayName = "STR_License_Marijuana";
-        price = 18000;
+        price = 80000;
         illegal = true;
         side = "civ";
     };
@@ -165,7 +165,7 @@ class Licenses {
     class rebel {
         variable = "rebel";
         displayName = "STR_License_Rebel";
-        price = 75000;
+        price = 600000;
         illegal = true;
         side = "civ";
     };

@@ -26,7 +26,7 @@ switch(playerSide) do {
 			if(uniform player isEqualTo "U_C_Commoner1_1") then {
 				player setObjectTextureGlobal [0, "textures\Civ\Clothing\joker.jpg"];
 			};
-			if(uniform player isEqualTo "U_C_Commoner1_2") then {
+			if(uniform player isEqualTo "U_C_Poloshirt_tricolour") then {
 				player setObjectTextureGlobal [0, "textures\Civ\Clothing\lacoste.jpg"];
 			};
 			if(uniform player isEqualTo "U_C_Commoner1_3") then {

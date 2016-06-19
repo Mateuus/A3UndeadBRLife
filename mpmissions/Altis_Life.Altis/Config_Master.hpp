@@ -35,8 +35,11 @@ class Life_Settings {
     /* Vehicle Data Saving */
     save_vehicle_virtualItems = true; //Save virtual items inside the vehicle (all sides)(-- See defined items on next line --)
 
-    save_vehicle_items[] = { "pickaxe","fuelEmpty","fuelFull", "spikeStrip", "lockpick", "defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","apple","peach","tbacon","donuts","rabbit",
-    "salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","nitro","toolkit","beer","whiskey","moonshine","gpstracker","blindfold","woodaxe" };
+    save_vehicle_items[] = { "pickaxe","fuelEmpty","fuelFull", "spikeStrip", "lockpick", "defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","apple","peach","tbacon","donuts",
+    "rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit","zipties","knife","pliers","kidney","cocaine_unprocessed",
+    "heroin_processed","heroin_unprocessed","cocaine_processed","cement","rock","diamond_cut","diamond_uncut","glass","sand","salt_refined","salt_unrefined","iron_refined","iron_unrefined","copper_refined",
+    "copper_unrefined","oil_processed","oil_unprocessed","marijuana","cannabis","nitroamine","C4","steel","steelplate","wool","cloth","goldcoin","rubberU","rubber","gunpowder","sulfur","barrel","butt",
+    "sight","trigger","engine","plans","blastingcharge","boltcutter","nitro","beer","whiskey","moonshine","gpstracker","blindfold","wood","plank","woodaxe" };
 
     save_vehicle_inventory = true; //Save Arma inventory of vehicle to the database
     save_vehicle_fuel = true; //Save vehicle fuel level to the database (Impounded/Garaged).
@@ -48,7 +51,7 @@ class Life_Settings {
     /* ATM & Federal Reserve System Configurations */
     global_ATM = true; //Allow users to access any ATM on the map (Marked & Unmarked).
     noatm_timer = 15; //Time in minutes that players cannot deposit money after selling stolen gold.
-    minimum_cops = 8; //Minimum cops required online to rob the Federal Reserve
+    minimum_cops = 5; //Minimum cops required online to rob the Federal Reserve
 
     /* Basic System Configurations */
     donor_level = true; //Enable the donor level set in database (var = life_donorlevel; levels = 0,1,2,3,4,5). ATTENTION! Before enabling, read: https://www.bistudio.com/community/game-content-usage-rules & https://www.bistudio.com/monetization
