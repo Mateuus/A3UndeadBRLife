@@ -7487,13 +7487,13 @@
 			<Polish>Rafinacja ropy</Polish>
 		</Key>
 		<Key ID="STR_Process_Weight">
-			 <Original>You have no inventory space to process your materials.</Original>
+			 <Original>Voce nao tem espaco no invetario para processar o material.</Original>
 			</Key>
 	 	 <Key ID="STR_Process_Partial">
-			 <Original>Only part of your materials could be processed due to reaching your maximum weight.</Original>
+			 <Original>Apenas uma certa parte do seu material foi processada por conta do peso.</Original>
 		 </Key>
 		 <Key ID="STR_Process_plank">
-			 <Original>Trimming Wood</Original>
+			 <Original>Serralheria de Madeira</Original>
 		 </Key>
 		<Key ID="STR_Process_Diamond">
 			<Original>Cutting Diamonds</Original>

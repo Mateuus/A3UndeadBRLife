@@ -77519,7 +77519,7 @@ class Mission
 			dataType="Marker";
 			position[]={20434.35,40.352661,11469.393};
 			name="marker_267";
-			text="Construtor";
+			text="Loja de Madeiras";
 			type="mil_dot";
 			colorName="ColorBlue";
 			angle=168.832;
