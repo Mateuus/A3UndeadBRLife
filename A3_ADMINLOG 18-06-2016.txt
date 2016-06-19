@@ -297,3 +297,5 @@
 18-06-2016 20:55:17 infiSTAR.de | 2h 43min | [Coro]-Tuhalinha(76561198084123369) | Teleport to [11977.9,12429.1,0](GPS: 119124) (v0228B)
 18-06-2016 20:56:45 infiSTAR.de | 2h 44min | Cel. Neto(76561198112843376) | Teleport to [18482.7,14304.7,0](GPS: 184143) (v0228B)
 18-06-2016 20:58:39 infiSTAR.de | 2h 46min | Mateuus(76561198065694695) | Mass Message: Vai demora mais o menos 5 minutos para o servidor volta.. Aguardem.... (v0228B)
+
+
