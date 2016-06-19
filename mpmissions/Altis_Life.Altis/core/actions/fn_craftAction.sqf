@@ -53,7 +53,7 @@ _config = [_itemFilter] call life_fnc_craftCfg;
 } foreach _config;
 if(!_allMaterial) exitWith {hint localize "STR_PM_NoMaterial";};
 //Some checks
-if((count _matsNeed) isEqualTo 0) exitWith { hint "You do not have the required materials.";};
+if((count _matsNeed) isEqualTo 0) exitWith { hint "Voce nao tem os materiais nescessarios.";};
 if(_itemFilter isEqualTo "backpack" && backpack player != "") exitWith{
 		hint localize "STR_CRAFT_AR_Backpack";
 };
@@ -62,20 +62,20 @@ if(_itemFilter isEqualTo "uniform" && uniform player != "") exitWith{
 };
 
 if(_itemFilter isEqualTo "ammo" && !(player canadd _item)) exitwith{
-        hint "Inventory full";
+        hint "Invetario cheio";
 };
 
 if(_itemFilter isEqualTo "attach" && !(player canadd _item)) exitwith{
-        hint "Inventory full";
+        hint "Invetario cheio";
 };
 
 if(_itemFilter isEqualTo "vest" && vest player != "") exitwith {
-        hint "You are wearing a vest. You can't wear two vests, or make space in your backpack - Thanks Arma";
+        hint "Voce esta usando um colete. Voce nao pode usar dois coletes ao mesmo tempo. Guarde seu colete atual.";
 };
 
 if(_itemFilter isEqualTo "vehicle") then {
     if(count nearestObjects[getmarkerpos _site,["Car","Air","Ship"],10] > 0) exitwith {
-        hint "A vehicle is too close to the spawn point (the map marker)";
+        hint "Tem um veículo muito perto do spawn (the map marker)";
     };
 };
 
@@ -123,7 +123,7 @@ for [{_i=0},{_i<_invSize-1},{_i=_i+2}] do {
         _nearCar setvariable ["Trunk",[_trunk,(_oldItem select (_i+1)) - _weight],true];
     };
 };
-if(!_removeItemSuccess) exitWith {hint "Failed to remove items"; life_is_processing = false;};
+if(!_removeItemSuccess) exitWith {hint "Falha ao remover itens"; life_is_processing = false;};
 [] call life_fnc_p_updateMenu;
 life_is_processing = true;
 while{true} do
@@ -147,7 +147,7 @@ if(_itemFilter isEqualTo "vest") then{
     if(vest player isEqualTo "") then{
         player addVest _newItem;
     }else {
-        hint "You are wearing a vest. You can't wear two vests";
+        hint "Voce esta usando um colete. Voce nao pode usar 2 coletes ao mesmo tempo";
         life_is_processing = false;
     };
 };
@@ -156,7 +156,7 @@ if(_itemFilter isEqualTo "ammo") then{
     if(player canAdd _newItem) then{
         player addMagazine _newitem;
     }else{
-        hint "Inventory full";
+        hint "Invetario cheio";
     };
 };
 
@@ -164,7 +164,7 @@ if(_itemFilter isEqualTo "attach") then{
     if(player canAdd _newItem) then{
         player addItem _newitem;
     }else{
-        hint "Inventory full";
+        hint "Invetario cheio";
     };
 };
 
@@ -214,7 +214,7 @@ if(_itemFilter isEqualTo "weapon") then{
 			player addWeapon _newItem;
 		}else{
 			5 cutText ["","PLAIN"];
-			hint "Le craft a été annulé vous n'avez pas pu stocker l'arme";
+			hint "O craft foi cancelado se você não tiver armazenado a arma";
 			for [{_i=0},{_i<_invSize-1},{_i=_i+2}] do {
 				_handledItem = M_CONFIG(getText,"VirtualItems",_oldItem select _i,"variable");
 				[true,_handledItem,_oldItem select _i+1] call life_fnc_handleInv;

@@ -95,19 +95,19 @@ class Clothing {
             { "B_Kitbag_mcamo", "", 3500, { "", "", -1 } },
             { "B_Kitbag_sgg", "", 3500, { "", "", -1 } },
             { "B_Kitbag_cbr", "", 3500, { "", "", -1 } },
-            { "B_FieldPack_blk", "", 5000, { "", "", -1 } },
-            { "B_FieldPack_ocamo", "", 5000, { "", "", -1 } },
-            { "B_FieldPack_oucamo", "", 5000, { "", "", -1 } },
-            { "B_Bergen_sgg", "", 6500, { "", "", -1 } },
-            { "B_Bergen_mcamo", "", 6500, { "", "", -1 } },
-            { "B_Bergen_rgr", "", 6500, { "", "", -1 } },
-            { "B_Bergen_blk", "", 6500, { "", "", -1 } },
-            { "B_Carryall_ocamo", "", 7500, { "", "", -1 } },
-            { "B_Carryall_oucamo", "", 7500, { "", "", -1 } },
-            { "B_Carryall_mcamo", "", 7500, { "", "", -1 } },
-            { "B_Carryall_oli", "", 7500, { "", "", -1 } },
-            { "B_Carryall_khk", "", 7500, { "", "", -1 } },
-            { "B_Carryall_cbr", "", 7500, { "", "", -1 } }
+            { "B_FieldPack_blk", "", 4000, { "", "", -1 } },
+            { "B_FieldPack_ocamo", "", 4000, { "", "", -1 } },
+            { "B_FieldPack_oucamo", "", 4000, { "", "", -1 } },
+            { "B_Bergen_sgg", "", 4000, { "", "", -1 } },
+            { "B_Bergen_mcamo", "", 4000, { "", "", -1 } },
+            { "B_Bergen_rgr", "", 4000, { "", "", -1 } },
+            { "B_Bergen_blk", "", 4000, { "", "", -1 } },
+            { "B_Carryall_ocamo", "", 5000, { "", "", -1 } },
+            { "B_Carryall_oucamo", "", 5000, { "", "", -1 } },
+            { "B_Carryall_mcamo", "", 5000, { "", "", -1 } },
+            { "B_Carryall_oli", "", 5000, { "", "", -1 } },
+            { "B_Carryall_khk", "", 5000, { "", "", -1 } },
+            { "B_Carryall_cbr", "", 5000, { "", "", -1 } }
         };
     };
 

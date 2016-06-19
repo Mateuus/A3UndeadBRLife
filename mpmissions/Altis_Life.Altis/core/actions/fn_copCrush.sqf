@@ -12,9 +12,9 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf 
 	_vehicleData = _vehicle getVariable["vehicle_info_owners",[]];
 	if(count _vehicleData isEqualTo 0) exitWith {deleteVehicle _vehicle};
   _vehicleName = getText(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName");
-[0,format["%1 your %2 is being crushed by the police because it is an illegal vehicle.",(_vehicleData select 0) select 1,_vehicleName]] remoteExec ["life_fnc_broadcast",0];
+[0,format["%1 seu %2 está sendo destruido pela polícia porque é um veículo ilegal.",(_vehicleData select 0) select 1,_vehicleName]] remoteExec ["life_fnc_broadcast",0];
 	life_action_inUse = true;
-		_upp = "Crushing Vehicle";
+		_upp = "Destuindo veículo";
 	//Setup our progress bar.
 	disableSerialization;	5 cutRsc ["life_progress","PLAIN"];
 	_ui = uiNameSpace getVariable "life_progress";
@@ -33,7 +33,7 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf 
 		if(!alive player) exitWith {};
 	};
 	5 cutText ["","PLAIN"];
-		if(player distance _vehicle > 10) exitWith {hint "Deleting cancelled.";
+		if(player distance _vehicle > 10) exitWith {hint "Destruiçao cancelada.";
  life_action_inUse = false;
 };
 if(!alive player) exitWith {life_action_inUse = false;
@@ -51,10 +51,10 @@ _type = getText(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName
 			case (_vehicle isKindOf "Air");
 };
 [player,_vehicle] remoteExec ["TON_fnc_chopShopSell"];
-		hint format["You have Crushed %1's vehicle, it better have been for a good reason!",_type];
-[0,format["%1 has crushed %2's %3 Vehicle",name player,(_vehicleData select 0) select 1,_vehicleName]] remoteExec ["life_fnc_broadcast",0];
+		hint format["Voce destruiu %1's veículo, esteja ciente que foi por uma boa causa!",_type];
+[0,format["%1 destruiu %2's %3 veículo",name player,(_vehicleData select 0) select 1,_vehicleName]] remoteExec ["life_fnc_broadcast",0];
 	          } else {
-		hint "Crushing cancelled.";
+		hint "Destruiçao cancelada.";
 	};
 };
 life_action_inUse = false;

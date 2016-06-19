@@ -360,9 +360,9 @@ class VirtualItems {
 	class oil_processed {
 		variable = "oilProcessed";
 		displayName = "STR_Item_OilP";
-		weight = 5;
+		weight = 6;
 		buyPrice = -1;
-		sellPrice = 3900;
+		sellPrice = 3100;
 		illegal = false;
 		edible = -1;
 		icon = "icons\ico_oilProcessed.paa";
@@ -384,7 +384,7 @@ class VirtualItems {
 		displayName = "STR_Item_CopperIngot";
 		weight = 3;
 		buyPrice = -1;
-		sellPrice = 1950;
+		sellPrice = 1150;
 		illegal = false;
 		edible = -1;
 		icon = "icons\ico_copper.paa";
