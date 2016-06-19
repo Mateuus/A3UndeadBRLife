@@ -629,13 +629,13 @@
 	</package>
 	<Package name="NHS">
     <Key ID="STR_NHS_Died">
-      <Original>%1 nao sofreu aos ferimentos e faleceu.</Original>
+      <Original>%1 nao resistiu aos ferimentos e faleceu.</Original>
     </Key>
     <Key ID="STR_NHS_Killed">
       <Original>%1 foi brutalmente assassinado por %2!</Original>
     </Key>
     <Key ID="STR_NHS_Suicide">
-      <Original>%1 brutamente assassinado!</Original>
+      <Original>%1 foi brutamente assassinado!</Original>
     </Key>
     <Key ID="STR_NHS_PlayerRevived">
       <Original>%1 foi revivido!</Original>
@@ -7019,19 +7019,19 @@
 			<Polish>Zarządca nieruchomości</Polish>
 		</Key>
 		<Key ID="STR_License_cloth">
-			<Original>Cloth Weaving License</Original>
+			<Original>Licença de processador de pano</Original>
 		</Key>
 		<Key ID="STR_License_C4">
-			<Original>C4 Creation License</Original>
+			<Original>Licença de construtor de C4</Original>
 		</Key>
 		<Key ID="STR_License_rubber">
-			<Original>Rubber Creation License</Original>
+			<Original>Licença de processador de borracha</Original>
 		</Key>
 		<Key ID="STR_License_gunpowder">
-			<Original>Gunpowder License</Original>
+			<Original>Licença de processador de pólvora</Original>
 		</Key>
 		<Key ID="STR_License_steelplate">
-			<Original>Steel Plate License</Original>
+			<Original>Licença de processador de aço</Original>
 		</Key>
 	</Package>
 	<Package name="More_Item_Strings">
