@@ -25,6 +25,12 @@ if(!isClass (missionConfigFile >> CONFIG_LIFE_VEHICLES >> _vehicleLife)) then {
 _price = M_CONFIG(getNumber,CONFIG_LIFE_VEHICLES,_vehicleLife,"price");
 switch(playerSide) do {
 	case civilian: {
+	/* NORMAL */
+	if ((FETCH_CONST(life_donorlevel) == 0)) then 
+	{
+				_multiplier = LIFE_SETTINGS(getNumber,"vehicle_sell_multiplier_CIVILIAN");
+				_purchasePrice = _price * LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_CIVILIAN");
+	};
 	/* BRONZE */
 	if ((FETCH_CONST(life_donorlevel) == 1)) then 
 	{

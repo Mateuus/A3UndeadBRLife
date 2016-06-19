@@ -28,6 +28,12 @@ _storageFee = LIFE_SETTINGS(getNumber,"vehicle_storage_fee_multiplier");
 switch(playerSide) do {
 	case civilian: {
 	
+	/* NORMAL */
+	if ((FETCH_CONST(life_donorlevel) == 0)) then 
+	{
+				_purchasePrice = _price * LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_CIVILIAN");
+	};
+	
 	/* BRONZE */
 	if ((FETCH_CONST(life_donorlevel) == 1)) then 
 	{

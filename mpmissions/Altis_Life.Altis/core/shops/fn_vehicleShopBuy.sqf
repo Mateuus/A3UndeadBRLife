@@ -30,6 +30,12 @@ _initalPrice = M_CONFIG(getNumber,CONFIG_LIFE_VEHICLES,_classNameLife,"price");
 switch(playerSide) do {
 	case civilian: {
 	
+	/* NORMAL */
+	if ((FETCH_CONST(life_donorlevel) == 0)) then 
+	{
+				_buyMultiplier = LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_CIVILIAN");
+				_rentMultiplier = LIFE_SETTINGS(getNumber,"vehicle_rental_multiplier_CIVILIAN");
+	};
 	/* BRONZE */
 	if ((FETCH_CONST(life_donorlevel) == 1)) then 
 	{
