@@ -36094,9 +36094,9 @@ class Mission
 			dataType="Marker";
 			position[]={4473.2939,9.0415039,14849.4};
 			name="marker_241";
-			text="Fazenda Abandonada";
+			text="Campo de lã";
 			type="mil_dot";
-			colorName="ColorYellow";
+			colorName="ColorGUER";
 			id=1701;
 			atlOffset=-4.6134567;
 		};
@@ -36750,7 +36750,7 @@ class Mission
 			dataType="Marker";
 			position[]={4163.6216,20.663363,12872.943};
 			name="marker_251";
-			text="Processador de pano";
+			text="Processador de lã";
 			type="mil_dot";
 			colorName="ColorGUER";
 			angle=270.1059;

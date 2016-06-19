@@ -93,7 +93,7 @@
 			<Polish>Market Altis</Polish>
 		</Key>
 		<Key ID="STR_Shops_Plank">
-			<Original>Contractor</Original>
+			<Original>Loja de madeira</Original>
 		</Key>
 		<Key ID="STR_Shops_Rebel">
 			<Original>Rebel Market</Original>
@@ -5125,16 +5125,16 @@
 	</Package>
 	<Package name="MISC_Strings">
 		<Key ID="STR_MISC_DrunkBlackOut">
-      <Original>Oh Shit!</Original>
+      <Original>Que loco , me ajudaaa!</Original>
     </Key>
     <Key ID="STR_MISC_StPubIntox">
-      <Original>%1 was seen drunk in public!</Original>
+      <Original>%1 desmaiou bebado em público!</Original>
     </Key>
     <Key ID="STR_MISC_AlreadyDrinking">
-      <Original>You are already drunk...</Original>
+      <Original>Voce ja esta bebado...</Original>
     </Key>
     <Key ID="STR_MISC_WestIndNoNo">
-      <Original>You cannot drink on duty!</Original>
+      <Original>Você não pode beber em serviço!</Original>
     </Key>
 		<Key ID="STR_MISC_TooMuch">
 			<Original>You tried to give %1 %2 %3 but they couldn't hold that so it was returned.</Original>
@@ -6578,7 +6578,7 @@
 			<Original>GPS Tracker</Original>
 		</Key>
 		<Key ID="STR_Item_Blindfold">
-		<Original>Blindfold</Original>
+		<Original>Saco de sequestro</Original>
 		</Key>
 		<Key ID="STR_Item_Rock">
 			<Original>Rock</Original>

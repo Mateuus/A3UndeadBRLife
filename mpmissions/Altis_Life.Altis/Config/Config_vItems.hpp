@@ -37,7 +37,7 @@ class VirtualShops {
 		side = "civ";
 		license = "rebel";
 		level[] = { "", "", -1, "" };
-		items[] = { "waterBottle", "rabbit", "apple", "redgull", "beer", "whiskey", "moonshine", "tbacon", "lockpick", "gpstracker", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "zipties", "knife", "pliers", "barrel", "butt", "kidney" };
+		items[] = { "waterBottle", "rabbit", "apple", "redgull", "beer", "whiskey", "moonshine", "tbacon", "lockpick", "gpstracker", "blindfold", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "zipties", "knife", "pliers", "barrel", "butt", "kidney" };
 	};
 
 	class gang {
@@ -77,7 +77,7 @@ class VirtualShops {
 		side = "civ";
 		license = "";
 		level[] = { "", "", -1, "" };
-		items[] = { "cocaine_processed", "heroin_processed", "marijuana" };
+		items[] = { "cocaine_processed", "heroin_processed", "marijuana","nitroamine" };
 	};
 
 	class oil {
@@ -1004,7 +1004,7 @@ class VirtualItems {
 	class nitroamine {
 		variable = "nitroamine";
 		displayName = "STR_Item_nitroamine";
-		weight = 4;
+		weight = 5;
 		buyPrice = 11025;
 		sellPrice = 1100;
 		illegal = true;

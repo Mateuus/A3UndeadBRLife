@@ -85,13 +85,13 @@ switch (true) do {
 	};
 
 	case (EQUAL(_item,"blindfold")): {
-		if(playerSide in [independent]) exitWith {hint "You cannot use this item!"};
-		if(vehicle player != player) exitWith {hint "You cannot use this item whilst in a vehicle!"};
+		if(playerSide in [independent]) exitWith {hint "Voce nao pode usar este item!"};
+		if(vehicle player != player) exitWith {hint "Voce nao pode usar este item dentro do veículo!"};
 		_unit = cursorTarget;
 		if(isNull _unit) exitWith {};
-		if((player distance _unit > 3)) exitWith {hint "You are too far away!";};
-		if(!(_unit getVariable "civrestrained")) exitWith {hint "The person must be tied up!";};
-		if((_unit getVariable "masked")) exitWith {hint "This person is already blindfolded!";};
+		if((player distance _unit > 3)) exitWith {hint "Voce está muito longe!";};
+		if(!(_unit getVariable "civrestrained")) exitWith {hint "A vítima deve estar algemada!";};
+		if((_unit getVariable "masked")) exitWith {hint "A vítima ja esta com o saco de sequestro!";};
 		if(player isEqualTo _unit) exitWith {};
 		if(!isPlayer _unit) exitWith {};
 		if(([false,_item,1]call life_fnc_handleInv)) then
@@ -142,7 +142,7 @@ switch (true) do {
 	case (EQUAL(_item,"cocaine_processed")):
 	{
 		if(playerSide in [west,independent]) exitWith {hint "You can't take drugs on duty!";};
-		if((player getVariable ["Druged",FALSE])) exitWith {hint "You are already high!";};
+		if((player getVariable ["Druged",FALSE])) exitWith {hint "Voce ja está na onda!";};
 		if(([false,_item,1] call life_fnc_handleInv)) then
 			{
 				if(isNil "life_drug") then {life_drug = 0;};
@@ -155,7 +155,7 @@ switch (true) do {
 	case (EQUAL(_item,"heroin_processed")):
 	{
 		if(playerSide in [west,independent]) exitWith {hint "You can't take drugs on duty!";};
-		if((player getVariable ["Druged",FALSE])) exitWith {hint "You are already high!";};
+		if((player getVariable ["Druged",FALSE])) exitWith {hint "Voce ja está na onda!";};
 		if(([false,_item,1] call life_fnc_handleInv)) then
 			{
 				if(isNil "life_drug") then {life_drug = 0;};

@@ -14,7 +14,7 @@ switch (playerSide) do {
 		life_actions = life_actions + [player addAction[localize "STR_pAct_RobPerson",life_fnc_robAction,"",0,false,false,"",'
 		!isNull cursorObject && player distance cursorObject < 3.5 && isPlayer cursorObject && animationState cursorObject == "Incapacitated" && !(cursorObject getVariable["robbed",FALSE]) ']];
 		// Suicide Bomb
-			life_actions = life_actions + [player addAction["<t color='#FF0000'>Detonate Vest</t>",life_fnc_suicideBomb,"",0,false,false,"",
+			life_actions = life_actions + [player addAction["<t color='#FF0000'>Botãozinho do capeta</t>",life_fnc_suicideBomb,"",0,false,false,"",
 			'vest player isEqualTo "V_HarnessOGL_brn" && alive player && playerSide isEqualTo civilian && !life_istazed && !life_isSuicide && !(player getVariable "restrained") && !(player getVariable "Escorting") && !(player getVariable "transporting")']];
 	};
 	case west:
@@ -32,10 +32,10 @@ switch (playerSide) do {
 };
 
 
-//life_actions pushBack (player addAction ["<img image='icons\seatOn.paa' /><t color='#BBBB00'>Seatbelt On</t>", {life_imAuto = false;}, "", 3, true, true, "", 'vehicle player isKindOf "Car" && !life_imAuto']);
-//life_actions pushBack (player addAction ["<img image='icons\seatOff.paa' /><t color='#BBBB00'>Seatbelt Off</t>", {life_imAuto = true;}, "", 3, true, true, "", 'vehicle player isKindOf "Car" && life_imAuto']);
-life_actions pushBack (player addAction ["<img image='icons\seatOn.paa' /><t color='#BBBB00'>Put Seatbelt On</t>", {life_seatbelt=true}, "", 3, false, true, "", 'vehicle player isKindOf "Car" && !life_seatbelt']);
-life_actions pushBack (player addAction ["<img image='icons\seatOff.paa' /><t color='#BBBB00'>Take Seatbelt Off</t>", {life_seatbelt=false}, "", 3, false, true, "", 'vehicle player isKindOf "Car" && life_seatbelt']);
+//life_actions pushBack (player addAction ["<img image='icons\seatOn.paa' /><t color='#BBBB00'>Cinto de segurança On</t>", {life_imAuto = false;}, "", 3, true, true, "", 'vehicle player isKindOf "Car" && !life_imAuto']);
+//life_actions pushBack (player addAction ["<img image='icons\seatOff.paa' /><t color='#BBBB00'>Cinto de segurança Off</t>", {life_imAuto = true;}, "", 3, true, true, "", 'vehicle player isKindOf "Car" && life_imAuto']);
+life_actions pushBack (player addAction ["<img image='icons\seatOn.paa' /><t color='#BBBB00'>Colocar cinto de segurança</t>", {life_seatbelt=true}, "", 3, false, true, "", 'vehicle player isKindOf "Car" && !life_seatbelt']);
+life_actions pushBack (player addAction ["<img image='icons\seatOff.paa' /><t color='#BBBB00'>Retirar cinto de segurança</t>", {life_seatbelt=false}, "", 3, false, true, "", 'vehicle player isKindOf "Car" && life_seatbelt']);
 
 //remove mask
-//life_actions = life_actions + [player addAction["<t color='#FFB124'>Remove Blindfold</t>",life_fnc_unmask,"",1,false,true,"",' playerSide isEqualTo west OR playerSide isEqualTo civilian && !isNull cursorTarget && cursorTarget getVariable "masked" && player distance cursorTarget < 3 && cursorTarget isKindOf "Man" ']];
+//life_actions = life_actions + [player addAction["<t color='#FFB124'>Remover saco de sequestro</t>",life_fnc_unmask,"",1,false,true,"",' playerSide isEqualTo west OR playerSide isEqualTo civilian && !isNull cursorTarget && cursorTarget getVariable "masked" && player distance cursorTarget < 3 && cursorTarget isKindOf "Man" ']];
