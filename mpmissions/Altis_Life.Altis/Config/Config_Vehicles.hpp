@@ -33,6 +33,7 @@ class CarShops {
 			{ "C_Offroad_01_F", { "life_donorlevel", "SCALAR", 1 } },
 			{ "C_Van_01_box_F", { "life_donorlevel", "SCALAR", 1 } },
 			{ "I_Truck_02_transport_F", { "life_donorlevel", "SCALAR", 1 } },
+			{ "O_Truck_03_ammo_F", { "life_donorlevel", "SCALAR", 1 } },
 			{ "I_Truck_02_covered_F", { "life_donorlevel", "SCALAR", 1 } },
 			{ "B_Truck_01_transport_F", { "life_donorlevel", "SCALAR", 1 } },
 			{ "I_Truck_02_covered_F", { "life_donorlevel", "SCALAR", 1 } }
@@ -148,7 +149,6 @@ class CarShops {
             { "O_Truck_03_transport_F", { "", "", -1 } },
             { "O_Truck_03_covered_F", { "", "", -1 } },
             { "B_Truck_01_box_F", { "", "", -1 } },
-            { "O_Truck_03_device_F", { "", "", -1 } },
             { "C_Van_01_fuel_F", { "", "", -1 } },
             { "I_Truck_02_fuel_F", { "", "", -1 } },
             { "B_Truck_01_fuel_F", { "", "", -1 } }
@@ -183,7 +183,9 @@ class CarShops {
             { "O_MRAP_02_F", { "", "", -1 } },
             { "B_Heli_Light_01_stripped_F", { "", "", -1 } },
             { "B_G_Offroad_01_armed_F", { "", "", -1 } },
-            { "O_MRAP_02_hmg_F", { "", "", -1 } }
+			{ "I_Truck_02_box_F", { "", "", -1 } },
+			{ "I_Truck_02_covered_F", { "", "", -1 } },
+			{ "O_Truck_02_fuel_F", { "", "", -1 } }
         };
     };
 
@@ -293,7 +295,28 @@ class LifeCfgVehicles {
         price = 60000;
         textures[] = {};
     };
-
+	
+	class O_Truck_03_ammo_F {
+        vItemSpace = 600;
+        licenses[] = { {"trucking"}, {""}, {""}, {""} };
+        price = 60000;
+        textures[] = {};
+    };
+	
+	class I_Truck_02_box_F {
+        vItemSpace = 390;
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 600000;
+        textures[] = {};
+    };
+	
+	class O_Truck_02_fuel_F {
+        vItemSpace = 350;
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 600000;
+        textures[] = {};
+    };
+	
     class C_Rubberboat {
         vItemSpace = 45;
         licenses[] = { {"boat"}, {""}, {""}, {""} };
@@ -646,9 +669,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class I_Truck_02_transport_F {
-        vItemSpace = 280;
+        vItemSpace = 270;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 228000;
+        price = 600000;
         textures[] = {
             { "Orange", "civ", {
                 "\A3\Soft_F_Beta\Truck_02\data\truck_02_kab_co.paa",
