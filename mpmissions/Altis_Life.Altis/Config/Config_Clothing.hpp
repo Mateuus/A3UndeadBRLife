@@ -725,7 +725,7 @@ class Clothing {
             { "NONE", "Remove Uniform", 0, { "", "", -1 } },
 			{ "U_IG_Guerilla2_3", "", 300, { "", "", -1 } },
 			{ "U_I_G_resistanceLeader_F", "", 7500, { "", "", -1 } },
-			{ "U_O_Wetsuit", "", 9000, { "", "", -1 } }
+			{ "U_O_Wetsuit", "", 9000, { "", "", -1 } },
 			{ "U_O_SpecopsUniform_ocamo", "", 14500, { "", "", -1 } },
 			{ "U_O_PilotCoveralls", "", 15000, { "", "", -1 } },
 			{ "U_B_CombatUniform_mcam_vest", "", 17500, { "", "", -1 } },
