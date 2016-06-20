@@ -23,8 +23,8 @@ DYNMARKET_UserNotification     = false;  // Est-ce que les joueurs devraient êt
 
 DYNMARKET_UserNotification_Text = 
 [
-	"Nos prix ont été mis à jour!",
-	"Les nouveaux prix sont calculés par le serveur ..."
+	"Nossos preços foram atualizados!",
+	"Os novos preços são baseadas no servidor ..."
 ];
 
 // █████████████████ CONFIGURATION DU GROUPE D'ARTICLES █████████████████
