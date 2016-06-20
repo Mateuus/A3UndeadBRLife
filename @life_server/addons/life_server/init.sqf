@@ -10,6 +10,10 @@
 	Description:
 	Initialize the server and required systems.
 */
+
+// Initialisation de la bourse (DynMarket).
+[] execVM "\life_server\Functions\DynMarket\fn_config.sqf";
+
 DB_Async_Active = false;
 DB_Async_ExtraLock = false;
 life_server_isReady = false;
