@@ -121,7 +121,7 @@ class Clothing {
         uniforms[] = {
             { "NONE", "Remove Uniform", 0, { "", "", -1 } },
             { "U_Rangemaster", "Uniforme Padrão", 25, { "", "", -1 } },
-            { "U_B_SpecopsUniform_sgg", "Uniforme de Official", 25, { "life_coplevel", "SCALAR", 5 } },
+            { "U_B_SpecopsUniform_sgg", "Uniforme de Official", 25, { "life_coplevel", "SCALAR", 5 } }
         };
         headgear[] = {
             { "NONE", "Remove Hat", 0, { "", "", -1 } },
@@ -258,9 +258,6 @@ class Clothing {
         license = "";
         side = "civ";
         uniforms[] = {
-            { "NONE", "Remove Uniform", 0, { "", "", -1 } },
-
-            //Donator
             { "NONE", "Remove Uniform", 0, { "life_donorlevel", "SCALAR", 1 } },
 			{ "U_I_CombatUniform", "Roupa VIP I", 9000, { "life_donorlevel", "SCALAR", 1 } },
 			{ "U_C_Poloshirt_blue", "Undead Brasil Roupa", 1250, { "life_donorlevel", "SCALAR", 1 } },
@@ -353,9 +350,6 @@ class Clothing {
         license = "";
         side = "civ";
         uniforms[] = {
-            { "NONE", "Remove Uniform", 0, { "", "", -1 } },
-
-            //Donator
 			{ "NONE", "Remove Uniform", 0, { "life_donorlevel", "SCALAR", 2 } },
 			{ "U_I_CombatUniform", "Roupa VIP II", 8000, { "life_donorlevel", "SCALAR", 2 } },
 			{ "U_C_Poloshirt_blue", "Undead Brasil Roupa", 1250, { "life_donorlevel", "SCALAR", 2 } },
@@ -442,9 +436,6 @@ class Clothing {
         license = "";
         side = "civ";
         uniforms[] = {
-            { "NONE", "Remove Uniform", 0, { "", "", -1 } },
-
-            //Donator
 			{ "NONE", "Remove Uniform", 0, { "life_donorlevel", "SCALAR", 3 } },
 			{ "U_I_CombatUniform", "Roupa VIP III", 7000, { "life_donorlevel", "SCALAR", 3 } },
 			{ "U_C_Poloshirt_blue", "Undead Brasil Roupa", 1250, { "life_donorlevel", "SCALAR", 3 } },
@@ -533,10 +524,7 @@ class Clothing {
         license = "";
         side = "civ";
         uniforms[] = {
-            { "NONE", "Remove Uniform", 0, { "", "", -1 } },
-
-            //Donator
-			  { "NONE", "Remove Uniform", 0, { "life_donorlevel", "SCALAR", 4 } },
+			{ "NONE", "Remove Uniform", 0, { "life_donorlevel", "SCALAR", 4 } },
 			{ "U_I_CombatUniform", "Roupa Padrão VIP", 1000, { "life_donorlevel", "SCALAR", 4 } },
 			{ "U_C_Poloshirt_blue", "Undead Brasil Roupa", 1250, { "life_donorlevel", "SCALAR", 4 } },
 			{ "U_O_OfficerUniform_ocamo", "ROUPA VIP IV", 6275, { "life_donorlevel", "SCALAR", 4 } },
@@ -623,9 +611,6 @@ class Clothing {
         license = "";
         side = "civ";
         uniforms[] = {
-            { "NONE", "Remove Uniform", 0, { "", "", -1 } },
-
-            //Donator
 			{ "NONE", "Remove Uniform", 0, { "life_donorlevel", "SCALAR", 5 } },
 			{ "U_B_CombatUniform_mcam", "Roupa VIP V", 5500, { "life_donorlevel", "SCALAR", 5 } },
             { "U_B_CombatUniform_mcam_vest", "Roupa VIP V", 5500, { "life_donorlevel", "SCALAR", 5 } },
@@ -699,20 +684,20 @@ class Clothing {
         license = "";
         side = "civ";
         uniforms[] = {
-            { "NONE", "Remove Uniform", 0, { "", "", 5 } }
+            { "NONE", "Remove Uniform", 0, { "", "", -1 } }
         };
         headgear[] = {
-            { "NONE", "Remove Hat", 0, { "", "", 5 } }
+            { "NONE", "Remove Hat", 0, { "", "", -1 } }
 
         };
         goggles[] = {
-            { "NONE", "Remove Glasses", 0, { "", "", 5 } }
+            { "NONE", "Remove Glasses", 0, { "", "", -1 } }
         };
         vests[] = {
-            { "NONE", "Remove Vest", 0, { "", "", 5 } }
+            { "NONE", "Remove Vest", 0, { "", "", -1 } }
         };
         backpacks[] = {
-            { "NONE", "Remove Backpack", 0, { "", "", 5 } }
+            { "NONE", "Remove Backpack", 0, { "", "", -1 } }
         };
     };
 
