@@ -20,7 +20,9 @@ class CarShops {
             { "C_Offroad_01_F", { "", "", -1 } },
             { "C_SUV_01_F", { "", "", -1 } },
             { "C_Hatchback_01_sport_F", { "", "", -1 } },
-            { "C_Van_01_transport_F", { "", "", -1 } }
+            { "C_Van_01_box_F", { "", "", -1 } },
+			{ "C_Van_01_transport_F", { "", "", -1 } },
+			{ "C_Van_01_fuel_F", { "", "", -1 } }
         };
     };
 
@@ -33,17 +35,31 @@ class CarShops {
 			{ "C_Offroad_01_F", { "life_donorlevel", "SCALAR", 1 } },
 			{ "C_Van_01_box_F", { "life_donorlevel", "SCALAR", 1 } },
 			{ "I_Truck_02_transport_F", { "life_donorlevel", "SCALAR", 1 } },
-			{ "O_Truck_03_ammo_F", { "life_donorlevel", "SCALAR", 1 } },
-			{ "I_Truck_02_covered_F", { "life_donorlevel", "SCALAR", 1 } },
+            { "I_Truck_02_covered_F", { "life_donorlevel", "SCALAR", 1 } },
+            { "O_Truck_03_transport_F", { "life_donorlevel", "SCALAR", 1 } },
+            { "O_Truck_03_covered_F", { "life_donorlevel", "SCALAR", 1 } },
 			{ "B_Truck_01_transport_F", { "life_donorlevel", "SCALAR", 1 } },
-			{ "I_Truck_02_covered_F", { "life_donorlevel", "SCALAR", 1 } }
+			{ "B_Truck_01_covered_F", { "life_donorlevel", "SCALAR", 1 } },
+            { "I_Truck_02_fuel_F", { "life_donorlevel", "SCALAR", 1 } },
+            { "B_Truck_01_fuel_F", { "life_donorlevel", "SCALAR", 1 } }
         };
     };
 
 	class civ_vip_car_silver {
         side = "civ";
         vehicles[] = {
-			{ "O_Truck_03_transport_F", { "life_donorlevel", "SCALAR", 2 } },
+			{ "C_Hatchback_01_sport_F", { "life_donorlevel", "SCALAR", 2 } },
+			{ "C_SUV_01_F", { "life_donorlevel", "SCALAR", 2 } },
+			{ "C_Offroad_01_F", { "life_donorlevel", "SCALAR", 2 } },
+			{ "C_Van_01_box_F", { "life_donorlevel", "SCALAR", 2 } },
+			{ "I_Truck_02_transport_F", { "life_donorlevel", "SCALAR", 2 } },
+            { "I_Truck_02_covered_F", { "life_donorlevel", "SCALAR", 2 } },
+            { "O_Truck_03_transport_F", { "life_donorlevel", "SCALAR", 2 } },
+            { "O_Truck_03_covered_F", { "life_donorlevel", "SCALAR", 2 } },
+			{ "B_Truck_01_transport_F", { "life_donorlevel", "SCALAR", 2 } },
+			{ "B_Truck_01_covered_F", { "life_donorlevel", "SCALAR", 2 } },
+            { "I_Truck_02_fuel_F", { "life_donorlevel", "SCALAR", 2 } },
+            { "B_Truck_01_fuel_F", { "life_donorlevel", "SCALAR", 2 } },
 			{ "O_MRAP_02_F", { "life_donorlevel", "SCALAR", 2 } }
         };
     };
@@ -51,6 +67,19 @@ class CarShops {
 	class civ_vip_car_gold {
         side = "civ";
         vehicles[] = {
+			{ "C_Hatchback_01_sport_F", { "life_donorlevel", "SCALAR", 3 } },
+			{ "C_SUV_01_F", { "life_donorlevel", "SCALAR", 3 } },
+			{ "C_Offroad_01_F", { "life_donorlevel", "SCALAR", 3 } },
+			{ "C_Van_01_box_F", { "life_donorlevel", "SCALAR", 3 } },
+			{ "I_Truck_02_transport_F", { "life_donorlevel", "SCALAR", 3 } },
+            { "I_Truck_02_covered_F", { "life_donorlevel", "SCALAR", 3 } },
+            { "O_Truck_03_transport_F", { "life_donorlevel", "SCALAR", 3 } },
+            { "O_Truck_03_covered_F", { "life_donorlevel", "SCALAR", 3 } },
+			{ "B_Truck_01_ammo_F", { "life_donorlevel", "SCALAR", 3 } },
+			{ "B_Truck_01_transport_F", { "life_donorlevel", "SCALAR", 3 } },
+			{ "B_Truck_01_covered_F", { "life_donorlevel", "SCALAR", 3 } },
+            { "I_Truck_02_fuel_F", { "life_donorlevel", "SCALAR", 3 } },
+            { "B_Truck_01_fuel_F", { "life_donorlevel", "SCALAR", 3 } },
 			{ "B_Truck_01_box_F", { "life_donorlevel", "SCALAR", 3 } },
 			{ "O_Truck_03_device_F", { "life_donorlevel", "SCALAR", 3 } }
         };
@@ -59,16 +88,46 @@ class CarShops {
 	class civ_vip_car_platinum {
         side = "civ";
         vehicles[] = {
-			{ "O_MRAP_02_F", { "life_donorlevel", "SCALAR", 4 } }, //Ifrit
-            { "B_MRAP_01_F", { "life_donorlevel", "SCALAR", 4 } } //Hunter
+			{ "C_Hatchback_01_sport_F", { "life_donorlevel", "SCALAR", 4 } },
+			{ "C_SUV_01_F", { "life_donorlevel", "SCALAR", 4 } },
+			{ "C_Offroad_01_F", { "life_donorlevel", "SCALAR", 4 } },
+			{ "C_Van_01_box_F", { "life_donorlevel", "SCALAR", 4 } },
+			{ "I_Truck_02_transport_F", { "life_donorlevel", "SCALAR", 4 } },
+            { "I_Truck_02_covered_F", { "life_donorlevel", "SCALAR", 4 } },
+            { "O_Truck_03_transport_F", { "life_donorlevel", "SCALAR", 4 } },
+            { "O_Truck_03_covered_F", { "life_donorlevel", "SCALAR", 4 } },
+			{ "B_Truck_01_ammo_F", { "life_donorlevel", "SCALAR", 4 } },
+			{ "B_Truck_01_transport_F", { "life_donorlevel", "SCALAR", 4 } },
+			{ "B_Truck_01_covered_F", { "life_donorlevel", "SCALAR", 4 } },
+            { "I_Truck_02_fuel_F", { "life_donorlevel", "SCALAR", 4 } },
+            { "B_Truck_01_fuel_F", { "life_donorlevel", "SCALAR", 4 } },
+			{ "B_Truck_01_box_F", { "life_donorlevel", "SCALAR", 4 } },
+			{ "O_Truck_03_device_F", { "life_donorlevel", "SCALAR", 4 } }, 
+			{ "O_MRAP_02_F", { "life_donorlevel", "SCALAR", 4 } },
+            { "B_MRAP_01_F", { "life_donorlevel", "SCALAR", 4 } }
         };
     };
 
 	class civ_vip_car_diamante {
         side = "civ";
         vehicles[] = {
-			{ "O_MRAP_02_F", { "life_donorlevel", "SCALAR", 5 } },//Ifrit
-            { "B_MRAP_01_F", { "life_donorlevel", "SCALAR", 5 } }//Hunter
+			{ "C_Hatchback_01_sport_F", { "life_donorlevel", "SCALAR", 5 } },
+			{ "C_SUV_01_F", { "life_donorlevel", "SCALAR", 5 } },
+			{ "C_Offroad_01_F", { "life_donorlevel", "SCALAR", 5 } },
+			{ "C_Van_01_box_F", { "life_donorlevel", "SCALAR", 5 } },
+			{ "I_Truck_02_transport_F", { "life_donorlevel", "SCALAR", 5 } },
+            { "I_Truck_02_covered_F", { "life_donorlevel", "SCALAR", 5 } },
+            { "O_Truck_03_transport_F", { "life_donorlevel", "SCALAR", 5 } },
+            { "O_Truck_03_covered_F", { "life_donorlevel", "SCALAR", 5 } },
+			{ "B_Truck_01_ammo_F", { "life_donorlevel", "SCALAR", 5 } },
+			{ "B_Truck_01_transport_F", { "life_donorlevel", "SCALAR", 5 } },
+			{ "B_Truck_01_covered_F", { "life_donorlevel", "SCALAR", 5 } },
+            { "I_Truck_02_fuel_F", { "life_donorlevel", "SCALAR", 5 } },
+            { "B_Truck_01_fuel_F", { "life_donorlevel", "SCALAR", 5 } },
+			{ "B_Truck_01_box_F", { "life_donorlevel", "SCALAR", 5 } },
+			{ "O_Truck_03_device_F", { "life_donorlevel", "SCALAR", 5 } }, 
+			{ "O_MRAP_02_F", { "life_donorlevel", "SCALAR", 5 } },
+            { "B_MRAP_01_F", { "life_donorlevel", "SCALAR", 5 } }
         };
     };
 
@@ -79,6 +138,7 @@ class CarShops {
             { "B_Heli_Light_01_F", { "life_donorlevel", "SCALAR", 1 } },
             { "O_Heli_Light_02_unarmed_F", { "life_donorlevel", "SCALAR", 1 } },
             { "O_Heli_Transport_04_Box_F", { "life_donorlevel", "SCALAR", 1 } },
+			{ "B_Heli_Light_01_stripped_F", { "life_donorlevel", "SCALAR", 1 } },
             { "I_Heli_Transport_02_F", { "life_donorlevel", "SCALAR", 1 } }
         };
     };
@@ -89,7 +149,7 @@ class CarShops {
             { "C_Heli_Light_01_civil_F", { "life_donorlevel", "SCALAR", 2 } },
             { "B_Heli_Light_01_F", { "life_donorlevel", "SCALAR", 2 } },
             { "O_Heli_Light_02_unarmed_F", { "life_donorlevel", "SCALAR", 2 } },
-            { "O_Heli_Transport_04_Box_F", { "life_donorlevel", "SCALAR", 2 } },
+			{ "B_Heli_Light_01_stripped_F", { "life_donorlevel", "SCALAR", 2 } },
             { "I_Heli_Transport_02_F", { "life_donorlevel", "SCALAR", 2 } }
         };
     };
@@ -101,6 +161,9 @@ class CarShops {
             { "B_Heli_Light_01_F", { "life_donorlevel", "SCALAR", 3 } },
             { "O_Heli_Light_02_unarmed_F", { "life_donorlevel", "SCALAR", 3 } },
             { "O_Heli_Transport_04_Box_F", { "life_donorlevel", "SCALAR", 3 } },
+			{ "I_Heli_light_03_unarmed_F", { "life_donorlevel", "SCALAR", 3 } },
+			{ "B_Heli_Light_01_stripped_F", { "life_donorlevel", "SCALAR", 3 } },
+			{ "O_Heli_Transport_04_black_F", { "life_donorlevel", "SCALAR", 3 } },
             { "I_Heli_Transport_02_F", { "life_donorlevel", "SCALAR", 3 } }
         };
     };
@@ -112,6 +175,9 @@ class CarShops {
             { "B_Heli_Light_01_F", { "life_donorlevel", "SCALAR", 4 } },
             { "O_Heli_Light_02_unarmed_F", { "life_donorlevel", "SCALAR", 4 } },
             { "O_Heli_Transport_04_Box_F", { "life_donorlevel", "SCALAR", 4 } },
+			{ "B_Heli_Light_01_stripped_F", { "life_donorlevel", "SCALAR", 4 } },
+			{ "I_Heli_light_03_unarmed_F", { "life_donorlevel", "SCALAR", 4 } },
+			{ "O_Heli_Transport_04_black_F", { "life_donorlevel", "SCALAR", 4 } },
             { "I_Heli_Transport_02_F", { "life_donorlevel", "SCALAR", 4 } }
         };
     };
@@ -123,11 +189,12 @@ class CarShops {
             { "B_Heli_Light_01_F", { "life_donorlevel", "SCALAR", 5 } },
             { "O_Heli_Light_02_unarmed_F", { "life_donorlevel", "SCALAR", 5 } },
             { "O_Heli_Transport_04_Box_F", { "life_donorlevel", "SCALAR", 5 } },
+			{ "B_Heli_Light_01_stripped_F", { "life_donorlevel", "SCALAR", 5 } },
+			{ "O_Heli_Transport_04_black_F", { "life_donorlevel", "SCALAR", 5 } },
+			{ "I_Heli_light_03_unarmed_F", { "life_donorlevel", "SCALAR", 5 } },
             { "I_Heli_Transport_02_F", { "life_donorlevel", "SCALAR", 5 } }
         };
     };
-
-
 
     class kart_shop {
         side = "civ";
@@ -142,14 +209,13 @@ class CarShops {
     class civ_truck {
         side = "civ";
         vehicles[] = {
-            { "C_Van_01_box_F", { "", "", -1 } },
             { "I_Truck_02_transport_F", { "", "", -1 } },
             { "I_Truck_02_covered_F", { "", "", -1 } },
-            { "B_Truck_01_transport_F", { "", "", -1 } },
             { "O_Truck_03_transport_F", { "", "", -1 } },
             { "O_Truck_03_covered_F", { "", "", -1 } },
-            { "B_Truck_01_box_F", { "", "", -1 } },
-            { "C_Van_01_fuel_F", { "", "", -1 } },
+			{ "B_Truck_01_ammo_F", { "", "", -1 } },
+			{ "B_Truck_01_transport_F", { "", "", -1 } },
+			{ "B_Truck_01_covered_F", { "", "", -1 } },
             { "I_Truck_02_fuel_F", { "", "", -1 } },
             { "B_Truck_01_fuel_F", { "", "", -1 } }
         };
@@ -161,7 +227,7 @@ class CarShops {
             { "C_Heli_Light_01_civil_F", { "", "", -1 } },
             { "B_Heli_Light_01_F", { "", "", -1 } },
             { "O_Heli_Light_02_unarmed_F", { "", "", -1 } },
-            { "O_Heli_Transport_04_Box_F", { "", "", -1 } },
+			{ "I_Heli_light_03_unarmed_F", { "", "", -1 } },
             { "I_Heli_Transport_02_F", { "", "", -1 } }
         };
     };
@@ -183,9 +249,10 @@ class CarShops {
             { "O_MRAP_02_F", { "", "", -1 } },
             { "B_Heli_Light_01_stripped_F", { "", "", -1 } },
             { "B_G_Offroad_01_armed_F", { "", "", -1 } },
-			{ "I_Truck_02_box_F", { "", "", -1 } },
-			{ "I_Truck_02_covered_F", { "", "", -1 } },
-			{ "O_Truck_02_fuel_F", { "", "", -1 } }
+			{ "I_Heli_light_03_unarmed_F", { "", "", -1 } },
+			{ "O_Heli_Light_02_unarmed_F", { "", "", -1 } },
+			{ "O_Truck_02_box_F", { "", "", -1 } },
+            { "O_Truck_02_covered_F", { "", "", -1 } }
         };
     };
 
@@ -289,45 +356,38 @@ class LifeCfgVehicles {
         textures[] = {};
     };
 
-    class B_Truck_01_medical_F {
-        vItemSpace = 350;
-        licenses[] = { {""}, {""}, {""}, {""} };
-        price = 60000;
+    class O_Truck_03_ammo_F {
+        vItemSpace = 695;
+        licenses[] = { {"trucking"}, {""}, {""}, {""} };
+        price = 779000;
         textures[] = {};
     };
 	
-	class O_Truck_03_ammo_F {
-        vItemSpace = 600;
-        licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 60000;
+	class O_Truck_02_box_F {
+        vItemSpace = 300;
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 185000;
         textures[] = {};
     };
 	
 	class I_Truck_02_box_F {
-        vItemSpace = 390;
+        vItemSpace = 445;
         licenses[] = { {""}, {""}, {""}, {""} };
-        price = 600000;
+        price = 4350000;
         textures[] = {};
     };
-	
-	class O_Truck_02_fuel_F {
-        vItemSpace = 350;
-        licenses[] = { {""}, {""}, {""}, {""} };
-        price = 600000;
-        textures[] = {};
-    };
-	
+
     class C_Rubberboat {
         vItemSpace = 45;
-        licenses[] = { {"boat"}, {""}, {""}, {""} };
+        licenses[] = { {""}, {""}, {""}, {""} };
         price = 5000;
         textures[] = { };
     };
 
     class I_Heli_light_03_unarmed_F {
-        vItemSpace = 100;
+        vItemSpace = 325;
         licenses[] = { {""}, {"aviation"}, {""}, {""} };
-        price = 140000;
+        price = 1250000;
         textures[] = {
             { "Police", "cop", {
               "textures\Cop\Vehicles\copHellcat.paa"
@@ -388,16 +448,23 @@ class LifeCfgVehicles {
     };
 
     class O_Truck_03_transport_F {
-        vItemSpace = 450;
+        vItemSpace = 400;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 390000;
+        price = 350000;
         textures[] = { };
     };
 
     class O_Truck_03_device_F {
-        vItemSpace = 550;
+        vItemSpace = 575;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
         price = 1250000;
+        textures[] = { };
+    };
+	
+	class B_Truck_01_covered_F {
+        vItemSpace = 585;
+        licenses[] = { {"trucking"}, {""}, {""}, {""} };
+        price = 679000;
         textures[] = { };
     };
 
@@ -423,9 +490,9 @@ class LifeCfgVehicles {
     };
 
     class B_G_Offroad_01_F {
-        vItemSpace = 165;
+        vItemSpace = 115;
         licenses[] = { {""}, {""}, {""}, {""} };
-        price = 20000;
+        price = 35000;
         textures[] = { };
     };
 
@@ -464,45 +531,51 @@ class LifeCfgVehicles {
     };
 
     class B_Truck_01_box_F {
-        vItemSpace = 750;
+        vItemSpace = 910;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 850000;
+        price = 1450000;
         textures[] = { };
     };
-
+	
     class B_Truck_01_transport_F {
-        vItemSpace = 620;
+        vItemSpace = 530;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
         price = 610000;
         textures[] = { };
     };
+	
+	class B_Truck_01_ammo_F	{
+        vItemSpace = 810;
+        licenses[] = { {"trucking"}, {""}, {""}, {""} };
+        price = 1250000;
+        textures[] = { };
+    };
 
     class O_MRAP_02_F {
-        vItemSpace = 110;
+        vItemSpace = 50;
         licenses[] = { {"driver"}, {""}, {""}, {""} };
-        price = 550000;
+        price = 1250000;
         textures[] = { 
-		{ "Ifrit Chamas VIP", "civ", {
+		    { "Ifrit Chamas VIP", "civ", {
 	                "textures\Vip\Vehicles\ifrit\flame_ifrit_1.jpg",
 					"textures\Vip\Vehicles\ifrit\flame_ifrit_2.jpg"
-        } },
-		{ "Ifrit Batman VIP", "civ", {
+            } },
+		    { "Ifrit Batman VIP", "civ", {
 	                "textures\Vip\Vehicles\ifrit\ifrit_batman_front.jpg",
 					"textures\Vip\Vehicles\ifrit\ifrit_batman_hinten.jpg"
-        } },
-		{ "Ifrit Wolf Bite VIP", "civ", {
+            } },
+		    { "Ifrit Wolf Bite VIP", "civ", {
 	                "textures\Vip\Vehicles\ifrit\mrap_02_ext_01_co.jpg",
 					"textures\Vip\Vehicles\ifrit\mrap_02_ext_02_co.jpg"
-        } }
-				
+            } }			
 		};
     };
 
     class C_Offroad_01_F {
-        vItemSpace = 150;
+        vItemSpace = 100;
         assurPrice[] = { 1000, 1000, 1000, 1000 };
         licenses[] = { {"driver"}, {""}, {""}, {""} };
-        price = 15000;
+        price = 45000;
         textures[] = {
             { "Red", "civ", {
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa",
@@ -669,9 +742,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class I_Truck_02_transport_F {
-        vItemSpace = 270;
+        vItemSpace = 275;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 600000;
+        price = 165000;
         textures[] = {
             { "Orange", "civ", {
                 "\A3\Soft_F_Beta\Truck_02\data\truck_02_kab_co.paa",
@@ -684,16 +757,16 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class O_Truck_03_covered_F {
-        vItemSpace = 530;
+        vItemSpace = 475;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 535000;
+        price = 415000;
         textures[] = {};
     };
 
     class C_Hatchback_01_F {
-        vItemSpace = 100;
+        vItemSpace = 65;
         licenses[] = { {"driver"}, {""}, {""}, {""} };
-        price = 13500;
+        price = 30500;
         textures[] = {
             { "Beige", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base01_co.paa"
@@ -723,9 +796,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class C_SUV_01_F {
-        vItemSpace = 100;
+        vItemSpace = 75;
         licenses[] = { {"driver"}, {""}, {""}, {""} };
-        price = 43500;
+        price = 50500;
         textures[] = {
             { "Dark Red", "civ", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_co.paa"
@@ -767,9 +840,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class C_Van_01_transport_F {
-        vItemSpace = 200;
+        vItemSpace = 155;
         licenses[] = { {"driver"}, {""}, {""}, {""} };
-        price = 95000;
+        price = 75000;
         textures[] = {
             { "White", "civ", {
                 "\a3\soft_f_gamma\Van_01\Data\van_01_ext_co.paa"
@@ -781,9 +854,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class C_Van_01_box_F {
-        vItemSpace = 260;
-        licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 130000;
+        vItemSpace = 210;
+        licenses[] = { {"driver"}, {""}, {""}, {""} };
+        price = 110000;
         textures[] = {
             { "White", "civ", {
                 "\a3\soft_f_gamma\Van_01\Data\van_01_ext_co.paa"
@@ -823,10 +896,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
         };
     };
 
-     class B_Heli_Light_01_stripped_F {
-        vItemSpace = 90;
+    class B_Heli_Light_01_stripped_F {
+        vItemSpace = 130;
         licenses[] = { {""}, {""}, {""}, {""} };
-        price = 275000;
+        price = 450000;
         textures[] = {
             { "Rebel Digital", "reb", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa"
@@ -835,18 +908,46 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class I_Heli_Transport_02_F {
-       vItemSpace = 930;
+       vItemSpace = 425;
        licenses[] = { {""}, {""}, {""}, {""} };
        price = 1575000;
        textures[] = {};
    };
+   
+   class B_Heli_Transport_03_unarmed_F {
+       vItemSpace = 565;
+       licenses[] = { {""}, {""}, {""}, {""} };
+       price = 2135000;
+       textures[] = {};
+   };
+   
+    class O_Heli_Transport_04_black_F {
+       vItemSpace = 115;
+       licenses[] = { {""}, {""}, {""}, {""} };
+       price = 935000;
+       textures[] = {};
+   };
+   
+   class O_Truck_02_covered_F {
+       vItemSpace = 275;
+       licenses[] = { {""}, {""}, {""}, {""} };
+       price = 135000;
+       textures[] = {};
+   };
+   
+   class O_Truck_02_transport_F {
+       vItemSpace = 255;
+       licenses[] = { {""}, {""}, {""}, {""} };
+       price = 115000;
+       textures[] = {};
+   };
 
    class O_Heli_Transport_04_Box_F {
-      vItemSpace = 780;
+      vItemSpace = 525;
       licenses[] = { {""}, {""}, {""}, {""} };
-      price = 1205000;
+      price = 1805000;
       textures[] = {};
-  };
+    };
 
     class B_Heli_Light_01_F {
         vItemSpace = 90;
@@ -907,9 +1008,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class O_Heli_Light_02_unarmed_F {
-        vItemSpace = 310;
+        vItemSpace = 240;
         licenses[] = { {"" }, {"aviation"}, {"mAir"}, {""} };
-        price = 750000;
+        price = 900000;
         textures[] = {
             { "Black", "cop", {
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_co.paa"
@@ -937,10 +1038,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
         class C_Van_01_fuel_F {
-        vItemSpace = 20;
+        vItemSpace = 50;
         vFuelSpace = 9999999;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 175000;
+        price = 75000;
         textures[] = {
             { "White", "civ", {
                 "\A3\soft_f_gamma\Van_01\data\van_01_ext_co.paa",
