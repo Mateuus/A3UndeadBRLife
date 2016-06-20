@@ -42,18 +42,6 @@ switch(playerSide) do {
 				player setObjectTextureGlobal [0, "textures\Civ\Clothing\pika.jpg"];
 			};
 		};
-		if (uniform player isEqualTo "U_B_CombatUniform_mcam" && (FETCH_CONST(life_donorlevel) >= 1)) then {
-			player setObjectTextureGlobal [0, "textures\Civ\Supporter\vipOrange.jpg"];
-		};
-		if (uniform player isEqualTo "U_B_CombatUniform_mcam_vest" && (FETCH_CONST(life_donorlevel) >= 1)) then {
-			player setObjectTextureGlobal [0, "textures\Civ\Supporter\VIParctic.jpg"];
-		};
-		if (uniform player isEqualTo "U_I_CombatUniform" && (FETCH_CONST(life_donorlevel) >= 2)) then {
-			player setObjectTextureGlobal [0, "textures\Civ\Supporter\bh.jpg"];
-		};
-		if (backpack player isEqualTo "B_Bergen_mcamo" && (FETCH_CONST(life_donorlevel) >= 2)) then {
-			backpackContainer player setObjectTextureGlobal [0, "textures\Civ\Supporter\VIPgayruck.jpg"];
-		};
 		
 		////////////////////////VIP INICIO/////////////////////////////////////////////////
 		if ((uniform player == "U_C_Commoner1_3") && (FETCH_CONST(life_donorlevel) == 0)) then
@@ -81,6 +69,23 @@ switch(playerSide) do {
 		{
 			player setObjectTextureGlobal [0, "textures\Vip\Clothing\diamante.jpg"];
 		};
+            };
+		if (uniform player isEqualTo "U_B_CombatUniform_mcam" && (FETCH_CONST(life_donorlevel) >= 1)) then {
+			player setObjectTextureGlobal [0, "textures\Vip\Clothing\vipOrange.jpg"];
+		};
+		if (uniform player isEqualTo "U_B_CombatUniform_mcam_vest" && (FETCH_CONST(life_donorlevel) >= 1)) then {
+			player setObjectTextureGlobal [0, "textures\Vip\Clothing\VIParctic.jpg"];
+		};
+		if (uniform player isEqualTo "U_I_CombatUniform" && (FETCH_CONST(life_donorlevel) >= 1)) then {
+			player setObjectTextureGlobal [0, "textures\Vip\Clothing\bh.jpg"];
+		};
+		if (backpack player isEqualTo "B_Bergen_mcamo" && (FETCH_CONST(life_donorlevel) >= 1)) then {
+			backpackContainer player setObjectTextureGlobal [0, "textures\Vip\Clothing\VIPgayruck.jpg"];
+		};
+		if (backpack player isEqualTo "B_Bergen_mcamo" && (FETCH_CONST(life_donorlevel) >= 1)) then {
+			backpackContainer player setObjectTextureGlobal [0, "textures\Vip\Clothing\murica_bag.jpg"];
+		};
+		
 		/////////////////////////VIP END///////////////////////////////////////////////////
 		
 		
