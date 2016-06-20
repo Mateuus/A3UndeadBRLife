@@ -6,14 +6,17 @@ class CfgPatches
 {
 	class a3_infiSTAR
 	{
-		requiredVersion = 0.2271;
+		requiredVersion = 0.2769;
 		requiredAddons[] = {};
 		units[] = {};
 		weapons[] = {};
 		magazines[] = {};
 		ammo[] = {};
-		a3_infiSTAR_version = 0.2271;
+		a3_infiSTAR_version = 0.2769;
 		author[]= {"Chris(tian) 'infiSTAR' Lorenzen"};
+		website[]= {"http://infiSTAR.de"};
+		contact[]= {"admin@infiSTAR.de"};
+		contact_alt[]= {"infiSTAR23@gmail.com"};
 	};
 };
 class CfgFunctions

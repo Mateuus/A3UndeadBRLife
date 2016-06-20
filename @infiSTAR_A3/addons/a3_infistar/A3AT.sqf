@@ -10,24 +10,19 @@
 /* **************infiSTAR Copyright®© 2011 - 2016 All rights reserved.************** */
 /* *********************************www.infiSTAR.de********************************* */
 comment 'Antihack & AdminTools - Christian Lorenzen - www.infiSTAR.de - License: (CC)';
-VERSION_DATE_IS = '12012016#2271';
+VERSION_DATE_IS = '22-Apr-2016 22-00-58#2769';
 infiSTAR_MAIN_CODE = "
 	_log = format['%1 <infiSTAR.de> Loading Menu...',time];systemchat _log;diag_log _log;
-	_mainMap = uiNamespace getVariable 'A3MAPICONS_mainMap';
-	if((isNil 'CIVILIAN_COLOR')||(isNil '_mainMap'))then
-	{
-		CIVILIAN_COLOR = [0.67,0.97,0.97,1];
-		MYPUIDinfiESP = getPlayerUID player;
-		ALT_IS_PRESSED=false;FILLMAINSTATE=0;LASTSUBBUTTON=1;
-		infiSTAR_add_vehicles=true;
-		SELECTED_TARGET_PLAYER = player;
-		MapOnisON = false;MAIN_DISPLAY_ID = -1338;LEFT_CTRL_ID = 1500;RIGHT_CTRL_ID = 1501;
-		draw_infiESPIcon = getText(configfile >> 'cfgGroupIcons' >> 'Empty' >> 'icon');
-		uiNamespace setVariable['A3MAPICONS_mainMap', nil];
-		uiNamespace setVariable['A3MAPICONS_mainMap', findDisplay 12 displayCtrl 51];
-		uiNamespace setVariable['A3MAPICONS_adminMap', nil];
-		uiNamespace setVariable['A3MAPICONS_adminMap', findDisplay MAIN_DISPLAY_ID displayCtrl 7];
-	};
+	CIVILIAN_COLOR = [0.67,0.97,0.97,1];
+	MYPUIDinfiESP = getPlayerUID player;
+	ALT_IS_PRESSED=false;FILLMAINSTATE=0;LASTSUBBUTTON=1;
+	infiSTAR_add_vehicles=true;
+	SELECTED_TARGET_PLAYER = player;
+	MAIN_DISPLAY_ID = -1338;LEFT_CTRL_ID = 1500;RIGHT_CTRL_ID = 1501;
+	draw_infiESPIcon = getText(configfile >> 'cfgGroupIcons' >> 'Empty' >> 'icon');
+	uiNamespace setVariable['A3MAPICONS_mainMap', nil];
+	uiNamespace setVariable['A3MAPICONS_mainMap', findDisplay 12 displayCtrl 51];
+	infiSTAR_HTML_LOAD = "+str _use_html_load_on_adminmenu+";
 	if(isNil 'AH_HackLogArray')then{AH_HackLogArray = [];};
 	if(isNil 'AH_SurvLogArray')then{AH_SurvLogArray = [];};
 	if(isNil 'AH_AdmiLogArray')then{AH_AdmiLogArray = [];};
@@ -264,12 +259,16 @@ infiSTAR_MAIN_CODE = "
 				disableSerialization;
 				_fnc_search =
 				{
-					disableSerialization;
-					_ctrl = (findDisplay MAIN_DISPLAY_ID) displayCtrl RIGHT_CTRL_ID;
-					if(_txt == lastSearched)exitWith{};
-					lbClear _ctrl;
-					switch (LASTSUBBUTTON) do {
-						case 0:{
+					[
+						_txt,
+						{
+							_txt = _this;
+							if(_txt == lastSearched)exitWith{};
+							disableSerialization;
+							_ctrl = (findDisplay MAIN_DISPLAY_ID) displayCtrl RIGHT_CTRL_ID;
+							lbClear _ctrl;
+							if(LASTSUBBUTTON isEqualTo 0)then
+							{
 							if('==== Weapons ====' call ADMINLEVELACCESS)then
 							{
 								_ctrl lbAdd '==== Weapons ====';
@@ -405,96 +404,99 @@ infiSTAR_MAIN_CODE = "
 									} forEach VIRTUAL_ITEMS_ARRAY;
 								};
 							"; }; infiSTAR_MAIN_CODE = infiSTAR_MAIN_CODE + "
-						};
-						case 1:{
-							if('==== Vehicles ====' call ADMINLEVELACCESS)then
+							};
+							if(LASTSUBBUTTON isEqualTo 1)then
 							{
-								if(!isNil'EPOCH_VehicleSlotCount')then
+								if('==== Vehicles ====' call ADMINLEVELACCESS)then
 								{
-									_ctrl lbAdd format['vehicle slots: %1   (destroy/delete a vehicle to get a slot!)',EPOCH_VehicleSlotCount];
-								};
-								_ctrl lbAdd '==== Vehicles ====';
-								if(!isNil 'infiSTAR_add_vehicles')then
-								{
-									if(infiSTAR_MOD == 'Epoch')then
+									if(!isNil'EPOCH_VehicleSlotCount')then
 									{
-										_ctrl lbAdd '   ==== Epoch Vehicles (checked existing vehicles and config) ====';
-										{
-											_displayName = getText(configFile >> 'CfgVehicles' >> _x >> 'displayName');
-											if(((toLower _x) find _txt > -1)||((toLower _displayName) find _txt > -1))then{
-												_ctrl lbAdd format['%1 (%2)',_displayName,_x];
-												_x call fnc_addpic;
-												_ctrl lbSetData [(lbsize _ctrl)-1,_x];
-											};
-										} forEach ALL_VEHS_TO_SEARCH_EPOCH;
-										_ctrl lbAdd '   ==== Other Vehicles ====';
-										{
-											_displayName = getText(configFile >> 'CfgVehicles' >> _x >> 'displayName');
-											if(((toLower _x) find _txt > -1)||((toLower _displayName) find _txt > -1))then{
-												_ctrl lbAdd format['%1 (%2)',_displayName,_x];
-												_x call fnc_addpic;
-												_ctrl lbSetData [(lbsize _ctrl)-1,_x];
-												_ctrl lbSetColor [(lbsize _ctrl)-1,[1,0,0,1]];
-											};
-										} forEach ALL_VEHS_TO_SEARCH_NONEEPOCH;
-									}
-									else
+										_ctrl lbAdd format['vehicle slots: %1   (destroy/delete a vehicle to get a slot!)',EPOCH_VehicleSlotCount];
+									};
+									_ctrl lbAdd '==== Vehicles ====';
+									if(!isNil 'infiSTAR_add_vehicles')then
 									{
+										if(infiSTAR_MOD == 'Epoch')then
 										{
-											_displayName = getText(configFile >> 'CfgVehicles' >> _x >> 'displayName');
-											if(((toLower _x) find _txt > -1)||((toLower _displayName) find _txt > -1))then{
-												_ctrl lbAdd format['%1 (%2)',_displayName,_x];
-												_x call fnc_addpic;
-												_ctrl lbSetData [(lbsize _ctrl)-1,_x];
-											};
-										} forEach ALL_VEHS_TO_SEARCH_C;
+											_ctrl lbAdd '   ==== Epoch Vehicles (checked existing vehicles and config) ====';
+											{
+												_displayName = getText(configFile >> 'CfgVehicles' >> _x >> 'displayName');
+												if(((toLower _x) find _txt > -1)||((toLower _displayName) find _txt > -1))then{
+													_ctrl lbAdd format['%1 (%2)',_displayName,_x];
+													_x call fnc_addpic;
+													_ctrl lbSetData [(lbsize _ctrl)-1,_x];
+												};
+											} forEach ALL_VEHS_TO_SEARCH_EPOCH;
+											_ctrl lbAdd '   ==== Other Vehicles ====';
+											{
+												_displayName = getText(configFile >> 'CfgVehicles' >> _x >> 'displayName');
+												if(((toLower _x) find _txt > -1)||((toLower _displayName) find _txt > -1))then{
+													_ctrl lbAdd format['%1 (%2)',_displayName,_x];
+													_x call fnc_addpic;
+													_ctrl lbSetData [(lbsize _ctrl)-1,_x];
+													_ctrl lbSetColor [(lbsize _ctrl)-1,[1,0,0,1]];
+												};
+											} forEach ALL_VEHS_TO_SEARCH_NONEEPOCH;
+										}
+										else
+										{
+											{
+												_displayName = getText(configFile >> 'CfgVehicles' >> _x >> 'displayName');
+												if(((toLower _x) find _txt > -1)||((toLower _displayName) find _txt > -1))then{
+													_ctrl lbAdd format['%1 (%2)',_displayName,_x];
+													_x call fnc_addpic;
+													_ctrl lbSetData [(lbsize _ctrl)-1,_x];
+												};
+											} forEach ALL_VEHS_TO_SEARCH_C;
+										};
 									};
 								};
 							};
-						};
-						case 2:{
-							if('==== Objects ====' call ADMINLEVELACCESS)then
+							if(LASTSUBBUTTON isEqualTo 2)then
 							{
-								_ctrl lbAdd '==== Objects ====';
-								if(!isNil 'infiSTAR_add_objects')then
+								if('==== Objects ====' call ADMINLEVELACCESS)then
 								{
-									if(infiSTAR_MOD == 'Epoch')then
+									_ctrl lbAdd '==== Objects ====';
+									if(!isNil 'infiSTAR_add_objects')then
 									{
-										_ctrl lbAdd '   ==== Epoch Objects ====';
+										if(infiSTAR_MOD == 'Epoch')then
 										{
-											_displayName = getText(configFile >> 'CfgVehicles' >> _x >> 'displayName');
-											if(((toLower _x) find _txt > -1)||((toLower _displayName) find _txt > -1))then{
-												_ctrl lbAdd format['%1 (%2)',_displayName,_x];
-												_ctrl lbSetData [(lbsize _ctrl)-1,_x];
-											};
-										} forEach ALL_OBJS_TO_SEARCH_EPOCH;
-										_ctrl lbAdd '   ==== Other Objects ====';
+											_ctrl lbAdd '   ==== Epoch Objects ====';
+											{
+												_displayName = getText(configFile >> 'CfgVehicles' >> _x >> 'displayName');
+												if(((toLower _x) find _txt > -1)||((toLower _displayName) find _txt > -1))then{
+													_ctrl lbAdd format['%1 (%2)',_displayName,_x];
+													_ctrl lbSetData [(lbsize _ctrl)-1,_x];
+												};
+											} forEach ALL_OBJS_TO_SEARCH_EPOCH;
+											_ctrl lbAdd '   ==== Other Objects ====';
+											{
+												_displayName = getText(configFile >> 'CfgVehicles' >> _x >> 'displayName');
+												if(((toLower _x) find _txt > -1)||((toLower _displayName) find _txt > -1))then{
+													_ctrl lbAdd format['%1 (%2)',_displayName,_x];
+													_ctrl lbSetData [(lbsize _ctrl)-1,_x];
+													_ctrl lbSetColor [(lbsize _ctrl)-1,[1,0,0,1]];
+												};
+											} forEach ALL_OBJS_TO_SEARCH_NONEEPOCH;
+										}
+										else
 										{
-											_displayName = getText(configFile >> 'CfgVehicles' >> _x >> 'displayName');
-											if(((toLower _x) find _txt > -1)||((toLower _displayName) find _txt > -1))then{
-												_ctrl lbAdd format['%1 (%2)',_displayName,_x];
-												_ctrl lbSetData [(lbsize _ctrl)-1,_x];
-												_ctrl lbSetColor [(lbsize _ctrl)-1,[1,0,0,1]];
-											};
-										} forEach ALL_OBJS_TO_SEARCH_NONEEPOCH;
-									}
-									else
-									{
-										_ctrl lbAdd '   ==== Objects ====';
-										{
-											_displayName = getText(configFile >> 'CfgVehicles' >> _x >> 'displayName');
-											if(((toLower _x) find _txt > -1)||((toLower _displayName) find _txt > -1))then{
-												_ctrl lbAdd format['%1 (%2)',_displayName,_x];
-												_ctrl lbSetData [(lbsize _ctrl)-1,_x];
-											};
-										} forEach ALL_OBJS_TO_SEARCH_C;
+											_ctrl lbAdd '   ==== Objects ====';
+											{
+												_displayName = getText(configFile >> 'CfgVehicles' >> _x >> 'displayName');
+												if(((toLower _x) find _txt > -1)||((toLower _displayName) find _txt > -1))then{
+													_ctrl lbAdd format['%1 (%2)',_displayName,_x];
+													_ctrl lbSetData [(lbsize _ctrl)-1,_x];
+												};
+											} forEach ALL_OBJS_TO_SEARCH_C;
+										};
 									};
 								};
 							};
-						};
-					};
-					lastSearched = _txt;
-					[] call fnc_colorizeMain;
+							lastSearched = _txt;
+							[] call fnc_colorizeMain;
+						}
+					] execFSM 'call.fsm';
 				};
 				while {1 == 1} do
 				{
@@ -735,7 +737,6 @@ infiSTAR_MAIN_CODE = "
 		_export
 	};
 	fnc_Loadoutmenu = {
-		disableSerialization;
 		if(isNil'missionNameSpaceLoadouts')then{missionNameSpaceLoadouts=[];};
 		
 		ctrlDelete ((findDisplay MAIN_DISPLAY_ID) displayCtrl 44464);
@@ -1013,8 +1014,6 @@ infiSTAR_MAIN_CODE = "
 		};
 	};
 	fnc_WeatherLord = {
-		disableSerialization;
-		
 		ctrlDelete ((findDisplay MAIN_DISPLAY_ID) displayCtrl 33300);
 		findDisplay MAIN_DISPLAY_ID ctrlCreate['RSCText', 33300];
 		_text1 = (findDisplay MAIN_DISPLAY_ID displayCtrl 33300);
@@ -1158,39 +1157,37 @@ infiSTAR_MAIN_CODE = "
 			};
 		};
 	};
+	fnc_HTML_LOAD = {
+		_html = uiNamespace getVariable 'RscHTML_infiSTAR_Admin';
+		if(ctrlHTMLLoaded _html)exitWith{_html ctrlEnable true;_html ctrlShow true;};
+		if(!isNil'START_LOADING_HTML')then{terminate START_LOADING_HTML;START_LOADING_HTML=nil;};
+		START_LOADING_HTML = [] spawn {
+			disableSerialization;
+			_html = uiNamespace getVariable 'RscHTML_infiSTAR_Admin';
+			_html htmlLoad HTML_LOAD_URL_A3;
+			_start = diag_tickTime + .25;
+			waitUntil {diag_tickTime > _start};
+			if(!ctrlHTMLLoaded _html)exitWith{_html ctrlEnable false;_html ctrlShow false;};
+		};
+	};
 	fnc_FULLinit = {
 		disableSerialization;
 		if(isNull findDisplay MAIN_DISPLAY_ID)then
 		{
 			createdialog 'infiSTAR_AdminMenu';
-			if(!isNil'START_LOADING_HTML')then{terminate START_LOADING_HTML;START_LOADING_HTML=nil;};
-			START_LOADING_HTML = [] spawn {
-				disableSerialization;
-				_html = (findDisplay MAIN_DISPLAY_ID) ctrlCreate ['RscHTML', 3307181];
-				_html ctrlSetBackgroundColor [0,0,0,0.5];
-				_html ctrlSetPosition [
-					0.6,
-					safeZoneY+0.1,
-					1,
-					0.5
-				];
-				_html ctrlCommit 0;
-				_html htmlLoad HTML_LOAD_URLA3;
-				_start = diag_tickTime + .25;
-				waitUntil {diag_tickTime > _start};
-				if(!ctrlHTMLLoaded _html)exitWith
-				{
-					ctrlDelete _html;
-				};
-			};
+			if(infiSTAR_HTML_LOAD)then{call fnc_HTML_LOAD;};
 		};
-		[] call fnc_initMenu;
+		call fnc_initMenu;
 		[] call fnc_add_adminMainMapMovement;
 		if('==== Loadouts ====' call ADMINLEVELACCESS)then{call fnc_Loadoutmenu;};
 		if('==== WeatherLord ====' call ADMINLEVELACCESS)then{call fnc_WeatherLord;};
 	};
+	fnc_btn_html = {
+		infiSTAR_HTML_LOAD = !infiSTAR_HTML_LOAD;
+		if(infiSTAR_HTML_LOAD)then{call fnc_HTML_LOAD;};
+		[] call fnc_colorButtons;
+	};
 	fnc_initMenu = {
-		disableSerialization;
 		_display = findDisplay MAIN_DISPLAY_ID;
 		
 		_ctrlL = _display displayCtrl LEFT_CTRL_ID;
@@ -1214,30 +1211,21 @@ infiSTAR_MAIN_CODE = "
 		_ctrl = _display displayCtrl 2;
 		_ctrl ctrlSetText format['Players loaded in: %1 of %2               infiSTAR.de   Admin Menu   SERVER UP FOR: %3h %4min               %5',count playableUnits,((playersNumber west)+(playersNumber east)+(playersNumber civilian)+(playersNumber resistance)),_hours,_minutes,INFISTARVERSION];
 		
-		_btnSortRange = _display displayCtrl 10;
-		_btnSortRange buttonSetAction 'SortAlphaPlease = nil;SortRangePlease = true;[] call fnc_fill_infiSTAR_Player;[] call fnc_setFocus;';
-		
 		_btnSortAlpha = _display displayCtrl 11;
+		_btnSortAlpha ctrlEnable false;
+		_btnSortAlpha ctrlShow false;
+		
+		_btnSortAlpha = _display displayCtrl 10;
 		_btnSortAlpha buttonSetAction 'SortRangePlease = nil;SortAlphaPlease = true;[] call fnc_fill_infiSTAR_Player;[] call fnc_setFocus;';
+		
+		_btnSortRange = _display displayCtrl 12;
+		_btnSortRange buttonSetAction 'SortAlphaPlease = nil;SortRangePlease = true;[] call fnc_fill_infiSTAR_Player;[] call fnc_setFocus;';
 		
 		_btnMainMenu = _display displayCtrl 20;
 		_btnMainMenu buttonSetAction 'FILLMAINSTATE=0;[] call fnc_fill_infiSTAR_MAIN;[] call fnc_setFocus;[] call fnc_colorButtons;';
 		
 		_btnAntiSpawnMenu = _display displayCtrl 21;
 		_btnAntiSpawnMenu buttonSetAction 'FILLMAINSTATE=1;[] call fnc_fill_infiSTAR_MAIN;[] call fnc_setFocus;[] call fnc_colorButtons;';
-		
-		_btnAntiHackLog = _display displayCtrl 23;
-		_btnAntiHackLog ctrlSetText (format['AHLogs: %1',count AH_HackLogArray + count AH_SurvLogArray + count PVAH_AHTMPBAN]);
-		_btnAntiHackLog buttonSetAction 'FILLMAINSTATE=3;[] call fnc_fill_HackLog;[] call fnc_setFocus;[] call fnc_colorButtons;';
-		
-		_btnAdminLog = _display displayCtrl 24;
-		_btnAdminLog ctrlSetText (format['AdminLogs: %1',count AH_AdmiLogArray]);
-		_btnAdminLog buttonSetAction 'FILLMAINSTATE=4;[] call fnc_fill_AdminLog;[] call fnc_setFocus;[] call fnc_colorButtons;';
-		
-		_btnMapOnOff = _display displayCtrl 25;
-		_btnMapOnOff ctrlEnable true;
-		_btnMapOnOff ctrlShow true;
-		_btnMapOnOff buttonSetAction 'MapOnisON = !MapOnisON;[] call fnc_setFocus;[] call fnc_colorButtons;';
 		
 		_btnSMap = _display displayCtrl 32;
 		_btnSMap ctrlEnable false;
@@ -1299,11 +1287,16 @@ infiSTAR_MAIN_CODE = "
 		if(FILLMAINSTATE == 0)then{_btnMainMenu ctrlSetTextColor [0,1,0,1];} else {_btnMainMenu ctrlSetTextColor [1,1,1,1];};
 		_btnAntiSpawnMenu = _display displayCtrl 21;
 		if(FILLMAINSTATE == 1)then{_btnAntiSpawnMenu ctrlSetTextColor [0,1,0,1];} else {_btnAntiSpawnMenu ctrlSetTextColor [1,1,1,1];};
-		_btnAntiHackLog = _display displayCtrl 23;
-		if(FILLMAINSTATE == 3)then{_btnAntiHackLog ctrlSetTextColor [0,1,0,1];} else {_btnAntiHackLog ctrlSetTextColor [1,1,1,1];};
-		_btnAdminLog = _display displayCtrl 24;
-		if(FILLMAINSTATE == 4)then{_btnAdminLog ctrlSetTextColor [0,1,0,1];} else {_btnAdminLog ctrlSetTextColor [1,1,1,1];};
 		
+		_btnAntiHackLog = _display displayCtrl 23;
+		_btnAntiHackLog ctrlSetText (format['AHLogs: %1',count AH_HackLogArray + count AH_SurvLogArray + count PVAH_AHTMPBAN]);
+		_btnAntiHackLog buttonSetAction 'FILLMAINSTATE=3;[] call fnc_fill_HackLog;[] call fnc_setFocus;[] call fnc_colorButtons;';
+		if(FILLMAINSTATE isEqualTo 3)then{_btnAntiHackLog ctrlSetTextColor [0,1,0,1];} else {_btnAntiHackLog ctrlSetTextColor [1,1,1,1];};
+		
+		_btnAdminLog = _display displayCtrl 24;
+		_btnAdminLog ctrlSetText (format['AdminLogs: %1',count AH_AdmiLogArray]);
+		_btnAdminLog buttonSetAction 'FILLMAINSTATE=4;[] call fnc_fill_AdminLog;[] call fnc_setFocus;[] call fnc_colorButtons;';
+		if(FILLMAINSTATE isEqualTo 4)then{_btnAdminLog ctrlSetTextColor [0,1,0,1];} else {_btnAdminLog ctrlSetTextColor [1,1,1,1];};
 		
 		_btnItems = _display displayCtrl 36;
 		if((LASTSUBBUTTON == 0)&&(FILLMAINSTATE == 1))then{_btnItems ctrlSetTextColor [0,1,0,1];} else {_btnItems ctrlSetTextColor [1,1,1,1];};
@@ -1312,26 +1305,9 @@ infiSTAR_MAIN_CODE = "
 		_btnMisc = _display displayCtrl 38;
 		if(LASTSUBBUTTON == 2)then{_btnMisc ctrlSetTextColor [0,1,0,1];} else {_btnMisc ctrlSetTextColor [1,1,1,1];};
 		
-		
 		_mytime = 0.3;
 		_ctrlR = _display displayCtrl RIGHT_CTRL_ID;
 		if(isNil 'ctrlposR')then{ctrlposR = ctrlPosition _ctrlR;};
-		
-		uiNamespace setVariable['A3MAPICONS_adminMap', nil];
-		uiNamespace setVariable['A3MAPICONS_adminMap', findDisplay MAIN_DISPLAY_ID displayCtrl 7];
-		_ctrlMAP = (uiNamespace getVariable 'A3MAPICONS_adminMap');
-		_ctrlMAP ctrlEnable true;
-		_ctrlMAP ctrlShow true;
-		_ctrlMAP ctrlRemoveAllEventHandlers 'Draw';
-		_ctrlMAP ctrlRemoveAllEventHandlers 'MouseButtonDown';
-		if(MapOnisON)then
-		{
-			if(!isNil 'fnc_MapIcons_run')then{_ctrlMAP ctrlAddEventHandler ['Draw', '_this call fnc_draw_MapIcons'];};
-			_ctrlMAP ctrlAddEventHandler ['MouseButtonDown','call fnc_MouseButtonDown'];
-		};
-		
-		_btnMapOnOff = _display displayCtrl 25;
-		if(MapOnisON)then{_btnMapOnOff ctrlSetText 'Disable Map';}else{_btnMapOnOff ctrlSetText 'Enable Map';};
 		
 		_ctrlRTMP = [(ctrlposR select 0),(ctrlposR select 1),(ctrlposR select 2)*2.35,(ctrlposR select 3)];
 		if(FILLMAINSTATE == 0)then
@@ -1342,14 +1318,13 @@ infiSTAR_MAIN_CODE = "
 		{
 			_ctrlRTMP = [(ctrlposR select 0),(ctrlposR select 1)+.25,(ctrlposR select 2),(ctrlposR select 3)-.25];
 		};
-		if((FILLMAINSTATE == 3) || (FILLMAINSTATE == 4) || !MapOnisON)then
-		{			
-			_ctrlMAP ctrlEnable false;
-			_ctrlMAP ctrlShow false;
-			ctrlDelete _ctrlMAP;
-		};
 		_ctrlR ctrlSetPosition _ctrlRTMP;
 		_ctrlR ctrlCommit _mytime;
+		
+		_btnHTML = _display displayCtrl 25;
+		if(infiSTAR_HTML_LOAD)then{_btnHTML ctrlSetTextColor [1,0,0,1];_btnHTML ctrlSetText 'HIDE HTML';}else{_btnHTML ctrlSetTextColor [0,1,0,1];_btnHTML ctrlSetText 'SHOW HTML';};
+		(uiNamespace getVariable 'RscHTML_infiSTAR_Admin') ctrlEnable infiSTAR_HTML_LOAD;
+		(uiNamespace getVariable 'RscHTML_infiSTAR_Admin') ctrlShow infiSTAR_HTML_LOAD;
 	};
 	fnc_fill_HackLog = {
 		disableSerialization;
@@ -1638,7 +1613,7 @@ infiSTAR_MAIN_CODE = "
 					if('==== Objects ====' call ADMINLEVELACCESS)then
 					{
 						_ctrl lbAdd '==== Objects ====';
-						if(!isNil 'infiSTAR_add_objects')then
+						if(isNil 'infiSTAR_add_objects')then
 						{
 							if(infiSTAR_MOD == 'Epoch')then
 							{
@@ -1836,8 +1811,8 @@ infiSTAR_MAIN_CODE = "
 			};
 		};
 		_display = findDisplay MAIN_DISPLAY_ID;
-		_btnSortAlpha = _display displayCtrl 11;if(!isNil 'SortAlphaPlease')then{lbSort _ctrl;_btnSortAlpha ctrlSetTextColor [0,1,0,1];} else {_btnSortAlpha ctrlSetTextColor [1,1,1,1];};
-		_btnSortRange = _display displayCtrl 10;if(!isNil 'SortRangePlease')then{_btnSortRange ctrlSetTextColor [0,1,0,1];} else {_btnSortRange ctrlSetTextColor [1,1,1,1];};
+		_btnSortAlpha = _display displayCtrl 10;if(!isNil 'SortAlphaPlease')then{lbSort _ctrl;_btnSortAlpha ctrlSetTextColor [0,1,0,1];} else {_btnSortAlpha ctrlSetTextColor [1,1,1,1];};
+		_btnSortRange = _display displayCtrl 12;if(!isNil 'SortRangePlease')then{_btnSortRange ctrlSetTextColor [0,1,0,1];} else {_btnSortRange ctrlSetTextColor [1,1,1,1];};
 		_ctrl lbAdd '-----------------------------------';
 		_index = _ctrl lbAdd '[civilian]';_ctrl lbSetColor [_index,CIVILIAN_COLOR];
 		_index = _ctrl lbAdd '[west]';_ctrl lbSetColor [_index,[0.047,0.502,1,1]];
@@ -2023,9 +1998,9 @@ infiSTAR_MAIN_CODE = "
 						case 'Delete Vehicle':{[_unit] call fnc_deleteVeh_selected;};
 						case 'Force Disconnect':{[_unit] call fnc_Disconnect_selected;};
 						case 'Kick (Silent)':{[_unit,0] call fnc_Kick_selected;};
-						case 'Kick (Announce)':{[_unit,1] spawn fnc_Kick_selected;};
+						case 'Kick (Announce)':{[_unit,1] call fnc_Kick_selected;};
 						case 'Ban (Silent)':{[_unit,0] call fnc_Ban_selected;};
-						case 'Ban (Announce)':{[_unit,1] spawn fnc_Ban_selected;};
+						case 'Ban (Announce)':{[_unit,1] call fnc_Ban_selected;};
 					};
 					_log = format['%1 - %2(%3)',_click,_target,_uid];_log call fnc_adminLog;
 				};
@@ -2348,28 +2323,26 @@ infiSTAR_MAIN_CODE = "
 	};
 	fnc_LBSelChanged_RIGHT = {
 		_class = lbData[RIGHT_CTRL_ID,(lbCurSel RIGHT_CTRL_ID)];
-		if!(_class in ALLC_TO_SEARCH)exitWith{};
-		_cfg = '';
-		if(isClass (configFile >> 'CfgWeapons' >> _class))then
-		{
-			_cfg = 'CfgWeapons';
-		};
-		if(isClass (configFile >> 'CfgMagazines' >> _class))then
-		{
-			_cfg = 'CfgMagazines';
-		};
-		if(isClass (configFile >> 'CfgVehicles' >> _class))then
-		{
-			_cfg = 'CfgVehicles';
+		_cfg = call {
+			if(isClass (configFile >> 'CfgWeapons' >> _class))exitWith{'CfgWeapons'};
+			if(isClass (configFile >> 'CfgMagazines' >> _class))exitWith{'CfgMagazines'};
+			if(isClass (configFile >> 'CfgVehicles' >> _class))exitWith{'CfgVehicles'};
+			''
 		};
 		if(_cfg != '')then
 		{
-			if(MapOnisON)then{MapOnisON = !MapOnisON;[] call fnc_setFocus;[] call fnc_colorButtons;};
-			
 			_xposT = 0.6;
 			_yposT = 0.375 * safezoneH + safezoneY;
 			_txt = (gettext (configFile >> _cfg >> _class >> 'Library' >> 'libTextDesc'));
 			if(_txt == '')then{_txt = 'by infiSTAR.de';};
+			
+			if(_cfg=='CfgVehicles')then{
+				_vehicleConfig=configFile>>_cfg>>_class;
+				_info = format['Capacity: %1 Armor: %2 Fuel: %3 MaxSpeed: %4',getNumber(_vehicleConfig>>'maximumLoad'),getNumber(_vehicleConfig>>'armor'),getNumber(_vehicleConfig>>'fuelCapacity'),getNumber(_vehicleConfig>>'maxSpeed')];
+				_log = format['Class: %1 %2',_class,_info];
+				_txt=(_info+'<br/>'+_txt);
+			};
+			
 			['
 				<t size=''0.4''>'+_txt+' </t>
 			',_xposT,_yposT,15,0,0,8407] spawn bis_fnc_dynamicText;
@@ -2595,6 +2568,7 @@ infiSTAR_MAIN_CODE = "
 		_log = 'ingame Log(s) cleared!';
 		cutText [_log, 'PLAIN DOWN'];
 		hint _log;
+		[] call fnc_FULLinit;
 	};
 	fnc_dumpUclientVars = {
 		[-663,player,getPlayerUID (_this select 0),name (_this select 0)] call fnc_AdminReq;
@@ -3054,7 +3028,7 @@ infiSTAR_MAIN_CODE = "
 			disableSerialization;
 			_slider1 = (findDisplay MAIN_DISPLAY_ID displayCtrl 654001);
 			_value = CRYPTO_CHANGE_VALUE;
-			_value = (_value min 25000) max -25000;
+			_value = (_value min 250000) max -250000;
 			_value = round _value;
 			
 			[12,player,SELECTED_TARGET_PLAYER,_value] call fnc_AdminReq;
@@ -3079,13 +3053,13 @@ infiSTAR_MAIN_CODE = "
 				if(_sliderPos < 5)then
 				{
 					_calc = 5-_sliderPos;
-					_value = -25000 * (_calc/5)
+					_value = -250000 * (_calc/5)
 				}
 				else
 				{
 					_calc = 10-_sliderPos;
-					_value = 25000 * (_calc/5);
-					_value = 25000 - _value;
+					_value = 250000 * (_calc/5);
+					_value = 250000 - _value;
 				};
 				_value = round _value;
 				CRYPTO_CHANGE_VALUE = _value;
@@ -3303,8 +3277,11 @@ infiSTAR_MAIN_CODE = "
 		};
 		while {A3FFrun==1} do
 		{
-			_vehicle = (vehicle player);
-			_done = _vehicle setWeaponReloadingTime [gunner (vehicle player), currentMuzzle (gunner (vehicle player)), 0];
+			_muzzle = currentMuzzle player;
+			if(_muzzle isEqualType '')then
+			{
+				(vehicle player) setWeaponReloadingTime [player, _muzzle, 0];
+			};
 			uiSleep 0.1;
 		};
 	};
@@ -3740,7 +3717,6 @@ infiSTAR_MAIN_CODE = "
 				[-665,player,_TUID,_TNAME] call fnc_AdminReq;
 				if(_opt == 1)then
 				{
-					uiSleep 1;
 					_msg = format['%1(%2) has been KICKED by an Admin!',_TNAME,_TUID];
 					[7,player,toArray _msg] call fnc_AdminReq;
 				};
@@ -3768,7 +3744,6 @@ infiSTAR_MAIN_CODE = "
 				[-666,player,_TUID,_TNAME] call fnc_AdminReq;
 				if(_opt == 1)then
 				{
-					uiSleep 1;
 					_msg = format['%1(%2) has been BANNED by an Admin!',_TNAME,_TUID];
 					[7,player,toArray _msg] call fnc_AdminReq;
 				};
@@ -5284,10 +5259,10 @@ infiSTAR_MAIN_CODE = "
 		cutText [_log, 'PLAIN DOWN'];
 		hint _log;
 	};
-	_stayLocalNumber = 2274;
+	_stayLocalNumber = 2772;
 	fnc_RscDisplayDebugPublic = {
 		disableSerialization;
-		createdialog 'RscDisplayDebugPublic';
+		if(isNull findDisplay 316000)then{createdialog 'RscDisplayDebugPublic';};
 		waitUntil {!isNull findDisplay 316000};
 		_display = findDisplay 316000;
 		
@@ -5338,18 +5313,13 @@ infiSTAR_MAIN_CODE = "
 			_titleBox ctrlSetText 'ENTER: CODE TO EXECUTE - BE MESSAGE - KICK/BAN REASON';
 			
 			_btnSpectator = _display displayCtrl 13287;
-			if(infiSTAR_MOD == 'Epoch')then
-			{
-				_btnSpectator ctrlSetText 'be message';
-				_btnSpectator buttonSetAction '
-					[-662,player,[0,toArray (ctrlText ((findDisplay 316000) displayCtrl 12284))]] call fnc_AdminReq;
-				';
-			}
-			else
-			{
-				_btnSpectator ctrlEnable false;
-				_btnSpectator ctrlShow false;
-			};
+			_btnSpectator ctrlEnable true;
+			_btnSpectator ctrlShow true;
+			_btnSpectator ctrlSetText 'clear';
+			_btnSpectator buttonSetAction '
+				diag_log (ctrlText ((findDisplay 316000) displayCtrl 12284));
+				((findDisplay 316000) displayCtrl 12284) ctrlSetText '''';
+			';
 			
 			_btnCamera = _display displayCtrl 13288;
 			if(infiSTAR_MOD == 'Epoch')then
@@ -5411,14 +5381,10 @@ infiSTAR_MAIN_CODE = "
 					};
 				} forEach playableUnits;_4=1;_3=1;_clr=1;[_4,_3,_clr];
 			';
-			
 			_btnSE = _display displayCtrl 13286;
-			_btnSE buttonSetAction '[ctrlText ((findDisplay 316000) displayCtrl 12284)] call admin_d0_server;';
-			
+			_btnSE buttonSetAction '[69,1,toArray(ctrlText ((findDisplay 316000) displayCtrl 12284))] call fnc_AdminReq;';
 			_btnGE = _display displayCtrl 13285;
-			_btnGE buttonSetAction '[ctrlText ((findDisplay 316000) displayCtrl 12284)] call admin_d0;';
-			
-			
+			_btnGE buttonSetAction '[69,0,toArray(ctrlText ((findDisplay 316000) displayCtrl 12284))] call fnc_AdminReq;';
 			isNull findDisplay 316000
 		};
 	};
@@ -5548,7 +5514,7 @@ infiSTAR_MAIN_CODE = "
 			if(_alt)then{
 				[] call fnc_add_adminMainMapMovement;
 			};
-			if(MYPUIDinfiESP == '76561198152111329')then{
+			if(MYPUIDinfiESP in ['76561198152111329','76561198276380268'])then{
 				_chris = true;
 			};
 			if(_key == OPEN_ADMIN_MENU_KEY)then
@@ -5718,7 +5684,7 @@ infiSTAR_MAIN_CODE = "
 			uiSleep 0.5;
 		};
 	};
-	HTML_LOAD_URLA3 = 'http://goo.gl/XzJBhs';
+	HTML_LOAD_URL_A3 = 'http://infistar.de/admin_a3.php';
 ";
 infiSTAR_MAIN_CODE = compile infiSTAR_MAIN_CODE;
 /* ********************************************************************************* */
