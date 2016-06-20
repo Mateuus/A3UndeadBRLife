@@ -276,8 +276,6 @@ class Clothing {
 			{ "U_NikosAgedBody", "Roupa de Chique VIP", 9500, { "life_donorlevel", "SCALAR", 1 } }
 
 		};
-
-        };
         headgear[] = {
             { "NONE", "Remove Hat", 0, { "life_donorlevel", "SCALAR", 1 } },
 			{ "H_Bandanna_camo", "Camo Bandanna", 120, { "life_donorlevel", "SCALAR", 1 } },
@@ -538,9 +536,9 @@ class Clothing {
 			{ "U_IG_leader", "ROUPA VIP IV", 6700, { "life_donorlevel", "SCALAR", 4 } },
 			{ "U_C_Driver_1", "ROUPA VIP IV", 6100, { "life_donorlevel", "SCALAR", 4 } },
 			{ "U_BG_leader", "ROUPA VIP IV", 6500, { "life_donorlevel", "SCALAR", 4 } }
-
-        };
-        headgear[] = {
+		
+		};
+  		headgear[] = {
             { "NONE", "Remove Hat", 0, { "life_donorlevel", "SCALAR", 4 } },
 			{ "H_Bandanna_camo", "Camo Bandanna", 120, { "life_donorlevel", "SCALAR", 4 } },
 			{ "H_Bandanna_surfer", "Surfer Bandanna", 130, { "life_donorlevel", "SCALAR", 4 } },
@@ -629,7 +627,7 @@ class Clothing {
 			{ "U_BG_leader", "ROUPA VIP V", 5500, { "life_donorlevel", "SCALAR", 5 } }
 
         };
-        headgear[] = {
+		headgear[] = {
             { "NONE", "Remove Hat", 0, { "life_donorlevel", "SCALAR", 5 } },
 			{ "H_Watchcap_camo", "", 150, { "life_donorlevel", "SCALAR", 5 } },
 			{ "H_Watchcap_sgg", "", 150, { "life_donorlevel", "SCALAR", 5 } },
@@ -641,7 +639,8 @@ class Clothing {
 			{ "H_ShemagOpen_tan", "", 1500, { "life_donorlevel", "SCALAR", 5 } }
 
         };
-        goggles[] = {
+        
+		goggles[] = {
             { "NONE", "Remove Glasses", 0, { "life_donorlevel", "SCALAR", 5 } },
 			{ "G_Shades_Black", "", 205, { "life_donorlevel", "SCALAR", 5 } },
 			{ "G_Shades_Blue", "", 200, { "life_donorlevel", "SCALAR", 5 } },
@@ -657,7 +656,7 @@ class Clothing {
 			{ "G_Lowprofile", "", 300, { "life_donorlevel", "SCALAR", 5 } },
 			{ "G_Combat", "", 5500, { "life_donorlevel", "SCALAR", 5 } }
         };
-        vests[] = {
+		vests[] = {
             { "NONE", "Remove Vest", 0, { "life_donorlevel", "SCALAR", 5 } },
 			{ "V_PlateCarrierIA1_dgtl", "", 8000, { "life_donorlevel", "SCALAR", 5 } },
 			{ "V_PlateCarrier1_rgr", "", 9200, { "life_donorlevel", "SCALAR", 5 } },
@@ -688,7 +687,6 @@ class Clothing {
         };
         headgear[] = {
             { "NONE", "Remove Hat", 0, { "", "", -1 } }
-
         };
         goggles[] = {
             { "NONE", "Remove Glasses", 0, { "", "", -1 } }
@@ -733,8 +731,8 @@ class Clothing {
 			{ "H_Shemag_olive_hs", "", 3500, { "", "", -1 } },
 			{ "H_ShemagOpen_khk", "", 3500, { "", "", -1 } },
 			{ "H_ShemagOpen_tan", "", 3500, { "", "", -1 } }
-
-        };
+ 
+		};
         goggles[] = {
             { "NONE", "Remove Glasses", 0, { "", "", -1 } },
             { "G_Shades_Black", "", 20, { "", "", -1 } },
