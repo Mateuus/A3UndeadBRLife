@@ -10,7 +10,7 @@ class CarShops {
     *   BLUFOR Vehicle classnames can be found here: https://community.bistudio.com/wiki/Arma_3_CfgVehicles_WEST
     *   OPFOR Vehicle classnames can be found here: https://community.bistudio.com/wiki/Arma_3_CfgVehicles_EAST
     *   Independent Vehicle classnames can be found here: https://community.bistudio.com/wiki/Arma_3_CfgVehicles_GUER
-    *   Civilian Vehicle classnames can be found here: https://community.bistudio.com/wiki/Arma_3_CfgVehicles_CIV
+    *   Civilian Vehicle classnamess can be found here: https://community.bistudio.com/wiki/Arma_3_CfgVehicles_CIV
     */
     class civ_car {
         side = "civ";
