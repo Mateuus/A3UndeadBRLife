@@ -64,7 +64,28 @@ if(_index isEqualTo 3) exitWith {
 
 //Lizensen
 if(_index isEqualTo 4) exitWith {
-"";
+"<t color='#00ff00'>Farms Legais:</t><br/>
+<t color='#00ff00'>Petróleo</t> 2500 <br/>
+<t color='#00ff00'>Cobre</t> 1150 <br/>
+<t color='#00ff00'>Ferro</t> 1000 <br/>
+<t color='#00ff00'>Sal</t> 1075 <br/>
+<t color='#00ff00'>Vidro</t> 1045 <br/>
+<t color='#00ff00'>Diamante bruto</t> 1000 <br/>
+<t color='#00ff00'>Tabuas de madeira</t> 2000 <br/>
+<t color='#00ff00'>Borracha nao processada</t> 50 <br/>
+<t color='#00ff00'>Borracha</t> 1400 <br/>
+<t color='#00ff00'>Moeda antiga</t> 1800 <br/>
+<t color='#00ff00'>Lã</t> 800 <br/>
+<t color='#00ff00'>Pano</t> 1400 <br/>
+<t color='#00ff00'>Aço</t> 800 <br/>
+<t color='#00ff00'>Barra de aço</t> 1800 <br/>
+<t color='#00ff00'>Enxofre</t> 1100 <br/>
+<t color='#00ff00'>Cimento</t> 2000 <br/>
+<t color='#FF0000'>Farms ILegais:</t><br/>
+<t color='#FF0000'>Heroina</t> 3100 <br/>
+<t color='#FF0000'>Maconha</t> 3800 <br/>
+<t color='#FF0000'>Cocaina</t> 4200 <br/>
+<t color='#FF0000'>Krokodilo</t> 1100" ;
 };
 
 if(_index isEqualTo 5) exitWith {
@@ -87,7 +108,7 @@ Jogos de azar<br/>
 Saco de sequestro<br/>
 Rastreador<br/>
 Alcoolismo<br/>
-Após chamar medico tempo de spawn almenta<br/>
+Após chamar medico tempo de spawn aumenta<br/>
 Alarme de carro, sons ao comer, beber e reparar carro<br/>
 Sistema de Vips e guangues Vips<br/>
 Optimizaçao geral<br/><br/>
