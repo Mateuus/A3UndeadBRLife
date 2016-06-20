@@ -87,18 +87,7 @@ class CfgFunctions {
 			class vehicleUpdate {};
 			class recupkeyforHC {};
 		};
-		
-		class DynMarket
-        {
-            file = "\life_server\Functions\DynMarket";
-            class calculatePrices {};
-            class config {};
-            class getUpdate {};
-            class HandleDB {};
-            class playerLogged {};
-            class sleeper {};
-        };
-		
+				
 		class vAH {
 			file = "\life_server\Functions\vAH";
 			class vAH_init {};
@@ -126,6 +115,17 @@ class CfgFunctions {
 			class removeGang {};
 			class updateGang {};
 		};
+		
+		class DynMarket
+        {
+            file = "\life_server\Functions\DynMarket";
+            class calculatePrices {};
+            class config {};
+            class getUpdate {};
+            class HandleDB {};
+            class playerLogged {};
+            class sleeper {};
+        };
 
 		class Actions {
 			file = "\life_server\Functions\Actions";

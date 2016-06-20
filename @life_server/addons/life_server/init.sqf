@@ -11,9 +11,6 @@
 	Initialize the server and required systems.
 */
 
-// Initialisation de la bourse (DynMarket).
-[] execVM "\life_server\Functions\DynMarket\fn_config.sqf";
-
 DB_Async_Active = false;
 DB_Async_ExtraLock = false;
 life_server_isReady = false;
@@ -183,6 +180,9 @@ if(EQUAL(EXTDB_SETTING(getNumber,"HC_Enabled"),0)) then {
 	/* Initialize hunting zone(s) */
 	["hunting_zone",30] spawn TON_fnc_huntingZone;
 };
+
+// Initialisation de la bourse (DynMarket).
+[] execVM "\life_server\Functions\DynMarket\fn_config.sqf";
 
 // We create the attachment point to be used for objects to attachTo load virtually in vehicles.
 life_attachment_point = "Land_HelipadEmpty_F" createVehicle [0,0,0];

@@ -33,16 +33,41 @@ DYNMARKET_Items_Groups =
 [		
 	["Autres",		
 		[
+			["barrel",-1,17500,125000],
+			["butt",-1,17500,125000],
+			["sight",-1,17500,125000],
+			["trigger",-1,17500,125000],
+			["engine",-1,17500,125000],
 			["blastingcharge",-1,17500,125000],
 			["boltcutter",-1,3750,125000],
-			["excavator",-1,2500,125000],
 			["defusekit",-1,1250,125000],
 			["gpstracker",-1,500,125000],
 			["fuelEmpty",-1,212,125000],
 			["fuelFull",-1,425,125000],
 			["lockpick",-1,500,125000],	
 			["pickaxe",-1,325,125000],
-			["bottles",-1,25,125000],			
+			["blindfold",-1,325,125000],
+			["C4",-1,325,125000],
+			["goldcoin",-1,325,125000],
+			["rubberU",-1,325,125000],
+			["steel",-1,325,125000],
+			["steelplate",-1,325,125000],
+			["wool",-1,325,125000],
+			["cloth",-1,325,125000],
+			["sulfur",-1,325,125000],
+			["nitroamine",-1,325,125000],
+			["nitro",-1,325,125000],
+			["gunpowder",-1,325,125000],
+			["rubber",-1,325,125000],
+			["plank",-1,325,125000],
+			["kidney",-1,325,125000],
+			["knife",-1,325,125000],
+			["pliers",-1,325,125000],
+			["toolkit",-1,325,125000],
+			["zipties",-1,325,125000],
+			["woodaxe",-1,325,125000],
+			["wood",-1,325,125000],
+			["defibrillator",-1,325,125000],		
 			["waterBottle",-1,5,125000],	
 			["coffee",-1,5,125000],
 			["donuts",-1,60,125000],	
@@ -56,14 +81,9 @@ DYNMARKET_Items_Groups =
 	],
 	
 	["Fruits & Legumes",
-		[
-			["cornmeal",-1,100,125000],
-			["yeast",-1,100,125000],			
+		[			
 			["apple",-1,100,125000],
-			["peach",-1,100,125000],
-			["grape",-1,100,125000],
-			["hops",-1,100,125000],
-			["rye",-1,100,125000]
+			["peach",-1,100,125000]
 		],
 		0.5
 	],
@@ -126,8 +146,6 @@ DYNMARKET_Items_Groups =
 			
 			["salt_unrefined",-1,75,125000],
 			["salt_refined",-1,750,125000],
-			["sugar_unrefined",-1,75,125000],
-			["sugar_refined",-1,750,125000],
 			
 			["sand",-1,100,125000],
 			["glass",-1,1000,125000],
@@ -137,32 +155,27 @@ DYNMARKET_Items_Groups =
 			
 			["rock",-1,200,125000],
 			["cement",-1,2000,125000],
-			
-			["medmarijuana",-1,1000,125000],
-			["bottledbeer",-1,1500,125000],
-			["bottledvodka",-1,2000,125000],
-			["bottledwine",-1,2500,125000],
-			["bottledwhiskey",-1,3000,125000]			
+
+			["beer",-1,1500,125000],
+			["moonshine",-1,2000,125000],
+			["whiskey",-1,3000,125000]			
 		],		
 		0.5
 	],
 	
 	["Illegaux", 
-		[
+		[							
 			["cocaine_unprocessed",1,700,125000],
-			["cocaine_processed",1,7000,125000],
-			["crack_processed",1,8000,125000],			
+			["cocaine_processed",1,7000,125000],		
 			
 			["heroin_unprocessed",1,550,125000],
-			["heroin_processed",1,6500,125000],
-			["opium_processed",1,5500,125000],			
+			["heroin_processed",1,6500,125000],	
 			
 			["cannabis",1,400,125000],
 			["marijuana",1,4000,125000],
 			
 			["turtle_raw",1,9000,125000],
-			["goldbar",1,85000,125000],
-			["bottledshine",1,9000,125000]			
+			["goldbar",1,85000,125000]		
 		],
 		0.5
 	]
@@ -172,91 +185,104 @@ DYNMARKET_Items_Groups =
 
 DYNMARKET_Items_ToTrack        = 
 [
-	["bottles",25],	
-	["waterBottle",5],	
-	["coffee",5],
-	["donuts",60],	
-	["redgull",750],
-	["tbacon",37],
-	["cornmeal",150],	
-	["apple",150],
-	["peach",150],
-	["grape",150],
-	["hops",150],
-	["yeast",150],	
-	["rye",150],	
+	["waterBottle",5],	//OK
+	["coffee",5], //OK
+	["donuts",60],	//OK
+	["redgull",750], //OK
+	["tbacon",37], //OK
+	["apple",150], //OK
+	["peach",150], //OK
 	
-	["salema_raw",800],
-	["salema",80],
-	["ornate_raw",800],
-	["ornate",80],
-	["mackerel_raw",1000],
-	["mackerel",100],
-	["tuna_raw",2000],
-	["tuna",190],
-	["mullet_raw",900],
-	["mullet",90],
-	["catshark_raw",1700],
-	["catshark",170],
-	["turtle_raw",10000],	
-	["turtle_soup",100],
+	["salema_raw",800], //OK
+	["salema",80],//OK
+	["ornate_raw",800],//OK
+	["ornate",80],//OK
+	["mackerel_raw",1000],//OK
+	["mackerel",100],//OK
+	["tuna_raw",2000],//OK
+	["tuna",190],//OK
+	["mullet_raw",900],//OK
+	["mullet",90],//OK
+	["catshark_raw",1700],//OK
+	["catshark",170],//OK
+	["turtle_raw",10000],	//OK
+	["turtle_soup",100],//OK
 	
-	["rabbit_raw",1250],
-	["rabbit",125],
-	["hen_raw",1000],
-	["hen",100],
-	["rooster_raw",1200],
-	["rooster",120],
-	["sheep_raw",2100],
-	["sheep",210],
-	["goat_raw",3000],
-	["goat",300],
+	["rabbit_raw",1250],//OK
+	["rabbit",125],//OK
+	["hen_raw",1000],//OK
+	["hen",100],//OK
+	["rooster_raw",1200],//OK
+	["rooster",120],//OK
+	["sheep_raw",2100],//OK
+	["sheep",210],//OK
+	["goat_raw",3000],//OK
+	["goat",300],//OK
 	
-	["oil_unprocessed",800],
-	["oil_processed",8000],
-	["copper_unrefined",250],
-	["copper_refined",2500],
-	["iron_unrefined",325],
-	["iron_refined",3250],
-	["salt_unrefined",175],
-	["salt_refined",1750],
-	["sugar_unrefined",175],
-	["sugar_refined",1750],	
-	["sand",200],	
-	["glass",2000],
-	["diamond_uncut",500],	
-	["diamond_cut",5000],
-	["goldbar",95000],	
-	["rock",300],	
-	["cement",3000],
-	["medmarijuana",2000],
-	["bottledbeer",2500],
-	["bottledvodka",3000],
-	["bottledwine",3500],
-	["bottledwhiskey",4000],
+	["oil_unprocessed",800],//OK
+	["oil_processed",8000],//OK
+	["copper_unrefined",250],//OK
+	["copper_refined",2500],//OK
+	["iron_unrefined",325],//OK
+	["iron_refined",3250],//OK
+	["salt_unrefined",175],//OK
+	["salt_refined",1750],//OK
+	["sand",200],	//OK
+	["glass",2000],//OK
+	["diamond_uncut",500],	//OK
+	["diamond_cut",5000],//OK
+	["goldbar",95000],	//OK
+	["rock",300],	//OK
+	["gunpowder",300],	//OK
+	["cement",3000],//OK
+	["beer",2500],//OK
+	["moonshine",3500],//OK
+	["whiskey",4000],//OK
 	
-	["bottledshine",9000],	
-    ["heroin_unprocessed",750],
-	["heroin_processed",7500],
-	["opium_processed",6500],	
-	["cannabis",500],
-	["marijuana",5000],
-	["cocaine_unprocessed",800],
-	["cocaine_processed",8000],
-	["crack_processed",9000],
+    ["heroin_unprocessed",750],//OK
+	["heroin_processed",7500],//OK
+	["cannabis",500],//OK
+	["marijuana",5000],//OK
+	["cocaine_unprocessed",800],//OK
+	["cocaine_processed",8000],//OK
 	
-	["blastingcharge",17500],
-	["boltcutter",3750],
-	["excavator",2500],
-	["defusekit",1250],
-	["lockpick",500],	
-	["pickaxe",325],	
-	["gpstracker",500],
-	["fuelEmpty",212],
-	["fuelFull",425],	
-	["spikeStrip",1250],	
-	["storagebig",75000],
-	["storagesmall",37500]	
+	["barrel",17500],//OK
+	["butt",17500],//OK
+	["sight",17500],//OK
+	["trigger",17500],//OK
+	["engine",17500],//OK
+	["blastingcharge",17500],//OK
+	["boltcutter",3750],//OK
+	["defusekit",1250],//OK
+	["plank",500],	//OK
+	["C4",500],	//OK
+	["steel",500],	//OK
+	["steelplate",500],//OK	
+	["wool",500],	//OK
+	["cloth",500],	//OK
+	["sulfur",500],	//OK
+	["nitroamine",500],	//OK
+	["nitro",500],	//OK
+	["blindfold",500],	//OK
+	["lockpick",500],	//OK
+	["wood",500],	//OK
+	["rubberU",500],	//OK
+	["rubber",500],	//OK
+	["goldcoin",500],	//OK
+	["kidney",500],	 //OK
+	["pickaxe",325],	//OK
+	["woodaxe",325],   //OK
+	["defibrillator",325],   //OK
+	["toolkit",325],   //OK
+	["zipties",325],  //OK
+	["pliers",325], //OK
+	["knife",325], //OK
+	["gpstracker",500],//OK
+	["fuelEmpty",212],//OK
+	["fuelFull",425],	//OK
+	["spikeStrip",1250],	//OK
+	["storagebig",75000],//OK
+	["storagesmall",37500]	//OK
 ];
 
 
