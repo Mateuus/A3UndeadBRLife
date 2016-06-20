@@ -191,6 +191,3 @@ if (_total > 0) then
 	ADD(TTPBANK,_total);
 };
 [1] call SOCK_fnc_updatePartial;
-
-DYNAMICMARKET_boughtItems = [];
-[[getPlayerUID player],"TON_fnc_playerLogged",false,false] spawn life_fnc_MP;

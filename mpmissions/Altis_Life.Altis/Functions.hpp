@@ -11,17 +11,6 @@ class Socket_Reciever {
 	};
 };
 
-class DynMarket
-{
-        file = "core\DynMarket";
-        class bought {};
-        class update {};
-        class DisplayPrices {};
-        class LoadIntoListbox {};
-        class ForcePrice {};
-        class DYNMARKET_getPrice {};
- };
-
 class CHVD
 {
 	tag = "CHVD";
