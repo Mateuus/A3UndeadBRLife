@@ -17,14 +17,14 @@
 	
 	This is   VERY IMPORTANT   as it is needed to KICK & BAN people.
 */
-_serverCommandPassword = 'changeme';
+_serverCommandPassword = '27091995';
 
 /*
 	"_passwordAdmin" is passwordAdmin - in your servers config.cfg, needed for servercommands from client
 	
 	This is used to be able to use the "login" function ingame. Will log you in as Arma "Admin".
 */
-_passwordAdmin = 'changeme';
+_passwordAdmin = '27091995';
 /* _serverCommandPassword and _passwordAdmin should always be different passwords or it could cause problems! */
 
 
@@ -79,7 +79,7 @@ _use_html_load_on_adminmenu = true;		/* default and recommended is TRUE. infiSTA
 _adminUIDandAccess =
 [
 	[
-		['76561198065694695','76561198129878487', '76561198112843376', '76561198084123369'],	// Admins with UIDs in this Array have their Access defined in the array below.
+		['76561198065694695','76561198129878487','76561198112843376','...'],	// Admins with UIDs in this Array have their Access defined in the array below.
 		[
 			'Teleport On Map Click','Teleport - Target To Me','Teleport - Me To Target','Teleport In Facing Direction (10m steps)',
 			'spectating','AdminConsole','Delete Vehicle','FlyUp','EjectTarget','ToggleVehLock','UpgradeBuilding','ShowGear',
