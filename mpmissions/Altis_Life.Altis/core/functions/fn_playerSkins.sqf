@@ -69,7 +69,7 @@ switch(playerSide) do {
 		{
 			player setObjectTextureGlobal [0, "textures\Vip\Clothing\diamante.jpg"];
 		};
-            };
+            
 		if (uniform player isEqualTo "U_B_CombatUniform_mcam" && (FETCH_CONST(life_donorlevel) >= 1)) then {
 			player setObjectTextureGlobal [0, "textures\Vip\Clothing\vipOrange.jpg"];
 		};
