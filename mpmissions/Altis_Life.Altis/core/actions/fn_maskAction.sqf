@@ -9,4 +9,4 @@ params [
 
 _unit setVariable["masked",true,true];
 [player] remoteExecCall ["life_fnc_masked",_unit];
-hint "Blindfold has been applied, the player cannot see.";
+hint "Saco de sequestro colocado a vítima nao consegue ver nada.";

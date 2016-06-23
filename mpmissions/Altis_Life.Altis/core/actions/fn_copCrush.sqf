@@ -3,7 +3,7 @@ private["_vehicle","_type","_time","_vehicleData","_upp","_ui","_progress","_pgT
 _vehicle = cursorTarget;
 _veh = typeOf _vehicle;
 
-if(!(_veh in["B_G_Offroad_01_armed_F","O_MRAP_02_hmg_F","B_Heli_Light_01_stripped_F","O_MRAP_02_F","B_Heli_Light_01_stripped_F"])) exitWith {hint "You cannot crush a vehicle which is not illegal!";};
+if(!(_veh in["B_G_Offroad_01_armed_F","O_MRAP_02_hmg_F","B_Heli_Light_01_stripped_F","O_MRAP_02_F","B_Heli_Light_01_stripped_F"])) exitWith {hint "Voce nao pode destruir um carro se nao for ilegal";};
 
 if(!((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship"))) exitWith {};
 if(player distance cursorTarget > 10) exitWith {};
