@@ -2159,6 +2159,17 @@
 			<Portuguese>O veículo %1 já está presente no mapa e não pode ser retirado novamente</Portuguese>
 			<Polish>Przepraszamy ale %1 jest aktywny gdzieś na mapie i nie może zostać wyciągnięty.</Polish>
 		</Key>
+		<Key ID="STR_Garage_SpawnPointError1">
+			<Original>There is already a vehicle on the spawn point. You will be refunded the cost of getting out out.</Original>
+			<Czech>K dispozici je již vozidlo na spawn bodu. Ty budou vráceny náklady dostat se ven.</Czech>
+			<Spanish>Ya hay un vehículo en el punto de Spawn, se te reembolsara el costo de sacar el vehículo.</Spanish>
+			<Russian></Russian>
+			<German>Es steht ein Fahrzeug auf dem Spawnpunkt. Die Kosten für das Ausparken werden dir erstattet.</German>
+			<French>Il y a déjà un véhicule sur le point de spawn. Le coût de sortie du véhicule vous sera remboursé.</French>
+			<Italian>C'è già un veicolo nel punto di creazione. Verrai rimborsato della spesa appena effettuata.</Italian>
+			<Portuguese>Error Aqui Neto Viado.</Portuguese>
+			<Polish>W strefie parkowania znajduje się już pojazd. Środki za parkowanie zostaną zwrócone.</Polish>
+		</Key>
 		<Key ID="STR_Garage_SpawnPointError">
 			<Original>There is already a vehicle on the spawn point. You will be refunded the cost of getting out out.</Original>
 			<Czech>K dispozici je již vozidlo na spawn bodu. Ty budou vráceny náklady dostat se ven.</Czech>
@@ -8835,6 +8846,39 @@
 			<French>Prix de vente</French>
 			<Italian>Costo di vendita:</Italian>
 			<Portuguese>Preço de Venda</Portuguese>
+			<Polish>Cena sprzedaży:</Polish>
+		</Key>
+		<Key ID="STR_Shop_Veh_UI_SeguroP">
+			<Original>Assure Price:</Original>
+			<Czech>Prodejní cena:</Czech>
+			<Spanish>Precio de Venta:</Spanish>
+			<Russian></Russian>
+			<German>Verkaufspreis:</German>
+			<French>Prix de vente</French>
+			<Italian>Costo di vendita:</Italian>
+			<Portuguese>Preço do Seguro:</Portuguese>
+			<Polish>Cena sprzedaży:</Polish>
+		</Key>
+		<Key ID="STR_Shop_Veh_UI_SeguroP">
+			<Original>Assure Price:</Original>
+			<Czech>Prodejní cena:</Czech>
+			<Spanish>Precio de Venta:</Spanish>
+			<Russian></Russian>
+			<German>Verkaufspreis:</German>
+			<French>Prix de vente</French>
+			<Italian>Costo di vendita:</Italian>
+			<Portuguese>Preço do Seguro:</Portuguese>
+			<Polish>Cena sprzedaży:</Polish>
+		</Key>
+			<Key ID="STR_Shop_Veh_UI_SeguroE">
+			<Original>State Price:</Original>
+			<Czech>Prodejní cena:</Czech>
+			<Spanish>Precio de Venta:</Spanish>
+			<Russian></Russian>
+			<German>Verkaufspreis:</German>
+			<French>Prix de vente</French>
+			<Italian>Costo di vendita:</Italian>
+			<Portuguese>Estado do Seguro:</Portuguese>
 			<Polish>Cena sprzedaży:</Polish>
 		</Key>
 		<Key ID="STR_Shop_Veh_UI_Color">
