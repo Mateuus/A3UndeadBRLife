@@ -50,7 +50,7 @@ class WeaponShops {
 		items[] = {
             { "FirstAidKit", "Bolsa de Sangue", 250, 65 },
             { "hgun_Pistol_heavy_02_F", "ACP .45", 9500, 2500 },
-			{ "hgun_Rook40_FF", "Rook 9mm", 6500, 2500 },
+			{ "hgun_Rook40_F", "Rook 9mm", 6500, 2500 },
             { "hgun_ACPC2_F", "ACP .45", 6250, 65 },
             { "arifle_TRG20_F", "TRG 5.56mm", 43000, 2500 },
 			{ "arifle_TRG21_F", "TRG 5.56mm", 43000, 2500 },
@@ -96,7 +96,7 @@ class WeaponShops {
 		items[] = {
             { "FirstAidKit", "Bolsa de Sangue", 250, 65 },
             { "hgun_Pistol_heavy_02_F", "ACP .45", 9000, 2500 },
-			{ "hgun_Rook40_FF", "Rook 9mm", 6000, 2500 },
+			{ "hgun_Rook40_F", "Rook 9mm", 6000, 2500 },
             { "hgun_ACPC2_F", "ACP .45", 6050, 65 },
             { "arifle_TRG20_F", "TRG 5.56mm", 41000, 2500 },
 			{ "arifle_TRG21_F", "TRG 5.56mm", 41000, 2500 },
@@ -148,7 +148,7 @@ class WeaponShops {
 		items[] = {
             { "FirstAidKit", "Bolsa de Sangue", 250, 65 },
             { "hgun_Pistol_heavy_02_F", "ACP .45", 8000, 2500 },
-			{ "hgun_Rook40_FF", "Rook 9mm", 5000, 2500 },
+			{ "hgun_Rook40_F", "Rook 9mm", 5000, 2500 },
             { "hgun_ACPC2_F", "ACP .45", 5050, 65 },
             { "arifle_TRG20_F", "TRG 5.56mm", 38000, 2500 },
 			{ "arifle_TRG21_F", "TRG 5.56mm", 38000, 2500 },
@@ -203,7 +203,7 @@ class WeaponShops {
 		items[] = {
             { "FirstAidKit", "Bolsa de Sangue", 250, 65 },
             { "hgun_Pistol_heavy_02_F", "ACP .45", 7000, 2500 },
-			{ "hgun_Rook40_FF", "Rook 9mm", 4000, 2500 },
+			{ "hgun_Rook40_F", "Rook 9mm", 4000, 2500 },
             { "hgun_ACPC2_F", "ACP .45", 4050, 65 },
             { "arifle_TRG20_F", "TRG 5.56mm", 34000, 2500 },
 			{ "arifle_TRG21_F", "TRG 5.56mm", 34000, 2500 },
@@ -259,7 +259,7 @@ class WeaponShops {
 		items[] = {
             { "FirstAidKit", "Bolsa de Sangue", 250, 65 },
             { "hgun_Pistol_heavy_02_F", "ACP .45", 6000, 2500 },
-			{ "hgun_Rook40_FF", "Rook 9mm", 3000, 2500 },
+			{ "hgun_Rook40_F", "Rook 9mm", 3000, 2500 },
             { "hgun_ACPC2_F", "ACP .45", 3050, 65 },
             { "arifle_TRG20_F", "TRG 5.56mm", 30000, 2500 },
 			{ "arifle_TRG21_F", "TRG 5.56mm", 30000, 2500 },
