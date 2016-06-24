@@ -6,7 +6,7 @@
 	Description:
 	All survival? things merged into one thread.
 */
-private["_fnc_food","_fnc_water","_foodTime","_waterTime","_bp","_walkDis","_lastPos","_curPos"];
+private["_fnc_food","_fnc_water","_foodTime","_waterTime","_bp","_walkDis","_lastPos","_curPos","_slotNormal"];
 _fnc_food =  {
 	if(life_hunger < 2) then {player setDamage 1; hint localize "STR_NOTF_EatMSG_Death";}
 	else
@@ -72,6 +72,7 @@ _bp = "";
 _lastPos = visiblePosition player;
 _lastPos = (SEL(_lastPos,0)) + (SEL(_lastPos,1));
 _lastState = vehicle player;
+_slotNormal = 115;
 
 for "_i" from 0 to 1 step 0 do {
 	/* Thirst / Hunger adjustment that is time based */
@@ -83,9 +84,17 @@ for "_i" from 0 to 1 step 0 do {
 		life_maxWeight = LIFE_SETTINGS(getNumber,"total_maxWTTP");
 		_bp = backpack player;
 	} else {
+	
+		if(EQUAL(backpack player,"B_Kitbag_cbr")) then {
+			life_maxWeight = LIFE_SETTINGS(getNumber,"total_maxWTTP") + _slotNormal;
+			_bp = backpack player;
+		} else {
+		
 		if(!(EQUAL(backpack player,"")) && {!(EQUAL(backpack player,_bp))}) then {
 			_bp = backpack player;
 			life_maxWeight = LIFE_SETTINGS(getNumber,"total_maxWTTP") + round(FETCH_CONFIG2(getNumber,CONFIG_VEHICLES,_bp,"maximumload") / 4);
+		   };
+		
 		};
 	};
 
