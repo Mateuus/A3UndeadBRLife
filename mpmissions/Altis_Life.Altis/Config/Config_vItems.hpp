@@ -1026,9 +1026,9 @@ class VirtualItems {
 	class steel {
 		variable = "steel";
 		displayName = "STR_Item_steel";
-		weight = 4;
+		weight = 1;
 		buyPrice = 4025;
-		sellPrice = 800;
+		sellPrice = -1;
 		illegal = false;
 		edible = -1;
 		icon = "icons\steel.paa";
@@ -1148,7 +1148,7 @@ class VirtualItems {
 	class barrel {
 			variable = "barrel";
 			displayName = "STR_Item_Barrel";
-			weight = 2;
+			weight = 1;
 			buyPrice = 18000;
 			sellPrice = -1;
 			illegal = true;
@@ -1170,7 +1170,7 @@ class VirtualItems {
 	class sight {
 			variable = "sight";
 			displayName = "STR_Item_Sight";
-			weight = 2;
+			weight = 1;
 			buyPrice = -1;
 			sellPrice = -1;
 			illegal = true;
