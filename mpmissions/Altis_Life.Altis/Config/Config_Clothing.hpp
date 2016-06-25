@@ -97,8 +97,7 @@ class Clothing {
             { "B_AssaultPack_mcamo", "", 2000, { "", "", -1 } },
             { "B_TacticalPack_oli", "", 2500, { "", "", -1 } },
             { "B_Kitbag_mcamo", "", 3500, { "", "", -1 } },
-            { "B_Kitbag_sgg", "", 3500, { "", "", -1 } },
-            { "B_Kitbag_cbr", "", 3500, { "", "", -1 } },
+            { "B_Kitbag_sgg", "Mochila Bobsponja", 3500, { "", "", -1 } },
             { "B_FieldPack_blk", "", 4000, { "", "", -1 } },
             { "B_FieldPack_ocamo", "", 4000, { "", "", -1 } },
             { "B_FieldPack_oucamo", "", 4000, { "", "", -1 } },
@@ -152,12 +151,12 @@ class Clothing {
             { "NONE", "Remove Vest", 0, { "", "", -1 } },
             { "V_TacVest_blk_POLICE", "", 1000, { "", "", -1 } },
             { "V_PlateCarrier1_blk", "", 3500, { "life_coplevel", "SCALAR", -1 } },
-            { "V_PlateCarrierGL_blk", "SWAT Vest", 6500, { "life_coplevel", "SCALAR", 3 } }
+            { "V_PlateCarrierGL_blk", "SWAT Vest", 6500, { "life_coplevel", "SCALAR", 9 } }
         };
         backpacks[] = {
             { "NONE", "Remove Backpack", 0, { "", "", -1 } },
             { "B_Carryall_cbr", "", 3500, { "", "", -1 } },
-		    { "B_UAV_01_backpack_F", "", 6500, { "life_coplevel", "SCALAR", 4 } }
+		    { "B_UAV_01_backpack_F", "", 6500, { "life_coplevel", "SCALAR", 9 } }
         };
     };
 
@@ -333,11 +332,10 @@ class Clothing {
         backpacks[] = {
             { "NONE", "Remove Backpack", 0, { "life_donorlevel", "SCALAR", 1 } },
 			{ "B_Bergen_mcamo", "Mochila Gay", 4500, { "life_donorlevel", "SCALAR", 1 } },
-			{ "B_Bergen_sgg", "Mochila USA", 4500, { "life_donorlevel", "SCALAR", 1 } },
+			{ "B_Bergen_blk", "Mochila USA", 4500, { "life_donorlevel", "SCALAR", 1 } },
 			{ "B_Kitbag_mcamo", "", 3950, { "life_donorlevel", "SCALAR", 1 } },
 			{ "B_TacticalPack_oli", "", 3500, { "life_donorlevel", "SCALAR", 1 } },
 			{ "B_FieldPack_ocamo", "", 1700, { "life_donorlevel", "SCALAR", 1 } },
-			{ "B_Kitbag_cbr", "", 3950, { "life_donorlevel", "SCALAR", 1 } },
 			{ "B_Carryall_oli", "", 4500, { "life_donorlevel", "SCALAR", 1 } },
 			{ "B_Carryall_khk", "", 4500, { "life_donorlevel", "SCALAR", 1 } },
 			{ "B_Carryall_oucamo", "", 4500, { "life_donorlevel", "SCALAR", 1 } }
@@ -423,7 +421,6 @@ class Clothing {
 			{ "B_Bergen_sgg", "Mochila USA", 4000, { "life_donorlevel", "SCALAR", 1 } },
 			{ "B_Kitbag_mcamo", "", 2950, { "life_donorlevel", "SCALAR", 2 } },
 			{ "B_FieldPack_ocamo", "", 2700, { "life_donorlevel", "SCALAR", 2 } },
-			{ "B_Kitbag_cbr", "", 2950, { "life_donorlevel", "SCALAR", 2 } },
 			{ "B_Carryall_oli", "", 4500, { "life_donorlevel", "SCALAR", 2 } },
 			{ "B_Carryall_khk", "", 4500, { "life_donorlevel", "SCALAR", 2 } },
 			{ "B_Carryall_oucamo", "Mochila Ivisivel", 4500, { "life_donorlevel", "SCALAR", 2 } }
@@ -511,7 +508,6 @@ class Clothing {
 			{ "B_TacticalPack_oli", "", 2300, { "life_donorlevel", "SCALAR", 3 } },
 			{ "B_FieldPack_ocamo", "", 2300, { "life_donorlevel", "SCALAR", 3 } },
 			{ "B_Bergen_sgg", "", 2500, { "life_donorlevel", "SCALAR", 3 } },
-			{ "B_Kitbag_cbr", "", 2500, { "life_donorlevel", "SCALAR", 3 } },
 			{ "B_Carryall_oli", "", 4000, { "life_donorlevel", "SCALAR", 3 } },
 			{ "B_Carryall_khk", "", 4000, { "life_donorlevel", "SCALAR", 3 } },
 			{ "B_Carryall_oucamo", "Mochila Ivisivel", 4000, { "life_donorlevel", "SCALAR", 3 } }
@@ -598,7 +594,6 @@ class Clothing {
 			{ "B_Kitbag_mcamo", "", 1950, { "life_donorlevel", "SCALAR", 4 } },
 			{ "B_TacticalPack_oli", "", 1500, { "life_donorlevel", "SCALAR", 4 } },
 			{ "B_FieldPack_ocamo", "", 1700, { "life_donorlevel", "SCALAR", 4 } },
-			{ "B_Kitbag_cbr", "", 2500, { "life_donorlevel", "SCALAR", 4 } },
 			{ "B_Carryall_oli", "", 3500, { "life_donorlevel", "SCALAR", 4 } },
 			{ "B_Carryall_khk", "", 3500, { "life_donorlevel", "SCALAR", 4 } },
 			{ "B_Carryall_oucamo", "", 3500, { "life_donorlevel", "SCALAR", 4 } }
@@ -672,7 +667,6 @@ class Clothing {
 			{ "B_Kitbag_mcamo", "", 3450, { "life_donorlevel", "SCALAR", 5 } },
 			{ "B_TacticalPack_oli", "", 1500, { "life_donorlevel", "SCALAR", 5 } },
 			{ "B_FieldPack_ocamo", "", 2700, { "life_donorlevel", "SCALAR", 5 } },
-			{ "B_Kitbag_cbr", "", 3050, { "life_donorlevel", "SCALAR", 5 } },
 			{ "B_Carryall_oli", "", 3000, { "life_donorlevel", "SCALAR", 5 } },
 			{ "B_Carryall_khk", "", 3000, { "life_donorlevel", "SCALAR", 5 } },
 			{ "B_Carryall_oucamo", "", 3000, { "life_donorlevel", "SCALAR", 5 } }
@@ -767,7 +761,6 @@ class Clothing {
             { "B_TacticalPack_oli", "", 2500, { "", "", -1 } },
             { "B_Kitbag_mcamo", "", 3800, { "", "", -1 } },
             { "B_Kitbag_sgg", "", 3800, { "", "", -1 } },
-            { "B_Kitbag_cbr", "", 3800, { "", "", -1 } },
             { "B_FieldPack_blk", "", 4000, { "", "", -1 } },
             { "B_FieldPack_ocamo", "", 4000, { "", "", -1 } },
             { "B_FieldPack_oucamo", "", 4000, { "", "", -1 } },

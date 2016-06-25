@@ -54,14 +54,7 @@ switch(_craft) do
 	case "backpack":
 	{
         _return = [
-				["B_AssaultPack_cbr",["cloth",10]],
-        ["B_Kitbag_mcamo",["cloth",12]],
-        ["B_TacticalPack_oli",["cloth",9]],
-        ["B_FieldPack_ocamo",["cloth",9]],
-        ["B_Bergen_sgg",["cloth",10]],
-        ["B_Kitbag_cbr",["cloth",9]],
-        ["B_Carryall_oli",["cloth",16]],
-        ["B_Carryall_khk",["cloth",16]]
+				["B_Kitbag_cbr",["cloth",25]]
 			];
 	};
 
@@ -91,6 +84,7 @@ switch(_craft) do
     {
         _return = [
         ["150Rnd_762x54_Box_Tracer",["iron_refined",15,"gunpowder",22]],
+		["30Rnd_556x45_Stanag_Tracer_Red",["iron_refined",15,"gunpowder",16]],
 		["7Rnd_408_Mag",["iron_refined",25,"gunpowder",30]]
       	];
     };

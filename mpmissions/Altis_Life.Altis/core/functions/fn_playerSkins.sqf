@@ -41,6 +41,7 @@ switch(playerSide) do {
 			if(uniform player isEqualTo "U_C_Commoner_shorts") then {
 				player setObjectTextureGlobal [0, "textures\Civ\Clothing\pika.jpg"];
 			};
+					
 		};
 		
 		////////////////////////VIP INICIO/////////////////////////////////////////////////
@@ -70,20 +71,33 @@ switch(playerSide) do {
 			player setObjectTextureGlobal [0, "textures\Vip\Clothing\diamante.jpg"];
 		};
             
-		if (uniform player isEqualTo "U_B_CombatUniform_mcam" && (FETCH_CONST(life_donorlevel) >= 1)) then {
-			player setObjectTextureGlobal [0, "textures\Vip\Clothing\vipOrange.jpg"];
+		if (uniform player isEqualTo "U_B_CombatUniform_mcam" && (FETCH_CONST(life_donorlevel) >= 1)) then 
+		{
+			player setObjectTextureGlobal [0, "textures\Vip\Clothing\nh.jpg"];
 		};
-		if (uniform player isEqualTo "U_B_CombatUniform_mcam_vest" && (FETCH_CONST(life_donorlevel) >= 1)) then {
+		if (uniform player isEqualTo "U_B_CombatUniform_mcam_vest" && (FETCH_CONST(life_donorlevel) >= 1)) then 
+		{
 			player setObjectTextureGlobal [0, "textures\Vip\Clothing\VIParctic.jpg"];
 		};
-		if (uniform player isEqualTo "U_I_CombatUniform" && (FETCH_CONST(life_donorlevel) >= 1)) then {
-			player setObjectTextureGlobal [0, "textures\Vip\Clothing\bh.jpg"];
+		if (backpack player isEqualTo "B_Bergen_mcamo" && (FETCH_CONST(life_donorlevel) >= 1)) then 
+		{
+			backpackContainer player setObjectTextureGlobal [0, "textures\Civ\Clothing\VIPgayruck.jpg"];
 		};
-		if (backpack player isEqualTo "B_Bergen_mcamo" && (FETCH_CONST(life_donorlevel) >= 1)) then {
-			backpackContainer player setObjectTextureGlobal [0, "textures\Vip\Clothing\VIPgayruck.jpg"];
+		if (backpack player isEqualTo "B_Bergen_blk" && (FETCH_CONST(life_donorlevel) >= 1)) then 
+		{
+			backpackContainer player setObjectTextureGlobal [0, "textures\Civ\Clothing\murica_bag.jpg"];
 		};
-		if (backpack player isEqualTo "B_Bergen_mcamo" && (FETCH_CONST(life_donorlevel) >= 1)) then {
-			backpackContainer player setObjectTextureGlobal [0, "textures\Vip\Clothing\murica_bag.jpg"];
+		if (backpack player isEqualTo "B_Carryall_cbr" && (FETCH_CONST(life_donorlevel) >= 0)) then 
+		{
+			backpackContainer player setObjectTextureGlobal [0, "textures\Civ\Clothing\backpack_PSP_Carry.jpg"];
+		};
+		if (backpack player isEqualTo "B_Kitbag_cbr" && (FETCH_CONST(life_donorlevel) >= 0)) then 
+		{
+			backpackContainer player setObjectTextureGlobal [0, "textures\Civ\Clothing\rebelbackpack.jpg"];
+		};
+		if (backpack player isEqualTo "B_Kitbag_sgg" && (FETCH_CONST(life_donorlevel) >= 0)) then 
+		{
+			backpackContainer player setObjectTextureGlobal [0, "textures\Civ\Clothing\backpack_SBP_Kitbag.jpg"];
 		};
 		
 		/////////////////////////VIP END///////////////////////////////////////////////////
