@@ -75,23 +75,56 @@ if(_uid != getPlayerUID _unit) exitWith {
 };
 
 // sort out whitelisted items!
-if(EQUAL(LIFE_SETTINGS(getNumber,"save_veh_virtualItems"),1)) then {
-	_trunk = _vehicle getVariable["Trunk",[[],0]];
-	_itemList = _trunk select 0;
-	_totalweight = 0;
-	_items = [];
-		{
-			if((_x select 0) in _resourceItems) then {
-				_items pushback [(_x select 0),(_x select 1)];
-				_weight = (ITEM_WEIGHT(_x select 0)) * (_x select 1);
-				_totalweight = _weight + _totalweight;
-			};
-		}foreach _itemList;
-	_trunk = [_items,_totalweight];
-	} else { 
-	_trunk = [[],0];
-};
+_trunk = _vehicle getVariable ["Trunk", [[], 0]];
+_itemList = _trunk select 0;
+_totalweight = 0;
+_items = [];
+if (LIFE_SETTINGS(getNumber,"save_vehicle_virtualItems") isEqualTo 1) then {
+    if (LIFE_SETTINGS(getNumber,"save_vehicle_illegal") isEqualTo 1) then {
+        _blacklist = false;
+        _profileQuery = format["SELECT name FROM players WHERE playerid='%1'", _uid];
+        _profileName = [_profileQuery, 2] call DB_fnc_asyncCall;
+        _profileName = _profileName select 0;
+        {
+            _isIllegal = M_CONFIG(getNumber,"VirtualItems",_x select 0,"illegal");
 
+            _isIllegal = if (_isIllegal isEqualTo 1) then { true }    else { false };
+
+            if (((_x select 0) in _resourceItems) ||  (_isIllegal)) then {
+                _items pushBack[_x select 0, _x select 1];
+                _weight = (ITEM_WEIGHT(_x select 0)) * (_x select 1);
+                _totalweight = _weight + _totalweight;
+            };
+            if (_isIllegal) then {
+                _blacklist = true;
+            };
+
+        }
+        foreach _itemList;
+        if (_blacklist) then {
+            [_uid, _profileName, "481"] remoteExecCall["HC_fnc_wantedAdd", HC_Life];
+
+            _query = format["UPDATE vehicles SET blacklist='1' WHERE pid='%1' AND plate='%2'", _uid, _plate];
+            _thread = [_query, 1] call HC_fnc_asyncCall;
+        };
+
+    }
+    else {
+            {
+                if ((_x select 0) in _resourceItems) then {
+                    _items pushBack[_x select 0,_x select 1];
+                    _weight = (ITEM_WEIGHT(_x select 0)) * (_x select 1);
+                    _totalweight = _weight + _totalweight;
+                };
+            }
+            forEach _itemList;
+    };
+            _trunk = [_items, _totalweight];
+
+    }
+    else {
+        _trunk = [[], 0];
+    };
 if(EQUAL(LIFE_SETTINGS(getNumber,"save_veh_gear"),1)) then {
 	_vehItems = getItemCargo _vehicle;
 	_vehMags = getMagazineCargo _vehicle;
