@@ -6487,14 +6487,14 @@
 			<Polish>Sztabka miedzi</Polish>
 		</Key>
 		<Key ID="STR_Item_Sand">
-			<Original>Sand</Original>
+			<Original>Grão de ouro</Original>
 			<Czech>Písek</Czech>
 			<Spanish>Arena</Spanish>
 			<Russian></Russian>
 			<German>Sand</German>
 			<French>Sable</French>
 			<Italian>Sabbia</Italian>
-			<Portuguese>Areia</Portuguese>
+			<Portuguese>Grão de ouro</Portuguese>
 			<Polish>Piasek</Polish>
 		</Key>
 		<Key ID="STR_Item_Salt">
@@ -6520,14 +6520,14 @@
 			<Polish>Sól rafinowana</Polish>
 		</Key>
 		<Key ID="STR_Item_Glass">
-			<Original>Glass</Original>
+			<Original>Pepita de ouro</Original>
 			<Czech>Sklo</Czech>
 			<Spanish>Vidrio</Spanish>
 			<Russian></Russian>
 			<German>Glas</German>
 			<French>Verre</French>
 			<Italian>Vetro</Italian>
-			<Portuguese>Vidro</Portuguese>
+			<Portuguese>Pepita de ouro</Portuguese>
 			<Polish>Szkło</Polish>
 		</Key>
 		<Key ID="STR_Item_DiamondC">
