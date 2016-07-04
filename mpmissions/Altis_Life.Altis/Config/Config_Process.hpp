@@ -150,7 +150,7 @@ class ProcessAction {
 
 	class steelplate {
 
-					MaterialsReq[] = {{"steel",1}};
+					MaterialsReq[] = {{"steel",3}};
 		MaterialsGive[] = {{"steelplate",1}};
 					Text = "STR_Process_steelplate";
 					//ScrollText = "Mix Cement";
@@ -159,7 +159,7 @@ class ProcessAction {
 
 	class cloth {
 
-					MaterialsReq[] = {{"wool",1}};
+					MaterialsReq[] = {{"wool",3}};
 		MaterialsGive[] = {{"cloth",1}};
 					Text = "STR_Process_cloth";
 					//ScrollText = "Mix Cement";
