@@ -5,14 +5,14 @@ _robber = [_this,1,ObjNull,[ObjNull]] call BIS_fnc_param; //Can you guess? Alrig
 _action = [_this,2] call BIS_fnc_param;//Action name
 _cops = (west countSide playableUnits);
 
-if(_cops < 5) exitWith {hint "You cannot rob this shop, 6 or more police need to be on";};
+if(_cops < 5) exitWith {hint "Voce nao pode roubar este posto, precisa de 2 ou mais policias online";};
 //if(_cops < 30) exitWith {hint "Sorry feature disabled until I fix it, should be fixed soon though.";};
 if(side _robber isEqualTo west) exitWith { hint "What do you think you are doing?" };
 if(side _robber isEqualTo independent) exitWith { hint "What do you think you are doing?" };
 if(_robber distance _shop > 20) exitWith { hint "You need to be within 5 meters to rob this shop!" };
 if (vehicle player != _robber) exitWith { hint "Get out of your car!" };
 
-if (currentWeapon _robber isEqualTo "") exitWith { hint "You cannot rob anyone without the proper equiptment, get a gun first!" };
+if (currentWeapon _robber isEqualTo "") exitWith { hint "Voce nao pode roubar sem uma arma !" };
 
 if !(alive _robber) exitWith {};
 
@@ -26,25 +26,25 @@ disableSerialization;
 _ui = uiNameSpace getVariable "life_progress";
 _progress = _ui displayCtrl 38201;
 _pgText = _ui displayCtrl 38202;
-_pgText ctrlSetText format["Robbing the store, stay within 5 meters (1%1)...","%"];
+_pgText ctrlSetText format["Roubo em progresso, fique dentro de 5 metros (1%1)...","%"];
 _progress progressSetPosition 0.01;
-_cP = 0.01;
+_cP = 120;
 
    _rndmrk = random(1000);
    _mrkstring = format ["wrgMarker_%1", _rndmrk];
    _Pos = position player;
    _marker = createMarker [_mrkstring, _Pos];
    _marker setMarkerColor "ColorRed";
-   _marker setMarkerText "!Warning! >>>>>> Robbery in progress <<<<<< !Warning!";
+   _marker setMarkerText "!AVISO! >>>>>> Roubo em progresso <<<<<< !AVISO!";
    _marker setMarkerType "mil_warning";
-[1,"A store is being robbed!"] remoteExec ["life_fnc_broadcast",0]; // General broadcast alert to everyone, uncomment for testing, or if you want it anyway.
+[1,"Um posto de gasolina está sendo roubado !!!"] remoteExec ["life_fnc_broadcast",0]; // General broadcast alert to everyone, uncomment for testing, or if you want it anyway.
 
 while{true} do
 {
 	uiSleep 2.00;
-	_cP = _cP + 0.01;
+	_cP = _cP + 120;
 	_progress progressSetPosition _cP;
-	_pgText ctrlSetText format["Robbing the store, stay within 5 meters (%1%2)...",round(_cP * 100),"%"];
+	_pgText ctrlSetText format["Roubo em progresso, fique dentro de 5 metros (%1%2)...",round(_cP * 100),"%"];
 
 	if(_cP >= 1 OR !alive _robber) exitWith {};
 	if(_robber distance _shop > 5.1) exitWith { };
@@ -55,23 +55,23 @@ while{true} do
 
 
 	if!(alive _robber) exitWith { life_rip = false;call life_fnc_hudUpdate; };
-	if(_robber distance _shop > 5.1) exitWith { deleteMarker _marker; hint "You are too far away, robbery failed!"; 5 cutText ["","PLAIN"]; life_rip = false; call life_fnc_hudUpdate;};
-	if(_robber getVariable "restrained") exitWith { life_rip = false; hint "You have been arrested!"; 5 cutText ["","PLAIN"]; call life_fnc_hudUpdate;};
-	if(life_istazed) exitWith { deleteMarker _marker; life_rip = false; hint "You have been downed!"; 5 cutText ["","PLAIN"]; call life_fnc_hudUpdate;};
+	if(_robber distance _shop > 5.1) exitWith { deleteMarker _marker; hint "Voce está muito longe, o roubo foi cancelado!"; 5 cutText ["","PLAIN"]; life_rip = false; call life_fnc_hudUpdate;};
+	if(_robber getVariable "restrained") exitWith { life_rip = false; hint "Voce foi algemado!"; 5 cutText ["","PLAIN"]; call life_fnc_hudUpdate;};
+	if(life_istazed) exitWith { deleteMarker _marker; life_rip = false; hint "Voce foi imobilizado!"; 5 cutText ["","PLAIN"]; call life_fnc_hudUpdate;};
 
    5 cutText ["","PLAIN"];
-   titleText[format["You have recieved $%1 from the robbery, Run!!",[_kassa] call life_fnc_numberText],"PLAIN"];
+   titleText[format["Voce recebeu $%1 por roubar, a policia esta a caminho corra!",[_kassa] call life_fnc_numberText],"PLAIN"];
    deleteMarker _marker;
    ADD(CASH,_kassa);
    [] call life_fnc_hudSetup;
 
    _rip = false;
-	sleep (30 + random(180)); //Clerk in the store takes between 30-210 seconds before he manage to warn the police about the robbery.
+	sleep (30 + random(30)); //Clerk in the store takes between 30-210 seconds before he manage to warn the police about the robbery.
 	life_use_atm = true; // Robber can not use the ATM at this point.
 	playSound3D ["A3\Sounds_F\sfx\alarm_independent.wss", player];
 	if!(alive _robber) exitWith {};
-[0,format["Police News: A store has just been robbed: the stolen ammount of money was $%3!",name _robber, _shop, [_kassa] call life_fnc_numberText]] remoteExec ["life_fnc_broadcast",west];
-[0,format["Police News: A store has just been robbed: the stolen ammount of money was $%3!, if you have seen the robbers, contact police!",name _robber, _shop, [_kassa] call life_fnc_numberText]] remoteExec ["life_fnc_broadcast",civilian];
+[0,format["Police News: Uma loja acaba de ser roubada: a quantidade de dinheiro foi de $%3!",name _robber, _shop, [_kassa] call life_fnc_numberText]] remoteExec ["life_fnc_broadcast",west];
+[0,format["Police News: Uma loja acaba de ser roubada: a quantidade de dinheiro foi de $%3!, se voce viu quem roubou, avise a policia!",name _robber, _shop, [_kassa] call life_fnc_numberText]] remoteExec ["life_fnc_broadcast",civilian];
 [getPlayerUID _robber,name _robber,"15"] remoteExec ["life_fnc_wantedAdd",2];
 
 

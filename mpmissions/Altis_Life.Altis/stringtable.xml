@@ -5086,7 +5086,7 @@
 			<German>Du wurdest von %1 festgenommen</German>
 			<French>Vous avez été menotté par %1</French>
 			<Italian>%1 ti ha messo le manette</Italian>
-			<Portuguese>Você foi solto por %1</Portuguese>
+			<Portuguese>Você foi algemado por %1</Portuguese>
 			<Polish>Zostałeś rozkuty przez %1</Polish>
 		</Key>
 		<Key ID="STR_Cop_wantedList_notCop">
