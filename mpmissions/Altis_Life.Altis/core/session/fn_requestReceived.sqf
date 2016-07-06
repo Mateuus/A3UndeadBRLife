@@ -24,9 +24,9 @@ if(EQUAL(SEL(_this,0),"Error")) exitWith {[] call SOCK_fnc_insertPlayerInfo;};
 if(!(EQUAL(steamid,SEL(_this,0)))) exitWith {[] call SOCK_fnc_dataQuery;};
 
 //Lets make sure some vars are not set before hand.. If they are get rid of them, hopefully the engine purges past variables but meh who cares.
-if(!isServer && (!isNil "life_adminlevel" OR !isNil "life_coplevel" OR !isNil "life_donorlevel")) exitWith {
+if(!isServer && (!isNil "life_adminlevel" OR !isNil "life_coplevel" OR !isNil "life_donorlevel" OR !isNil "life_gangdonorid")) exitWith {
 	[profileName,getPlayerUID player,"VariablesAlreadySet"] remoteExecCall ["SPY_fnc_cookieJar",RSERV];
-	[profileName,format["Variables set before client initialization...\nlife_adminlevel: %1\nlife_coplevel: %2\nlife_donorlevel: %3",life_adminlevel,life_coplevel,life_donorlevel]] remoteExecCall ["SPY_fnc_notifyAdmins",RCLIENT];
+	[profileName,format["Variables set before client initialization...\nlife_adminlevel: %1\nlife_coplevel: %2\nlife_donorlevel: %3\nlife_gangdonorid: %4",life_adminlevel,life_coplevel,life_donorlevel,life_gangdonorid]] remoteExecCall ["SPY_fnc_notifyAdmins",RCLIENT];
 	sleep 0.9;
 	failMission "SpyGlass";
 };
@@ -39,6 +39,11 @@ if(EQUAL(LIFE_SETTINGS(getNumber,"donor_level"),1)) then {
 	CONST(life_donorlevel,parseNumber (SEL(_this,5)));
 } else {
 	CONST(life_donorlevel,0);
+};
+if(EQUAL(LIFE_SETTINGS(getNumber,"gangdonorid"),1)) then {
+	CONST(life_gangdonorid,parseNumber (SEL(_this,13)));
+} else {
+	CONST(life_gangdonorid,0);
 };
 
 //Loop through licenses
