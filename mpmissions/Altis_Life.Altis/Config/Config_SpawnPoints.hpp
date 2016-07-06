@@ -23,7 +23,7 @@ class CfgSpawnPoints {
 		
 		class GangVip1 {
             displayName = "Gang VIP 1";
-            spawnMarker = "civ_spawn_vip";
+            spawnMarker = "civ_spawn_gang_1";
             icon = "icons\civspawn.paa";
             licenses[] = { { "", true } };
             level[] = { "life_gangdonorid", "EQUAL", 1 };
@@ -31,7 +31,7 @@ class CfgSpawnPoints {
 		
 		class GangVip2 {
             displayName = "Gang VIP 2";
-            spawnMarker = "civ_spawn_vip";
+            spawnMarker = "civ_spawn_gang_1";
             icon = "icons\civspawn.paa";
             licenses[] = { { "", true } };
             level[] = { "life_gangdonorid", "EQUAL", 2 };

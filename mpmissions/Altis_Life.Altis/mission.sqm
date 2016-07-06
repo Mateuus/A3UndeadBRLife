@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=10;
 	class ItemIDProvider
 	{
-		nextID=11276;
+		nextID=11286;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5579.3623,216.06587,17633.047};
-		dir[]={-0.34027609,-0.7045154,-0.62299871};
-		up[]={-0.33773541,0.70913476,-0.61833078};
-		aside[]={-0.87777895,-2.8268551e-006,0.47943854};
+		pos[]={8900.4756,72.701653,7475.1768};
+		dir[]={-0.87516695,-0.48382434,-0.0052868431};
+		up[]={-0.48381531,0.87516683,-0.002922676};
+		aside[]={-0.0060415999,-1.2741534e-006,0.99999958};
 	};
 };
 binarizationWanted=0;
@@ -298,24 +298,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -330,6 +312,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -388,7 +388,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1934;
+		items=1939;
 		class Item0
 		{
 			dataType="Marker";
@@ -8667,7 +8667,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4901.5908,21.316124,14419.505};
+				position[]={4901.5908,21.316044,14419.505};
 				angles[]={0,2.7831721,0};
 			};
 			side="Empty";
@@ -8679,7 +8679,7 @@ class Mission
 			};
 			id=669;
 			type="Land_Sink_F";
-			atlOffset=2.9938736;
+			atlOffset=2.9937935;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -68856,6 +68856,100 @@ class Mission
 			{
 			};
 			id=11177;
+		};
+		class Item1934
+		{
+			dataType="Marker";
+			position[]={8917.9609,67.377609,7489.9219};
+			name="safezone_gang_1";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorEAST";
+			alpha=0.5988794;
+			fillName="DiagGrid";
+			a=70;
+			b=70;
+			angle=172.04897;
+			id=11276;
+			atlOffset=-0.010238647;
+		};
+		class Item1935
+		{
+			dataType="Marker";
+			position[]={8918.085,198.17627,7488.71};
+			name="area_gang_1";
+			text="@STR_MAR_Gang_1";
+			type="o_installation";
+			colorName="ColorRed";
+			id=11277;
+			atlOffset=124.13325;
+		};
+		class Item1936
+		{
+			dataType="Marker";
+			position[]={8908.2646,66.818237,7494.3506};
+			name="civ_spawn_gang_1";
+			type="Empty";
+			angle=251.54399;
+			id=11278;
+		};
+		class Item1937
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8910.5264,67.166176,7474.6636};
+				angles[]={0,6.1311545,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=11284;
+			type="Land_i_Barracks_V2_F";
+		};
+		class Item1938
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8897.6523,71.612671,7475.6162};
+				angles[]={0,3.0117052,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Process_Cocaine"",life_fnc_processAction,""cocaine"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0; life_inv_cocaineUnprocessed > 0 && !life_is_processing && (FETCH_CONST(life_donorlevel) >= 1) && playerSide == civilian ']; this setVariable[""realname"",""Cocaine Processing""];";
+				name="coke_processor_1";
+			};
+			id=11285;
+			type="Land_Sink_F";
+			atlOffset=3.2247772;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 	class Connections

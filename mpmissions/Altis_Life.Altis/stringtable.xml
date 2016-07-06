@@ -9224,6 +9224,14 @@
 		</Key>
 	</Package>
 	<Package name="Markers_names">
+		<Key ID="STR_MAR_Gang_1">
+			<Original>Aréa Gang VIP 1</Original>
+			<Portuguese>Aréa Gang VIP 1</Portuguese>
+		</Key>
+		<Key ID="STR_MAR_Gang_2">
+			<Original>Aréa Gang VIP 2</Original>
+			<Portuguese>Aréa Gang VIP 2</Portuguese>
+		</Key>
 		<Key ID="STR_MAR_Fish_Market">
 			<Original>Fish Market</Original>
 			<Czech>Rybí trh</Czech>
