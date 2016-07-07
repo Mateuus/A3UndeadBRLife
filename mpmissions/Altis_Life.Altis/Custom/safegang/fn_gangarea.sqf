@@ -64,7 +64,7 @@ switch (playerSide) do
 				};
 				
 				//SAIR DA ZONA DA GANG
-				if (((_zone1 distance player > _zone1dis)) && (_inArea)) then
+				if (((_zone1 distance player > _zone1dis) && (_inArea)) then
 				{
 					_inArea = false;
 					hint parseText format["<t color='#ffff00'><t size='2'><t align='center'>Aviso Zona de Gangue<br/><br/><t align='center'><t size='1'><t color='#ffffff'>%1",_leaveText];
@@ -84,7 +84,7 @@ switch (playerSide) do
 			{
 				//ENTRA NA ZONA DA GANG
 				if (((_zone1 distance player < _zone1dis)) && (!_inArea)) then
-				{
+				{		
 					_eh1 = player addEventHandler ["fired", {deleteVehicle (_this select 6);}];
 					_inArea = true;
 					
@@ -104,16 +104,19 @@ switch (playerSide) do
 						hint parseText format["<t color='#00ff00'><t size='2'><t align='center'>Aviso Final!!!<br/><br/><t align='center'><t size='1'><t color='#ffffff'>%1",_intruAvisoText];
 						//Espera 10 segundos para Mata o Player
 						sleep 10;
-						//Mata o Player
-					    player setDamage 1; 
-						//desativa a área ao morrer
-					   _inArea = false; 	
+						//verificar se ele ainda está dentro da aréa
+					  if(_inArea = true) then{
+						 //Mata o Player
+						  player setDamage 1; 
+						 //Tira Player da Aréa se morrer
+						  _inArea = false;
+					  };	
 					};
 					
 					
 				};
 				//SAIR DA ZONA DA GANG
-				if (((_zone1 distance player < _zone1dis)) && (!_inArea)) then
+				if (((_zone1 distance player > _zone1dis) && (_inArea)) then
 				{
 					player removeEventHandler ["fired", _eh1];
 					_inArea = false;
@@ -121,7 +124,6 @@ switch (playerSide) do
 					player allowDamage true;
 					safezone = false;
 				};
-
 			};
 		};
 	};
@@ -161,7 +163,7 @@ switch (playerSide) do
 					imAuto = false;
 				};
 				//SAIR DA ZONA DA GANG
-				if (((_zone1 distance player < _zone1dis)) && (!_inArea)) then
+				if (((_zone1 distance player > _zone1dis) && (_inArea)) then
 				{
 					_inArea = false;
 					hint parseText format["<t color='#ffff00'><t size='2'><t align='center'>Aviso Zona de Gangue<br/><br/><t align='center'><t size='1'><t color='#ffffff'>%1",_leaveText];
