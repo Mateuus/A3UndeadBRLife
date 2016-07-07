@@ -16,7 +16,7 @@ if(_vault GVAR ["safe_open",false]) exitWith {hint localize "STR_ISTR_Blast_Alre
 if(west countSide playableUnits < (LIFE_SETTINGS(getNumber,"minimum_cops"))) exitWith {
  	hint format [localize "STR_Civ_NotEnoughCops",(LIFE_SETTINGS(getNumber,"minimum_cops"))]
 };
-if((nearestObject [[6626.5,15654.9,0],"Land_Cargo_House_V1_F"]) GVAR ["locked",true]) exitWith {hint localize "STR_ISTR_Blast_Exploit"};
+if((nearestObject [[16019.5,16952.9,0],"Land_Cargo_House_V1_F"]) GVAR ["locked",true]) exitWith {hint localize "STR_ISTR_Blast_Exploit"};
 if(!([false,"blastingcharge",1] call life_fnc_handleInv)) exitWith {}; //Error?
 
 _vault SVAR ["chargeplaced",true,true];
