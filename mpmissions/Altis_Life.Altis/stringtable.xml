@@ -6592,25 +6592,25 @@
 		<Original>Saco de sequestro</Original>
 		</Key>
 		<Key ID="STR_Item_Rock">
-			<Original>Rock</Original>
+			<Original>LSD nao processada</Original>
 			<Czech>Skála</Czech>
 			<Spanish>Piedra</Spanish>
 			<Russian></Russian>
 			<German>Stein</German>
 			<French>Pierre</French>
 			<Italian>Roccia</Italian>
-			<Portuguese>Pedra</Portuguese>
+			<Portuguese>LSD nao processada</Portuguese>
 			<Polish>Skała</Polish>
 		</Key>
 		<Key ID="STR_Item_CementBag">
-			<Original>Cement Bag</Original>
+			<Original>LSD processada</Original>
 			<Czech>cement Bag</Czech>
 			<Spanish>Bolsa de Cemento</Spanish>
 			<Russian></Russian>
 			<German>Zement Sack</German>
 			<French>Sac de ciment</French>
 			<Italian>Sacco di Cemento</Italian>
-			<Portuguese>Saco de Cimento</Portuguese>
+			<Portuguese>LSD processada</Portuguese>
 			<Polish>Worek cementu</Polish>
 		</Key>
 		<Key ID="STR_Item_GoldBar">
@@ -7145,7 +7145,7 @@
 			<Polish>Nie patrzysz w stronę drzwi.</Polish>
 		</Key>
 		<Key ID="STR_ISTR_Bolt_AlertFed">
-			<Original>!!!!! SOMEONE IS BREAKING INTO THE FEDERAL RESERVE !!!!!!</Original>
+			<Original>!!!!! A RESERVA FEDERAL ESTÁ SENDO ROUBADA !!!!!!</Original>
 			<Czech>!!!!! Někdo vloupání do Federálního rezervního systému !!!!!!</Czech>
 			<Spanish>!!!!! LA RESERVA FEDERAL ESTA SIENDO ASALTADA !!!!!!</Spanish>
 			<Russian></Russian>
