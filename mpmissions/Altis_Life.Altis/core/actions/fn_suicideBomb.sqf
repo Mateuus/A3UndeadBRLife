@@ -35,4 +35,4 @@ player setVariable["tied", false, true];
 player setVariable["restrained", false, true];
 player setVariable["eg_cancelRevive", true, true];
 [] call SOCK_fnc_updateRequest;
-[0,format["BREAKING NEWS: A suicide vest was detonated by %1!",profileName]] remoteExec ["life_fnc_broadcast",0];
+[0,format["Altis Life News: Um colete suicida foi explodido por %1!",profileName]] remoteExec ["life_fnc_broadcast",0];

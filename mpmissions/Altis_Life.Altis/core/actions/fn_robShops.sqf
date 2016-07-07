@@ -7,10 +7,10 @@ _cops = (west countSide playableUnits);
 
 if(_cops < 5) exitWith {hint "Voce não pode roubar este posto, precisa de 2 ou mais policias online";};
 //if(_cops < 30) exitWith {hint "Sorry feature disabled until I fix it, should be fixed soon though.";};
-if(side _robber isEqualTo west) exitWith { hint "What do you think you are doing?" };
-if(side _robber isEqualTo independent) exitWith { hint "What do you think you are doing?" };
-if(_robber distance _shop > 20) exitWith { hint "You need to be within 5 meters to rob this shop!" };
-if (vehicle player != _robber) exitWith { hint "Get out of your car!" };
+if(side _robber isEqualTo west) exitWith { hint "Com seu emprego garantido voce quer roubar ????" };
+if(side _robber isEqualTo independent) exitWith { hint "Com seu emprego garantido voce quer roubar ????" };
+if(_robber distance _shop > 20) exitWith { hint "Voce precisa estar dentro de 5 metros para roubar!" };
+if (vehicle player != _robber) exitWith { hint "Voce nao pode assaltar de dentro do carro" };
 
 if (currentWeapon _robber isEqualTo "") exitWith { hint "Você não pode roubar sem uma arma !" };
 
@@ -37,7 +37,7 @@ _cP = 0.01;
    _marker setMarkerColor "ColorRed";
    _marker setMarkerText "!AVISO! >>>>>> Roubo em progresso <<<<<< !AVISO!";
    _marker setMarkerType "mil_warning";
-[1,"Um posto de gasolina está sendo roubado !!!"] remoteExec ["life_fnc_broadcast",0]; // General broadcast alert to everyone, uncomment for testing, or if you want it anyway.
+[1,"!!!!!!!!!!!! ATENÇAO !!!!!!!!!!!! UM POSTO DE GASOLINA ESTÁ SENDO ROUBADO !!!!!!!!!!!!"] remoteExec ["life_fnc_broadcast",0]; // General broadcast alert to everyone, uncomment for testing, or if you want it anyway.
 
 while{true} do
 {
