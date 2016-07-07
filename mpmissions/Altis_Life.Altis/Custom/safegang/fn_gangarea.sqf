@@ -6,6 +6,9 @@
     Uma área para a gangue vip, caso outro jogador que não esteja nessa gang irá morrer!
 */
 
+//Chama o Scripts Macros para poder fazer a buscar no banco de dados!!!!
+#include "..\..\script_macros.hpp"
+
 private ["_eh1","_inArea","_zone1","_zone1dis","_dis"];
 
 ////////////////////////GANGZONE VIP////////////////////////////////////
@@ -38,11 +41,11 @@ switch (playerSide) do
 					_inArea = true;
 					
 					//Verifica se faz parte da gang
-					if ((FETCH_CONST(life_gangdonorid) >= 1)) then 
+					if (FETCH_CONST(life_gangdonorid) >= 1) then
 					{
-					hint parseText format["<t color='#00ff00'><t size='2'><t align='center'>Aviso Zona de Gangue<br/><br/><t align='center'><t size='1'><t color='#ffffff'>%1",_enterText];
-					player allowDamage false;
-					safezone = true;
+						hint parseText format["<t color='#00ff00'><t size='2'><t align='center'>Aviso Zona de Gangue<br/><br/><t align='center'><t size='1'><t color='#ffffff'>%1",_enterText];
+						player allowDamage false;
+						safezone = true;
 					}
 					else
 					{
@@ -86,11 +89,11 @@ switch (playerSide) do
 					_inArea = true;
 					
 					//Verifica se faz parte da gang
-					if ((FETCH_CONST(life_gangdonorid) >= 1)) then 
+					if (FETCH_CONST(life_gangdonorid) >= 1) then
 					{
-					hint parseText format["<t color='#00ff00'><t size='2'><t align='center'>Aviso Zona de Gangue<br/><br/><t align='center'><t size='1'><t color='#ffffff'>%1",_enterText];
-					player allowDamage false;
-					safezone = true;
+						hint parseText format["<t color='#00ff00'><t size='2'><t align='center'>Aviso Zona de Gangue<br/><br/><t align='center'><t size='1'><t color='#ffffff'>%1",_enterText];
+						player allowDamage false;
+						safezone = true;
 					}
 					else
 					{
@@ -134,11 +137,11 @@ switch (playerSide) do
 					_inArea = true;
 					
 					//Verifica se faz parte da gang
-					if ((FETCH_CONST(life_gangdonorid) >= 1)) then 
+					if (FETCH_CONST(life_gangdonorid) >= 1) then
 					{
-					hint parseText format["<t color='#00ff00'><t size='2'><t align='center'>Aviso Zona de Gangue<br/><br/><t align='center'><t size='1'><t color='#ffffff'>%1",_enterText];
-					player allowDamage false;
-					safezone = true;
+						hint parseText format["<t color='#00ff00'><t size='2'><t align='center'>Aviso Zona de Gangue<br/><br/><t align='center'><t size='1'><t color='#ffffff'>%1",_enterText];
+						player allowDamage false;
+						safezone = true;
 					}
 					else
 					{
