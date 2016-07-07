@@ -514,10 +514,10 @@ class VirtualItems {
 	class rock {
 		variable = "rock";
 		displayName = "STR_Item_Rock";
-		weight = 6;
+		weight = 5;
 		buyPrice = -1;
 		sellPrice = -1;
-		illegal = false;
+		illegal = true;
 		edible = -1;
 		icon = "icons\ico_rock.paa";
 	};
@@ -528,7 +528,7 @@ class VirtualItems {
 		weight = 5;
 		buyPrice = -1;
 		sellPrice = 2000;
-		illegal = false;
+		illegal = true;
 		edible = -1;
 		icon = "icons\ico_cement.paa";
 	};

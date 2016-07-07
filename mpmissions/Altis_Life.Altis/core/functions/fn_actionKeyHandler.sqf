@@ -56,7 +56,7 @@ if(isNull _curObject) exitWith {
 	};
 };
 
-if((_curObject isKindOf "B_supplyCrate_F" OR _curObject isKindOf "Box_IND_Grenades_F") && {player distance _curObject < 3} ) exitWith {
+if((_curTarget isKindOf "B_supplyCrate_F" OR _curTarget isKindOf "Box_IND_Grenades_F") && {player distance _curTarget < 3} ) exitWith {
 	if(alive _curObject) then {
 		[_curObject] call life_fnc_containerMenu;
 	};
