@@ -7,6 +7,7 @@ StartProgress = false;
 [] execVM "Custom\gas\gasmask.sqf";
 [] execVM "Custom\gas\teargasGL.sqf";
 [] execVM "Custom\lift\init.sqf";
+[] execVM "Custom\safegang\fn_gangarea.sqf";
 
 disableRemoteSensors true;
 
