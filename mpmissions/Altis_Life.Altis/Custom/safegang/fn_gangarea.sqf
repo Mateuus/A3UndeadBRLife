@@ -64,7 +64,7 @@ switch (playerSide) do
 				};
 				
 				//SAIR DA ZONA DA GANG
-				if (((_zone1 distance player > _zone1dis) && (_inArea)) then
+				if (((_zone1 distance player > _zone1dis)) && (_inArea)) then
 				{
 					_inArea = false;
 					hint parseText format["<t color='#ffff00'><t size='2'><t align='center'>Aviso Zona de Gangue<br/><br/><t align='center'><t size='1'><t color='#ffffff'>%1",_leaveText];
@@ -116,7 +116,7 @@ switch (playerSide) do
 					
 				};
 				//SAIR DA ZONA DA GANG
-				if (((_zone1 distance player > _zone1dis) && (_inArea)) then
+				if (((_zone1 distance player > _zone1dis)) && (_inArea)) then
 				{
 					player removeEventHandler ["fired", _eh1];
 					_inArea = false;
@@ -163,7 +163,7 @@ switch (playerSide) do
 					imAuto = false;
 				};
 				//SAIR DA ZONA DA GANG
-				if (((_zone1 distance player > _zone1dis) && (_inArea)) then
+				if (((_zone1 distance player > _zone1dis)) && (_inArea)) then
 				{
 					_inArea = false;
 					hint parseText format["<t color='#ffff00'><t size='2'><t align='center'>Aviso Zona de Gangue<br/><br/><t align='center'><t size='1'><t color='#ffffff'>%1",_leaveText];
