@@ -691,6 +691,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Sanic", "civ", {
                 "textures\Civ\Vehicles\HatchSANIC.jpg"
             } },
+			{ "igor", "civ", {
+                "textures\Vip\Vehicles\gangue\igor.jpg"
+            } },
 			{ "Martini", "civ", {
                 "textures\Civ\Vehicles\mcreafordwrc.paa"
             } },
@@ -915,11 +918,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
 	                "textures\Vip\Vehicles\hunter\donator_hunter_front.paa",
 					"textures\Vip\Vehicles\hunter\donator_hunter_hinten.paa"
 			} },
-			{ "Hunter Assassino de COP VIP", "civ", {
-					"textures\Vip\Vehicles\hunter\mrap_01_base_co.jpg",
-	                "textures\Vip\Vehicles\hunter\mrap_01_adds_co.jpg",
-
-			} },
 			{ "Hunter Unicórnio VIP", "civ", {
 	                "textures\Vip\Vehicles\hunter\unicorn_hunter_teil1.paa",
 					"textures\Vip\Vehicles\hunter\unicorn_hunter_teil2.paa"
@@ -927,6 +925,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
 			{ "Hunter Caveira VIP", "civ", {
 	                "textures\Vip\Vehicles\hunter\graywolfhunter_1.jpg",
 					"textures\Vip\Vehicles\hunter\graywolfhunter_2.jpg"
+			} },
+			{ "Hunter EXE", "civ", {
+	                "textures\Vip\Vehicles\hunter\exe1.jpg",
+					"textures\Vip\Vehicles\hunter\exe2.jpg"
 			} },
 			{ "Police", "cop", {
                 "textures\Cop\Vehicles\Hunter1.jpg",
