@@ -23,10 +23,8 @@ grpPlayer SVAR ["gang_bank",_gFund,true];
 
 if(life_HC_isActive) then {
 	[1,grpPlayer] remoteExecCall ["HC_fnc_updateGang",HC_Life];
-	sleep 0.2;
 } else {
 	[1,grpPlayer] remoteExecCall ["TON_fnc_updateGang",RSERV];
-	sleep 0.2;
 };
 
 hint format[localize "STR_ATM_DepositSuccessG",[_value] call life_fnc_numberText];
