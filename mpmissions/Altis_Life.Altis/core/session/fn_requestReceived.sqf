@@ -40,11 +40,7 @@ if(EQUAL(LIFE_SETTINGS(getNumber,"donor_level"),1)) then {
 } else {
 	CONST(life_donorlevel,0);
 };
-if(EQUAL(LIFE_SETTINGS(getNumber,"gangdonorid"),1)) then {
-	CONST(life_gangdonorid,parseNumber (SEL(_this,13)));
-} else {
-	CONST(life_gangdonorid,0);
-};
+
 
 //Loop through licenses
 if(count (SEL(_this,6)) > 0) then {
@@ -113,6 +109,12 @@ switch(playerSide) do {
 
 if(count (SEL(_this,15)) > 0) then {
 	{life_vehicles pushBack _x;} forEach (SEL(_this,15));
+};
+
+if(EQUAL(LIFE_SETTINGS(getNumber,"gangdonorid"),1)) then {
+	CONST(life_gangdonorid,parseNumber (SEL(_this,16)));
+} else {
+	CONST(life_gangdonorid,0);
 };
 
 life_session_completed = true;
