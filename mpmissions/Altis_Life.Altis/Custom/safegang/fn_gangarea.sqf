@@ -1,13 +1,11 @@
+#include "..\..\script_macros.hpp"
 /*
     File: fn_gangarea.sqf
     Author: Mateus "Mateuus" Rodrigues
 
-    Description:
+    Description: #145984
     Uma área para a gangue vip, caso outro jogador que não esteja nessa gang irá morrer!
 */
-
-//Chama o Scripts Macros para poder fazer a buscar no banco de dados!!!!
-#include "..\..\script_macros.hpp"
 
 private ["_eh1","_inArea","_zone1","_zone1dis","_dis"];
 
@@ -15,8 +13,6 @@ private ["_eh1","_inArea","_zone1","_zone1dis","_dis"];
 _zone1 = getMarkerPos "safezone_gang_1"; // MARKERS FOR GANGZONE
 _zone1dis = 70;
 ///////////////////////////////////////////////////////////////////////
-
-
 
 _dis = 350;
 _inArea = false;
@@ -35,39 +31,17 @@ switch (playerSide) do
 		{
 			if (alive player) then
 			{
-				//ENTRA NA ZONA DA GANG
 				if (((_zone1 distance player < _zone1dis)) && (!_inArea)) then
 				{
 					_inArea = true;
-					
-					//Verifica se faz parte da gang
-					if (FETCH_CONST(life_gangdonorid) >= 1) then
-					{
-						hint parseText format["<t color='#00ff00'><t size='2'><t align='center'>Aviso Zona de Gangue<br/><br/><t align='center'><t size='1'><t color='#ffffff'>%1",_enterText];
-						player allowDamage false;
-						safezone = true;
-					}
-					else
-					{
-						//Avisa que o player não tem permissão de está nessa área
-						hint parseText format["<t color='#00ff00'><t size='2'><t align='center'>Aviso Saia Imediatamente<br/><br/><t align='center'><t size='1'><t color='#ffffff'>%1",_intruText];
-						//Espera 5 segundos para enviar o segundo aviso!
-						sleep 5;
-						hint parseText format["<t color='#00ff00'><t size='2'><t align='center'>Aviso Final!!!<br/><br/><t align='center'><t size='1'><t color='#ffffff'>%1",_intruAvisoText];
-						//Espera 10 segundos para Mata o Player
-						sleep 10;
-						//Mata o Player
-					    player setDamage 1; 
-						//desativa a área ao morrer
-					   _inArea = false; 	
-					};
+					hint parseText format["<t color='#00ff00'><t size='2'><t align='center'>Aviso Zona Segura<br/><br/><t align='center'><t size='1'><t color='#ffffff'>%1",_enterText];
+					player allowDamage false;
+					safezone = true;
 				};
-				
-				//SAIR DA ZONA DA GANG
 				if (((_zone1 distance player > _zone1dis)) && (_inArea)) then
 				{
 					_inArea = false;
-					hint parseText format["<t color='#ffff00'><t size='2'><t align='center'>Aviso Zona de Gangue<br/><br/><t align='center'><t size='1'><t color='#ffffff'>%1",_leaveText];
+					hint parseText format["<t color='#ffff00'><t size='2'><t align='center'>Aviso Zona Segura<br/><br/><t align='center'><t size='1'><t color='#ffffff'>%1",_leaveText];
 					player allowDamage true;
 					safezone = false;
 				};
@@ -82,40 +56,37 @@ switch (playerSide) do
 		{
 			if (alive player) then
 			{
-				//ENTRA NA ZONA DA GANG
-				if (((_zone1 distance player < _zone1dis)) && (!_inArea)) then
-				{		
+			  if (((_zone1 distance player < _zone1dis)) && (!_inArea)) then
+			  {
+				if (FETCH_CONST(life_gangdonorid) >= 1) then
+				{
+					//Acesso Permitido
 					_eh1 = player addEventHandler ["fired", {deleteVehicle (_this select 6);}];
 					_inArea = true;
-					
-					//Verifica se faz parte da gang
-					if (FETCH_CONST(life_gangdonorid) >= 1) then
-					{
-						hint parseText format["<t color='#00ff00'><t size='2'><t align='center'>Aviso Zona de Gangue<br/><br/><t align='center'><t size='1'><t color='#ffffff'>%1",_enterText];
-						player allowDamage false;
-						safezone = true;
-					}
-					else
-					{
-						//Avisa que o player não tem permissão de está nessa área
-						hint parseText format["<t color='#00ff00'><t size='2'><t align='center'>Aviso Saia Imediatamente<br/><br/><t align='center'><t size='1'><t color='#ffffff'>%1",_intruText];
-						//Espera 5 segundos para enviar o segundo aviso!
-						sleep 5;
-						hint parseText format["<t color='#00ff00'><t size='2'><t align='center'>Aviso Final!!!<br/><br/><t align='center'><t size='1'><t color='#ffffff'>%1",_intruAvisoText];
-						//Espera 10 segundos para Mata o Player
-						sleep 10;
-						//verificar se ele ainda está dentro da aréa
-					  if(_inArea = true) then{
-						 //Mata o Player
-						  player setDamage 1; 
-						 //Tira Player da Aréa se morrer
-						  _inArea = false;
-					  };	
+					hint parseText format["<t color='#00ff00'><t size='2'><t align='center'>Aviso Zona de Gangue<br/><br/><t align='center'><t size='1'><t color='#ffffff'>%1",_enterText];
+					player allowDamage false;
+					safezone = true;
+				}
+				else
+				{
+				//Acesso Negado
+					_eh1 = player addEventHandler ["fired", {deleteVehicle (_this select 6);}];
+					_inArea = true;
+					hint parseText format["<t color='#00ff00'><t size='2'><t align='center'>Aviso Saia Imediatamente<br/><br/><t align='center'><t size='1'><t color='#ffffff'>%1",_intruText];
+					//Espera 5 segundos para enviar o segundo aviso!
+					sleep 5;
+					hint parseText format["<t color='#00ff00'><t size='2'><t align='center'>Aviso Final!!!<br/><br/><t align='center'><t size='1'><t color='#ffffff'>%1",_intruAvisoText];
+					//Espera 10 segundos para Mata o Player
+					sleep 10;
+					//verificar se ele ainda está dentro da aréa
+					if(_inArea = true) then{
+						player setDamage 1; 
+						_inArea = false;
 					};
-					
-					
+					player allowDamage true;
+					safezone = false;
 				};
-				//SAIR DA ZONA DA GANG
+			  };
 				if (((_zone1 distance player > _zone1dis)) && (_inArea)) then
 				{
 					player removeEventHandler ["fired", _eh1];
@@ -124,6 +95,7 @@ switch (playerSide) do
 					player allowDamage true;
 					safezone = false;
 				};
+
 			};
 		};
 	};
@@ -137,36 +109,15 @@ switch (playerSide) do
 				if (((_zone1 distance player < _zone1dis)) && (!_inArea)) then
 				{
 					_inArea = true;
-					
-					//Verifica se faz parte da gang
-					if (FETCH_CONST(life_gangdonorid) >= 1) then
-					{
-						hint parseText format["<t color='#00ff00'><t size='2'><t align='center'>Aviso Zona de Gangue<br/><br/><t align='center'><t size='1'><t color='#ffffff'>%1",_enterText];
-						player allowDamage false;
-						safezone = true;
-					}
-					else
-					{
-						//Avisa que o player não tem permissão de está nessa área
-						hint parseText format["<t color='#00ff00'><t size='2'><t align='center'>Aviso Saia Imediatamente<br/><br/><t align='center'><t size='1'><t color='#ffffff'>%1",_intruText];
-						//Espera 5 segundos para enviar o segundo aviso!
-						sleep 5;
-						hint parseText format["<t color='#00ff00'><t size='2'><t align='center'>Aviso Final!!!<br/><br/><t align='center'><t size='1'><t color='#ffffff'>%1",_intruAvisoText];
-						//Espera 10 segundos para Mata o Player
-						sleep 10;
-						//Mata o Player
-					    player setDamage 1; 
-						//desativa a área ao morrer
-					   _inArea = false; 	
-					};
-					
+					hint parseText format["<t color='#00ff00'><t size='2'><t align='center'>Aviso Zona Segura<br/><br/><t align='center'><t size='1'><t color='#ffffff'>%1",_enterText];
+					player allowDamage false;
+					safezone = true;
 					imAuto = false;
 				};
-				//SAIR DA ZONA DA GANG
 				if (((_zone1 distance player > _zone1dis)) && (_inArea)) then
 				{
 					_inArea = false;
-					hint parseText format["<t color='#ffff00'><t size='2'><t align='center'>Aviso Zona de Gangue<br/><br/><t align='center'><t size='1'><t color='#ffffff'>%1",_leaveText];
+					hint parseText format["<t color='#ffff00'><t size='2'><t align='center'>Aviso Zona Segura<br/><br/><t align='center'><t size='1'><t color='#ffffff'>%1",_leaveText];
 					player allowDamage true;
 					safezone = false;
 					imAuto = true;
