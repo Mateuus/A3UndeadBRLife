@@ -40,7 +40,6 @@ if(EQUAL(LIFE_SETTINGS(getNumber,"donor_level"),1)) then {
 } else {
 	CONST(life_donorlevel,0);
 };
-
 if(EQUAL(LIFE_SETTINGS(getNumber,"gangdonorid"),1)) then {
 	CONST(life_gangdonorid,parseNumber (SEL(_this,13)));
 } else {
@@ -72,7 +71,7 @@ switch(playerSide) do {
 		life_is_arrested = SEL(_this,7);
 		CONST(life_coplevel, 0);
 		CONST(life_medicLevel, 0);
-		life_houses = SEL(_this,14);
+		life_houses = SEL(_this,13);
 		if(EQUAL(LIFE_SETTINGS(getNumber,"save_playerStats"),1)) then {
 			life_hunger = SEL(SEL(_this,9),0);
 			life_thirst = SEL(SEL(_this,9),1);
@@ -94,7 +93,7 @@ switch(playerSide) do {
 			life_vehicles pushBack _house;
 		} forEach life_houses;
 
-		life_gangData = SEL(_this,15);
+		life_gangData = SEL(_this,14);
 		if(!(EQUAL(count life_gangData,0))) then {
 			[] spawn life_fnc_initGang;
 		};
@@ -112,8 +111,8 @@ switch(playerSide) do {
 	};
 };
 
-if(count (SEL(_this,16)) > 0) then {
-	{life_vehicles pushBack _x;} forEach (SEL(_this,16));
+if(count (SEL(_this,15)) > 0) then {
+	{life_vehicles pushBack _x;} forEach (SEL(_this,15));
 };
 
 life_session_completed = true;

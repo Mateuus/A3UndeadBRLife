@@ -6592,25 +6592,25 @@
 		<Original>Saco de sequestro</Original>
 		</Key>
 		<Key ID="STR_Item_Rock">
-			<Original>LSD nao processada</Original>
+			<Original>Rock</Original>
 			<Czech>Skála</Czech>
 			<Spanish>Piedra</Spanish>
 			<Russian></Russian>
 			<German>Stein</German>
 			<French>Pierre</French>
 			<Italian>Roccia</Italian>
-			<Portuguese>LSD nao processada</Portuguese>
+			<Portuguese>Pedra</Portuguese>
 			<Polish>Skała</Polish>
 		</Key>
 		<Key ID="STR_Item_CementBag">
-			<Original>LSD processada</Original>
+			<Original>Cement Bag</Original>
 			<Czech>cement Bag</Czech>
 			<Spanish>Bolsa de Cemento</Spanish>
 			<Russian></Russian>
 			<German>Zement Sack</German>
 			<French>Sac de ciment</French>
 			<Italian>Sacco di Cemento</Italian>
-			<Portuguese>LSD processada</Portuguese>
+			<Portuguese>Saco de Cimento</Portuguese>
 			<Polish>Worek cementu</Polish>
 		</Key>
 		<Key ID="STR_Item_GoldBar">
@@ -7145,7 +7145,7 @@
 			<Polish>Nie patrzysz w stronę drzwi.</Polish>
 		</Key>
 		<Key ID="STR_ISTR_Bolt_AlertFed">
-			<Original>!!!!! A RESERVA FEDERAL ESTÁ SENDO ROUBADA !!!!!!</Original>
+			<Original>!!!!! SOMEONE IS BREAKING INTO THE FEDERAL RESERVE !!!!!!</Original>
 			<Czech>!!!!! Někdo vloupání do Federálního rezervního systému !!!!!!</Czech>
 			<Spanish>!!!!! LA RESERVA FEDERAL ESTA SIENDO ASALTADA !!!!!!</Spanish>
 			<Russian></Russian>
@@ -9224,14 +9224,6 @@
 		</Key>
 	</Package>
 	<Package name="Markers_names">
-		<Key ID="STR_MAR_Gang_1">
-			<Original>Aréa Gang VIP 1</Original>
-			<Portuguese>Aréa Gang VIP 1</Portuguese>
-		</Key>
-		<Key ID="STR_MAR_Gang_2">
-			<Original>Aréa Gang VIP 2</Original>
-			<Portuguese>Aréa Gang VIP 2</Portuguese>
-		</Key>
 		<Key ID="STR_MAR_Fish_Market">
 			<Original>Fish Market</Original>
 			<Czech>Rybí trh</Czech>

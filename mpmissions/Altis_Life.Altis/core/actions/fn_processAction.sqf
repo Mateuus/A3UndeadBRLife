@@ -46,18 +46,11 @@ _totalConversions = [];
 
 if (_exit) exitWith {life_is_processing = false; hint localize "STR_NOTF_NotEnoughItemProcess"; life_action_inUse = false;};
 
-
-if ((_vendor in [coke_processor_1]) && (FETCH_CONST(life_gangdonorid) >= 1)) then {
-    _hasLicense = true;
-};
-
-
 if (_vendor in [mari_processor,coke_processor,heroin_processor]) then {
     _hasLicense = true;
 } else {
     _hasLicense = LICENSE_VALUE(_type,"civ");
 };
-
 
 _cost = _cost * (count _oldItem);
 

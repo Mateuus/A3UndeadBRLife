@@ -172,12 +172,7 @@ case 19: {
 	//T Key (Trunk)
 	case 20: {
 		if(!_alt && !_ctrlKey && !dialog && {!life_action_inUse}) then {
-		  //if(vehicle player != player && alive vehicle player) then {
-			
-			
-			//if(vehicle player != player && ((driver vehicle player) == player)} && alive vehicle player) then {
-			
-			if((driver vehicle player) == player && alive vehicle player) then {
+			if(vehicle player != player && alive vehicle player) then {
 				if((vehicle player) in life_vehicles) then {
 					[vehicle player] spawn life_fnc_openInventory;
 				};

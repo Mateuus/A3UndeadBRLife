@@ -491,21 +491,7 @@ class Clothing {
 			{ "G_Lady_Dark", "", 500, { "life_donorlevel", "SCALAR", 3 } },
 			{ "G_Lady_Blue", "", 500, { "life_donorlevel", "SCALAR", 3 } },
 			{ "G_Lowprofile", "", 300, { "life_donorlevel", "SCALAR", 3 } },
-			{ "G_Combat", "", 5500, { "life_donorlevel", "SCALAR", 3 } },
-            { "G_Combat", "", 125, { "life_donorlevel", "SCALAR", 3 } },
-            { "G_Bandanna_aviator", "", 150, { "life_donorlevel", "SCALAR", 3 } },
-            { "G_Bandanna_beast", "", 150, { "life_donorlevel", "SCALAR", 3 } },
-            { "G_Bandanna_blk", "", 150, { "life_donorlevel", "SCALAR", 3 } },
-            { "G_Bandanna_khk", "", 150, { "life_donorlevel", "SCALAR", 3 } },
-            { "G_Bandanna_oli", "", 150, { "life_donorlevel", "SCALAR", 3 } },
-            { "G_Bandanna_shades", "", 150, { "life_donorlevel", "SCALAR", 3 } },
-            { "G_Bandanna_sport", "", 150, { "life_donorlevel", "SCALAR", 3 } },
-			{ "G_Balaclava_blk", "", 150, { "life_donorlevel", "SCALAR", 3 } },
-			{ "G_Balaclava_combat", "", 150, { "life_donorlevel", "SCALAR", 3 } },
-			{ "G_Balaclava_lowprofile", "", 150, { "life_donorlevel", "SCALAR", 3 } },
-			{ "G_Balaclava_oli", "", 150, { "life_donorlevel", "SCALAR", 3 } },
-			{ "G_Bandanna_shades", "", 150, { "life_donorlevel", "SCALAR", 3 } },
-            { "G_Bandanna_tan", "", 150, { "life_donorlevel", "SCALAR", 3 } }
+			{ "G_Combat", "", 5500, { "life_donorlevel", "SCALAR", 3 } }
         };
         vests[] = {
             { "NONE", "Remove Vest", 0, { "life_donorlevel", "SCALAR", 3 } },
@@ -591,21 +577,7 @@ class Clothing {
 			{ "G_Lady_Dark", "", 500, { "life_donorlevel", "SCALAR", 4 } },
 			{ "G_Lady_Blue", "", 500, { "life_donorlevel", "SCALAR", 4 } },
 			{ "G_Lowprofile", "", 300, { "life_donorlevel", "SCALAR", 4 } },
-			{ "G_Combat", "", 5500, { "life_donorlevel", "SCALAR", 4 } },
-            { "G_Combat", "", 125, { "life_donorlevel", "SCALAR", 4 } },
-            { "G_Bandanna_aviator", "", 150, { "life_donorlevel", "SCALAR", 4 } },
-            { "G_Bandanna_beast", "", 150, { "life_donorlevel", "SCALAR", 4 } },
-            { "G_Bandanna_blk", "", 150, { "life_donorlevel", "SCALAR", 4 } },
-            { "G_Bandanna_khk", "", 150, { "life_donorlevel", "SCALAR", 4 } },
-            { "G_Bandanna_oli", "", 150, { "life_donorlevel", "SCALAR", 4 } },
-            { "G_Bandanna_shades", "", 150, { "life_donorlevel", "SCALAR", 4 } },
-            { "G_Bandanna_sport", "", 150, { "life_donorlevel", "SCALAR", 4 } },
-			{ "G_Balaclava_blk", "", 150, { "life_donorlevel", "SCALAR", 4 } },
-			{ "G_Balaclava_combat", "", 150, { "life_donorlevel", "SCALAR", 4 } },
-			{ "G_Balaclava_lowprofile", "", 150, { "life_donorlevel", "SCALAR", 4 } },
-			{ "G_Balaclava_oli", "", 150, { "life_donorlevel", "SCALAR", 4 } },
-			{ "G_Bandanna_shades", "", 150, { "life_donorlevel", "SCALAR", 4 } },
-            { "G_Bandanna_tan", "", 150, { "life_donorlevel", "SCALAR", 4 } }
+			{ "G_Combat", "", 5500, { "life_donorlevel", "SCALAR", 4 } }
         };
         vests[] = {
 			{ "NONE", "Remove Vest", 0, { "life_donorlevel", "SCALAR", 4 } },
@@ -678,21 +650,7 @@ class Clothing {
 			{ "G_Lady_Dark", "", 500, { "life_donorlevel", "SCALAR", 5 } },
 			{ "G_Lady_Blue", "", 500, { "life_donorlevel", "SCALAR", 5 } },
 			{ "G_Lowprofile", "", 300, { "life_donorlevel", "SCALAR", 5 } },
-			{ "G_Combat", "", 5500, { "life_donorlevel", "SCALAR", 5 } },
-            { "G_Combat", "", 125, { "life_donorlevel", "SCALAR", 5 } },
-            { "G_Bandanna_aviator", "", 150, { "life_donorlevel", "SCALAR", 5 } },
-            { "G_Bandanna_beast", "", 150, { "life_donorlevel", "SCALAR", 5 } },
-            { "G_Bandanna_blk", "", 150, { "life_donorlevel", "SCALAR", 5 } },
-            { "G_Bandanna_khk", "", 150, { "life_donorlevel", "SCALAR", 5 } },
-            { "G_Bandanna_oli", "", 150, { "life_donorlevel", "SCALAR", 5 } },
-            { "G_Bandanna_shades", "", 150, { "life_donorlevel", "SCALAR", 5 } },
-            { "G_Bandanna_sport", "", 150, { "life_donorlevel", "SCALAR", 5 } },
-			{ "G_Balaclava_blk", "", 150, { "life_donorlevel", "SCALAR", 5 } },
-			{ "G_Balaclava_combat", "", 150, { "life_donorlevel", "SCALAR", 5 } },
-			{ "G_Balaclava_lowprofile", "", 150, { "life_donorlevel", "SCALAR", 5 } },
-			{ "G_Balaclava_oli", "", 150, { "life_donorlevel", "SCALAR", 5 } },
-			{ "G_Bandanna_shades", "", 150, { "life_donorlevel", "SCALAR", 5 } },
-            { "G_Bandanna_tan", "", 150, { "life_donorlevel", "SCALAR", 5 } }
+			{ "G_Combat", "", 5500, { "life_donorlevel", "SCALAR", 5 } }
         };
 		vests[] = {
             { "NONE", "Remove Vest", 0, { "life_donorlevel", "SCALAR", 5 } },
@@ -753,7 +711,9 @@ class Clothing {
 			{ "U_O_SpecopsUniform_blk", "", 17500, { "", "", -1 } },
 			{ "U_B_CTRG_3", "", 17500, { "", "", -1 } },
 			{ "U_I_CombatUniform_shortsleeve", "", 17500, { "", "", -1 } },
-			{ "U_IG_leader", "", 19000, { "", "", -1 } }
+			{ "U_IG_leader", "", 19000, { "", "", -1 } },
+			{ "U_O_GhillieSuit", "", 60000, { "", "", -1 } },
+			{ "U_B_FullGhillie_lsh", "", 80000, { "", "", -1 } }
 
         };
         headgear[] = {
@@ -786,19 +746,14 @@ class Clothing {
             { "G_Bandanna_oli", "", 150, { "", "", -1 } },
             { "G_Bandanna_shades", "", 150, { "", "", -1 } },
             { "G_Bandanna_sport", "", 150, { "", "", -1 } },
-			{ "G_Balaclava_blk", "", 150, { "", "", -1 } },
-			{ "G_Balaclava_combat", "", 150, { "", "", -1 } },
-			{ "G_Balaclava_lowprofile", "", 150, { "", "", -1 } },
-			{ "G_Balaclava_oli", "", 150, { "", "", -1 } },
-			{ "G_Bandanna_shades", "", 150, { "", "", -1 } },
             { "G_Bandanna_tan", "", 150, { "", "", -1 } }
         };
         vests[] = {
             { "NONE", "Remove Vest", 0, { "", "", -1 } },
-            { "V_BandollierB_cbr", "", 14500, { "", "", -1 } },
-            { "V_HarnessO_brn", "", 17500, { "", "", -1 } },
-            { "V_TacVest_khk", "", 25500, { "", "", -1 } },
-            { "V_PlateCarrierL_CTRG", "", 45000, { "", "", -1 } },
+            { "V_BandollierB_cbr", "", 4500, { "", "", -1 } },
+            { "V_HarnessO_brn", "", 7500, { "", "", -1 } },
+            { "V_TacVest_khk", "", 12500, { "", "", -1 } },
+            { "V_PlateCarrierL_CTRG", "", 20000, { "", "", -1 } },
             { "V_HarnessOGL_brn", "Colete Suicida", 600000, { "", "", -1 } }
         };
         backpacks[] = {
