@@ -7,7 +7,7 @@
     Uma área para a gangue vip, caso outro jogador que não esteja nessa gang irá morrer!
 */
 
-private ["_eh1","_inArea","_zone1","_zone1dis","_dis"];
+private ["_eh1","_inArea","_zone1","_zone1dis","_dis" ];
 
 ////////////////////////GANGZONE VIP////////////////////////////////////
 _zone1 = getMarkerPos "safezone_gang_1"; // MARKERS FOR GANGZONE
@@ -69,20 +69,33 @@ switch (playerSide) do
 				}
 				else
 				{
-				//Acesso Negado
+					//Acesso Negado
 					_eh1 = player addEventHandler ["fired", {deleteVehicle (_this select 6);}];
 					_inArea = true;
 					hint parseText format["<t color='#00ff00'><t size='2'><t align='center'>Aviso Saia Imediatamente<br/><br/><t align='center'><t size='1'><t color='#ffffff'>%1",_intruText];
+					
 					//Espera 5 segundos para enviar o segundo aviso!
 					sleep 5;
 					hint parseText format["<t color='#00ff00'><t size='2'><t align='center'>Aviso Final!!!<br/><br/><t align='center'><t size='1'><t color='#ffffff'>%1",_intruAvisoText];
+					
 					//Espera 10 segundos para Mata o Player
 					sleep 10;
+					
 					//verificar se ele ainda está dentro da aréa
-					if(_inArea = true) then{
-						player setDamage 1; 
+					if (((_zone1 distance player > _zone1dis)) && (_inArea)) then
+					{
+						player removeEventHandler ["fired", _eh1];
 						_inArea = false;
+						hint parseText format["<t color='#ffff00'><t size='2'><t align='center'>Aviso Zona de Gangue<br/><br/><t align='center'><t size='1'><t color='#ffffff'>%1",_leaveText];
+						player allowDamage true;
+						safezone = false;
+					}
+					else
+					{
+						hint "Você Morreu!!! falta de aviso não foi!!!";
+						player setDamage 1;
 					};
+					
 					player allowDamage true;
 					safezone = false;
 				};
