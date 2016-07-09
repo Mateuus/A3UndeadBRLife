@@ -111,7 +111,7 @@ if(count (SEL(_this,15)) > 0) then {
 	{life_vehicles pushBack _x;} forEach (SEL(_this,15));
 };
 
-if(EQUAL(LIFE_SETTINGS(getNumber,"gangdonorid"),1)) then {
+if(EQUAL(LIFE_SETTINGS(getNumber,"gang_donorid"),1)) then {
 	CONST(life_gangdonorid,parseNumber (SEL(_this,16)));
 } else {
 	CONST(life_gangdonorid,0);
