@@ -66,6 +66,29 @@ _masks = LIFE_SETTINGS(getArray,"clothing_masks");
 						default {"Civil"};
 					}]};
 					
+					case (!isNil {(_x GVAR "gangrank")} && playerSide == civilian): {format["<img image='%1' size='1.5'></img> <t size='1.35'>%2</t><br/><t size='0.8'>[%3]</t>",
+					switch ((_x GVAR "gangrank")) do {		
+					case 1: {"icons\ranks\vip\bronze.paa"};
+					case 2: {"icons\ranks\vip\silver.paa"};
+					case 3: {"icons\ranks\vip\gold.paa"};
+					case 4: {"icons\ranks\vip\platinum.paa"};
+					case 5: {"icons\ranks\vip\diamante.paa"};
+
+					default {"icons\ranks\vip\civil.paa"};
+					},
+
+					_x GVAR ["realname",name _x],
+					
+					switch ((_x GVAR "gangrank")) do {
+						case 1: {"GANG ExE"};
+						case 2: {"GANG MALANDRAMENTE"};
+						case 3: {"VIP Gold"};
+						case 4: {"VIP Platinum"};
+						case 5: {"VIP Diamante"};
+						
+						default {"Civil"};
+					}]};
+					
 					case (side _x isEqualTo west && {!isNil {_x GVAR "rank"}}): {format["<img image='%1' size='1.5'></img> <t size='1.35'>%2</t><br/><t size='0.8'>[%3]</t>",switch ((_x GVAR "rank")) do {
 					case 1: {"icons\ranks\cop\cadet.paa"};
 					case 2: {"icons\ranks\cop\soldado.paa"};

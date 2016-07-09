@@ -43,7 +43,19 @@ if(life_is_alive && !life_is_arrested) then {
 	};
 };
 
-player setVariable["viprank",(FETCH_CONST(life_donorlevel)),true];
+	if((FETCH_CONST(life_donorlevel) >= 1) && (FETCH_CONST(life_gangdonorid) >= 1)) then 
+	{
+		player setVariable["gangrank",(FETCH_CONST(life_gangdonorid)),true];
+	};
+	if((FETCH_CONST(life_donorlevel) == 0) && (FETCH_CONST(life_gangdonorid) != 0)) then 
+	{
+		player setVariable["gangrank",(FETCH_CONST(life_gangdonorid)),true];
+	};
+	if((FETCH_CONST(life_donorlevel) != 0) && (FETCH_CONST(life_gangdonorid) == 0)) then 
+	{
+		player setVariable["viprank",(FETCH_CONST(life_donorlevel)),true];
+	};
+
 
 //Pagamento VIP
 switch (FETCH_CONST(life_donorlevel)) do
