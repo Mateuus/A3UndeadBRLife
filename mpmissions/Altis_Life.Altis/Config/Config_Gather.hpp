@@ -70,14 +70,14 @@ class CfgGather
 
 		class steel
 		{
-			amount = 2;
+			amount = 1;
 			zones[] = { "steel_1" };
 			item = "";
 		};
 
 		class wool
 		{
-			amount = 3;
+			amount = 1;
 			zones[] = { "wool_1" };
 			item = "";
 		};

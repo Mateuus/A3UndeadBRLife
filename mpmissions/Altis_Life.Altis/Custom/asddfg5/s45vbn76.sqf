@@ -23,8 +23,8 @@ _zone9dis = 125;
 _dis = 350;
 _inArea = false;
 
-_enterText = "You are entering a safezone!";
-_leaveText = "You are leaving a safezone!";
+_enterText = "Voce esta entrando em uma zona segura!";
+_leaveText = "Voce esta saindo de uma zona segura!";
 
 switch (playerSide) do
 {

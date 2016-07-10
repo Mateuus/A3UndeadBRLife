@@ -13,7 +13,7 @@ class VirtualShops {
 		side = "civ";
 		license = "";
 		level[] = { "", "", -1, "" };
-		items[] = { "waterBottle", "rabbit", "apple", "redgull", "beer", "whiskey", "moonshine", "tbacon", "pickaxe", "woodaxe", "toolkit", "fuelFull", "steel", "wool", "rubberU", "peach", "goldcoin", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw", "nitro" };
+		items[] = { "waterBottle", "rabbit", "apple", "redgull", "beer", "whiskey", "moonshine", "tbacon", "pickaxe", "woodaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "nitro" };
 	};
 
 	class plank {
@@ -37,7 +37,7 @@ class VirtualShops {
 		side = "civ";
 		license = "rebel";
 		level[] = { "", "", -1, "" };
-		items[] = { "waterBottle", "rabbit", "apple", "redgull", "beer", "whiskey", "moonshine", "tbacon", "lockpick", "gpstracker", "blindfold", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "zipties", "knife", "pliers", "barrel", "butt", "kidney" };
+		items[] = { "waterBottle", "rabbit", "apple", "redgull", "beer", "whiskey", "moonshine", "tbacon", "lockpick", "gpstracker", "blindfold", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "zipties", "knife", "pliers", "barrel", "butt" };
 	};
 
 	class gang {
@@ -273,7 +273,7 @@ class VirtualItems {
 		displayName = "STR_Item_GoldBar";
 		weight = 12;
 		buyPrice = -1;
-		sellPrice = 325000;
+		sellPrice = 60000;
 		illegal = true;
 		edible = -1;
 		icon = "icons\ico_goldBar.paa";
@@ -327,7 +327,7 @@ class VirtualItems {
 		variable = "zipties";
 		displayName = "STR_Item_zipties";
 		weight = 4;
-		buyPrice = 10000;
+		buyPrice = 15000;
 		sellPrice = -1;
 		illegal = true;
 		edible = -1;
@@ -537,7 +537,7 @@ class VirtualItems {
 	class heroin_unprocessed {
 		variable = "heroinUnprocessed";
 		displayName = "STR_Item_HeroinU";
-		weight = 9;
+		weight = 8;
 		buyPrice = -1;
 		sellPrice = -1;
 		illegal = true;
@@ -560,7 +560,7 @@ class VirtualItems {
 	class cannabis {
 		variable = "cannabis";
 		displayName = "STR_Item_Cannabis";
-		weight = 8;
+		weight = 7;
 		buyPrice = -1;
 		sellPrice = -1;
 		illegal = true;
@@ -572,7 +572,7 @@ class VirtualItems {
 	class marijuana {
 		variable = "marijuana";
 		displayName = "STR_Item_Marijuana";
-		weight = 7;
+		weight = 6;
 		buyPrice = 8200;
 		sellPrice = 3800;
 		illegal = true;

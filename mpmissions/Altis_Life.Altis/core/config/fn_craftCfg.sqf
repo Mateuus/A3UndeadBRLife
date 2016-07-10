@@ -30,7 +30,6 @@ switch(_craft) do
 				["hgun_Pistol_heavy_02_F", ["steel",9,"barrel",1,"trigger",1]],
 				["arifle_TRG21_F", ["steel",15,"barrel",2,"trigger",1,"butt",2,"sight",1]],
 				["LMG_Zafir_F", ["steel",35,"barrel",3,"trigger",1,"butt",2,"sight",2]],
-				["srifle_LRR_F", ["steel",45,"barrel",5,"trigger",1,"butt",5,"sight",5]],
 				["srifle_LRR_camo_F", ["steel",45,"barrel",5,"trigger",1,"butt",5,"sight",5,"cloth",4]]
         ];
 	};
@@ -44,32 +43,33 @@ switch(_craft) do
 	case "uniform":
 	{
          _return = [
-				["U_O_Wetsuit",["cloth",5,"rubber",3]],
-				["U_O_CombatUniform_oucamo",["cloth",11]],
-				["U_B_GhillieSuit	",["cloth",20]],
-				["U_O_FullGhillie_sard",["cloth",30]]
+				["U_O_Wetsuit",["cloth",5,"rubber",3,"goldcoin",7]],
+				["U_O_CombatUniform_oucamo",["cloth",11,"goldcoin",15]],
+				["U_O_FullGhillie_sard",["cloth",30,"goldcoin",30]]
         ];
 	};
 
 	case "backpack":
 	{
         _return = [
-				["B_Kitbag_cbr",["cloth",25]]
+				["B_Kitbag_cbr",["cloth",25,"goldcoin",15]]
 			];
 	};
 
 	case "item":
 	{
         _return = [
-      ["lockpick",["iron_refined",2]],
-      ["pickaxe",["iron_refined",2,"rubber",1]],
-			["butt",["iron_refined",2,"rubber",2]],
-			["sight",["iron_refined",2,"steel",1]],
-			["barrel",["iron_refined",2,"steel",3]],
-			["trigger",["iron_refined",2]],
-			["fuelFull",["iron_refined",1,"oil_processed",3]],
-			["blastingcharge",["cloth",4,"C4",5,"trigger",1]],
-			["storagesmall",["steel",10,"iron_refined",8]]
+      ["lockpick",["iron_refined",5,"goldcoin",6]],
+	  ["blindfold",["cloth",7,"goldcoin",6]],
+	  ["boltcutter",["iron_refined",6,"goldcoin",6]],
+	  ["zipties",["steel",6,"goldcoin",6]],
+	  ["knife",["steel",10,"rubber",4,"goldcoin",6]],
+      ["goldBar",["glass",35,"goldcoin",35]],
+			["butt",["iron_refined",4,"rubber",4,"goldcoin",3]],
+			["sight",["iron_refined",4,"steel",3,"goldcoin",4]],
+			["barrel",["iron_refined",4,"steel",6,"goldcoin",5]],
+			["trigger",["iron_refined",4,"goldcoin",3]],
+			["blastingcharge",["cloth",4,"C4",5,"trigger",1,"goldcoin",3]]
       ];
 	};
 

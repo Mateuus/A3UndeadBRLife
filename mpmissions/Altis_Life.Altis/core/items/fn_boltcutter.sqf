@@ -11,7 +11,7 @@ _building = param [0,ObjNull,[ObjNull]];
 
 if(isNull _building) exitWith {};
 if(!(_building isKindOf "House_F")) exitWith {hint localize "STR_ISTR_Bolt_NotNear";};
-if(((nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"]) == _building || (nearestObject [[6626.5,15654.9,0],"Land_Research_House_V1_F"]) == _building) && (west countSide playableUnits < (LIFE_SETTINGS(getNumber,"minimum_cops")))) exitWith {
+if(((nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"]) == _building || (nearestObject [[16019.5,16952.9,0],"Land_Research_House_V1_F"]) == _building) && (west countSide playableUnits < (LIFE_SETTINGS(getNumber,"minimum_cops")))) exitWith {
 	hint format [localize "STR_Civ_NotEnoughCops",(LIFE_SETTINGS(getNumber,"minimum_cops"))]
 };
 
@@ -51,11 +51,11 @@ _cP = 0.01;
 [] call SOCK_fnc_updateRequest;
 
 switch (typeOf _building) do {
-	//case "Land_Dome_Small_F": {_cpRate = 0.003;};
-	//case "Land_Cargo_House_V1_F": {_cpRate = 0.0015;};
-	case "Land_Dome_Big_F": {_cpRate = 0.08;};
-	case "Land_Research_House_V1_F_House_V1_F": {_cpRate = 0.15;};
-	default {_cpRate = 0.08;}
+	//case "Land_Dome_Small_F": {_cpRate = 0.25;};
+	//case "Land_Cargo_House_V1_F": {_cpRate = 0.35;};
+	case "Land_Dome_Big_F": {_cpRate = 0.25;};
+	case "Land_Research_House_V1_F_House_V1_F": {_cpRate = 0.35;};
+	default {_cpRate = 0.25;}
 };
 
 for "_i" from 0 to 1 step 0 do {

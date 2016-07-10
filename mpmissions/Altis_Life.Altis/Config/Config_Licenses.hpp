@@ -180,7 +180,7 @@ class Licenses {
 
     class steelplate {
         variable = "steelplate";
-        displayName = "STR_License_steel";
+        displayName = "STR_License_steelplate";
         price = 28000;
         illegal = false;
         side = "civ";
