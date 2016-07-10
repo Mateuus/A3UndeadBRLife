@@ -39,7 +39,7 @@ _Btn8 = CONTROL(37400,Btn8);
 
 life_pInact_curTarget = _curTarget;
 if(_curTarget isKindOf "House_F" && playerSide isEqualTo west) exitWith {
-	if((nearestObject [[6620.5,15660.9,0],"Land_Dome_Small_F"]) == _curTarget OR (nearestObject [[6626.5,15654.9,0],"Land_Cargo_House_V1_F"]) == _curTarget) then {
+	if((nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"]) == _curTarget OR (nearestObject [[16019.5,16952.9,0],"Land_Research_House_V1_F"]) == _curTarget) then {
 
 		_Btn1 ctrlSetText localize "STR_pInAct_Repair";
 		_Btn1 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_repairDoor; closeDialog 0;";

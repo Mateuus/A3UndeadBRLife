@@ -39,8 +39,8 @@ _progressBar progressSetPosition 0.01;
 _cP = 0.01;
 
 switch (typeOf _building) do {
-	case "Land_Dome_Small_F": {_cpRate = 0.008;};
-	case "Land_Cargo_House_V1_F": {_cpRate = 0.005;};
+	case "Land_Dome_Bih_F": {_cpRate = 0.008;};
+	case "Land_Research_House_V1_F": {_cpRate = 0.005;};
 	default {_cpRate = 0.08;}
 };
 

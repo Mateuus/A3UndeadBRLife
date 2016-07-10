@@ -62,7 +62,7 @@ if((_curObject isKindOf "B_supplyCrate_F" OR _curObject isKindOf "Box_IND_Grenad
 	};
 };
 
-if(_curObject isKindOf "House_F" && {player distance _curObject < 12} OR ((nearestObject [[6620.5,15660.9,0],"Land_Dome_Small_F"]) == _curObject OR (nearestObject [[6626.5,15654.9,0],"Land_Cargo_House_V1_F"]) == _curObject)) exitWith {
+if(_curObject isKindOf "House_F" && {player distance _curObject < 12} OR ((nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"]) == _curObject OR (nearestObject [[16019.5,16952.9,0],"Land_Research_House_V1_F"]) == _curObject)) exitWith {
 	[_curObject] call life_fnc_houseMenu;
 };
 

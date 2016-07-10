@@ -7134,7 +7134,7 @@
 			<German>Sie müssen den Behälter zu öffnen, bevor die Ladung platzieren!</German>
 		</Key>
 		<Key ID="STR_ISTR_Bolt_NotNear">
-			<Original>You are not looking at a house door.</Original>
+			<Original>Você não esta olhando para a porta.</Original>
 			<Czech>Nejste při pohledu na dveře domu.</Czech>
 			<Spanish>No estas viendo a la puerta de una casa.</Spanish>
 			<Russian></Russian>
@@ -7145,7 +7145,7 @@
 			<Polish>Nie patrzysz w stronę drzwi.</Polish>
 		</Key>
 		<Key ID="STR_ISTR_Bolt_AlertFed">
-			<Original>!!!!! SOMEONE IS BREAKING INTO THE FEDERAL RESERVE !!!!!!</Original>
+			<Original>!!!!!!!!!!!!!!!!!!!! A RESERVA FEDERAL ESTÁ SENDO ROUBADA !!!!!!!!!!!!!!!!!!!!</Original>
 			<Czech>!!!!! Někdo vloupání do Federálního rezervního systému !!!!!!</Czech>
 			<Spanish>!!!!! LA RESERVA FEDERAL ESTA SIENDO ASALTADA !!!!!!</Spanish>
 			<Russian></Russian>
@@ -7156,18 +7156,18 @@
 			<Polish>!!!!!! KTOŚ SIĘ WŁAMUJE DO BANKU REZERW FEDERALNYCH !!!!!</Polish>
 		</Key>
 		<Key ID="STR_ISTR_Bolt_AlertHouse">
-			<Original>%1 was seen breaking into a house.</Original>
+			<Original>%1 foi visto invadindo uma casa.</Original>
 			<Czech>%1 byl viděn vloupání do domu.</Czech>
 			<Spanish>%1 ha sido visto entrando a una casa.</Spanish>
 			<Russian></Russian>
 			<German>%1 wurde beim Einbruch in ein Haus gesehen.</German>
 			<French>%1 a été vu rentrant dans une maison par effraction.</French>
 			<Italian>%1 è stato visto fare irruzione in una casa.</Italian>
-			<Portuguese>%1 foi visto invadindo sua casa.</Portuguese>
+			<Portuguese>%1 foi visto invadindo uma casa.</Portuguese>
 			<Polish>%1 był widziany jak włamywał się do domu.</Polish>
 		</Key>
 		<Key ID="STR_ISTR_Bolt_Process">
-			<Original>Cutting lock on door</Original>
+			<Original>Quebrando o cadeado da porta</Original>
 			<Czech>Řezání zámek na dveřích</Czech>
 			<Spanish>Cortando la cerradura de la puerta</Spanish>
 			<Russian></Russian>
@@ -7178,7 +7178,7 @@
 			<Polish>Przecinam zabezpieczenia domu</Polish>
 		</Key>
 		<Key ID="STR_ISTR_Bolt_Exploit">
-			<Original>You must open the outside doors before opening it!</Original>
+			<Original>Você deve abrir as portas externas antes de abrir essa!</Original>
 			<Czech>Je nutné otevřít venkovní dveře před otevřením!</Czech>
 			<French>Vous devez ouvrir les portes extérieures avant de l'ouvrir!</French>
 			<Spanish>Debes abrir las puertas de afuera antes de abrir esta!</Spanish>
