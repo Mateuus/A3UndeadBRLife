@@ -23,7 +23,7 @@ class Life_Settings {
     "rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit","zipties","knife","pliers","kidney","cocaine_unprocessed",
     "heroin_processed","heroin_unprocessed","cocaine_processed","cement","rock","diamond_cut","diamond_uncut","glass","sand","salt_refined","salt_unrefined","iron_refined","iron_unrefined","copper_refined",
     "copper_unrefined","oil_processed","oil_unprocessed","marijuana","cannabis","nitroamine","C4","steel","steelplate","wool","cloth","goldcoin","rubberU","rubber","gunpowder","sulfur","barrel","butt",
-    "sight","trigger","engine","plans","blastingcharge","boltcutter","nitro","beer","whiskey","moonshine","gpstracker","blindfold","wood","plank","woodaxe" }; //Array of virtual items that can be saved on your player.
+    "sight","trigger","engine","plans","blastingcharge","boltcutter","nitro","beer","whiskey","diamante2","diamante3","moonshine","gpstracker","blindfold","wood","plank","woodaxe" }; //Array of virtual items that can be saved on your player.
 
     save_playerStats = true; //Save food, water and damage (all sides)?
     save_civilian_weapons = true; //Allow civilians to save weapons on them?
@@ -38,7 +38,7 @@ class Life_Settings {
     save_vehicle_items[] = { "pickaxe","fuelEmpty","fuelFull", "spikeStrip", "lockpick", "defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","apple","peach","tbacon","donuts",
     "rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit","zipties","knife","pliers","kidney","cocaine_unprocessed",
     "heroin_processed","heroin_unprocessed","cocaine_processed","cement","rock","diamond_cut","diamond_uncut","glass","sand","salt_refined","salt_unrefined","iron_refined","iron_unrefined","copper_refined",
-    "copper_unrefined","oil_processed","oil_unprocessed","marijuana","cannabis","nitroamine","C4","steel","steelplate","wool","cloth","goldcoin","rubberU","rubber","gunpowder","sulfur","barrel","butt",
+    "copper_unrefined","oil_processed","oil_unprocessed","marijuana","cannabis","nitroamine","C4","diamante2","diamante3","steel","steelplate","wool","cloth","goldcoin","rubberU","rubber","gunpowder","sulfur","barrel","butt",
     "sight","trigger","engine","plans","blastingcharge","boltcutter","nitro","beer","whiskey","moonshine","gpstracker","blindfold","wood","plank","woodaxe" };
 
     save_vehicle_inventory = true; //Save Arma inventory of vehicle to the database
@@ -51,7 +51,7 @@ class Life_Settings {
     /* ATM & Federal Reserve System Configurations */
     global_ATM = true; //Allow users to access any ATM on the map (Marked & Unmarked).
     noatm_timer = 15; //Time in minutes that players cannot deposit money after selling stolen gold.
-    minimum_cops = 1; //Minimum cops required online to rob the Federal Reserve
+    minimum_cops = 5; //Minimum cops required online to rob the Federal Reserve
 
     /* Basic System Configurations */
 	gang_donorid = true; //Enable the Gang Donor ID set in database (var = life_gangdonorid; levels = 0,1,2,3,4,5,6,7,8,9,10). ATTENTION! Before enabling, read: https://www.bistudio.com/community/game-content-usage-rules & https://www.bistudio.com/monetization

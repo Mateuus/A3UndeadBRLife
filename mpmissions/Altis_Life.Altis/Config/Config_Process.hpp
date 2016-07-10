@@ -147,6 +147,15 @@ class ProcessAction {
 					//ScrollText = "Mix Cement";
 					NoLicenseCost = 11500;
 	};
+	
+	class diamante2 {
+
+					MaterialsReq[] = {{"diamante2",1}};
+		MaterialsGive[] = {{"diamante3",1}};
+					Text = "STR_Process_diamante2";
+					//ScrollText = "Mix Cement";
+					NoLicenseCost = 25500;
+	};
 
 	class steelplate {
 

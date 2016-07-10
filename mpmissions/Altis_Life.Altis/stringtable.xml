@@ -455,39 +455,39 @@
 	</Package>
 	<Package name="Craft">
 		<Key ID="STR_CRAFT_Title">
-			<Original>Crafting Menu</Original>
- 			<English>Crafting Menu</English>
- 			<German>Bau Menü</German>
-			<French>Menu de Crafting</French>
-			<Italian>Crafting Menu</Italian>
-			<Portuguese>Crafting Menu</Portuguese>
+			<Original>Menu de Craft</Original>
+ 			<English>Menu de Craft</English>
+ 			<German>Menu de Craft</German>
+			<French>Menu de Craft</French>
+			<Italian>Menu de Craft</Italian>
+			<Portuguese>Menu de Craft</Portuguese>
 		</Key>
 		<Key ID="STR_PM_CraftStats">
-			<Original>Object to craft</Original>
- 			<English>Object to craft</English>
+			<Original>Objeto para craftar</Original>
+ 			<English>Objeto para craftar</English>
  			<German>Sachen zum bauen</German>
 			<French>Objet à crafter</French>
-			<Italian>Object to craft</Italian>
-			<Portuguese>Object to craft</Portuguese>
+			<Italian>Objeto para craftar</Italian>
+			<Portuguese>Objeto para craftar</Portuguese>
 		</Key>
 		<Key ID="STR_PM_CraftMaterials">
-			<Original>Materials needed</Original>
- 			<English>Materials needed</English>
+			<Original>Materiais nescessarios</Original>
+ 			<English>Materiais nescessarios</English>
  			<German>Benötigte Sachen</German>
 			<French>Materiaux requis</French>
-			<Italian>Materials needed</Italian>
-			<Portuguese>Materials needed</Portuguese>
+			<Italian>Materiais nescessarios</Italian>
+			<Portuguese>Materiais nescessarios</Portuguese>
 		</Key>
 		<Key ID="STR_CRAFT_Button">
-			<Original>Craft !</Original>
- 			<English>Craft !</English>
+			<Original>Craftar !</Original>
+ 			<English>Craftar !</English>
  			<German>Bauen !</German>
-			<French>Craft !</French>
-			<Italian>Craft !</Italian>
-			<Portuguese>Craft !</Portuguese>
+			<French>Craftar !</French>
+			<Italian>Craftar !</Italian>
+			<Portuguese>Craftar !</Portuguese>
 		</Key>
 		<Key ID="STR_PM_Noroom">
-			<Original>You don't have enough room in your backpack for this item.</Original>
+			<Original>Voce nao tem espaço no inventario virtual !</Original>
  			<English></English>
  			<German></German>
 			<French></French>
@@ -495,12 +495,12 @@
 			<Portuguese></Portuguese>
 		</Key>
 		<Key ID="STR_PM_NoMaterial">
-			<Original>You do not have all the required materials!</Original>
- 			<English>You do not have all the required materials!</English>
- 			<German>Du hast nicht genug davon...!</German>
-			<French>Vous n'avez pas tous les matériaux requis !</French>
-			<Italian>You do not have all the required materials !</Italian>
-			<Portuguese>You do not have all the required materials !</Portuguese>
+			<Original>Voce nao tem todos materiais para craftar!</Original>
+ 			<English>Voce nao tem todos materiais para craftar!</English>
+ 			<German>Voce nao tem todos materiais para craftar!</German>
+			<French>Voce nao tem todos materiais para craftar!</French>
+			<Italian>Voce nao tem todos materiais para craftar!</Italian>
+			<Portuguese>Voce nao tem todos materiais para craftar!</Portuguese>
 		</Key>
 		<Key ID="STR_CRAFT_Process">
 			<Original>Crafting the following: %1</Original>
@@ -6733,6 +6733,12 @@
 		<Key ID="STR_Item_nitroamine">
 			<Original>Substancia explosiva</Original>
 		</Key>
+		<Key ID="STR_Item_diamante2">
+			<Original>Diamante sujo</Original>
+		</Key>
+		<Key ID="STR_Item_diamante3">
+			<Original>Diamante de Sangue</Original>
+		</Key>
 		<Key ID="STR_Item_Wood">
 			<Original>Toras de Madeira</Original>
 		</Key>
@@ -6753,6 +6759,9 @@
 		</Key>
 		<Key ID="STR_Item_rubberU">
 			<Original>Borracha nao processada</Original>
+		</Key>
+		<Key ID="STR_Item_colar">
+			<Original>Colar de Diamante</Original>
 		</Key>
 		<Key ID="STR_Item_rubber">
 			<Original>Borracha</Original>
@@ -6895,7 +6904,7 @@
 			<Original>SWAT License</Original>
 		</Key>
 		<Key ID="STR_License_Woodcutting">
-			<Original>Woodcutting License</Original>
+			<Original>Licença de Serralheria</Original>
 		</Key>
 		<Key ID="STR_License_Rebel">
 			<Original>Rebel Training</Original>
@@ -7019,7 +7028,7 @@
 			<Polish>Medical Marijuana Licencji</Polish>
 		</Key>
 		<Key ID="STR_License_Home">
-			<Original>Home Owners License</Original>
+			<Original>Licença de Casas</Original>
 			<Czech>Home Majitelé licence</Czech>
 			<Spanish>Licencia Mobiliaria</Spanish>
 			<Russian></Russian>
@@ -7035,6 +7044,9 @@
 		<Key ID="STR_License_C4">
 			<Original>Licença de construtor de C4</Original>
 		</Key>
+		<Key ID="STR_License_diamante2">
+			<Original>Licença de lapidador de diamante de Sangue</Original>
+		</Key>
 		<Key ID="STR_License_rubber">
 			<Original>Licença de processador de borracha</Original>
 		</Key>
@@ -7047,7 +7059,7 @@
 	</Package>
 	<Package name="More_Item_Strings">
 		<Key ID="STR_ISTR_Blast_VaultOnly">
-			<Original>This can only be used on a vault.</Original>
+			<Original>Isso só pode ser usado em um cofre.</Original>
 			<Czech>To lze použít pouze v trezoru.</Czech>
 			<Spanish>Esto solo se puede usar en una bóveda.</Spanish>
 			<Russian></Russian>
@@ -7616,6 +7628,9 @@
 		</Key>
 		<Key ID="STR_Process_C4">
 			<Original>Construtor de C4</Original>
+		</Key>
+		<Key ID="STR_Process_diamante2">
+			<Original>Lapidador de diamante de Sangue</Original>
 		</Key>
 		<Key ID="STR_Process_steelplate">
 			<Original>Processador de aço</Original>

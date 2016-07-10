@@ -67,6 +67,13 @@ class CfgGather
 			zones[] = { "nitroamine_1" };
 			item = "";
 		};
+		
+		class diamante2
+		{
+			amount = 1;
+			zones[] = { "diamante_2" };
+			item = "";
+		};
 
 		class steel
 		{

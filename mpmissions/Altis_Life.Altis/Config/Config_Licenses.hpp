@@ -193,6 +193,14 @@ class Licenses {
         illegal = true;
         side = "civ";
     };
+	
+	class diamante2 {
+        variable = "diamante2";
+        displayName = "STR_License_diamante2";
+        price = 60000;
+        illegal = true;
+        side = "civ";
+    };
 
     class rubber {
         variable = "rubber";

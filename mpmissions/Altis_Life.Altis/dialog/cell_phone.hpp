@@ -26,7 +26,7 @@ class Life_cell_phone {
 
 		class SendTo: Life_RscText {
 			idc = -1;
-			text = "Send To:";
+			text = "Enviar para:";
 			x = 0.1;
 			y = 0.4;
 			w = 0.6;
@@ -40,7 +40,7 @@ class Life_cell_phone {
 		{
 			colorBackground[] = {0, 0, 0, 0};
 			idc = 3001;
-			text = "Undead Brasil Mobile";
+			text = "Celular Undead Brasil Servidores";
 			x = 0.1;
 			y = 0.16;
 			w = 0.6;
@@ -69,7 +69,7 @@ class Life_cell_phone {
 
 		class TextMsgButton: Life_RscButtonMenu {
 			idc = 3015;
-			text = "Send Message";
+			text = "Enviar mensagem";
 			onButtonClick = "[] call TON_fnc_cell_textmsg";
 			x = 0.1;
 			y = 0.58;
@@ -89,7 +89,7 @@ class Life_cell_phone {
 
 		class TextCopButton: Life_RscButtonMenu {
 			idc = 3016;
-			text = "Police";
+			text = "Mensagem para Policia";
 			onButtonClick = "[] call TON_fnc_cell_textcop";
 			x = 0.325;
 			y = 0.58;
@@ -137,7 +137,7 @@ class Life_cell_phone {
 
 		class EMSRequest: Life_RscButtonMenu {
 			idc = 3022;
-			text = "EMS";
+			text = "Mensagem para EMS";
 			onButtonClick = "[] call TON_fnc_cell_emsrequest";
 			x = 0.325;
 			y = 0.64;
@@ -159,7 +159,7 @@ class Life_cell_phone {
 
 		class MessagesButtonKey: Life_RscButtonMenu {
 			idc = -1;
-			text = "My Messages";
+			text = "Caixa de entrada";
 			onButtonClick = "[] spawn life_fnc_messagesMenu";
 			x = 0.1;
 			y = 0.64;
