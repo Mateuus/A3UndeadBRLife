@@ -11,39 +11,39 @@ life_placeables =
         "RoadCone_F"
     ],
     [
-        "Roadcone With Lights",
+        "Cone com luz",
         "RoadCone_L_F"
     ],
     [
-        "Long Concrete Barrier",
+        "Barricada de concreto grande",
         "Land_CncBarrierMedium4_F"
     ],
 	 [
-        "Barrier With Lights",
+        "Barricada com alerta",
         "RoadBarrier_small_F"
     ],
     [
-        "Bar Gate",
+        "Cancela",
         "Land_BarGate_F"
     ],
     [
-        "Tape Sign",
+        "Faixa de intervencao",
         "TapeSign_F"
     ],
     [
-        "Concrete Barrier Stripes",
+        "Barricada de concreto com alertas",
         "Land_CncBarrier_stripes_F"
     ],
     [
-        "Concrete Barrier",
+        "Barricada de concreto",
         "Land_CncBarrier_F"
     ],
     [
-        "Portable Light",
+        "Luz Simples",
         "Land_PortableLight_single_F"
     ],
     [
-        "Double Portable Light",
+        "Luz avancada",
         "Land_PortableLight_double_F"
     ]
 ];

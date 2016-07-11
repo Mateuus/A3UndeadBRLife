@@ -26,11 +26,14 @@ switch(_craft) do
 	{
 		_return = [
 				//[Object classname, [item #1,quantity item #1,item #2,quantity item #2]],]
-				["hgun_Rook40_F", ["steel",6,"barrel",1,"trigger",1]],
-				["hgun_Pistol_heavy_02_F", ["steel",9,"barrel",1,"trigger",1]],
-				["arifle_TRG21_F", ["steel",15,"barrel",2,"trigger",1,"butt",2,"sight",1]],
-				["LMG_Zafir_F", ["steel",35,"barrel",3,"trigger",1,"butt",2,"sight",2]],
-				["srifle_LRR_camo_F", ["steel",45,"barrel",5,"trigger",1,"butt",5,"sight",5,"cloth",4]]
+				["arifle_TRG21_F", ["steel",30,"barrel",4,"trigger",1,"butt",4,"goldcoin",30]],
+				["arifle_Katiba_F", ["steel",35,"barrel",4,"trigger",1,"butt",5,"goldcoin",35]],
+				["arifle_MX_F", ["steel",40,"barrel",4,"trigger",1,"butt",5,"goldcoin",40]],
+				["arifle_MX_SW_F", ["steel",45,"barrel",4,"trigger",1,"butt",5,"goldcoin",45]],
+				["arifle_MXM_F", ["steel",45,"barrel",4,"trigger",1,"butt",5,"goldcoin",45]],
+				["LMG_Mk200_F", ["steel",45,"barrel",4,"trigger",1,"butt",5,"goldcoin",45,"goldBar",2]],
+				["LMG_Zafir_F", ["steel",45,"barrel",5,"trigger",1,"butt",5,"sight",2,"goldBar",3,"goldcoin",35]],
+				["srifle_LRR_camo_F", ["steel",45,"barrel",5,"trigger",1,"butt",5,"sight",5,"goldBar",5,"goldcoin",29]]
         ];
 	};
 
@@ -52,7 +55,8 @@ switch(_craft) do
 	case "backpack":
 	{
         _return = [
-				["B_Kitbag_cbr",["cloth",25,"goldcoin",15]]
+				["B_Kitbag_cbr",["cloth",25,"goldcoin",15]],
+				["B_Bergen_dgtl_F",["cloth",3,"goldcoin",15,"goldBar",2]]
 			];
 	};
 
@@ -64,11 +68,11 @@ switch(_craft) do
 	  ["boltcutter",["iron_refined",6,"goldcoin",6]],
 	  ["zipties",["steel",6,"goldcoin",6]],
 	  ["knife",["steel",10,"rubber",4,"goldcoin",6]],
-      ["goldBar",["glass",35,"goldcoin",35]],
-			["butt",["iron_refined",4,"rubber",4,"goldcoin",3]],
-			["sight",["iron_refined",4,"steel",3,"goldcoin",4]],
-			["barrel",["iron_refined",4,"steel",6,"goldcoin",5]],
-			["trigger",["iron_refined",4,"goldcoin",3]],
+      ["goldBar",["glass",40,"goldcoin",30]],
+			["butt",["iron_refined",12,"rubber",7,"goldcoin",9]],
+			["sight",["iron_refined",10,"steel",3,"goldcoin",8]],
+			["barrel",["iron_refined",15,"steel",6,"goldcoin",10]],
+			["trigger",["iron_refined",19,"goldcoin",11]],
 			["blastingcharge",["cloth",4,"C4",5,"trigger",1,"goldcoin",3]]
       ];
 	};
@@ -83,19 +87,23 @@ switch(_craft) do
     case "ammo":
     {
         _return = [
-        ["150Rnd_762x54_Box_Tracer",["iron_refined",15,"gunpowder",22]],
-		["30Rnd_556x45_Stanag_Tracer_Red",["iron_refined",15,"gunpowder",16]],
-		["7Rnd_408_Mag",["iron_refined",25,"gunpowder",30]]
+        ["150Rnd_762x54_Box_Tracer",["iron_refined",15,"gunpowder",22,"goldcoin",25]],
+		["200Rnd_65x39_cased_Box_Tracer",["iron_refined",19,"gunpowder",26,"goldcoin",25]],
+		["100Rnd_65x39_caseless_mag_Tracer",["iron_refined",19,"gunpowder",26,"goldcoin",25]],
+		["30Rnd_65x39_caseless_green_mag_Tracer",["iron_refined",15,"gunpowder",20,"goldcoin",15]],
+		["30Rnd_65x39_caseless_mag_Tracer",["iron_refined",15,"gunpowder",20,"goldcoin",15]],
+		["30Rnd_556x45_Stanag_Tracer_Red",["iron_refined",15,"gunpowder",16,"goldcoin",10]],
+		["7Rnd_408_Mag",["iron_refined",25,"gunpowder",30,"goldcoin",30]]
       	];
     };
 
     case "attach":
     {
         _return = [
-        ["optic_Aco",["sight",1,"iron_refined",1]],
-        ["optic_Aco_grn",["sight",1,"iron_refined",1]],
-        ["optic_MRCO",["sight",1,"iron_refined",3]],
-        ["optic_MRD",["sight",1,"iron_refined",1]],
+        ["optic_Aco",["sight",5,"iron_refined",5,"goldcoin",10]],
+        ["optic_Aco_grn",["sight",5,"iron_refined",5,"goldcoin",10]],
+        ["optic_MRCO",["sight",5,"iron_refined",8,"goldcoin",10]],
+        ["optic_MRD",["sight",5,"iron_refined",5,"goldcoin",10]],
         ["FirstAidKit",["cloth",3]]
 			];
 		};

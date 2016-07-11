@@ -56,7 +56,7 @@ _unit spawn {
 	_Timer = ((findDisplay 7300) displayCtrl 7301);
 
         if (LIFE_SETTINGS(getNumber,"respawn_timer") < 5) then {
-            _maxTime = time + 5;
+            _maxTime = time + 15;
         } else {
             _maxTime = time + LIFE_SETTINGS(getNumber,"respawn_timer");
         };
@@ -73,12 +73,12 @@ _unit spawn
 	disableSerialization;
 	_RespawnBtn = ((findDisplay 7300) displayCtrl 7302);
 	_Timer = ((findDisplay 7300) displayCtrl 7301);
-	_maxTime = time + (life_respawn_timer * 60);
+	_maxTime = time + (life_respawn_timer * 90);
 	_RespawnBtn ctrlEnable false;
 	waitUntil {_Timer ctrlSetText format["Start your new life in: %1",[(_maxTime - time),"MM:SS"] call BIS_fnc_secondsToString];
 	round(_maxTime - time) <= 0 || isNull _this || life_request_timer};
 if (life_request_timer) then {
-_maxTime = time + (life_respawn_timer * 340);
+_maxTime = time + (life_respawn_timer * 240);
 waitUntil {_Timer ctrlSetText format["Start your new life in: %1",[(_maxTime - time),"MM:SS"] call BIS_fnc_secondsToString];
 round(_maxTime - time) <= 0 || isNull _this};
 };

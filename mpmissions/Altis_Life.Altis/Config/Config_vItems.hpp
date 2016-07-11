@@ -45,7 +45,7 @@ class VirtualShops {
 		side = "civ";
 		license = "";
 		level[] = { "", "", -1, "" };
-		items[] = { "waterBottle", "rabbit", "apple", "redgull", "beer", "whiskey", "moonshine", "tbacon", "lockpick", "gpstracker", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge" };
+		items[] = { "waterBottle", "rabbit", "apple", "redgull", "beer", "whiskey", "moonshine", "tbacon", "lockpick", "gpstracker", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter",};
 	};
 
 	class wongs {
@@ -77,7 +77,7 @@ class VirtualShops {
 		side = "civ";
 		license = "";
 		level[] = { "", "", -1, "" };
-		items[] = { "cocaine_processed", "heroin_processed", "marijuana","nitroamine" };
+		items[] = { "cocaine_processed", "heroin_processed", "marijuana","nitroamine","diamante3","cement","colar"};
 	};
 
 	class oil {
@@ -839,7 +839,7 @@ class VirtualItems {
 	class turtle_raw {
 		variable = "turtleRaw";
 		displayName = "STR_Item_TurtleRaw";
-		weight = 6;
+		weight = 16;
 		buyPrice = -1;
 		sellPrice = 9700;
 		illegal = true;

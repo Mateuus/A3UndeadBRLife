@@ -5,12 +5,12 @@ _robber = [_this,1,ObjNull,[ObjNull]] call BIS_fnc_param; //Can you guess? Alrig
 _action = [_this,2] call BIS_fnc_param;//Action name
 _cops = (west countSide playableUnits);
 
-if(_cops < 5) exitWith {hint "Voce nao pode roubar este posto, precisa de 2 ou mais policias online";};
+if(_cops < 1) exitWith {hint "Voce nao pode roubar este posto, precisa de 4 ou mais policias online";};
 //if(_cops < 30) exitWith {hint "Sorry feature disabled until I fix it, should be fixed soon though.";};
-if(side _robber isEqualTo west) exitWith { hint "What do you think you are doing?" };
-if(side _robber isEqualTo independent) exitWith { hint "What do you think you are doing?" };
-if(_robber distance _shop > 20) exitWith { hint "You need to be within 5 meters to rob this shop!" };
-if (vehicle player != _robber) exitWith { hint "Get out of your car!" };
+if(side _robber isEqualTo west) exitWith { hint "Ta maluco ??????" };
+if(side _robber isEqualTo independent) exitWith { hint "Ta maluco ??????" };
+if(_robber distance _shop > 20) exitWith { hint "Voce precisa estar dentro de 5 metros pra roubar!" };
+if (vehicle player != _robber) exitWith { hint "Saia do carro para roubar!" };
 
 if (currentWeapon _robber isEqualTo "") exitWith { hint "Voce nao pode roubar sem uma arma !" };
 
@@ -30,14 +30,14 @@ _pgText ctrlSetText format["Roubo em progresso, fique dentro de 5 metros (1%1)..
 _progress progressSetPosition 0.01;
 _cP = 120;
 
-   _rndmrk = random(1000);
+   _rndmrk = random(10);
    _mrkstring = format ["wrgMarker_%1", _rndmrk];
    _Pos = position player;
    _marker = createMarker [_mrkstring, _Pos];
    _marker setMarkerColor "ColorRed";
    _marker setMarkerText "!AVISO! >>>>>> Roubo em progresso <<<<<< !AVISO!";
    _marker setMarkerType "mil_warning";
-[1,"Um posto de gasolina está sendo roubado !!!"] remoteExec ["life_fnc_broadcast",0]; // General broadcast alert to everyone, uncomment for testing, or if you want it anyway.
+[1,"Um posto de gasolina está sendo roubado !!!!!!!!!!"] remoteExec ["life_fnc_broadcast",0]; // General broadcast alert to everyone, uncomment for testing, or if you want it anyway.
 
 while{true} do
 {
@@ -66,7 +66,7 @@ while{true} do
    [] call life_fnc_hudSetup;
 
    _rip = false;
-	sleep (30 + random(30)); //Clerk in the store takes between 30-210 seconds before he manage to warn the police about the robbery.
+	sleep (15 + random(15)); //Clerk in the store takes between 30-210 seconds before he manage to warn the police about the robbery.
 	life_use_atm = true; // Robber can not use the ATM at this point.
 	playSound3D ["A3\Sounds_F\sfx\alarm_independent.wss", player];
 	if!(alive _robber) exitWith {};
@@ -76,5 +76,5 @@ while{true} do
 
 
 uiSleep 1200;
-_action = _shop addAction["Rob Shop",life_fnc_robShops];
+_action = _shop addAction["Roubar posto",life_fnc_robShops];
 _shop switchMove "";

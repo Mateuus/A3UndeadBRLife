@@ -24,10 +24,12 @@ class WeaponShops {
         items[] = {
             { "FirstAidKit", "Bolsa de Sangue", 250, 65 },
             { "hgun_Rook40_F", "Rook 9mm", 6500, 500 },
+			{ "hgun_Pistol_01_F", "PM 9mm", 6500, 500 },
             { "hgun_Pistol_heavy_02_F", "Zubr .45ACP", 9850, -1 },
             { "hgun_ACPC2_F", "ACP .45ACP", 11500, -1 },
-            { "hgun_PDW2000_F", "PDW 9mm", 25000, -1 },
-            { "SMG_02_F", "Sting 9 mm", 30500, -1 }
+            { "hgun_PDW2000_F", "PDW 9mm", 35000, -1 },
+            { "SMG_02_F", "Sting 9mm", 40500, -1 },
+			{ "SMG_05_F", "MP5 9mm", 50500, -1 }
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "", 25 },
@@ -49,6 +51,7 @@ class WeaponShops {
         level[] = { "life_donorlevel", "SCALAR", 1, "Você precisa ser um nível doador Bronze para acessar a loja, acesse nosso forum ou teamspeak para obter informações." };
 		items[] = {
             { "FirstAidKit", "Bolsa de Sangue", 250, 65 },
+			{ "SMG_05_F", "MP5 9mm", 46500, 65 },
             { "hgun_Pistol_heavy_02_F", "ACP .45", 9500, 2500 },
 			{ "hgun_Rook40_F", "Rook 9mm", 6500, 2500 },
             { "hgun_ACPC2_F", "ACP .45", 6250, 65 },
@@ -279,6 +282,11 @@ class WeaponShops {
 			{ "srifle_DMR_06_olive_F", "Mk14 7.62mm", 76000, 7500 },
 			{ "srifle_DMR_03_khaki_F", "Mk-I EMR 7.62mm", 165000, 7500 },
 			{ "srifle_DMR_01_F", "Rahim 7.62 mm", 54000, 7500 },
+			{ "arifle_AKM_F", "AKM 7.62m", 200000, 7500 },
+			{ "arifle_AKS_F", "AKS 5.45m", 110000, 7500 },
+			{ "arifle_ARX_hex_F", "CAR-95 5.8MM", 150000, 7500 },
+			{ "arifle_DMR_07_hex_F", "CMR-76 5.8MM", 150000, 7500 },
+			{ "LMG_03_F", "LIM-85 5.56", 150000, 7500 },
 			{ "srifle_LRR_F", "M320 LRR .408", 958000, 7500 }
         };
         mags[] = {
@@ -294,6 +302,9 @@ class WeaponShops {
 			{ "100Rnd_65x39_caseless_mag_Tracer", "Munição 100rnd 6.5mm", 2050 },
             { "30Rnd_65x39_caseless_green", "Munição 30rnd 6.5mm", 1025 },
             { "30Rnd_556x45_Stanag_Tracer_Yellow", "Munição 30rnd 5.56mm", 1025 },
+			{ "30Rnd_580x42_Mag_Tracer_F", "Munição 30rnd 5.8mm", 1225 },
+			{ "30Rnd_762x39_Mag_Green_F", "Munição 30rnd 7.62mm", 3225 },
+			{ "30Rnd_545x39_Mag_Green_F", "Munição 30rnd 7.62mm", 1225 },
             { "30Rnd_65x39_caseless_mag_Tracer", "Munição 30rnd 6.5mm", 1020 }
         };
         accs[] = {
@@ -361,7 +372,7 @@ class WeaponShops {
     class donator2 {
         name = "Donator 2 Shop";
         side = "civ";
-        license = "rebel";
+        license = "civ";
         level[] = { "life_donorlevel", "SCALAR", 2, "You need to be a donator level 2 to access this shop, join our teamspeak for information." };
         items[] = {
             { "FirstAidKit", "", 250, 65 },
@@ -407,7 +418,7 @@ class WeaponShops {
     class donator3 {
         name = "Donator 3 Shop";
         side = "civ";
-        license = "rebel";
+        license = "civ";
         level[] = { "life_donorlevel", "SCALAR", 3, "You need to be a donator level 3 to access this shop, join our teamspeak for information." };
         items[] = {
             { "FirstAidKit", "", 250, 65 },
@@ -472,9 +483,12 @@ class WeaponShops {
             { "SMG_01_F", "Vermin SMG .45ACP", 32000, 7500 },
             { "arifle_Mk20_F", "Mk20 5.56mm", 42000, 7500 },
             { "arifle_Mk20C_F", "Mk20 5.56mm", 42000, 7500 },
-            { "arifle_MXC_F", "MXC 6.5 mm", 65000, 7500 },
-            { "arifle_MX_F", "MX 6.5 mm", 65000, 7500 },
-            { "LMG_Mk200_F", "Mk200 6.5 mm", 150000, 7500 },
+            { "arifle_MXC_F", "MXC 6.5mm", 65000, 7500 },
+            { "arifle_MX_F", "MX 6.5mm", 65000, 7500 },
+            { "LMG_Mk200_F", "Mk200 6.5mm", 150000, 7500 },
+			{ "arifle_AKM_F", "AKM 7.62m", 200000, 7500 },
+			{ "arifle_AKS_F", "AKS 5.45m", 110000, 7500 },
+			{ "arifle_ARX_hex_F", "CAR-95 5.8MM", 150000, 7500 },
 			{ "srifle_DMR_01_F", "Rahim 7.62 mm", 75000, 7500 }
         };
         mags[] = {
@@ -486,6 +500,9 @@ class WeaponShops {
             { "200Rnd_65x39_cased_Box_Tracer", "Munição 200rnd 6.5mm", 5950 },
             { "30Rnd_65x39_caseless_green", "Munição 30rnd 6.5mm", 1825 },
             { "30Rnd_556x45_Stanag_Tracer_Yellow", "Munição 30rnd 5.56mm", 1225 },
+			{ "30Rnd_580x42_Mag_Tracer_F", "Munição 30rnd 5.8mm", 1225 },
+			{ "30Rnd_762x39_Mag_Green_F", "Munição 30rnd 7.62mm", 3225 },
+			{ "30Rnd_545x39_Mag_Green_F", "Munição 30rnd 7.62mm", 1225 },
             { "30Rnd_65x39_caseless_mag_Tracer", "Munição 30rnd 6.5mm", 1820 }
         };
         accs[] = {
@@ -577,11 +594,12 @@ class WeaponShops {
         license = "";
         level[] = { "", "", -1, "" };
         items[] = {
-            { "arifle_MXC_Black_F", "Rifle Tazer", 10000, 750 },
+            { "arifle_TRG20_F", "Rifle TRG", 10000, 750 },
 			{ "SMG_02_F", "Sting 9 mm", 15000, 750 },
-			{ "PDW2000 9 mm", "Submachine 9x21 mm", 13000, 750 },
+			{ "hgun_PDW2000_F", "PDW", 13000, 750 },
             { "hgun_P07_snds_F", "Pistola Tazer", 200, 60 },
             { "hgun_P07_F", "P07 9mm", 750, 150 },
+			{ "ItemGPS", "", 100, 45 },
             { "NVGoggles", "Night vision", 200, 90 }
         };
         mags[] = {
@@ -635,16 +653,12 @@ class WeaponShops {
         license = "";
         level[] = { "life_coplevel", "SCALAR", 3, "Voce precisa ser Cabo para acessar essa loja!" };
         items[] = {
-            { "arifle_MXC_Black_F", "Rifle Tazer", 9000, 750 },
-			{ "arifle_TRG21_F", "TRG-21 5.56 mm", 13000, 750 },
 			{ "arifle_TRG20_F", "TRG-20 5.56 mm", 13000, 750 },
-			{ "LMG_Mk200_F", "Mk200 6.5 mm", 50000, 750 },
-			{ "arifle_MXC_F", "MXC 6.5 mm", 20000, 750 },
 			{ "arifle_MX_F", "MX 6.5 mm", 20000, 750 },
 			{ "arifle_Mk20_F", "Mk20 5.56 mm", 13000, 750 },
 			{ "arifle_Mk20C_F", "Mk20C 5.56 mm", 13000, 750 },
             { "SMG_02_F", "Sting 9 mm", 11000, 750 },
-			{ "PDW2000 9 mm", "Submachine 9x21 mm", 10000, 750 },
+			{ "hgun_PDW2000_F", "PDW", 10000, 750 },
             { "hgun_P07_snds_F", "Pistola Tazer", 2500, 60 },
             { "hgun_P07_F", "P07 9mm", 4750, 150 },
             { "FirstAidKit", "Bolsa de Sangue", 50, 5 },
@@ -654,7 +668,6 @@ class WeaponShops {
             { "16Rnd_9x21_Mag", "Munição 16rnd 9mm", 25 },
 			{ "30Rnd_9x21_Mag", "Munição 30rnd 9mm", 25 },
 			{ "30Rnd_556x45_Stanag_Tracer_Green", "Munição 30rnd 5.56mm", 25 },
-			{ "200Rnd_65x39_cased_Box_Tracer", "Munição 200rnd 6.5mm", 25 },
             { "30Rnd_65x39_caseless_mag_Tracer", "Munição 30rnd 6.5mm", 10 }
         };
         accs[] = {
@@ -711,18 +724,16 @@ class WeaponShops {
         license = "";
         level[] = { "life_coplevel", "SCALAR", 4, "Voce precisa ser Sargento para acessar essa loja!" };
         items[] = {
-            { "arifle_MXC_Black_F", "Rifle Tazer", 8000, 750 },
-			{ "arifle_TRG21_F", "TRG-21 5.56 mm", 12000, 750 },
 			{ "arifle_TRG20_F", "TRG-20 5.56 mm", 12000, 750 },
 			{ "LMG_Mk200_F", "Mk200 6.5 mm", 48000, 750 },
 			{ "arifle_MXC_F", "MXC 6.5 mm", 18000, 750 },
-			{ "arifle_MXM_Black_F", "MXM 6.5 mm", 18000, 750 },
-			{ "arifle_MX_SW_Black_F", "MX 6.5 mm", 48000, 750 },
-			{ "arifle_MX_Black_F", "MX 6.5 mm", 18000, 750 },
+			{ "arifle_MXM_Black_F", "MXM Black 6.5 mm", 18000, 750 },
+			{ "arifle_MX_SW_Black_F", "MX SW Black 6.5 mm", 48000, 750 },
+			{ "arifle_MX_Black_F", "MX Black 6.5 mm", 18000, 750 },
 			{ "arifle_Mk20_F", "Mk20 5.56 mm", 12000, 750 },
 			{ "arifle_Mk20C_F", "Mk20C 5.56 mm", 12000, 750 },
             { "SMG_02_F", "Sting 9 mm", 10000, 750 },
-			{ "PDW2000 9 mm", "Submachine 9x21 mm", 9000, 750 },
+			{ "hgun_PDW2000_F", "PDW", 9000, 750 },
             { "hgun_P07_snds_F", "Pistola Tazer", 1500, 60 },
             { "hgun_P07_F", "P07 9mm", 3750, 150 },
             { "FirstAidKit", "Bolsa de Sangue", 50, 5 },
@@ -755,19 +766,17 @@ class WeaponShops {
         license = "";
         level[] = { "life_coplevel", "SCALAR", 5, "Voce precisa ser Tenente para acessar essa loja!" };
         items[] = {
-            { "arifle_MXC_Black_F", "Rifle Tazer", 80000, 750 },
-			{ "arifle_TRG21_F", "TRG-21 5.56 mm", 11000, 750 },
 			{ "arifle_TRG20_F", "TRG-20 5.56 mm", 11000, 750 },
 			{ "LMG_Mk200_F", "Mk200 6.5 mm", 45000, 750 },
 			{ "arifle_MXC_F", "MXC 6.5 mm", 17000, 750 },
-			{ "arifle_MXM_Black_F", "MXM 6.5 mm", 17000, 750 },
-			{ "arifle_MX_SW_Black_F", "MX 6.5 mm", 45000, 750 },
+			{ "arifle_MXM_Black_F", "MXM Black 6.5 mm", 17000, 750 },
+			{ "arifle_MX_SW_Black_F", "MX SW Black 6.5 mm", 45000, 750 },
 			{ "srifle_EBR_F", "Mk18 ABR 7.62 mm", 45000, 750 },
-			{ "arifle_MX_Black_F", "MX 6.5 mm", 17000, 750 },
+			{ "arifle_MX_Black_F", "MX Black 6.5 mm", 17000, 750 },
 			{ "arifle_Mk20_F", "Mk20 5.56 mm", 11000, 750 },
 			{ "arifle_Mk20C_F", "Mk20C 5.56 mm", 11000, 750 },
             { "SMG_02_F", "Sting 9 mm", 9000, 750 },
-			{ "PDW2000 9 mm", "Submachine 9x21 mm", 9000, 750 },
+			{ "hgun_PDW2000_F", "PDW", 9000, 750 },
             { "hgun_P07_snds_F", "Pistola Tazer", 1500, 60 },
             { "hgun_P07_F", "P07 9mm", 3750, 150 },
             { "FirstAidKit", "Bolsa de Sangue", 50, 5 },
@@ -802,19 +811,17 @@ class WeaponShops {
         license = "";
         level[] = { "life_coplevel", "SCALAR", 6, "Voce precisa ser Capitão para acessar essa loja!" };
         items[] = {
-            { "arifle_MXC_Black_F", "Rifle Tazer", 8000, 750 },
-			{ "arifle_TRG21_F", "TRG-21 5.56 mm", 10000, 750 },
 			{ "arifle_TRG20_F", "TRG-20 5.56 mm", 10000, 750 },
 			{ "LMG_Mk200_F", "Mk200 6.5 mm", 40000, 750 },
 			{ "arifle_MXC_F", "MXC 6.5 mm", 16000, 750 },
-			{ "arifle_MXM_Black_F", "MXM 6.5 mm", 16000, 750 },
-			{ "arifle_MX_SW_Black_F", "MX 6.5 mm", 40000, 750 },
+			{ "arifle_MXM_Black_F", "MXM Black 6.5 mm", 16000, 750 },
+			{ "arifle_MX_SW_Black_F", "MX SW Black 6.5 mm", 40000, 750 },
 			{ "srifle_EBR_F", "Mk18 ABR 7.62 mm", 45000, 750 },
 			{ "arifle_MX_Black_F", "MX 6.5 mm", 16000, 750 },
 			{ "arifle_Mk20_F", "Mk20 5.56 mm", 10000, 750 },
 			{ "arifle_Mk20C_F", "Mk20C 5.56 mm", 10000, 750 },
             { "SMG_02_F", "Sting 9 mm", 8000, 750 },
-			{ "PDW2000 9 mm", "Submachine 9x21 mm", 8000, 750 },
+			{ "hgun_PDW2000_F", "PDW", 8000, 750 },
             { "hgun_P07_snds_F", "Pistola Tazer", 1500, 60 },
             { "hgun_P07_F", "P07 9mm", 3750, 150 },
             { "FirstAidKit", "Bolsa de Sangue", 50, 5 },
@@ -849,20 +856,18 @@ class WeaponShops {
         license = "";
         level[] = { "life_coplevel", "SCALAR", 7, "Voce precisa ser Major para acessar essa loja!" };
         items[] = {
-            { "arifle_MXC_Black_F", "Rifle Tazer", 7000, 750 },
-			{ "arifle_TRG21_F", "TRG-21 5.56 mm", 9000, 750 },
 			{ "arifle_TRG20_F", "TRG-20 5.56 mm", 9000, 750 },
 			{ "LMG_Mk200_F", "Mk200 6.5 mm", 35000, 750 },
 			{ "arifle_MXC_F", "MXC 6.5 mm", 15000, 750 },
-			{ "arifle_MXM_Black_F", "MXM 6.5 mm", 15000, 750 },
-			{ "arifle_MX_SW_Black_F", "MX 6.5 mm", 35000, 750 },
+			{ "arifle_MXM_Black_F", "MXM Black 6.5 mm", 15000, 750 },
+			{ "arifle_MX_SW_Black_F", "MX SW Black 6.5 mm", 35000, 750 },
 			{ "srifle_EBR_F", "Mk18 ABR 7.62 mm", 40000, 750 },
-			{ "arifle_MX_Black_F", "MX 6.5 mm", 16000, 750 },
+			{ "arifle_MX_Black_F", "MX Black 6.5 mm", 16000, 750 },
 			{ "arifle_Mk20_F", "Mk20 5.56 mm", 9000, 750 },
 			{ "arifle_Mk20C_F", "Mk20C 5.56 mm", 9000, 750 },
             { "SMG_02_F", "Sting 9 mm", 7000, 750 },
 			{ "srifle_DMR_06_camo_F", "Mk14 7.62mm", 65000, 750 },
-			{ "PDW2000 9 mm", "Submachine 9x21 mm", 7000, 750 },
+			{ "hgun_PDW2000_F", "Submachine 9x21 mm", 7000, 750 },
             { "hgun_P07_snds_F", "Pistola Tazer", 1500, 60 },
             { "hgun_P07_F", "P07 9mm", 3750, 150 },
             { "FirstAidKit", "Bolsa de Sangue", 50, 5 },
@@ -898,21 +903,19 @@ class cop_tenente_coronel {
         license = "";
         level[] = { "life_coplevel", "SCALAR", 8, "Voce precisa ser Major para acessar essa loja!" };
         items[] = {
-            { "arifle_MXC_Black_F", "Rifle Tazer", 7000, 750 },
-			{ "arifle_TRG21_F", "TRG-21 5.56 mm", 9000, 750 },
 			{ "arifle_TRG20_F", "TRG-20 5.56 mm", 9000, 750 },
 			{ "LMG_Mk200_F", "Mk200 6.5 mm", 35000, 750 },
 			{ "arifle_MXC_F", "MXC 6.5 mm", 15000, 750 },
-			{ "arifle_MXM_Black_F", "MXM 6.5 mm", 15000, 750 },
-			{ "arifle_MX_SW_Black_F", "MX 6.5 mm", 35000, 750 },
+			{ "arifle_MXM_Black_F", "MXM Black 6.5 mm", 15000, 750 },
+			{ "arifle_MX_SW_Black_F", "MX SW Black 6.5 mm", 35000, 750 },
 			{ "srifle_EBR_F", "Mk18 ABR 7.62 mm", 40000, 750 },
 			{ "srifle_DMR_06_camo_F", "Mk14 7.62mm", 65000, 750 },
-			{ "arifle_MX_Black_F", "MX 6.5 mm", 16000, 750 },
+			{ "arifle_MX_Black_F", "MX Black 6.5 mm", 16000, 750 },
 			{ "arifle_Mk20_F", "Mk20 5.56 mm", 9000, 750 },
 			{ "arifle_Mk20C_F", "Mk20C 5.56 mm", 9000, 750 },
             { "SMG_02_F", "Sting 9 mm", 7000, 750 },
 			{ "srifle_DMR_03_F", "Mk-I EMR 7.62mm", 65000, 750 },
-			{ "PDW2000 9 mm", "Submachine 9x21 mm", 7000, 750 },
+			{ "hgun_PDW2000_F", "PDW", 7000, 750 },
             { "hgun_P07_snds_F", "Pistola Tazer", 1500, 60 },
             { "hgun_P07_F", "P07 9mm", 3750, 150 },
             { "FirstAidKit", "Bolsa de Sangue", 50, 5 },
@@ -948,22 +951,20 @@ class cop_tenente_coronel {
         license = "";
         level[] = { "life_coplevel", "SCALAR", 9, "Voce precisa ser Major para acessar essa loja!" };
         items[] = {
-            { "arifle_MXC_Black_F", "Rifle Tazer", 7000, 750 },
-			{ "arifle_TRG21_F", "TRG-21 5.56 mm", 9000, 750 },
 			{ "arifle_TRG20_F", "TRG-20 5.56 mm", 9000, 750 },
 			{ "LMG_Mk200_F", "Mk200 6.5 mm", 35000, 750 },
 			{ "arifle_MXC_F", "MXC 6.5 mm", 15000, 750 },
 			{ "LMG_Zafir_F", "Zafir 7.62 mm", 100000, 750 },
-			{ "arifle_MXM_Black_F", "MXM 6.5 mm", 15000, 750 },
-			{ "arifle_MX_SW_Black_F", "MX 6.5 mm", 35000, 750 },
+			{ "arifle_MXM_Black_F", "MXM Black 6.5 mm", 15000, 750 },
+			{ "arifle_MX_SW_Black_F", "MX SW Black 6.5 mm", 35000, 750 },
 			{ "srifle_EBR_F", "Mk18 ABR 7.62 mm", 40000, 750 },
 			{ "srifle_DMR_06_camo_F", "Mk14 7.62mm", 65000, 750 },
-			{ "arifle_MX_Black_F", "MX 6.5 mm", 16000, 750 },
+			{ "arifle_MX_Black_F", "MX Black 6.5 mm", 16000, 750 },
 			{ "arifle_Mk20_F", "Mk20 5.56 mm", 9000, 750 },
 			{ "arifle_Mk20C_F", "Mk20C 5.56 mm", 9000, 750 },
             { "SMG_02_F", "Sting 9 mm", 7000, 750 },
 			{ "srifle_DMR_03_F", "Mk-I EMR 7.62mm", 65000, 750 },
-			{ "PDW2000 9 mm", "Submachine 9x21 mm", 7000, 750 },
+			{ "hgun_PDW2000_F", "PDW", 7000, 750 },
             { "hgun_P07_snds_F", "Pistola Tazer", 1500, 60 },
             { "hgun_P07_F", "P07 9mm", 3750, 150 },
             { "FirstAidKit", "Bolsa de Sangue", 50, 5 },

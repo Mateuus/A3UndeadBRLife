@@ -6951,7 +6951,7 @@
 			<Polish>Wytapianie miedzi</Polish>
 		</Key>
 		<Key ID="STR_License_Iron">
-			<Original>Iron Processing</Original>
+			<Original>Processamento de Ferro</Original>
 			<Czech>Zpracování Iron</Czech>
 			<Spanish>Procesamiento de Hierro</Spanish>
 			<Russian></Russian>
@@ -6962,18 +6962,18 @@
 			<Polish>Wytapianie żelaza</Polish>
 		</Key>
 		<Key ID="STR_License_Sand">
-			<Original>Sand Processing</Original>
+			<Original>Processamento de Ouro</Original>
 			<Czech>Zpracování písek</Czech>
 			<Spanish>Procesamiento de Arena</Spanish>
 			<Russian></Russian>
 			<German>Sandverarbeitung</German>
 			<French>Traitement du Sable</French>
 			<Italian>Processo Sabbia</Italian>
-			<Portuguese>Processamento de Areia</Portuguese>
+			<Portuguese>Processamento de Ouro</Portuguese>
 			<Polish>Hutnik szkła z piasku</Polish>
 		</Key>
 		<Key ID="STR_License_Salt">
-			<Original>Salt Processing</Original>
+			<Original>Processamento de Sal</Original>
 			<Czech>sůl Processing</Czech>
 			<Spanish>Procesamiento de Sal</Spanish>
 			<Russian></Russian>

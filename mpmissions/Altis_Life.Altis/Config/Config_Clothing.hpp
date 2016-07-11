@@ -110,7 +110,7 @@ class Clothing {
             { "B_Carryall_mcamo", "", 5000, { "", "", -1 } },
             { "B_Carryall_oli", "", 5000, { "", "", -1 } },
             { "B_Carryall_khk", "", 5000, { "", "", -1 } },
-            { "B_Carryall_cbr", "", 5000, { "", "", -1 } }
+            { "B_Bergen_dgtl_F", "", 5000, { "", "", -1 } }
         };
     };
 
