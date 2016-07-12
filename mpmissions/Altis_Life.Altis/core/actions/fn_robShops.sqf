@@ -28,9 +28,9 @@ _progress = _ui displayCtrl 38201;
 _pgText = _ui displayCtrl 38202;
 _pgText ctrlSetText format["Roubo em progresso, fique dentro de 5 metros (1%1)...","%"];
 _progress progressSetPosition 0.01;
-_cP = 120;
+_cP = 0.01;
 
-   _rndmrk = random(10);
+   _rndmrk = random(10000);
    _mrkstring = format ["wrgMarker_%1", _rndmrk];
    _Pos = position player;
    _marker = createMarker [_mrkstring, _Pos];
@@ -41,8 +41,8 @@ _cP = 120;
 
 while{true} do
 {
-	uiSleep 2.00;
-	_cP = _cP + 120;
+	uiSleep 0.85;
+	_cP = _cP + 0.01;
 	_progress progressSetPosition _cP;
 	_pgText ctrlSetText format["Roubo em progresso, fique dentro de 5 metros (%1%2)...",round(_cP * 100),"%"];
 
@@ -75,6 +75,6 @@ while{true} do
 [getPlayerUID _robber,name _robber,"15"] remoteExec ["life_fnc_wantedAdd",2];
 
 
-uiSleep 1200;
-_action = _shop addAction["Roubar posto",life_fnc_robShops];
+uiSleep 300;
+_action = _shop addAction["Roubar Loja",life_fnc_robShops];
 _shop switchMove "";

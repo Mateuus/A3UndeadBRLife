@@ -11,7 +11,7 @@ private["_skinName"];
 switch(playerSide) do {
 	case civilian: {
 		if(EQUAL(LIFE_SETTINGS(getNumber,"civ_skins"),1)) then {
-			if(uniform player isEqualTo "U_C_Poloshirt_blue") then {
+			if(uniform player isEqualTo "U_Marshal") then {
 				player setObjectTextureGlobal [0, "textures\Civ\Clothing\gay.jpg"];
 			};
 			if(uniform player isEqualTo "U_C_Poloshirt_stripped") then {
@@ -73,7 +73,7 @@ switch(playerSide) do {
             
 		if (uniform player isEqualTo "U_B_CombatUniform_mcam" && (FETCH_CONST(life_donorlevel) >= 1)) then 
 		{
-			player setObjectTextureGlobal [0, "textures\Vip\Clothing\nh.jpg"];
+			player setObjectTextureGlobal [0, "textures\Vip\Clothing\bh.jpg"];
 		};
 		if (uniform player isEqualTo "U_B_CombatUniform_mcam_vest" && (FETCH_CONST(life_donorlevel) >= 1)) then 
 		{

@@ -23,7 +23,7 @@ class Clothing {
             { "U_C_Poloshirt_stripped", "Roupa Batman", 125, { "", "", -1 } },
             { "U_C_Poloshirt_redwhite", "Roupa Cat", 150, { "", "", -1 } },
             { "U_C_Poloshirt_salmon", "Roupa Wolf", 175, { "", "", -1 } },
-            { "U_C_Poloshirt_blue", "Roupa Gay", 250, { "", "", -1 } },
+            { "U_Marshal", "Roupa Amarela", 250, { "", "", -1 } },
             { "U_C_Poor_2", "Roupa Pedreiro", 250, { "", "", -1 } },
             { "U_C_Poloshirt_burgundy", "Roupa Superman", 275, { "", "", -1 } },
             { "U_C_Poloshirt_tricolour", "Roupa Lacoste", 350, { "", "", -1 } },
