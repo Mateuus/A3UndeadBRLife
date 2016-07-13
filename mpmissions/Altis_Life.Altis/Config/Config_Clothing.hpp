@@ -421,7 +421,7 @@ class Clothing {
 			{ "B_Bergen_sgg", "Mochila USA", 4000, { "life_donorlevel", "SCALAR", 1 } },
 			{ "B_Kitbag_mcamo", "", 2950, { "life_donorlevel", "SCALAR", 2 } },
 			{ "B_FieldPack_ocamo", "", 2700, { "life_donorlevel", "SCALAR", 2 } },
-			{ "B_Carryall_oli", "", 4500, { "life_donorlevel", "SCALAR", 2 } },
+			{ "B_Carryall_oli", "ExE teste", 4500, { "life_donorlevel", "SCALAR", 2 } },
 			{ "B_Carryall_khk", "", 4500, { "life_donorlevel", "SCALAR", 2 } },
 			{ "B_Carryall_oucamo", "Mochila Ivisivel", 4500, { "life_donorlevel", "SCALAR", 2 } }
         };
