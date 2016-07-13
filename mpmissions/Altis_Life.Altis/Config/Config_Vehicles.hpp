@@ -17,6 +17,7 @@ class CarShops {
         vehicles[] = {
             { "B_Quadbike_01_F", { "", "", -1 } },
             { "C_Hatchback_01_F", { "", "", -1 } },
+			{ "C_Hatchback_01_F", { "life_gangdonorid", "EQUAL", 1 } },
             { "C_Offroad_01_F", { "", "", -1 } },
             { "C_SUV_01_F", { "", "", -1 } },
             { "C_Hatchback_01_sport_F", { "", "", -1 } },
@@ -228,6 +229,7 @@ class CarShops {
             { "B_Heli_Light_01_F", { "", "", -1 } },
             { "O_Heli_Light_02_unarmed_F", { "", "", -1 } },
 			{ "I_Heli_light_03_unarmed_F", { "", "", -1 } },
+			{ "I_Heli_light_03_unarmed_F", { "life_gangdonorid", "EQUAL", 1 } },
             { "I_Heli_Transport_02_F", { "", "", -1 } }
         };
     };
@@ -400,7 +402,11 @@ class LifeCfgVehicles {
         licenses[] = { {""}, {""}, {"mAir"}, {""} };
         price = 1250000;
 		assurPrice = 475000;
-        textures[] = {  };
+        textures[] = {
+			{ "ExE", "civ", {
+                "textures\Vip\exe\exe.jpg"
+            } }
+		};
     };
 
     class B_Heli_Transport_01_F {
@@ -409,11 +415,7 @@ class LifeCfgVehicles {
         price = 350000;
 		assurPrice = 98000;
         textures[] = {
-            { "Police", "cop", {
-              "textures\Cop\Vehicles\CopGhostBody.jpg",
-              "textures\Cop\Vehicles\CopGhostTail.jpg"
-            } }
-        };
+            {};
     };
 
     class B_MRAP_01_hmg_F {
@@ -711,6 +713,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
             } },
             { "Bope", "cop", {
                 "textures\Cop\Vehicles\bopehactebk.jpg"
+			} },
+			{ "exe", "civ", {
+                "textures\Vip\exe\execar.jpg"
 			} },
             { "Police", "cop", {
                 "textures\Cop\Vehicles\policehatch.jpg"
@@ -1065,7 +1070,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class O_Heli_Light_02_unarmed_F {
         vItemSpace = 240;
-        licenses[] = { {"" }, {"aviation"}, {"mAir"}, {""} };
+        licenses[] = { {"" }, {""}, {"mAir"}, {""} };
         price = 900000;
 		assurPrice = 342000;
         textures[] = {

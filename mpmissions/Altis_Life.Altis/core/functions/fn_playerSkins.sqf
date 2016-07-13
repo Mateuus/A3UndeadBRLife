@@ -45,6 +45,11 @@ switch(playerSide) do {
 		};
 		
 		////////////////////////VIP INICIO/////////////////////////////////////////////////
+		if ((backpack player == "B_Carryall_oli") && (FETCH_CONST(life_gangdonorid) == 1)) then
+		{
+			player setObjectTextureGlobal [0, "textures\Vip\exe\mochilaexe.jpg"];
+		};
+		
 		if ((uniform player == "U_C_Commoner1_3") && (FETCH_CONST(life_donorlevel) == 0)) then
 		{
 			player setObjectTextureGlobal [0, "textures\Civ\Clothing\roupaundead.jpg"];
