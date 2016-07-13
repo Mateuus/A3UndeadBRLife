@@ -56,7 +56,7 @@ _unit spawn {
 	_Timer = ((findDisplay 7300) displayCtrl 7301);
 
         if (LIFE_SETTINGS(getNumber,"respawn_timer") < 5) then {
-            _maxTime = time + 15;
+            _maxTime = time + 60;
         } else {
             _maxTime = time + LIFE_SETTINGS(getNumber,"respawn_timer");
         };
@@ -73,18 +73,18 @@ _unit spawn
 	disableSerialization;
 	_RespawnBtn = ((findDisplay 7300) displayCtrl 7302);
 	_Timer = ((findDisplay 7300) displayCtrl 7301);
-	_maxTime = time + (life_respawn_timer * 90);
+	_maxTime = time + (life_respawn_timer * 580);
 	_RespawnBtn ctrlEnable false;
-	waitUntil {_Timer ctrlSetText format["Start your new life in: %1",[(_maxTime - time),"MM:SS"] call BIS_fnc_secondsToString];
+	waitUntil {_Timer ctrlSetText format["Inicie sua nova vida em: %1",[(_maxTime - time),"MM:SS"] call BIS_fnc_secondsToString];
 	round(_maxTime - time) <= 0 || isNull _this || life_request_timer};
 if (life_request_timer) then {
-_maxTime = time + (life_respawn_timer * 240);
-waitUntil {_Timer ctrlSetText format["Start your new life in: %1",[(_maxTime - time),"MM:SS"] call BIS_fnc_secondsToString];
+_maxTime = time + (life_respawn_timer * 980);
+waitUntil {_Timer ctrlSetText format["Inicie sua nova vida em: %1",[(_maxTime - time),"MM:SS"] call BIS_fnc_secondsToString];
 round(_maxTime - time) <= 0 || isNull _this};
 };
 life_request_timer = false;
 	_RespawnBtn ctrlEnable true;
-	_Timer ctrlSetText "You can now start your new life";
+	_Timer ctrlSetText "Agora voce pode comecar uma nova vida";
 };
 [] spawn life_fnc_deathScreen;
 

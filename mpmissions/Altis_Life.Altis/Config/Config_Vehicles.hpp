@@ -278,12 +278,12 @@ class CarShops {
         vehicles[] = {
             { "B_Quadbike_01_F", { "", "", -1 } },
             { "C_Offroad_01_F", { "", "", -1 } },
+			
             { "C_SUV_01_F", { "", "", -1 } },
             { "C_Hatchback_01_sport_F", { "life_coplevel", "SCALAR", 1 } },
             { "B_MRAP_01_F", { "life_coplevel", "SCALAR", 2 } },
             { "I_MRAP_03_F", { "life_coplevel", "SCALAR", 3 } },
-            { "B_G_Offroad_01_armed_F", { "life_coplevel", "SCALAR", 3 } },
-            { "B_MRAP_01_hmg_F", { "life_coplevel", "SCALAR", 4 } }
+			{ "B_T_LSV_01_unarmed_black_F", { "life_coplevel", "SCALAR", 3 } }
         };
     };
 
@@ -397,7 +397,7 @@ class LifeCfgVehicles {
 
     class I_Heli_light_03_unarmed_F {
         vItemSpace = 325;
-        licenses[] = { {""}, {"aviation"}, {""}, {""} };
+        licenses[] = { {""}, {""}, {"mAir"}, {""} };
         price = 1250000;
 		assurPrice = 475000;
         textures[] = {  };
@@ -405,7 +405,7 @@ class LifeCfgVehicles {
 
     class B_Heli_Transport_01_F {
         vItemSpace = 300;
-        licenses[] = { {""}, {"aviation"}, {""}, {""} };
+        licenses[] = { {""}, {""}, {"mAir"}, {""} };
         price = 350000;
 		assurPrice = 98000;
         textures[] = {
@@ -986,6 +986,14 @@ will modify the virtual space and the price of the vehicle, but other informatio
 	   assurPrice = 34500;
        textures[] = {};
    };
+   
+   class B_T_LSV_01_unarmed_black_F {
+       vItemSpace = 55;
+       licenses[] = { {""}, {""}, {""}, {""} };
+       price = 25000;
+	   assurPrice = 4500;
+       textures[] = {};
+   };
 
    class O_Heli_Transport_04_Box_F {
       vItemSpace = 525;
@@ -997,7 +1005,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class B_Heli_Light_01_F {
         vItemSpace = 90;
-        licenses[] = { {""}, {"aviation"}, {"mAir"}, {""} };
+        licenses[] = { {""}, {""}, {"mAir"}, {""} };
         price = 250000;
 		assurPrice = 95000;
         textures[] = {

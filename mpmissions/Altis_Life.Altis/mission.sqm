@@ -8,7 +8,7 @@ class EditorData
 	toggles=10;
 	class ItemIDProvider
 	{
-		nextID=11325;
+		nextID=11364;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8910.9258,75.346107,7504.064};
-		dir[]={-0.81497216,-0.13418308,-0.56379282};
-		up[]={-0.11037221,0.9909488,-0.076354645};
-		aside[]={-0.56893653,5.9354352e-007,0.82240701};
+		pos[]={8981.4287,79.341675,7475.0293};
+		dir[]={0.28967476,-0.56430238,0.77308547};
+		up[]={0.1980017,0.8255676,0.52842689};
+		aside[]={0.93642473,7.5888238e-008,-0.35087919};
 	};
 };
 binarizationWanted=0;
@@ -52,6 +52,7 @@ addons[]=
 	"A3_Structures_F_Civ_InfoBoards",
 	"A3_Structures_F_Mil_Fortification",
 	"A3_Characters_F",
+	"A3_Characters_F_Exp_Civil",
 	"A3_Weapons_F_Pistols_Rook40",
 	"A3_Weapons_F_Items",
 	"A3_Weapons_F_Pistols_Pistol_Heavy_01",
@@ -97,13 +98,18 @@ addons[]=
 	"A3_Structures_F_EPB_Civ_PlayGround",
 	"A3_Structures_F_EPA_Items_Medical",
 	"A3_Structures_F_Heli_Items_Luggage",
-	"A3_Structures_F_Households_House_Big01"
+	"A3_Structures_F_Households_House_Big01",
+	"A3_Structures_F_Households_House_Big02",
+	"A3_Characters_F_Exp",
+	"A3_Props_F_Exp_Military_Camps",
+	"A3_Characters_F_Exp_Vests",
+	"A3_Characters_F_Exp_Headgear"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=21;
+		items=23;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -114,14 +120,14 @@ class AddonsMetaData
 		class Item1
 		{
 			className="A3_Missions_F_Beta";
-			name="Arma 3 Beta - Playable content";
+			name="Arma 3 Beta - Playable Content";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
 		class Item2
 		{
 			className="A3_Structures_F";
-			name="Arma 3 Alpha - Buildings and structures";
+			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
@@ -135,7 +141,7 @@ class AddonsMetaData
 		class Item4
 		{
 			className="A3_Structures_F_Ind";
-			name="Arma 3 Alpha - Industry complexes";
+			name="Arma 3 - Industrial Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
@@ -149,7 +155,7 @@ class AddonsMetaData
 		class Item6
 		{
 			className="A3_Structures_F_EPC";
-			name="Arma 3 Win Episode - Buildings and structures";
+			name="Arma 3 Win Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
@@ -170,7 +176,7 @@ class AddonsMetaData
 		class Item9
 		{
 			className="A3_Structures_F_EPB";
-			name="Arma 3 Adapt Episode - Buildings and structures";
+			name="Arma 3 Adapt Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
@@ -183,71 +189,85 @@ class AddonsMetaData
 		};
 		class Item11
 		{
-			className="A3_Characters_F_Kart";
-			name="Arma 3 Karts - Personnel and clothing";
+			className="A3_Characters_F_Exp";
+			name="Arma 3 Apex - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
 		class Item12
 		{
-			className="A3_Structures_F_Households";
-			name="Arma 3 Alpha - Houses";
+			className="A3_Characters_F_Kart";
+			name="Arma 3 Karts - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
 		class Item13
 		{
-			className="A3_Supplies_F_Heli";
-			name="Arma 3 Helicopters - Ammoboxes and supplies";
+			className="A3_Structures_F_Households";
+			name="Arma 3 - Houses";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
 		class Item14
 		{
-			className="A3_Structures_F_Heli";
-			name="Arma 3 Helicopters - Buildings and structures";
+			className="A3_Supplies_F_Heli";
+			name="Arma 3 Helicopters - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
 		class Item15
 		{
-			className="A3_Structures_F_Bootcamp";
-			name="Arma 3 Bootcamp Update - Buildings and structures";
+			className="A3_Structures_F_Heli";
+			name="Arma 3 Helicopters - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
 		class Item16
 		{
-			className="A3_Structures_F_Mark";
-			name="Arma 3 Marksmen - Buildings and structures";
+			className="A3_Structures_F_Bootcamp";
+			name="Arma 3 Bootcamp Update - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
 		class Item17
 		{
-			className="A3_Structures_F_Wrecks";
-			name="Arma 3 Alpha - Vehicle wrecks";
+			className="A3_Structures_F_Mark";
+			name="Arma 3 Marksmen - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
 		class Item18
+		{
+			className="A3_Structures_F_Wrecks";
+			name="Arma 3 - Vehicle Wrecks";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item19
 		{
 			className="A3_Roads_F";
 			name="Arma 3 - Roads";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item19
+		class Item20
 		{
 			className="A3_Boat_F_Gamma";
-			name="Arma 3 - Boats and submersibles";
+			name="Arma 3 - Boats and Submersibles";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item20
+		class Item21
 		{
 			className="A3_Rocks_F";
 			name="Arma 3 - Rocks and Stones";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item22
+		{
+			className="A3_Props_F_Exp";
+			name="Arma 3 Apex - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
@@ -375,7 +395,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1960;
+		items=1981;
 		class Item0
 		{
 			dataType="Marker";
@@ -33228,7 +33248,7 @@ class Mission
 			dataType="Marker";
 			position[]={12458.975,74.396118,21518.475};
 			name="marker_243";
-			text="Mina de Krokodilo";
+			text="Mina de C4";
 			type="mil_dot";
 			colorName="ColorRed";
 			id=1705;
@@ -68676,18 +68696,18 @@ class Mission
 		class Item1929
 		{
 			dataType="Marker";
-			position[]={8917.9609,67.377609,7489.9219};
+			position[]={8917.9609,2.384879e+025,7489.9219};
 			name="safezone_gang_1";
 			markerType="ELLIPSE";
 			type="ellipse";
 			colorName="ColorEAST";
 			alpha=0.5988794;
 			fillName="DiagGrid";
-			a=70;
-			b=70;
+			a=80;
+			b=80;
 			angle=172.04897;
 			id=11276;
-			atlOffset=-0.010238647;
+			atlOffset=2.384879e+025;
 		};
 		class Item1930
 		{
@@ -68714,64 +68734,6 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8910.5264,67.166176,7474.6636};
-				angles[]={0,6.1311545,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-			};
-			id=11284;
-			type="Land_i_Barracks_V2_F";
-		};
-		class Item1933
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={8897.6523,71.612671,7475.6162};
-				angles[]={0,3.0117052,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-				skill=0.60000002;
-				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Process_Cocaine"",life_fnc_processAction,""cocaine"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0; life_inv_cocaineUnprocessed > 0 && !life_is_processing && (FETCH_CONST(life_donorlevel) >= 1) && playerSide == civilian ']; this setVariable[""realname"",""Cocaine Processing""];";
-				name="coke_processor_1";
-			};
-			id=11285;
-			type="Land_Sink_F";
-			atlOffset=3.2247772;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item1934
-		{
-			dataType="Object";
-			class PositionInfo
-			{
 				position[]={2396.8867,13.47148,9331.9873};
 				angles[]={0,3.6286833,0};
 			};
@@ -68783,7 +68745,7 @@ class Mission
 			type="Land_RampConcrete_F";
 			atlOffset=1.1856022;
 		};
-		class Item1935
+		class Item1933
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68799,7 +68761,7 @@ class Mission
 			type="Land_RampConcrete_F";
 			atlOffset=0.39474201;
 		};
-		class Item1936
+		class Item1934
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68815,7 +68777,7 @@ class Mission
 			type="Land_RampConcrete_F";
 			atlOffset=1.1861963;
 		};
-		class Item1937
+		class Item1935
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68831,7 +68793,7 @@ class Mission
 			type="Land_RampConcrete_F";
 			atlOffset=0.78232765;
 		};
-		class Item1938
+		class Item1936
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68848,7 +68810,7 @@ class Mission
 			type="Land_Canal_Wall_10m_F";
 			atlOffset=2.8362093;
 		};
-		class Item1939
+		class Item1937
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68865,7 +68827,7 @@ class Mission
 			type="Land_Canal_Wall_10m_F";
 			atlOffset=2.8017588;
 		};
-		class Item1940
+		class Item1938
 		{
 			dataType="Marker";
 			position[]={2461.083,91.597168,22294.395};
@@ -68879,7 +68841,7 @@ class Mission
 			id=11292;
 			atlOffset=58.435947;
 		};
-		class Item1941
+		class Item1939
 		{
 			dataType="Marker";
 			position[]={2461.9072,90.602753,22294.502};
@@ -68890,7 +68852,7 @@ class Mission
 			id=11293;
 			atlOffset=57.783047;
 		};
-		class Item1942
+		class Item1940
 		{
 			dataType="Group";
 			side="Civilian";
@@ -69003,19 +68965,19 @@ class Mission
 			id=11294;
 			atlOffset=3.491775;
 		};
-		class Item1943
+		class Item1941
 		{
 			dataType="Marker";
 			position[]={10799.641,12.873128,10858.223};
 			name="marker_252";
-			text="Construtor de C4";
+			text="Processador de Diamante de Sangue";
 			type="mil_dot";
 			colorName="ColorRed";
 			angle=168.832;
 			id=11296;
 			atlOffset=3.6453295;
 		};
-		class Item1944
+		class Item1942
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69030,7 +68992,7 @@ class Mission
 			id=11301;
 			type="Land_MetalBarrel_empty_F";
 		};
-		class Item1945
+		class Item1943
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69047,7 +69009,7 @@ class Mission
 			type="Land_WoodenTable_large_F";
 			atlOffset=1.9073486e-006;
 		};
-		class Item1946
+		class Item1944
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69063,7 +69025,7 @@ class Mission
 			id=11304;
 			type="Land_WoodenTable_large_F";
 		};
-		class Item1947
+		class Item1945
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69079,7 +69041,7 @@ class Mission
 			type="Land_PainKillers_F";
 			atlOffset=0.85292816;
 		};
-		class Item1948
+		class Item1946
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69094,7 +69056,7 @@ class Mission
 			type="Land_BloodBag_F";
 			atlOffset=0.84690285;
 		};
-		class Item1949
+		class Item1947
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69109,7 +69071,7 @@ class Mission
 			type="Land_Antibiotic_F";
 			atlOffset=0.022916794;
 		};
-		class Item1950
+		class Item1948
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69125,7 +69087,7 @@ class Mission
 			type="Land_PlasticCase_01_small_F";
 			atlOffset=0.83959007;
 		};
-		class Item1951
+		class Item1949
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69141,7 +69103,7 @@ class Mission
 			id=11309;
 			type="Land_CarBattery_01_F";
 		};
-		class Item1952
+		class Item1950
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69157,7 +69119,7 @@ class Mission
 			type="Land_Camping_Light_off_F";
 			atlOffset=0.84421921;
 		};
-		class Item1953
+		class Item1951
 		{
 			dataType="Marker";
 			position[]={4752.2437,11.090744,10123.322};
@@ -69173,7 +69135,7 @@ class Mission
 			id=11316;
 			atlOffset=-1.7370348;
 		};
-		class Item1954
+		class Item1952
 		{
 			dataType="Marker";
 			position[]={4752.3677,141.8894,10122.11};
@@ -69184,7 +69146,7 @@ class Mission
 			id=11317;
 			atlOffset=129.14606;
 		};
-		class Item1955
+		class Item1953
 		{
 			dataType="Marker";
 			position[]={4742.5474,10.531372,10127.751};
@@ -69194,29 +69156,29 @@ class Mission
 			id=11318;
 			atlOffset=-2.2640247;
 		};
-		class Item1956
+		class Item1954
 		{
 			dataType="Marker";
-			position[]={4693.7822,78.291016,10108.981};
+			position[]={4693.7822,-2.9360667e-011,10108.981};
 			name="chop_shop_5";
-			text="M A L A N D R A  M E N T E";
+			text="Execution";
 			type="o_hq";
 			colorName="Color1_FD_F";
 			id=11321;
-			atlOffset=70.545013;
+			atlOffset=-7.746006;
 		};
-		class Item1957
+		class Item1955
 		{
 			dataType="Marker";
-			position[]={8917.6504,10.860352,7482.3237};
+			position[]={8917.6504,-1.2028881e-026,7482.3242};
 			name="chop_shop_6";
-			text="EXECUTION";
+			text="M A L A N D R A  M E N T E";
 			type="o_hq";
 			colorName="Color1_FD_F";
 			id=11322;
-			atlOffset=-56.493484;
+			atlOffset=-67.353859;
 		};
-		class Item1958
+		class Item1956
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69233,14 +69195,1375 @@ class Mission
 			type="Land_i_House_Big_01_V3_F";
 			atlOffset=1.1576157;
 		};
-		class Item1959
+		class Item1957
 		{
 			dataType="Marker";
-			position[]={8911.2168,67.130035,7490.3833};
+			position[]={8909.7979,67.129883,7490.147};
 			name="civ_spawn_gang_vip_1";
 			type="Empty";
-			angle=258.31497;
+			angle=258.31494;
 			id=11324;
+			atlOffset=0.019119263;
+		};
+		class Item1958
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8900.5996,69.532791,7520.5586};
+				angles[]={0,3.6711276,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=11325;
+			type="Land_i_House_Big_01_V3_F";
+			atlOffset=1.2070541;
+		};
+		class Item1959
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8937.127,70.409454,7483.7417};
+				angles[]={0,1.5697268,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=11326;
+			type="Land_i_House_Big_02_V1_F";
+			atlOffset=0.35945892;
+		};
+		class Item1960
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8937.5576,70.414185,7473.6812};
+				angles[]={0,1.5697268,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=11327;
+			type="Land_i_House_Big_02_V1_F";
+			atlOffset=0.19902802;
+		};
+		class Item1961
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8900.166,66.924767,7482.373};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="this enableSimulation false; this allowDamage false; this addAction[""Loja de Carros VIP Bronze"",life_fnc_vehicleShopMenu,[""civ_vip_car_bronze"",civilian,[""civ_vip_car_7""],""civ"",""Loja de Carros VIP Bronze""]];this addAction[""Loja de Carros VIP Silver"",life_fnc_vehicleShopMenu,[""civ_vip_car_silver"",civilian,[""civ_vip_car_7""],""civ"",""Loja de Carros VIP Silver""]];this addAction[""Loja de Carros VIP Gold"",life_fnc_vehicleShopMenu,[""civ_vip_car_gold"",civilian,[""civ_vip_car_7""],""civ"",""Loja de Carros VIP Gold""]];this addAction[""Loja de Carros VIP Platinum"",life_fnc_vehicleShopMenu,[""civ_vip_car_platinum"",civilian,[""civ_vip_car_7""],""civ"",""Loja de Carros VIP Platinum""]];this addAction[""Loja de Carros VIP Diamante"",life_fnc_vehicleShopMenu,[""civ_vip_car_diamante"",civilian,[""civ_vip_car_7""],""civ"",""Loja de Carros VIP Diamante""]];this addAction[localize""STR_Garage_Title"",  {   if(life_HC_isActive) then { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];}; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_vip_car_7"";  }];  this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"", ""Car Shop""];";
+						name="vip_8";
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_C_Man_casual_3_F";
+								isBackpack=0;
+							};
+							class vest
+							{
+								typeName="V_TacVestIR_blk";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							goggles="G_Balaclava_TI_blk_F";
+						};
+					};
+					id=11329;
+					type="C_man_shorts_1_F";
+					atlOffset=-0.017997742;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="enableSimulation";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=11328;
+			atlOffset=-0.017997742;
+		};
+		class Item1962
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8906.0918,68.195915,7477.167};
+				angles[]={0,4.9913225,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=11330;
+			type="Land_IRMaskingCover_02_F";
+			atlOffset=-0.027488708;
+		};
+		class Item1963
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8908.6191,67.09713,7479.8848};
+						angles[]={0,4.9756718,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="this enableSimulation false; this allowDamage false; this addAction[localize ""STR_MAR_General_Store"",life_fnc_weaponShopMenu,""genstore""];";
+						name="vip_11";
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_I_C_Soldier_Bandit_5_F";
+								isBackpack=0;
+							};
+							class vest
+							{
+								typeName="V_TacChestrig_cbr_F";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							goggles="G_Balaclava_TI_blk_F";
+						};
+					};
+					id=11332;
+					type="C_man_shorts_1_F";
+					atlOffset=0.0029907227;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="enableSimulation";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=11331;
+			atlOffset=0.0029907227;
+		};
+		class Item1964
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8907.3174,67.060638,7476.5708};
+						angles[]={0,5.0863256,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="this allowDamage false; this enableSimulation false;  " \n "this addAction[""Roupa Vip Bronze"",life_fnc_clothingMenu,""RoupasBronze""]; " \n "this addAction[""Roupa Vip Silver"",life_fnc_clothingMenu,""RoupasSilver""]; " \n "this addAction[""Roupa Vip Gold"",life_fnc_clothingMenu,""RoupasGold""]; " \n "this addAction[""Roupa Vip Diamante"",life_fnc_clothingMenu,""RoupasDiamante""];";
+						name="vip_9";
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_O_V_Soldier_Viper_hex_F";
+								isBackpack=0;
+							};
+							class vest
+							{
+								typeName="V_PlateCarrierH_CTRG";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="H_HelmetO_ViperSP_hex_F";
+						};
+					};
+					id=11334;
+					type="C_man_hunter_1_F";
+					atlOffset=-0.031997681;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="enableSimulation";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=11333;
+			atlOffset=-0.031997681;
+		};
+		class Item1965
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8906.1611,67.119255,7473.4927};
+						angles[]={0,5.1266427,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="removeallWeapons this;  this enableSimulation false;this allowDamage false; this addAction[""Bronze Weapon Shop"",life_fnc_weaponShopMenu,""bronze"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];this addAction[""Ulititarios doador"",life_fnc_weaponShopMenu,""utilitarios"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];this addAction[""Silver Weapon Shop"",life_fnc_weaponShopMenu,""silver"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];this addAction[""Gold Weapon Shop"",life_fnc_weaponShopMenu,""gold"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];this addAction[""Platinum Weapon Shop"",life_fnc_weaponShopMenu,""platinum"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];this addAction[""Diamante Weapon Shop"",life_fnc_weaponShopMenu,""diamante"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];";
+						name="vip_7";
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_O_V_Soldier_Viper_F";
+								isBackpack=0;
+							};
+							class vest
+							{
+								typeName="V_PlateCarrier2_tna_F";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="H_HelmetO_ViperSP_ghex_F";
+						};
+					};
+					id=11336;
+					type="C_Man_casual_1_F";
+					atlOffset=-0.0049972534;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="enableSimulation";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=11335;
+			atlOffset=-0.0049972534;
+		};
+		class Item1966
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8907.9414,68.348999,7478.207};
+				angles[]={0,1.8262825,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' isNull objectParent player && player distance _target < 4 '];";
+			};
+			id=11337;
+			type="Land_Atm_02_F";
+			atlOffset=-0.0046157837;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1967
+		{
+			dataType="Marker";
+			position[]={8902.0186,-9.3706351e-023,7491.5151};
+			name="civ_vip_car_7";
+			type="Empty";
+			angle=18.593998;
+			id=11339;
+			atlOffset=-66.393997;
+		};
+		class Item1968
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8990.4648,70.552002,7490.2769};
+						angles[]={0,4.8332005,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="this enableSimulation false; this allowDamage false; this addAction[""Loja de Helicóptero Bronze"",life_fnc_vehicleShopMenu,[""civ_vip_air_bronze"",civilian,[""civ_vip_air_aac_8"",""civ_vip_air_aac_9""],""civ_vip"",""Loja de Helicóptero Bronze VIP""]]; this addAction[""Loja de Helicóptero Silver"",life_fnc_vehicleShopMenu,[""civ_vip_air_silver"",civilian,[""civ_vip_air_aac_8"",""civ_vip_air_aac_9""],""civ_vip"",""Loja de Helicóptero Silver VIP""]];this addAction[""Loja de Helicóptero Gold"",life_fnc_vehicleShopMenu,[""civ_vip_air_gold"",civilian,[""civ_vip_air_aac_8"",""civ_vip_air_aac_9""],""civ_vip"",""Loja de Helicóptero Gold VIP""]];this addAction[""Loja de Helicóptero Platinum"",life_fnc_vehicleShopMenu,[""civ_vip_air_platinum"",civilian,[""civ_vip_air_aac_8"",""civ_vip_air_aac_9""],""civ_vip"",""Loja de Helicóptero Platinum VIP""]];this addAction[""Loja de Helicóptero Diamante"",life_fnc_vehicleShopMenu,[""civ_vip_air_platinum"",civilian,[""civ_vip_air_aac_8"",""civ_vip_air_aac_9""],""civ_vip"",""Loja de Helicóptero Diamante VIP""]]; this addAction[""Guardar Helicopter"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Helicopter Garagem"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] call life_fnc_MP;  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Buscando Veículos....""];   life_garage_sp = ""civ_vip_air_aac_8"";  }];";
+						name="vip_12";
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_O_PilotCoveralls";
+								isBackpack=0;
+							};
+							class vest
+							{
+								typeName="V_I_G_resistanceLeader_F";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							goggles="G_Sport_Checkered";
+							headgear="H_CrewHelmetHeli_O";
+						};
+					};
+					id=11341;
+					type="C_man_1_1_F";
+					atlOffset=0.024009705;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="enableSimulation";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.94999999;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=11342;
+			atlOffset=0.024009705;
+		};
+		class Item1969
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8982.6924,70.561142,7490.0845};
+				angles[]={6.259192,0,6.2698579};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=11344;
+			type="Land_HelipadCivil_F";
+			atlOffset=-0.047225952;
+		};
+		class Item1970
+		{
+			dataType="Marker";
+			position[]={8982.6963,-1.6274655e-027,7490.1162};
+			name="civ_vip_air_aac_8";
+			type="Empty";
+			angle=122.77099;
+			id=11345;
+			atlOffset=-70.608574;
+		};
+		class Item1971
+		{
+			dataType="Marker";
+			position[]={8983.4844,6.9627955e+025,7490.688};
+			name="civ_vip_air_aac_9";
+			type="Empty";
+			angle=122.77099;
+			id=11346;
+			atlOffset=6.9627955e+025;
+		};
+		class Item1972
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4781.7129,16.716991,10178.09};
+				angles[]={0,3.8767242,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=11347;
+			type="Land_i_House_Big_01_V3_F";
+			atlOffset=0.17747498;
+		};
+		class Item1973
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4739.6885,12.809822,10134.107};
+						angles[]={0,1.8556955,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="this enableSimulation false; this allowDamage false; this addAction[""Loja de Carros VIP Bronze"",life_fnc_vehicleShopMenu,[""civ_vip_car_bronze"",civilian,[""civ_vip_car_6""],""civ"",""Loja de Carros VIP Bronze""]];this addAction[""Loja de Carros VIP Silver"",life_fnc_vehicleShopMenu,[""civ_vip_car_silver"",civilian,[""civ_vip_car_1"",""civ_vip_car_2"",""civ_vip_car_3"",""civ_vip_car_4""],""civ"",""Loja de Carros VIP Silver""]];this addAction[""Loja de Carros VIP Gold"",life_fnc_vehicleShopMenu,[""civ_vip_car_gold"",civilian,[""civ_vip_car_1"",""civ_vip_car_2"",""civ_vip_car_3"",""civ_vip_car_4""],""civ"",""Loja de Carros VIP Gold""]];this addAction[""Loja de Carros VIP Platinum"",life_fnc_vehicleShopMenu,[""civ_vip_car_platinum"",civilian,[""civ_vip_car_1"",""civ_vip_car_2"",""civ_vip_car_3"",""civ_vip_car_4""],""civ"",""Loja de Carros VIP Platinum""]];this addAction[""Loja de Carros VIP Diamante"",life_fnc_vehicleShopMenu,[""civ_vip_car_diamante"",civilian,[""civ_vip_car_1"",""civ_vip_car_2"",""civ_vip_car_3"",""civ_vip_car_4""],""civ"",""Loja de Carros VIP Diamante""]];this addAction[localize""STR_Garage_Title"",  {   if(life_HC_isActive) then { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];}; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_vip_car_1"";  }];  this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"", ""Car Shop""];";
+						name="vip_10";
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_C_Man_casual_3_F";
+								isBackpack=0;
+							};
+							class vest
+							{
+								typeName="V_TacVestIR_blk";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							goggles="G_Balaclava_TI_blk_F";
+						};
+					};
+					id=11352;
+					type="C_man_shorts_1_F";
+					atlOffset=-0.15865517;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="enableSimulation";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=11351;
+			atlOffset=-0.15865517;
+		};
+		class Item1974
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4733.6455,14.101998,10139.076};
+				angles[]={0,1.8267223,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=11353;
+			type="Land_IRMaskingCover_02_F";
+			atlOffset=-0.052773476;
+		};
+		class Item1975
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4731.1802,12.745989,10136.4};
+						angles[]={0,1.8110715,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="this enableSimulation false; this allowDamage false; this addAction[localize ""STR_MAR_General_Store"",life_fnc_weaponShopMenu,""genstore""];";
+						name="vip_13";
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_I_C_Soldier_Bandit_5_F";
+								isBackpack=0;
+							};
+							class vest
+							{
+								typeName="V_TacChestrig_cbr_F";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							goggles="G_Balaclava_TI_blk_F";
+						};
+					};
+					id=11355;
+					type="C_man_shorts_1_F";
+					atlOffset=0.0095643997;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="enableSimulation";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=11354;
+			atlOffset=0.0095643997;
+		};
+		class Item1976
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4732.4053,12.966722,10139.743};
+						angles[]={0,1.9217254,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="this allowDamage false; this enableSimulation false;  " \n "this addAction[""Roupa Vip Bronze"",life_fnc_clothingMenu,""RoupasBronze""]; " \n "this addAction[""Roupa Vip Silver"",life_fnc_clothingMenu,""RoupasSilver""]; " \n "this addAction[""Roupa Vip Gold"",life_fnc_clothingMenu,""RoupasGold""]; " \n "this addAction[""Roupa Vip Diamante"",life_fnc_clothingMenu,""RoupasDiamante""];";
+						name="vip_14";
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_O_V_Soldier_Viper_hex_F";
+								isBackpack=0;
+							};
+							class vest
+							{
+								typeName="V_PlateCarrierH_CTRG";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="H_HelmetO_ViperSP_hex_F";
+						};
+					};
+					id=11357;
+					type="C_man_hunter_1_F";
+					atlOffset=-0.013379097;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="enableSimulation";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=11356;
+			atlOffset=-0.013379097;
+		};
+		class Item1977
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4733.4907,13.025338,10142.847};
+						angles[]={0,1.9620425,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="removeallWeapons this;  this enableSimulation false;this allowDamage false; this addAction[""Bronze Weapon Shop"",life_fnc_weaponShopMenu,""bronze"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];this addAction[""Ulititarios doador"",life_fnc_weaponShopMenu,""utilitarios"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];this addAction[""Silver Weapon Shop"",life_fnc_weaponShopMenu,""silver"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];this addAction[""Gold Weapon Shop"",life_fnc_weaponShopMenu,""gold"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];this addAction[""Platinum Weapon Shop"",life_fnc_weaponShopMenu,""platinum"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];this addAction[""Diamante Weapon Shop"",life_fnc_weaponShopMenu,""diamante"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];";
+						name="vip_15";
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_O_V_Soldier_Viper_F";
+								isBackpack=0;
+							};
+							class vest
+							{
+								typeName="V_PlateCarrier2_tna_F";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="H_HelmetO_ViperSP_ghex_F";
+						};
+					};
+					id=11359;
+					type="C_Man_casual_1_F";
+					atlOffset=0.0036916733;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="enableSimulation";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=11358;
+			atlOffset=0.0036916733;
+		};
+		class Item1978
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4731.8203,14.157517,10137.994};
+				angles[]={0,4.9448676,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' isNull objectParent player && player distance _target < 4 '];";
+			};
+			id=11360;
+			type="Land_Atm_02_F";
+			atlOffset=0.014533043;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1979
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4806.5229,12.774563,10162.031};
+						angles[]={0,0.88125116,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="this enableSimulation false; this allowDamage false; this addAction[""Loja de Helicóptero Bronze"",life_fnc_vehicleShopMenu,[""civ_vip_air_bronze"",civilian,[""civ_vip_air_aac_5"",""civ_vip_air_aac_6""],""civ_vip"",""Loja de Helicóptero Bronze VIP""]]; this addAction[""Loja de Helicóptero Silver"",life_fnc_vehicleShopMenu,[""civ_vip_air_silver"",civilian,[""civ_vip_air_aac_1"",""civ_vip_air_aac_2""],""civ_vip"",""Loja de Helicóptero Silver VIP""]];this addAction[""Loja de Helicóptero Gold"",life_fnc_vehicleShopMenu,[""civ_vip_air_gold"",civilian,[""civ_vip_air_aac_1"",""civ_vip_air_aac_2""],""civ_vip"",""Loja de Helicóptero Gold VIP""]];this addAction[""Loja de Helicóptero Platinum"",life_fnc_vehicleShopMenu,[""civ_vip_air_platinum"",civilian,[""civ_vip_air_aac_1"",""civ_vip_air_aac_2""],""civ_vip"",""Loja de Helicóptero Platinum VIP""]];this addAction[""Loja de Helicóptero Diamante"",life_fnc_vehicleShopMenu,[""civ_vip_air_platinum"",civilian,[""civ_vip_air_aac_1"",""civ_vip_air_aac_2""],""civ_vip"",""Loja de Helicóptero Diamante VIP""]]; this addAction[""Guardar Helicopter"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Helicopter Garagem"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] call life_fnc_MP;  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Buscando Veículos....""];   life_garage_sp = ""civ_vip_air_aac_1"";  }];";
+						name="vip_16";
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_O_PilotCoveralls";
+								isBackpack=0;
+							};
+							class vest
+							{
+								typeName="V_I_G_resistanceLeader_F";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							goggles="G_Sport_Checkered";
+							headgear="H_CrewHelmetHeli_O";
+						};
+					};
+					id=11362;
+					type="C_man_1_1_F";
+					atlOffset=0.010141373;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="enableSimulation";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.94999999;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=11361;
+			atlOffset=0.010141373;
+		};
+		class Item1980
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4809.1279,17.184708,10169.249};
+				angles[]={6.259192,0,6.2698579};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=11363;
+			type="Land_HelipadCivil_F";
+			atlOffset=4.5011873;
 		};
 	};
 	class Connections
@@ -69255,7 +70578,7 @@ class Mission
 			class Item0
 			{
 				linkID=0;
-				item0=11178;
+				item0=11341;
 				item1=945;
 				class CustomData
 				{

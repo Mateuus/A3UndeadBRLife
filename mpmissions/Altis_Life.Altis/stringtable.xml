@@ -8194,22 +8194,22 @@
 			<German>Licht ausschalten</German>
 			<French>Lumières éteintes</French>
 			<Italian>Spegni luci</Italian>
-			<Portuguese>Ligar as Luzes</Portuguese>
+			<Portuguese>Desligar as Luzes</Portuguese>
 			<Polish>Włącz światło</Polish>
 		</Key>
 		<Key ID="STR_pInAct_LightsOn">
-			<Original>Turn Lights On</Original>
+			<Original>Acender as Luzes</Original>
 			<Czech>Turn zapnutá světla</Czech>
 			<Spanish>Prender Luces</Spanish>
 			<Russian></Russian>
 			<German>Licht anschalten</German>
 			<French>Lumières allumées</French>
 			<Italian>Accendi luci</Italian>
-			<Portuguese>Apagar as Luzes</Portuguese>
+			<Portuguese>Acender as Luzes</Portuguese>
 			<Polish>Wyłącz światło</Polish>
 		</Key>
 		<Key ID="STR_pInAct_Lockpick">
-			<Original>Lockpick</Original>
+			<Original>Furtar</Original>
 		</Key>
 	</Package>
 	<Package name="Vehicle_Interaction">
@@ -8247,7 +8247,7 @@
 			<Polish>Wejdź do gokarta</Polish>
 		</Key>
 		<Key ID="STR_vInAct_GetInHeli">
-			<Original>Get In Helicopter</Original>
+			<Original>Entrar no Helicóptero</Original>
 			<Czech>Získat vrtulník</Czech>
 			<Spanish>Entrar en el Helicóptero</Spanish>
 			<Italian>Get In elicottero</Italian>
@@ -8257,7 +8257,7 @@
 			<Portuguese>Entrar no Helicóptero</Portuguese>
 		</Key>
 		<Key ID="STR_vInAct_PushBoat">
-			<Original>Push Boat</Original>
+			<Original>Empurrar Barco</Original>
 			<Czech>tlačit loď</Czech>
 			<Spanish>Empujar Bote</Spanish>
 			<Russian></Russian>
@@ -8268,7 +8268,7 @@
 			<Polish>Popchnij</Polish>
 		</Key>
 		<Key ID="STR_vInAct_Repair">
-			<Original>Repair Vehicle</Original>
+			<Original>Consertar Veículo</Original>
 			<Czech>opravy vozidel</Czech>
 			<Spanish>Reparar Vehículo</Spanish>
 			<Russian></Russian>
@@ -8279,10 +8279,10 @@
 			<Polish>Napraw</Polish>
 		</Key>
 		<Key ID="STR_vInAct_Crush">
-			<Original>Crush Vehicle</Original>
+			<Original>Destruir veiculo</Original>
 		</Key>
 		<Key ID="STR_vInAct_Registration">
-			<Original>Registration</Original>
+			<Original>Registro</Original>
 			<Czech>Registrace</Czech>
 			<Spanish>Registración</Spanish>
 			<Russian></Russian>
@@ -8293,7 +8293,7 @@
 			<Polish>Zarejestruj</Polish>
 		</Key>
 		<Key ID="STR_vInAct_SearchVehicle">
-			<Original>Search Vehicle</Original>
+			<Original>Vasculhar Veículo</Original>
 			<Czech>Vyhledávání Vehicle</Czech>
 			<Spanish>Buscar Vehículo</Spanish>
 			<Russian></Russian>
@@ -8304,7 +8304,7 @@
 			<Polish>Przeszukaj pojazd</Polish>
 		</Key>
 		<Key ID="STR_vInAct_SearchContainer">
-			<Original>Search Container</Original>
+			<Original>Vasculhar Container</Original>
 			<Czech>Vyhledávání Container</Czech>
 			<Spanish>Buscar Contenedor</Spanish>
 			<Italian>Ricerca Container</Italian>
@@ -8314,7 +8314,7 @@
 			<German>Suchen Container</German>
 		</Key>
 		<Key ID="STR_vInAct_PullOut">
-			<Original>Pullout Players</Original>
+			<Original>Retirar Jogadores</Original>
 			<Czech>Pull Out Hráči</Czech>
 			<Spanish>Sacar Jugadores</Spanish>
 			<Russian></Russian>
@@ -8325,7 +8325,7 @@
 			<Polish>Wyciągnij graczy</Polish>
 		</Key>
 		<Key ID="STR_vInAct_Impound">
-			<Original>Impound Vehicle</Original>
+			<Original>Apreender Veículo</Original>
 			<Czech>úschovy Vehicle</Czech>
 			<Spanish>Confiscar Vehículo</Spanish>
 			<Russian></Russian>
@@ -8336,7 +8336,7 @@
 			<Polish>Usunń pojazd</Polish>
 		</Key>
 		<Key ID="STR_vInAct_DeviceMine">
-			<Original>Mine from device</Original>
+			<Original>Minerar</Original>
 			<Czech>Mine ze zařízení</Czech>
 			<Spanish>Minar desde dispositivo</Spanish>
 			<Russian></Russian>
@@ -8347,7 +8347,7 @@
 			<Polish>Uruchom wydobycie</Polish>
 		</Key>
 		<Key ID="STR_Vehicle_StoreVehicle">
-			<Original>Store your vehicle</Original>
+			<Original>Guardar seu veículo</Original>
 			<Czech>Ukládat vaše vozidlo</Czech>
 			<Spanish>Guardar tu Vehículo</Spanish>
 			<Italian>Conservare il veicolo</Italian>
@@ -8357,7 +8357,7 @@
 			<German>Bewahren Sie Ihr Fahrzeug</German>
 		</Key>
 		<Key ID="STR_Vehicle_Store">
-			<Original>Store</Original>
+			<Original>Guardar</Original>
 			<Czech>Obchod</Czech>
 			<Spanish>Guardar</Spanish>
 			<Italian>Negozio</Italian>
@@ -8367,7 +8367,7 @@
 			<German>Geschäft</German>
 		</Key>
 		<Key ID="STR_Vehicle_Clean">
-			<Original>Clean</Original>
+			<Original>Limpar</Original>
 			<Czech>Čistý</Czech>
 			<Spanish>Limpiar</Spanish>
 			<Italian>Pulito</Italian>
@@ -8377,7 +8377,7 @@
 			<German>Reinigen</German>
 		</Key>
 		<Key ID="STR_NPC_Protected">
-			<original>This vehicle is NPC protected.</Original>
+			<original>Esse veículo está protegido.</Original>
 			<Czech>Toto vozidlo je chráněno NPC.</Czech>
 			<French>Ce véhicule est protégé NPC.</French>
 			<Spanish>Este vehículo esta protegido.</Spanish>

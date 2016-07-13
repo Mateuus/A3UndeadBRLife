@@ -15,22 +15,23 @@ if(isNull _cop) exitWith {};
 //Monitor excessive restrainment
 [] spawn {
 	private "_time";
-	For "_i" from 0 to 1 step 0 do {
+	for "_i" from 0 to 1 step 0 do {
 		_time = time;
 		waitUntil {(time - _time) > (5 * 60)};
 
 		if(!(player GVAR ["restrained",FALSE])) exitWith {};
-		if(!([west,getPos player,30] call life_fnc_nearUnits) && (player GVAR ["restrained",FALSE]) && isNull objectParent player) exitWith {
+		if(!([independent,getPos player,30] call life_fnc_nearUnits) && (player GVAR ["restrained",FALSE]) && isNull objectParent player) exitWith {
 			player SVAR ["restrained",FALSE,TRUE];
 			player SVAR ["Escorting",FALSE,TRUE];
+			player SVAR ["masked",false,true];
 			player SVAR ["transporting",false,true];
 			detach player;
-			titleText[localize "STR_Medic_ExcessiveRestrain","PLAIN"];
+			titleText[localize "STR_Cop_ExcessiveRestrain","PLAIN"];
 		};
 	};
 };
 
-titleText[format[localize "STR_Medic_Retrained",_cop GVAR ["realname",name _cop]],"PLAIN"];
+titleText[format[localize "STR_Cop_Restrained",_cop GVAR ["realname",name _cop]],"PLAIN"];
 
 life_disable_getIn = true;
 life_disable_getOut = false;
@@ -71,6 +72,17 @@ while {player GVAR  "restrained"} do {
 		player action["eject",vehicle player];
 		player moveInCargo _vehicle;
 	};
+
+	if(vehicle player != player && life_disable_getOut) then {
+		_turrets = [[-1]] + allTurrets _vehicle;
+		{
+			if (_vehicle turretUnit [_x select 0] isEqualTo player) then {
+				player action["eject",vehicle player];
+				sleep 1;
+				player moveInCargo _vehicle;
+			};
+		}forEach _turrets;
+	};
 };
 
 //disableUserInput false;
@@ -81,4 +93,3 @@ if(alive player) then {
 	player SVAR ["transporting",false,true];
 	detach player;
 };
-

@@ -21,6 +21,6 @@ life_request_timer = true;
 //Create a thread to monitor duration since last request (prevent spammage).
 [] spawn  {
 	((findDisplay 7300) displayCtrl 7303) ctrlEnable false;
-	sleep (2 * 60);
+	sleep (5 * 120);
 	((findDisplay 7300) displayCtrl 7303) ctrlEnable true;
 };

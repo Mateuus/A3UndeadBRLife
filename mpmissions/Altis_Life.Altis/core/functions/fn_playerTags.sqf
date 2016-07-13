@@ -68,7 +68,7 @@ _masks = LIFE_SETTINGS(getArray,"clothing_masks");
 					
 					case (!isNil {(_x GVAR "gangrank")} && playerSide == civilian): {format["<img image='%1' size='1.5'></img> <t size='1.35'>%2</t><br/><t size='0.8'>[%3]</t>",
 					switch ((_x GVAR "gangrank")) do {		
-					case 1: {"icons\ranks\vip\bronze.paa"};
+					case 1: {"icons\ranks\vip\exe.paa"};
 					case 2: {"icons\ranks\vip\silver.paa"};
 					case 3: {"icons\ranks\vip\gold.paa"};
 					case 4: {"icons\ranks\vip\platinum.paa"};
