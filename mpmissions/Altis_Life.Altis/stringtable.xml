@@ -7006,14 +7006,14 @@
 			<Polish>Suszenie konopi</Polish>
 		</Key>
 		<Key ID="STR_License_Cement">
-			<Original>Cement Mixing License</Original>
+			<Original>Licença de Metanfetamina</Original>
 			<Czech>Cement Mixing licence</Czech>
 			<Spanish>Licencia para Mezclar Cemento</Spanish>
 			<Russian></Russian>
 			<German>Zementmisch-Lizenz</German>
 			<French>Fabrication du Ciment</French>
 			<Italian>Processo Cemento</Italian>
-			<Portuguese>Licença de Cimento</Portuguese>
+			<Portuguese>Licença de Metanfetamina</Portuguese>
 			<Polish>Wytwórca cementu</Polish>
 		</Key>
 		<Key ID="STR_License_Medmarijuana">
@@ -7563,14 +7563,14 @@
 			<Polish>Wytop żelaza</Polish>
 		</Key>
 		<Key ID="STR_Process_Sand">
-			<Original>Processing Sand</Original>
+			<Original>Processando Ouro</Original>
 			<Czech>zpracování Písek</Czech>
 			<Spanish>Procesando Arena</Spanish>
 			<Russian></Russian>
 			<German>Sand wird verarbeitet</German>
 			<French>Fonte du Sable</French>
 			<Italian>Processando Sabbia</Italian>
-			<Portuguese>Processando Areia</Portuguese>
+			<Portuguese>Processando Ouro</Portuguese>
 			<Polish>Topienie piasku</Polish>
 		</Key>
 		<Key ID="STR_Process_Salt">
@@ -7607,14 +7607,14 @@
 			<Polish>Suszenie marihuany</Polish>
 		</Key>
 		<Key ID="STR_Process_Cement">
-			<Original>Mixing Cement</Original>
+			<Original>Processando Metanfetamina</Original>
 			<Czech>Míchání Cement</Czech>
 			<Spanish>Mezclando Cemento</Spanish>
 			<Russian></Russian>
 			<German>Zement wird gemischt</German>
 			<French>Mélange de ciment</French>
 			<Italian>Processando Cemento</Italian>
-			<Portuguese>Misturando Cimento</Portuguese>
+			<Portuguese>Processando Metanfetamina</Portuguese>
 			<Polish>Mielenie cementu</Polish>
 		</Key>
 		<Key ID="STR_Process_cloth">
@@ -9807,13 +9807,13 @@
 			<Italian>Vendita del Ferro/Rame</Italian>
 		</Key>
 		<Key ID="STR_MAR_Sand_Processing">
-			<Original>Sand Processing</Original>
+			<Original>Processador de Ouro</Original>
 			<Czech>Zpracování písek</Czech>
 			<French>Traitement de sable</French>
 			<Spanish>Procesador de Arena</Spanish>
 			<Russian></Russian>
 			<German>Sand Verarbeiter</German>
-			<Portuguese>Processador de Areia</Portuguese>
+			<Portuguese>Processador de Ouro</Portuguese>
 			<Polish>Huta szkła</Polish>
 			<Italian>Processo Sabbia</Italian>
 		</Key>
@@ -9895,13 +9895,13 @@
 			<Italian>Cava di Roccia</Italian>
 		</Key>
 		<Key ID="STR_MAR_Rock_Processing">
-			<Original>Rock Processing</Original>
+			<Original>Processador de Metanfetamina</Original>
 			<Czech>rock Processing</Czech>
 			<French>Traitement de pierres</French>
 			<Spanish>Procesador de Piedra</Spanish>
 			<Russian></Russian>
 			<German>Stein Verarbeitung</German>
-			<Portuguese>Processador de Pedra</Portuguese>
+			<Portuguese>Processador de Metanfetamina</Portuguese>
 			<Polish>Wytwórnia cementu z kamienia</Polish>
 			<Italian>Processo Roccia</Italian>
 		</Key>
@@ -10211,24 +10211,24 @@
 			<Polish>Pojazdy - sklep</Polish>
 		</Key>
 		<Key ID="STR_MAR_Process_Sand">
-			<Original>Process Sand</Original>
+			<Original>Processar Ouro</Original>
 			<Czech>proces Písek</Czech>
 			<French>Traiter le sable</French>
 			<Spanish>Procesar Arena</Spanish>
 			<Russian></Russian>
 			<German>Verarbeite Sand</German>
-			<Portuguese>Processar Areia</Portuguese>
+			<Portuguese>Processar Ouro</Portuguese>
 			<Polish>Przetop piasek na szkło</Polish>
 			<Italian>Lavorazione Sabbia</Italian>
 		</Key>
 		<Key ID="STR_MAR_Process_Rock">
-			<Original>Process Rock</Original>
+			<Original>Processar Metanfetamina</Original>
 			<Czech>proces rock</Czech>
 			<French>Traiter la pierre</French>
 			<Spanish>Procesar Piedra</Spanish>
 			<Russian></Russian>
 			<German>Verarbeite Stein</German>
-			<Portuguese>Processar Pedra</Portuguese>
+			<Portuguese>Processar Metanfetamina</Portuguese>
 			<Polish>Zmiel skały na cement</Polish>
 			<Italian>Processo Roccia</Italian>
 		</Key>

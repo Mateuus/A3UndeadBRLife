@@ -22,7 +22,7 @@ class CfgSpawnPoints {
     class Civilian {
 		
 		class GangVip1 {
-            displayName = "STR_License_Driver";
+            displayName = "Kings";
             spawnMarker = "civ_spawn_gang_1";
             icon = "icons\ranks\gang\1.paa";
             licenses[] = { { "", true } };
@@ -30,7 +30,7 @@ class CfgSpawnPoints {
         };
 		
 		class GangVip2 {
-            displayName = "STR_MAR_Gang_2";
+            displayName = "Execution";
             spawnMarker = "civ_spawn_gang_2";
             icon = "icons\ranks\gang\2.paa";
             licenses[] = { { "", true } };
