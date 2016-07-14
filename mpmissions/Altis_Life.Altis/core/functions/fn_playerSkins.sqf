@@ -45,11 +45,6 @@ switch(playerSide) do {
 		};
 		
 		////////////////////////VIP INICIO/////////////////////////////////////////////////
-		if ((backpack player == "B_Carryall_oli") && (FETCH_CONST(life_gangdonorid) == 1)) then
-		{
-			player setObjectTextureGlobal [0, "textures\Vip\exe\mochilaexe.jpg"];
-		};
-		
 		if ((uniform player == "U_C_Commoner1_3") && (FETCH_CONST(life_donorlevel) == 0)) then
 		{
 			player setObjectTextureGlobal [0, "textures\Civ\Clothing\roupaundead.jpg"];
@@ -175,12 +170,29 @@ switch(playerSide) do {
 };
 
 	case independent: {
-		if(uniform player isEqualTo "U_Rangemaster") then {
-			player setObjectTextureGlobal [0, "textures\Med\Clothing\medic_uniform.jpg"];
+		if(uniform player isEqualTo "U_I_CombatUniform_shortsleeve") then {
+			player setObjectTextureGlobal [0, "textures\Med\Clothing\estudante_medico.paa"];
 		};
-		if ((uniform player) isEqualTo "U_C_Scientist") then {
-		player setObjectTextureGlobal [0, "textures\Med\Clothing\medic3_uniform.paa"];
+		
+		if ((uniform player) isEqualTo "U_I_CombatUniform_shortsleeve") then {
+			player setObjectTextureGlobal [0, "textures\Med\Clothing\estudante_medico.paa"];
 		};
+		if ((uniform player) isEqualTo "U_MillerBody") then {
+			player setObjectTextureGlobal [0, "textures\Med\Clothing\medico.paa"];
+		};
+		if ((uniform player) isEqualTo "U_B_CombatUniform_mcam_vest") then {
+			player setObjectTextureGlobal [0, "textures\Med\Clothing\medico_residente.paa"];
+		};
+		if ((uniform player) isEqualTo "U_B_SpecopsUniform_sgg") then {
+			player setObjectTextureGlobal [0, "textures\Med\Clothing\cirurgiao.paa"];
+		};
+		if ((uniform player) isEqualTo "U_B_CombatUniform_mcam") then {
+			player setObjectTextureGlobal [0, "textures\Med\Clothing\comandante_medico.paa"];
+		};
+		if ((uniform player) isEqualTo "U_B_CTRG_3") then {
+			player setObjectTextureGlobal [0, "textures\Med\Clothing\comandante_geral_medico.paa"];
+		};
+		
 		if(playerSide isEqualTo independent) then {(unitBackpack player) setObjectTextureGlobal [0,""];};
 	};
 };

@@ -233,8 +233,13 @@ class Clothing {
         license = "";
         side = "med";
         uniforms[] = {
-            { "NONE", "Remove Uniform", 0, { "", "", -1 } },
-            { "U_C_Scientist", "EMS Uniform", 50, { "", "", -1 } }
+            { "NONE", "Ficar Pelado", 0, { "", "", -1 } },
+			{ "U_I_CombatUniform_shortsleeve", "Estudante Medico", 50, { "", "", -1 } },
+			{ "U_MillerBody", "Medico", 50, { "", "", -1 } },
+			{ "U_B_CombatUniform_mcam_vest", "Medico residente", 50, { "", "", -1 } },
+			{ "U_B_SpecopsUniform_sgg", "Cirurgiao", 50, { "", "", -1 } },
+			{ "U_B_CombatUniform_mcam", "Comandante Medico", 50, { "", "", -1 } },
+            { "U_B_CTRG_3", "Comandante Geral", 50, { "", "", -1 } }
         };
         headgear[] = {
             { "NONE", "Remove Hat", 0, { "", "", -1 } },

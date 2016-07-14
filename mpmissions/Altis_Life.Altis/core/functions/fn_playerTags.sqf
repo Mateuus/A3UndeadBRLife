@@ -60,7 +60,7 @@ _masks = LIFE_SETTINGS(getArray,"clothing_masks");
 						case 1: {"VIP Bronze"};
 						case 2: {"VIP Silver"};
 						case 3: {"VIP Gold"};
-						case 4: {"VIP Platinum"};
+						case 4: {"VIP Ruby"};
 						case 5: {"VIP Diamante"};
 						
 						default {"Civil"};
