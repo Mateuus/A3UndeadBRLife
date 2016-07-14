@@ -11,7 +11,7 @@ private ["_eh1","_inArea","_zone1","_zone1dis","_dis" ];
 
 ////////////////////////GANGZONE VIP////////////////////////////////////
 _zone1 = getMarkerPos "safezone_gang_1"; // MARKERS FOR GANGZONE
-_zone1dis = 70;
+_zone1dis = 80;
 ///////////////////////////////////////////////////////////////////////
 
 _dis = 350;
@@ -58,7 +58,7 @@ switch (playerSide) do
 			{
 			  if (((_zone1 distance player < _zone1dis)) && (!_inArea)) then
 			  {
-				if (FETCH_CONST(life_gangdonorid) >= 1) then
+				if (FETCH_CONST(life_gangdonorid) == 1) then
 				{
 					//Acesso Permitido
 					_eh1 = player addEventHandler ["fired", {deleteVehicle (_this select 6);}];

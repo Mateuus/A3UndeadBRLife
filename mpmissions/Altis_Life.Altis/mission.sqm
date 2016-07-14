@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=10;
+	toggles=138;
 	class ItemIDProvider
 	{
-		nextID=11391;
+		nextID=11416;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={12724.557,85.17408,14340.714};
-		dir[]={0.40581083,-0.37767047,0.83229184};
-		up[]={0.16552521,0.92593312,0.33948225};
-		aside[]={0.89885813,4.3422915e-008,-0.43826756};
+		pos[]={14322.375,10.60235,13037.246};
+		dir[]={0.62248665,-0.77009952,0.13957365};
+		up[]={0.75144458,0.63791841,0.16848853};
+		aside[]={0.21879072,-2.2535096e-007,-0.97578263};
 	};
 };
 binarizationWanted=0;
@@ -304,24 +304,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -336,6 +318,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -394,7 +394,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1958;
+		items=1956;
 		class Item0
 		{
 			dataType="Marker";
@@ -44286,7 +44286,7 @@ class Mission
 			position[]={20032.063,0,6635.8706};
 			name="car_g_11";
 			type="Empty";
-			angle=223.9731;
+			angle=223.97305;
 			id=8879;
 			atlOffset=-90.374069;
 		};
@@ -67926,7 +67926,7 @@ class Mission
 		class Item1894
 		{
 			dataType="Marker";
-			position[]={8917.9609,2.384879e+025,7489.9219};
+			position[]={8917.9609,33.376633,7489.9219};
 			name="safezone_gang_1";
 			markerType="ELLIPSE";
 			type="ellipse";
@@ -67937,27 +67937,28 @@ class Mission
 			b=80;
 			angle=172.04897;
 			id=11276;
-			atlOffset=2.384879e+025;
+			atlOffset=-34.011215;
 		};
 		class Item1895
 		{
 			dataType="Marker";
-			position[]={8918.085,198.17627,7488.71};
+			position[]={8918.085,-1.1546588e-019,7486.1372};
 			name="area_gang_1";
 			text="@STR_MAR_Gang_1";
 			type="o_installation";
 			colorName="ColorRed";
 			id=11277;
-			atlOffset=124.13325;
+			atlOffset=-67.402328;
 		};
 		class Item1896
 		{
 			dataType="Marker";
-			position[]={8908.2646,66.818237,7494.3506};
+			position[]={8908.4043,33.376633,7494.3032};
 			name="civ_spawn_gang_1";
 			type="Empty";
 			angle=251.54398;
 			id=11278;
+			atlOffset=-33.455589;
 		};
 		class Item1897
 		{
@@ -68352,18 +68353,18 @@ class Mission
 		class Item1916
 		{
 			dataType="Marker";
-			position[]={14276.396,11.090607,13027.159};
+			position[]={14276.396,-1.4124518e-018,13027.16};
 			name="safezone_gang_2";
 			markerType="ELLIPSE";
 			type="ellipse";
 			colorName="ColorEAST";
 			alpha=0.5988794;
 			fillName="DiagGrid";
-			a=70;
-			b=70;
-			angle=172.04897;
+			a=80;
+			b=80;
+			angle=172.04898;
 			id=11316;
-			atlOffset=6.3635683;
+			atlOffset=-4.7270312;
 		};
 		class Item1917
 		{
@@ -68377,28 +68378,6 @@ class Mission
 			atlOffset=137.16104;
 		};
 		class Item1918
-		{
-			dataType="Marker";
-			position[]={14278.034,-0.0001373291,13014.388};
-			name="chop_shop_5";
-			text="Execution";
-			type="o_hq";
-			colorName="Color1_FD_F";
-			id=11321;
-			atlOffset=-4.8376193;
-		};
-		class Item1919
-		{
-			dataType="Marker";
-			position[]={8917.6504,9.3788924e+030,7482.3242};
-			name="chop_shop_6";
-			text="Kings";
-			type="o_hq";
-			colorName="Color1_FD_F";
-			id=11322;
-			atlOffset=9.3788924e+030;
-		};
-		class Item1920
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68415,17 +68394,7 @@ class Mission
 			type="Land_i_House_Big_01_V3_F";
 			atlOffset=1.1576157;
 		};
-		class Item1921
-		{
-			dataType="Marker";
-			position[]={8909.7979,67.129883,7490.147};
-			name="civ_spawn_gang_vip_1";
-			type="Empty";
-			angle=258.31494;
-			id=11324;
-			atlOffset=0.019119263;
-		};
-		class Item1922
+		class Item1919
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68442,7 +68411,7 @@ class Mission
 			type="Land_i_House_Big_01_V3_F";
 			atlOffset=1.2070541;
 		};
-		class Item1923
+		class Item1920
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68459,7 +68428,7 @@ class Mission
 			type="Land_i_House_Big_02_V1_F";
 			atlOffset=0.35945892;
 		};
-		class Item1924
+		class Item1921
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68476,7 +68445,7 @@ class Mission
 			type="Land_i_House_Big_02_V1_F";
 			atlOffset=0.19902802;
 		};
-		class Item1925
+		class Item1922
 		{
 			dataType="Group";
 			side="Civilian";
@@ -68494,7 +68463,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this enableSimulation false; this allowDamage false; this addAction[""Loja de Carros Gangue Doador 1"",life_fnc_vehicleShopMenu,[""civ_vip_car_bronze"",civilian,[""civ_vip_car_7""],""civ"",""Loja de Carros Gangue Doador""]];this addAction[localize""STR_Garage_Title"",  {   if(life_HC_isActive) then { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];}; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_vip_car_7"";  }];  this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"", ""Car Shop""];";
+						init="this enableSimulation false; this allowDamage false; this addAction[""Loja de Carros Gangue Doador 1"",life_fnc_vehicleShopMenu,[""civ_vip_car_bronze"",civilian,[""civ_vip_car_gang_1""],""civ"",""Loja de Carros Gangue Doador""]];this addAction[localize""STR_Garage_Title"",  {   if(life_HC_isActive) then { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];}; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_vip_car_gang_1"";  }];  this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"", ""Car Shop""];";
 						name="vip_8";
 						class Inventory
 						{
@@ -68586,7 +68555,7 @@ class Mission
 			id=11328;
 			atlOffset=-0.017997742;
 		};
-		class Item1926
+		class Item1923
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68603,7 +68572,7 @@ class Mission
 			type="Land_IRMaskingCover_02_F";
 			atlOffset=-0.027488708;
 		};
-		class Item1927
+		class Item1924
 		{
 			dataType="Group";
 			side="Civilian";
@@ -68714,7 +68683,7 @@ class Mission
 			id=11331;
 			atlOffset=0.0029907227;
 		};
-		class Item1928
+		class Item1925
 		{
 			dataType="Group";
 			side="Civilian";
@@ -68825,7 +68794,7 @@ class Mission
 			id=11333;
 			atlOffset=-0.031997681;
 		};
-		class Item1929
+		class Item1926
 		{
 			dataType="Group";
 			side="Civilian";
@@ -68936,7 +68905,7 @@ class Mission
 			id=11335;
 			atlOffset=-0.0049972534;
 		};
-		class Item1930
+		class Item1927
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68978,17 +68947,17 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item1931
+		class Item1928
 		{
 			dataType="Marker";
-			position[]={8902.0186,-9.3706351e-023,7491.5151};
-			name="civ_vip_car_7";
+			position[]={8902.0186,-1.5526962e-013,7491.5151};
+			name="civ_vip_car_gang_1";
 			type="Empty";
 			angle=18.593998;
 			id=11339;
 			atlOffset=-66.393997;
 		};
-		class Item1932
+		class Item1929
 		{
 			dataType="Group";
 			side="Civilian";
@@ -69007,7 +68976,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this enableSimulation false; this allowDamage false; this addAction[""Loja de Helicóptero Gangue Doador 1"",life_fnc_vehicleShopMenu,[""civ_vip_air_bronze"",civilian,[""civ_vip_air_aac_8""],""civ_vip"",""Loja de Helicóptero Gangue Doador 1""]]; this addAction[localize""STR_Garage_Title"",  {   if(life_HC_isActive) then { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];};  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_vip_air_aac_8"";  }];   this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+						init="this enableSimulation false; this allowDamage false; this addAction[""Loja de Helicóptero Gangue Doador 1"",life_fnc_vehicleShopMenu,[""civ_vip_air_bronze"",civilian,[""civ_vip_air_gang_1""],""civ_vip"",""Loja de Helicóptero Gangue Doador 1""]]; this addAction[localize""STR_Garage_Title"",  {   if(life_HC_isActive) then { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];};  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_vip_air_gang_1"";  }];   this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 						name="vip_12";
 						class Inventory
 						{
@@ -69100,7 +69069,7 @@ class Mission
 			id=11342;
 			atlOffset=0.024009705;
 		};
-		class Item1933
+		class Item1930
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69117,17 +69086,17 @@ class Mission
 			type="Land_HelipadCivil_F";
 			atlOffset=-0.047225952;
 		};
-		class Item1934
+		class Item1931
 		{
 			dataType="Marker";
-			position[]={8982.6963,-1.6274655e-027,7490.1162};
-			name="civ_vip_air_aac_8";
+			position[]={8982.6885,-1.4124518e-018,7490.0801};
+			name="civ_vip_air_gang_1";
 			type="Empty";
-			angle=122.77098;
+			angle=122.77099;
 			id=11345;
-			atlOffset=-70.608574;
+			atlOffset=-70.608376;
 		};
-		class Item1935
+		class Item1932
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69144,7 +69113,7 @@ class Mission
 			type="Land_i_House_Big_01_V3_F";
 			atlOffset=0.91050911;
 		};
-		class Item1936
+		class Item1933
 		{
 			dataType="Group";
 			side="Civilian";
@@ -69163,7 +69132,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this enableSimulation false; this allowDamage false; this addAction[""Loja de Carros Gangue Doador 1"",life_fnc_vehicleShopMenu,[""civ_vip_car_bronze"",civilian,[""civ_vip_car_12""],""civ"",""Loja de Carros Gangue Doador""]];this addAction[localize""STR_Garage_Title"",  {   if(life_HC_isActive) then { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];}; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_vip_car_12"";  }];  this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"", ""Car Shop""];";
+						init="this enableSimulation false; this allowDamage false; this addAction[""Loja de Carros Gangue Doador 1"",life_fnc_vehicleShopMenu,[""civ_vip_car_bronze"",civilian,[""civ_vip_car_gang_2""],""civ"",""Loja de Carros Gangue Doador""]];this addAction[localize""STR_Garage_Title"",  {   if(life_HC_isActive) then { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];}; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_vip_car_gang_2"";  }];  this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"", ""Car Shop""];";
 						name="vip_10";
 						class Inventory
 						{
@@ -69255,7 +69224,7 @@ class Mission
 			id=11351;
 			atlOffset=-0.012000084;
 		};
-		class Item1937
+		class Item1934
 		{
 			dataType="Group";
 			side="Civilian";
@@ -69366,7 +69335,7 @@ class Mission
 			id=11354;
 			atlOffset=0.57500005;
 		};
-		class Item1938
+		class Item1935
 		{
 			dataType="Group";
 			side="Civilian";
@@ -69494,7 +69463,7 @@ class Mission
 			id=11356;
 			atlOffset=0.55199957;
 		};
-		class Item1939
+		class Item1936
 		{
 			dataType="Group";
 			side="Civilian";
@@ -69605,7 +69574,7 @@ class Mission
 			id=11358;
 			atlOffset=0.57899952;
 		};
-		class Item1940
+		class Item1937
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69647,7 +69616,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item1941
+		class Item1938
 		{
 			dataType="Group";
 			side="Civilian";
@@ -69666,7 +69635,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this enableSimulation false; this allowDamage false; this addAction[""Loja de Helicóptero Gangue Doador 1"",life_fnc_vehicleShopMenu,[""civ_vip_air_bronze"",civilian,[""civ_vip_air_aac_16""],""civ_vip"",""Loja de Helicóptero Gangue Doador 1""]]; this addAction[localize""STR_Garage_Title"",  {   if(life_HC_isActive) then { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];};  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_vip_air_aac_16"";  }];   this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+						init="this enableSimulation false; this allowDamage false; this addAction[""Loja de Helicóptero Gangue Doador 1"",life_fnc_vehicleShopMenu,[""civ_vip_air_bronze"",civilian,[""civ_vip_air_gang_2""],""civ_vip"",""Loja de Helicóptero Gangue Doador 1""]]; this addAction[localize""STR_Garage_Title"",  {   if(life_HC_isActive) then { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];};  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_vip_air_gang_2"";  }];   this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 						name="vip_16";
 						class Inventory
 						{
@@ -69759,7 +69728,7 @@ class Mission
 			id=11361;
 			atlOffset=0.01099968;
 		};
-		class Item1942
+		class Item1939
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69775,7 +69744,7 @@ class Mission
 			type="Land_HelipadCivil_F";
 			atlOffset=0.81424999;
 		};
-		class Item1943
+		class Item1940
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69792,17 +69761,17 @@ class Mission
 			type="Land_i_House_Big_02_V3_F";
 			atlOffset=0.35990763;
 		};
-		class Item1944
+		class Item1941
 		{
 			dataType="Marker";
-			position[]={14320.765,-3.2915933e-020,13044.929};
-			name="civ_vip_car_12";
+			position[]={14320.765,1.1995119e+024,13044.929};
+			name="civ_vip_car_gang_2";
 			type="Empty";
-			angle=269.63486;
+			angle=269.63498;
 			id=11365;
-			atlOffset=-3.4111669;
+			atlOffset=1.1995119e+024;
 		};
-		class Item1945
+		class Item1942
 		{
 			dataType="Marker";
 			position[]={12465.265,0,8432.6289};
@@ -69812,17 +69781,17 @@ class Mission
 			id=11370;
 			atlOffset=-15.933625;
 		};
-		class Item1946
+		class Item1943
 		{
 			dataType="Marker";
-			position[]={14251.258,-1.5599359e-014,13032.39};
-			name="civ_vip_air_aac_16";
+			position[]={14251.258,-1.4112011e-018,13032.39};
+			name="civ_vip_air_gang_2";
 			type="Empty";
-			angle=175.34496;
+			angle=175.34499;
 			id=11371;
 			atlOffset=-4.1033731;
 		};
-		class Item1947
+		class Item1944
 		{
 			dataType="Marker";
 			position[]={20036.85,0,6633.1108};
@@ -69832,7 +69801,7 @@ class Mission
 			id=11377;
 			atlOffset=-90.47757;
 		};
-		class Item1948
+		class Item1945
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69849,7 +69818,7 @@ class Mission
 			type="Land_HelipadCivil_F";
 			atlOffset=-0.010253906;
 		};
-		class Item1949
+		class Item1946
 		{
 			dataType="Marker";
 			position[]={20018.879,-2.6290824e-011,6626.1421};
@@ -69859,7 +69828,7 @@ class Mission
 			id=11379;
 			atlOffset=-89.780807;
 		};
-		class Item1950
+		class Item1947
 		{
 			dataType="Marker";
 			position[]={12455.528,16.075418,8438.3262};
@@ -69868,7 +69837,7 @@ class Mission
 			angle=152.46983;
 			id=11382;
 		};
-		class Item1951
+		class Item1948
 		{
 			dataType="Marker";
 			position[]={20078.441,100.97174,6739.3066};
@@ -69877,7 +69846,7 @@ class Mission
 			angle=152.46983;
 			id=11383;
 		};
-		class Item1952
+		class Item1949
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69893,7 +69862,7 @@ class Mission
 			type="Land_HelipadRescue_F";
 			atlOffset=0.41745949;
 		};
-		class Item1953
+		class Item1950
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69910,7 +69879,7 @@ class Mission
 			type="Land_HelipadRescue_F";
 			atlOffset=-0.00025177002;
 		};
-		class Item1954
+		class Item1951
 		{
 			dataType="Marker";
 			position[]={15531.751,18.445524,17187.43};
@@ -69920,7 +69889,7 @@ class Mission
 			id=11387;
 			atlOffset=0.00010299683;
 		};
-		class Item1955
+		class Item1952
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69937,7 +69906,7 @@ class Mission
 			type="Land_HelipadRescue_F";
 			atlOffset=0.023492813;
 		};
-		class Item1956
+		class Item1953
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69954,7 +69923,7 @@ class Mission
 			type="Land_HelipadRescue_F";
 			atlOffset=0.060272217;
 		};
-		class Item1957
+		class Item1954
 		{
 			dataType="Group";
 			side="Civilian";
@@ -70064,6 +70033,16 @@ class Mission
 			};
 			id=8881;
 			atlOffset=0.42593384;
+		};
+		class Item1955
+		{
+			dataType="Marker";
+			position[]={14330.098,-7.5408246e-017,13039.831};
+			name="civ_spawn_gang_2";
+			type="Empty";
+			angle=251.54399;
+			id=11415;
+			atlOffset=-3.4367249;
 		};
 	};
 	class Connections
