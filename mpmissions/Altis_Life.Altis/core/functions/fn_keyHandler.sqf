@@ -177,10 +177,14 @@ case 19: {
 			
 			//if(vehicle player != player && ((driver vehicle player) == player)} && alive vehicle player) then {
 			
-			if((driver vehicle player) == player && alive vehicle player) then {
-				if((vehicle player) in life_vehicles) then {
-					[vehicle player] spawn life_fnc_openInventory;
+			//if((driver vehicle player) == player && alive vehicle player) then {
+			
+			if(vehicle player != player && alive vehicle player) then {
+			
+				if((driver vehicle player) in life_vehicles) then {
+					[driver vehicle player] spawn life_fnc_openInventory;
 				};
+				
 			} else {
 				private "_list";
 				_list = ((ASLtoATL (getPosASL player)) nearEntities [["Box_IND_Grenades_F","B_supplyCrate_F"], 2.5]) select 0;

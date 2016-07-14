@@ -73,6 +73,7 @@ _lastPos = visiblePosition player;
 _lastPos = (SEL(_lastPos,0)) + (SEL(_lastPos,1));
 _lastState = vehicle player;
 _slotNormal = 115;
+_slotNormalTanoa = 150;
 
 for "_i" from 0 to 1 step 0 do {
 	/* Thirst / Hunger adjustment that is time based */
@@ -85,15 +86,27 @@ for "_i" from 0 to 1 step 0 do {
 		_bp = backpack player;
 	} else {
 	
+		
 		if(EQUAL(backpack player,"B_Kitbag_cbr")) then {
 			life_maxWeight = LIFE_SETTINGS(getNumber,"total_maxWTTP") + _slotNormal;
 			_bp = backpack player;
 		} else {
-		
-		if(!(EQUAL(backpack player,"")) && {!(EQUAL(backpack player,_bp))}) then {
+		if(EQUAL(backpack player,"B_Bergen_dgtl_F")) then {
+			life_maxWeight = LIFE_SETTINGS(getNumber,"total_maxWTTP") + _slotNormalTanoa;
 			_bp = backpack player;
-			life_maxWeight = LIFE_SETTINGS(getNumber,"total_maxWTTP") + round(FETCH_CONFIG2(getNumber,CONFIG_VEHICLES,_bp,"maximumload") / 4);
-		   };
+		} else {
+			if(!(EQUAL(backpack player,"")) && {!(EQUAL(backpack player,_bp))}) then {
+				_bp = backpack player;
+				life_maxWeight = LIFE_SETTINGS(getNumber,"total_maxWTTP") + round(FETCH_CONFIG2(getNumber,CONFIG_VEHICLES,_bp,"maximumload") / 4);
+			};
+		};
+		};
+		
+		
+		
+		
+		
+		
 		
 		};
 	};

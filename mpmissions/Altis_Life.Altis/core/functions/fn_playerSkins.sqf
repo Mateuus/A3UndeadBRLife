@@ -87,7 +87,7 @@ switch(playerSide) do {
 		{
 			backpackContainer player setObjectTextureGlobal [0, "textures\Civ\Clothing\murica_bag.jpg"];
 		};
-		if (backpack player isEqualTo "B_Carryall_cbr" && (FETCH_CONST(life_donorlevel) >= 0)) then 
+		if (backpack player isEqualTo "B_Carryall_cbr" && (FETCH_CONST(life_donorlevel) >= 0) && !(FETCH_CONST(life_gangdonorid) >= 1)) then 
 		{
 			backpackContainer player setObjectTextureGlobal [0, "textures\Civ\Clothing\backpack_PSP_Carry.jpg"];
 		};
@@ -102,7 +102,12 @@ switch(playerSide) do {
 		
 		/////////////////////////VIP END///////////////////////////////////////////////////
 		
-		
+		////////////////////////////GANGBVIP/////////////////////////////////////////////
+		if (backpack player isEqualTo "B_Carryall_cbr" && (FETCH_CONST(life_gangdonorid) == 1)) then 
+		{
+			backpackContainer player setObjectTextureGlobal [0, "textures\Vip\exe\mochilaexe.jpg"];
+		};
+		//////////////////////////////////////////////////////////////////////////////////
 		
 		
 		/*

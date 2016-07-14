@@ -35,7 +35,18 @@ class Clothing {
 			{ "U_OrestesBody", "Surfing On Land", 1100, { "", "", -1 } },
             { "U_IG_Guerilla2_3", "The Outback Rangler", 1200, { "", "", -1 } },
             { "U_C_HunterBody_grn", "The Hunters Look", 1500, { "", "", -1 } },
-            { "U_C_WorkerCoveralls", "Mechanic Coveralls", 2500, { "", "", -1 } },
+            { "U_C_man_sport_1_F", "Sport a", 2500, { "", "", -1 } },
+			{ "U_C_U_C_man_sport_2_F", "Sport b", 2500, { "", "", -1 } },
+			{ "U_C_man_sport_3_F", "Sport c", 2500, { "", "", -1 } },
+			{ "U_C_Man_casual_1_F", "Casual a", 1500, { "", "", -1 } },
+			{ "U_C_Man_casual_2_F", "Casual b", 1500, { "", "", -1 } },
+			{ "U_C_Man_casual_3_F", "Casual c", 1500, { "", "", -1 } },
+			{ "U_C_Man_casual_4_F", "Casual d", 1500, { "", "", -1 } },
+			{ "U_C_Man_casual_5_F", "Casual e", 1500, { "", "", -1 } },
+			{ "U_C_Man_casual_6_F", "Casual f", 1500, { "", "", -1 } },
+			{ "U_I_C_Soldier_Bandit_4_F", "Roupa 1", 3000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Bandit_2_F", "Roupa 2", 3000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Bandit_1_F", "Roupa 3", 3000, { "", "", -1 } },
             { "U_NikosAgedBody", "Suit", 5000, { "", "", -1 } }
         };
         headgear[] = {
@@ -109,8 +120,7 @@ class Clothing {
             { "B_Carryall_oucamo", "", 5000, { "", "", -1 } },
             { "B_Carryall_mcamo", "", 5000, { "", "", -1 } },
             { "B_Carryall_oli", "", 5000, { "", "", -1 } },
-            { "B_Carryall_khk", "", 5000, { "", "", -1 } },
-            { "B_Bergen_dgtl_F", "", 5000, { "", "", -1 } }
+            { "B_Carryall_khk", "", 5000, { "", "", -1 } }
         };
     };
 
@@ -233,13 +243,8 @@ class Clothing {
         license = "";
         side = "med";
         uniforms[] = {
-            { "NONE", "Ficar Pelado", 0, { "", "", -1 } },
-			{ "U_I_CombatUniform_shortsleeve", "Estudante Medico", 50, { "", "", -1 } },
-			{ "U_MillerBody", "Medico", 50, { "", "", -1 } },
-			{ "U_B_CombatUniform_mcam_vest", "Medico residente", 50, { "", "", -1 } },
-			{ "U_B_SpecopsUniform_sgg", "Cirurgiao", 50, { "", "", -1 } },
-			{ "U_B_CombatUniform_mcam", "Comandante Medico", 50, { "", "", -1 } },
-            { "U_B_CTRG_3", "Comandante Geral", 50, { "", "", -1 } }
+            { "NONE", "Remove Uniform", 0, { "", "", -1 } },
+            { "U_C_Scientist", "EMS Uniform", 50, { "", "", -1 } }
         };
         headgear[] = {
             { "NONE", "Remove Hat", 0, { "", "", -1 } },
@@ -277,6 +282,18 @@ class Clothing {
 			{ "U_IG_Guerilla2_3", "Roupa VIP I", 9700, { "life_donorlevel", "SCALAR", 1 } },
 			{ "U_C_WorkerCoveralls", "Roupa VIP I", 9325 , { "life_donorlevel", "SCALAR", 1 } },
 			{ "U_OrestesBody", "Roupa VIP I", 9100, { "life_donorlevel", "SCALAR", 1 } },
+			{ "U_I_C_Soldier_Para_1_F", "", 15000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Para_2_F", "", 15000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Para_3_F", "", 15000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Para_4_F", "", 15000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Para_5_F", "", 15000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Bandit_3_F", "", 15000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Bandit_5_F", "", 15000, { "", "", -1 } },
+			{ "U_B_T_Soldier_F", "", 15000, { "", "", -1 } },
+			{ "U_B_T_Soldier__AR_F", "", 15000, { "", "", -1 } },
+			{ "U_B_T_Soldier_SL_F", "", 15000, { "", "", -1 } },
+			{ "U_O_T_Soldier_Viper_F", "", 50000, { "", "", -1 } },
+			{ "U_O_T_Soldier_Viper_hex_F", "", 50000, { "", "", -1 } },
 			{ "U_NikosBody", "Roupa VIP I", 9500, { "life_donorlevel", "SCALAR", 1 } },
 			{ "U_NikosAgedBody", "Roupa de Chique VIP", 9500, { "life_donorlevel", "SCALAR", 1 } }
 
@@ -365,6 +382,18 @@ class Clothing {
 			{ "U_I_G_resistanceLeader_F", "Roupa VIP II", 8735, { "life_donorlevel", "SCALAR", 2 } },
 			{ "U_I_CombatUniform_shortsleeve", "Roupa VIP III", 8700, { "life_donorlevel", "SCALAR", 2 } },
 			{ "U_C_Scientist", "Roupa VIP II", 8700, { "life_donorlevel", "SCALAR", 2 } },
+			{ "U_I_C_Soldier_Para_1_F", "", 15000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Para_2_F", "", 15000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Para_3_F", "", 15000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Para_4_F", "", 15000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Para_5_F", "", 15000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Bandit_3_F", "", 15000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Bandit_5_F", "", 15000, { "", "", -1 } },
+			{ "U_B_T_Soldier_F", "", 15000, { "", "", -1 } },
+			{ "U_B_T_Soldier__AR_F", "", 15000, { "", "", -1 } },
+			{ "U_B_T_Soldier_SL_F", "", 15000, { "", "", -1 } },
+			{ "U_O_T_Soldier_Viper_F", "", 50000, { "", "", -1 } },
+			{ "U_O_T_Soldier_Viper_hex_F", "", 50000, { "", "", -1 } },
 			{ "U_B_CTRG_2", "Roupa VIP II", 8100, { "life_donorlevel", "SCALAR", 2 } },
 			{ "U_NikosBody", "Roupa VIP II", 8500, { "life_donorlevel", "SCALAR", 2 } }
 
@@ -426,7 +455,7 @@ class Clothing {
 			{ "B_Bergen_sgg", "Mochila USA", 4000, { "life_donorlevel", "SCALAR", 1 } },
 			{ "B_Kitbag_mcamo", "", 2950, { "life_donorlevel", "SCALAR", 2 } },
 			{ "B_FieldPack_ocamo", "", 2700, { "life_donorlevel", "SCALAR", 2 } },
-			{ "B_Carryall_oli", "ExE teste", 4500, { "life_donorlevel", "SCALAR", 2 } },
+			{ "B_Carryall_oli", "", 4500, { "life_donorlevel", "SCALAR", 2 } },
 			{ "B_Carryall_khk", "", 4500, { "life_donorlevel", "SCALAR", 2 } },
 			{ "B_Carryall_oucamo", "Mochila Ivisivel", 4500, { "life_donorlevel", "SCALAR", 2 } }
         };
@@ -451,6 +480,18 @@ class Clothing {
 			{ "U_BG_Guerilla1_1", "Roupa VIP III", 7300, { "life_donorlevel", "SCALAR", 3 } },
 			{ "U_BG_Guerrilla_6_1", "Roupa VIP III", 7700, { "life_donorlevel", "SCALAR", 3 } },
 			{ "U_BG_leader", "Roupa VIP III", 7100, { "life_donorlevel", "SCALAR", 3 } },
+			{ "U_I_C_Soldier_Para_1_F", "", 15000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Para_2_F", "", 15000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Para_3_F", "", 15000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Para_4_F", "", 15000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Para_5_F", "", 15000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Bandit_3_F", "", 15000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Bandit_5_F", "", 15000, { "", "", -1 } },
+			{ "U_B_T_Soldier_F", "", 15000, { "", "", -1 } },
+			{ "U_B_T_Soldier__AR_F", "", 15000, { "", "", -1 } },
+			{ "U_B_T_Soldier_SL_F", "", 15000, { "", "", -1 } },
+			{ "U_O_T_Soldier_Viper_F", "", 50000, { "", "", -1 } },
+			{ "U_O_T_Soldier_Viper_hex_F", "", 50000, { "", "", -1 } },
 			{ "U_I_G_resistanceLeader_F", "Roupa VIP III", 7500, { "life_donorlevel", "SCALAR", 3 } }
 
         };
@@ -536,6 +577,18 @@ class Clothing {
 			{ "U_Marshal", "ROUPA VIP IV", 4650, { "life_donorlevel", "SCALAR", 4 } },
 			{ "U_KerryBody", "ROUPA VIP IV", 6735, { "life_donorlevel", "SCALAR", 4 } },
 			{ "U_IG_leader", "ROUPA VIP IV", 6700, { "life_donorlevel", "SCALAR", 4 } },
+			{ "U_I_C_Soldier_Para_1_F", "", 15000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Para_2_F", "", 15000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Para_3_F", "", 15000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Para_4_F", "", 15000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Para_5_F", "", 15000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Bandit_3_F", "", 15000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Bandit_5_F", "", 15000, { "", "", -1 } },
+			{ "U_B_T_Soldier_F", "", 15000, { "", "", -1 } },
+			{ "U_B_T_Soldier__AR_F", "", 15000, { "", "", -1 } },
+			{ "U_B_T_Soldier_SL_F", "", 15000, { "", "", -1 } },
+			{ "U_O_T_Soldier_Viper_F", "", 50000, { "", "", -1 } },
+			{ "U_O_T_Soldier_Viper_hex_F", "", 50000, { "", "", -1 } },
 			{ "U_C_Driver_1", "ROUPA VIP IV", 6100, { "life_donorlevel", "SCALAR", 4 } },
 			{ "U_BG_leader", "ROUPA VIP IV", 6500, { "life_donorlevel", "SCALAR", 4 } }
 		
@@ -625,6 +678,18 @@ class Clothing {
 			{ "U_KerryBody", "ROUPA VIP V",5735, { "life_donorlevel", "SCALAR", 5 } },
 			{ "U_IG_leader", "ROUPA VIP V", 5701, { "life_donorlevel", "SCALAR", 5 } },
 			{ "U_C_Driver_1", "ROUPA VIP V", 5100, { "life_donorlevel", "SCALAR", 5 } },
+            { "U_I_C_Soldier_Para_1_F", "", 10000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Para_2_F", "", 10000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Para_3_F", "", 10000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Para_4_F", "", 10000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Para_5_F", "", 10000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Bandit_3_F", "", 10000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Bandit_5_F", "", 10000, { "", "", -1 } },
+			{ "U_B_T_Soldier_F", "", 10000, { "", "", -1 } },
+			{ "U_B_T_Soldier__AR_F", "", 10000, { "", "", -1 } },
+			{ "U_B_T_Soldier_SL_F", "", 10000, { "", "", -1 } },
+			{ "U_O_T_Soldier_Viper_F", "", 50000, { "", "", -1 } },
+			{ "U_O_T_Soldier_Viper_hex_F", "", 50000, { "", "", -1 } },
 			{ "U_BG_leader", "ROUPA VIP V", 5500, { "life_donorlevel", "SCALAR", 5 } }
 
         };
@@ -717,6 +782,16 @@ class Clothing {
 			{ "U_B_CTRG_3", "", 17500, { "", "", -1 } },
 			{ "U_I_CombatUniform_shortsleeve", "", 17500, { "", "", -1 } },
 			{ "U_IG_leader", "", 19000, { "", "", -1 } },
+		    { "U_I_C_Soldier_Para_1_F", "", 15000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Para_2_F", "", 15000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Para_3_F", "", 15000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Para_4_F", "", 15000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Para_5_F", "", 15000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Bandit_3_F", "", 15000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Bandit_5_F", "", 15000, { "", "", -1 } },
+			{ "U_B_T_Soldier_F", "", 15000, { "", "", -1 } },
+			{ "U_B_T_Soldier__AR_F", "", 15000, { "", "", -1 } },
+			{ "U_B_T_Soldier_SL_F", "", 15000, { "", "", -1 } },
 			{ "U_O_GhillieSuit", "", 60000, { "", "", -1 } },
 			{ "U_B_FullGhillie_lsh", "", 80000, { "", "", -1 } }
 

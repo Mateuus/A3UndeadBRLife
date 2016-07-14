@@ -56,7 +56,7 @@ switch(_craft) do
 	{
         _return = [
 				["B_Kitbag_cbr",["cloth",25,"goldcoin",15]],
-				["B_Bergen_dgtl_F",["cloth",3,"goldcoin",15,"goldBar",2]]
+				["B_Bergen_dgtl_F",["cloth",30,"goldcoin",15,"goldBar",2]]
 			];
 	};
 

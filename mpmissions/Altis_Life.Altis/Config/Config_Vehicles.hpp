@@ -704,6 +704,12 @@ will modify the virtual space and the price of the vehicle, but other informatio
 			{ "AbudHabic", "civ", {
                 "textures\Civ\Vehicles\abudhabiwrc.paa"
             } },
+			{ "Gang Execution", "civ", {
+                "textures\Vip\exe\execar.jpg"
+            } },
+			{ "Gang Kings", "civ", {
+                "textures\Civ\Vehicles\civ_dominospizza_hb.paa"
+            } },
             { "Bope", "cop", {
                 "textures\Cop\Vehicles\bopehactebk.jpg"
 			} },

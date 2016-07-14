@@ -1,4 +1,4 @@
-/* PROPERTY OF THE TRAILERPARK DO NOT ATTEMPT TO STEAL CONTENT*/
+/* PROPERTY OF UNDEAD BRASIL DO NOT ATTEMPT TO STEAL CONTENT*/
 if(playerSide != civilian) exitWith {};
 private ["_camera", "_camDistance","_randCamY","_randCamZ","_camTime"];
 _camDistance = 700;_randCamY = 75 - floor(random 150);
