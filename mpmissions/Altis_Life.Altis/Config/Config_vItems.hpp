@@ -21,7 +21,7 @@ class VirtualShops {
 		side = "civ";
 		license = "";
 		level[] = { "", "", -1, "" };
-		items[] = { "plank", "woodaxe" };
+		items[] = { "plank", "woodaxe", "plans" };
 	};
 
 	class med_market {
@@ -29,7 +29,7 @@ class VirtualShops {
 		side = "med";
 		license = "";
 		level[] = { "", "", -1, "" };
-		items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "toolkit", "fuelFull", "peach", "defibrillator" };
+		items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "toolkit", "fuelFull", "peach", "defibrillator", "lockpick" };
 	};
 
 	class rebel {
@@ -133,7 +133,7 @@ class VirtualShops {
 		side = "civ";
 		license = "";
 		level[] = { "", "", -1, "" };
-		items[] = { "cement" };
+		items[] = { "" };
 	};
 
 	class gold {
@@ -243,7 +243,7 @@ class VirtualItems {
 		sellPrice = 800;
 		illegal = true;
 		edible = -1;
-		icon = "icons\ico_spikeStrip.paa";
+		icon = "icons\spikeStrip.paa";
 	};
 
 	class lockpick {
@@ -254,7 +254,7 @@ class VirtualItems {
 		sellPrice = 2500;
 		illegal = true;
 		edible = -1;
-		icon = "icons\ico_lockpick.paa";
+		icon = "icons\lockpick.paa";
 	};
 
 	class gpstracker {
@@ -494,10 +494,10 @@ class VirtualItems {
 		displayName = "STR_Item_DiamondU";
 		weight = 7;
 		buyPrice = -1;
-		sellPrice = 1000;
+		sellPrice = -1;
 		illegal = false;
 		edible = -1;
-		icon = "icons\ico_diamondUncut.paa";
+		icon = "icons\diamond.paa";
 	};
 
 	class diamond_cut {
@@ -508,7 +508,7 @@ class VirtualItems {
 		sellPrice = 2400;
 		illegal = false;
 		edible = -1;
-		icon = "icons\ico_diamondCut.paa";
+		icon = "icons\diamondc.paa";
 	};
 
 	class rock {
@@ -517,9 +517,9 @@ class VirtualItems {
 		weight = 6;
 		buyPrice = -1;
 		sellPrice = -1;
-		illegal = false;
+		illegal = true;
 		edible = -1;
-		icon = "icons\ico_rock.paa";
+		icon = "icons\saltwater.paa";
 	};
 
 	class cement {
@@ -527,10 +527,10 @@ class VirtualItems {
 		displayName = "STR_Item_CementBag";
 		weight = 5;
 		buyPrice = -1;
-		sellPrice = 2000;
-		illegal = false;
+		sellPrice = 2800;
+		illegal = true;
 		edible = -1;
-		icon = "icons\ico_cement.paa";
+		icon = "icons\meth.paa";
 	};
 
 	//Drugs
@@ -542,7 +542,7 @@ class VirtualItems {
 		sellPrice = -1;
 		illegal = true;
 		edible = -1;
-		icon = "icons\ico_heroinUnprocessed.paa";
+		icon = "icons\heroinu.paa";
 		processedItem = "heroin_processed";
 	};
 
@@ -554,7 +554,7 @@ class VirtualItems {
 		sellPrice = 3100;
 		illegal = true;
 		edible = -1;
-		icon = "icons\ico_heroinProcessed.paa";
+		icon = "icons\heroinp.paa";
 	};
 
 	class cannabis {
@@ -565,7 +565,7 @@ class VirtualItems {
 		sellPrice = -1;
 		illegal = true;
 		edible = -1;
-		icon = "icons\ico_cannabis.paa";
+		icon = "icons\cannabis.paa";
 		processedItem = "marijuana";
 	};
 
@@ -577,7 +577,7 @@ class VirtualItems {
 		sellPrice = 3800;
 		illegal = true;
 		edible = -1;
-		icon = "icons\ico_marijuana.paa";
+		icon = "icons\marijuana.paa";
 	};
 
 	class cocaine_unprocessed {
@@ -588,7 +588,7 @@ class VirtualItems {
 		sellPrice = -1;
 		illegal = true;
 		edible = -1;
-		icon = "icons\ico_cocaineUnprocessed.paa";
+		icon = "icons\cocapaste.paa";
 		processedItem = "cocaine_processed";
 	};
 
@@ -600,7 +600,7 @@ class VirtualItems {
 		sellPrice = 4200;
 		illegal = true;
 		edible = -1;
-		icon = "icons\ico_cocaineProcessed.paa";
+		icon = "icons\cocainep.paa";
 	};
 
 	//Drink

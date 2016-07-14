@@ -6592,25 +6592,25 @@
 		<Original>Saco de sequestro</Original>
 		</Key>
 		<Key ID="STR_Item_Rock">
-			<Original>Rock</Original>
+			<Original>Substancia de Metanfetamina</Original>
 			<Czech>Skála</Czech>
 			<Spanish>Piedra</Spanish>
 			<Russian></Russian>
 			<German>Stein</German>
 			<French>Pierre</French>
 			<Italian>Roccia</Italian>
-			<Portuguese>Pedra</Portuguese>
+			<Portuguese>Substancia de Metanfetamina</Portuguese>
 			<Polish>Skała</Polish>
 		</Key>
 		<Key ID="STR_Item_CementBag">
-			<Original>Cement Bag</Original>
+			<Original>Metanfetamina</Original>
 			<Czech>cement Bag</Czech>
 			<Spanish>Bolsa de Cemento</Spanish>
 			<Russian></Russian>
 			<German>Zement Sack</German>
 			<French>Sac de ciment</French>
 			<Italian>Sacco di Cemento</Italian>
-			<Portuguese>Saco de Cimento</Portuguese>
+			<Portuguese>Metanfetamina</Portuguese>
 			<Polish>Worek cementu</Polish>
 		</Key>
 		<Key ID="STR_Item_GoldBar">
@@ -9240,12 +9240,10 @@
 	</Package>
 	<Package name="Markers_names">
 		<Key ID="STR_MAR_Gang_1">
-			<Original>Aréa Gang VIP 1</Original>
-			<Portuguese>Aréa Gang VIP 1</Portuguese>
+			<Original>Kings</Original>
 		</Key>
 		<Key ID="STR_MAR_Gang_2">
-			<Original>Aréa Gang VIP 2</Original>
-			<Portuguese>Aréa Gang VIP 2</Portuguese>
+			<Original>Execution</Original>
 		</Key>
 		<Key ID="STR_MAR_Fish_Market">
 			<Original>Fish Market</Original>

@@ -5,7 +5,7 @@ _robber = [_this,1,ObjNull,[ObjNull]] call BIS_fnc_param; //Can you guess? Alrig
 _action = [_this,2] call BIS_fnc_param;//Action name
 _cops = (west countSide playableUnits);
 
-if(_cops < 1) exitWith {hint "Voce nao pode roubar este posto, precisa de 4 ou mais policias online";};
+if(_cops < 4) exitWith {hint "Voce nao pode roubar este posto, precisa de 4 ou mais policias online";};
 //if(_cops < 30) exitWith {hint "Sorry feature disabled until I fix it, should be fixed soon though.";};
 if(side _robber isEqualTo west) exitWith { hint "Ta maluco ??????" };
 if(side _robber isEqualTo independent) exitWith { hint "Ta maluco ??????" };
@@ -60,7 +60,7 @@ while{true} do
 	if(life_istazed) exitWith { deleteMarker _marker; life_rip = false; hint "Voce foi imobilizado!"; 5 cutText ["","PLAIN"]; call life_fnc_hudUpdate;};
 
    5 cutText ["","PLAIN"];
-   titleText[format["Voce recebeu $%1 por roubar, a policia esta a caminho corra!",[_kassa] call life_fnc_numberText],"PLAIN"];
+   titleText[format["Voce recebeu $%1 do vendedor pelo roubo, a policia esta a caminho corra!",[_kassa] call life_fnc_numberText],"PLAIN"];
    deleteMarker _marker;
    ADD(CASH,_kassa);
    [] call life_fnc_hudSetup;

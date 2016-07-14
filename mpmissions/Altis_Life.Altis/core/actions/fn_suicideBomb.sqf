@@ -1,7 +1,7 @@
 /*
     ALAH SNACKBAR!
     Taken from a DSCHA {Daniel} Is Ass post
-[0,format["%1 has set off their suicide vest.",name player]] remoteExec ["life_fnc_broadcast",0];
+[0,format["%1 Despachou seu colete suicida.",name player]] remoteExec ["life_fnc_broadcast",0];
 */
 private["_boom", "_list"];
 if(vest player != "V_HarnessOGL_brn") exitWith {};
@@ -35,4 +35,4 @@ player setVariable["tied", false, true];
 player setVariable["restrained", false, true];
 player setVariable["eg_cancelRevive", true, true];
 [] call SOCK_fnc_updateRequest;
-[0,format["BREAKING NEWS: A suicide vest was detonated by %1!",profileName]] remoteExec ["life_fnc_broadcast",0];
+[0,format["Altis Plantao: Um individuo identificado como %1 se suicidou com um colete suicida, tudo oque estava a sua volta explodiu!",profileName]] remoteExec ["life_fnc_broadcast",0];
