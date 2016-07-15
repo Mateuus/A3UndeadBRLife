@@ -68814,7 +68814,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="removeallWeapons this;  this enableSimulation false;this allowDamage false; this addAction[""Lojas de Armas Gangue Doador 2"",life_fnc_weaponShopMenu,""ganguevip2"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];";
+						init="this enableSimulation false; this allowDamage false; this addAction[""Lojas de Armas Gangue Doador 2"",life_fnc_weaponShopMenu,""ganguevip2""];";
 						name="vip_7";
 						class Inventory
 						{
@@ -69483,7 +69483,7 @@ class Mission
 					flags=3;
 					class Attributes
 					{
-						init="removeallWeapons this;  this enableSimulation false;this allowDamage false; this addAction[""Lojas de Armas Gangue Doador 1"",life_fnc_weaponShopMenu,""ganguevip1"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];";
+						init="this enableSimulation false; this allowDamage false; this addAction[""Lojas de Armas Gangue Doador 1"",life_fnc_weaponShopMenu,""ganguevip1""];";
 						name="vip_15";
 						class Inventory
 						{
