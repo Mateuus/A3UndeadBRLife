@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=138;
+	toggles=10;
 	class ItemIDProvider
 	{
 		nextID=11416;
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14322.375,10.60235,13037.246};
-		dir[]={0.62248665,-0.77009952,0.13957365};
-		up[]={0.75144458,0.63791841,0.16848853};
-		aside[]={0.21879072,-2.2535096e-007,-0.97578263};
+		pos[]={8989.9521,78.214844,7662.6431};
+		dir[]={0.30893746,-0.21288331,0.926956};
+		up[]={0.067310698,0.97707725,0.20196308};
+		aside[]={0.94870496,6.769551e-008,-0.31618458};
 	};
 };
 binarizationWanted=0;
@@ -1329,11 +1329,12 @@ class Mission
 		class Item93
 		{
 			dataType="Marker";
-			position[]={14696.649,17.91,16745.135};
+			position[]={14696.649,0,16745.135};
 			name="civ_air_1";
 			type="Empty";
-			angle=308.02133;
+			angle=141.58945;
 			id=105;
+			atlOffset=-17.91;
 		};
 		class Item94
 		{
@@ -1341,7 +1342,7 @@ class Mission
 			position[]={14685.702,17.91,16733.902};
 			name="civ_air_1_2";
 			type="Empty";
-			angle=319.56326;
+			angle=143.01221;
 			id=106;
 		};
 		class Item95
@@ -44286,7 +44287,7 @@ class Mission
 			position[]={20032.063,0,6635.8706};
 			name="car_g_11";
 			type="Empty";
-			angle=223.97305;
+			angle=223.97302;
 			id=8879;
 			atlOffset=-90.374069;
 		};
@@ -68362,7 +68363,7 @@ class Mission
 			fillName="DiagGrid";
 			a=80;
 			b=80;
-			angle=172.04898;
+			angle=172.04897;
 			id=11316;
 			atlOffset=-4.7270312;
 		};
@@ -68463,7 +68464,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this enableSimulation false; this allowDamage false; this addAction[""Loja de Carros Gangue Doador 1"",life_fnc_vehicleShopMenu,[""civ_vip_car_bronze"",civilian,[""civ_vip_car_gang_1""],""civ"",""Loja de Carros Gangue Doador""]];this addAction[localize""STR_Garage_Title"",  {   if(life_HC_isActive) then { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];}; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_vip_car_gang_1"";  }];  this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"", ""Car Shop""];";
+						init="this enableSimulation false; this allowDamage false; this addAction[""Loja de Carros Gangue Doador 1"",life_fnc_vehicleShopMenu,[""civ_doador_gangue_2"",civilian,[""civ_vip_car_gang_1""],""civ"",""Loja de Carros Gangue Doador""]];this addAction[localize""STR_Garage_Title"",  {   if(life_HC_isActive) then { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];}; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_vip_car_gang_1"";  }];  this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"", ""Car Shop""];";
 						name="vip_8";
 						class Inventory
 						{
@@ -68591,7 +68592,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this allowDamage false; this enableSimulation false;  " \n "this addAction[""Roupa Gangue Doador 2"",life_fnc_clothingMenu,""RoupasBronze""]; ";
+						init="this allowDamage false; this enableSimulation false;  " \n "this addAction[""Roupa Gangue Doador 2"",life_fnc_clothingMenu,""roupasgangue2""]; ";
 						name="vip_11";
 						class Inventory
 						{
@@ -68702,7 +68703,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this enableSimulation false; this allowDamage false; this addAction[""Loja de Utilitários"",life_fnc_weaponShopMenu,""genstore""]; this addAction[localize""STR_Shops_Market"",life_fnc_virt_menu,""market""];";
+						init="this enableSimulation false; this allowDamage false; this addAction[""Loja de Utilitários"",life_fnc_weaponShopMenu,""genstore""]; this addAction[localize""STR_Shops_Rebel"",life_fnc_virt_menu,""market""];";
 						name="vip_9";
 						class Inventory
 						{
@@ -68976,7 +68977,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this enableSimulation false; this allowDamage false; this addAction[""Loja de Helicóptero Gangue Doador 1"",life_fnc_vehicleShopMenu,[""civ_vip_air_bronze"",civilian,[""civ_vip_air_gang_1""],""civ_vip"",""Loja de Helicóptero Gangue Doador 1""]]; this addAction[localize""STR_Garage_Title"",  {   if(life_HC_isActive) then { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];};  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_vip_air_gang_1"";  }];   this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+						init="this enableSimulation false; this allowDamage false; this addAction[""Loja de Helicóptero Gangue Doador 1"",life_fnc_vehicleShopMenu,[""civ_air_gangue_doador_2"",civilian,[""civ_vip_air_gang_1""],""civ_vip"",""Loja de Helicóptero Gangue Doador 1""]]; this addAction[localize""STR_Garage_Title"",  {   if(life_HC_isActive) then { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];};  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_vip_air_gang_1"";  }];   this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 						name="vip_12";
 						class Inventory
 						{
@@ -69092,7 +69093,7 @@ class Mission
 			position[]={8982.6885,-1.4124518e-018,7490.0801};
 			name="civ_vip_air_gang_1";
 			type="Empty";
-			angle=122.77099;
+			angle=122.77098;
 			id=11345;
 			atlOffset=-70.608376;
 		};
@@ -69132,7 +69133,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this enableSimulation false; this allowDamage false; this addAction[""Loja de Carros Gangue Doador 1"",life_fnc_vehicleShopMenu,[""civ_vip_car_bronze"",civilian,[""civ_vip_car_gang_2""],""civ"",""Loja de Carros Gangue Doador""]];this addAction[localize""STR_Garage_Title"",  {   if(life_HC_isActive) then { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];}; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_vip_car_gang_2"";  }];  this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"", ""Car Shop""];";
+						init="this enableSimulation false; this allowDamage false; this addAction[""Loja de Carros Gangue Doador 1"",life_fnc_vehicleShopMenu,[""civ_doador_gangue_1"",civilian,[""civ_vip_car_gang_2""],""civ"",""Loja de Carros Gangue Doador""]];this addAction[localize""STR_Garage_Title"",  {   if(life_HC_isActive) then { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];}; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_vip_car_gang_2"";  }];  this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"", ""Car Shop""];";
 						name="vip_10";
 						class Inventory
 						{
@@ -69243,7 +69244,7 @@ class Mission
 					flags=3;
 					class Attributes
 					{
-						init="this enableSimulation false; this allowDamage false; this addAction[""Loja de Utilitários"",life_fnc_weaponShopMenu,""genstore""]; this addAction[localize""STR_Shops_Market"",life_fnc_virt_menu,""market""];";
+						init="this enableSimulation false; this allowDamage false; this addAction[""Loja de Utilitários"",life_fnc_weaponShopMenu,""genstore""]; this addAction[localize""STR_Shops_Rebel"",life_fnc_virt_menu,""market""];";
 						name="vip_13";
 						class Inventory
 						{
@@ -69354,7 +69355,7 @@ class Mission
 					flags=3;
 					class Attributes
 					{
-						init="this allowDamage false; this enableSimulation false;  " \n "this addAction[""Roupa Gangue Doador 1"",life_fnc_clothingMenu,""RoupasBronze""]; ";
+						init="this allowDamage false; this enableSimulation false;  " \n "this addAction[""Roupa Gangue Doador 1"",life_fnc_clothingMenu,""roupasgangue1""]; ";
 						name="vip_14";
 						class Inventory
 						{
@@ -69635,7 +69636,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this enableSimulation false; this allowDamage false; this addAction[""Loja de Helicóptero Gangue Doador 1"",life_fnc_vehicleShopMenu,[""civ_vip_air_bronze"",civilian,[""civ_vip_air_gang_2""],""civ_vip"",""Loja de Helicóptero Gangue Doador 1""]]; this addAction[localize""STR_Garage_Title"",  {   if(life_HC_isActive) then { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];};  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_vip_air_gang_2"";  }];   this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+						init="this enableSimulation false; this allowDamage false; this addAction[""Loja de Helicóptero Gangue Doador 1"",life_fnc_vehicleShopMenu,[""civ_air_gangue_doador_1"",civilian,[""civ_vip_air_gang_2""],""civ_vip"",""Loja de Helicóptero Gangue Doador 1""]]; this addAction[localize""STR_Garage_Title"",  {   if(life_HC_isActive) then { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];};  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_vip_air_gang_2"";  }];   this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 						name="vip_16";
 						class Inventory
 						{
@@ -69767,7 +69768,7 @@ class Mission
 			position[]={14320.765,1.1995119e+024,13044.929};
 			name="civ_vip_car_gang_2";
 			type="Empty";
-			angle=269.63498;
+			angle=269.63492;
 			id=11365;
 			atlOffset=1.1995119e+024;
 		};
@@ -69787,7 +69788,7 @@ class Mission
 			position[]={14251.258,-1.4112011e-018,13032.39};
 			name="civ_vip_air_gang_2";
 			type="Empty";
-			angle=175.34499;
+			angle=175.34496;
 			id=11371;
 			atlOffset=-4.1033731;
 		};
@@ -70040,7 +70041,7 @@ class Mission
 			position[]={14330.098,-7.5408246e-017,13039.831};
 			name="civ_spawn_gang_2";
 			type="Empty";
-			angle=251.54399;
+			angle=251.54398;
 			id=11415;
 			atlOffset=-3.4367249;
 		};

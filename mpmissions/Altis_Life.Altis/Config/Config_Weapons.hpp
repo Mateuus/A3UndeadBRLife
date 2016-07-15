@@ -461,7 +461,7 @@ class WeaponShops {
         name = "Gangue Doador Armas Shop";
 		side = "civ";
         license = "gun";
-        level[] = { "life_gangdonorid", "SCALAR", 5, "Você precisa ser um Gangue Doador para acessar a loja, acesse nosso forum ou teamspeak para obter informações." };
+        level[] = { "life_gangdonorid", "SCALAR", 1, "Você precisa ser um Gangue Doador para acessar a loja, acesse nosso forum ou teamspeak para obter informações." };
 		items[] = {
             { "FirstAidKit", "Bolsa de Sangue", 250, 65 },
             { "hgun_Pistol_heavy_02_F", "ACP .45", 7920, 2500 },

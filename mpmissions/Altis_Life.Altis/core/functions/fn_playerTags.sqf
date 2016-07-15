@@ -72,7 +72,7 @@ _masks = LIFE_SETTINGS(getArray,"clothing_masks");
 					switch ((_x GVAR "gangrank")) do {		
 					case 0: {"icons\ranks\vip\civil.paa"};
 					case 1: {"icons\ranks\gang\1.paa"};
-					case 2: {"icons\ranks\gang\2.paa"};
+					case 2: {"icons\ranks\vip\silver.paa"};
 					case 3: {"icons\ranks\vip\gold.paa"};
 					case 4: {"icons\ranks\vip\platinum.paa"};
 					case 5: {"icons\ranks\vip\diamante.paa"};
@@ -84,8 +84,8 @@ _masks = LIFE_SETTINGS(getArray,"clothing_masks");
 					
 					switch ((_x GVAR "gangrank")) do {
 						case 0: {"Civil"};
-						case 1: {"Kings"};
-						case 2: {"Execution"};
+						case 1: {"Execution"};
+						case 2: {"Kings"};
 						case 3: {"GANG VIP 3"};
 						case 4: {"GANG VIP 4"};
 						case 5: {"GANG VIP 5"};
@@ -123,7 +123,8 @@ _masks = LIFE_SETTINGS(getArray,"clothing_masks");
 						
 						
 						
-					case (side _x isEqualTo independent && {!isNil {_x GVAR "rank"}}): {format["<img image='%1' size='1.5'></img> <t size='1.35'>%2</t><br/><t size='0.8'>[%3]</t>",switch ((_x GVAR "rank")) do {
+				  //case (side _x isEqualTo independent): {format["<t color='#FF0000'><img image='a3\ui_f\data\map\MapControl\hospital_ca.paa' size='1.5'></img></t> %1",_x GVAR ["realname",name _x]]};
+					case (side _x isEqualTo independent && {!isNil {_x GVAR "rankmedic"}}): {format["<img image='%1' size='1.5'></img> <t size='1.35' color='#FF0000'>%2</t><br/><t size='0.8'>[%3]</t>",switch ((_x GVAR "rankmedic")) do {
 					case 1: {"icons\ranks\med\EMED.paa"};
 					case 2: {"icons\ranks\med\MED.paa"};
 					case 3: {"icons\ranks\med\MEDR.paa"};
@@ -134,17 +135,26 @@ _masks = LIFE_SETTINGS(getArray,"clothing_masks");
 						},
 						_x GVAR ["realname",name _x],
 						
-						switch ((_x GVAR "rank")) do {
+						switch ((_x GVAR "rankmedic")) do {
 						case 1: {"Estudante Medico"};
 						case 2: {"Medico"};
 						case 3: {"Medico Residente"};
 						case 4: {"Cirurgiao"};
 						case 5: {"Comandante Medico"};
 						case 6: {"Comandante Geral"};
-
 						
 						default {"Medico"};
 					}]};
+					  
+					
+					
+					default {
+						if(!isNil {(group _x) GVAR "gang_name"}) then {
+							format["<img image='icons\ranks\vip\civil.paa' size='1.5'></img><t size='1.35'>%1</t><br/><t size='0.8' color='#B6B6B6'>[%2]</t>",_x GVAR ["realname",name _x],(group _x) GVAR ["gang_name",""]];
+						} else {
+							format["<img image='icons\ranks\vip\civil.paa' size='1.5'></img><t size='1.35'>%1</t>",_x GVAR ["realname",name _x]];
+						};
+					};
 				};
 
 				_idc ctrlSetStructuredText parseText _text;

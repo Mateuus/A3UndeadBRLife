@@ -151,23 +151,35 @@ switch(playerSide) do {
 		};
 		if ((uniform player == "U_B_SpecopsUniform_sgg") && (FETCH_CONST(life_coplevel) == 5)) then
 		{
-			player setObjectTextureGlobal [0, "textures\Cop\Clothing\tenente.paa"];
+			player setObjectTextureGlobal [0, "textures\Cop\Clothing\tenente.jpg"];
 		};
 		if ((uniform player == "U_B_SpecopsUniform_sgg") && (FETCH_CONST(life_coplevel) == 6)) then
 		{
-			player setObjectTextureGlobal [0, "textures\Cop\Clothing\capitao.paa"];
+			player setObjectTextureGlobal [0, "textures\Cop\Clothing\capitao.jpg"];
 		};
 		if ((uniform player == "U_B_SpecopsUniform_sgg") && (FETCH_CONST(life_coplevel) == 7)) then
 		{
-			player setObjectTextureGlobal [0, "textures\Cop\Clothing\major.paa"];
+			player setObjectTextureGlobal [0, "textures\Cop\Clothing\major.jpg"];
 		};
 		if ((uniform player == "U_B_SpecopsUniform_sgg") && (FETCH_CONST(life_coplevel) == 8)) then
 		{
-			player setObjectTextureGlobal [0, "textures\Cop\Clothing\tencoronel.paa"];
+			player setObjectTextureGlobal [0, "textures\Cop\Clothing\tencoronel.jpg"];
 		};
 		if ((uniform player == "U_B_SpecopsUniform_sgg") && (FETCH_CONST(life_coplevel) == 9)) then
 		{
-			player setObjectTextureGlobal [0, "textures\Cop\Clothing\coronel.paa"];
+			player setObjectTextureGlobal [0, "textures\Cop\Clothing\coronel.jpg"];
+		};
+		if ((uniform player == "U_B_SpecopsUniform_sgg") && (FETCH_CONST(life_coplevel) == 9)) then
+		{
+			player setObjectTextureGlobal [0, "textures\Cop\Clothing\colote_bope.jpg"];
+		};
+		if ((uniform player == "V_PlateCarrier1_blk") && (FETCH_CONST(life_coplevel) == 4)) then
+		{
+			player setObjectTextureGlobal [0, "textures\Cop\Clothing\colote_cop.jpg"];
+		};
+		if ((uniform player == "V_TacVest_blk_POLICE") && (FETCH_CONST(life_coplevel) == 1)) then
+		{
+			player setObjectTextureGlobal [0, "textures\Cop\Clothing\colote.jpg"];
 		};
 	
 	
@@ -182,7 +194,7 @@ switch(playerSide) do {
 		if ((uniform player) isEqualTo "U_I_CombatUniform_shortsleeve") then {
 			player setObjectTextureGlobal [0, "textures\Med\Clothing\estudante_medico.paa"];
 		};
-		if ((uniform player) isEqualTo "U_MillerBody") then {
+		if ((uniform player) isEqualTo "U_B_CombatUniform_mcam_worn") then {
 			player setObjectTextureGlobal [0, "textures\Med\Clothing\medico.paa"];
 		};
 		if ((uniform player) isEqualTo "U_B_CombatUniform_mcam_vest") then {

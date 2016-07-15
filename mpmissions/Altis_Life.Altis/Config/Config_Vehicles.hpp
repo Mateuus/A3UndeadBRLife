@@ -85,7 +85,8 @@ class CarShops {
             { "I_Truck_02_fuel_F", { "life_donorlevel", "SCALAR", 3 } },
             { "B_Truck_01_fuel_F", { "life_donorlevel", "SCALAR", 3 } },
 			{ "B_Truck_01_box_F", { "life_donorlevel", "SCALAR", 3 } },
-			{ "O_Truck_03_device_F", { "life_donorlevel", "SCALAR", 3 } }
+			{ "O_Truck_03_device_F", { "life_donorlevel", "SCALAR", 3 } },
+			{ "O_MRAP_02_F", { "life_donorlevel", "SCALAR", 3 } }
         };
     };
 
@@ -137,6 +138,61 @@ class CarShops {
         };
     };
 
+	class civ_doador_gangue_1 {
+        side = "civ";
+        vehicles[] = {
+			{ "C_Hatchback_01_sport_F", { "life_gangdonorid", "SCALAR", 1 } },
+			{ "C_SUV_01_F", { "life_gangdonorid", "SCALAR", 1 } },
+			{ "C_Offroad_01_F", { "life_gangdonorid", "SCALAR", 1 } },
+			{ "C_Van_01_box_F", { "life_gangdonorid", "SCALAR", 1 } },
+			{ "C_Offroad_02_unarmed_black_F", { "life_gangdonorid", "SCALAR", 1 } },
+			{ "I_Truck_02_transport_F", { "life_gangdonorid", "SCALAR", 1 } },
+            { "I_Truck_02_covered_F", { "life_gangdonorid", "SCALAR", 1 } },
+            { "O_Truck_03_transport_F", { "life_gangdonorid", "SCALAR", 1 } },
+            { "O_Truck_03_covered_F", { "life_gangdonorid", "SCALAR", 1 } },
+			{ "B_Truck_01_ammo_F", { "life_gangdonorid", "SCALAR", 1 } },
+			{ "B_Truck_01_transport_F", { "life_gangdonorid", "SCALAR", 1 } },
+			{ "B_Truck_01_covered_F", { "life_gangdonorid", "SCALAR", 1 } },
+            { "I_Truck_02_fuel_F", { "life_gangdonorid", "SCALAR", 1 } },
+            { "B_Truck_01_fuel_F", { "life_gangdonorid", "SCALAR", 1 } },
+			{ "B_Truck_01_box_F", { "life_gangdonorid", "SCALAR", 1 } },
+			{ "C_Kart_01_Blu_F", { "life_gangdonorid", "SCALAR", 1 } },
+            { "C_Kart_01_Fuel_F", { "life_gangdonorid", "SCALAR", 1 } },
+            { "C_Kart_01_Red_F", { "life_gangdonorid", "SCALAR", 1 } },
+            { "C_Kart_01_Vrana_F", { "life_gangdonorid", "SCALAR", 1 } },
+			{ "O_Truck_03_device_F", { "life_gangdonorid", "SCALAR", 1 } },
+			{ "O_MRAP_02_F", { "life_gangdonorid", "SCALAR", 1 } }
+        };
+    };
+	
+	class civ_doador_gangue_2 {
+        side = "civ";
+        vehicles[] = {
+			{ "C_Hatchback_01_sport_F", { "life_gangdonorid", "SCALAR", 1 } },
+			{ "C_SUV_01_F", { "life_gangdonorid", "SCALAR", 1 } },
+			{ "C_Offroad_02_unarmed_black_F", { "life_gangdonorid", "SCALAR", 1 } },
+			{ "C_Offroad_01_F", { "life_gangdonorid", "SCALAR", 1 } },
+			{ "C_Van_01_box_F", { "life_gangdonorid", "SCALAR", 1 } },
+			{ "I_Truck_02_transport_F", { "life_gangdonorid", "SCALAR", 1 } },
+            { "I_Truck_02_covered_F", { "life_gangdonorid", "SCALAR", 1 } },
+            { "O_Truck_03_transport_F", { "life_gangdonorid", "SCALAR", 1 } },
+            { "O_Truck_03_covered_F", { "life_gangdonorid", "SCALAR", 1 } },
+			{ "B_Truck_01_ammo_F", { "life_gangdonorid", "SCALAR", 1 } },
+			{ "B_Truck_01_transport_F", { "life_gangdonorid", "SCALAR", 1 } },
+			{ "B_Truck_01_covered_F", { "life_gangdonorid", "SCALAR", 1 } },
+            { "I_Truck_02_fuel_F", { "life_gangdonorid", "SCALAR", 1 } },
+            { "B_Truck_01_fuel_F", { "life_gangdonorid", "SCALAR", 1 } },
+			{ "B_Truck_01_box_F", { "life_gangdonorid", "SCALAR", 1 } },
+			{ "O_Truck_03_device_F", { "life_gangdonorid", "SCALAR", 1 } }, 
+			{ "O_MRAP_02_F", { "life_gangdonorid", "SCALAR", 1 } },
+			{ "C_Kart_01_Blu_F", { "life_gangdonorid", "SCALAR", 1 } },
+            { "C_Kart_01_Fuel_F", { "life_gangdonorid", "SCALAR", 1 } },
+            { "C_Kart_01_Red_F", { "life_gangdonorid", "SCALAR", 1 } },
+            { "C_Kart_01_Vrana_F", { "life_gangdonorid", "SCALAR", 1 } },
+            { "B_MRAP_01_F", { "life_gangdonorid", "SCALAR", 1 } }
+        };
+    };
+	
 	class civ_vip_air_bronze {
         side = "civ_vip";
         vehicles[] = {
@@ -166,7 +222,7 @@ class CarShops {
             { "C_Heli_Light_01_civil_F", { "life_donorlevel", "SCALAR", 3 } },
             { "B_Heli_Light_01_F", { "life_donorlevel", "SCALAR", 3 } },
             { "O_Heli_Light_02_unarmed_F", { "life_donorlevel", "SCALAR", 3 } },
-            { "O_Heli_Transport_04_Box_F", { "life_donorlevel", "SCALAR", 3 } },
+            { "B_Heli_Transport_03_unarmed_F", { "life_donorlevel", "SCALAR", 3 } },
 			{ "I_Heli_light_03_unarmed_F", { "life_donorlevel", "SCALAR", 3 } },
 			{ "B_Heli_Light_01_stripped_F", { "life_donorlevel", "SCALAR", 3 } },
 			{ "O_Heli_Transport_04_black_F", { "life_donorlevel", "SCALAR", 3 } },
@@ -180,7 +236,7 @@ class CarShops {
             { "C_Heli_Light_01_civil_F", { "life_donorlevel", "SCALAR", 4 } },
             { "B_Heli_Light_01_F", { "life_donorlevel", "SCALAR", 4 } },
             { "O_Heli_Light_02_unarmed_F", { "life_donorlevel", "SCALAR", 4 } },
-            { "O_Heli_Transport_04_Box_F", { "life_donorlevel", "SCALAR", 4 } },
+            { "B_Heli_Transport_03_unarmed_F", { "life_donorlevel", "SCALAR", 4 } },
 			{ "B_Heli_Light_01_stripped_F", { "life_donorlevel", "SCALAR", 4 } },
 			{ "I_Heli_light_03_unarmed_F", { "life_donorlevel", "SCALAR", 4 } },
 			{ "O_Heli_Transport_04_black_F", { "life_donorlevel", "SCALAR", 4 } },
@@ -194,11 +250,39 @@ class CarShops {
             { "C_Heli_Light_01_civil_F", { "life_donorlevel", "SCALAR", 5 } },
             { "B_Heli_Light_01_F", { "life_donorlevel", "SCALAR", 5 } },
             { "O_Heli_Light_02_unarmed_F", { "life_donorlevel", "SCALAR", 5 } },
-            { "O_Heli_Transport_04_Box_F", { "life_donorlevel", "SCALAR", 5 } },
+            { "B_Heli_Transport_03_unarmed_F", { "life_donorlevel", "SCALAR", 5 } },
 			{ "B_Heli_Light_01_stripped_F", { "life_donorlevel", "SCALAR", 5 } },
 			{ "O_Heli_Transport_04_black_F", { "life_donorlevel", "SCALAR", 5 } },
 			{ "I_Heli_light_03_unarmed_F", { "life_donorlevel", "SCALAR", 5 } },
             { "I_Heli_Transport_02_F", { "life_donorlevel", "SCALAR", 5 } }
+        };
+    };
+	
+	class civ_air_gangue_doador_1 {
+        side = "civ_vip";
+        vehicles[] = {
+            { "C_Heli_Light_01_civil_F", { "life_gangdonorid", "SCALAR", 1 } },
+            { "B_Heli_Light_01_F", { "life_gangdonorid", "SCALAR", 1 } },
+            { "O_Heli_Light_02_unarmed_F", { "life_gangdonorid", "SCALAR", 1 } },
+            { "B_Heli_Transport_03_unarmed_F", { "life_gangdonorid", "SCALAR", 1 } },
+			{ "I_Heli_light_03_unarmed_F", { "life_gangdonorid", "SCALAR", 1 } },
+			{ "B_Heli_Light_01_stripped_F", { "life_gangdonorid", "SCALAR", 1 } },
+			{ "O_Heli_Transport_04_black_F", { "life_gangdonorid", "SCALAR", 1 } },
+            { "I_Heli_Transport_02_F", { "life_gangdonorid", "SCALAR", 1 } }
+        };
+    };
+	
+	class civ_air_gangue_doador_2 {
+        side = "civ_vip";
+        vehicles[] = {
+            { "C_Heli_Light_01_civil_F", { "life_gangdonorid", "SCALAR", 1 } },
+            { "B_Heli_Light_01_F", { "life_gangdonorid", "SCALAR", 1 } },
+            { "O_Heli_Light_02_unarmed_F", { "life_gangdonorid", "SCALAR", 1 } },
+            { "B_Heli_Transport_03_unarmed_F", { "life_gangdonorid", "SCALAR", 1 } },
+			{ "B_Heli_Light_01_stripped_F", { "life_gangdonorid", "SCALAR", 1 } },
+			{ "I_Heli_light_03_unarmed_F", { "life_gangdonorid", "SCALAR", 1 } },
+			{ "O_Heli_Transport_04_black_F", { "life_gangdonorid", "SCALAR", 1 } },
+            { "I_Heli_Transport_02_F", { "life_gangdonorid", "SCALAR", 1 } }
         };
     };
 
@@ -1036,14 +1120,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
 	   assurPrice = 4500;
        textures[] = {};
    };
-
-   class O_Heli_Transport_04_Box_F {
-      vItemSpace = 525;
-      licenses[] = { {""}, {""}, {""}, {""} };
-      price = 1805000;
-	  assurPrice = 541500;
-      textures[] = {};
-    };
 
     class B_Heli_Light_01_F {
         vItemSpace = 90;

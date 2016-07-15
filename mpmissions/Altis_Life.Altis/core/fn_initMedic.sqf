@@ -24,6 +24,7 @@ if(EQUAL(LIFE_SETTINGS(getNumber,"restrict_medic_weapons"),1)) then {
 	};
 };
 
+player setVariable["rankmedic",(FETCH_CONST(life_medicLevel)),true];
 [] call life_fnc_spawnMenu;
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
