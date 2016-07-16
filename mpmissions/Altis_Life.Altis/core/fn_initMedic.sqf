@@ -28,3 +28,14 @@ player setVariable["rankmedic",(FETCH_CONST(life_medicLevel)),true];
 [] call life_fnc_spawnMenu;
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
+
+switch (FETCH_CONST(life_medicLevel)) do
+{
+	case 1: { life_paycheck = life_paycheck + 1000; };  
+    case 2: { life_paycheck = life_paycheck + 2000; }; 
+    case 3: { life_paycheck = life_paycheck + 3000; }; 
+    case 4: { life_paycheck = life_paycheck + 4000; }; 
+    case 5: { life_paycheck = life_paycheck + 5000; };
+	case 6: { life_paycheck = life_paycheck + 6000; };
+	default { life_paycheck = life_paycheck };
+};

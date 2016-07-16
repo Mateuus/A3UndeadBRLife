@@ -812,6 +812,7 @@ class WeaponShops {
         mags[] = {
             { "16Rnd_9x21_Mag", "Munição 16rnd 9mm", 25 },
 			{ "30Rnd_9x21_Mag", "Munição 30rnd 9mm", 25 },
+			{ "30Rnd_556x45_Stanag_Tracer_Green", "Munição 30rnd 5.56mm", 25 },
             { "30Rnd_65x39_caseless_mag_Tracer", "Stun Magazine", 45 }
         };
         accs[] = {

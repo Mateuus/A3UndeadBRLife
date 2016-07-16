@@ -41,7 +41,7 @@ _cP = 0.01;
 
 while{true} do
 {
-	uiSleep 0.85;
+	uiSleep 2;
 	_cP = _cP + 0.01;
 	_progress progressSetPosition _cP;
 	_pgText ctrlSetText format["Roubo em progresso, fique dentro de 5 metros (%1%2)...",round(_cP * 100),"%"];

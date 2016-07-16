@@ -159,8 +159,8 @@ class Clothing {
         };
         vests[] = {
             { "NONE", "Remove Vest", 0, { "", "", -1 } },
-            { "V_TacVest_blk_POLICE", "", 1000, { "", "", -1 } },
-            { "V_PlateCarrier1_blk", "", 3500, { "life_coplevel", "SCALAR", -1 } },
+            { "V_TacVest_blk_POLICE", "Colete Padrao", 1000, { "", "", 1 } },
+            { "V_PlateCarrier1_blk", "Colete Oficial", 3500, { "life_coplevel", "SCALAR", 4 } },
             { "V_PlateCarrierGL_blk", "SWAT Vest", 6500, { "life_coplevel", "SCALAR", 9 } }
         };
         backpacks[] = {
@@ -245,7 +245,7 @@ class Clothing {
         uniforms[] = {
             { "NONE", "Ficar Pelado", 0, { "", "", -1 } },
  			{ "U_I_CombatUniform_shortsleeve", "Estudante Medico", 50, { "", "", -1 } },
- 			{ "U_MillerBody", "Medico", 50, { "Medico", "", -1 } },
+ 			{ "U_B_CombatUniform_mcam_worn", "Medico", 50, { "Medico", "", -1 } },
  			{ "U_B_CombatUniform_mcam_vest", "Medico residente", 50, { "", "", -1 } },
  			{ "U_B_SpecopsUniform_sgg", "Cirurgiao", 50, { "", "", -1 } },
  			{ "U_B_CombatUniform_mcam", "Comandante Medico", 50, { "", "", -1 } },

@@ -100,7 +100,7 @@ class Licenses {
     class sand {
         variable = "sand";
         displayName = "STR_License_Sand";
-        price = 15000;
+        price = 35000;
         illegal = false;
         side = "civ";
     };
@@ -124,7 +124,7 @@ class Licenses {
     class cement {
         variable = "cement";
         displayName = "STR_License_Cement";
-        price = 8000;
+        price = 40000;
         illegal = false;
         side = "civ";
     };
@@ -243,8 +243,8 @@ class Licenses {
         side = "cop";
     };
 
-    class Woodcutting {
-        variable = "Woodcutting";
+    class woodP {
+        variable = "woodP";
         displayName = "STR_License_Woodcutting";
         price = 25000;
         illegal = false;

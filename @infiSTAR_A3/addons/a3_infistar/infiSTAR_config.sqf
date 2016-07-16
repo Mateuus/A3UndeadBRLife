@@ -74,7 +74,7 @@ _announce_adminstate_changed = false;	/* true or false */
 _adminUIDandAccess =
 [
 	[
-		['76561198065694695','76561198129878487', '76561198112843376', '76561198078478177', '76561198084123369'],	// Admins with UIDs in this Array have their Access defined in the array below.
+		['76561198065694695', '76561198118580246'],	// Admins with UIDs in this Array have their Access defined in the array below.
 		[
 			'Teleport On Map Click','Teleport - Target To Me','Teleport - Me To Target',
 			'spectating','Delete Vehicle','FlyUp','EjectTarget','ToggleVehLock','ShowGear',
@@ -159,7 +159,7 @@ _adminUIDandAccess =
 /*  Remove Actions Objs  */ _OAO = false;	/* true or false */	/* Remove ALL Actions on Objects near Player: (mousewheel actions) needs to be  false  when using e.g. IgiLoad */
 /*  Check Attached Objs  */ _CAO = false;	/* true or false */	/* needs to be  false  when using e.g. IgiLoad */
 /*  Use Anti Teleport    */ _UAT = false;	/* true or false */	/* might need to be set to false on other mods than Epoch! */
-/*  Chat-Vote Day/Night  */ _VDN = true;	/* true or false */
+/*  Chat-Vote Day/Night  */ _VDN = false;	/* true or false */
 /*  Check Vision Mode    */ _CVM = false;	/* true or false */
 /*  check view distance  */ _CVD = false;	/* true or false */	/* if the viewdistance is not 1600 - ban. */
 /*  check cameraOn       */ _CCO = false;	/* true or false */	/* needs to be false for UAV drones and such things.. */
