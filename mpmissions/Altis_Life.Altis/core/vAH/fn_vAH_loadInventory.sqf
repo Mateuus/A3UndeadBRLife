@@ -181,9 +181,9 @@ while {true} do
 	sleep 1;
 	if (isNull (findDisplay 15600)) exitWith {};
 	sleep 1;
-	((findDisplay 15600) displayCtrl 15660) ctrlSetText "textures\Market\TrailerparkMarket1.jpg";
+	((findDisplay 15600) displayCtrl 15660) ctrlSetText "textures\mercado\mercadonegro1.jpg";
 	if (isNull (findDisplay 15600)) exitWith {};
 	sleep 0.1;
-	((findDisplay 15600) displayCtrl 15660) ctrlSetText "textures\Market\TrailerparkMarket2.jpg";
+	((findDisplay 15600) displayCtrl 15660) ctrlSetText "textures\mercado\mercadonegro2.jpg";
 	if (isNull (findDisplay 15600)) exitWith {};
 };

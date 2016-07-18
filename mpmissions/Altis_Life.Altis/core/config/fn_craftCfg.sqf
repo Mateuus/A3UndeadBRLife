@@ -69,6 +69,7 @@ switch(_craft) do
 	  ["zipties",["steel",6,"goldcoin",6]],
 	  ["knife",["steel",10,"rubber",4,"goldcoin",6]],
       ["goldBar",["glass",40,"goldcoin",30]],
+	  ["lockpick",["iron_refined",3,"steel",3]],
 			["butt",["iron_refined",12,"rubber",7,"goldcoin",9]],
 			["sight",["iron_refined",10,"steel",3,"goldcoin",8]],
 			["barrel",["iron_refined",15,"steel",6,"goldcoin",10]],

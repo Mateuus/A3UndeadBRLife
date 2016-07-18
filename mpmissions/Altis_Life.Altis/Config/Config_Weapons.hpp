@@ -37,6 +37,7 @@ class WeaponShops {
             { "9Rnd_45ACP_Mag", "", 100 },
             { "30Rnd_9x21_Mag", "", 200 },
             { "30Rnd_556x45_Stanag", "", 200 },
+			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 300 },
             { "11Rnd_45ACP_Mag", "", 120 }
         };
         accs[] = {
@@ -78,6 +79,7 @@ class WeaponShops {
         };
         mags[] = {
             { "6Rnd_45ACP_Cylinder", "Munição 9rnd .45", 725 },
+			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
 			{ "30Rnd_9x21_Mag", "Munição 30rnd 9mm", 725 },
 			{ "7Rnd_408_Mag", "Munição 7rnd 408mm", 12725 },
 			{ "11Rnd_45ACP_Mag", "Munição 11rnd .45", 725 },
@@ -141,6 +143,7 @@ class WeaponShops {
         mags[] = {
             { "6Rnd_45ACP_Cylinder", "Munição 9rnd .45", 725 },
 			{ "30Rnd_9x21_Mag", "Munição 30rnd 9mm", 725 },
+			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
 			{ "11Rnd_45ACP_Mag", "Munição 11rnd .45", 725 },
 			{ "10Rnd_762x54_Mag", "Munição 10rnd 7.62mm", 1725 },
             { "30Rnd_45ACP_Mag_SMG_01_tracer_green", "Munição 30rnd .45", 750 },
@@ -203,6 +206,7 @@ class WeaponShops {
         mags[] = {
             { "6Rnd_45ACP_Cylinder", "Munição 9rnd .45", 725 },
 			{ "30Rnd_9x21_Mag", "Munição 30rnd 9mm", 725 },
+			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
 			{ "7Rnd_408_Mag", "Munição 7rnd 408mm", 12725 },
 			{ "11Rnd_45ACP_Mag", "Munição 11rnd .45", 725 },
 			{ "10Rnd_762x54_Mag", "Munição 10rnd 7.62mm", 1225 },
@@ -276,6 +280,7 @@ class WeaponShops {
         mags[] = {
             { "6Rnd_45ACP_Cylinder", "Munição 9rnd .45", 725 },
 			{ "30Rnd_9x21_Mag", "Munição 30rnd 9mm", 725 },
+			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
 			{ "7Rnd_408_Mag", "Munição 7rnd 408mm", 12725 },
 			{ "11Rnd_45ACP_Mag", "Munição 11rnd .45", 725 },
 			{ "10Rnd_762x54_Mag", "Munição 10rnd 7.62mm", 1225 },
@@ -350,6 +355,7 @@ class WeaponShops {
         mags[] = {
             { "6Rnd_45ACP_Cylinder", "Munição 9rnd .45", 725 },
 			{ "30Rnd_9x21_Mag", "Munição 30rnd 9mm", 725 },
+			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
 			{ "7Rnd_408_Mag", "Munição 7rnd 408mm", 12725 },
 			{ "11Rnd_45ACP_Mag", "Munição 11rnd .45", 725 },
 			{ "10Rnd_762x54_Mag", "Munição 10rnd 7.62mm", 1225 },
@@ -423,6 +429,7 @@ class WeaponShops {
         mags[] = {
             { "6Rnd_45ACP_Cylinder", "Munição 9rnd .45", 725 },
 			{ "30Rnd_9x21_Mag", "Munição 30rnd 9mm", 725 },
+			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
 			{ "7Rnd_408_Mag", "Munição 7rnd 408mm", 12725 },
 			{ "11Rnd_45ACP_Mag", "Munição 11rnd .45", 725 },
 			{ "10Rnd_762x54_Mag", "Munição 10rnd 7.62mm", 1225 },
@@ -496,6 +503,7 @@ class WeaponShops {
         mags[] = {
             { "6Rnd_45ACP_Cylinder", "Munição 9rnd .45", 725 },
 			{ "30Rnd_9x21_Mag", "Munição 30rnd 9mm", 725 },
+			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
 			{ "7Rnd_408_Mag", "Munição 7rnd 408mm", 12725 },
 			{ "11Rnd_45ACP_Mag", "Munição 11rnd .45", 725 },
 			{ "10Rnd_762x54_Mag", "Munição 10rnd 7.62mm", 1225 },
@@ -548,6 +556,7 @@ class WeaponShops {
         };
         mags[] = {
             { "5Rnd_127x108_Mag", "", 2025 },
+			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
             { "150Rnd_93x64_Mag", "", 3025 },
             { "130Rnd_338_Mag", "", 4025 },
             { "10Rnd_338_Mag", "", 445 },
@@ -594,6 +603,7 @@ class WeaponShops {
         };
         mags[] = {
             { "5Rnd_127x108_Mag", "", 2025 },
+			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
             { "150Rnd_93x64_Mag", "", 3025 },
             { "130Rnd_338_Mag", "", 4025 },
             { "10Rnd_338_Mag", "", 445 },
@@ -740,6 +750,7 @@ class WeaponShops {
         mags[] = {
           { "16Rnd_9x21_Mag", "Munição 16rnd 9mm", 25 },
           { "6Rnd_45ACP_Cylinder", "Munição 6rnd .45", 50 },
+		  { "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
           { "9Rnd_45ACP_Mag", "Munição 9rnd .45", 45 },
           { "30Rnd_9x21_Mag", "Munição 16rnd 9mm", 75 },
           { "11Rnd_45ACP_Mag", "Munição 11rnd .45", 60 }
@@ -812,6 +823,7 @@ class WeaponShops {
         mags[] = {
             { "16Rnd_9x21_Mag", "Munição 16rnd 9mm", 25 },
 			{ "30Rnd_9x21_Mag", "Munição 30rnd 9mm", 25 },
+			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
 			{ "30Rnd_556x45_Stanag_Tracer_Green", "Munição 30rnd 5.56mm", 25 },
             { "30Rnd_65x39_caseless_mag_Tracer", "Stun Magazine", 45 }
         };
@@ -846,6 +858,7 @@ class WeaponShops {
             { "30Rnd_65x39_caseless_mag_Tracer", "Stun Magazine 30rnd", 45 },
             { "16Rnd_9x21_Mag", "Munição 16rnd 9mm", 25 },
 			{ "30Rnd_9x21_Mag", "Munição 30rnd 9mm", 25 },
+			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
 			{ "150Rnd_556x45_Drum_Mag_F", "Munição 150rnd 5.58mm", 25 },
 			{ "200Rnd_556x45_Box_Red_F", "Munição 200rnd 5.58mm", 25 },
 			{ "30Rnd_580x42_Mag_Tracer_F", "Munição 30rnd 5.58mm", 25 },
@@ -883,6 +896,7 @@ class WeaponShops {
             { "16Rnd_9x21_Mag", "Munição 16rnd 9mm", 25 },
 			{ "150Rnd_556x45_Drum_Mag_F", "Munição 150rnd 5.58mm", 25 },
 			{ "200Rnd_556x45_Box_Red_F", "Munição 200rnd 5.58mm", 25 },
+			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
 			{ "30Rnd_580x42_Mag_Tracer_F", "Munição 30rnd 5.58mm", 25 },
 			{ "100Rnd_580x42_Mag_Tracer_F", "Munição 100rnd 5.58mm", 25 },
 			{ "30Rnd_9x21_Mag", "Munição 30rnd 9mm", 25 },
@@ -927,6 +941,7 @@ class WeaponShops {
         };
         mags[] = {
             { "5Rnd_127x108_Mag", "", 100 },
+			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
             { "150Rnd_762x54_Box_Tracer", "", 40 },
             { "5Rnd_127x108_APDS_Mag", "", 300 }
         };
@@ -964,6 +979,7 @@ class WeaponShops {
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "Munição 16rnd 9mm", 25 },
+			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
 			{ "150Rnd_556x45_Drum_Mag_F", "Munição 150rnd 5.58mm", 25 },
 			{ "200Rnd_556x45_Box_Red_F", "Munição 200rnd 5.58mm", 25 },
 			{ "30Rnd_580x42_Mag_Tracer_F", "Munição 30rnd 5.58mm", 25 },
@@ -1017,6 +1033,7 @@ class WeaponShops {
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "Munição 16rnd 9mm", 25 },
+			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
 			{ "150Rnd_556x45_Drum_Mag_F", "Munição 150rnd 5.58mm", 25 },
 			{ "200Rnd_556x45_Box_Red_F", "Munição 200rnd 5.58mm", 25 },
 			{ "30Rnd_580x42_Mag_Tracer_F", "Munição 30rnd 5.58mm", 25 },
@@ -1074,6 +1091,7 @@ class WeaponShops {
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "Munição 16rnd 9mm", 25 },
+			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
 			{ "150Rnd_556x45_Drum_Mag_F", "Munição 150rnd 5.58mm", 25 },
 			{ "200Rnd_556x45_Box_Red_F", "Munição 200rnd 5.58mm", 25 },
 			{ "30Rnd_580x42_Mag_Tracer_F", "Munição 30rnd 5.58mm", 25 },
@@ -1132,6 +1150,7 @@ class WeaponShops {
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "Munição 16rnd 9mm", 25 },
+			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
 			{ "30Rnd_9x21_Mag", "Munição 30rnd 9mm", 25 },
 			{ "150Rnd_556x45_Drum_Mag_F", "Munição 150rnd 5.58mm", 25 },
 			{ "200Rnd_556x45_Box_Red_F", "Munição 200rnd 5.58mm", 25 },
@@ -1195,6 +1214,7 @@ class cop_tenente_coronel {
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "Munição 16rnd 9mm", 25 },
+			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
 			{ "30Rnd_9x21_Mag", "Munição 30rnd 9mm", 25 },
 			{ "150Rnd_556x45_Drum_Mag_F", "Munição 150rnd 5.58mm", 25 },
 			{ "200Rnd_556x45_Box_Red_F", "Munição 200rnd 5.58mm", 25 },
@@ -1255,6 +1275,7 @@ class cop_tenente_coronel {
         mags[] = {
             { "16Rnd_9x21_Mag", "Munição 16rnd 9mm", 25 },
 			{ "30Rnd_9x21_Mag", "Munição 30rnd 9mm", 25 },
+			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
 			{ "30Rnd_556x45_Stanag_Tracer_Green", "Munição 30rnd 5.56mm", 25 },
 			{ "200Rnd_65x39_cased_Box_Tracer", "Munição 200rnd 6.5mm", 25 },
 			{ "100Rnd_65x39_caseless_mag_Tracer", "Munição 100rnd 6.5mm", 25 },

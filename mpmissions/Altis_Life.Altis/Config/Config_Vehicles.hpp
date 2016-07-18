@@ -509,7 +509,11 @@ class LifeCfgVehicles {
         licenses[] = { {""}, {""}, {"mAir"}, {""} };
         price = 1250000;
 		assurPrice = 475000;
-        textures[] = {		};
+        textures[] = {
+			{ "ExE", "civ", {
+                "textures\Vip\exe\exe.jpg"
+            } }
+		};
     };
 
     class B_Heli_Transport_01_F {
@@ -1067,10 +1071,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class I_Heli_Transport_02_F {
        vItemSpace = 425;
-       licenses[] = { {""}, {""}, {""}, {""} };
+       licenses[] = { {""}, {"mAir"}, {""}, {""} };
        price = 1575000;
 	   assurPrice = 598500;
-       textures[] = {};
+       textures[] = {	   };
    };
    
        class C_Plane_Civil_01_racing_F {

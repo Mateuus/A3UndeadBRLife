@@ -15,7 +15,7 @@
 */
 class Clothing {
     class bruce {
-        title = "STR_Shops_C_Bruce";
+        title = "Loja de Roupas Undead Brasil";
         license = "";
         side = "civ";
         uniforms[] = {
@@ -125,7 +125,7 @@ class Clothing {
     };
 
     class cop {
-        title = "STR_Shops_C_Police";
+        title = "Loja de Roupas da Policia";
         license = "";
         side = "cop";
         uniforms[] = {
@@ -171,53 +171,32 @@ class Clothing {
     };
 
     class dive {
-        title = "STR_Shops_C_Diving";
+        title = "Loja de Roupas de Mergulho Undead Brasil";
         license = "dive";
         side = "civ";
         uniforms[] = {
             { "NONE", "Remove Uniform", 0, { "", "", -1 } },
-            { "U_B_Wetsuit", "", 2000, { "", "", -1 } }
+            { "U_B_Wetsuit", "", 50000, { "", "", -1 } }
         };
         headgear[] = {
             { "NONE", "Remove Hat", 0, { "", "", -1 } }
         };
         goggles[] = {
             { "NONE", "Remove Glasses", 0, { "", "", -1 } },
-            { "G_Diving", "", 500, { "", "", -1 } }
+            { "G_Diving", "", 5000, { "", "", -1 } }
         };
         vests[] = {
             { "NONE", "Remove Vest", 0, { "", "", -1 } },
-            { "V_RebreatherB", "", 5000, { "", "", -1 } }
+            { "V_RebreatherB", "", 30000, { "", "", -1 } }
         };
         backpacks[] = {
             { "NONE", "Remove Backpack", 0, { "", "", -1 } }
         };
     };
 
-    class gun_clothing {
-        title = "STR_Shops_C_Gun";
-        license = "gun";
-        side = "civ";
-        uniforms[] = {
-            { "NONE", "Remove Uniform", 0, { "", "", -1 } }
-        };
-        headgear[] = {
-            { "NONE", "Remove Hat", 0, { "", "", -1 } }
-        };
-        goggles[] = {
-            { "NONE", "Remove Glasses", 0, { "", "", -1 } }
-        };
-        vests[] = {
-            { "NONE", "Remove Vest", 0, { "", "", -1 } },
-            { "V_Rangemaster_belt", "", 4900, { "", "", -1 } }
-        };
-        backpacks[] = {
-            { "NONE", "Remove Backpack", 0, { "", "", -1 } }
-        };
-    };
 
     class gang_clothing {
-        title = "STR_Shops_C_Gang";
+        title = "Loja de Roupas de Gangue";
         license = "";
         side = "civ";
         uniforms[] = {
@@ -239,7 +218,7 @@ class Clothing {
     };
 
     class med_clothing {
-        title = "STR_MAR_EMS_Clothing_Shop";
+        title = "Loja de Roupas de Medico Undead Brasil";
         license = "";
         side = "med";
         uniforms[] = {
@@ -843,6 +822,7 @@ class Clothing {
 			{ "B_Bergen_sgg", "", 2500, { "life_gangdonorid", "SCALAR", 1 } },
 			{ "B_Carryall_oli", "", 4000, { "life_gangdonorid", "SCALAR", 1 } },
 			{ "B_Carryall_khk", "", 4000, { "life_gangdonorid", "SCALAR", 1 } },
+			{ "B_Carryall_cbr", "", 3500, { "life_gangdonorid", "SCALAR", 1 } },
 			{ "B_Carryall_oucamo", "Mochila Ivisivel", 4000, { "life_gangdonorid", "SCALAR", 1 } }
         };
     };
@@ -941,34 +921,13 @@ class Clothing {
 			{ "B_FieldPack_ocamo", "", 1700, { "life_gangdonorid", "SCALAR", 1 } },
 			{ "B_Carryall_oli", "", 3500, { "life_gangdonorid", "SCALAR", 1 } },
 			{ "B_Carryall_khk", "", 3500, { "life_gangdonorid", "SCALAR", 1 } },
+			{ "B_Carryall_cbr", "", 3500, { "life_gangdonorid", "SCALAR", 1 } },
 			{ "B_Carryall_oucamo", "", 3500, { "life_gangdonorid", "SCALAR", 1 } }
         };
     };
 	
-    class supporter {
-        title = "STR_Shops_C_Supporter";
-        license = "";
-        side = "civ";
-        uniforms[] = {
-            { "NONE", "Remove Uniform", 0, { "", "", -1 } }
-        };
-        headgear[] = {
-            { "NONE", "Remove Hat", 0, { "", "", -1 } }
-        };
-        goggles[] = {
-            { "NONE", "Remove Glasses", 0, { "", "", -1 } }
-        };
-        vests[] = {
-            { "NONE", "Remove Vest", 0, { "", "", -1 } }
-        };
-        backpacks[] = {
-            { "NONE", "Remove Backpack", 0, { "", "", -1 } }
-        };
-    };
-
-
     class reb {
-        title = "STR_Shops_C_Rebel";
+        title = "Loja de Roupas Rebelde Undead Brasil";
         license = "rebel";
         side = "civ";
         uniforms[] = {
@@ -1060,7 +1019,7 @@ class Clothing {
     };
 
     class kart {
-        title = "STR_Shops_C_Kart";
+        title = "Loja de Roupas de Kart Undead Brasil";
         license = "";
         side = "civ";
         uniforms[] = {
