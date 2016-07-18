@@ -1,16 +1,16 @@
 waitUntil {!isNull player && player isEqualTo player};
 if(player diarySubjectExists "controls") exitWith {};
 
-player createDiarySubject ["credits","Credits"];
+player createDiarySubject ["credits","Créditos"];
 player createDiarySubject ["changelog","Change Log"];
-player createDiarySubject ["serverrules","General Rules"];
-player createDiarySubject ["policerules","Police Procedures/Rules"];
-player createDiarySubject ["safezones","Safe Zones (No Killing)"];
-//player createDiarySubject ["civrules","Civilian Rules"];
-player createDiarySubject ["illegalitems","Illegal Activity"];
+player createDiarySubject ["serverrules","Regras Gerais"];
+player createDiarySubject ["policerules","Policiais/Regras"];
+player createDiarySubject ["safezones","Safe Zones (Não matar)"];
+//player createDiarySubject ["civrules","Regras Civis"];
+player createDiarySubject ["illegalitems","Atividade ilegal"];
 //player createDiarySubject ["gangrules","Gang Rules"];
 //player createDiarySubject ["terrorrules","Terrorism Rules"];
-player createDiarySubject ["controls","Controls"];
+player createDiarySubject ["controls","Controles"];
 
 /*  Example
 	player createDiaryRecord ["", //Container
@@ -27,7 +27,47 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"ArmaLife",
 				"
-					ArmaLife is a GitHub project which aims to update and keep adding new features to the original 'Altis Life RPG' by Tonic.<br/><br/>
+					ArmaLife é um projeto do GitHub que visa actualizar e continuar a acrescentar novos recursos para o original 'Altis Life RPG' by Tonic.<br/><br/>
+				"
+		]
+	];
+	player createDiaryRecord ["credits",
+		[
+			"TeamUndead",
+				"
+					TeamUndead é um projeto do GitHub Private, desenvolvemos o melhor para o servidor, e visando a proporciona maior jogabilidade aos players 'Undead Brasil Servidores'...<br/><br/>
+				"
+		]
+	];
+	player createDiaryRecord ["credits",
+		[
+			"Mateuus",
+				"
+					Desenvolvimento de Scripts, criação de sistemas e etc... https://github.com/Mateuus<br/><br/>
+				"
+		]
+	];
+	player createDiaryRecord ["credits",
+		[
+			"Lopes",
+				"
+					Desenvolvimento de Scripts https://github.com/Mateuus<br/><br/>
+				"
+		]
+	];
+	player createDiaryRecord ["credits",
+		[
+			"Arlindo",
+				"
+					Desenvolvimento de Scripts, https://github.com/Mateuus<br/><br/>
+				"
+		]
+	];
+	player createDiaryRecord ["credits",
+		[
+			"LeoHN",
+				"
+					Consultoria<br/><br/>
 				"
 		]
 	];
@@ -36,7 +76,7 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Altis Life Change Log",
 				"
-					The official changelog can be found in ArmaLife github. https://git.io/vVkhe<br/><br/>
+					O changelog oficial pode ser encontrado em ArmaLife github. https://git.io/vVkhe<br/><br/>
 
 					v4.4 release 3!<br/>
 					By: danielstuart14<br/>
@@ -65,14 +105,7 @@ player createDiarySubject ["controls","Controls"];
 		]
 	];
 
-	player createDiaryRecord["changelog",
-		[
-			"Server Change Log",
-				"
-					Adding new features to the server constantly is one of our main goals.<br/><br/>
-				"
-		]
-	];
+
 
 		player createDiaryRecord ["serverrules",
 		[
@@ -93,13 +126,13 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Safe Zones",
 				"
-					If bombing (bombing can be intentionally exploding a vehicle), robbing, or killing occurs around these or in these areas it is punishable by ban.<br/><br/>
+					Se bombardeio (bombardeamento pode ser explodindo intencionalmente um veículo), roubando, ou de abate ocorre em torno destes ou nessas áreas, é punível com banimento.<br/><br/>
 
-					Any vehicle spawn (shop or garage)<br/>
-					Any weapon shop<br/>
-					All Police HQs<br/>
+					Qualquer spawn de veículo (loja ou garagem)<br/>
+					Qualquer loja de arma<br/>
+					Todos os QG da polícia<br/>
 					Rebel Outposts<br/>
-					Donator Shops<br/><br/>
+					Áreas Vips<br/><br/>
 				"
 		]
 	];
@@ -107,14 +140,13 @@ player createDiarySubject ["controls","Controls"];
 
 	player createDiaryRecord ["serverrules",
 		[
-			"Bannable Offenses",
+			"Banimentos",
 				"
-				Consider this your one and only warning.<br/><br/>
+				Considere este o seu primeiro e único aviso.<br/><br/>
 
 				1. Hacking<br/>
 				2. Cheating<br/>
-				3. Exploiting (See 'Exploits')<br/>
-				4. Being kicked 3 or more times.<br/><br/>
+				3. Exploiting (See 'Exploits')<br/><br/>
 				"
 		]
 	];
