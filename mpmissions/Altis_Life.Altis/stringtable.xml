@@ -96,7 +96,7 @@
 			<Original>Loja de madeira</Original>
 		</Key>
 		<Key ID="STR_Shops_Rebel">
-			<Original>Rebel Market</Original>
+			<Original>Mercado Rebelde</Original>
 			<Czech>Rebel Market</Czech>
 			<Spanish>Mercado Rebelde</Spanish>
 			<Russian></Russian>
@@ -2997,7 +2997,7 @@
 			<Polish>Kupiłeś %1 za $%2</Polish>
 		</Key>
 		<Key ID="STR_NOTF_Arrested_1">
-			<Original>%1 was arrested by %2</Original>
+			<Original>%1 foi preso por %2</Original>
 			<Czech>%1 byl zatčen%2</Czech>
 			<Spanish>%1 fue arrestado por %2</Spanish>
 			<Russian></Russian>
@@ -3517,7 +3517,7 @@
 			<German>Sie können ein Fahrzeug hacken, während ein Spieler in der Nähe ist!</German>
 		</Key>
 		<Key ID="STR_NOTF_Restrained">
-			<Original>%1 was restrained by %2</Original>
+			<Original>%1 foi imobilizado por %2</Original>
 			<Czech>%1 byl omezen%2</Czech>
 			<Spanish>%1 fue retenido por %2</Spanish>
 			<Russian></Russian>
@@ -3528,11 +3528,11 @@
 			<Polish>%1 został skuty przez %2</Polish>
 		</Key>
 		<Key ID="STR_NOTF_Ziptied">
-		<Original>%1 was Ziptied by %2</Original>
-		<Portuguese>%1 foi imobilizado por %2</Portuguese>
+		<Original>%1 foi algemado por %2</Original>
+		<Portuguese>%1 foi algemado por %2</Portuguese>
 		</Key>
 		<Key ID="STR_NOTF_Searching">
-			<Original>Searching...</Original>
+			<Original>Revistando...</Original>
 			<Czech>Hledám ...</Czech>
 			<Spanish>Buscando...</Spanish>
 			<Russian></Russian>
@@ -3587,7 +3587,7 @@
 			<Polish>Aktualnie wykonujesz jakąś akcję poczekaj aż skończysz.</Polish>
 		</Key>
 		<Key ID="STR_NOTF_Unrestrain">
-			<Original>%1 was unrestrained by %2</Original>
+			<Original>%1 foi liberado por %2</Original>
 			<Czech>%1 byl živelný%2</Czech>
 			<Spanish>%1 fue soltado por %2</Spanish>
 			<Russian></Russian>
@@ -3598,11 +3598,11 @@
 			<Polish>%1 został rozkuty przez %2</Polish>
 		</Key>
 		<Key ID="STR_NOTF_Unzip">
-			<Original>%1 was unziptied by %2</Original>
-			<Portuguese>%1 foi liberado por %2</Portuguese>
+			<Original>%1 foi desalgemado por %2</Original>
+			<Portuguese>%1 foi desalgemado por %2</Portuguese>
 		</Key>
 		<Key ID="STR_NOTF_Robbed">
-			<Original>%1 has robbed %2 for $%3</Original>
+			<Original>%1 roubou R$%3 de %2</Original>
 			<Czech>%1 oloupil%2 na $ %3</Czech>
 			<Spanish>%1 le ha robado $%3 a %2</Spanish>
 			<Russian></Russian>
@@ -3613,7 +3613,7 @@
 			<Polish>%1 obrabował $%2 na $%3</Polish>
 		</Key>
 		<Key ID="STR_NOTF_RobFail">
-			<Original>%1 doesn't have any money.</Original>
+			<Original>%1 não tem nenhum dinheiro.</Original>
 			<Czech>%1 nemá žádné peníze.</Czech>
 			<Spanish>%1 No tiene dinero.</Spanish>
 			<Russian></Russian>
@@ -3624,7 +3624,7 @@
 			<Polish>%1 nie ma pieniędzy.</Polish>
 		</Key>
 		<Key ID="STR_NOTF_Tazed">
-			<Original>%1 was downed by %2</Original>
+			<Original>%1 tomou um tiro de tazer de %2</Original>
 		</Key>
 		<Key ID="STR_NOTF_VehContraband">
 			<Original>A vehicle was searched and has $%1 worth of drugs / contraband.</Original>
@@ -3649,7 +3649,7 @@
 			<Polish>Podczas przeszukania znalezono narkotyki/kontrabandę o wartości $%1</Polish>
 		</Key>
 		<Key ID="STR_NOTF_PulledOut">
-			<Original>You have been pulled out of the vehicle.</Original>
+			<Original>Voce foi retirado a forca do veiculo.</Original>
 			<Czech>Byli jste vytáhl z vozu.</Czech>
 			<Spanish>Te han sacado del vehículo</Spanish>
 			<Russian></Russian>

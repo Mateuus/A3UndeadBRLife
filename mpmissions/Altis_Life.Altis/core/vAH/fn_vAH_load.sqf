@@ -52,10 +52,10 @@ hint "Successfully loaded offers";
 
 while {true} do
 {
-	((findDisplay 15100) displayCtrl 15160) ctrlSetText "textures\Market\TrailerparkMarket1.jpg";
+	((findDisplay 15100) displayCtrl 15160) ctrlSetText "textures\mercado\mercadonegro1.jpg";
 	if (isNull (findDisplay 15100)) exitWith {};
 	sleep 3;
-	((findDisplay 15100) displayCtrl 15160) ctrlSetText "textures\Market\TrailerparkMarket2.jpg";
+	((findDisplay 15100) displayCtrl 15160) ctrlSetText "textures\mercado\mercadonegro2.jpg";
 	if (isNull (findDisplay 15100)) exitWith {};
 	sleep 3;
 };

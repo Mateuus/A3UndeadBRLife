@@ -3,7 +3,7 @@ _vehCar = nearestObject [vehicle player, "Car"];
 _vehTank = nearestObject [vehicle player, "Tank"];
 _vehBoat = nearestObject [vehicle player, "Ship"];
 
-if((count crew _vehCar > 0)||(count crew _vehBoat > 0))exitwith{hint 'You can not pick up a vehicle while someone is inside it';};
+if((count crew _vehCar > 0)||(count crew _vehBoat > 0))exitwith{hint 'Voce nao pode guinchar um veiculo com alguem dentro';};
 
 if((_vehCar in life_vehicles)||(_vehBoat in life_vehicles)) then 
 {
@@ -24,7 +24,7 @@ if ((vehicle player distance _veh) > (vehicle player distance _vehBoat)) then
 
 if ((_veh in CUP_vehBlacklist) || (typeOf _veh in CUP_vehBlacklist)) exitWith
 {
-  cutText ["This vehicle cannot be lifted", "PLAIN"];
+  cutText ["Esse veiculo nao pode ser guinchado", "PLAIN"];
 };
 
 _id = _this select 2;
@@ -35,4 +35,4 @@ _veh attachTo [vehicle player, [0, 0, -5]];
 vehicle player setVariable ["CUP_attached", [1, _veh], true];
 }
 else
-{hint 'You can not lift a vehicle that you do not have the keys for';};
+{hint 'Voce nao consegue guinchar um veiculo sem as chaves dele';};

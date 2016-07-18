@@ -73,7 +73,7 @@ class AH_vsell
 		class RscPic_2403: Life_RscPicture
 		{
 			idc = 15660;
-			text = "textures\Market\TrailerparkMarket1.jpg";
+			text = "textures\mercado\mercadonegro1.jpg";
 			x = 0.263205 * safezoneW + safezoneX;
 			y = 0.17 * safezoneH + safezoneY;
 			w = 0.47359 * safezoneW;

@@ -37,7 +37,7 @@ class VirtualShops {
 		side = "civ";
 		license = "rebel";
 		level[] = { "", "", -1, "" };
-		items[] = { "waterBottle", "rabbit", "apple", "redgull", "beer", "whiskey", "moonshine", "tbacon", "lockpick", "gpstracker", "blindfold", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "zipties", "knife", "pliers", "barrel", "butt" };
+		items[] = { "waterBottle", "rabbit", "apple", "redgull", "beer", "whiskey", "moonshine", "tbacon", "gpstracker", "blindfold", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "zipties", "knife", "pliers", "barrel", "butt" };
 	};
 
 	class gang {
@@ -45,7 +45,7 @@ class VirtualShops {
 		side = "civ";
 		license = "";
 		level[] = { "", "", -1, "" };
-		items[] = { "waterBottle", "rabbit", "apple", "redgull", "beer", "whiskey", "moonshine", "tbacon", "lockpick", "gpstracker", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter",};
+		items[] = { "waterBottle", "rabbit", "apple", "redgull", "beer", "whiskey", "moonshine", "tbacon", "gpstracker", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter",};
 	};
 
 	class wongs {
@@ -250,8 +250,8 @@ class VirtualItems {
 		variable = "lockpick";
 		displayName = "STR_Item_Lockpick";
 		weight = 2;
-		buyPrice = 8500;
-		sellPrice = 2500;
+		buyPrice = 500;
+		sellPrice = -1;
 		illegal = true;
 		edible = -1;
 		icon = "icons\lockpick.paa";

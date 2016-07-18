@@ -51,11 +51,11 @@ _cP = 0.01;
 [] call SOCK_fnc_updateRequest;
 
 switch (typeOf _building) do {
-	//case "Land_Dome_Small_F": {_cpRate = 0.25;};
-	//case "Land_Cargo_House_V1_F": {_cpRate = 0.35;};
-	case "Land_Dome_Big_F": {_cpRate = 0.25;};
-	case "Land_Research_House_V1_F_House_V1_F": {_cpRate = 0.35;};
-	default {_cpRate = 0.25;}
+	//case "Land_Dome_Small_F": {_cpRate = 0.85;};
+	//case "Land_Cargo_House_V1_F": {_cpRate = 0.98;};
+	case "Land_Dome_Big_F": {_cpRate = 0.85;};
+	case "Land_Research_House_V1_F_House_V1_F": {_cpRate = 0.98;};
+	default {_cpRate = 0.85;}
 };
 
 for "_i" from 0 to 1 step 0 do {
@@ -64,7 +64,7 @@ for "_i" from 0 to 1 step 0 do {
 		player switchMove "AinvPknlMstpSnonWnonDnon_medic_1";
 		player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
 	};
-	sleep 0.26;
+	sleep 0.95;
 	if(isNull _ui) then {
 		5 cutRsc ["life_progress","PLAIN"];
 		_ui = GVAR_UINS "life_progress";
