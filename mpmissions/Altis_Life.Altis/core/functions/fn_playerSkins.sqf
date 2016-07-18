@@ -101,7 +101,13 @@ switch(playerSide) do {
 		};
 		
 		/////////////////////////VIP END///////////////////////////////////////////////////
-		if (backpack player isEqualTo "B_Carryal_oli" && (FETCH_CONST(life_gangdonorid) >= 0)) then 
+		//KINGS
+		if (backpack player isEqualTo "B_Carryall_oli" && (FETCH_CONST(life_gangdonorid) == 1)) then 
+		{
+			backpackContainer player setObjectTextureGlobal [0, "textures\Vip\kings\mochilakings.jpg"];
+		};
+		//EXE
+		if (backpack player isEqualTo "B_Carryall_oli" && (FETCH_CONST(life_gangdonorid) == 2)) then 
 		{
 			backpackContainer player setObjectTextureGlobal [0, "textures\Vip\exe\mochilaexe.jpg"];
 		};

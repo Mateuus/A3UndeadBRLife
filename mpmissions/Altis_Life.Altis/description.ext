@@ -1,5 +1,18 @@
 #include "infiSTAR_AdminMenu.hpp"
-disableChannels[]={{0,true,true},{1,true,true},{2,true,true}};    // Disabled text and voice for global, side, and command channels. disableChannels[] = {{channelID<number>, disableChat<bool>, disableVoice<bool>}};
+/*
+0 = Global //FALSE
+1 = Side lado //FALSE
+2 = Commando //FALSE
+3 = Group // OK
+4 = Vehicle // OK
+5 = Direct // OK
+6 = System //FALSE
+7 = Side // OK
+*/
+//                    GLOBAL        SIDE LADO     COMANDO         GRUPO        VEHICLE         DIRECT          SYSTEM          SIDE
+disableChannels[]={{0,true,true},{1,true,true},{2,true,true},{3,false,false},{4,false,false},{5,false,false},{6,true,false},{7,false,true}};
+   
+// Disabled text and voice for global, side, and command channels. disableChannels[] = {{channelID<number>, disableChat<bool>, disableVoice<bool>}};
 
 #include "Config_Spyglass.hpp"
 #include "CfgRemoteExec.hpp"
@@ -8,7 +21,7 @@ disableChannels[]={{0,true,true},{1,true,true},{2,true,true}};    // Disabled te
 #include "Custom\CHVD\dialog.hpp"
 
 class CfgServer {
-	DatabaseName = "altislife"; //Config name that'll be grep in the extdb-conf.ini. Default: [altislife]
+	DatabaseName = "armalife"; //Config name that'll be grep in the extdb-conf.ini. Default: [altislife]
 	HeadlessMode = 0; //Enable/Disable headless client addon. Default: 0 (1 = Enabled / 0 = Disabled)
 	DebugMode = 0; //Enable many  server/hc debugging logs. Default: 0 (1 = Enabled / 0 = Disabled)
 };

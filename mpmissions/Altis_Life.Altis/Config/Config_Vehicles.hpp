@@ -512,7 +512,10 @@ class LifeCfgVehicles {
         textures[] = {
 			{ "ExE", "civ", {
                 "textures\Vip\exe\exe.jpg"
-            } }
+            } },
+			{ "Kings", "civ", {
+                "textures\Vip\kings\hellkings.jpg"
+            } },
 		};
     };
 
@@ -829,7 +832,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "textures\Vip\exe\execar.jpg"
             } },
 			{ "Gang Kings", "civ", {
-                "textures\Civ\Vehicles\civ_dominospizza_hb.paa"
+                "textures\Vip\kings\carkings.jpg"
             } },
             { "Bope", "cop", {
                 "textures\Cop\Vehicles\bopehactebk.jpg"

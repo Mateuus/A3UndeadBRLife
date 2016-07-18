@@ -44,8 +44,7 @@ _masks = LIFE_SETTINGS(getArray,"clothing_masks");
 				
 					//case (_x in (units grpPlayer) && playerSide isEqualTo civilian): {format["<t color='#00FF00'>%1</t>",(_x //GVAR ["realname",name _x])];};
 					
-					case (!isNil {(_x GVAR "viprank")} && playerSide == civilian): {format["<img image='%1' size='1.5'></img> <t size='1.35'>%2</t><br/><t size='0.8'>[%3]</t>",switch ((_x GVAR "viprank")) do {	
-					case 0: {"icons\ranks\vip\civil.paa"};					
+					case (!isNil {(_x GVAR "viprank")} && playerSide == civilian): {format["<img image='%1' size='1.5'></img> <t size='1.35'>%2</t><br/><t size='0.8'>[%3]</t>",switch ((_x GVAR "viprank")) do {						
 					case 1: {"icons\ranks\vip\bronze.paa"};
 					case 2: {"icons\ranks\vip\silver.paa"};
 					case 3: {"icons\ranks\vip\gold.paa"};
@@ -58,7 +57,6 @@ _masks = LIFE_SETTINGS(getArray,"clothing_masks");
 					_x GVAR ["realname",name _x],
 					
 					switch ((_x GVAR "viprank")) do {
-						case 0: {"Civil"};
 						case 1: {"VIP Bronze"};
 						case 2: {"VIP Silver"};
 						case 3: {"VIP Gold"};
@@ -70,12 +68,8 @@ _masks = LIFE_SETTINGS(getArray,"clothing_masks");
 					
 					case (!isNil {(_x GVAR "gangrank")} && playerSide == civilian): {format["<img image='%1' size='1.5'></img> <t size='1.35'>%2</t><br/><t size='0.8'>[%3]</t>",
 					switch ((_x GVAR "gangrank")) do {		
-					case 0: {"icons\ranks\vip\civil.paa"};
 					case 1: {"icons\ranks\gang\1.paa"};
 					case 2: {"icons\ranks\gang\2.paa"};
-					case 3: {"icons\ranks\vip\gold.paa"};
-					case 4: {"icons\ranks\vip\platinum.paa"};
-					case 5: {"icons\ranks\vip\diamante.paa"};
 
 					default {"icons\ranks\vip\civil.paa"};
 					},
@@ -83,7 +77,6 @@ _masks = LIFE_SETTINGS(getArray,"clothing_masks");
 					_x GVAR ["realname",name _x],
 					
 					switch ((_x GVAR "gangrank")) do {
-						case 0: {"Civil"};
 						case 1: {"Kings"};
 						case 2: {"Execution"};
 						case 3: {"GANG VIP 3"};
