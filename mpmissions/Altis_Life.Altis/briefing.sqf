@@ -318,7 +318,7 @@ player createDiarySubject ["controls","Controles"];
 		[
 			"Illegal Areas",
 				"
-				1. Gang areas are not considered illegal. Thus a cop may enter without a raid, but may not restrain or stop anyone inside without probable cause/illegal activity. (Talking to the gang NPC is NOT probable cause/illegal activity.)<br/>
+				1. Gang areas are not considered illegal.. Thus a cop may enter without a raid, but may not restrain or stop anyone inside without probable cause/illegal activity. (Talking to the gang NPC is NOT probable cause/illegal activity.)<br/>
 				2. Do not enter an illegal area unless it is part of a raid. see Raiding/Camping.<br/>
 				3. If you chase someone into an illegal area, call for backup.<br/>
 				4. Under no circumstances is an officer allowed to camp any illegal area.<br/><br/>
