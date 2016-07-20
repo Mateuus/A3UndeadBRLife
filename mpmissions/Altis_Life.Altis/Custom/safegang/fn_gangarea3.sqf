@@ -1,6 +1,6 @@
 #include "..\..\script_macros.hpp"
 /*
-    File: fn_gangarea2.sqf
+    File: fn_gangarea3.sqf
     Author: Mateus "Mateuus" Rodrigues
 
     Description: #145984
@@ -10,7 +10,7 @@
 private ["_eh1","_inArea","_zone1","_zone1dis","_dis" ];
 
 ////////////////////////GANGZONE VIP////////////////////////////////////
-_zone1 = getMarkerPos "safezone_gang_2"; // MARKERS FOR GANGZONE
+_zone1 = getMarkerPos "safezone_gang_3"; // MARKERS FOR GANGZONE
 _zone1dis = 70;
 ///////////////////////////////////////////////////////////////////////
 
@@ -60,7 +60,7 @@ switch (playerSide) do
 			{
 			  if (((_zone1 distance player < _zone1dis)) && (!_inArea)) then
 			  {
-				if (FETCH_CONST(life_gangdonorid) == 2) then
+				if (FETCH_CONST(life_gangdonorid) == 3) then
 				{
 					//Acesso Permitido
 					_eh1 = player addEventHandler ["fired", {deleteVehicle (_this select 6);}];

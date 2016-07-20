@@ -1,6 +1,6 @@
 #include "..\..\script_macros.hpp"
 /*
-    File: fn_gangarea.sqf
+    File: fn_gangarea1.sqf
     Author: Mateus "Mateuus" Rodrigues
 
     Description: #145984
