@@ -172,32 +172,19 @@ case 19: {
 	//T Key (Trunk)
 	case 20: {
 		if(!_alt && !_ctrlKey && !dialog && {!life_action_inUse}) then {
-		  //if(vehicle player != player && alive vehicle player) then {
-			
-			
-			//if(vehicle player != player && ((driver vehicle player) == player)} && alive vehicle player) then {
-			
-			//if((driver vehicle player) == player && alive vehicle player) then {
-			
 			if(vehicle player != player && alive vehicle player) then {
-			
-				if((driver vehicle player) in life_vehicles) then {
-					[driver vehicle player] spawn life_fnc_openInventory;
+				if((vehicle player) in life_vehicles) then {
+					[vehicle player] spawn life_fnc_openInventory;
 				};
-				
 			} else {
 				private "_list";
-				_list = ((ASLtoATL (getPosASL player)) nearEntities [["Box_IND_Grenades_F","B_supplyCrate_F"], 2.5]) select 0;
-				if (!(isNil "_list")) then {
-					_house = nearestObject [(ASLtoATL (getPosASL _list)), "House"];
-					if (_house getVariable ["locked", false]) then {
-						hint localize "STR_House_ContainerDeny";
-					} else {
-						[_list] spawn life_fnc_openInventory;
-					};
+				_containers = [getPosATL player, ["Box_IND_Grenades_F","B_supplyCrate_F"], 2.5] call life_fnc_nearestObjects;
+				if (count _containers > 0) then {
+					_container = _containers select 0;
+					[_container] spawn life_fnc_openInventory;
 				} else {
 					_list = ["landVehicle","Air","Ship"];
-					if(KINDOF_ARRAY(cursorTarget,_list) && {player distance cursorTarget < 7} && {isNull objectParent player} && {alive cursorTarget} && {!life_action_inUse}) then {
+					if(KINDOF_ARRAY(cursorTarget,_list) && {player distance cursorTarget < 7} && {vehicle player == player} && {alive cursorTarget} && {!life_action_inUse}) then {
 						if(cursorTarget in life_vehicles) then {
 							[cursorTarget] spawn life_fnc_openInventory;
 						};
@@ -206,6 +193,7 @@ case 19: {
 			};
 		};
 	};
+
 
 	//L Key?
 	case 38: {

@@ -41,8 +41,8 @@ while {true} do {
 				if(count _dbInfo > 0) then {
 					_uid = _dbInfo select 0;
 					_plate = _dbInfo select 1;
-
-					_query = format["UPDATE vehicles SET active='0' fuel='%3' WHERE pid='%1' AND plate='%2'",_uid,_plate,_fuel];
+					
+					_query = format["UPDATE vehicles SET active='0', fuel='%3' WHERE pid='%1' AND plate='%2'",_uid,_plate,_fuel];
 
 					[_query,1] call DB_fnc_asyncCall;
 				};
