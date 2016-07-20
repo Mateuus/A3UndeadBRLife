@@ -9245,6 +9245,9 @@
 		<Key ID="STR_MAR_Gang_2">
 			<Original>Execution</Original>
 		</Key>
+		<Key ID="STR_MAR_Gang_3">
+			<Original>ViperS</Original>
+		</Key>
 		<Key ID="STR_MAR_Fish_Market">
 			<Original>Fish Market</Original>
 			<Czech>Rybí trh</Czech>
