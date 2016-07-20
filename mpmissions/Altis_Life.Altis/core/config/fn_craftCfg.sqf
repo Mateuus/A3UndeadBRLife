@@ -74,6 +74,7 @@ switch(_craft) do
 			["sight",["iron_refined",10,"steel",3,"goldcoin",8]],
 			["barrel",["iron_refined",15,"steel",6,"goldcoin",10]],
 			["trigger",["iron_refined",19,"goldcoin",11]],
+			["colar",["diamante2",7,"goldcoin",5]],
 			["blastingcharge",["cloth",4,"C4",5,"trigger",1,"goldcoin",3]]
       ];
 	};

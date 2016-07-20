@@ -70,6 +70,7 @@ _masks = LIFE_SETTINGS(getArray,"clothing_masks");
 					switch ((_x GVAR "gangrank")) do {		
 					case 1: {"icons\ranks\gang\1.paa"};
 					case 2: {"icons\ranks\gang\2.paa"};
+					case 3: {"icons\ranks\gang\3.paa"};
 
 					default {"icons\ranks\vip\civil.paa"};
 					},
@@ -79,7 +80,7 @@ _masks = LIFE_SETTINGS(getArray,"clothing_masks");
 					switch ((_x GVAR "gangrank")) do {
 						case 1: {"Kings"};
 						case 2: {"Execution"};
-						case 3: {"GANG VIP 3"};
+						case 3: {"ViperS"};
 						case 4: {"GANG VIP 4"};
 						case 5: {"GANG VIP 5"};
 						

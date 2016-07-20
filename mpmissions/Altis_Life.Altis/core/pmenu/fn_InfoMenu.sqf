@@ -69,23 +69,17 @@ if(_index isEqualTo 4) exitWith {
 <t color='#00ff00'>Cobre</t> 1150 <br/>
 <t color='#00ff00'>Ferro</t> 1000 <br/>
 <t color='#00ff00'>Sal</t> 1075 <br/>
-<t color='#00ff00'>Vidro</t> 1045 <br/>
-<t color='#00ff00'>Diamante bruto</t> 1000 <br/>
+<t color='#00ff00'>Pepita de Ouro</t> 1845 <br/>
+<t color='#00ff00'>Diamante</t> 2400 <br/>
 <t color='#00ff00'>Tabuas de madeira</t> 2000 <br/>
-<t color='#00ff00'>Borracha nao processada</t> 50 <br/>
-<t color='#00ff00'>Borracha</t> 1400 <br/>
-<t color='#00ff00'>Moeda antiga</t> 1800 <br/>
-<t color='#00ff00'>Lã</t> 800 <br/>
-<t color='#00ff00'>Pano</t> 1400 <br/>
-<t color='#00ff00'>Aço</t> 800 <br/>
-<t color='#00ff00'>Barra de aço</t> 1800 <br/>
-<t color='#00ff00'>Enxofre</t> 1100 <br/>
-<t color='#00ff00'>Cimento</t> 2000 <br/>
 <t color='#FF0000'>Farms ILegais:</t><br/>
 <t color='#FF0000'>Heroina</t> 3100 <br/>
+<t color='#FF0000'>Metanfetamína</t> 3500 <br/>
 <t color='#FF0000'>Maconha</t> 3800 <br/>
-<t color='#FF0000'>Cocaina</t> 4200 <br/>
-<t color='#FF0000'>Krokodilo</t> 1100" ;
+<t color='#FF0000'>Cocaina</t> 5200 <br/>
+<t color='#FF0000'>Tartaruga</t> 9700 <br/>
+<t color='#FF0000'>Colar de Diamante</t> 15000 <br/>
+<t color='#FF0000'>Barra de Ouro</t> 50000" ;
 };
 
 if(_index isEqualTo 5) exitWith {

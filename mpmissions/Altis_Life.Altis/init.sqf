@@ -9,6 +9,7 @@ StartProgress = false;
 [] execVM "Custom\lift\init.sqf";
 [] execVM "Custom\safegang\fn_gangarea1.sqf";
 [] execVM "Custom\safegang\fn_gangarea2.sqf";
+[] execVM "Custom\safegang\fn_gangarea3.sqf";
 
 disableRemoteSensors true;
 

@@ -34,11 +34,9 @@ class WeaponShops {
         mags[] = {
             { "16Rnd_9x21_Mag", "", 50 },
             { "6Rnd_45ACP_Cylinder", "", 50 },
-			{ "16Rnd_9x21_Mag", "Munição 16rnd 9mm", 25 },
             { "9Rnd_45ACP_Mag", "", 100 },
             { "30Rnd_9x21_Mag", "", 200 },
             { "30Rnd_556x45_Stanag", "", 200 },
-			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 300 },
             { "11Rnd_45ACP_Mag", "", 120 }
         };
         accs[] = {
@@ -80,7 +78,6 @@ class WeaponShops {
         };
         mags[] = {
             { "6Rnd_45ACP_Cylinder", "Munição 9rnd .45", 725 },
-			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
 			{ "30Rnd_9x21_Mag", "Munição 30rnd 9mm", 725 },
 			{ "7Rnd_408_Mag", "Munição 7rnd 408mm", 12725 },
 			{ "11Rnd_45ACP_Mag", "Munição 11rnd .45", 725 },
@@ -110,7 +107,8 @@ class WeaponShops {
             { "acc_pointer_IR", "Laser", 1000 },
             { "acc_flashlight", "Lanterna", 8000 },
 			{ "muzzle_snds_Lt", "Silenciador 9mm", 4750 },
-			{ "muzzle_snds_M", "Silenciador 5.56mm", 6750 }
+			{ "muzzle_snds_M", "Silenciador 5.56mm", 6750 },
+			{ "muzzle_snds_H", "Silenciador 6.5mm", 9050 }
         };
     };
 	
@@ -135,6 +133,8 @@ class WeaponShops {
             { "arifle_MXC_F", "MXC 6.5 mm", 60000, 7500 },
             { "arifle_MX_F", "MX 6.5 mm", 60000, 7500 },
             { "LMG_Mk200_F", "Mk200 6.5 mm", 115000, 7500 },
+			{ "arifle_AKM_F", "AKM 7.62m", 68000, 7500 },
+			{ "arifle_AKS_F", "AKS 5.45m", 37000, 7500 },
 			{ "arifle_MX_SW_F", "MX SW 6.5 mm", 100000, 7500 },
 			{ "arifle_MXM_F", "MXM 6.5 mm", 50000, 7500 },
 			{ "srifle_DMR_01_F", "Rahim 7.62 mm", 65000, 7500 }
@@ -142,7 +142,6 @@ class WeaponShops {
         mags[] = {
             { "6Rnd_45ACP_Cylinder", "Munição 9rnd .45", 725 },
 			{ "30Rnd_9x21_Mag", "Munição 30rnd 9mm", 725 },
-			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
 			{ "11Rnd_45ACP_Mag", "Munição 11rnd .45", 725 },
 			{ "10Rnd_762x54_Mag", "Munição 10rnd 7.62mm", 1725 },
             { "30Rnd_45ACP_Mag_SMG_01_tracer_green", "Munição 30rnd .45", 750 },
@@ -163,6 +162,7 @@ class WeaponShops {
             { "acc_flashlight", "Lanterna", 8000 },
 			{ "muzzle_snds_Lt", "Silenciador 9mm", 10750 },
 			{ "muzzle_snds_M", "Silenciador 5.56mm", 15750 },
+			{ "muzzle_snds_H", "Silenciador 6.5mm", 18050 }
         };
     };
 	
@@ -195,8 +195,8 @@ class WeaponShops {
 			{ "srifle_DMR_06_olive_F", "Mk14 7.62mm", 180000, 7500 },
 			{ "srifle_DMR_03_khaki_F", "Mk-I EMR 7.62mm", 204000, 7500 },
 			{ "srifle_DMR_01_F", "Rahim 7.62 mm", 87000, 7500 },
-			{ "arifle_AKM_F", "AKM 7.62m", 216000, 7500 },
-			{ "arifle_AKS_F", "AKS 5.45m", 66000, 7500 },
+			{ "arifle_AKM_F", "AKM 7.62m", 68000, 7500 },
+			{ "arifle_AKS_F", "AKS 5.45m", 37000, 7500 },
 			{ "arifle_CTAR_hex_F", "CAR-95 5.8MM", 140000, 7500 },
 			{ "srifle_DMR_07_hex_F", "CMR-76 5.8MM", 300000, 7500 },
 			{ "LMG_03_F", "LIM-85 5.56mm", 252000, 7500 }
@@ -204,7 +204,6 @@ class WeaponShops {
         mags[] = {
             { "6Rnd_45ACP_Cylinder", "Munição 9rnd .45", 725 },
 			{ "30Rnd_9x21_Mag", "Munição 30rnd 9mm", 725 },
-			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
 			{ "7Rnd_408_Mag", "Munição 7rnd 408mm", 12725 },
 			{ "11Rnd_45ACP_Mag", "Munição 11rnd .45", 725 },
 			{ "10Rnd_762x54_Mag", "Munição 10rnd 7.62mm", 1225 },
@@ -234,6 +233,8 @@ class WeaponShops {
             { "acc_flashlight", "Lanterna", 8000 },
 			{ "muzzle_snds_Lt", "Silenciador 9mm", 4750 },
 			{ "muzzle_snds_M", "Silenciador 5.56mm", 6750 },
+			{ "muzzle_snds_B", "Silenciador 7.62mm", 15750 },
+			{ "muzzle_snds_H", "Silenciador 6.5mm", 9050 }
         };
     };
     
@@ -266,8 +267,8 @@ class WeaponShops {
 			{ "srifle_DMR_06_olive_F", "Mk14 7.62mm", 165000, 7500 },
 			{ "srifle_DMR_03_khaki_F", "Mk-I EMR 7.62mm", 187000, 7500 },
 			{ "srifle_DMR_01_F", "Rahim 7.62 mm", 79750, 7500 },
-			{ "arifle_AKM_F", "AKM 7.62m", 198000, 7500 },
-			{ "arifle_AKS_F", "AKS 5.45m", 60500, 7500 },
+			{ "arifle_AKM_F", "AKM 7.62m", 68000, 7500 },
+			{ "arifle_AKS_F", "AKS 5.45m", 37000, 7500 },
 			{ "arifle_CTAR_hex_F", "CAR-95 5.8MM", 120000, 7500 },
 			{ "srifle_DMR_07_hex_F", "CMR-76 5.8MM", 275000, 7500 },
 			{ "LMG_03_F", "LIM-85 5.56mm", 231000, 7500 },
@@ -276,7 +277,6 @@ class WeaponShops {
         mags[] = {
             { "6Rnd_45ACP_Cylinder", "Munição 9rnd .45", 725 },
 			{ "30Rnd_9x21_Mag", "Munição 30rnd 9mm", 725 },
-			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
 			{ "7Rnd_408_Mag", "Munição 7rnd 408mm", 12725 },
 			{ "11Rnd_45ACP_Mag", "Munição 11rnd .45", 725 },
 			{ "10Rnd_762x54_Mag", "Munição 10rnd 7.62mm", 1225 },
@@ -306,6 +306,8 @@ class WeaponShops {
             { "acc_flashlight", "Lanterna", 8000 },
 			{ "muzzle_snds_Lt", "Silenciador 9mm", 4750 },
 			{ "muzzle_snds_M", "Silenciador 5.56mm", 6750 },
+			{ "muzzle_snds_B", "Silenciador 7.62mm", 15750 },
+			{ "muzzle_snds_H", "Silenciador 6.5mm", 9050 }
         };
     };
 	
@@ -337,8 +339,8 @@ class WeaponShops {
 			{ "srifle_DMR_06_olive_F", "Mk14 7.62mm", 150000, 7500 },
 			{ "srifle_DMR_03_khaki_F", "Mk-I EMR 7.62mm", 170000, 7500 },
 			{ "srifle_DMR_01_F", "Rahim 7.62 mm", 72500, 7500 },
-			{ "arifle_AKM_F", "AKM 7.62m", 180000, 7500 },
-			{ "arifle_AKS_F", "AKS 5.45m", 55000, 7500 },
+			{ "arifle_AKM_F", "AKM 7.62m", 68000, 7500 },
+			{ "arifle_AKS_F", "AKS 5.45m", 37000, 7500 },
 			{ "arifle_CTAR_hex_F", "CAR-95 5.8MM", 100000, 7500 },
 			{ "srifle_DMR_07_hex_F", "CMR-76 5.8MM", 250000, 7500 },
 			{ "LMG_03_F", "LIM-85 5.56mm", 210000, 7500 },
@@ -349,7 +351,6 @@ class WeaponShops {
         mags[] = {
             { "6Rnd_45ACP_Cylinder", "Munição 9rnd .45", 725 },
 			{ "30Rnd_9x21_Mag", "Munição 30rnd 9mm", 725 },
-			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
 			{ "7Rnd_408_Mag", "Munição 7rnd 408mm", 12725 },
 			{ "11Rnd_45ACP_Mag", "Munição 11rnd .45", 725 },
 			{ "10Rnd_762x54_Mag", "Munição 10rnd 7.62mm", 1225 },
@@ -379,6 +380,8 @@ class WeaponShops {
             { "acc_flashlight", "Lanterna", 8000 },
 			{ "muzzle_snds_Lt", "Silenciador 9mm", 4750 },
 			{ "muzzle_snds_M", "Silenciador 5.56mm", 6750 },
+			{ "muzzle_snds_B", "Silenciador 7.62mm", 15750 },
+			{ "muzzle_snds_H", "Silenciador 6.5mm", 9050 }
         };
        
     };
@@ -412,8 +415,8 @@ class WeaponShops {
 			{ "srifle_DMR_06_olive_F", "Mk14 7.62mm", 180000, 7500 },
 			{ "srifle_DMR_03_khaki_F", "Mk-I EMR 7.62mm", 204000, 7500 },
 			{ "srifle_DMR_01_F", "Rahim 7.62 mm", 87000, 7500 },
-			{ "arifle_AKM_F", "AKM 7.62m", 216000, 7500 },
-			{ "arifle_AKS_F", "AKS 5.45m", 66000, 7500 },
+			{ "arifle_AKM_F", "AKM 7.62m", 68000, 7500 },
+			{ "arifle_AKS_F", "AKS 5.45m", 37000, 7500 },
 			{ "arifle_CTAR_hex_F", "CAR-95 5.8MM", 140000, 7500 },
 			{ "srifle_DMR_07_hex_F", "CMR-76 5.8MM", 300000, 7500 },
 			{ "LMG_03_F", "LIM-85 5.56mm", 252000, 7500 }
@@ -421,7 +424,6 @@ class WeaponShops {
         mags[] = {
             { "6Rnd_45ACP_Cylinder", "Munição 9rnd .45", 725 },
 			{ "30Rnd_9x21_Mag", "Munição 30rnd 9mm", 725 },
-			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
 			{ "7Rnd_408_Mag", "Munição 7rnd 408mm", 12725 },
 			{ "11Rnd_45ACP_Mag", "Munição 11rnd .45", 725 },
 			{ "10Rnd_762x54_Mag", "Munição 10rnd 7.62mm", 1225 },
@@ -451,6 +453,8 @@ class WeaponShops {
             { "acc_flashlight", "Lanterna", 8000 },
 			{ "muzzle_snds_Lt", "Silenciador 9mm", 4750 },
 			{ "muzzle_snds_M", "Silenciador 5.56mm", 6750 },
+			{ "muzzle_snds_B", "Silenciador 7.62mm", 15750 },
+			{ "muzzle_snds_H", "Silenciador 6.5mm", 9050 }
         };
     };
 	
@@ -458,7 +462,7 @@ class WeaponShops {
         name = "Gangue Doador Armas Shop";
 		side = "civ";
         license = "gun";
-        level[] = { "life_gangdonorid", "SCALAR", 1, "Você precisa ser um Gangue Doador para acessar a loja, acesse nosso forum ou teamspeak para obter informações." };
+        level[] = { "life_gangdonorid", "SCALAR", 2, "Você precisa ser um Gangue Doador para acessar a loja, acesse nosso forum ou teamspeak para obter informações." };
 		items[] = {
             { "FirstAidKit", "Bolsa de Sangue", 250, 65 },
             { "hgun_Pistol_heavy_02_F", "ACP .45", 7920, 2500 },
@@ -483,8 +487,8 @@ class WeaponShops {
 			{ "srifle_DMR_06_olive_F", "Mk14 7.62mm", 165000, 7500 },
 			{ "srifle_DMR_03_khaki_F", "Mk-I EMR 7.62mm", 187000, 7500 },
 			{ "srifle_DMR_01_F", "Rahim 7.62 mm", 79750, 7500 },
-			{ "arifle_AKM_F", "AKM 7.62m", 198000, 7500 },
-			{ "arifle_AKS_F", "AKS 5.45m", 60500, 7500 },
+			{ "arifle_AKM_F", "AKM 7.62m", 68000, 7500 },
+			{ "arifle_AKS_F", "AKS 5.45m", 37000, 7500 },
 			{ "arifle_CTAR_hex_F", "CAR-95 5.8MM", 120000, 7500 },
 			{ "srifle_DMR_07_hex_F", "CMR-76 5.8MM", 275000, 7500 },
 			{ "LMG_03_F", "LIM-85 5.56mm", 231000, 7500 },
@@ -493,7 +497,6 @@ class WeaponShops {
         mags[] = {
             { "6Rnd_45ACP_Cylinder", "Munição 9rnd .45", 725 },
 			{ "30Rnd_9x21_Mag", "Munição 30rnd 9mm", 725 },
-			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
 			{ "7Rnd_408_Mag", "Munição 7rnd 408mm", 12725 },
 			{ "11Rnd_45ACP_Mag", "Munição 11rnd .45", 725 },
 			{ "10Rnd_762x54_Mag", "Munição 10rnd 7.62mm", 1225 },
@@ -523,6 +526,8 @@ class WeaponShops {
             { "acc_flashlight", "Lanterna", 8000 },
 			{ "muzzle_snds_Lt", "Silenciador 9mm", 4750 },
 			{ "muzzle_snds_M", "Silenciador 5.56mm", 6750 },
+			{ "muzzle_snds_B", "Silenciador 7.62mm", 15750 },
+			{ "muzzle_snds_H", "Silenciador 6.5mm", 9050 }
         };
     };
 
@@ -544,7 +549,6 @@ class WeaponShops {
         };
         mags[] = {
             { "5Rnd_127x108_Mag", "", 2025 },
-			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
             { "150Rnd_93x64_Mag", "", 3025 },
             { "130Rnd_338_Mag", "", 4025 },
             { "10Rnd_338_Mag", "", 445 },
@@ -591,7 +595,6 @@ class WeaponShops {
         };
         mags[] = {
             { "5Rnd_127x108_Mag", "", 2025 },
-			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
             { "150Rnd_93x64_Mag", "", 3025 },
             { "130Rnd_338_Mag", "", 4025 },
             { "10Rnd_338_Mag", "", 445 },
@@ -688,9 +691,9 @@ class WeaponShops {
             { "arifle_MXC_F", "MXC 6.5mm", 60000, 7500 },
             { "arifle_MX_F", "MX 6.5mm", 70000, 7500 },
             { "LMG_Mk200_F", "Mk200 6.5mm", 180000, 7500 },
-			{ "arifle_AKM_F", "AKM 7.62m", 200000, 7500 },
-			{ "arifle_AKS_F", "AKS 5.45m", 110000, 7500 },
-			{ "arifle_CTAR_hex_F", "CAR-95 5.8MM", 2000000, 7500 },
+			{ "arifle_AKM_F", "AKM 7.62m", 75000, 7500 },
+			{ "arifle_AKS_F", "AKS 5.45m", 470000, 7500 },
+			{ "arifle_CTAR_hex_F", "CAR-95 5.8MM", 130000, 7500 },
 			{ "srifle_DMR_01_F", "Rahim 7.62 mm", 145000, 7500 },
 			{ "srifle_EBR_F", "MK18 7.62 mm", 200000, 7500 },
 			{ "arifle_MX_SW_F", "MX SW 6.5 mm", 100000, 7500 },
@@ -706,21 +709,19 @@ class WeaponShops {
             { "30Rnd_65x39_caseless_green", "Munição 30rnd 6.5mm", 1825 },
             { "30Rnd_556x45_Stanag_Tracer_Yellow", "Munição 30rnd 5.56mm", 1225 },
 			{ "30Rnd_580x42_Mag_Tracer_F", "Munição 30rnd 5.8mm", 1225 },
-			{ "20Rnd_762x51_Mag", "Munição 20rnd 7.62mm", 3000 },
 			{ "30Rnd_762x39_Mag_Green_F", "Munição 30rnd 7.62mm", 3225 },
 			{ "30Rnd_545x39_Mag_Green_F", "Munição 30rnd 7.62mm", 1225 },
-			{ "9Rnd_45ACP_Mag", "", 1000 },
             { "30Rnd_65x39_caseless_mag_Tracer", "Munição 30rnd 6.5mm", 1820 }
         };
         accs[] = {
             { "optic_ACO_grn", "Aco", 3500 },
             { "optic_Holosight", "Holosight", 3600 },
             { "optic_Hamr", "Hamr", 10500 },
+			{ "optic_DMS", "DMS", 25000 },
             { "optic_Holosight_smg", "Holosight Smg", 2500 },
             { "optic_MRCO", "Mrco", 14500 },
             { "optic_Arco", "Arco", 10500 },
             { "acc_pointer_IR", "Laser", 1500 },
-			{ "muzzle_snds_M", "Silenciador 5.56mm", 10000 },
             { "acc_flashlight", "Lanterna", 1000 }
         };
     };
@@ -741,7 +742,6 @@ class WeaponShops {
         mags[] = {
           { "16Rnd_9x21_Mag", "Munição 16rnd 9mm", 25 },
           { "6Rnd_45ACP_Cylinder", "Munição 6rnd .45", 50 },
-		  { "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
           { "9Rnd_45ACP_Mag", "Munição 9rnd .45", 45 },
           { "30Rnd_9x21_Mag", "Munição 16rnd 9mm", 75 },
           { "11Rnd_45ACP_Mag", "Munição 11rnd .45", 60 }
@@ -814,8 +814,6 @@ class WeaponShops {
         mags[] = {
             { "16Rnd_9x21_Mag", "Munição 16rnd 9mm", 25 },
 			{ "30Rnd_9x21_Mag", "Munição 30rnd 9mm", 25 },
-			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
-			{ "30Rnd_556x45_Stanag_Tracer_Green", "Munição 30rnd 5.56mm", 25 },
             { "30Rnd_65x39_caseless_mag_Tracer", "Stun Magazine", 45 }
         };
         accs[] = {
@@ -832,12 +830,14 @@ class WeaponShops {
         license = "";
         level[] = { "life_coplevel", "SCALAR", 2, "Voce precisa ser Soldado para acessar essa loja!" };
         items[] = {
-            { "arifle_MX_F", "MX 6.5 mm", 10000, 750 },
-			{ "srifle_EBR_F", "Mk18 ABR 7.62 mm", 45000, 750 },
+            { "arifle_MXC_Black_F", "Rifle Tazer", 10000, 750 },
 			{ "arifle_TRG21_F", "TRG-21 5.56 mm", 15000, 750 },
+			{ "arifle_TRG20_F", "TRG-20 5.56 mm", 15000, 750 },
+			{ "arifle_Mk20_F", "Mk20 5.56 mm", 15000, 750 },
 			{ "arifle_Mk20C_F", "Mk20C 5.56 mm", 15000, 750 },
 			{ "arifle_SPAR_01_blK_F", "Spar-17 5,56 mm", 45000, 750 },
             { "SMG_02_F", "Sting 9 mm", 14000, 750 },
+			{ "PDW2000 9 mm", "Submachine 9x21 mm", 12000, 750 },
             { "hgun_P07_snds_F", "Pistola Tazer", 200, 60 },
             { "hgun_P07_F", "P07 9mm", 750, 150 },
             { "FirstAidKit", "Bolsa de Sangue", 50, 5 },
@@ -847,26 +847,17 @@ class WeaponShops {
             { "30Rnd_65x39_caseless_mag_Tracer", "Stun Magazine 30rnd", 45 },
             { "16Rnd_9x21_Mag", "Munição 16rnd 9mm", 25 },
 			{ "30Rnd_9x21_Mag", "Munição 30rnd 9mm", 25 },
-			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
 			{ "150Rnd_556x45_Drum_Mag_F", "Munição 150rnd 5.58mm", 25 },
 			{ "200Rnd_556x45_Box_Red_F", "Munição 200rnd 5.58mm", 25 },
 			{ "30Rnd_580x42_Mag_Tracer_F", "Munição 30rnd 5.58mm", 25 },
 			{ "100Rnd_580x42_Mag_Tracer_F", "Munição 100rnd 5.58mm", 25 },
-			{ "30Rnd_556x45_Stanag_Tracer_Green", "Munição 30rnd 5.56mm", 25 },
-			{ "20Rnd_762x51_Mag", "Munição 20rnd 7.62mm", 25 },
-		    { "30Rnd_65x39_caseless_mag_Tracer", "Munição 30rnd 6.5mm", 10 }
+			{ "30Rnd_556x45_Stanag_Tracer_Green", "Munição 30rnd 5.56mm", 25 }
         };
         accs[] = {
             { "acc_flashlight", "Lanterna", 750 },
             { "optic_Holosight", "Holosight", 120 },
             { "optic_Arco", "Arco", 250 },
-            { "acc_pointer_IR", "Laser", 275 },
-			{ "optic_MRCO", "Mrco", 275 },
-			{ "muzzle_snds_B", "Silenciador 7.62mm", 750 },
-			{ "muzzle_snds_B_khk_F", "Silenciador 7.62mm", 750 },
-			{ "muzzle_snds_H", "Silenciador 6.5mm", 500 },
-			{ "muzzle_snds_M", "Silenciador 5.56mm", 750 },
-			{ "optic_Hamr", "Hamr", 275 }
+            { "acc_pointer_IR", "Laser", 275 }
         };
     };
 
@@ -878,8 +869,6 @@ class WeaponShops {
         items[] = {
 			{ "arifle_TRG20_F", "TRG-20 5.56 mm", 13000, 750 },
 			{ "arifle_MX_F", "MX 6.5 mm", 20000, 750 },
-			{ "arifle_MX_SW_Black_F", "MX SW Black 6.5 mm", 48000, 750 },
-			{ "srifle_EBR_F", "Mk18 ABR 7.62 mm", 45000, 750 },
 			{ "arifle_Mk20_F", "Mk20 5.56 mm", 13000, 750 },
 			{ "arifle_Mk20C_F", "Mk20C 5.56 mm", 13000, 750 },
 			{ "arifle_SPAR_01_blK_F", "Spar-17 5,56 mm", 45000, 750 },
@@ -895,12 +884,9 @@ class WeaponShops {
             { "16Rnd_9x21_Mag", "Munição 16rnd 9mm", 25 },
 			{ "150Rnd_556x45_Drum_Mag_F", "Munição 150rnd 5.58mm", 25 },
 			{ "200Rnd_556x45_Box_Red_F", "Munição 200rnd 5.58mm", 25 },
-			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
 			{ "30Rnd_580x42_Mag_Tracer_F", "Munição 30rnd 5.58mm", 25 },
 			{ "100Rnd_580x42_Mag_Tracer_F", "Munição 100rnd 5.58mm", 25 },
 			{ "30Rnd_9x21_Mag", "Munição 30rnd 9mm", 25 },
-			{ "20Rnd_762x51_Mag", "Munição 20rnd 7.62mm", 25 },
-			{ "100Rnd_65x39_caseless_mag_Tracer", "Munição 100rnd 6.5mm", 25 },
 			{ "30Rnd_556x45_Stanag_Tracer_Green", "Munição 30rnd 5.56mm", 25 },
             { "30Rnd_65x39_caseless_mag_Tracer", "Munição 30rnd 6.5mm", 10 }
         };
@@ -910,13 +896,7 @@ class WeaponShops {
             { "optic_Arco", "Arco", 250 },
             { "acc_pointer_IR", "Laser", 275 },
 			{ "optic_MRCO", "Mrco", 275 },
-			{ "optic_Hamr", "Hamr", 275 },
-			{ "muzzle_snds_B", "Silenciador 7.62mm", 750 },
-			{ "muzzle_snds_H", "Silenciador 6.5mm", 500 },
-			{ "muzzle_snds_H_MG_blk_F", "Silenciador 6.5mm", 750 },
-			{ "muzzle_snds_B_khk_F", "Silenciador 7.62mm", 750 },
-			{ "muzzle_snds_M", "Silenciador 5.56mm", 750 }
-			
+			{ "optic_Hamr", "Hamr", 275 }
         };
     };
 
@@ -948,7 +928,6 @@ class WeaponShops {
         };
         mags[] = {
             { "5Rnd_127x108_Mag", "", 100 },
-			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
             { "150Rnd_762x54_Box_Tracer", "", 40 },
             { "5Rnd_127x108_APDS_Mag", "", 300 }
         };
@@ -966,8 +945,6 @@ class WeaponShops {
         level[] = { "life_coplevel", "SCALAR", 4, "Voce precisa ser Sargento para acessar essa loja!" };
         items[] = {
 			{ "arifle_TRG20_F", "TRG-20 5.56 mm", 12000, 750 },
-			{ "srifle_DMR_06_camo_F", "Mk14 7.62mm", 65000, 750 },
-			{ "srifle_EBR_F", "Mk18 ABR 7.62 mm", 45000, 750 },
 			{ "LMG_Mk200_F", "Mk200 6.5 mm", 48000, 750 },
 			{ "arifle_MXC_F", "MXC 6.5 mm", 18000, 750 },
 			{ "arifle_MXM_Black_F", "MXM Black 6.5 mm", 18000, 750 },
@@ -988,7 +965,6 @@ class WeaponShops {
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "Munição 16rnd 9mm", 25 },
-			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
 			{ "150Rnd_556x45_Drum_Mag_F", "Munição 150rnd 5.58mm", 25 },
 			{ "200Rnd_556x45_Box_Red_F", "Munição 200rnd 5.58mm", 25 },
 			{ "30Rnd_580x42_Mag_Tracer_F", "Munição 30rnd 5.58mm", 25 },
@@ -996,7 +972,6 @@ class WeaponShops {
 			{ "30Rnd_9x21_Mag", "Munição 30rnd 9mm", 25 },
 			{ "30Rnd_556x45_Stanag_Tracer_Green", "Munição 30rnd 5.56mm", 25 },
 			{ "200Rnd_65x39_cased_Box_Tracer", "Munição 200rnd 6.5mm", 25 },
-			{ "20Rnd_762x51_Mag", "Munição 20rnd 7.62mm", 25 },
 			{ "100Rnd_65x39_caseless_mag_Tracer", "Munição 100rnd 6.5mm", 25 },
             { "30Rnd_65x39_caseless_mag_Tracer", "Munição 30rnd 6.5mm", 10 }
         };
@@ -1008,11 +983,7 @@ class WeaponShops {
 			{ "optic_MRCO", "Mrco", 275 },
 			{ "optic_DMS", "DMS", 275 },
 			{ "optic_Hamr", "Hamr", 275 },
-			{ "muzzle_snds_H_MG_blk_F", "Silenciador 6.5mm", 750 },
-			{ "muzzle_snds_H", "Silenciador 6.5mm", 500 },
 			{ "muzzle_snds_Lt", "Silenciador 9mm", 750 },
-			{ "muzzle_snds_B_khk_F", "Silenciador 7.62mm", 750 },
-			{ "muzzle_snds_B", "Silenciador 7.62mm", 750 },
 			{ "muzzle_snds_M", "Silenciador 5.56mm", 750 }
         };
     };
@@ -1047,7 +1018,6 @@ class WeaponShops {
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "Munição 16rnd 9mm", 25 },
-			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
 			{ "150Rnd_556x45_Drum_Mag_F", "Munição 150rnd 5.58mm", 25 },
 			{ "200Rnd_556x45_Box_Red_F", "Munição 200rnd 5.58mm", 25 },
 			{ "30Rnd_580x42_Mag_Tracer_F", "Munição 30rnd 5.58mm", 25 },
@@ -1072,7 +1042,6 @@ class WeaponShops {
 			{ "muzzle_snds_H_snd_f", "Silenciador 6.5mm", 750 },
 			{ "muzzle_snds_58_wdm_F", "Silenciador 5.8mm", 750 },
 			{ "muzzle_snds_H_MG_blk_F", "Silenciador 6.5mm", 750 },
-			{ "muzzle_snds_B_khk_F", "Silenciador 7.62mm", 750 },
 			{ "muzzle_snds_H", "Silenciador 6.5mm", 750 }
         };
     };
@@ -1106,7 +1075,6 @@ class WeaponShops {
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "Munição 16rnd 9mm", 25 },
-			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
 			{ "150Rnd_556x45_Drum_Mag_F", "Munição 150rnd 5.58mm", 25 },
 			{ "200Rnd_556x45_Box_Red_F", "Munição 200rnd 5.58mm", 25 },
 			{ "30Rnd_580x42_Mag_Tracer_F", "Munição 30rnd 5.58mm", 25 },
@@ -1144,7 +1112,6 @@ class WeaponShops {
 			{ "arifle_TRG20_F", "TRG-20 5.56 mm", 9000, 750 },
 			{ "LMG_Mk200_F", "Mk200 6.5 mm", 35000, 750 },
 			{ "arifle_MXC_F", "MXC 6.5 mm", 15000, 750 },
-			{ "LMG_Zafir_F", "Zafir 7.62 mm", 100000, 750 },
 			{ "arifle_MXM_Black_F", "MXM Black 6.5 mm", 15000, 750 },
 			{ "arifle_MX_SW_Black_F", "MX SW Black 6.5 mm", 35000, 750 },
 			{ "srifle_EBR_F", "Mk18 ABR 7.62 mm", 40000, 750 },
@@ -1166,7 +1133,6 @@ class WeaponShops {
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "Munição 16rnd 9mm", 25 },
-			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
 			{ "30Rnd_9x21_Mag", "Munição 30rnd 9mm", 25 },
 			{ "150Rnd_556x45_Drum_Mag_F", "Munição 150rnd 5.58mm", 25 },
 			{ "200Rnd_556x45_Box_Red_F", "Munição 200rnd 5.58mm", 25 },
@@ -1174,7 +1140,6 @@ class WeaponShops {
 			{ "100Rnd_580x42_Mag_Tracer_F", "Munição 100rnd 5.58mm", 25 },
 			{ "30Rnd_556x45_Stanag_Tracer_Green", "Munição 30rnd 5.56mm", 25 },
 			{ "200Rnd_65x39_cased_Box_Tracer", "Munição 200rnd 6.5mm", 25 },
-			{ "150Rnd_762x54_Box_Tracer", "Munição 150rnd 7.62mm", 6650 },
 			{ "100Rnd_65x39_caseless_mag_Tracer", "Munição 100rnd 6.5mm", 25 },
 			{ "20Rnd_762x51_Mag", "Munição 20rnd 7.62mm", 25 },
             { "30Rnd_65x39_caseless_mag_Tracer", "Munição 30rnd 6.5mm", 10 }
@@ -1209,7 +1174,6 @@ class cop_tenente_coronel {
 			{ "arifle_TRG20_F", "TRG-20 5.56 mm", 9000, 750 },
 			{ "LMG_Mk200_F", "Mk200 6.5 mm", 35000, 750 },
 			{ "arifle_MXC_F", "MXC 6.5 mm", 15000, 750 },
-			{ "LMG_Zafir_F", "Zafir 7.62 mm", 100000, 750 },
 			{ "arifle_MXM_Black_F", "MXM Black 6.5 mm", 15000, 750 },
 			{ "arifle_MX_SW_Black_F", "MX SW Black 6.5 mm", 35000, 750 },
 			{ "srifle_EBR_F", "Mk18 ABR 7.62 mm", 40000, 750 },
@@ -1232,7 +1196,6 @@ class cop_tenente_coronel {
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "Munição 16rnd 9mm", 25 },
-			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
 			{ "30Rnd_9x21_Mag", "Munição 30rnd 9mm", 25 },
 			{ "150Rnd_556x45_Drum_Mag_F", "Munição 150rnd 5.58mm", 25 },
 			{ "200Rnd_556x45_Box_Red_F", "Munição 200rnd 5.58mm", 25 },
@@ -1240,7 +1203,6 @@ class cop_tenente_coronel {
 			{ "100Rnd_580x42_Mag_Tracer_F", "Munição 100rnd 5.58mm", 25 },
 			{ "30Rnd_556x45_Stanag_Tracer_Green", "Munição 30rnd 5.56mm", 25 },
 			{ "200Rnd_65x39_cased_Box_Tracer", "Munição 200rnd 6.5mm", 25 },
-			{ "150Rnd_762x54_Box_Tracer", "Munição 150rnd 7.62mm", 6650 },
 			{ "100Rnd_65x39_caseless_mag_Tracer", "Munição 100rnd 6.5mm", 25 },
 			{ "20Rnd_762x51_Mag", "Munição 20rnd 7.62mm", 25 },
             { "30Rnd_65x39_caseless_mag_Tracer", "Munição 30rnd 6.5mm", 10 }
@@ -1294,12 +1256,10 @@ class cop_tenente_coronel {
         mags[] = {
             { "16Rnd_9x21_Mag", "Munição 16rnd 9mm", 25 },
 			{ "30Rnd_9x21_Mag", "Munição 30rnd 9mm", 25 },
-			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
 			{ "30Rnd_556x45_Stanag_Tracer_Green", "Munição 30rnd 5.56mm", 25 },
 			{ "200Rnd_65x39_cased_Box_Tracer", "Munição 200rnd 6.5mm", 25 },
 			{ "100Rnd_65x39_caseless_mag_Tracer", "Munição 100rnd 6.5mm", 25 },
 			{ "20Rnd_762x51_Mag", "Munição 20rnd 7.62mm", 25 },
-			{ "150Rnd_762x54_Box_Tracer", "Munição 150rnd 7.62mm", 6650 },
 			{ "20Rnd_762x51_Mag", "Munição 20rnd 7.62mm", 25 },
 			{ "150Rnd_556x45_Drum_Mag_F", "Munição 150rnd 5.58mm", 25 },
 			{ "200Rnd_556x45_Box_Red_F", "Munição 200rnd 5.58mm", 25 },

@@ -194,10 +194,9 @@ class CarShops {
     };
 	
 	class civ_vip_air_bronze {
-        side = "civ_vip";
+        side = "civ";
         vehicles[] = {
-            { "C_Heli_Light_01_civil_F", { "life_donorlevel", "SCALAR", 1 } },
-            { "B_Heli_Light_01_F", { "life_donorlevel", "SCALAR", 1 } },
+			{ "B_Heli_Light_01_F", { "", "", -1 } },
             { "O_Heli_Light_02_unarmed_F", { "life_donorlevel", "SCALAR", 1 } },
             { "O_Heli_Transport_04_Box_F", { "life_donorlevel", "SCALAR", 1 } },
 			{ "B_Heli_Light_01_stripped_F", { "life_donorlevel", "SCALAR", 1 } },
@@ -206,10 +205,9 @@ class CarShops {
     };
 
 	class civ_vip_air_silver {
-        side = "civ_vip";
+        side = "civ";
         vehicles[] = {
-            { "C_Heli_Light_01_civil_F", { "life_donorlevel", "SCALAR", 2 } },
-            { "B_Heli_Light_01_F", { "life_donorlevel", "SCALAR", 2 } },
+            { "B_Heli_Light_01_F", { "", "", -1 } },
             { "O_Heli_Light_02_unarmed_F", { "life_donorlevel", "SCALAR", 2 } },
 			{ "B_Heli_Light_01_stripped_F", { "life_donorlevel", "SCALAR", 2 } },
             { "I_Heli_Transport_02_F", { "life_donorlevel", "SCALAR", 2 } }
@@ -217,10 +215,9 @@ class CarShops {
     };
 
 	class civ_vip_air_gold {
-        side = "civ_vip";
+        side = "civ";
         vehicles[] = {
-            { "C_Heli_Light_01_civil_F", { "life_donorlevel", "SCALAR", 3 } },
-            { "B_Heli_Light_01_F", { "life_donorlevel", "SCALAR", 3 } },
+            { "B_Heli_Light_01_F", { "", "", -1 } },
             { "O_Heli_Light_02_unarmed_F", { "life_donorlevel", "SCALAR", 3 } },
             { "B_Heli_Transport_03_unarmed_F", { "life_donorlevel", "SCALAR", 3 } },
 			{ "I_Heli_light_03_unarmed_F", { "life_donorlevel", "SCALAR", 3 } },
@@ -231,10 +228,9 @@ class CarShops {
     };
 
 	class civ_vip_air_platinum {
-        side = "civ_vip";
+        side = "civ";
         vehicles[] = {
-            { "C_Heli_Light_01_civil_F", { "life_donorlevel", "SCALAR", 4 } },
-            { "B_Heli_Light_01_F", { "life_donorlevel", "SCALAR", 4 } },
+            { "B_Heli_Light_01_F", { "", "", -1 } },
             { "O_Heli_Light_02_unarmed_F", { "life_donorlevel", "SCALAR", 4 } },
             { "B_Heli_Transport_03_unarmed_F", { "life_donorlevel", "SCALAR", 4 } },
 			{ "B_Heli_Light_01_stripped_F", { "life_donorlevel", "SCALAR", 4 } },
@@ -245,10 +241,9 @@ class CarShops {
     };
 
 	class civ_vip_air_diamante {
-        side = "civ_vip";
+        side = "civ";
         vehicles[] = {
-            { "C_Heli_Light_01_civil_F", { "life_donorlevel", "SCALAR", 5 } },
-            { "B_Heli_Light_01_F", { "life_donorlevel", "SCALAR", 5 } },
+			{ "B_Heli_Light_01_F", { "", "", -1 } },
             { "O_Heli_Light_02_unarmed_F", { "life_donorlevel", "SCALAR", 5 } },
             { "B_Heli_Transport_03_unarmed_F", { "life_donorlevel", "SCALAR", 5 } },
 			{ "B_Heli_Light_01_stripped_F", { "life_donorlevel", "SCALAR", 5 } },
@@ -259,10 +254,9 @@ class CarShops {
     };
 	
 	class civ_air_gangue_doador_1 {
-        side = "civ_vip";
+        side = "civ";
         vehicles[] = {
-            { "C_Heli_Light_01_civil_F", { "life_gangdonorid", "SCALAR", 1 } },
-            { "B_Heli_Light_01_F", { "life_gangdonorid", "SCALAR", 1 } },
+            { "B_Heli_Light_01_F", { "", "", -1 } },
             { "O_Heli_Light_02_unarmed_F", { "life_gangdonorid", "SCALAR", 1 } },
             { "B_Heli_Transport_03_unarmed_F", { "life_gangdonorid", "SCALAR", 1 } },
 			{ "I_Heli_light_03_unarmed_F", { "life_gangdonorid", "SCALAR", 1 } },
@@ -273,10 +267,9 @@ class CarShops {
     };
 	
 	class civ_air_gangue_doador_2 {
-        side = "civ_vip";
+        side = "civ";
         vehicles[] = {
-            { "C_Heli_Light_01_civil_F", { "life_gangdonorid", "SCALAR", 1 } },
-            { "B_Heli_Light_01_F", { "life_gangdonorid", "SCALAR", 1 } },
+           { "B_Heli_Light_01_F", { "", "", -1 } },
             { "O_Heli_Light_02_unarmed_F", { "life_gangdonorid", "SCALAR", 1 } },
             { "B_Heli_Transport_03_unarmed_F", { "life_gangdonorid", "SCALAR", 1 } },
 			{ "B_Heli_Light_01_stripped_F", { "life_gangdonorid", "SCALAR", 1 } },
@@ -314,7 +307,6 @@ class CarShops {
     class civ_air {
         side = "civ";
         vehicles[] = {
-            { "C_Heli_Light_01_civil_F", { "", "", -1 } },
             { "B_Heli_Light_01_F", { "", "", -1 } },
             { "O_Heli_Light_02_unarmed_F", { "", "", -1 } },
 			{ "I_Heli_light_03_unarmed_F", { "", "", -1 } },
@@ -674,7 +666,12 @@ class LifeCfgVehicles {
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
         price = 1450000;
 		assurPrice = 435500;
-        textures[] = { };
+        textures[] = { 
+			{ "Gang Kings", "civ", {
+	                "textures\Vip\kings\truck_01_ext_01_co.jpg",
+					"textures\Vip\kings\truck_01_ext_02_co.jpg"
+            } }
+		};
     };
 	
     class B_Truck_01_transport_F {
@@ -833,6 +830,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
             } },
 			{ "Gang Kings", "civ", {
                 "textures\Vip\kings\carkings.jpg"
+            } },
+			{ "Gang ViperS", "civ", {
+                "textures\Vip\kings\carvipers.jpg"
             } },
             { "Bope", "cop", {
                 "textures\Cop\Vehicles\bopehactebk.jpg"
@@ -1134,9 +1134,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 250000;
 		assurPrice = 95000;
         textures[] = {
-            { "Police", "cop", {
-                "textures\Cop\Vehicles\policeheli.jpg"
-            } },
             { "Sheriff", "civ", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa"
             } },
@@ -1170,6 +1167,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Waves Blue", "civ", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_wave_co.paa"
             } },
+			{ "Gang ViperS", "civ", {
+                "textures\Vip\vipers\hellvipers.jpg"
+            } },
             { "Rebel Digital", "reb", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa"
             } },
@@ -1178,6 +1178,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
             } },
             { "EMS", "med", {
                 "textures\Med\Vehicles\hummingMED.jpg"
+            } },
+			{ "Police", "cop", {
+                "textures\Cop\Vehicles\policeheli.jpg"
             } }
         };
     };
