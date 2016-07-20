@@ -23,7 +23,7 @@ class Life_Settings {
     "rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit","zipties","knife","pliers","kidney","cocaine_unprocessed",
     "heroin_processed","heroin_unprocessed","cocaine_processed","cement","rock","diamond_cut","diamond_uncut","glass","sand","salt_refined","salt_unrefined","iron_refined","iron_unrefined","copper_refined",
     "copper_unrefined","oil_processed","oil_unprocessed","marijuana","cannabis","nitroamine","C4","steel","steelplate","wool","cloth","goldcoin","rubberU","rubber","gunpowder","sulfur","barrel","butt",
-    "sight","trigger","engine","plans","blastingcharge","boltcutter","nitro","beer","whiskey","diamante2","diamante3","moonshine","gpstracker","blindfold","wood","plank","woodaxe" }; //Array of virtual items that can be saved on your player.
+    "sight","trigger","engine","plans","blastingcharge","boltcutter","nitro","beer","whiskey","diamante2","diamante3","moonshine","gpstracker","blindfold","wood","plank","woodaxe","colar" }; //Array of virtual items that can be saved on your player.
 
     save_playerStats = true; //Save food, water and damage (all sides)?
     save_civilian_weapons = true; //Allow civilians to save weapons on them?
@@ -39,7 +39,7 @@ class Life_Settings {
     "rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit","zipties","knife","pliers","kidney","cocaine_unprocessed",
     "heroin_processed","heroin_unprocessed","cocaine_processed","cement","rock","diamond_cut","diamond_uncut","glass","sand","salt_refined","salt_unrefined","iron_refined","iron_unrefined","copper_refined",
     "copper_unrefined","oil_processed","oil_unprocessed","marijuana","cannabis","nitroamine","C4","diamante2","diamante3","steel","steelplate","wool","cloth","goldcoin","rubberU","rubber","gunpowder","sulfur","barrel","butt",
-    "sight","trigger","engine","plans","blastingcharge","boltcutter","nitro","beer","whiskey","moonshine","gpstracker","blindfold","wood","plank","woodaxe" };
+    "sight","trigger","engine","plans","blastingcharge","boltcutter","nitro","beer","whiskey","moonshine","gpstracker","blindfold","wood","plank","woodaxe", "colar" };
 
     save_vehicle_inventory = true; //Save Arma inventory of vehicle to the database
     save_vehicle_fuel = true; //Save vehicle fuel level to the database (Impounded/Garaged).
