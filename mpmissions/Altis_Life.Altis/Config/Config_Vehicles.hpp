@@ -1033,7 +1033,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class B_MRAP_01_F {
         vItemSpace = 65;
         licenses[] = { {""}, {""}, {""}, {""} };
-        price = 100000;
+        price = 1900000;
 		assurPrice = 30000;
         textures[] = {
            { "Hunter VIP", "civ", {
