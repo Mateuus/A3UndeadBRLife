@@ -187,3 +187,5 @@ life_attachment_point setVectorDirAndUp [[0,1,0], [0,0,1]];
 
 // Sharing the point of attachment with all players.
 publicVariable "life_attachment_point";
+
+[] execVM "\life_server\Functions\DynMarket\fn_config.sqf";
