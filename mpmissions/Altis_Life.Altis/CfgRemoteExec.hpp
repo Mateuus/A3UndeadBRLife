@@ -95,6 +95,10 @@ class CfgRemoteExec {
         F(life_fnc_wantedProfUpdate,SERVER)
         F(life_fnc_wantedRemove,SERVER)
         F(SPY_fnc_cookieJar,SERVER)
+
+		F(TON_fnc_getupdate,SERVER)
+		F(TON_fnc_playerlogged,SERVER)
+		 
         F(SPY_fnc_observe,SERVER)
         F(TON_fnc_addContainer,SERVER)
         F(TON_fnc_addHouse,SERVER)

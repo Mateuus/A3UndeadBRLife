@@ -10,7 +10,7 @@
 private ["_eh1","_inArea","_zone1","_zone1dis","_dis" ];
 
 ////////////////////////GANGZONE VIP////////////////////////////////////
-_zone1 = getMarkerPos "safezone_gang_3"; // MARKERS FOR GANGZONE
+_zone1 = getMarkerPos "safezone_gang_4"; // MARKERS FOR GANGZONE
 _zone1dis = 70;
 ///////////////////////////////////////////////////////////////////////
 
