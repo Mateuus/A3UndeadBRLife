@@ -19,9 +19,9 @@ c5ef8071883932770d4ad915982eedc1 -1 James Burton.  Hacking.  Ban Evasion.  Repea
 55dc2caa870d79911f82dd9919aeed3f 2073075070 [Admin] Matou vários samus
 b03d61b9b3805e63c879b881fa81978d 1469391349 [Admin] Roubou Helicóptero da Samu (5 Dias) Richard Grazer
 5fe0007df7e93a6e4e9950325aa1bfba 2073159765 [Admin] Roubando Heli de SAMU
-8fb87ba84cb9d2dd67ea4931550d96bb 1469054506 [Admin] Banimento de 24 horas por não obedecer ordem de SAMU (D
 2ca7841f322c4b03c7614630244c410f 2073173191 [DanMothe] Admin Ban
+0fd1b912afb0daff64b260976e4efdcf 1469668775 [DanMothe] Anti-RP
 67.249.188.29 2073075070 [Admin] Matou vários samus
 84.99.153.193 1469391349 [Admin] Roubou Helicóptero da Samu (5 Dias) Richard Grazer
 99.43.17.56 2073159765 [Admin] Roubando Heli de SAMU
-167.250.149.89 1469054506 [Admin] Banimento de 24 horas por não obedecer ordem de SAMU (D
+191.248.100.151 1469668775 [DanMothe] Anti-RP

@@ -37,7 +37,7 @@ class VirtualShops {
 		side = "civ";
 		license = "rebel";
 		level[] = { "", "", -1, "" };
-		items[] = { "waterBottle", "rabbit", "apple", "redgull", "beer", "whiskey", "moonshine", "tbacon", "gpstracker", "blindfold", "pickaxe", "toolkit", "fuelFull", "lockpick", "boltcutter", "zipties", "knife", "pliers", "barrel", "butt" };
+		items[] = { "waterBottle", "rabbit", "apple", "redgull", "beer", "whiskey", "moonshine", "tbacon", "gpstracker", "blindfold", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "zipties", "knife", "pliers", "barrel", "butt" };
 	};
 
 	class gang {
@@ -45,7 +45,7 @@ class VirtualShops {
 		side = "civ";
 		license = "";
 		level[] = { "", "", -1, "" };
-		items[] = { "waterBottle", "rabbit", "apple", "redgull", "beer", "whiskey", "moonshine", "tbacon", "gpstracker", "pickaxe", "toolkit", "lockpick", "fuelFull", "peach", "boltcutter",};
+		items[] = { "waterBottle", "rabbit", "apple", "redgull", "beer", "whiskey", "moonshine", "tbacon", "gpstracker", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter",};
 	};
 
 	class wongs {
@@ -250,7 +250,7 @@ class VirtualItems {
 		variable = "lockpick";
 		displayName = "STR_Item_Lockpick";
 		weight = 2;
-		buyPrice = 5000;
+		buyPrice = 500;
 		sellPrice = -1;
 		illegal = true;
 		edible = -1;
@@ -261,7 +261,7 @@ class VirtualItems {
 		variable = "gpstracker";
 		displayName = "STR_Item_gpstracker";
 		weight = 2;
-		buyPrice = 9500;
+		buyPrice = 50000;
 		sellPrice = 2500;
 		illegal = true;
 		edible = -1;
@@ -483,7 +483,7 @@ class VirtualItems {
 		displayName = "STR_Item_Glass";
 		weight = 3;
 		buyPrice = -1;
-		sellPrice = 1845;
+		sellPrice = 1045;
 		illegal = false;
 		edible = -1;
 		icon = "icons\ico_glass.paa";
@@ -527,7 +527,7 @@ class VirtualItems {
 		displayName = "STR_Item_CementBag";
 		weight = 5;
 		buyPrice = -1;
-		sellPrice = 3800;
+		sellPrice = 2800;
 		illegal = true;
 		edible = -1;
 		icon = "icons\meth.paa";
@@ -597,7 +597,7 @@ class VirtualItems {
 		displayName = "STR_Item_CocaineP";
 		weight = 7;
 		buyPrice = -1;
-		sellPrice = 5200;
+		sellPrice = 4200;
 		illegal = true;
 		edible = -1;
 		icon = "icons\cocainep.paa";
@@ -1039,7 +1039,7 @@ class VirtualItems {
 		displayName = "STR_Item_diamante3";
 		weight = 6;
 		buyPrice = -1;
-		sellPrice = 4200;
+		sellPrice = 2800;
 		illegal = true;
 		edible = -1;
 		icon = "icons\ruby.paa";
@@ -1049,7 +1049,7 @@ class VirtualItems {
 		variable = "C4";
 		displayName = "STR_Item_C4";
 		weight = 6;
-		buyPrice = -1;
+		buyPrice = 12025;
 		sellPrice = 2500;
 		illegal = true;
 		edible = -1;

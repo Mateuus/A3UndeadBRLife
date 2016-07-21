@@ -198,7 +198,6 @@ class CarShops {
         vehicles[] = {
 			{ "B_Heli_Light_01_F", { "", "", -1 } },
             { "O_Heli_Light_02_unarmed_F", { "life_donorlevel", "SCALAR", 1 } },
-            { "O_Heli_Transport_04_Box_F", { "life_donorlevel", "SCALAR", 1 } },
 			{ "B_Heli_Light_01_stripped_F", { "life_donorlevel", "SCALAR", 1 } },
             { "I_Heli_Transport_02_F", { "life_donorlevel", "SCALAR", 1 } }
         };
@@ -838,7 +837,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "textures\Cop\Vehicles\bopehactebk.jpg"
 			} },
             { "Police", "cop", {
-                "textures\Cop\Vehicles\policehatch.jpg"
+                "textures\cop\Vehicles\policehatch.jpg"
             } }
         };
     };
