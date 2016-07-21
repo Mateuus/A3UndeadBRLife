@@ -71,6 +71,7 @@ _masks = LIFE_SETTINGS(getArray,"clothing_masks");
 					case 1: {"icons\ranks\gang\1.paa"};
 					case 2: {"icons\ranks\gang\2.paa"};
 					case 3: {"icons\ranks\gang\3.paa"};
+					case 4: {"icons\ranks\gang\4.paa"};
 
 					default {"icons\ranks\vip\civil.paa"};
 					},
@@ -81,7 +82,7 @@ _masks = LIFE_SETTINGS(getArray,"clothing_masks");
 						case 1: {"Kings"};
 						case 2: {"Execution"};
 						case 3: {"ViperS"};
-						case 4: {"GANG VIP 4"};
+						case 4: {"BrFOX"};
 						case 5: {"GANG VIP 5"};
 						
 						default {"Civil"};

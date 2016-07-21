@@ -532,6 +532,80 @@ class WeaponShops {
 			{ "muzzle_snds_M", "Silenciador 5.56mm", 6750 }
         };
     };
+	
+	class ganguevip3 {
+        name = "Gangue Doador 3 Armas Shop";
+        side = "civ";
+        license = "gun";
+        level[] = { "life_donorlevel", "SCALAR", 5, "Você precisa ser um Gangue Doador para acessar a loja, acesse nosso forum ou teamspeak para obter informações." };
+		items[] = {
+            { "FirstAidKit", "Bolsa de Sangue", 250, 65 },
+            { "hgun_Pistol_heavy_02_F", "ACP .45", 6600, 2500 },
+			{ "hgun_Rook40_F", "Rook 9mm", 4500, 2500 },
+            { "hgun_ACPC2_F", "ACP .45", 6600, 65 },
+            { "arifle_TRG20_F", "TRG 5.56mm", 22500, 2500 },
+			{ "arifle_TRG21_F", "TRG 5.56mm", 22500, 2500 },
+            { "arifle_Katiba_F", "Katiba 6.5mm", 30000, 5000 },
+            { "arifle_Katiba_C_F", "Katiba 6.5mm", 30000, 5000 },
+            { "arifle_SDAR_F", "SDAR 5.56mm", 12500, 7500 },
+            { "SMG_01_F", "Vermin SMG .45ACP", 16000, 7500 },
+            { "arifle_Mk20_F", "Mk20 5.56mm", 24000, 7500 },
+            { "arifle_Mk20C_F", "Mk20 5.56mm", 24000000, 7500 },
+            { "arifle_MXC_F", "MXC 6.5 mm", 30000, 7500 },
+            { "arifle_MX_F", "MX 6.5 mm", 35000, 7500 },
+            { "LMG_Mk200_F", "Mk200 6.5 mm", 160000, 7500 },
+			{ "arifle_MX_SW_F", "MX SW 6.5 mm", 50000, 7500 },
+			{ "arifle_MXM_F", "MXM 6.5 mm", 45000, 7500 },
+			{ "srifle_EBR_F", "Mk18 ABR 7.62 mm", 100000, 7500 },
+			{ "LMG_Zafir_F", "Zafir 7.62 mm", 400000, 7500 },
+			{ "srifle_DMR_06_olive_F", "Mk14 7.62mm", 150000, 7500 },
+			{ "srifle_DMR_03_khaki_F", "Mk-I EMR 7.62mm", 170000, 7500 },
+			{ "srifle_DMR_01_F", "Rahim 7.62 mm", 72500, 7500 },
+			{ "arifle_AKM_F", "AKM 7.62m", 60000, 7500 },
+			{ "arifle_AKS_F", "AKS 5.45m", 40000, 7500 },
+			{ "arifle_CTAR_hex_F", "CAR-95 5.8MM", 100000, 7500 },
+			{ "srifle_DMR_07_hex_F", "CMR-76 5.8MM", 250000, 7500 },
+			{ "LMG_03_F", "LIM-85 5.56mm", 210000, 7500 },
+			{ "arifle_AK12_F", "AK-12 7.62mm", 250000, 7500 },
+			{ "SMG_02_F", "Sting 9mm", 12150, 7500 },
+			{ "srifle_LRR_F", "M320 LRR .408", 1000000, 7500 }
+        };
+        mags[] = {
+            { "6Rnd_45ACP_Cylinder", "Munição 9rnd .45", 725 },
+			{ "30Rnd_9x21_Mag", "Munição 30rnd 9mm", 725 },
+			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
+			{ "7Rnd_408_Mag", "Munição 7rnd 408mm", 12725 },
+			{ "11Rnd_45ACP_Mag", "Munição 11rnd .45", 725 },
+			{ "10Rnd_762x54_Mag", "Munição 10rnd 7.62mm", 1225 },
+			{ "20Rnd_762x51_Mag", "Munição 20rnd 7.62mm", 1225 },
+            { "30Rnd_45ACP_Mag_SMG_01_tracer_green", "Munição 30rnd .45", 750 },
+            { "200Rnd_65x39_cased_Box_Tracer", "Munição 200rnd 6.5mm", 4650 },
+			{ "150Rnd_762x54_Box_Tracer", "Munição 150rnd 7.62mm", 6650 },
+			{ "100Rnd_65x39_caseless_mag_Tracer", "Munição 100rnd 6.5mm", 2050 },
+            { "30Rnd_65x39_caseless_green", "Munição 30rnd 6.5mm", 1025 },
+            { "30Rnd_556x45_Stanag_Tracer_Yellow", "Munição 30rnd 5.56mm", 1025 },
+			{ "30Rnd_580x42_Mag_Tracer_F", "Munição 30rnd 5.8mm", 1225 },
+			{ "30Rnd_762x39_Mag_Green_F", "Munição 30rnd 7.62mm", 3225 },
+			{ "200Rnd_556x45_Box_Red_F", "Munição 30rnd 7.62mm", 5225 },
+			{ "30Rnd_545x39_Mag_Green_F", "Munição 30rnd 7.62mm", 1225 },
+            { "30Rnd_65x39_caseless_mag_Tracer", "Munição 30rnd 6.5mm", 1020 }
+        };
+        accs[] = {
+            { "optic_ACO_grn", "Aco", 3000 },
+            { "optic_Holosight", "Holosight", 3000 },
+            { "optic_Hamr", "Hamr", 9500 },
+            { "optic_Holosight_smg", "Holosight Smg", 2000 },
+            { "optic_MRCO", "Mrco", 12500 },
+            { "optic_Arco", "Arco", 8500 },
+			{ "optic_DMS", "DMS", 28500 },
+			{ "optic_SOS", "SOS", 58500 },
+            { "acc_pointer_IR", "Laser", 1000 },
+            { "acc_flashlight", "Lanterna", 8000 },
+			{ "muzzle_snds_Lt", "Silenciador 9mm", 4750 },
+			{ "muzzle_snds_M", "Silenciador 5.56mm", 6750 }
+        };
+       
+    };
 
     class donator1 {
         name = "Donator 1 Shop";

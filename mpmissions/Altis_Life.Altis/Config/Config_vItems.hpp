@@ -483,7 +483,7 @@ class VirtualItems {
 		displayName = "STR_Item_Glass";
 		weight = 3;
 		buyPrice = -1;
-		sellPrice = 1045;
+		sellPrice = 1845;
 		illegal = false;
 		edible = -1;
 		icon = "icons\ico_glass.paa";
@@ -514,7 +514,7 @@ class VirtualItems {
 	class rock {
 		variable = "rock";
 		displayName = "STR_Item_Rock";
-		weight = 6;
+		weight = 8;
 		buyPrice = -1;
 		sellPrice = -1;
 		illegal = true;
@@ -525,9 +525,9 @@ class VirtualItems {
 	class cement {
 		variable = "cement";
 		displayName = "STR_Item_CementBag";
-		weight = 5;
+		weight = 6;
 		buyPrice = -1;
-		sellPrice = 2800;
+		sellPrice = 3500;
 		illegal = true;
 		edible = -1;
 		icon = "icons\meth.paa";
@@ -597,7 +597,7 @@ class VirtualItems {
 		displayName = "STR_Item_CocaineP";
 		weight = 7;
 		buyPrice = -1;
-		sellPrice = 4200;
+		sellPrice = 5200;
 		illegal = true;
 		edible = -1;
 		icon = "icons\cocainep.paa";
