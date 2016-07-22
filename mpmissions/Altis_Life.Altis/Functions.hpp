@@ -418,6 +418,7 @@ class Life_Client_Core {
 		class ticketPaymedic {};
 		class ticketPromptmedic {};
 		class ticketPaidmedic {};
+		class medicInteractionMenu {};
 	};
 
 	class Network {

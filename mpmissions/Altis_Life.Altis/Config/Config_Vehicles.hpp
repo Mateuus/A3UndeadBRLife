@@ -371,7 +371,6 @@ class CarShops {
             { "B_G_Offroad_01_armed_F", { "", "", -1 } },
 			{ "I_Heli_light_03_unarmed_F", { "", "", -1 } },
 			{ "O_Heli_Light_02_unarmed_F", { "", "", -1 } },
-			{ "Q_LVS_02_unarmed_arid_F", { "", "", -1 } },
 			{ "O_Truck_02_box_F", { "", "", -1 } },
             { "O_Truck_02_covered_F", { "", "", -1 } }
         };
@@ -492,14 +491,6 @@ class LifeCfgVehicles {
         textures[] = {};
     };
 	
-	class Q_LVS_02_unarmed_arid_F {
-        vItemSpace = 50;
-        licenses[] = { {""}, {""}, {""}, {""} };
-        price = 150000;
-		assurPrice = 25500;
-        textures[] = {};
-    };
-
     class O_Truck_03_ammo_F {
         vItemSpace = 695;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
@@ -540,6 +531,9 @@ class LifeCfgVehicles {
         textures[] = {
 			{ "ExE", "civ", {
                 "textures\Vip\exe\exe.jpg"
+            } },
+			{ "BrFOX", "civ", {
+                "textures\Vip\brfox\Hellcatbrfox.jpg"
             } },
 			{ "Kings", "civ", {
                 "textures\Vip\kings\hellkings.jpg"
@@ -868,7 +862,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "textures\Vip\kings\carkings.jpg"
             } },
 			{ "Gang ViperS", "civ", {
-                "textures\Vip\kings\carvipers.jpg"
+                "textures\Vip\vipers\carvipers.jpg"
+            } },
+			{ "Gang BrFOX", "civ", {
+                "textures\Vip\brfox\Hatchbackbrfox.jpg"
             } },
             { "Bope", "cop", {
                 "textures\Cop\Vehicles\bopehactebk.jpg"
@@ -1088,6 +1085,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
 			{ "Hunter Caveira VIP", "civ", {
 	                "textures\Vip\Vehicles\hunter\graywolfhunter_1.jpg",
 					"textures\Vip\Vehicles\hunter\graywolfhunter_2.jpg"
+			} },
+			{ "Hunter BrFOX", "civ", {
+	                "textures\Vip\brfox\HunterFront.jpg",
+					"textures\Vip\brfox\HunterFront.jpg"
 			} },
 			{ "Police", "cop", {
                 "textures\Cop\Vehicles\Hunter1.jpg",

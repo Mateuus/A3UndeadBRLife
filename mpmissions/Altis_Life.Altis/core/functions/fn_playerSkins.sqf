@@ -174,18 +174,6 @@ switch(playerSide) do {
 		{
 			player setObjectTextureGlobal [0, "textures\cop\clothing\coronel.jpg"];
 		};
-		if ((vest player == "V_PlateCarrierGL_blk") && (FETCH_CONST(life_coplevel) >= 10)) then
-		{
-			player setObjectTextureGlobal [0, "textures\cop\clothing\colete_bope.jpg"];
-		};
-		if ((vest player == "V_PlateCarrier1_blk") && (FETCH_CONST(life_coplevel) >= 4)) then
-		{
-			player setObjectTextureGlobal [0, "textures\cop\clothing\colete_cop.jpg"];
-		};		
-		if ((vest player == "V_TacVest_blk_POLICE") && (FETCH_CONST(life_coplevel) >= 1)) then
-		{
-			player setObjectTextureGlobal [0, "textures\cop\clothing\colete.jpg"];
-		};
 
 	
 	if(playerSide isEqualTo west) then {(unitBackpack player) setObjectTextureGlobal [0,""];};

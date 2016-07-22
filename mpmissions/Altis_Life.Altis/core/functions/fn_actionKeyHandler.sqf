@@ -14,9 +14,27 @@ if(life_action_inUse) exitWith {}; //Action is in use, exit to prevent spamming.
 if(life_interrupted) exitWith {life_interrupted = false;};
 _isWater = surfaceIsWater (visiblePositionASL player);
 
+
 if((player getVariable["isEscorting",false])) exitWith {
-	[] call life_fnc_copInteractionMenu;
+
+		if(playerSide isEqualTo west) then
+		{
+		
+			[] call life_fnc_copInteractionMenu;
+			
+		}else{
+		
+			[] call life_fnc_medicinteractionmenu;
+			
+		};
+};	
+
+
+
+if((player getVariable["isEscorting",false])) exitWith {
+		
 };
+
 
 if(EQUAL(LIFE_SETTINGS(getNumber,"global_ATM"),1)) then{
 	//Check if the player is near an ATM.
@@ -91,6 +109,10 @@ if (_curObject isKindOf "Man" && !(_curObject isKindOf "Animal") && {!alive _cur
 if(isPlayer _curObject && _curObject isKindOf "Man") then {
 	if((_curObject GVAR ["restrained",false]) && !dialog && playerSide isEqualTo west) then {
 		[_curObject] call life_fnc_copInteractionMenu;
+	};
+	
+	if((_curObject GVAR ["restrained",false]) && !dialog && playerSide isEqualTo independent) then {
+		[_curObject] call life_fnc_medicInteractionMenu;
 	};
 	
 	if((_curTarget getVariable["restrained",false]) && !dialog && playerSide == civilian && _curTarget getVariable["ziptied",false]) then

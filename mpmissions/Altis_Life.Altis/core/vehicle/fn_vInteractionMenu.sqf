@@ -81,6 +81,46 @@ if(playerSide isEqualTo west) then {
 		};
 	};
 } else {
+if(playerSide isEqualTo independent) then {
+	_Btn2 ctrlSetText localize "STR_vInAct_Registration";
+	_Btn2 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_searchVehAction;";
+
+	_Btn3 ctrlSetText localize "STR_vInAct_SearchVehicle";
+	_Btn3 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_vehInvSearch;";
+
+	_Btn4 ctrlSetText localize "STR_vInAct_PullOut";
+	_Btn4 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_pulloutAction;";
+	if(crew _curTarget isEqualTo []) then {_Btn4 ctrlEnable false;};
+
+	_Btn5 ctrlSetText localize "STR_vInAct_Impound";
+	_Btn5 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_impoundAction; closeDialog 0;";
+
+	_Btn7 ctrlSetText localize "STR_vInAct_Crush";
+	_Btn7 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_copCrush;";
+
+	if(_curTarget isKindOf "Ship") then {
+		_Btn6 ctrlSetText localize "STR_vInAct_PushBoat";
+		_Btn6 buttonSetAction "[] spawn life_fnc_pushObject; closeDialog 0;";
+		if(_curTarget isKindOf "Ship" && {local _curTarget} && {crew _curTarget isEqualTo []}) then { _Btn6 ctrlEnable true;} else {_Btn6 ctrlEnable false};
+	} else {
+		if((typeOf (_curTarget) in _dlcVehicles) && !(288520 in getDLCs 1)) then {
+			if(_curTarget isKindOf "Air") then {
+				_Btn6 ctrlSetText localize "STR_vInAct_GetInHeli";
+			} else {
+				_Btn6 ctrlSetText localize "STR_vInAct_GetInKart";
+			};
+			_Btn6 buttonSetAction "player moveInDriver life_vInact_curTarget; closeDialog 0;";
+			if(crew _curTarget isEqualTo [] && {canMove _curTarget} && {locked _curTarget isEqualTo 0}) then {_Btn6 ctrlEnable true;} else {_Btn6 ctrlEnable false};
+		} else {
+			_Btn6 ctrlSetText localize "STR_vInAct_Unflip";
+			_Btn6 buttonSetAction "life_vInact_curTarget setPos [getPos life_vInact_curTarget select 0, getPos life_vInact_curTarget select 1, (getPos life_vInact_curTarget select 2)+0.5]; closeDialog 0;";
+			if(alive _curTarget && {crew _curTarget isEqualTo []} && {canMove _curTarget}) then { _Btn6 ctrlEnable false;} else {_Btn6 ctrlEnable true;};
+		};
+	};
+	
+	_Btn3 ctrlShow false;
+	_Btn7 ctrlShow false;
+} else {
 	if(_curTarget isKindOf "Ship") then {
 		_Btn2 ctrlSetText localize "STR_vInAct_PushBoat";
 		_Btn2 buttonSetAction "[] spawn life_fnc_pushObject; closeDialog 0;";
@@ -139,4 +179,5 @@ if(FETCH_CONST(life_coplevel) < _crushRank) then {_Btn7 ctrlEnable false;};
 	_Btn4 ctrlShow false;
 	_Btn5 ctrlShow false;
 	_Btn6 ctrlShow false;
+ };
 };
