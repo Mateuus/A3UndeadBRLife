@@ -539,14 +539,14 @@ class WeaponShops {
         license = "gun";
         level[] = { "life_gangdonorid", "SCALAR", 1, "Você precisa ser um Gangue Doador para acessar a loja, acesse nosso forum ou teamspeak para obter informações." };
 		items[] = {
-            { "FirstAidKit", "Bolsa de Sangue", 250, 65 },
-            { "hgun_Pistol_heavy_02_F", "ACP .45", 6600, 2500 },
-			{ "hgun_Rook40_F", "Rook 9mm", 4500, 2500 },
-            { "hgun_ACPC2_F", "ACP .45", 6600, 65 },
-            { "arifle_TRG20_F", "TRG 5.56mm", 22500, 2500 },
-			{ "arifle_TRG21_F", "TRG 5.56mm", 22500, 2500 },
-            { "arifle_Katiba_F", "Katiba 6.5mm", 30000, 5000 },
-            { "arifle_Katiba_C_F", "Katiba 6.5mm", 30000, 5000 },
+            { "FirstAidKit", "Bolsa de Sangue", 250, -1 },
+            { "hgun_Pistol_heavy_02_F", "ACP .45", 6600, -1 },
+			{ "hgun_Rook40_F", "Rook 9mm", 4500, -1 },
+            { "hgun_ACPC2_F", "ACP .45", 6600, -1 },
+            { "arifle_TRG20_F", "TRG 5.56mm", 22500, -1 },
+			{ "arifle_TRG21_F", "TRG 5.56mm", 22500, -1 },
+            { "arifle_Katiba_F", "Katiba 6.5mm", 30000, -1 },
+            { "arifle_Katiba_C_F", "Katiba 6.5mm", 30000, -1 },
             { "arifle_SDAR_F", "SDAR 5.56mm", 12500, -1 },
             { "SMG_01_F", "Vermin SMG .45ACP", 16000, -1 },
             { "arifle_Mk20_F", "Mk20 5.56mm", 24000, -1 },
@@ -754,14 +754,14 @@ class WeaponShops {
         license = "rebel";
         level[] = { "", "", -1, "" };
         items[] = {
-			{ "FirstAidKit", "Bolsa de Sangue", 250, 65 },
+			{ "FirstAidKit", "Bolsa de Sangue", 250, -1 },
             { "hgun_Pistol_heavy_02_F", "ACP .45", 10500, -1 },
 			{ "hgun_Rook40_F", "Rook 9mm", 9000, -1 },
             { "hgun_ACPC2_F", "ACP .45", 13200, 5000 },
             { "arifle_TRG20_F", "TRG 5.56mm", 45000, -1 },
 			{ "arifle_TRG21_F", "TRG 5.56mm", 45000, -1 },
-            { "arifle_Katiba_F", "Katiba 6.5mm", 60000, 5000 },
-            { "arifle_Katiba_C_F", "Katiba 6.5mm", 60000, 5000 },
+            { "arifle_Katiba_F", "Katiba 6.5mm", 60000, -1 },
+            { "arifle_Katiba_C_F", "Katiba 6.5mm", 60000, -1 },
             { "arifle_SDAR_F", "SDAR 5.56mm", 25000, -1 },
             { "SMG_01_F", "Vermin SMG .45ACP", 32000, -1 },
             { "arifle_Mk20_F", "Mk20 5.56mm", 48000, -1 },
