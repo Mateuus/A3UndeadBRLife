@@ -111,6 +111,11 @@ switch(playerSide) do {
 		{
 			backpackContainer player setObjectTextureGlobal [0, "textures\Vip\exe\mochilaexe.jpg"];
 		};
+		//BRFOX
+		if (backpack player isEqualTo "B_Carryall_oli" && (FETCH_CONST(life_gangdonorid) == 4)) then 
+		{
+			backpackContainer player setObjectTextureGlobal [0, "textures\Vip\brfox\CarryAll.jpg"];
+		};
 		////////////////////////////GANGBVIP/////////////////////////////////////////////		
 		//////////////////////////////////////////////////////////////////////////////////
 		

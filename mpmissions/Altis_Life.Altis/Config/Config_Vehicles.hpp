@@ -396,10 +396,9 @@ class CarShops {
     class cop_car {
         side = "cop";
         vehicles[] = {
-            { "B_Quadbike_01_F", { "", "", -1 } },
-            { "C_Offroad_01_F", { "", "", -1 } },
-			
-            { "C_SUV_01_F", { "", "", -1 } },
+            { "B_Quadbike_01_F", { "life_coplevel", "SCALAR", -1 } },
+            { "C_Offroad_01_F", { "life_coplevel", "SCALAR", -1 } },			
+            { "C_SUV_01_F", { "life_coplevel", "SCALAR", 1 } },
             { "C_Hatchback_01_sport_F", { "life_coplevel", "SCALAR", 1 } },
             { "B_MRAP_01_F", { "life_coplevel", "SCALAR", 5 } },
             { "I_MRAP_03_F", { "life_coplevel", "SCALAR", 5 } },
@@ -1088,7 +1087,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 			} },
 			{ "Hunter BrFOX", "civ", {
 	                "textures\Vip\brfox\HunterFront.jpg",
-					"textures\Vip\brfox\HunterFront.jpg"
+					"textures\Vip\brfox\HunterBack.jpg"
 			} },
 			{ "Police", "cop", {
                 "textures\Cop\Vehicles\Hunter1.jpg",
