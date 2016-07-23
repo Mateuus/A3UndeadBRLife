@@ -33,6 +33,7 @@
 #include "moves_menu.hpp"
 #include "infoMenu.hpp"
 #include "placeables.hpp"
+#include "medicplaceables.hpp"
 #include "craft.hpp"
 #include "oldmessages.hpp"
 #include "AH_buy.hpp"

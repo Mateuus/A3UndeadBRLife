@@ -392,6 +392,19 @@ class Life_Client_Core {
 		class storageBox {};
 		class gpsTracker {};
 	};
+	
+	
+	class MedicPlaceables
+	{
+		file = "core\medical\roadblock";
+		class medicplaceablesInit {};
+		class medicplaceablesMenu {};
+		class medicplaceablesRemoveAll {};
+		class medicplaceablePlace {};
+		class medicplaceableCancel {};
+		class medicplaceablesPlaceComplete {};
+		class medicfacinit {};
+	};
 
 	class Medical_System {
 		file = "core\medical";

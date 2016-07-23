@@ -327,15 +327,15 @@ class controlsBackground {
 		};
 		class Life_RscButtonInvisible_2410: Life_RscButtonInvisible{
 			idc = 2410;
-			onButtonClick = "[] spawn life_fnc_placeablesMenu;";
-			tooltip = "Place and create roadblocks";
+			onButtonClick = "if(side player isEqualTo west) then {[] spawn life_fnc_placeablesMenu;} else {if(side player isEqualTo independent) then {[] spawn life_fnc_medicplaceablesMenu;} else {hint ""Você não é policial ou medico""; }}";
+			tooltip = "Colocar Barricadas";
 			x = 0.525;
 			y = 0.4;
 			w = 0.0625;
 			h = 0.1;
 		};
 		class Life_RscButtonInvisible_2411: Life_RscButtonInvisible{idc = 2411;onButtonClick = "createDialog ""life_moves_menu"";";tooltip = "Make your character preform actions";x = 0.625;y = 0.4;w = 0.0625;h = 0.1;};
-		class Life_RscButtonInvisible_2412: Life_RscButtonInvisible{idc = 2412;onButtonClick ="[] spawn life_fnc_InfoMenu;";tooltip = "Open The Trailerpark information panel";x = 0.3375;y = 0.54;w = 0.0625;h = 0.1;};
+		class Life_RscButtonInvisible_2412: Life_RscButtonInvisible{idc = 2412;onButtonClick ="[] spawn life_fnc_InfoMenu;";tooltip = "Painel de Informações Undead Brasil";x = 0.3375;y = 0.54;w = 0.0625;h = 0.1;};
 		class Life_RscButtonInvisible_2413: Life_RscButtonInvisible{idc = 2413;onButtonClick = "[] spawn CHVD_fnc_openDialog;";tooltip = "Modify your view settings";x = 0.3375;y = 0.8;w = 0.0625;h = 0.1;};
 		class Life_RscButtonInvisible_2414: Life_RscButtonInvisible{idc = 2414;onButtonClick = "[] call SOCK_fnc_syncData;";tooltip = "Save your data to the server";x = 0.425;y = 0.8;w = 0.0625;h = 0.1;};
 		class Life_RscButtonInvisible_2415: Life_RscButtonInvisible{idc = 2415;onButtonClick = "createDialog ""life_money_menu"";";tooltip = "Check and exchange your money";x = 0.525;y = 0.8;w = 0.0625;h = 0.1;};

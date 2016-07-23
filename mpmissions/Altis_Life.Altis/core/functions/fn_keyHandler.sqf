@@ -411,7 +411,13 @@ if (life_barrier_active) then {
     {
         case 57: //space key
         {
-            [] spawn life_fnc_placeablesPlaceComplete;
+			if(playerSide isEqualTo west) then
+			{
+				[] spawn life_fnc_placeablesPlaceComplete;
+			}else{
+				[] spawn life_fnc_medicplaceablesPlaceComplete;
+			};
+            
         };
     };
     true;

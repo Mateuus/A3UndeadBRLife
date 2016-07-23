@@ -29,8 +29,7 @@ switch(playerSide) do {
 		ctrlShow[1202,false];//Gang Icon
 		ctrlShow[2401,false];//Gang Button
 		ctrlShow[12071,false];//Barrier Overlay
-		ctrlShow[1210,false];//Market Icon
-		ctrlShow[2405,false];//Market Button
+		ctrlShow[12101,false];//Market Overlay
 		ctrlShow[1213,false];//Skill Icon
 		ctrlShow[2406,false];//Skill Button
 		ctrlShow[1215,false];//Taxi Icon
@@ -56,8 +55,9 @@ switch(playerSide) do {
 	case independent: {
 		ctrlShow[1206,false];//Crafting Icon
 		ctrlShow[2404,false];//Crafting Button
-		ctrlShow[1207,false];//Barrier Icon
-		ctrlShow[2410,false];//Barrier Button
+		ctrlShow[1202,false];//Gang Icon
+		ctrlShow[2401,false];//Gang Button
+		ctrlShow[12071,false];//Barrier Overlay
 		ctrlShow[1210,false];//Market Icon
 		ctrlShow[2405,false];//Market Button
 		ctrlShow[1213,false];//Skill Icon
