@@ -159,7 +159,7 @@ class Clothing {
         };
         vests[] = {
             { "NONE", "Remove Vest", 0, { "", "", -1 } },
-            { "V_TacVest_blk_POLICE", "Colete Padrao", 1000, { "", "", 1 } },
+            { "V_TacVest_blk_POLICE", "Colete Padrao", 1000, { "life_coplevel", "SCALAR", 1 } },
             { "V_PlateCarrier1_blk", "Colete Oficial", 3500, { "life_coplevel", "SCALAR", 4 } },
             { "V_PlateCarrierGL_blk", "SWAT Vest", 6500, { "life_coplevel", "SCALAR", 9 } }
         };

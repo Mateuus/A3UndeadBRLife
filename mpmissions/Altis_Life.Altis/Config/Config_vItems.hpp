@@ -840,7 +840,7 @@ class VirtualItems {
 		variable = "turtleRaw";
 		displayName = "STR_Item_TurtleRaw";
 		weight = 16;
-		buyPrice = 11700;
+		buyPrice = 13200;
 		sellPrice = -1;
 		illegal = true;
 		edible = -1;
@@ -961,7 +961,7 @@ class VirtualItems {
     variable = "plank";
     displayName = "STR_Item_Plank";
     weight = 5;
-    buyPrice = 3570;
+    buyPrice = 2235;
     sellPrice = -1;
     illegal = false;
     edible = -1;
@@ -1038,7 +1038,7 @@ class VirtualItems {
 		variable = "diamante3";
 		displayName = "STR_Item_diamante3";
 		weight = 6;
-		buyPrice = 2800;
+		buyPrice = 3275;
 		sellPrice = -1;
 		illegal = true;
 		edible = -1;
