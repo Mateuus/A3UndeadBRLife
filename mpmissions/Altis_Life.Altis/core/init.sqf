@@ -190,6 +190,4 @@ if (_total > 0) then
 	[0,format[localize "STR_AH_LogInRec",[_total]call life_fnc_numberText]] remoteExecCall ["life_fnc_broadcast",player];
 	ADD(TTPBANK,_total);
 };
-DYNAMICMARKET_boughtItems = [];
-[player] remoteExec ["TON_fnc_playerLogged",RSERV];
 [1] call SOCK_fnc_updatePartial;
