@@ -1,7 +1,7 @@
 #include "infiSTAR_AdminMenu.hpp"
  
 // Disabled text and voice for global, side, and command channels. disableChannels[] = {{channelID<number>, disableChat<bool>, disableVoice<bool>}};
-#include "NoSide.hpp" //Vou chama essa função fora do description.ext por algum motivo ela buga...
+#include "NoSide.hpp" //Vou chama essa função fora do description.ext por algum motivo ela buga....
 
 #include "Config_Spyglass.hpp"
 #include "CfgRemoteExec.hpp"
