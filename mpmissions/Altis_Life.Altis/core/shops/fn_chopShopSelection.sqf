@@ -6,7 +6,7 @@
 	Displays the pricing for the currently selected vehicle.
 */
 disableSerialization;
-private["_control","_selection","_price","_priceTag"];
+private["_control","_selection","_price","_price2","_priceTag"];
 _control = [_this,0,controlNull,[controlNull]] call BIS_fnc_param;
 _selection = [_this,1,-1,[0]] call BIS_fnc_param;
 
@@ -14,6 +14,7 @@ _selection = [_this,1,-1,[0]] call BIS_fnc_param;
 if(isNull _control OR _selection isEqualTo -1) exitWith {};
 
 _price = _control lbValue _selection;
+_price2 = _price / 4;
 
 _priceTag = ((findDisplay 39400) displayCtrl 39401);
-_priceTag ctrlSetStructuredText parseText format ["<t size='0.8'>" +(localize "STR_GNOTF_Price")+ "<t color='#8cff9b'>$%1</t></t>",[(_price)] call life_fnc_numberText];	
+_priceTag ctrlSetStructuredText parseText format ["<t size='0.8'>" +(localize "STR_GNOTF_Price")+ "<t color='#8cff9b'>$%1</t></t>",[(_price2)] call life_fnc_numberText];	

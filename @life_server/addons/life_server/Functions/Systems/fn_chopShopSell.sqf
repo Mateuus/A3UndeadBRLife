@@ -15,7 +15,7 @@ _cash = [_this,3,0,[0]] call BIS_fnc_param;
 //Error checks
 if(isNull _vehicle OR isNull _unit) exitWith  {
 	life_action_inUse = false;
-	PVAR_ID("life_action_inUse",owner _unit);
+	 owner _unit publicVariableClient "life_action_inUse";
 };
 
 _displayName = FETCH_CONFIG2(getText,CONFIG_VEHICLES,typeOf _vehicle, "displayName");
@@ -33,7 +33,7 @@ if(count _dbInfo > 0) then {
 
 deleteVehicle _vehicle;
 life_action_inUse = false;
-PVAR_ID("life_action_inUse",_unit);
-CASH = _cash;
-PVAR_ID("life_cash",_unit);
-[2,format[(localize "STR_NOTF_ChopSoldCar"),_displayName,[_price] call life_fnc_numberText]] remoteExecCall ["life_fnc_broadcast",_unit];
+_unit publicVariableClient "life_action_inUse";
+//CASH = _cash;
+//_unit publicVariableClient "life_cash";
+[2,format[(localize "STR_NOTF_ChopSoldCar"),_displayName,[_cash] call life_fnc_numberText]] remoteExecCall ["life_fnc_broadcast",_unit];

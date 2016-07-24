@@ -38,7 +38,7 @@ if(_index isEqualTo 1) exitWith {
 <t color='#0099ff'>IP:</t>149.56.189.188<br/>
 <t color='#0099ff'>Porta:</t>2302<br/><br/>
 <t color='#0099ff'>Links diretos</t><br/>
-<a href='ts3server://ts3.undeadbrasil.com/?port=9987&nickname=UndeadBrasil'>Teamspeak 3: ts3.undeadbrasil.com</a><br/>
+Teamspeak 3: ts3.undeadbrasil.com<br/>
 <a href='http://www.undeadbrasil.com/forum/'>Forum: undeadbrasil.com/forum</a><br/><br/>
 Restart<br/>
 <t color='#0099ff'>0:00, 3:00, 6:00, 9:00, 12:00</t>

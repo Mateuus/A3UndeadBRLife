@@ -36,6 +36,8 @@ class CfgFunctions {
 			class bool{};
 			class mresString {};
 			class updatePartial {};
+			class cellPhoneRequest {};
+			class saveCellPhone {};
 		};
 	};
 
