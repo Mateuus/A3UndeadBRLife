@@ -41,3 +41,5 @@
 #include "wanted_civ.hpp"
 #include "ticketmedic.hpp"
 #include "slot_machine.hpp"
+#include "dynmarket_changeprice.hpp"
+#include "dynmarket_prices.hpp"
