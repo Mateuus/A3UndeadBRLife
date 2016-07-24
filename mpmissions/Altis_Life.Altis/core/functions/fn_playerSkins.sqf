@@ -45,28 +45,28 @@ switch(playerSide) do {
 		};
 		
 		////////////////////////VIP INICIO/////////////////////////////////////////////////
-		if ((uniform player == "U_C_Commoner1_3") && (FETCH_CONST(life_donorlevel) == 0)) then
+		if ((uniform player isEqualTo "U_C_Commoner1_3") && (FETCH_CONST(life_donorlevel) isEqualTo 0)) then
 		{
 			player setObjectTextureGlobal [0, "textures\Civ\clothing\roupaundead.jpg"];
 		};
 
-		if ((uniform player == "U_C_Commoner1_3") && (FETCH_CONST(life_donorlevel) == 1)) then
+		if ((uniform player isEqualTo "U_C_Commoner1_3") && (FETCH_CONST(life_donorlevel) isEqualTo 1)) then
 		{
 			player setObjectTextureGlobal [0, "textures\Vip\clothing\bronze.jpg"];
 		};
-		if ((uniform player == "U_C_Commoner1_3") && (FETCH_CONST(life_donorlevel) == 2)) then
+		if ((uniform player isEqualTo "U_C_Commoner1_3") && (FETCH_CONST(life_donorlevel) isEqualTo 2)) then
 		{
 			player setObjectTextureGlobal [0, "textures\Vip\clothing\silver.jpg"];
 		};
-		if ((uniform player == "U_C_Commoner1_3") && (FETCH_CONST(life_donorlevel) == 3)) then
+		if ((uniform player isEqualTo "U_C_Commoner1_3") && (FETCH_CONST(life_donorlevel) isEqualTo 3)) then
 		{
 			player setObjectTextureGlobal [0, "textures\Vip\clothing\gold.jpg"];
 		};
-		if ((uniform player == "U_C_Commoner1_3") && (FETCH_CONST(life_donorlevel) == 4)) then
+		if ((uniform player isEqualTo "U_C_Commoner1_3") && (FETCH_CONST(life_donorlevel) isEqualTo 4)) then
 		{
 			player setObjectTextureGlobal [0, "textures\Vip\clothing\platinum.jpg"];
 		};
-		if ((uniform player == "U_C_Commoner1_3") && (FETCH_CONST(life_donorlevel) == 5)) then
+		if ((uniform player isEqualTo "U_C_Commoner1_3") && (FETCH_CONST(life_donorlevel) isEqualTo 5)) then
 		{
 			player setObjectTextureGlobal [0, "textures\Vip\clothing\diamante.jpg"];
 		};
@@ -102,17 +102,17 @@ switch(playerSide) do {
 		
 		/////////////////////////VIP END///////////////////////////////////////////////////
 		//KINGS
-		if (backpack player isEqualTo "B_Carryall_oli" && (FETCH_CONST(life_gangdonorid) == 1)) then 
+		if (backpack player isEqualTo "B_Carryall_oli" && (FETCH_CONST(life_gangdonorid) isEqualTo 1)) then 
 		{
 			backpackContainer player setObjectTextureGlobal [0, "textures\Vip\kings\mochilakings.jpg"];
 		};
 		//EXE
-		if (backpack player isEqualTo "B_Carryall_oli" && (FETCH_CONST(life_gangdonorid) == 2)) then 
+		if (backpack player isEqualTo "B_Carryall_oli" && (FETCH_CONST(life_gangdonorid) isEqualTo 2)) then 
 		{
 			backpackContainer player setObjectTextureGlobal [0, "textures\Vip\exe\mochilaexe.jpg"];
 		};
 		//BRFOX
-		if (backpack player isEqualTo "B_Carryall_oli" && (FETCH_CONST(life_gangdonorid) == 4)) then 
+		if (backpack player isEqualTo "B_Carryall_oli" && (FETCH_CONST(life_gangdonorid) isEqualTo 4)) then 
 		{
 			backpackContainer player setObjectTextureGlobal [0, "textures\Vip\brfox\CarryAll.jpg"];
 		};
@@ -138,44 +138,39 @@ switch(playerSide) do {
 
 	case west: {
 	
-	if ((uniform player == "U_Rangemaster") && (FETCH_CONST(life_coplevel) == 0)) then
-		{
-			player setObjectTextureGlobal [0, "textures\cop\clothing\copuniform.jpg"];
-		};
-
-		if ((uniform player == "U_Rangemaster") && (FETCH_CONST(life_coplevel) == 1)) then
+		if ((uniform player isEqualTo "U_Rangemaster") && (FETCH_CONST(life_coplevel) isEqualTo 1)) then
 		{
 			player setObjectTextureGlobal [0, "textures\cop\clothing\recruta.jpg"];
 		};
-		if ((uniform player == "U_Rangemaster") && (FETCH_CONST(life_coplevel) == 2)) then
+		if ((uniform player isEqualTo "U_Rangemaster") && (FETCH_CONST(life_coplevel) isEqualTo 2)) then
 		{
 			player setObjectTextureGlobal [0, "textures\cop\clothing\soldado.jpg"];
 		};
-		if ((uniform player == "U_Rangemaster") && (FETCH_CONST(life_coplevel) == 3)) then
+		if ((uniform player isEqualTo "U_Rangemaster") && (FETCH_CONST(life_coplevel) isEqualTo 3)) then
 		{
 			player setObjectTextureGlobal [0, "textures\cop\clothing\cabo.jpg"];
 		};
-		if ((uniform player == "U_Rangemaster") && (FETCH_CONST(life_coplevel) == 4)) then
+		if ((uniform player isEqualTo "U_Rangemaster") && (FETCH_CONST(life_coplevel) isEqualTo 4)) then
 		{
 			player setObjectTextureGlobal [0, "textures\cop\clothing\sargento.jpg"];
 		};
-		if ((uniform player == "U_B_SpecopsUniform_sgg") && (FETCH_CONST(life_coplevel) == 5)) then
+		if ((uniform player isEqualTo "U_B_SpecopsUniform_sgg") && (FETCH_CONST(life_coplevel) isEqualTo 5)) then
 		{
 			player setObjectTextureGlobal [0, "textures\cop\clothing\tenente.jpg"];
 		};
-		if ((uniform player == "U_B_SpecopsUniform_sgg") && (FETCH_CONST(life_coplevel) == 6)) then
+		if ((uniform player isEqualTo "U_B_SpecopsUniform_sgg") && (FETCH_CONST(life_coplevel) isEqualTo 6)) then
 		{
 			player setObjectTextureGlobal [0, "textures\cop\clothing\capitao.jpg"];
 		};
-		if ((uniform player == "U_B_SpecopsUniform_sgg") && (FETCH_CONST(life_coplevel) == 7)) then
+		if ((uniform player isEqualTo "U_B_SpecopsUniform_sgg") && (FETCH_CONST(life_coplevel) isEqualTo 7)) then
 		{
 			player setObjectTextureGlobal [0, "textures\cop\clothing\major.jpg"];
 		};
-		if ((uniform player == "U_B_SpecopsUniform_sgg") && (FETCH_CONST(life_coplevel) == 8)) then
+		if ((uniform player isEqualTo "U_B_SpecopsUniform_sgg") && (FETCH_CONST(life_coplevel) isEqualTo 8)) then
 		{
 			player setObjectTextureGlobal [0, "textures\cop\clothing\tencoronel.jpg"];
 		};
-		if ((uniform player == "U_B_SpecopsUniform_sgg") && (FETCH_CONST(life_coplevel) == 9)) then
+		if ((uniform player isEqualTo "U_B_SpecopsUniform_sgg") && (FETCH_CONST(life_coplevel) isEqualTo 9)) then
 		{
 			player setObjectTextureGlobal [0, "textures\cop\clothing\coronel.jpg"];
 		};

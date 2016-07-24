@@ -87,7 +87,7 @@ class controlsBackground {
 		colorBackground[] = {0, 0, 0, 0};
 	};
 	class Life_RscPicture_1207: Life_RscPicture{
-		idc = 1207
+		idc = 1207;
 		text = "icons\Barriers.paa";
 		x = -0.0625;
 		y = -0.3;
