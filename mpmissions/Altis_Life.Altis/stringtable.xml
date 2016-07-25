@@ -6809,6 +6809,10 @@
 			<Portuguese>Licença de Motorista</Portuguese>
 			<Polish>Prawo jazdy</Polish>
 		</Key>
+		<Key ID="STR_License_Vigilante">
+			<Original>Vigilant License</Original>
+			<Portuguese>Licença de Vigilante</Portuguese>
+		</Key>
 		<Key ID="STR_License_Pilot">
 			<Original>Pilot License</Original>
 			<Czech>pilotní licence</Czech>
@@ -10050,6 +10054,17 @@
 			<Russian></Russian>
 			<German>Verkäufer für Heli's</German>
 			<Portuguese>Loja de Helicópteros</Portuguese>
+			<Polish>Sklep lotniczy</Polish>
+		</Key>
+		<Key ID="STR_MAR_Helicopter_VIP_Shop">
+			<Original>Loja de Helicópteros VIP</Original>
+			<Czech>vrtulník Shop</Czech>
+			<French>Magasin Aerien</French>
+			<Spanish>Tienda de Helicópteros</Spanish>
+			<Italian>Elicottero negozio</Italian>
+			<Russian></Russian>
+			<German>Verkäufer für Heli's</German>
+			<Portuguese>Loja de Helicópteros VIP</Portuguese>
 			<Polish>Sklep lotniczy</Polish>
 		</Key>
 		<Key ID="STR_MAR_Station_Shop">

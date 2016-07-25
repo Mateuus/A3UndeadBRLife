@@ -15,6 +15,14 @@ class Licenses {
         illegal = false;
         side = "civ";
     };
+	
+	class vigilante {
+        variable = "vigilante";
+        displayName = "STR_License_Vigilante";
+        price = 5000;
+        illegal = false;
+        side = "civ";
+    };
 
     class boat {
         variable = "boat";
