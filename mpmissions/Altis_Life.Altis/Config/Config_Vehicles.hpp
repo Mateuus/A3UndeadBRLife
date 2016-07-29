@@ -350,7 +350,7 @@ class CarShops {
             { "I_Heli_Transport_02_F", { "", "", -1 } }
         };
     };
-
+	
      class civ_ship {
         side = "civ";
         vehicles[] = {
@@ -410,6 +410,7 @@ class CarShops {
         side = "cop";
         vehicles[] = {
             { "B_Heli_Light_01_F", { "life_coplevel", "SCALAR", 2 } },
+			{ "B_T_VT0L_01_vehicle_blue_F", { "life_coplevel", "SCALAR", 7 } },
             { "I_Heli_light_03_unarmed_F", { "life_coplevel", "SCALAR", 3 } },
             { "B_Heli_Transport_01_F", { "life_coplevel", "SCALAR", 4 } }
         };
@@ -1113,6 +1114,14 @@ will modify the virtual space and the price of the vehicle, but other informatio
        licenses[] = { {""}, {"mAir"}, {""}, {""} };
        price = 1575000;
 	   assurPrice = 598500;
+       textures[] = {	   };
+   };
+   
+   class B_T_V_VTOL_01_vehicle_blue_F {
+       vItemSpace = 455;
+       licenses[] = { {""}, {"mAir"}, {""}, {""} };
+       price = 5575000;
+	   assurPrice = 1998500;
        textures[] = {	   };
    };
    
