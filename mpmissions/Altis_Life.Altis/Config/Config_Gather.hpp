@@ -42,7 +42,7 @@ class CfgGather
 
 		class rubberU
 		{
-			amount = 2;
+			amount = 1;
 			zones[] = { "rubber_1" };
 			item = "";
 		};
@@ -56,7 +56,7 @@ class CfgGather
 
 		class sulfur
 		{
-			amount = 2;
+			amount = 1;
 			zones[] = { "sulfur_1" };
 			item = "";
 		};

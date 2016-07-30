@@ -45,7 +45,7 @@ class WeaponShops {
             { "optic_ACO_grn_smg", "", 2500 }
         };
     };
-
+	
 	class bronze {    
         name = "Bronze Armas Shop";
 		side = "civ";
@@ -1162,6 +1162,66 @@ class WeaponShops {
         side = "cop";
         license = "";
         level[] = { "life_coplevel", "SCALAR", 6, "Voce precisa ser Capitão para acessar essa loja!" };
+        items[] = {
+			{ "arifle_TRG20_F", "TRG-20 5.56 mm", 10000, 750 },
+			{ "LMG_Mk200_F", "Mk200 6.5 mm", 40000, 750 },
+			{ "arifle_MXC_F", "MXC 6.5 mm", 16000, 750 },
+			{ "LMG_03_F", "LIM-85 5.56 mm", 45000, 750 },
+			{ "srifle_DMR_07_blk_F", "CMR-76 6.5 mm", 45000, 750 },
+			{ "arifle_SPAR_01_blK_F", "Spar-17 5,56 mm", 45000, 750 },
+			{ "arifle_SPAR_02_blK_F", "Spar-17 5,56 mm", 45000, 750 },
+			{ "arifle_SPAR_03_blk_F", "Spar-17 7,62 mm", 45000, 750 },
+			{ "arifle_MXM_Black_F", "MXM Black 6.5 mm", 16000, 750 },
+			{ "arifle_MX_SW_Black_F", "MX SW Black 6.5 mm", 40000, 750 },
+			{ "srifle_EBR_F", "Mk18 ABR 7.62 mm", 45000, 750 },
+			{ "arifle_MX_Black_F", "MX 6.5 mm", 16000, 750 },
+			{ "arifle_Mk20_F", "Mk20 5.56 mm", 10000, 750 },
+			{ "arifle_Mk20C_F", "Mk20C 5.56 mm", 10000, 750 },
+            { "SMG_02_F", "Sting 9 mm", 8000, 750 },
+			{ "hgun_PDW2000_F", "PDW", 8000, 750 },
+            { "hgun_P07_snds_F", "Pistola Tazer", 1500, 60 },
+            { "hgun_P07_F", "P07 9mm", 3750, 150 },
+            { "FirstAidKit", "Bolsa de Sangue", 50, 5 },
+			{ "ItemGPS", "", 100, 45 },
+			{ "ItemMap", "Mapa", 50, 35 },
+            { "Rangefinder", "Rangefinder", 12200, 90 }
+        };
+        mags[] = {
+            { "16Rnd_9x21_Mag", "Munição 16rnd 9mm", 25 },
+			{ "30Rnd_9x21_MAG_SMG_02_Tracer_Green", "", 725 },
+			{ "150Rnd_556x45_Drum_Mag_F", "Munição 150rnd 5.58mm", 25 },
+			{ "200Rnd_556x45_Box_Red_F", "Munição 200rnd 5.58mm", 25 },
+			{ "30Rnd_580x42_Mag_Tracer_F", "Munição 30rnd 5.58mm", 25 },
+			{ "100Rnd_580x42_Mag_Tracer_F", "Munição 100rnd 5.58mm", 25 },
+			{ "30Rnd_9x21_Mag", "Munição 30rnd 9mm", 25 },
+			{ "30Rnd_556x45_Stanag_Tracer_Green", "Munição 30rnd 5.56mm", 25 },
+			{ "200Rnd_65x39_cased_Box_Tracer", "Munição 200rnd 6.5mm", 25 },
+			{ "100Rnd_65x39_caseless_mag_Tracer", "Munição 100rnd 6.5mm", 25 },
+			{ "20Rnd_762x51_Mag", "Munição 20rnd 7.62mm", 25 },
+            { "30Rnd_65x39_caseless_mag_Tracer", "Munição 30rnd 6.5mm", 10 }
+        };
+        accs[] = {
+            { "acc_flashlight", "Lanterna", 750 },
+            { "optic_Holosight", "Holosight", 120 },
+            { "optic_Arco", "Arco", 250 },
+            { "acc_pointer_IR", "Laser", 275 },
+			{ "optic_MRCO", "Mrco", 275 },
+			{ "optic_DMS", "DMS", 275 },
+			{ "optic_Hamr", "Hamr", 275 },
+			{ "muzzle_snds_Lt", "Silenciador 9mm", 750 },
+			{ "muzzle_snds_M", "Silenciador 5.56mm", 750 },
+			{ "muzzle_snds_H_snd_f", "Silenciador 6.5mm", 750 },
+			{ "muzzle_snds_58_wdm_F", "Silenciador 5.8mm", 750 },
+			{ "muzzle_snds_H_MG_blk_F", "Silenciador 6.5mm", 750 },
+			{ "muzzle_snds_H", "Silenciador 6.5mm", 750 }
+        };
+    };
+	
+	class cop_doador {
+        name = "Altis Doador Shop";
+        side = "cop";
+        license = "";
+        level[] = { "life_donorlevel", "SCALAR", 1, "Voce precisa ser um Doador para acessar essa loja!" };
         items[] = {
 			{ "arifle_TRG20_F", "TRG-20 5.56 mm", 10000, 750 },
 			{ "LMG_Mk200_F", "Mk200 6.5 mm", 40000, 750 },

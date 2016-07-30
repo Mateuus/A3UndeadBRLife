@@ -15,6 +15,14 @@ class Licenses {
         illegal = false;
         side = "civ";
     };
+	
+	class vigilante {
+        variable = "vigilante";
+        displayName = "STR_License_Vigilante";
+        price = 155000;
+        illegal = false;
+        side = "civ";
+    };
 
     class boat {
         variable = "boat";
@@ -100,7 +108,7 @@ class Licenses {
     class sand {
         variable = "sand";
         displayName = "STR_License_Sand";
-        price = 35000;
+        price = 75000;
         illegal = false;
         side = "civ";
     };
@@ -214,7 +222,7 @@ class Licenses {
         variable = "gunpowder";
         displayName = "STR_License_gunpowder";
         price = 38000;
-        illegal = true;
+        illegal = false;
         side = "civ";
     };
 

@@ -67,7 +67,7 @@ class ProcessAction {
 
 	class sand {
 
-        	MaterialsReq[] = {{"sand",1}};
+        	MaterialsReq[] = {{"sand",3}};
 		MaterialsGive[] = {{"glass",1}};
         	Text = "STR_Process_Sand";
         	//ScrollText = "Melt Sand into Glass";
@@ -112,7 +112,7 @@ class ProcessAction {
 
 	class woodP {
 
-        	MaterialsReq[] = {{"wood",1}};
+        	MaterialsReq[] = {{"wood",2}};
 					MaterialsGive[] = {{"plank",1}};
         	Text = "STR_Process_plank";
         	//ScrollText = "Mix Cement";
@@ -132,7 +132,7 @@ class ProcessAction {
 
 	class gunpowder {
 
-					MaterialsReq[] = {{"sulfur",1}};
+					MaterialsReq[] = {{"sulfur",2}};
 		MaterialsGive[] = {{"gunpowder",1}};
 					Text = "STR_Process_gunpowder";
 					//ScrollText = "Mix Cement";

@@ -131,12 +131,15 @@ class Clothing {
         uniforms[] = {
             { "NONE", "Remove Uniform", 0, { "", "", -1 } },
             { "U_Rangemaster", "Uniforme Padrão", 25, { "", "", -1 } },
-            { "U_B_SpecopsUniform_sgg", "Uniforme de Official", 25, { "life_coplevel", "SCALAR", 5 } }
+            { "U_B_SpecopsUniform_sgg", "Uniforme de Official", 25, { "life_coplevel", "SCALAR", 5 } },
+			{ "U_Marshal", "Uniforme de Doador", 25, { "life_donorlevel", "SCALAR", 1 } }
         };
         headgear[] = {
             { "NONE", "Remove Hat", 0, { "", "", -1 } },
             { "H_Beret_blk_POLICE", "Boina Padrao", 50, { "life_coplevel", "SCALAR", -1 } },
 			{ "H_Beret_02", "Boina de Oficial", 150, { "life_coplevel", "SCALAR", 5 } },
+			{ "H_Watchcap_khk", "Boina de Doador", 150, { "life_donorlevel", "SCALAR", 1 } },
+			{ "H_CrewHelmetHeli_B", "Boina de Doador", 150, { "life_donorlevel", "SCALAR", 1 } },
             { "H_Beret_Colonel", "Boina de Ten.Coronel", 150, { "life_coplevel", "SCALAR", 8 } },
 			{ "H_Beret_Colonel", "Boina de Coronel", 200, { "life_coplevel", "SCALAR", 9 } }
         };
@@ -161,12 +164,11 @@ class Clothing {
             { "NONE", "Remove Vest", 0, { "", "", -1 } },
             { "V_TacVest_blk_POLICE", "Colete Padrao", 1000, { "life_coplevel", "SCALAR", 1 } },
             { "V_PlateCarrier1_blk", "Colete Oficial", 3500, { "life_coplevel", "SCALAR", 4 } },
-            { "V_PlateCarrierGL_blk", "SWAT Vest", 6500, { "life_coplevel", "SCALAR", 9 } }
+            { "V_PlateCarrierH_CTRG", "Doador Vest", 6500, { "life_donorlevel", "SCALAR", 1 } }
         };
         backpacks[] = {
             { "NONE", "Remove Backpack", 0, { "", "", -1 } },
-            { "B_Carryall_cbr", "", 3500, { "", "", -1 } },
-		    { "B_UAV_01_backpack_F", "", 6500, { "life_coplevel", "SCALAR", 9 } }
+            { "B_Carryall_cbr", "", 3500, { "", "", -1 } }
         };
     };
 

@@ -114,4 +114,3 @@ if(life_inv_knife > 0) then
 _Btn7 ctrlSetText localize "STR_pAct_RobPerson";
 _Btn7 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_robAction; closeDialog 0;";
 */
-
