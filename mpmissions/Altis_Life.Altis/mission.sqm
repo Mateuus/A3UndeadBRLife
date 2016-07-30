@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5172.0825,59.149639,10707.418};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={23479.402,22.513466,19845.639};
+		dir[]={0.78496313,-0.16456659,0.59728873};
+		up[]={0.13096604,0.98636633,0.09965349};
+		aside[]={0.60554492,3.5506673e-009,-0.79581428};
 	};
 };
 binarizationWanted=0;
@@ -305,24 +305,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -337,6 +319,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -395,7 +395,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1993;
+		items=1992;
 		class Item0
 		{
 			dataType="Marker";
@@ -12331,6 +12331,7 @@ class Mission
 			};
 			id=758;
 			type="Land_CashDesk_F";
+			atlOffset=0.19405365;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -25554,6 +25555,7 @@ class Mission
 					};
 					id=1089;
 					type="C_Nikos_aged";
+					atlOffset=0.20879364;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -72081,84 +72083,6 @@ class Mission
 		};
 		class Item1984
 		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={3691.022,11.704556,13147.185};
-				angles[]={0,1.6001527,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""vigilante"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""vigilante"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""vigilante"",0,false,false,"""",' !license_civ_vigilante && playerSide == civilian '];";
-			};
-			id=11609;
-			type="Land_InfoStand_V2_F";
-			atlOffset=0.75259399;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="enableStamina";
-					expression="_this enablestamina _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=3;
-			};
-		};
-		class Item1985
-		{
 			dataType="Group";
 			side="Civilian";
 			class Entities
@@ -72755,7 +72679,7 @@ class Mission
 			id=11610;
 			atlOffset=3.1349564;
 		};
-		class Item1986
+		class Item1985
 		{
 			dataType="Marker";
 			position[]={12839.974,60.161499,16684.598};
@@ -72771,7 +72695,7 @@ class Mission
 			id=11618;
 			atlOffset=-30.869003;
 		};
-		class Item1987
+		class Item1986
 		{
 			dataType="Marker";
 			position[]={12828.382,26.784927,16712.113};
@@ -72782,7 +72706,7 @@ class Mission
 			id=11619;
 			atlOffset=-59.943565;
 		};
-		class Item1988
+		class Item1987
 		{
 			dataType="Marker";
 			position[]={12820.964,2.1952051e+023,16731.4};
@@ -72792,7 +72716,7 @@ class Mission
 			id=11620;
 			atlOffset=2.1952051e+023;
 		};
-		class Item1989
+		class Item1988
 		{
 			dataType="Object";
 			class PositionInfo
@@ -72833,7 +72757,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item1990
+		class Item1989
 		{
 			dataType="Marker";
 			position[]={12860.375,26.784912,16711.457};
@@ -72843,17 +72767,17 @@ class Mission
 			id=11627;
 			atlOffset=-59.689194;
 		};
-		class Item1991
+		class Item1990
 		{
 			dataType="Marker";
 			position[]={12879.605,26.784912,16738.104};
 			name="civ_vip_air_gang_5";
 			type="Empty";
-			angle=227.27611;
+			angle=227.27609;
 			id=11629;
 			atlOffset=-57.755638;
 		};
-		class Item1992
+		class Item1991
 		{
 			dataType="Group";
 			side="Civilian";
