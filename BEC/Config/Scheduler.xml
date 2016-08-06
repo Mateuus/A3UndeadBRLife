@@ -180,7 +180,7 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>1</loop> 
-		<cmd>say -1 Atenção restart automático a cada 4 horas, 08:00hrs, 12:00hrs, 16:00hrs, 20:00hrs, 00:00hrs, 04:00hrs</cmd>	
+		<cmd>say -1 Atenção restart automático a cada 6 horas, 08:00hrs, 14:00hrs, 20:00hrs, 02:00hrs</cmd>	
 		<cmdtype>0</cmdtype>
 	</job>
 		
