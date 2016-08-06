@@ -243,10 +243,10 @@ class CarShops {
             { "B_Heli_Light_01_F", { "", "", -1 } },
             { "O_Heli_Light_02_unarmed_F", { "life_donorlevel", "SCALAR", 3 } },
             { "B_Heli_Transport_03_unarmed_F", { "life_donorlevel", "SCALAR", 3 } },
-			{ "I_Heli_light_03_unarmed_F", { "life_donorlevel", "SCALAR", 3 } },
-			{ "B_Heli_Light_01_stripped_F", { "life_donorlevel", "SCALAR", 3 } },
-			{ "O_Heli_Transport_04_black_F", { "life_donorlevel", "SCALAR", 3 } },
-            { "I_Heli_Transport_02_F", { "life_donorlevel", "SCALAR", 3 } }
+			{ "I_Heli_light_03_unarmed_F", 1250000, { "life_donorlevel", "SCALAR", 3 } },
+			{ "B_Heli_Light_01_stripped_F", 2250000, { "life_donorlevel", "SCALAR", 3 } },
+			{ "O_Heli_Transport_04_black_F", 3250000, { "life_donorlevel", "SCALAR", 3 } },
+            { "I_Heli_Transport_02_F", 1350000, { "life_donorlevel", "SCALAR", 3 } }
         };
     };
 
@@ -272,8 +272,13 @@ class CarShops {
 			{ "B_Heli_Light_01_stripped_F", { "life_donorlevel", "SCALAR", 5 } },
 			{ "O_Heli_Transport_04_black_F", { "life_donorlevel", "SCALAR", 5 } },
 			{ "I_Heli_light_03_unarmed_F", { "life_donorlevel", "SCALAR", 5 } },
-            { "I_Heli_Transport_02_F", { "life_donorlevel", "SCALAR", 5 } }
-        };
+            { "I_Heli_Transport_02_F", { "life_donorlevel", "SCALAR", 5 } },
+			{ "B_T_VTOL_01_infantry_F", { "life_donorlevel", "SCALAR", 5 } },
+			{ "B_T_VTOL_01_infantry_blue_F", { "life_donorlevel", "SCALAR", 5 } },
+			{ "B_T_VTOL_01_infantry_olive_F", { "life_donorlevel", "SCALAR", 5 } },
+			{ "B_T_VTOL_01_vehicle_blue_F", { "life_donorlevel", "SCALAR", 5 } },
+			{ "B_T_VTOL_01_vehicle_olive_F", { "life_donorlevel", "SCALAR", 5 } }
+		};
     };
 	
 	class civ_air_gangue_doador_1 {
@@ -346,7 +351,8 @@ class CarShops {
             { "B_Heli_Light_01_F", { "", "", -1 } },
             { "O_Heli_Light_02_unarmed_F", { "", "", -1 } },
 			{ "I_Heli_light_03_unarmed_F", { "", "", -1 } },
-			{ "C_Plane_Civil_01_racing_F", { "", "", -1 } },
+			{ "O_Heli_Transport_04_covered_black_F", { "", "", -1 } },
+			{ "O_Heli_Transport_04_box_black_F", { "", "", -1 } },
             { "I_Heli_Transport_02_F", { "", "", -1 } }
         };
     };
@@ -357,6 +363,7 @@ class CarShops {
             { "C_Rubberboat", { "", "", -1 } },
             { "C_Boat_Civil_01_F", { "", "", -1 } },
 			{ "C_Scooter_Transport_01_F", { "", "", -1 } },
+			{ "C_Boat_Transport_02_F", { "", "", -1 } },
             { "B_SDV_01_F", { "", "", -1 } }
         };
     };
@@ -491,7 +498,7 @@ class LifeCfgVehicles {
         textures[] = {};
     };
 	
-    class O_Truck_03_ammo_F {
+	class O_Truck_03_ammo_F {
         vItemSpace = 695;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
         price = 779000;
@@ -591,6 +598,14 @@ class LifeCfgVehicles {
         price = 10000;
 		assurPrice = 3000;
         textures[] = { };
+    };
+	
+	class C_Boat_Transport_02_F {
+        vItemSpace = 50;
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 20000;
+		assurPrice = 4500;
+        textures[] = {};
     };
 
     class O_Truck_03_transport_F {
@@ -1114,18 +1129,58 @@ will modify the virtual space and the price of the vehicle, but other informatio
        licenses[] = { {""}, {"mAir"}, {""}, {""} };
        price = 1575000;
 	   assurPrice = 598500;
-       textures[] = {	   };
+       textures[] = {};
    };
    
-   class B_T_V_VTOL_01_vehicle_blue_F {
+    class B_T_V_VTOL_01_vehicle_blue_F {
        vItemSpace = 455;
        licenses[] = { {""}, {"mAir"}, {""}, {""} };
        price = 5575000;
 	   assurPrice = 1998500;
-       textures[] = {	   };
+       textures[] = {};
    };
    
-       class C_Plane_Civil_01_racing_F {
+    class B_T_VTOL_01_infantry_F {
+       vItemSpace = 455;
+       licenses[] = { {""}, {"mAir"}, {""}, {""} };
+       price = 6575000;
+	   assurPrice = 2998500;
+       textures[] = {};
+   };
+   
+    class B_T_VTOL_01_infantry_blue_F {
+       vItemSpace = 455;
+       licenses[] = { {""}, {"mAir"}, {""}, {""} };
+       price = 7575000;
+	   assurPrice = 3998500;
+       textures[] = {};
+   };
+   
+    class B_T_VTOL_01_infantry_olive_F {
+       vItemSpace = 455;
+       licenses[] = { {""}, {"mAir"}, {""}, {""} };
+       price = 6575000;
+	   assurPrice = 2998500;
+       textures[] = {};
+   };
+   
+    class B_T_VTOL_01_vehicle_blue_F {
+       vItemSpace = 455;
+       licenses[] = { {""}, {"mAir"}, {""}, {""} };
+       price = 6575000;
+	   assurPrice = 2998500;
+       textures[] = {};
+   };
+   
+    class B_T_VTOL_01_vehicle_olive_F {
+       vItemSpace = 455;
+       licenses[] = { {""}, {"mAir"}, {""}, {""} };
+       price = 5575000;
+	   assurPrice = 1998500;
+       textures[] = {};
+   };
+   
+    class C_Plane_Civil_01_racing_F {
        vItemSpace = 300;
        licenses[] = { {""}, {""}, {""}, {""} };
        price = 575000;
@@ -1133,7 +1188,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
        textures[] = {};
    };
    
-   class B_Heli_Transport_03_unarmed_F {
+    class B_Heli_Transport_03_unarmed_F {
        vItemSpace = 565;
        licenses[] = { {""}, {""}, {""}, {""} };
        price = 2135000;
@@ -1149,7 +1204,23 @@ will modify the virtual space and the price of the vehicle, but other informatio
        textures[] = {};
    };
    
-   class O_Truck_02_covered_F {
+    class O_Heli_Transport_04_covered_black_F {
+       vItemSpace = 80;
+       licenses[] = { {""}, {""}, {""}, {""} };
+       price = 4935000;
+	   assurPrice = 1655300;
+       textures[] = {};
+   };
+   
+    class O_Heli_Transport_04_box_black_F {
+       vItemSpace = 120;
+       licenses[] = { {""}, {""}, {""}, {""} };
+       price = 6935000;
+	   assurPrice = 2055300;
+       textures[] = {};
+   };
+   
+    class O_Truck_02_covered_F {
        vItemSpace = 275;
        licenses[] = { {""}, {""}, {""}, {""} };
        price = 135000;
@@ -1157,7 +1228,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
        textures[] = {};
    };
    
-   class O_Truck_02_transport_F {
+    class O_Truck_02_transport_F {
        vItemSpace = 255;
        licenses[] = { {""}, {""}, {""}, {""} };
        price = 115000;
@@ -1165,7 +1236,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
        textures[] = {};
    };
    
-   class B_T_LSV_01_unarmed_black_F {
+    class B_T_LSV_01_unarmed_black_F {
        vItemSpace = 55;
        licenses[] = { {""}, {""}, {""}, {""} };
        price = 25000;

@@ -23,6 +23,7 @@ class WeaponShops {
         level[] = { "", "", -1, "" };
         items[] = {
             { "FirstAidKit", "Bolsa de Sangue", 250, 65 },
+			{ "Rangefinder", "Rangefinder", 25200, 90 },
             { "hgun_Rook40_F", "Rook 9mm", 15000, -1 },
 			{ "hgun_Pistol_01_F", "PM 9mm", 20000, -1 },
             { "hgun_Pistol_heavy_02_F", "Zubr .45ACP", 25000, -1 },
@@ -42,7 +43,9 @@ class WeaponShops {
             { "11Rnd_45ACP_Mag", "", 120 }
         };
         accs[] = {
-            { "optic_ACO_grn_smg", "", 2500 }
+            { "optic_ACO_grn_smg", "", 2500 },
+			{ "optic_ERCO_blk_F", "", 5500 },
+			{ "optic_ERCO_snd_F", "", 5500 }
         };
     };
 	
@@ -53,6 +56,7 @@ class WeaponShops {
         level[] = { "life_donorlevel", "SCALAR", 1, "Você precisa ser um nível doador Bronze para acessar a loja, acesse nosso forum ou teamspeak para obter informações." };
 		items[] = {
             { "FirstAidKit", "Bolsa de Sangue", 250, 65 },
+			{ "Rangefinder", "Rangefinder", 25200, 90 },
             { "hgun_Pistol_heavy_02_F", "ACP .45", 11880, -1 },
 			{ "hgun_Rook40_F", "Rook 9mm", 8100, -1 },
             { "hgun_ACPC2_F", "ACP .45", 3050, -1 },
@@ -76,7 +80,8 @@ class WeaponShops {
 			{ "arifle_AKM_F", "AKM 7.62m", 108000, -1 },
 			{ "arifle_AKS_F", "AKS 5.45m", 72000, -1 },
 			{ "SMG_02_F", "Sting 9mm", 21870, -1 },
-			{ "arifle_CTAR_hex_F", "CAR-95 5.8MM", 180000, -1 }
+			{ "arifle_CTAR_hex_F", "CAR-95 5.8MM", 180000, -1 },
+			{ "arifle_Katiba_C_ACO_pointer_snds_F", "Katiba 6.5mm", 86000, -1 }
         };
         mags[] = {
             { "6Rnd_45ACP_Cylinder", "Munição 9rnd .45", 725 },
@@ -96,7 +101,8 @@ class WeaponShops {
 			{ "30Rnd_762x39_Mag_Green_F", "Munição 30rnd 7.62mm", 3225 },
 			{ "200Rnd_556x45_Box_Red_F", "Munição 30rnd 7.62mm", 5225 },
 			{ "30Rnd_545x39_Mag_Green_F", "Munição 30rnd 7.62mm", 1225 },
-            { "30Rnd_65x39_caseless_mag_Tracer", "Munição 30rnd 6.5mm", 1020 }
+            { "30Rnd_65x39_caseless_mag_Tracer", "Munição 30rnd 6.5mm", 1020 },
+			{ "30Rnd_65x39_caseless_green", "Munição 30rnd 6.5mm", 1025 }
         };
         accs[] = {
             { "optic_ACO_grn", "Aco", 3000 },
@@ -110,7 +116,11 @@ class WeaponShops {
             { "acc_pointer_IR", "Laser", 1000 },
             { "acc_flashlight", "Lanterna", 8000 },
 			{ "muzzle_snds_Lt", "Silenciador 9mm", 4750 },
-			{ "muzzle_snds_M", "Silenciador 5.56mm", 6750 }
+			{ "muzzle_snds_M", "Silenciador 5.56mm", 6750 },
+			{ "muzzle_snds_H_snd_f", "Silenciador 6.5mm", 20050 },
+			{ "muzzle_snds_H_MG_blk_F", "Silenciador 6.5mm", 40050 },
+			{ "muzzle_snds_B_khk_F", "Silenciador 7.62mm", 30050 },
+			{ "muzzle_snds_H", "Silenciador 6.5mm", 20750 }
         };
     };
 	
@@ -121,6 +131,7 @@ class WeaponShops {
         level[] = { "life_donorlevel", "SCALAR", 2, "Você precisa ser um nível doador Silver para acessar a loja, acesse nosso forum ou teamspeak para obter informações." };
 		items[] = {
             { "FirstAidKit", "Bolsa de Sangue", 250, 65 },
+			{ "Rangefinder", "Rangefinder", 25200, 90 },
             { "hgun_Pistol_heavy_02_F", "ACP .45", 10560, -1 },
 			{ "hgun_Rook40_F", "Rook 9mm", 7200, -1 },
             { "arifle_TRG20_F", "TRG 5.56mm", 36000, -1 },
@@ -144,7 +155,8 @@ class WeaponShops {
 			{ "arifle_AKS_F", "AKS 5.45m", 64000, -1 },
 			{ "SMG_02_F", "Sting 9mm", 19440, -1 },
 			{ "srifle_DMR_07_hex_F", "CMR-76 5.8MM", 325000, -1 },
-			{ "arifle_CTAR_hex_F", "CAR-95 5.8MM", 160000, -1 }
+			{ "arifle_CTAR_hex_F", "CAR-95 5.8MM", 160000, -1 },
+			{ "arifle_Katiba_F", "Katiba 6.5mm", 76000, -1 }
         };
         mags[] = {
             { "6Rnd_45ACP_Cylinder", "Munição 9rnd .45", 725 },
@@ -157,7 +169,8 @@ class WeaponShops {
 			{ "100Rnd_65x39_caseless_mag_Tracer", "Munição 100rnd 6.5mm", 2550 },
             { "30Rnd_65x39_caseless_green", "Munição 30rnd 6.5mm", 1325 },
             { "30Rnd_556x45_Stanag_Tracer_Yellow", "Munição 30rnd 5.56mm", 1325 },
-            { "30Rnd_65x39_caseless_mag_Tracer", "Munição 30rnd 6.5mm", 1320 }
+            { "30Rnd_65x39_caseless_mag_Tracer", "Munição 30rnd 6.5mm", 1320 },
+			{ "30Rnd_65x39_caseless_green", "Munição 30rnd 6.5mm", 1325 }
         };
         accs[] = {
             { "optic_ACO_grn", "Aco", 3000 },
@@ -169,7 +182,11 @@ class WeaponShops {
             { "acc_pointer_IR", "Laser", 1000 },
             { "acc_flashlight", "Lanterna", 8000 },
 			{ "muzzle_snds_Lt", "Silenciador 9mm", 10750 },
-			{ "muzzle_snds_M", "Silenciador 5.56mm", 15750 }
+			{ "muzzle_snds_M", "Silenciador 5.56mm", 15750 },
+			{ "muzzle_snds_H_snd_f", "Silenciador 6.5mm", 20050 },
+			{ "muzzle_snds_H_MG_blk_F", "Silenciador 6.5mm", 40050 },
+			{ "muzzle_snds_B_khk_F", "Silenciador 7.62mm", 30050 },
+			{ "muzzle_snds_H", "Silenciador 6.5mm", 20750 }
         };
     };
 	
@@ -180,6 +197,7 @@ class WeaponShops {
         level[] = { "life_donorlevel", "SCALAR", 3, "Você precisa ser um nível doador Gold para acessar a loja, acesse nosso forum ou teamspeak para obter informações." };
 		items[] = {
             { "FirstAidKit", "Bolsa de Sangue", 250, 65 },
+			{ "Rangefinder", "Rangefinder", 39200, 90 },
             { "hgun_Pistol_heavy_02_F", "ACP .45", 9240, -1 },
 			{ "SMG_02_F", "Sting 9mm", 17010, -1 },
 			{ "hgun_Rook40_F", "Rook 9mm", 6300, -1 },
@@ -206,7 +224,8 @@ class WeaponShops {
 			{ "arifle_AKS_F", "AKS 5.45m", 56000, -1 },
 			{ "arifle_CTAR_hex_F", "CAR-95 5.8MM", 140000, -1 },
 			{ "srifle_DMR_07_hex_F", "CMR-76 5.8MM", 300000, -1 },
-			{ "LMG_03_F", "LIM-85 5.56mm", 252000, -1 }
+			{ "LMG_03_F", "LIM-85 5.56mm", 252000, -1 },
+			{ "arifle_Katiba_C_ACO_pointer_snds_F", "Katiba 6.5mm", 66000, -1 }
         };
         mags[] = {
             { "6Rnd_45ACP_Cylinder", "Munição 9rnd .45", 725 },
@@ -226,7 +245,8 @@ class WeaponShops {
 			{ "30Rnd_762x39_Mag_Green_F", "Munição 30rnd 7.62mm", 3225 },
 			{ "200Rnd_556x45_Box_Red_F", "Munição 30rnd 7.62mm", 5225 },
 			{ "30Rnd_545x39_Mag_Green_F", "Munição 30rnd 7.62mm", 1225 },
-            { "30Rnd_65x39_caseless_mag_Tracer", "Munição 30rnd 6.5mm", 1020 }
+            { "30Rnd_65x39_caseless_mag_Tracer", "Munição 30rnd 6.5mm", 1020 },
+			{ "30Rnd_65x39_caseless_green", "Munição 30rnd 6.5mm", 1025 }
         };
         accs[] = {
             { "optic_ACO_grn", "Aco", 3000 },
@@ -240,7 +260,11 @@ class WeaponShops {
             { "acc_pointer_IR", "Laser", 1000 },
             { "acc_flashlight", "Lanterna", 8000 },
 			{ "muzzle_snds_Lt", "Silenciador 9mm", 4750 },
-			{ "muzzle_snds_M", "Silenciador 5.56mm", 6750 }
+			{ "muzzle_snds_M", "Silenciador 5.56mm", 6750 },
+			{ "muzzle_snds_H_snd_f", "Silenciador 6.5mm", 15050 },
+			{ "muzzle_snds_H_MG_blk_F", "Silenciador 6.5mm", 30050 },
+			{ "muzzle_snds_B_khk_F", "Silenciador 7.62mm", 20050 },
+			{ "muzzle_snds_H", "Silenciador 6.5mm", 15750 }
         };
     };
     
@@ -251,6 +275,7 @@ class WeaponShops {
         level[] = { "life_donorlevel", "SCALAR", 4, "Você precisa ser um nível doador Platinum para acessar a loja, acesse nosso forum ou teamspeak para obter informações." };
 		items[] = {
             { "FirstAidKit", "Bolsa de Sangue", 250, 65 },
+			{ "Rangefinder", "Rangefinder", 35200, 90 },
             { "hgun_Pistol_heavy_02_F", "ACP .45", 7920, -1 },
 			{ "SMG_02_F", "Sting 9mm", 14580, -1 },
 			{ "hgun_Rook40_F", "Rook 9mm", 5400, -1 },
@@ -278,7 +303,8 @@ class WeaponShops {
 			{ "arifle_CTAR_hex_F", "CAR-95 5.8MM", 120000, -1 },
 			{ "srifle_DMR_07_hex_F", "CMR-76 5.8MM", 275000, -1 },
 			{ "LMG_03_F", "LIM-85 5.56mm", 231000, -1 },
-			{ "arifle_AK12_F", "AK-12 7.62mm", 275000, -1 }
+			{ "arifle_AK12_F", "AK-12 7.62mm", 275000, -1 },
+			{ "arifle_Katiba_C_F", "Katiba 6.5mm", 55000, 5000 }
         };
         mags[] = {
             { "6Rnd_45ACP_Cylinder", "Munição 9rnd .45", 725 },
@@ -298,7 +324,8 @@ class WeaponShops {
 			{ "30Rnd_762x39_Mag_Green_F", "Munição 30rnd 7.62mm", 3225 },
 			{ "200Rnd_556x45_Box_Red_F", "Munição 30rnd 7.62mm", 5225 },
 			{ "30Rnd_545x39_Mag_Green_F", "Munição 30rnd 7.62mm", 1225 },
-            { "30Rnd_65x39_caseless_mag_Tracer", "Munição 30rnd 6.5mm", 1020 }
+            { "30Rnd_65x39_caseless_mag_Tracer", "Munição 30rnd 6.5mm", 1020 },
+			{ "30Rnd_65x39_caseless_green", "Munição 30rnd 6.5mm", 1025 }
         };
         accs[] = {
             { "optic_ACO_grn", "Aco", 3000 },
@@ -309,10 +336,15 @@ class WeaponShops {
             { "optic_Arco", "Arco", 8500 },
 			{ "optic_DMS", "DMS", 28500 },
 			{ "optic_SOS", "SOS", 58500 },
+			{ "optic_LRPS_tna_F", "LRPS", 98500 },
             { "acc_pointer_IR", "Laser", 1000 },
             { "acc_flashlight", "Lanterna", 8000 },
 			{ "muzzle_snds_Lt", "Silenciador 9mm", 4750 },
-			{ "muzzle_snds_M", "Silenciador 5.56mm", 6750 }
+			{ "muzzle_snds_M", "Silenciador 5.56mm", 6750 },
+			{ "muzzle_snds_H_snd_f", "Silenciador 6.5mm", 15050 },
+			{ "muzzle_snds_H_MG_blk_F", "Silenciador 6.5mm", 25050 },
+			{ "muzzle_snds_B_khk_F", "Silenciador 7.62mm", 19050 },
+			{ "muzzle_snds_H", "Silenciador 6.5mm", 19750 }
         };
     };
 	
@@ -323,6 +355,7 @@ class WeaponShops {
         level[] = { "life_donorlevel", "SCALAR", 5, "Você precisa ser um nível doador Diamante para acessar a loja, acesse nosso forum ou teamspeak para obter informações." };
 		items[] = {
             { "FirstAidKit", "Bolsa de Sangue", 250, 65 },
+			{ "Rangefinder", "Rangefinder", 15200, 90 },
             { "hgun_Pistol_heavy_02_F", "ACP .45", 6600, -1 },
 			{ "hgun_Rook40_F", "Rook 9mm", 4500, -1 },
             { "hgun_ACPC2_F", "ACP .45", 6600, 65 },
@@ -330,7 +363,7 @@ class WeaponShops {
 			{ "arifle_TRG21_F", "TRG 5.56mm", 22500, -1 },
             { "arifle_Katiba_F", "Katiba 6.5mm", 30000, -1 },
             { "arifle_Katiba_C_F", "Katiba 6.5mm", 30000, -1 },
-            { "arifle_SDAR_F", "SDAR 5.56mm", 12500, -1 },
+		    { "arifle_SDAR_F", "SDAR 5.56mm", 12500, -1 },
             { "SMG_01_F", "Vermin SMG .45ACP", 16000, -1 },
             { "arifle_Mk20_F", "Mk20 5.56mm", 24000, -1 },
             { "arifle_Mk20C_F", "Mk20 5.56mm", 24000, -1 },
@@ -351,7 +384,8 @@ class WeaponShops {
 			{ "LMG_03_F", "LIM-85 5.56mm", 210000, -1 },
 			{ "arifle_AK12_F", "AK-12 7.62mm", 250000, -1 },
 			{ "SMG_02_F", "Sting 9mm", 12150, -1 },
-			{ "srifle_LRR_F", "M320 LRR .408", 1000000, -1 }
+			{ "srifle_LRR_F", "M320 LRR .408", 1000000, -1 },
+			{ "arifle_Katiba_C_ACO_pointer_snds_F", "Katiba 6.5mm", 45000, -1 }
         };
         mags[] = {
             { "6Rnd_45ACP_Cylinder", "Munição 9rnd .45", 725 },
@@ -371,7 +405,8 @@ class WeaponShops {
 			{ "30Rnd_762x39_Mag_Green_F", "Munição 30rnd 7.62mm", 3225 },
 			{ "200Rnd_556x45_Box_Red_F", "Munição 30rnd 7.62mm", 5225 },
 			{ "30Rnd_545x39_Mag_Green_F", "Munição 30rnd 7.62mm", 1225 },
-            { "30Rnd_65x39_caseless_mag_Tracer", "Munição 30rnd 6.5mm", 1020 }
+            { "30Rnd_65x39_caseless_mag_Tracer", "Munição 30rnd 6.5mm", 1020 },
+			{ "30Rnd_65x39_caseless_green", "Munição 30rnd 6.5mm", 1025 }
         };
         accs[] = {
             { "optic_ACO_grn", "Aco", 3000 },
@@ -382,10 +417,15 @@ class WeaponShops {
             { "optic_Arco", "Arco", 8500 },
 			{ "optic_DMS", "DMS", 28500 },
 			{ "optic_SOS", "SOS", 58500 },
+			{ "optic_LRPS_ghex_F", "LRPS", 78500 },
             { "acc_pointer_IR", "Laser", 1000 },
             { "acc_flashlight", "Lanterna", 8000 },
 			{ "muzzle_snds_Lt", "Silenciador 9mm", 4750 },
-			{ "muzzle_snds_M", "Silenciador 5.56mm", 6750 }
+			{ "muzzle_snds_M", "Silenciador 5.56mm", 6750 },
+			{ "muzzle_snds_H_snd_f", "Silenciador 6.5mm", 10050 },
+			{ "muzzle_snds_H_MG_blk_F", "Silenciador 6.5mm", 20050 },
+			{ "muzzle_snds_B_khk_F", "Silenciador 7.62mm", 20050 },
+			{ "muzzle_snds_H", "Silenciador 6.5mm", 10750 }
         };
        
     };
@@ -397,6 +437,7 @@ class WeaponShops {
         level[] = { "life_gangdonorid", "SCALAR", 1, "Você precisa ser um Gangue Doador para acessar a loja, acesse nosso forum ou teamspeak para obter informações." };
 		items[] = {
             { "FirstAidKit", "Bolsa de Sangue", 250, 65 },
+			{ "Rangefinder", "Rangefinder", 25200, 90 },
             { "hgun_Pistol_heavy_02_F", "ACP .45", 9240, -1 },
 			{ "SMG_02_F", "Sting 9mm", 17010, -1 },
 			{ "hgun_Rook40_F", "Rook 9mm", 6300, -1 },
@@ -457,7 +498,11 @@ class WeaponShops {
             { "acc_pointer_IR", "Laser", 1000 },
             { "acc_flashlight", "Lanterna", 8000 },
 			{ "muzzle_snds_Lt", "Silenciador 9mm", 4750 },
-			{ "muzzle_snds_M", "Silenciador 5.56mm", 6750 }
+			{ "muzzle_snds_M", "Silenciador 5.56mm", 6750 },
+			{ "muzzle_snds_H_snd_f", "Silenciador 6.5mm", 20050 },
+			{ "muzzle_snds_H_MG_blk_F", "Silenciador 6.5mm", 40050 },
+			{ "muzzle_snds_B_khk_F", "Silenciador 7.62mm", 30050 },
+			{ "muzzle_snds_H", "Silenciador 6.5mm", 20750 }
         };
     };
 	
@@ -468,6 +513,7 @@ class WeaponShops {
         level[] = { "life_gangdonorid", "SCALAR", 1, "Você precisa ser um Gangue Doador para acessar a loja, acesse nosso forum ou teamspeak para obter informações." };
 		items[] = {
              { "FirstAidKit", "Bolsa de Sangue", 250, 65 },
+			 { "Rangefinder", "Rangefinder", 25200, 90 },
             { "hgun_Pistol_heavy_02_F", "ACP .45", 7920, 2500 },
 			{ "SMG_02_F", "Sting 9mm", 14580, 2500 },
 			{ "hgun_Rook40_F", "Rook 9mm", 5400, 2500 },
@@ -529,7 +575,11 @@ class WeaponShops {
             { "acc_pointer_IR", "Laser", 1000 },
             { "acc_flashlight", "Lanterna", 8000 },
 			{ "muzzle_snds_Lt", "Silenciador 9mm", 4750 },
-			{ "muzzle_snds_M", "Silenciador 5.56mm", 6750 }
+			{ "muzzle_snds_M", "Silenciador 5.56mm", 6750 },
+			{ "muzzle_snds_H_snd_f", "Silenciador 6.5mm", 20050 },
+			{ "muzzle_snds_H_MG_blk_F", "Silenciador 6.5mm", 40050 },
+			{ "muzzle_snds_B_khk_F", "Silenciador 7.62mm", 30050 },
+			{ "muzzle_snds_H", "Silenciador 6.5mm", 20750 }
         };
     };
 	
@@ -540,6 +590,7 @@ class WeaponShops {
         level[] = { "life_gangdonorid", "SCALAR", 1, "Você precisa ser um Gangue Doador para acessar a loja, acesse nosso forum ou teamspeak para obter informações." };
 		items[] = {
             { "FirstAidKit", "Bolsa de Sangue", 250, -1 },
+			{ "Rangefinder", "Rangefinder", 25200, 90 },
             { "hgun_Pistol_heavy_02_F", "ACP .45", 6600, -1 },
 			{ "hgun_Rook40_F", "Rook 9mm", 4500, -1 },
             { "hgun_ACPC2_F", "ACP .45", 6600, -1 },
@@ -602,7 +653,11 @@ class WeaponShops {
             { "acc_pointer_IR", "Laser", 1000 },
             { "acc_flashlight", "Lanterna", 8000 },
 			{ "muzzle_snds_Lt", "Silenciador 9mm", 4750 },
-			{ "muzzle_snds_M", "Silenciador 5.56mm", 6750 }
+			{ "muzzle_snds_M", "Silenciador 5.56mm", 6750 },
+			{ "muzzle_snds_H_snd_f", "Silenciador 6.5mm", 20050 },
+			{ "muzzle_snds_H_MG_blk_F", "Silenciador 6.5mm", 40050 },
+			{ "muzzle_snds_B_khk_F", "Silenciador 7.62mm", 30050 },
+			{ "muzzle_snds_H", "Silenciador 6.5mm", 20750 }
         };
        
     };
@@ -614,6 +669,7 @@ class WeaponShops {
         level[] = { "life_donorlevel", "SCALAR", 1, "You need to be a donator level 1 to access this shop, join our teamspeak for information." };
         items[] = {
             { "FirstAidKit", "", 250, 65 },
+			{ "Rangefinder", "Rangefinder", 35200, 90 },
             { "srifle_DMR_04_F", "", 135000, -1 },
             { "srifle_DMR_05_tan_f", "", 200000 },
             { "5Rnd_127x108_Mag", "", 2025 },
@@ -645,9 +701,13 @@ class WeaponShops {
             { "optic_DMS", "", 17500 },
             { "optic_SOS", "", 22500 },
             { "optic_NVS", "", 28500 },
-            { "optic_LRPS", "", 33500 },
+            { "optic_SOS", "", 93500 },
             { "acc_pointer_IR", "", 1500 },
-            { "acc_flashlight", "", 1000 }
+            { "acc_flashlight", "", 1000 },
+			{ "muzzle_snds_H_snd_f", "Silenciador 6.5mm", 20050 },
+			{ "muzzle_snds_H_MG_blk_F", "Silenciador 6.5mm", 40050 },
+			{ "muzzle_snds_B_khk_F", "Silenciador 7.62mm", 30050 },
+			{ "muzzle_snds_H", "Silenciador 6.5mm", 20750 }
         };
     };
 
@@ -658,6 +718,7 @@ class WeaponShops {
         level[] = { "life_donorlevel", "SCALAR", 2, "You need to be a donator level 2 to access this shop, join our teamspeak for information." };
         items[] = {
             { "FirstAidKit", "", 250, 65 },
+			{ "Rangefinder", "Rangefinder", 25200, 90 },
             { "srifle_DMR_04_F", "", 135000, -1 },
             { "MMG_02_camo_F", "", 250000, -1 },
             { "srifle_DMR_02_sniper_F", "", 180000, 7500 },
@@ -694,7 +755,11 @@ class WeaponShops {
             { "optic_NVS", "", 28500 },
             { "optic_LRPS", "", 33500 },
             { "acc_pointer_IR", "", 1500 },
-            { "acc_flashlight", "", 1000 }
+            { "acc_flashlight", "", 1000 },
+			{ "muzzle_snds_H_snd_f", "Silenciador 6.5mm", 20050 },
+			{ "muzzle_snds_H_MG_blk_F", "Silenciador 6.5mm", 40050 },
+			{ "muzzle_snds_B_khk_F", "Silenciador 7.62mm", 30050 },
+			{ "muzzle_snds_H", "Silenciador 6.5mm", 20750 }
         };
     };
 
@@ -705,6 +770,7 @@ class WeaponShops {
         level[] = { "life_donorlevel", "SCALAR", 3, "You need to be a donator level 3 to access this shop, join our teamspeak for information." };
         items[] = {
             { "FirstAidKit", "", 250, 65 },
+			{ "Rangefinder", "Rangefinder", 25200, 90 },
             { "srifle_DMR_04_F", "", 135000, -1 },
             { "MMG_01_hex_F", "", 250000, 5000 },
             { "MMG_02_camo_F", "", 315000, -1 },
@@ -744,7 +810,11 @@ class WeaponShops {
             { "optic_NVS", "", 28500 },
             { "optic_LRPS", "", 33500 },
             { "acc_pointer_IR", "", 1500 },
-            { "acc_flashlight", "", 1000 }
+            { "acc_flashlight", "", 1000 },
+			{ "muzzle_snds_H_snd_f", "Silenciador 6.5mm", 20050 },
+			{ "muzzle_snds_H_MG_blk_F", "Silenciador 6.5mm", 40050 },
+			{ "muzzle_snds_B_khk_F", "Silenciador 7.62mm", 30050 },
+			{ "muzzle_snds_H", "Silenciador 6.5mm", 20750 }
         };
     };
 
@@ -755,6 +825,7 @@ class WeaponShops {
         level[] = { "", "", -1, "" };
         items[] = {
 			{ "FirstAidKit", "Bolsa de Sangue", 250, -1 },
+			{ "Rangefinder", "Rangefinder", 35200, 90 },
             { "hgun_Pistol_heavy_02_F", "ACP .45", 10500, -1 },
 			{ "hgun_Rook40_F", "Rook 9mm", 9000, -1 },
             { "hgun_ACPC2_F", "ACP .45", 13200, 5000 },
@@ -775,6 +846,7 @@ class WeaponShops {
 			{ "srifle_DMR_01_F", "Rahim 7.62 mm", 145000, -1 },
 			{ "srifle_EBR_F", "MK18 7.62 mm", 200000, -1 },
 			{ "arifle_MX_SW_F", "MX SW 6.5 mm", 100000, -1 },
+			{ "arifle_Katiba_C_ACO_pointer_snds_F", "Katiba 6.5mm", 150000, -1 },
 			{ "SMG_02_F", "Sting 9 mm", 24300, -1 }
         };
         mags[] = {
@@ -791,19 +863,26 @@ class WeaponShops {
 			{ "30Rnd_762x39_Mag_Green_F", "Munição 30rnd 7.62mm", 3225 },
 			{ "30Rnd_545x39_Mag_Green_F", "Munição 30rnd 7.62mm", 1225 },
 			{ "9Rnd_45ACP_Mag", "", 1000 },
+			{ "30Rnd_65x39_caseless_green", "Munição 30rnd 6.5mm", 1825 },
             { "30Rnd_65x39_caseless_mag_Tracer", "Munição 30rnd 6.5mm", 1820 }
         };
         accs[] = {
             { "optic_ACO_grn", "Aco", 3500 },
+			{ "optic_ERCO_blk_F", "ERCO", 4500 },
+			{ "optic_ERCO_snd_F", "ERCO", 4500 },
             { "optic_Holosight", "Holosight", 3600 },
             { "optic_Hamr", "Hamr", 10500 },
             { "optic_Holosight_smg", "Holosight Smg", 2500 },
             { "optic_MRCO", "Mrco", 14500 },
             { "optic_Arco", "Arco", 10500 },
 			{ "optic_DMS", "DMS", 30000 },
-            { "acc_pointer_IR", "Laser", 1500 },
+			{ "acc_pointer_IR", "Laser", 1500 },
 			{ "muzzle_snds_M", "Silenciador 5.56mm", 10000 },
-            { "acc_flashlight", "Lanterna", 1000 }
+            { "acc_flashlight", "Lanterna", 1000 },
+			{ "muzzle_snds_H_snd_f", "Silenciador 6.5mm", 20050 },
+			{ "muzzle_snds_H_MG_blk_F", "Silenciador 6.5mm", 40050 },
+			{ "muzzle_snds_B_khk_F", "Silenciador 7.62mm", 30050 },
+			{ "muzzle_snds_H", "Silenciador 6.5mm", 20750 }
         };
     };
 
@@ -814,6 +893,7 @@ class WeaponShops {
         level[] = { "", "", -1, "" };
         items[] = {
           { "FirstAidKit", "Bolsa de Sangue", 550, 65 },
+		  { "Rangefinder", "Rangefinder", 25200, 90 },
           { "hgun_Rook40_F", "Rook 9mm", 9500, 500 },
           { "hgun_Pistol_heavy_02_F", "Heavy .45", 11850, -1 },
           { "hgun_ACPC2_F", "ACP .45", 9500, -1 },
@@ -841,6 +921,7 @@ class WeaponShops {
         level[] = { "", "", -1, "" };
         items[] = {
             { "Binocular", "Binoculos", 150, -1 },
+			{ "Rangefinder", "Rangefinder", 95200, 90 },
             { "ItemGPS", "GPS", 100, 45 },
             { "ItemMap", "Mapa", 50, 35 },
             { "ItemCompass", "Bússola", 50, 25 },
@@ -863,6 +944,7 @@ class WeaponShops {
         level[] = { "", "", -1, "" };
         items[] = {
             { "Binocular", "Binoculos", 750, -1 },
+			{ "Rangefinder", "Rangefinder", 125200, 90 },
             { "ItemGPS", "GPS", 500, 45 },
             { "ItemMap", "Mapa", 250, 35 },
             { "ItemCompass", "Bússola", 250, 25 },
@@ -922,6 +1004,7 @@ class WeaponShops {
             { "SMG_02_F", "Sting 9 mm", 14000, 750 },
             { "hgun_P07_snds_F", "Pistola Tazer", 200, 60 },
             { "hgun_P07_F", "P07 9mm", 750, 150 },
+			{ "Rangefinder", "Rangefinder", 25200, 90 },
             { "FirstAidKit", "Bolsa de Sangue", 50, 5 },
 			{ "ItemGPS", "GPS", 100, 45 },
             { "ItemMap", "Mapa", 50, 35 },
@@ -969,6 +1052,7 @@ class WeaponShops {
             { "hgun_P07_snds_F", "Pistola Tazer", 2500, 60 },
             { "hgun_P07_F", "P07 9mm", 4750, 150 },
             { "FirstAidKit", "Bolsa de Sangue", 50, 5 },
+			{ "Rangefinder", "Rangefinder", 95200, 90 },
 			{ "ItemGPS", "", 100, 45 },
 			{ "ItemMap", "Mapa", 50, 35 },
             { "NVGoggles", "Night vision", 200, 90 }

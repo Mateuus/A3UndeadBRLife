@@ -74,12 +74,12 @@ class Life_Settings {
     service_chopper = 6000; //Cost to service chopper at chopper service station(Repair/Refuel).
 
     /* Gang System Configurations */
-    gang_price = 150000; //Gang creation price. --Remember they are persistent so keep it reasonable to avoid millions of gangs.
+    gang_price = 50000; //Gang creation price. --Remember they are persistent so keep it reasonable to avoid millions of gangs.
     gang_upgradeBase = 30000; //The base cost for purchasing additional slots in a gang
     gang_upgradeMultiplier = 2.5; //CURRENTLY NOT IN USE
 
     /* Housing System Configurations */
-    house_limit = 4; //Maximum number of houses a player can own.
+    house_limit = 2; //Maximum number of houses a player can own.
 
     /* Hunting & Fishing System Configurations */
     animaltypes_fish[] = { "Salema_F", "Ornate_random_F", "Mackerel_F", "Tuna_F", "Mullet_F", "CatShark_F", "Turtle_F" }; //Classnames of fish you can catch
@@ -107,8 +107,8 @@ class Life_Settings {
     bank_med = 150000; //Amount of cash in bank for new medics
 
     paycheck_cop = 5000; //Payment for cops
-    paycheck_civ = 2000; //Payment for civillians
-    paycheck_med = 4000; //Payment for medics
+    paycheck_civ = 5000; //Payment for civillians
+    paycheck_med = 5000; //Payment for medics
 
     paycheck_period = 7; //Scaled in minutes
     bank_transferTax = .075; //Tax that player pays when transferring money from ATM. Tax = Amount * multiplier

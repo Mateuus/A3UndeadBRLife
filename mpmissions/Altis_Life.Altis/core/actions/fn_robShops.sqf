@@ -16,7 +16,7 @@ if (currentWeapon _robber isEqualTo "") exitWith { hint "Voce nao pode roubar se
 
 if !(alive _robber) exitWith {};
 
-_kassa = 10000 + round(random 20000);
+_kassa = 10000 + round(random 155000);
 _shop removeAction _action;
 _shop switchMove "AmovPercMstpSsurWnonDnon";
 _chance = random(100);

@@ -14,12 +14,12 @@ if(_house isEqualTo "") exitWith {[]};
 	[price,# of containers allowed]
 */
 switch (true) do {
-	case (_house in ["Land_i_House_Big_02_V1_F","Land_i_House_Big_02_V2_F","Land_i_House_Big_02_V3_F"]): {[2550000,3]};
-	case (_house in ["Land_i_House_Big_01_V1_F","Land_i_House_Big_01_V2_F","Land_i_House_Big_01_V3_F"]): {[3700000,4]};
-	case (_house in ["Land_i_Garage_V1_F","Land_i_Garage_V2_F"]): {[1100000,0]};
-	case (_house in ["Land_i_House_Small_01_V1_F","Land_i_House_Small_01_V2_F","Land_i_House_Small_01_V3_F"]): {[2050000,2]};
-	case (_house in ["Land_i_House_Small_02_V1_F","Land_i_House_Small_02_V2_F","Land_i_House_Small_02_V3_F"]): {[2000500,2]};
-	case (_house in ["Land_i_House_Small_03_V1_F"]): {[2550000,3]};
-	case (_house in ["Land_i_Stone_HouseSmall_V2_F","Land_i_Stone_HouseSmall_V1_F","Land_i_Stone_HouseSmall_V3_F"]): {[1750000,2]};
+	case (_house in ["Land_i_House_Big_02_V1_F","Land_i_House_Big_02_V2_F","Land_i_House_Big_02_V3_F"]): {[2000000,3]};
+	case (_house in ["Land_i_House_Big_01_V1_F","Land_i_House_Big_01_V2_F","Land_i_House_Big_01_V3_F"]): {[2400000,4]};
+	case (_house in ["Land_i_Garage_V1_F","Land_i_Garage_V2_F"]): {[900000,0]};
+	case (_house in ["Land_i_House_Small_01_V1_F","Land_i_House_Small_01_V2_F","Land_i_House_Small_01_V3_F"]): {[1750000,2]};
+	case (_house in ["Land_i_House_Small_02_V1_F","Land_i_House_Small_02_V2_F","Land_i_House_Small_02_V3_F"]): {[1700500,2]};
+	case (_house in ["Land_i_House_Small_03_V1_F"]): {[2000000,3]};
+	case (_house in ["Land_i_Stone_HouseSmall_V2_F","Land_i_Stone_HouseSmall_V1_F","Land_i_Stone_HouseSmall_V3_F"]): {[1450000,2]};
 	default {[]};
 };

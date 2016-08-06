@@ -163,8 +163,7 @@ class Clothing {
         vests[] = {
             { "NONE", "Remove Vest", 0, { "", "", -1 } },
             { "V_TacVest_blk_POLICE", "Colete Padrao", 1000, { "life_coplevel", "SCALAR", 1 } },
-            { "V_PlateCarrier1_blk", "Colete Oficial", 3500, { "life_coplevel", "SCALAR", 4 } },
-            { "V_PlateCarrierH_CTRG", "Doador Vest", 6500, { "life_donorlevel", "SCALAR", 1 } }
+            { "V_PlateCarrier1_blk", "Colete Oficial", 3500, { "life_coplevel", "SCALAR", 4 } }
         };
         backpacks[] = {
             { "NONE", "Remove Backpack", 0, { "", "", -1 } },
@@ -431,9 +430,7 @@ class Clothing {
         vests[] = {
             { "NONE", "Remove Vest", 0, { "life_donorlevel", "SCALAR", 2 } },
 			{ "V_TacVestIR_blk", "", 7500, { "life_donorlevel", "SCALAR", 2 } },
-			{ "V_PlateCarrier1_rgr", "", 14000, { "life_donorlevel", "SCALAR", 2 } },
-			{ "V_PlateCarrier2_rgr", "", 14000, { "life_donorlevel", "SCALAR", 2 } },
-			{ "V_PlateCarrier3_rgr", "", 14000, { "life_donorlevel", "SCALAR", 2 } }
+			{ "V_PlateCarrier1_rgr", "", 14000, { "life_donorlevel", "SCALAR", 2 } }
         };
         backpacks[] = {
             { "NONE", "Remove Backpack", 0, { "life_donorlevel", "SCALAR", 1 } },
@@ -528,9 +525,7 @@ class Clothing {
         vests[] = {
             { "NONE", "Remove Vest", 0, { "life_donorlevel", "SCALAR", 3 } },
 			{ "V_TacVestIR_blk", "", 7000, { "life_donorlevel", "SCALAR", 3 } },
-			{ "V_PlateCarrierIA2_dgtl", "", 12000, { "life_donorlevel", "SCALAR", 3 } },
-			{ "V_PlateCarrierH_CTRG", "", 18000, { "life_donorlevel", "SCALAR", 3 } },
-			{ "V_PlateCarrierGL_rgr", "", 15000, { "life_donorlevel", "SCALAR", 3 } }
+			{ "V_PlateCarrierIA2_dgtl", "", 12000, { "life_donorlevel", "SCALAR", 3 } }
         };
         backpacks[] = {
             { "NONE", "Remove Backpack", 0, { "life_donorlevel", "SCALAR", 3 } },
@@ -626,10 +621,7 @@ class Clothing {
         vests[] = {
 			{ "NONE", "Remove Vest", 0, { "life_donorlevel", "SCALAR", 4 } },
 			{ "V_TacVestIR_blk", "", 6500, { "life_donorlevel", "SCALAR", 4 } },
-			{ "V_PlateCarrierIA2_dgtl", "", 9500, { "life_donorlevel", "SCALAR", 4 } },
-			{ "V_PlateCarrierIAGL_dgtl", "", 19500, { "life_donorlevel", "SCALAR", 4 } },
-			{ "V_PlateCarrierH_CTRG", "", 13500, { "life_donorlevel", "SCALAR", 4 } },
-			{ "V_PlateCarrierGL_rgr", "", 13500, { "life_donorlevel", "SCALAR", 4 } }
+			{ "V_PlateCarrierIA2_dgtl", "", 9500, { "life_donorlevel", "SCALAR", 4 } }
         };
         backpacks[] = {
             { "NONE", "Remove Backpack", 0, { "life_donorlevel", "SCALAR", 4 } },
@@ -711,10 +703,7 @@ class Clothing {
 		vests[] = {
             { "NONE", "Remove Vest", 0, { "life_donorlevel", "SCALAR", 5 } },
 			{ "V_PlateCarrierIA1_dgtl", "", 8000, { "life_donorlevel", "SCALAR", 5 } },
-			{ "V_PlateCarrier1_rgr", "", 9200, { "life_donorlevel", "SCALAR", 5 } },
-			{ "V_PlateCarrier2_rgr", "", 15000, { "life_donorlevel", "SCALAR", 5 } },
-			{ "V_PlateCarrierIA2_dgtl", "", 19000, { "life_donorlevel", "SCALAR", 5 } },
-			{ "V_PlateCarrierIAGL_oli", "", 35000, { "life_donorlevel", "SCALAR", 5 } }
+			{ "V_PlateCarrier1_rgr", "", 9200, { "life_donorlevel", "SCALAR", 5 } }
         };
         backpacks[] = {
             { "NONE", "Remove Backpack", 0, { "life_donorlevel", "SCALAR", 5 } },
@@ -810,9 +799,7 @@ class Clothing {
         vests[] = {
             { "NONE", "Remove Vest", 0, { "life_gangdonorid", "SCALAR", 1 } },
 			{ "V_TacVestIR_blk", "", 7000, { "life_gangdonorid", "SCALAR", 1 } },
-			{ "V_PlateCarrierIA2_dgtl", "", 12000, { "life_gangdonorid", "SCALAR", 1 } },
-			{ "V_PlateCarrierH_CTRG", "", 18000, { "life_gangdonorid", "SCALAR", 1 } },
-			{ "V_PlateCarrierGL_rgr", "", 15000, { "life_gangdonorid", "SCALAR", 1 } }
+			{ "V_PlateCarrierIA2_dgtl", "", 12000, { "life_gangdonorid", "SCALAR", 1 } }
         };
         backpacks[] = {
             { "NONE", "Remove Backpack", 0, { "life_gangdonorid", "SCALAR", 1 } },
@@ -909,10 +896,7 @@ class Clothing {
         vests[] = {
 			{ "NONE", "Remove Vest", 0, { "life_gangdonorid", "SCALAR", 1 } },
 			{ "V_TacVestIR_blk", "", 6500, { "life_gangdonorid", "SCALAR", 1 } },
-			{ "V_PlateCarrierIA2_dgtl", "", 9500, { "life_gangdonorid", "SCALAR", 1 } },
-			{ "V_PlateCarrierIAGL_dgtl", "", 19500, { "life_gangdonorid", "SCALAR", 1 } },
-			{ "V_PlateCarrierH_CTRG", "", 13500, { "life_gangdonorid", "SCALAR", 1 } },
-			{ "V_PlateCarrierGL_rgr", "", 13500, { "life_gangdonorid", "SCALAR", 1 } }
+			{ "V_PlateCarrierIA2_dgtl", "", 9500, { "life_gangdonorid", "SCALAR", 1 } }
         };
         backpacks[] = {
             { "NONE", "Remove Backpack", 0, { "life_gangdonorid", "SCALAR", 1 } },
@@ -995,10 +979,7 @@ class Clothing {
 		vests[] = {
             { "NONE", "Remove Vest", 0, { "life_gangdonorid", "SCALAR", 1 } },
 			{ "V_PlateCarrierIA1_dgtl", "", 8000, { "life_gangdonorid", "SCALAR", 1 } },
-			{ "V_PlateCarrier1_rgr", "", 9200, { "life_gangdonorid", "SCALAR", 1 } },
-			{ "V_PlateCarrier2_rgr", "", 15000, { "life_gangdonorid", "SCALAR", 1 } },
-			{ "V_PlateCarrierIA2_dgtl", "", 19000, { "life_gangdonorid", "SCALAR", 1 } },
-			{ "V_PlateCarrierIAGL_oli", "", 35000, { "life_gangdonorid", "SCALAR", 1 } }
+			{ "V_PlateCarrier1_rgr", "", 9200, { "life_gangdonorid", "SCALAR", 1 } }
         };
         backpacks[] = {
             { "NONE", "Remove Backpack", 0, { "life_gangdonorid", "SCALAR", 1 } },

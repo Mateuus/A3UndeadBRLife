@@ -361,7 +361,7 @@ class VirtualItems {
 		variable = "oilProcessed";
 		displayName = "STR_Item_OilP";
 		weight = 6;
-		buyPrice = 2757;
+		buyPrice = 4135;
 		sellPrice = -1;
 		illegal = false;
 		edible = -1;
@@ -371,7 +371,7 @@ class VirtualItems {
 	class copper_unrefined {
 		variable = "copperUnrefined";
 		displayName = "STR_Item_CopperOre";
-		weight = 4;
+		weight = 5;
 		buyPrice = -1;
 		sellPrice = -1;
 		illegal = false;
@@ -383,7 +383,7 @@ class VirtualItems {
 		variable = "copperRefined";
 		displayName = "STR_Item_CopperIngot";
 		weight = 3;
-		buyPrice = 1412;
+		buyPrice = 2400;
 		sellPrice = -1;
 		illegal = false;
 		edible = -1;
@@ -405,7 +405,7 @@ class VirtualItems {
 		variable = "ironRefined";
 		displayName = "STR_Item_IronIngot";
 		weight = 3;
-		buyPrice = 1318;
+		buyPrice = 1970;
 		sellPrice = -1;
 		illegal = false;
 		edible = -1;
@@ -427,7 +427,7 @@ class VirtualItems {
 		variable = "saltRefined";
 		displayName = "STR_Item_SaltR";
 		weight = 3;
-		buyPrice = 1658;
+		buyPrice = 2487;
 		sellPrice = -1;
 		illegal = false;
 		edible = -1;
@@ -504,7 +504,7 @@ class VirtualItems {
 		variable = "diamondCut";
 		displayName = "STR_Item_DiamondC";
 		weight = 5;
-		buyPrice = 2975;
+		buyPrice = 4462;
 		sellPrice = -1;
 		illegal = false;
 		edible = -1;
@@ -550,7 +550,7 @@ class VirtualItems {
 		variable = "heroinProcessed";
 		displayName = "STR_Item_HeroinP";
 		weight = 6;
-		buyPrice = 4042;
+		buyPrice = 8080;
 		sellPrice = -1;
 		illegal = true;
 		edible = -1;
@@ -573,7 +573,7 @@ class VirtualItems {
 		variable = "marijuana";
 		displayName = "STR_Item_Marijuana";
 		weight = 4;
-		buyPrice = 2342;
+		buyPrice = 4600;
 		sellPrice = -1;
 		illegal = true;
 		edible = -1;
@@ -596,7 +596,7 @@ class VirtualItems {
 		variable = "cocaineProcessed";
 		displayName = "STR_Item_CocaineP";
 		weight = 7;
-		buyPrice = 5667;
+		buyPrice = 11200;
 		sellPrice = -1;
 		illegal = true;
 		edible = -1;
@@ -840,7 +840,7 @@ class VirtualItems {
 		variable = "turtleRaw";
 		displayName = "STR_Item_TurtleRaw";
 		weight = 16;
-		buyPrice = 13200;
+		buyPrice = 15200;
 		sellPrice = -1;
 		illegal = true;
 		edible = -1;

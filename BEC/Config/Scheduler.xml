@@ -229,7 +229,7 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 	<!-- *** RESTARTS *** -->
 	<!-- restart 08:00 -->
 	<job id="10">
-		<time>07:45:00</time>
+		<time>01:45:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
@@ -237,7 +237,7 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<cmdtype>0</cmdtype>			
 	</job>
 	<job id="11">
-		<time>07:50:00</time>
+		<time>01:50:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
@@ -245,7 +245,7 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<cmdtype>0</cmdtype>			
 	</job>
 	<job id="12">
-		<time>07:55:00</time>
+		<time>01:55:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
@@ -253,7 +253,7 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<cmdtype>0</cmdtype>			
 	</job>
 	<job id="13">
-		<time>07:57:00</time>
+		<time>01:57:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
@@ -261,7 +261,7 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<cmdtype>0</cmdtype>			
 	</job>
 	<job id="14">
-		<time>07:57:02</time>
+		<time>01:57:02</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
@@ -269,7 +269,7 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<cmdtype>0</cmdtype>			
 	</job>
 	<job id="15">
-		<time>07:59:00</time>
+		<time>02:59:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
@@ -277,7 +277,7 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<cmdtype>0</cmdtype>			
 	</job>
 	<job id="16">
-		<time>08:00:00</time>
+		<time>02:00:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
@@ -285,7 +285,7 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<cmdtype>0</cmdtype>			
 	</job>
 	<job id="17">
-		<time>08:00:20</time>
+		<time>02:00:20</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
@@ -295,7 +295,7 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 	
 	<!-- restart 12:00 -->
 	<job id="18">
-		<time>11:45:00</time>
+		<time>07:45:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
@@ -303,7 +303,7 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<cmdtype>0</cmdtype>			
 	</job>
 	<job id="19">
-		<time>11:50:00</time>
+		<time>07:50:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
@@ -311,7 +311,7 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<cmdtype>0</cmdtype>			
 	</job>
 	<job id="20">
-		<time>11:55:00</time>
+		<time>07:55:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
@@ -319,7 +319,7 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<cmdtype>0</cmdtype>			
 	</job>
 	<job id="21">
-		<time>11:57:00</time>
+		<time>07:57:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
@@ -327,7 +327,7 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<cmdtype>0</cmdtype>			
 	</job>
 	<job id="22">
-		<time>11:57:02</time>
+		<time>07:57:02</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
@@ -335,7 +335,7 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<cmdtype>0</cmdtype>			
 	</job>
 	<job id="23">
-		<time>11:59:00</time>
+		<time>07:59:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
@@ -343,7 +343,7 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<cmdtype>0</cmdtype>			
 	</job>
 	<job id="24">
-		<time>12:00:00</time>
+		<time>08:00:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
@@ -351,7 +351,7 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<cmdtype>0</cmdtype>			
 	</job>
 	<job id="25">
-		<time>12:00:20</time>
+		<time>08:00:20</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
@@ -361,7 +361,7 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 	
 	<!-- restart 16:00 -->
 	<job id="26">
-		<time>15:45:00</time>
+		<time>13:45:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
@@ -369,7 +369,7 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<cmdtype>0</cmdtype>			
 	</job>
 	<job id="27">
-		<time>15:50:00</time>
+		<time>13:50:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
@@ -377,7 +377,7 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<cmdtype>0</cmdtype>			
 	</job>
 	<job id="28">
-		<time>15:55:00</time>
+		<time>13:55:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
@@ -385,7 +385,7 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<cmdtype>0</cmdtype>			
 	</job>
 	<job id="29">
-		<time>15:57:00</time>
+		<time>13:57:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
@@ -393,7 +393,7 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<cmdtype>0</cmdtype>			
 	</job>
 	<job id="30">
-		<time>15:57:02</time>
+		<time>13:57:02</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
@@ -401,7 +401,7 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<cmdtype>0</cmdtype>			
 	</job>
 	<job id="31">
-		<time>15:59:00</time>
+		<time>13:59:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
@@ -409,7 +409,7 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<cmdtype>0</cmdtype>			
 	</job>
 	<job id="32">
-		<time>16:00:00</time>
+		<time>14:00:00</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
@@ -417,7 +417,7 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 		<cmdtype>0</cmdtype>			
 	</job>
 	<job id="33">
-		<time>16:00:20</time>
+		<time>14:00:20</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 
@@ -484,138 +484,6 @@ Set 0 if its a internal command and 1 if its a external *.bat or *.cmd script.
 	</job>
 	<job id="41">
 		<time>20:00:20</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>#unlock</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	
-	<!-- restart 00:00 -->
-	<job id="42">
-		<time>23:45:00</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 15 minutos...</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	<job id="43">
-		<time>23:50:00</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 10 minutos... Não realize nenhuma transação pois poderá perder.</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	<job id="44">
-		<time>23:55:00</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 5 minutos... Não realize nenhuma transação pois poderá perder.</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	<job id="45">
-		<time>23:57:00</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 3 minutos, Por favor aterrissa seus helicóptero para evitar problemas, Não realize nenhuma transação pois poderá perder.</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	<job id="46">
-		<time>23:57:02</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>#lock</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	<job id="47">
-		<time>23:59:00</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 1 minutos, Por favor abra o Celular(Y), e sincronize o seu personagem...</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	<job id="48">
-		<time>00:00:00</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>#shutdown</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	<job id="49">
-		<time>00:00:20</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>#unlock</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	
-	<!-- restart 04:00 -->
-	<job id="50">
-		<time>03:45:00</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 15 minutos...</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	<job id="51">
-		<time>03:50:00</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 10 minutos... Não realize nenhuma transação pois poderá perder.</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	<job id="52">
-		<time>03:55:00</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 5 minutos... Não realize nenhuma transação pois poderá perder.</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	<job id="53">
-		<time>03:57:00</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 3 minutos, Por favor aterrissa seus helicóptero para evitar problemas, Não realize nenhuma transação pois poderá perder.</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	<job id="54">
-		<time>03:57:02</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>#lock</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	<job id="55">
-		<time>03:59:00</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>say -1 Servidor irá reniciar em 1 minutos, Por favor abra o Celular(Y), e sincronize o seu personagem...</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	<job id="56">
-		<time>04:00:00</time>
-		<delay>000000</delay>
-		<day>1,2,3,4,5,6,7</day>
-		<loop>0</loop> 
-		<cmd>#shutdown</cmd>
-		<cmdtype>0</cmdtype>			
-	</job>
-	<job id="57">
-		<time>04:00:20</time>
 		<delay>000000</delay>
 		<day>1,2,3,4,5,6,7</day>
 		<loop>0</loop> 

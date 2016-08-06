@@ -12,11 +12,11 @@
 // █████████████████ DYNAMIC MARKET BASIC CONFIGURATION ██████████████████
 // ███████████████████████████████████████████████████████████████████████
 
-DYNMARKET_Serveruptime         = 04;   // Serveruptime after restart in hours
+DYNMARKET_Serveruptime         = 06;   // Serveruptime after restart in hours
 DYNMARKET_UseExternalDatabase  = true; // Should the script use the External Database?
 DYNMARKET_PriceUpdateInterval  = 01;   // After how many minutes should the price be updated?
 DYNMARKET_CreateBackups        = true; // Should the server save write the prices regulary into the Database? If false, it will save the prices before Server-restart?
-DYNMARKET_CreateBackupInterval = 03;   // After how many updates (PriceUpdateIntervals) should the prices be saved into the Database?
+DYNMARKET_CreateBackupInterval = 02;   // After how many updates (PriceUpdateIntervals) should the prices be saved into the Database?
 DYNMARKET_UserNotification     = false; // Should the user be informed with a hint whenever the prices got updated?
 
 // █████████████████ USER NOTIFICATION TEXTS  █████████████████
@@ -47,12 +47,12 @@ DYNMARKET_Items_Groups =
 	],
 	["Legal",
 		[
-			["oil_processed",-1,1103,2757],
-			["copper_refined",-1,565,1412],
-			["iron_refined",-1,527,1318],
-			["salt_refined",-1,663,1658],
+			["oil_processed",-1,2900,4135],
+			["copper_refined",-1,1965,2200],
+			["iron_refined",-1,1227,1970],
+			["salt_refined",-1,2063,2487],
 			["glass",-1,804,2010],
-			["diamond_cut",-1,1190,2975],
+			["diamond_cut",-1,3290,4492],
 			["plank",-1,894,2235]
 		],
 		0.5
@@ -60,10 +60,10 @@ DYNMARKET_Items_Groups =
 	["Illegal", 
 		[
 			["cement",1,1616,4040],
-			["heroin_processed",1,1617,4042],
-			["marijuana",1,937,2342],
-			["cocaine_processed",1,2267,5667],
-			["turtle_raw",1,5280,13200],
+			["heroin_processed",1,5617,8080],
+			["marijuana",1,3637,4600],
+			["cocaine_processed",1,7267,11200],
+			["turtle_raw",1,5280,15200],
 			["diamante3",1,1310,3275],
 			["colar",1,6280,15000],
 			["goldbar",1,35000,75000]
@@ -85,22 +85,22 @@ DYNMARKET_Items_ToTrack        =
 	["peach",25],
 	
 	//Farms Legais
-	["oil_processed",2068],
-	["copper_refined",1059],
-	["iron_refined",989],
-	["salt_refined",1244],
-	["glass",1508],
-	["diamond_cut",2231],
+	["oil_processed",4100],
+	["copper_refined",200],
+	["iron_refined",1200],
+	["salt_refined",2200],
+	["glass",200],
+	["diamond_cut",3800],
 	["plank",1676],
 	
 	//Farms Inlegais
-	["cement",3030],
-	["heroin_processed",3031],
-	["marijuana",1757],
-	["cocaine_processed",4250],
-	["turtle_raw",9900],
-	["diamante3",2456],
-	["colar",9900],
+	["cement",4040],
+	["heroin_processed",8080],
+	["marijuana",4600],
+	["cocaine_processed",11200],
+	["turtle_raw",15200],
+	["diamante3",3275],
+	["colar",1500],
 	["goldbar",50000]
 
 	
