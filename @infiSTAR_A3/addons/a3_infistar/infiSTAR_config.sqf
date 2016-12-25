@@ -15,14 +15,14 @@
 
 	This is   VERY IMPORTANT   as it is needed to KICK & BAN people.
 */
-_serverCommandPassword = '27091995';
+_serverCommandPassword = 'XXXXXXXXXXX';
 
 /*
 	"_passwordAdmin" is passwordAdmin - in your servers config.cfg, needed for servercommands from client
 
 	This is used to be able to use the "login" function ingame. Will log you in as Arma "Admin".
 */
-_passwordAdmin = '27091995';
+_passwordAdmin = 'XXXXXXXXXXXX';
 /* _serverCommandPassword and _passwordAdmin should always be different passwords or it could cause problems! */
 
 
@@ -74,7 +74,7 @@ _announce_adminstate_changed = false;	/* true or false */
 _adminUIDandAccess =
 [
 	[
-		['76561198065694695', '76561198118580246', '76561198129878487', '76561198112843376', '76561198084123369'],	// Admins with UIDs in this Array have their Access defined in the array below.
+		[''],	// Admins with UIDs in this Array have their Access defined in the array below.
 		[
 			'Teleport On Map Click','Teleport - Target To Me','Teleport - Me To Target',
 			'spectating','Delete Vehicle','FlyUp','EjectTarget','ToggleVehLock','ShowGear',
